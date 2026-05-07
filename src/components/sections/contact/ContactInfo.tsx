@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 
 type Row = {
@@ -26,20 +26,11 @@ const rows: Row[] = [
     ),
   },
   {
-    icon: Phone,
-    label: "Phone",
-    value: (
-      <a href="tel:+15123387800" className="text-[#0071e3] hover:underline">
-        (512) 338-7800
-      </a>
-    ),
-  },
-  {
     icon: MapPin,
     label: "Austin HQ",
     value: (
       <span className="block whitespace-pre-line text-[color:var(--text-primary)]">
-        {"9600 N MoPac Expressway, Suite 300\nAustin, TX 78759"}
+        {"515 Congress Ave., Suite 2410\nAustin, TX 78701"}
       </span>
     ),
   },

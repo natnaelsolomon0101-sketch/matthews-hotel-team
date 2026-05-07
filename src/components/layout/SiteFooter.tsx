@@ -112,7 +112,7 @@ export function SiteFooter() {
         {/* Legal */}
         <div className="mt-6 space-y-1.5">
           <p className="text-[11px] tracking-[-0.005em] text-[color:var(--text-tertiary)]">
-            Matthews Real Estate Investment Services — 901 S MoPac Expressway, Building 4, Suite 150, Austin, TX 78746.
+            Matthews Real Estate Investment Services — 515 Congress Ave., Suite 2410, Austin, TX 78701.
           </p>
           <p className="text-[11px] tracking-[-0.005em] text-[color:var(--text-tertiary)]">
             Copyright &copy; {year} Matthews Real Estate Investment Services. All rights reserved.

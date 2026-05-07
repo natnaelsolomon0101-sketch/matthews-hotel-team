@@ -4,7 +4,6 @@ import SiteFooter from "@/components/layout/SiteFooter";
 import ContactHero from "@/components/sections/contact/ContactHero";
 import ContactInfo from "@/components/sections/contact/ContactInfo";
 import ContactForm from "@/components/sections/contact/ContactForm";
-import ContactOffices from "@/components/sections/contact/ContactOffices";
 
 export const metadata: Metadata = {
   title: "Contact — Matthews Hotel Team",
@@ -24,7 +23,6 @@ export default function ContactPage() {
             <ContactForm />
           </div>
         </section>
-        <ContactOffices />
       </main>
       <SiteFooter />
     </>

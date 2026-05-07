@@ -18,7 +18,6 @@ const NAV_ITEMS: NavItem[] = [
   { href: "/closed", label: "Closed" },
   { href: "/team", label: "Team" },
   { href: "/insights", label: "Insights" },
-  { href: "/#offices", label: "Offices" },
   { href: "/contact", label: "Contact" },
 ];
 
