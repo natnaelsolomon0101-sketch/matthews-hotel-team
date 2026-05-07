@@ -32,6 +32,8 @@ export function TeamDetailHero({ member }: TeamDetailHeroProps) {
                 initials={initials(member.name)}
                 tone={member.cover.tone}
                 size="hero"
+                photoSrc={member.photo}
+                photoAlt={`${member.name} — ${member.title}`}
               />
             </div>
           </Reveal>

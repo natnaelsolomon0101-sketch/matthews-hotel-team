@@ -30,6 +30,8 @@ export function TeamCard({ member }: TeamCardProps) {
           initials={initials(member.name)}
           tone={member.cover.tone}
           size="card"
+          photoSrc={member.photo}
+          photoAlt={`${member.name} — ${member.title}`}
         />
       </Link>
 

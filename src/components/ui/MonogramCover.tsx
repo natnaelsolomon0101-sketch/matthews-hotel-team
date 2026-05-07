@@ -1,4 +1,5 @@
 import * as React from "react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 /**
@@ -29,6 +30,14 @@ export interface MonogramCoverProps {
   /** Optional small label slot rendered below the monogram and rule. */
   children?: React.ReactNode;
   className?: string;
+  /**
+   * When provided, the cover renders this photo instead of the editorial
+   * monogram. The container's tone color shows through as a backdrop while
+   * the image loads.
+   */
+  photoSrc?: string;
+  /** Alt text for the photo. Required for accessibility when `photoSrc` is set. */
+  photoAlt?: string;
 }
 
 interface ToneSpec {
@@ -73,19 +82,44 @@ export function MonogramCover({
   size = "card",
   children,
   className,
+  photoSrc,
+  photoAlt,
 }: MonogramCoverProps) {
   const spec = TONE_SPECS[tone];
   const isHero = size === "hero";
+
+  // Card = 3/4 portrait with intrinsic aspect. Hero fills its parent (the
+  // call site is expected to constrain dimensions, e.g. with aspect-[3/4]).
+  const sizingClass = isHero ? "h-full w-full" : "w-full aspect-[3/4]";
+
+  if (photoSrc) {
+    return (
+      <div
+        className={cn("relative overflow-hidden", sizingClass, className)}
+        style={{ backgroundColor: spec.bg }}
+      >
+        <Image
+          src={photoSrc}
+          alt={photoAlt ?? ""}
+          fill
+          sizes={
+            isHero
+              ? "(min-width: 1024px) 480px, 100vw"
+              : "(min-width: 1024px) 320px, (min-width: 640px) 33vw, 50vw"
+          }
+          quality={88}
+          priority={isHero}
+          className="object-cover"
+        />
+      </div>
+    );
+  }
 
   // Editorial cover-size scale. Card and hero use clamp() so the type breathes
   // across breakpoints without manual responsive variants.
   const monogramFontSize = isHero
     ? "clamp(160px, 20vw, 240px)"
     : "clamp(64px, 12vw, 120px)";
-
-  // Card = 3/4 portrait with intrinsic aspect. Hero fills its parent (the
-  // call site is expected to constrain dimensions, e.g. with aspect-[3/4]).
-  const sizingClass = isHero ? "h-full w-full" : "w-full aspect-[3/4]";
 
   return (
     <div
