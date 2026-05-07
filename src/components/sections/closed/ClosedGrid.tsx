@@ -29,11 +29,25 @@ function formatPrice(raw: string): string {
   return raw; // Already pre-formatted as e.g. "$19,400,000"
 }
 
+// Photos render only when the deck has reasonable coverage. Below the
+// threshold a hybrid grid (3 of 20 with photos) creates ugly vertical
+// voids next to the photo cards, since masonry pushes adjacent text-only
+// cards to match the photo card's height. Text-only across the board is
+// the cleaner visual until enough photos arrive.
+const PHOTO_COVERAGE_THRESHOLD = 0.5;
+
 export function ClosedGrid({ filters }: ClosedGridProps) {
   const filtered = React.useMemo(
     () => applyFilters(allClosed, filters),
     [filters],
   );
+
+  // Coverage is calculated against the full deck (not the filtered subset)
+  // so the visual mode doesn't flip as the user adjusts filters.
+  const showPhotos = React.useMemo(() => {
+    const photoCount = allClosed.filter((d) => d.photo).length;
+    return photoCount / allClosed.length >= PHOTO_COVERAGE_THRESHOLD;
+  }, []);
 
   if (filtered.length === 0) {
     return (
@@ -51,7 +65,7 @@ export function ClosedGrid({ filters }: ClosedGridProps) {
       <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {filtered.map((deal) => {
           const location = `${deal.city}, ${deal.state}`;
-          const hasPhoto = Boolean(deal.photo);
+          const hasPhoto = showPhotos && Boolean(deal.photo);
           return (
             <li
               key={deal.slug}
