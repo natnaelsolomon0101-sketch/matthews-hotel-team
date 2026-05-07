@@ -19,6 +19,9 @@ function buildBlocks(member: TeamMember): Block[] {
   if (member.designations.length > 0) {
     blocks.push({ label: "Designations", items: member.designations });
   }
+  if (member.affiliations && member.affiliations.length > 0) {
+    blocks.push({ label: "Affiliations", items: member.affiliations });
+  }
   if (member.languages && member.languages.length > 0) {
     blocks.push({ label: "Languages", items: member.languages });
   }

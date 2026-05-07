@@ -67,6 +67,8 @@ export type TeamMember = {
   last12Volume: string;
   designations: string[];
   education: string[];
+  /** Industry memberships and licenses (RECA, ULI, TX RE License, etc.). */
+  affiliations?: string[];
   /** 5–10 named deals, oldest to newest or newest to oldest. */
   topDeals: NamedDeal[];
   languages?: string[];
@@ -95,90 +97,23 @@ export const team: TeamMember[] = [
     linkedin: "https://www.linkedin.com/in/hotelfinance101/",
     cover: { tone: "ink" },
     photoTone: LEGACY_PHOTO_TONE.ink,
-    bio: `Luke leads Matthews' Texas hospitality capital markets practice, advising owners, developers, and institutional sponsors on full-service and lifestyle hotel transactions across the Sun Belt. Over fifteen years he has closed more than $2.4 billion in hospitality investment sales and debt placement, with a sweet spot in branded full-service assets between $20M and $150M.
+    bio: `Luke is a real estate professional at Matthews™ specializing in hospitality capital markets nationwide. He focuses on originating and closing loans and advising clients through investment-sales processes. His methodology centers on structured finance, development, and asset sales.
 
-Before joining Matthews, Luke spent eight years on the hospitality investment sales desk of a national platform, where he led the firm's Texas resort and lifestyle practice. His current pipeline includes call-for-offers assignments in Austin, San Antonio, and the Hill Country, as well as recapitalization mandates for repeat institutional sponsors.
+Before Matthews, Luke worked in private credit, direct lending, preferred equity, and mezzanine debt at Matterhorn Capital Partners. With over fifteen years of experience in hotel real estate structured finance, development, and asset sales, Luke has built a distinguished career. His background also includes the investment-banking arm of HVS — the world's leading hospitality consulting firm — and co-founding the boutique mortgage brokerage F10 Hotels.
 
-Luke sources roughly half of his transactions through repeat client relationships and the rest through Matthews' national investor reach.`,
+In 2019, Luke spearheaded a joint venture to develop a 276-key, dual-branded Hilton hotel in downtown Austin, TX, which opened in 2024. He further expanded his personal portfolio through his investment arm, Coldwater Equites, with the ground-up development of the 103-key Home2 Suites by Hilton in Del Rio, TX, which opened in late 2025.`,
     yearsExperience: 15,
-    careerVolume: "$2.4B",
-    last12Volume: "$420M",
-    designations: ["CCIM"],
-    education: ["BBA Finance, McCombs School of Business, UT Austin"],
-    topDeals: [
-      {
-        name: "Hotel Van Zandt Recapitalization",
-        year: 2025,
-        keys: 319,
-        segment: "Lifestyle",
-        city: "Austin",
-        state: "TX",
-        role: "Sell-side advisor",
-      },
-      {
-        name: "Hyatt Regency Lost Pines",
-        year: 2024,
-        keys: 491,
-        segment: "Resort",
-        city: "Cedar Creek",
-        state: "TX",
-        role: "Sell-side advisor",
-      },
-      {
-        name: "JW Marriott San Antonio Hill Country",
-        year: 2024,
-        keys: 1002,
-        segment: "Resort",
-        city: "San Antonio",
-        state: "TX",
-        role: "Buy-side advisor",
-      },
-      {
-        name: "Westin Austin Downtown",
-        year: 2023,
-        keys: 366,
-        segment: "Full Service",
-        city: "Austin",
-        state: "TX",
-        role: "Sell-side advisor",
-      },
-      {
-        name: "Omni Barton Creek Resort & Spa",
-        year: 2023,
-        keys: 493,
-        segment: "Resort",
-        city: "Austin",
-        state: "TX",
-        role: "Debt placement",
-      },
-      {
-        name: "Renaissance Dallas at Plano Legacy West",
-        year: 2022,
-        keys: 304,
-        segment: "Full Service",
-        city: "Plano",
-        state: "TX",
-        role: "Sell-side advisor",
-      },
-      {
-        name: "Hotel Granduca Austin",
-        year: 2021,
-        keys: 194,
-        segment: "Lifestyle",
-        city: "Austin",
-        state: "TX",
-        role: "Sell-side advisor",
-      },
-      {
-        name: "Sheraton Austin Hotel at the Capitol",
-        year: 2020,
-        keys: 365,
-        segment: "Full Service",
-        city: "Austin",
-        state: "TX",
-        role: "Sell-side advisor",
-      },
+    careerVolume: "Confirm",
+    last12Volume: "Confirm",
+    designations: [],
+    education: ["B.A., Communications & Business — Baylor University"],
+    affiliations: [
+      "Real Estate Council of Austin (RECA)",
+      "Urban Land Institute (ULI)",
+      "Asian American Hotel Owners Association (AAHOA)",
+      "Texas Real Estate Commission — License No. 593889",
     ],
+    topDeals: [],
   },
   {
     slug: "miles-cortez",
@@ -214,63 +149,15 @@ Earlier in his career, Miles co-founded Aventine Capital Partners, where he play
     linkedin: "https://www.linkedin.com/in/nathaniel-solomon-4b2b9125a/",
     cover: { tone: "navy" },
     photoTone: LEGACY_PHOTO_TONE.navy,
-    bio: `Nate underwrites and executes select-service and boutique hotel transactions for the Matthews Texas team, working closely with developer-sponsors and family-office capital across Central Texas.
-
-In four years on the desk he has supported the closing of $180M in transactions, including a recent rollup of three Hill Country boutique assets and several premium-branded select-service deals along the I-35 corridor. He drives much of the team's market intelligence — comp database, ADR/RevPAR tracking, and broker-of-record submarket reports.
-
-Nate's research-first style produces underwriting that lenders and equity reviewers tend to approve on the first pass.`,
-    yearsExperience: 4,
-    careerVolume: "$180M",
-    last12Volume: "$95M",
+    bio: `Nate is a real estate professional specializing in the acquisition and disposition of hospitality properties at Matthews™. He leverages extensive knowledge of underwriting and market fundamentals. Nate's expertise extends to asset management, property identification and acquisition, lease coordination and negotiation, compliance and permitting, and financial reconciliation and reporting — all of which provide a distinct advantage in navigating complex hospitality transactions. He is dedicated to providing clients with data-driven insights and meticulous attention to detail, ensuring strategic decision-making and optimal outcomes for every opportunity within the national hospitality market.`,
+    // Career stats and named deals pending direct confirmation with Nate.
+    yearsExperience: 0,
+    careerVolume: "Confirm",
+    last12Volume: "Confirm",
     designations: [],
-    education: ["BS Real Estate Finance, McCombs School of Business, UT Austin"],
-    topDeals: [
-      {
-        name: "Hampton Inn & Suites Round Rock",
-        year: 2025,
-        keys: 98,
-        segment: "Select Service",
-        city: "Round Rock",
-        state: "TX",
-        role: "Sell-side advisor",
-      },
-      {
-        name: "Holiday Inn Express Austin Round Rock",
-        year: 2024,
-        keys: 109,
-        segment: "Select Service",
-        city: "Round Rock",
-        state: "TX",
-        role: "Sell-side advisor",
-      },
-      {
-        name: "Walden Retreats Hill Country (Pre-Marketing)",
-        year: 2024,
-        keys: 15,
-        segment: "Boutique",
-        city: "Johnson City",
-        state: "TX",
-        role: "Sell-side advisor",
-      },
-      {
-        name: "Fairfield Inn & Suites San Marcos",
-        year: 2023,
-        keys: 84,
-        segment: "Select Service",
-        city: "San Marcos",
-        state: "TX",
-        role: "Sell-side advisor",
-      },
-      {
-        name: "TownePlace Suites Austin North",
-        year: 2022,
-        keys: 102,
-        segment: "Select Service",
-        city: "Austin",
-        state: "TX",
-        role: "Buy-side advisor",
-      },
-    ],
+    education: ["B.S., Economics — St. Edward's University"],
+    affiliations: ["Texas Real Estate Commission — License No. 842300"],
+    topDeals: [],
   },
 ];
 
