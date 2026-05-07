@@ -29,25 +29,33 @@ function formatPrice(raw: string): string {
   return raw; // Already pre-formatted as e.g. "$19,400,000"
 }
 
-// Photos render only when the deck has reasonable coverage. Below the
-// threshold a hybrid grid (3 of 20 with photos) creates ugly vertical
-// voids next to the photo cards, since masonry pushes adjacent text-only
-// cards to match the photo card's height. Text-only across the board is
-// the cleaner visual until enough photos arrive.
-const PHOTO_COVERAGE_THRESHOLD = 0.5;
+// Editorial tonal palette for placeholder covers when a deal has no photo.
+// Mirrors the MonogramCover treatment used on /team — same brand language.
+const SEGMENT_TONE: Record<string, { bg: string; fg: string; rule: string }> = {
+  "Select Service": { bg: "#0e1a34", fg: "#fafafa", rule: "rgba(250,250,250,0.3)" },
+  "Full Service":   { bg: "#0a0a0a", fg: "#ffffff", rule: "rgba(255,255,255,0.3)" },
+  "Resort":         { bg: "#1d1d1f", fg: "#f5f5f7", rule: "rgba(245,245,247,0.3)" },
+  "Lifestyle":      { bg: "#0a1226", fg: "#fafafa", rule: "rgba(250,250,250,0.3)" },
+  "Boutique":       { bg: "#1d1d1f", fg: "#f5f5f7", rule: "rgba(245,245,247,0.3)" },
+  "Extended Stay":  { bg: "#0e1a34", fg: "#fafafa", rule: "rgba(250,250,250,0.3)" },
+};
+
+function dealMonogram(deal: ClosedDeal): string {
+  // First letter of each significant word, capped at 3 chars. Skips brand
+  // suffixes like "by Radisson" naturally because they're tail-end.
+  return deal.name
+    .split(/\s+/)
+    .filter((w) => w.length >= 2 && !/^(by|the|and|of|at)$/i.test(w))
+    .slice(0, 3)
+    .map((w) => w[0]?.toUpperCase() ?? "")
+    .join("");
+}
 
 export function ClosedGrid({ filters }: ClosedGridProps) {
   const filtered = React.useMemo(
     () => applyFilters(allClosed, filters),
     [filters],
   );
-
-  // Coverage is calculated against the full deck (not the filtered subset)
-  // so the visual mode doesn't flip as the user adjusts filters.
-  const showPhotos = React.useMemo(() => {
-    const photoCount = allClosed.filter((d) => d.photo).length;
-    return photoCount / allClosed.length >= PHOTO_COVERAGE_THRESHOLD;
-  }, []);
 
   if (filtered.length === 0) {
     return (
@@ -65,14 +73,21 @@ export function ClosedGrid({ filters }: ClosedGridProps) {
       <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {filtered.map((deal) => {
           const location = `${deal.city}, ${deal.state}`;
-          const hasPhoto = showPhotos && Boolean(deal.photo);
+          const hasPhoto = Boolean(deal.photo);
+          const tone = SEGMENT_TONE[deal.segment] ?? SEGMENT_TONE["Full Service"];
           return (
             <li
               key={deal.slug}
               className="group overflow-hidden rounded-[18px] bg-white shadow-[0_1px_3px_rgba(0,0,0,0.04),0_4px_16px_-8px_rgba(0,0,0,0.08)] transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] hover:-translate-y-0.5 hover:shadow-[0_2px_6px_rgba(0,0,0,0.06),0_12px_32px_-10px_rgba(0,0,0,0.14)]"
             >
-              {hasPhoto ? (
-                <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#f5f5f7]">
+              {/* Uniform 4:3 cover. Real photo when set, else a tonal
+                  monogram placeholder. Keeps card heights aligned across
+                  the grid regardless of photo coverage. */}
+              <div
+                className="relative aspect-[4/3] w-full overflow-hidden"
+                style={{ backgroundColor: hasPhoto ? "#f5f5f7" : tone.bg }}
+              >
+                {hasPhoto ? (
                   <div className="absolute inset-0 transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-[1.04]">
                     <Image
                       src={deal.photo as string}
@@ -83,15 +98,37 @@ export function ClosedGrid({ filters }: ClosedGridProps) {
                       className="object-cover"
                     />
                   </div>
-                </div>
-              ) : null}
-              <div
-                className={
-                  hasPhoto
-                    ? "px-5 pt-6 pb-7 text-center"
-                    : "px-6 pt-9 pb-9 text-center"
-                }
-              >
+                ) : (
+                  <div
+                    className="absolute inset-x-0 flex flex-col items-center"
+                    style={{ top: "60%", transform: "translateY(-50%)" }}
+                    aria-hidden="true"
+                  >
+                    <span
+                      className="font-[family-name:var(--font-fraunces)] leading-none"
+                      style={{
+                        color: tone.fg,
+                        fontSize: "clamp(48px,7vw,72px)",
+                        fontWeight: 500,
+                        letterSpacing: "-0.02em",
+                      }}
+                    >
+                      {dealMonogram(deal)}
+                    </span>
+                    <div
+                      className="mt-4 h-px w-6"
+                      style={{ backgroundColor: tone.rule }}
+                    />
+                    <span
+                      className="mt-2 text-[10px] uppercase tracking-[0.18em]"
+                      style={{ color: tone.fg, opacity: 0.7 }}
+                    >
+                      {deal.segment}
+                    </span>
+                  </div>
+                )}
+              </div>
+              <div className="px-5 pt-6 pb-7 text-center">
                 <h3
                   className="font-semibold text-[#1d1d1f] tracking-[-0.014em] inline-block underline decoration-[#0071e3] decoration-[2px] underline-offset-[6px]"
                   style={{ fontSize: "18px", lineHeight: 1.2 }}
@@ -104,13 +141,7 @@ export function ClosedGrid({ filters }: ClosedGridProps) {
                 <p className="text-[14px] tracking-[-0.014em] text-[color:var(--text-secondary)]">
                   {location}
                 </p>
-                <p
-                  className={
-                    hasPhoto
-                      ? "mt-3 text-[16px] font-semibold tabular-nums tracking-[-0.014em] text-[#1d1d1f]"
-                      : "mt-4 text-[20px] font-semibold tabular-nums tracking-[-0.014em] text-[#1d1d1f]"
-                  }
-                >
+                <p className="mt-3 text-[16px] font-semibold tabular-nums tracking-[-0.014em] text-[#1d1d1f]">
                   {formatPrice(deal.dealSize)}
                 </p>
               </div>
