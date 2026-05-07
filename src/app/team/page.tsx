@@ -30,16 +30,18 @@ export default function TeamPage() {
       <SiteHeader />
       <main className="pt-14">
         <TeamHero />
-        <section className="bg-white border-b border-[#d2d2d7]">
-          <div className="max-w-[1024px] mx-auto px-6 py-6">
-            <TeamFilters
-              values={values}
-              onChange={setValues}
-              visibleCount={filtered.length}
-              totalCount={team.length}
-            />
-          </div>
-        </section>
+        {team.length > 4 && (
+          <section className="bg-white border-b border-[#d2d2d7]">
+            <div className="max-w-[1024px] mx-auto px-6 py-6">
+              <TeamFilters
+                values={values}
+                onChange={setValues}
+                visibleCount={filtered.length}
+                totalCount={team.length}
+              />
+            </div>
+          </section>
+        )}
         <TeamGrid filtered={filtered} />
       </main>
       <SiteFooter />
