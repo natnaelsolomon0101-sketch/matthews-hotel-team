@@ -73,7 +73,7 @@ export const closed: ClosedDeal[] = [
     dealSize: "$52,800,000",
     transactionType: "Investment Sale",
     sponsorProfile: "REIT",
-    brokerSlugs: ["luke-thompson", "elena-park"],
+    brokerSlugs: ["luke-thompson", "miles-cortez"],
     toneClass: "from-[#1a3a6b] to-[#0a1226]",
   },
   {
@@ -89,7 +89,7 @@ export const closed: ClosedDeal[] = [
     dealSize: "$14,200,000",
     transactionType: "Investment Sale",
     sponsorProfile: "Family Office",
-    brokerSlugs: ["patrick-graham", "david-okafor"],
+    brokerSlugs: ["miles-cortez", "nate-solomon"],
     toneClass: "from-[#0066cc] to-[#1a56db]",
   },
   {
@@ -105,7 +105,7 @@ export const closed: ClosedDeal[] = [
     dealSize: "Confidential",
     transactionType: "Investment Sale",
     sponsorProfile: "Developer",
-    brokerSlugs: ["marcus-reyes", "luke-thompson"],
+    brokerSlugs: ["miles-cortez", "luke-thompson"],
     toneClass: "from-[#1d1d1f] to-[#2c2c2e]",
   },
   {
@@ -121,7 +121,7 @@ export const closed: ClosedDeal[] = [
     dealSize: "$11,800,000",
     transactionType: "Debt Placement",
     sponsorProfile: "PE",
-    brokerSlugs: ["sarah-chen", "elena-park"],
+    brokerSlugs: ["luke-thompson", "miles-cortez"],
     toneClass: "from-[#0e1a34] to-[#1a3a6b]",
   },
   {
@@ -137,7 +137,7 @@ export const closed: ClosedDeal[] = [
     dealSize: "$16,400,000",
     transactionType: "Investment Sale",
     sponsorProfile: "Family Office",
-    brokerSlugs: ["sarah-chen", "maya-patel"],
+    brokerSlugs: ["miles-cortez", "nate-solomon"],
     toneClass: "from-[#1a3a6b] to-[#0a1226]",
   },
   {
@@ -153,7 +153,7 @@ export const closed: ClosedDeal[] = [
     dealSize: "$98,500,000",
     transactionType: "Investment Sale",
     sponsorProfile: "REIT",
-    brokerSlugs: ["luke-thompson", "patrick-graham"],
+    brokerSlugs: ["luke-thompson", "miles-cortez"],
     toneClass: "from-[#0a1226] to-[#1a3a6b]",
   },
   {
@@ -169,7 +169,7 @@ export const closed: ClosedDeal[] = [
     dealSize: "$12,100,000",
     transactionType: "Investment Sale",
     sponsorProfile: "Developer",
-    brokerSlugs: ["david-okafor", "nate-solomon"],
+    brokerSlugs: ["luke-thompson", "nate-solomon"],
     toneClass: "from-[#0066cc] to-[#1a56db]",
   },
   {
@@ -185,7 +185,7 @@ export const closed: ClosedDeal[] = [
     dealSize: "$8,600,000",
     transactionType: "Investment Sale",
     sponsorProfile: "Corporate",
-    brokerSlugs: ["marcus-reyes", "maya-patel"],
+    brokerSlugs: ["miles-cortez", "nate-solomon"],
     toneClass: "from-[#1d1d1f] to-[#2c2c2e]",
   },
   {
@@ -201,7 +201,7 @@ export const closed: ClosedDeal[] = [
     dealSize: "$17,900,000",
     transactionType: "Investment Sale",
     sponsorProfile: "Family Office",
-    brokerSlugs: ["sarah-chen", "david-okafor"],
+    brokerSlugs: ["miles-cortez", "nate-solomon"],
     toneClass: "from-[#0e1a34] to-[#1a3a6b]",
   },
   {
@@ -217,7 +217,7 @@ export const closed: ClosedDeal[] = [
     dealSize: "$24,600,000",
     transactionType: "Equity Placement",
     sponsorProfile: "PE",
-    brokerSlugs: ["patrick-graham", "elena-park"],
+    brokerSlugs: ["luke-thompson", "miles-cortez"],
     toneClass: "from-[#1a3a6b] to-[#0066cc]",
   },
   {
@@ -233,7 +233,7 @@ export const closed: ClosedDeal[] = [
     dealSize: "Confidential",
     transactionType: "Recapitalization",
     sponsorProfile: "REIT",
-    brokerSlugs: ["luke-thompson", "marcus-reyes"],
+    brokerSlugs: ["luke-thompson", "miles-cortez"],
     toneClass: "from-[#0a1226] to-[#1a3a6b]",
   },
 
@@ -253,7 +253,7 @@ export const closed: ClosedDeal[] = [
     dealSize: "$90,000,000",
     transactionType: "Debt Placement",
     sponsorProfile: "PE",
-    brokerSlugs: ["luke-thompson", "elena-park"],
+    brokerSlugs: ["luke-thompson", "miles-cortez"],
     toneClass: "from-[#1a3a6b] to-[#0066cc]",
   },
   {
@@ -269,7 +269,7 @@ export const closed: ClosedDeal[] = [
     dealSize: "$10,850,000",
     transactionType: "Debt Placement",
     sponsorProfile: "Family Office",
-    brokerSlugs: ["luke-thompson", "patrick-graham"],
+    brokerSlugs: ["luke-thompson", "miles-cortez"],
     toneClass: "from-[#0e1a34] to-[#1a3a6b]",
   },
   {
@@ -285,7 +285,7 @@ export const closed: ClosedDeal[] = [
     dealSize: "$100,000,000",
     transactionType: "Debt Placement",
     sponsorProfile: "Developer",
-    brokerSlugs: ["luke-thompson", "elena-park"],
+    brokerSlugs: ["luke-thompson", "miles-cortez"],
     toneClass: "from-[#0a1226] to-[#1a3a6b]",
   },
   {
@@ -301,7 +301,7 @@ export const closed: ClosedDeal[] = [
     dealSize: "$26,000,000",
     transactionType: "Debt Placement",
     sponsorProfile: "Developer",
-    brokerSlugs: ["luke-thompson", "patrick-graham"],
+    brokerSlugs: ["luke-thompson", "miles-cortez"],
     toneClass: "from-[#1d1d1f] to-[#2c2c2e]",
   },
   {
@@ -317,7 +317,7 @@ export const closed: ClosedDeal[] = [
     dealSize: "$200,000,000",
     transactionType: "Debt Placement",
     sponsorProfile: "PE",
-    brokerSlugs: ["luke-thompson", "elena-park"],
+    brokerSlugs: ["luke-thompson", "miles-cortez"],
     toneClass: "from-[#0066cc] to-[#1a56db]",
   },
 ];

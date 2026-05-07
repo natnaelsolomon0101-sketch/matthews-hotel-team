@@ -25,6 +25,8 @@ const TOPICS: Exclude<Topic, "">[] = [
 const labelClass =
   "block text-[12px] uppercase tracking-[0.01em] text-[#86868b] mb-2";
 
+type SubmitState = "idle" | "submitting" | "success" | "error";
+
 export function ContactForm() {
   const [firstName, setFirstName] = React.useState("");
   const [lastName, setLastName] = React.useState("");
@@ -32,11 +34,14 @@ export function ContactForm() {
   const [phone, setPhone] = React.useState("");
   const [topic, setTopic] = React.useState<Topic>("");
   const [message, setMessage] = React.useState("");
-  const [submitted, setSubmitted] = React.useState(false);
+  const [state, setState] = React.useState<SubmitState>("idle");
+  const [errorMsg, setErrorMsg] = React.useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
+  /**
+   * Build a mailto fallback URL — used when HubSpot is not configured on
+   * the deployment, or when the API route returns an error.
+   */
+  const mailtoFallback = React.useCallback(() => {
     const subject = `Hotel Team inquiry — ${topic}`;
     const lines = [
       `Name: ${firstName} ${lastName}`.trim(),
@@ -47,15 +52,68 @@ export function ContactForm() {
       "Message:",
       message,
     ].filter((line) => line !== null);
-
     const body = lines.join("\n");
-    const href = `mailto:hotelteam@matthews.com?subject=${encodeURIComponent(
+    return `mailto:hotelteam@matthews.com?subject=${encodeURIComponent(
       subject,
     )}&body=${encodeURIComponent(body)}`;
+  }, [firstName, lastName, email, phone, topic, message]);
 
-    setSubmitted(true);
-    window.location.href = href;
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (state === "submitting") return;
+
+    setState("submitting");
+    setErrorMsg(null);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          firstName,
+          lastName,
+          email,
+          phone,
+          topic,
+          message,
+          pageUri:
+            typeof window !== "undefined" ? window.location.href : undefined,
+          pageName:
+            typeof document !== "undefined" ? document.title : undefined,
+        }),
+      });
+
+      if (res.ok) {
+        setState("success");
+        return;
+      }
+
+      // 503 with code "HUBSPOT_NOT_CONFIGURED" → fall through to mailto so
+      // the user still has a working path while ENV is being wired.
+      const data = (await res.json().catch(() => ({}))) as {
+        code?: string;
+        error?: string;
+      };
+      if (res.status === 503 && data.code === "HUBSPOT_NOT_CONFIGURED") {
+        window.location.href = mailtoFallback();
+        setState("success");
+        return;
+      }
+
+      setState("error");
+      setErrorMsg(
+        data.error ||
+          "Something went wrong. Email hotelteam@matthews.com directly.",
+      );
+    } catch {
+      // Network failure — open mailto as a hard fallback.
+      window.location.href = mailtoFallback();
+      setState("success");
+    }
   };
+
+  const submitted = state === "success";
+  const submitting = state === "submitting";
 
   return (
     <Reveal delay={0.05}>
@@ -171,9 +229,20 @@ export function ContactForm() {
           />
         </div>
 
+        {state === "error" && errorMsg && (
+          <div
+            role="alert"
+            className="mt-5 rounded-2xl bg-[#ff3b30]/8 p-4 text-[14px] leading-[1.5] tracking-[-0.014em] text-[#ff3b30]"
+          >
+            {errorMsg}
+          </div>
+        )}
+
         <div className="mt-7 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-[12px] tracking-[-0.01em] text-[color:var(--text-secondary)]">
-            We&rsquo;ll never share your contact info.
+            {submitted
+              ? "Thanks. We respond within 24 hours."
+              : "We’ll never share your contact info."}
           </p>
           {submitted ? (
             <Pill
@@ -188,9 +257,14 @@ export function ContactForm() {
               </span>
             </Pill>
           ) : (
-            <Pill variant="primary" type="submit" ariaLabel="Send message">
+            <Pill
+              variant="primary"
+              type="submit"
+              ariaLabel={submitting ? "Sending" : "Send message"}
+              className={submitting ? "opacity-70" : undefined}
+            >
               <span className="inline-flex items-center gap-1.5">
-                Send message
+                {submitting ? "Sending…" : "Send message"}
                 <ChevronRight className="h-[14px] w-[14px]" strokeWidth={1.75} aria-hidden="true" />
               </span>
             </Pill>
