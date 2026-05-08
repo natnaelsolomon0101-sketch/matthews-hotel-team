@@ -74,6 +74,11 @@ export type TeamMember = {
   education: string[];
   /** Industry memberships and licenses (RECA, ULI, TX RE License, etc.). */
   affiliations?: string[];
+  /**
+   * Editorial fact rows for the team grid card (Waterloo-style profile).
+   * Each row renders as `LABEL | value`. 2-3 rows per broker. Keep short.
+   */
+  factRows?: { label: string; value: string }[];
   /** 5–10 named deals, oldest to newest or newest to oldest. */
   topDeals: NamedDeal[];
   languages?: string[];
@@ -119,6 +124,23 @@ In 2019, Luke spearheaded a joint venture to develop a 276-key, dual-branded Hil
       "Asian American Hotel Owners Association (AAHOA)",
       "Texas Real Estate Commission, License No. 593889",
     ],
+    factRows: [
+      {
+        label: "Discipline",
+        value:
+          "Hospitality capital markets. Loan origination, structured finance, asset sales.",
+      },
+      {
+        label: "Background",
+        value:
+          "Matterhorn Capital Partners, HVS investment banking, co-founder of F10 Hotels.",
+      },
+      {
+        label: "Roots",
+        value:
+          "B.A. Communications & Business, Baylor. Fifteen+ years in hotel real estate.",
+      },
+    ],
     topDeals: [],
   },
   {
@@ -143,6 +165,23 @@ Earlier in his career, Miles co-founded Aventine Capital Partners, where he play
     last12Volume: "Confirm",
     designations: [],
     education: [],
+    factRows: [
+      {
+        label: "Discipline",
+        value:
+          "Hospitality capital markets. Debt and equity placement, recapitalizations, structured finance.",
+      },
+      {
+        label: "Background",
+        value:
+          "Founder of SparkPoint (Denver merchant bank). F10 Hotels institutional desk. Co-founder, Aventine Capital Partners.",
+      },
+      {
+        label: "Track record",
+        value:
+          "$500M+ placed at F10 including a Blackstone-portfolio mezzanine. Pivotal role in the $1B+ Mayakoba resort.",
+      },
+    ],
     topDeals: [],
   },
   {
@@ -165,6 +204,23 @@ Earlier in his career, Miles co-founded Aventine Capital Partners, where he play
     designations: [],
     education: ["B.S., Economics, St. Edward's University"],
     affiliations: ["Texas Real Estate Commission, License No. 842300"],
+    factRows: [
+      {
+        label: "Discipline",
+        value:
+          "Acquisition and disposition of hospitality assets. Underwriting, market intelligence.",
+      },
+      {
+        label: "Background",
+        value:
+          "Hospitality investment sales at Matthews. Asset management, lease coordination, compliance, financial reconciliation.",
+      },
+      {
+        label: "Roots",
+        value:
+          "B.S. Economics, St. Edward's University. Texas Real Estate Commission license.",
+      },
+    ],
     topDeals: [],
   },
 ];

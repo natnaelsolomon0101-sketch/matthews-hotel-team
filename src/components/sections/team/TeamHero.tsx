@@ -1,28 +1,26 @@
 import * as React from "react";
-import { Eyebrow } from "@/components/ui/Eyebrow";
-import { TwoToneHeadline } from "@/components/ui/TwoToneHeadline";
 import { Reveal } from "@/components/ui/Reveal";
 
+/**
+ * Team page header. Editorial pattern from New Waterloo: tracked-uppercase
+ * section label with a horizontal rule extending right to the edge of the
+ * container. Just introduces the team. No "pick the broker" framing, no
+ * marketing-speak, no segment claims.
+ */
 export function TeamHero() {
   return (
-    <section className="bg-white py-20 lg:py-24">
-      <div className="mx-auto max-w-[1024px] px-6">
+    <section className="bg-white pt-20 lg:pt-24 pb-10">
+      <div className="mx-auto max-w-[1280px] px-6">
         <Reveal>
-          <Eyebrow>Our Team</Eyebrow>
-        </Reveal>
-        <Reveal delay={0.05}>
-          <TwoToneHeadline
-            as="h1"
-            size="section"
-            lead="The team."
-            follow="Three specialists, one hospitality desk."
-          />
-        </Reveal>
-        <Reveal delay={0.1}>
-          <p className="mt-6 max-w-[58ch] text-[17px] leading-[1.47] tracking-[-0.022em] text-[color:var(--text-tertiary)]">
-            Hospitality finance and investment sales, anchored in Austin
-            and Denver with national investor reach.
-          </p>
+          <div className="flex items-center gap-6">
+            <p className="text-[13px] font-medium uppercase tracking-[0.32em] text-[#1d1d1f] whitespace-nowrap">
+              Matthews Hotel Team
+            </p>
+            <div
+              aria-hidden="true"
+              className="h-px flex-1 bg-[#1d1d1f]/15"
+            />
+          </div>
         </Reveal>
       </div>
     </section>
