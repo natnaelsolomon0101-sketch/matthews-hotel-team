@@ -10,6 +10,7 @@ import {
   type ClosedFilterValues,
 } from "@/components/sections/closed/ClosedFilters";
 import { ClosedGrid } from "@/components/sections/closed/ClosedGrid";
+import PosterCTA from "@/components/sections/shared/PosterCTA";
 import { closed } from "@/lib/data/closed";
 
 export default function ClosedPage() {
@@ -41,6 +42,10 @@ export default function ClosedPage() {
         <section className="bg-[color:var(--surface-elevated)] py-16 lg:py-24">
           <ClosedGrid filters={filters} />
         </section>
+        <PosterCTA
+          lead="Ready for your closing."
+          follow="Start the 24-week conversation."
+        />
       </main>
       <SiteFooter />
     </>

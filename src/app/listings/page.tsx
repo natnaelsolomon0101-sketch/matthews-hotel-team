@@ -11,6 +11,7 @@ import {
   type ListingFilterValues,
 } from "@/components/sections/listings/ListingFilters";
 import { ListingsGrid } from "@/components/sections/listings/ListingsGrid";
+import PosterCTA from "@/components/sections/shared/PosterCTA";
 import { listings } from "@/lib/data/listings";
 
 export default function ListingsPage() {
@@ -45,6 +46,10 @@ export default function ListingsPage() {
         </section>
 
         <ListingsGrid listings={filtered} />
+        <PosterCTA
+          lead="Don't see your asset?"
+          follow="Bring it to market."
+        />
       </main>
       <SiteFooter />
     </>

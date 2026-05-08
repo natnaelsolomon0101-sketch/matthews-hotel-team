@@ -3,7 +3,7 @@ import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
 import ProcessHero from "@/components/sections/process/ProcessHero";
 import ProcessTimeline from "@/components/sections/process/ProcessTimeline";
-import ProcessCTA from "@/components/sections/process/ProcessCTA";
+import PosterCTA from "@/components/sections/shared/PosterCTA";
 
 export const metadata: Metadata = {
   title: "Transaction Process — Matthews Hotel Team",
@@ -18,7 +18,7 @@ export default function ProcessPage() {
       <main>
         <ProcessHero />
         <ProcessTimeline />
-        <ProcessCTA />
+        <PosterCTA />
       </main>
       <SiteFooter />
     </>
