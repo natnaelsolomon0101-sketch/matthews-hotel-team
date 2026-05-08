@@ -36,9 +36,9 @@ export function TeamCard({ member }: TeamCardProps) {
         aria-label={`View bio for ${member.name}`}
         className="block focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1a3a6b]"
       >
-        {/* Square portrait, grayscale-on-rest, color-on-hover. Subtle but
-            keeps the editorial feel without being severe. */}
-        <div className="relative aspect-square w-full overflow-hidden bg-[#f5f5f7] grayscale transition-[filter] duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:grayscale-0">
+        {/* Square portrait. Color photos to match the rest of the site
+            (no grayscale filter). */}
+        <div className="relative aspect-square w-full overflow-hidden bg-[#f5f5f7]">
           <MonogramCover
             initials={initials(member.name)}
             tone={member.cover.tone}
