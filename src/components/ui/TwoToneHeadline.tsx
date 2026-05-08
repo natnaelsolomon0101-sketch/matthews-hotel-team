@@ -19,7 +19,11 @@ const sizeClass: Record<Size, string> = {
     "font-semibold text-[clamp(32px,3vw,48px)] leading-[1.08] tracking-[-0.003em]",
   subsection:
     "font-semibold text-[clamp(28px,2.4vw,40px)] leading-[1.1] tracking-[0em]",
-  hero: "font-semibold text-[clamp(48px,7vw,96px)] leading-[1.05] tracking-[-0.015em]",
+  // Hero scale ships at light weight. Luxury hospitality brands (Hunter,
+  // Sotheby's, etc.) ship display type at 100-300 weights, never 600 — thin
+  // reads editorial and confident at 96px while bold reads tech-startup.
+  // Slightly tighter tracking compensates for the reduced visual weight.
+  hero: "font-light text-[clamp(48px,7vw,96px)] leading-[1.05] tracking-[-0.025em]",
 };
 
 export function TwoToneHeadline({
