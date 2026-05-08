@@ -12,10 +12,17 @@ import { cn } from "@/lib/utils";
 interface NavItem {
   href: string;
   label: string;
+  /** External nav target (opens new tab). Detected from absolute URL. */
+  external?: boolean;
 }
 
 const NAV_ITEMS: NavItem[] = [
   { href: "/listings", label: "Listings" },
+  {
+    href: "https://www.matthewsratesheet.info",
+    label: "Rate Sheet",
+    external: true,
+  },
   { href: "/closed", label: "Closed" },
   { href: "/team", label: "Team" },
   { href: "/insights", label: "Insights" },
@@ -87,18 +94,27 @@ export function SiteHeader() {
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-7">
-            {NAV_ITEMS.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={cn(
-                  "text-[12px] tracking-[-0.01em] transition-colors duration-300 hover:opacity-80",
-                  textColor,
-                )}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {NAV_ITEMS.map((item) => {
+              const linkClass = cn(
+                "text-[12px] tracking-[-0.01em] transition-colors duration-300 hover:opacity-80",
+                textColor,
+              );
+              return item.external ? (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={linkClass}
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <Link key={item.href} href={item.href} className={linkClass}>
+                  {item.label}
+                </Link>
+              );
+            })}
           </nav>
 
           {/* Right side: pill + mobile menu */}
@@ -141,16 +157,31 @@ export function SiteHeader() {
           >
             <div className="mx-auto max-w-[1024px] px-6 py-4">
               <nav className="flex flex-col">
-                {NAV_ITEMS.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setOpen(false)}
-                    className="py-3 text-[17px] text-[color:var(--text-primary)] border-b border-[color:var(--divider)] last:border-b-0"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
+                {NAV_ITEMS.map((item) => {
+                  const drawerLinkClass =
+                    "py-3 text-[17px] text-[color:var(--text-primary)] border-b border-[color:var(--divider)] last:border-b-0";
+                  return item.external ? (
+                    <a
+                      key={item.href}
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setOpen(false)}
+                      className={drawerLinkClass}
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={() => setOpen(false)}
+                      className={drawerLinkClass}
+                    >
+                      {item.label}
+                    </Link>
+                  );
+                })}
               </nav>
               <div className="mt-4">
                 <Pill variant="primary" size="default" href="/contact" className="w-full">
