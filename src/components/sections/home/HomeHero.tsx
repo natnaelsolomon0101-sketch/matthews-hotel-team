@@ -56,8 +56,8 @@ export function HomeHero() {
               as="h1"
               size="hero"
               tone="dark"
-              lead="Hospitality investment sales."
-              follow="Texas. National platform."
+              lead="Hospitality finance and sales."
+              follow="Nationwide."
             />
           </motion.div>
 
