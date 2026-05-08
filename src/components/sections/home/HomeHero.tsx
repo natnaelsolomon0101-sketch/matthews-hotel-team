@@ -65,8 +65,8 @@ export function HomeHero() {
             {...heroBody}
             className="mt-6 max-w-[640px] text-[19px] leading-[1.42] tracking-[0.012em] text-[color:var(--text-on-dark-secondary)]"
           >
-            National hotel investment sales backed by Matthews Real Estate
-            Investment Services. $84.3 billion closed across 33,500+
+            Hotel finance and investment sales, backed by Matthews Real
+            Estate Investment Services. $84.3 billion closed across 33,500+
             transactions.
           </motion.p>
 
