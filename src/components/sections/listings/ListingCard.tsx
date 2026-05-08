@@ -13,14 +13,7 @@ export interface ListingCardProps {
 
 export function ListingCard({ listing, className }: ListingCardProps) {
   const isUponRequest = /upon request/i.test(listing.askingPrice);
-  // When a listing has a hosted OM, clicking the card jumps straight to it
-  // (new tab) instead of the internal detail page. Same card design either
-  // way — only the click target changes.
-  const cardHref = listing.omUrl ?? `/listings/${listing.slug}`;
-  const isExternal = Boolean(listing.omUrl);
-  const externalProps = isExternal
-    ? { target: "_blank" as const, rel: "noopener noreferrer" }
-    : {};
+  const detailHref = `/listings/${listing.slug}`;
 
   return (
     <article
@@ -30,100 +23,52 @@ export function ListingCard({ listing, className }: ListingCardProps) {
       )}
     >
       {/* Cover — real photo when available, gradient fallback otherwise */}
-      {isExternal ? (
-        <a
-          href={cardHref}
-          {...externalProps}
-          className="block relative aspect-[16/10] w-full overflow-hidden"
-          aria-label={`${listing.name}, ${listing.city}, ${listing.state}`}
-        >
-          {listing.photo ? (
-            <div className="absolute inset-0 transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-[1.04]">
-              <Image
-                src={listing.photo}
-                alt={listing.name}
-                fill
-                quality={88}
-                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                className="object-cover"
-              />
-            </div>
-          ) : (
-            <div
-              className={cn(
-                "absolute inset-0 bg-gradient-to-br transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-[1.04]",
-                listing.toneClass,
-              )}
-              aria-hidden="true"
+      <Link
+        href={detailHref}
+        className="block relative aspect-[16/10] w-full overflow-hidden"
+        aria-label={`${listing.name}, ${listing.city}, ${listing.state}`}
+      >
+        {listing.photo ? (
+          <div className="absolute inset-0 transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-[1.04]">
+            <Image
+              src={listing.photo}
+              alt={listing.name}
+              fill
+              quality={88}
+              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+              className="object-cover"
             />
-          )}
-          <div className="absolute top-3 left-3">
-            <StatusBadge status={listing.status} size="sm" />
           </div>
-          <div className="absolute top-3 right-3">
-            <span className="rounded-full bg-white/90 backdrop-blur px-2.5 py-1 text-[10px] uppercase tracking-[0.18em] font-medium text-[#1d1d1f]">
-              {listing.brand}
-            </span>
-          </div>
-        </a>
-      ) : (
-        <Link
-          href={cardHref}
-          className="block relative aspect-[16/10] w-full overflow-hidden"
-          aria-label={`${listing.name}, ${listing.city}, ${listing.state}`}
-        >
-          {listing.photo ? (
-            <div className="absolute inset-0 transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-[1.04]">
-              <Image
-                src={listing.photo}
-                alt={listing.name}
-                fill
-                quality={88}
-                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                className="object-cover"
-              />
-            </div>
-          ) : (
-            <div
-              className={cn(
-                "absolute inset-0 bg-gradient-to-br transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-[1.04]",
-                listing.toneClass,
-              )}
-              aria-hidden="true"
-            />
-          )}
-          <div className="absolute top-3 left-3">
-            <StatusBadge status={listing.status} size="sm" />
-          </div>
-          <div className="absolute top-3 right-3">
-            <span className="rounded-full bg-white/90 backdrop-blur px-2.5 py-1 text-[10px] uppercase tracking-[0.18em] font-medium text-[#1d1d1f]">
-              {listing.brand}
-            </span>
-          </div>
-        </Link>
-      )}
+        ) : (
+          <div
+            className={cn(
+              "absolute inset-0 bg-gradient-to-br transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-[1.04]",
+              listing.toneClass,
+            )}
+            aria-hidden="true"
+          />
+        )}
+        <div className="absolute top-3 left-3">
+          <StatusBadge status={listing.status} size="sm" />
+        </div>
+        <div className="absolute top-3 right-3">
+          <span className="rounded-full bg-white/90 backdrop-blur px-2.5 py-1 text-[10px] uppercase tracking-[0.18em] font-medium text-[#1d1d1f]">
+            {listing.brand}
+          </span>
+        </div>
+      </Link>
 
       <div className="p-6">
         <p className="text-[12px] tracking-[-0.01em] text-[#86868b] mb-2">
           {listing.city}, {listing.state}
         </p>
         <h3 className="font-semibold text-[18px] tracking-[-0.022em] text-[#1d1d1f] line-clamp-2">
-          {isExternal ? (
-            <a
-              href={cardHref}
-              {...externalProps}
-              className="after:absolute after:inset-0 after:content-['']"
-            >
-              {listing.name}
-            </a>
-          ) : (
-            <Link
-              href={cardHref}
-              className="after:absolute after:inset-0 after:content-['']"
-            >
-              {listing.name}
-            </Link>
-          )}
+          <Link
+            href={detailHref}
+            className="after:absolute after:inset-0 after:content-['']"
+          >
+            {listing.name}
+          </Link>
         </h3>
 
         <div className="mt-5 hairline" />
@@ -155,7 +100,7 @@ export function ListingCard({ listing, className }: ListingCardProps) {
         </div>
 
         <div className="mt-5 relative z-10">
-          <GhostLink href={cardHref}>View listing</GhostLink>
+          <GhostLink href={detailHref}>View listing</GhostLink>
         </div>
       </div>
     </article>
