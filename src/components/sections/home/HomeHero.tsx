@@ -35,18 +35,9 @@ export function HomeHero() {
 
       <div className="relative mx-auto flex min-h-screen max-w-[1024px] flex-col items-stretch justify-center px-6 py-32 lg:py-40">
         <div className="flex w-full flex-col">
-          {/* Editorial wordmark above the eyebrow, magazine column header */}
           <motion.p
             {...heroBody}
-            className="text-[14px] font-medium uppercase tracking-[0.4em] text-white/40"
-            style={{ fontFamily: "var(--font-serif)" }}
-          >
-            Matthews
-          </motion.p>
-
-          <motion.p
-            {...heroBody}
-            className="mt-5 text-[12px] font-medium uppercase tracking-[0.22em] text-white/60"
+            className="text-[12px] font-medium uppercase tracking-[0.22em] text-white/60"
           >
             Matthews Hotel Team
           </motion.p>
