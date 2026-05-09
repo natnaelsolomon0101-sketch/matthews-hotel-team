@@ -22,8 +22,8 @@ export function ContactHero() {
           <p className="mt-6 max-w-[58ch] text-[17px] leading-[1.47] tracking-[-0.022em] text-[color:var(--text-secondary)]">
             Whether you&rsquo;re selling a hotel and want a confidential
             valuation, acquiring and need first look at off-market inventory, or
-            sizing up a market and want hands-on intelligence on supply, ADR, and
-            cap rates &mdash; the Matthews hospitality team is one conversation
+            sizing up a market and want hands-on intelligence on supply, ADR,
+            and cap rates, the Matthews hospitality team is one conversation
             away. Pick the channel that fits and we&rsquo;ll route you to the
             right broker.
           </p>
