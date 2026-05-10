@@ -38,7 +38,7 @@ export default function ListingsPage() {
   return (
     <>
       <SiteHeader />
-      <main className="pt-14">
+      <main className="pt-16">
         <ListingsHero />
 
         {availableSegments.length > 1 && (

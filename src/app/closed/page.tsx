@@ -46,7 +46,7 @@ export default function ClosedPage() {
   return (
     <>
       <SiteHeader />
-      <main className="pt-14">
+      <main className="pt-16">
         <ClosedHero />
         {availableSegments.length > 1 && (
           <section className="bg-white">

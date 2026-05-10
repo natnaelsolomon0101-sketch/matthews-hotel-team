@@ -15,7 +15,7 @@ export default function ContactPage() {
   return (
     <>
       <SiteHeader />
-      <main className="pt-14">
+      <main className="pt-16">
         <ContactHero />
         <section className="bg-white py-16 lg:py-20">
           <div className="mx-auto grid max-w-[1024px] grid-cols-1 gap-10 px-6 lg:grid-cols-[1fr_1.4fr] lg:gap-14">

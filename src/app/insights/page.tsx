@@ -19,7 +19,7 @@ export default function InsightsPage() {
   return (
     <>
       <SiteHeader />
-      <main className="pt-14">
+      <main className="pt-16">
         <InsightsHero featured={featured} />
         <InsightsArchive items={archive} />
       </main>

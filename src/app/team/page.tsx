@@ -28,7 +28,7 @@ export default function TeamPage() {
   return (
     <>
       <SiteHeader />
-      <main className="pt-14">
+      <main className="pt-16">
         <TeamHero />
         {team.length > 4 && (
           <section className="bg-white border-b border-[#d2d2d7]">
