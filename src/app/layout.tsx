@@ -28,18 +28,144 @@ const fraunces = Fraunces({
   display: "swap",
 });
 
+const SITE_URL = "https://matthewshotelmarkets.com";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hotel-team-site.vercel.app"),
-  title: "Matthews Hotel Team, National Hospitality Investment Sales",
-  description:
-    "Matthews hospitality team. National hotel investment sales, select-service, full-service, resort, lifestyle. Austin, Texas.",
-  icons: { icon: "/favicon.ico" },
-  openGraph: {
-    title: "Matthews Hotel Team, National Hospitality Investment Sales",
-    description:
-      "Hotel investment sales backed by Matthews Real Estate Investment Services. 30+ offices, 1M+ investors, $84.3B closed.",
-    type: "website",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default:
+      "Matthews Hotel Markets | National Hotel Investment Sales & Brokerage",
+    template: "%s | Matthews Hotel Markets",
   },
+  description:
+    "National hotel brokerage: investment sales, capital markets, and acquisition advisory. Select-service, full-service, resort, and boutique hotels. $84.3B closed across 30+ offices.",
+  applicationName: "Matthews Hotel Markets",
+  keywords: [
+    "hotel broker",
+    "hotel investment sales",
+    "sell my hotel",
+    "hospitality brokerage",
+    "hotel financing",
+    "hotel for sale",
+    "select service hotel",
+    "boutique hotel for sale",
+    "luxury resort for sale",
+    "hospitality capital markets",
+    "hotel cap rates",
+    "Matthews Real Estate Investment Services",
+  ],
+  authors: [{ name: "Matthews Hotel Markets", url: SITE_URL }],
+  creator: "Matthews Hotel Markets",
+  publisher: "Matthews Real Estate Investment Services",
+  category: "Real Estate",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/images/matthews-logo.jpg",
+  },
+  alternates: {
+    canonical: SITE_URL,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    siteName: "Matthews Hotel Markets",
+    title:
+      "Matthews Hotel Markets | National Hotel Investment Sales & Brokerage",
+    description:
+      "Hotel investment sales, capital markets, and acquisition advisory. Active listings, closed transactions, and quarterly outlooks from a national hospitality brokerage team.",
+    url: SITE_URL,
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Matthews Hotel Markets | National Hotel Investment Sales & Brokerage",
+    description:
+      "Hotel investment sales, capital markets, and acquisition advisory. Active listings, closed transactions, and quarterly outlooks.",
+  },
+};
+
+// JSON-LD knowledge graph. RealEstateAgent (subtype of LocalBusiness)
+// inherits local-pack eligibility while signaling industry specificity;
+// chosen over plain Organization for that reason.
+const ORG_JSONLD = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "RealEstateAgent",
+      "@id": `${SITE_URL}/#org`,
+      name: "Matthews Hotel Markets",
+      alternateName: "Matthews Hotel Team",
+      url: SITE_URL,
+      logo: `${SITE_URL}/images/matthews-logo.jpg`,
+      image: `${SITE_URL}/images/hero-landscape.jpg`,
+      description:
+        "National hotel investment sales, capital markets, and acquisition advisory. Select-service, full-service, resort, and boutique hotels.",
+      parentOrganization: {
+        "@type": "Organization",
+        name: "Matthews Real Estate Investment Services",
+        url: "https://www.matthews.com",
+      },
+      areaServed: { "@type": "Country", name: "United States" },
+      knowsAbout: [
+        "Hotel Investment Sales",
+        "Hospitality Brokerage",
+        "Hotel Capital Markets",
+        "Select-Service Hotels",
+        "Full-Service Hotels",
+        "Boutique Hotels",
+        "Resort Sales",
+        "Hotel Valuation",
+        "Hotel Cap Rates",
+      ],
+      sameAs: [
+        "https://www.linkedin.com/company/matthews-hotel-markets/",
+        "https://www.matthews.com",
+      ],
+      address: [
+        {
+          "@type": "PostalAddress",
+          "@id": `${SITE_URL}/#hq`,
+          streetAddress: "515 Congress Ave., Suite 2410",
+          addressLocality: "Austin",
+          addressRegion: "TX",
+          postalCode: "78701",
+          addressCountry: "US",
+        },
+        {
+          "@type": "PostalAddress",
+          "@id": `${SITE_URL}/#denver`,
+          addressLocality: "Denver",
+          addressRegion: "CO",
+          addressCountry: "US",
+        },
+      ],
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "sales",
+        email: "hotelteam@matthews.com",
+        areaServed: "US",
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      url: SITE_URL,
+      name: "Matthews Hotel Markets",
+      publisher: { "@id": `${SITE_URL}/#org` },
+      inLanguage: "en-US",
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -52,6 +178,12 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${fraunces.variable} antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(ORG_JSONLD) }}
+        />
+      </head>
       <body className="min-h-screen bg-[color:var(--surface)] text-[color:var(--text-primary)]">
         {children}
       </body>
