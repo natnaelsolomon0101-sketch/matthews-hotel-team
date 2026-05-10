@@ -1,0 +1,113 @@
+{
+  "_instructions": "Create at https://www.wikidata.org/wiki/Special:NewItem. Wikidata Notability has a lower bar than Wikipedia — the firm exists, is described in multiple sources, and is structurally needed for sameAs references. Submit even before the Wikipedia article is accepted.",
+
+  "label": {
+    "en": "Matthews Hotel Markets"
+  },
+  "description": {
+    "en": "Hospitality vertical of Matthews Real Estate Investment Services, specializing in hotel investment sales and hospitality capital markets in the United States"
+  },
+  "aliases": {
+    "en": ["Matthews Hotel Team"]
+  },
+  "claims": [
+    {
+      "property": "P31",
+      "property_label": "instance of",
+      "value": "Q1058914",
+      "value_label": "subsidiary",
+      "qualifier": "Use Q4830453 (business) if treated as standalone vs subsidiary"
+    },
+    {
+      "property": "P452",
+      "property_label": "industry",
+      "value_label": "commercial real estate",
+      "value": "Q12753617"
+    },
+    {
+      "property": "P452",
+      "property_label": "industry (secondary)",
+      "value_label": "hospitality industry",
+      "value": "Q31591"
+    },
+    {
+      "property": "P159",
+      "property_label": "headquarters location",
+      "value_label": "Austin, Texas",
+      "value": "Q16559"
+    },
+    {
+      "property": "P276",
+      "property_label": "location",
+      "value_label": "Austin, Texas",
+      "value": "Q16559"
+    },
+    {
+      "property": "P276",
+      "property_label": "location (secondary)",
+      "value_label": "Denver, Colorado",
+      "value": "Q16554"
+    },
+    {
+      "property": "P749",
+      "property_label": "parent organization",
+      "value_label": "Matthews Real Estate Investment Services",
+      "value": "{LINK_TO_MATTHEWS_REIS_Q_ITEM_AFTER_CREATION}"
+    },
+    {
+      "property": "P571",
+      "property_label": "inception",
+      "value": "2024-01-01",
+      "qualifier": "TODO: confirm exact founding month with Nate / Luke"
+    },
+    {
+      "property": "P1813",
+      "property_label": "short name",
+      "value": "Matthews Hotel Markets"
+    },
+    {
+      "property": "P1448",
+      "property_label": "official name",
+      "value": "Matthews Hotel Markets"
+    },
+    {
+      "property": "P856",
+      "property_label": "official website",
+      "value": "https://matthewshotelmarkets.com"
+    },
+    {
+      "property": "P1056",
+      "property_label": "product or material produced",
+      "values": [
+        "Hotel investment sales",
+        "Hospitality capital markets advisory",
+        "Hotel acquisition advisory"
+      ]
+    },
+    {
+      "property": "P2541",
+      "property_label": "operating area",
+      "value_label": "United States",
+      "value": "Q30"
+    },
+    {
+      "property": "P973",
+      "property_label": "described at URL",
+      "values": [
+        "https://www.linkedin.com/company/matthews-hotel-markets/",
+        "https://matthewshotelmarkets.com",
+        "https://www.matthews.com"
+      ]
+    },
+    {
+      "property": "P4264",
+      "property_label": "LinkedIn company ID",
+      "value": "matthews-hotel-markets"
+    }
+  ],
+
+  "sitelinks": {
+    "_note": "Add after the English Wikipedia article is accepted",
+    "enwiki": "Matthews_Hotel_Markets"
+  }
+}

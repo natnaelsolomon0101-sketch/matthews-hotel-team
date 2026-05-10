@@ -1,0 +1,121 @@
+{
+  "_instructions": "Create at https://www.wikidata.org/wiki/Special:NewItem. Submit before the Wikipedia article is published — Wikidata's notability bar is lower. The Q-item gives Matthews REIS a knowledge-graph entity that AI engines can reference even before Wikipedia accepts the article.",
+
+  "label": {
+    "en": "Matthews Real Estate Investment Services"
+  },
+  "description": {
+    "en": "American commercial real estate investment services firm headquartered in Calabasas, California, founded in 2015 by Kyle Matthews"
+  },
+  "aliases": {
+    "en": ["Matthews REIS", "Matthews™", "Matthews CRE"]
+  },
+  "claims": [
+    {
+      "property": "P31",
+      "property_label": "instance of",
+      "value_label": "business",
+      "value": "Q4830453"
+    },
+    {
+      "property": "P452",
+      "property_label": "industry",
+      "value_label": "commercial real estate",
+      "value": "Q12753617"
+    },
+    {
+      "property": "P159",
+      "property_label": "headquarters location",
+      "value_label": "Calabasas, California",
+      "value": "Q165942"
+    },
+    {
+      "property": "P17",
+      "property_label": "country",
+      "value_label": "United States of America",
+      "value": "Q30"
+    },
+    {
+      "property": "P571",
+      "property_label": "inception",
+      "value": "2015",
+      "qualifier": "TODO: confirm exact founding date with Nate"
+    },
+    {
+      "property": "P169",
+      "property_label": "chief executive officer",
+      "value_label": "Kyle Matthews",
+      "value": "{KYLE_MATTHEWS_Q_ITEM_IF_CREATED}"
+    },
+    {
+      "property": "P112",
+      "property_label": "founded by",
+      "value_label": "Kyle Matthews",
+      "value": "{KYLE_MATTHEWS_Q_ITEM_IF_CREATED}"
+    },
+    {
+      "property": "P1813",
+      "property_label": "short name",
+      "value": "Matthews"
+    },
+    {
+      "property": "P1448",
+      "property_label": "official name",
+      "value": "Matthews Real Estate Investment Services, LLC"
+    },
+    {
+      "property": "P856",
+      "property_label": "official website",
+      "value": "https://www.matthews.com"
+    },
+    {
+      "property": "P527",
+      "property_label": "has part(s)",
+      "values": [
+        {
+          "value_label": "Matthews Hotel Markets",
+          "value": "{MATTHEWS_HOTEL_MARKETS_Q_ITEM_AFTER_CREATION}"
+        }
+      ]
+    },
+    {
+      "property": "P1056",
+      "property_label": "product or material produced",
+      "values": [
+        "Commercial real estate investment sales",
+        "Commercial real estate capital markets advisory",
+        "Hotel investment sales"
+      ]
+    },
+    {
+      "property": "P2541",
+      "property_label": "operating area",
+      "value_label": "United States",
+      "value": "Q30"
+    },
+    {
+      "property": "P973",
+      "property_label": "described at URL",
+      "values": [
+        "https://www.matthews.com",
+        "https://www.linkedin.com/company/matthewscre/",
+        "https://www.crunchbase.com/organization/matthews-real-estate-investment-services"
+      ]
+    },
+    {
+      "property": "P1320",
+      "property_label": "OpenCorporates ID",
+      "value": "TODO: look up at opencorporates.com"
+    },
+    {
+      "property": "P1278",
+      "property_label": "Legal Entity Identifier (LEI)",
+      "value": "TODO: look up at gleif.org"
+    },
+    {
+      "property": "P4264",
+      "property_label": "LinkedIn company ID",
+      "value": "matthewscre"
+    }
+  ]
+}
