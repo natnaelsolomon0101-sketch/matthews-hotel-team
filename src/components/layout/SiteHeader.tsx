@@ -160,7 +160,23 @@ export function SiteHeader() {
         </div>
       </div>
 
-      {/* Mobile drawer */}
+      {/* Mobile drawer + click-outside scrim. Scrim is rendered before the
+          drawer so the drawer's static positioning naturally stacks above. */}
+      <AnimatePresence initial={false}>
+        {open && (
+          <motion.button
+            key="drawer-scrim"
+            type="button"
+            aria-label="Close menu"
+            onClick={() => setOpen(false)}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25, ease: ease.standard }}
+            className="md:hidden fixed left-0 right-0 bottom-0 top-16 cursor-default bg-black/30"
+          />
+        )}
+      </AnimatePresence>
       <AnimatePresence initial={false}>
         {open && (
           <motion.div
@@ -169,7 +185,7 @@ export function SiteHeader() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.3, ease: ease.standard }}
-            className="md:hidden bg-white/95 backdrop-blur-xl backdrop-saturate-150 border-b border-black/[0.08]"
+            className="relative md:hidden bg-white/95 backdrop-blur-xl backdrop-saturate-150 border-b border-black/[0.08]"
           >
             <div className="mx-auto max-w-[1024px] px-6 py-4">
               <nav className="flex flex-col">
