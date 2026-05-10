@@ -389,6 +389,7 @@ export const closed: ClosedDeal[] = [
     transactionTypeLabel: "Permanent Financing",
     sponsorProfile: "Family Office",
     brokerSlugs: ["luke-thompson", "miles-cortez"],
+    photo: "/closed/resort-at-paws-up.jpg",
     toneClass: "from-[#1d1d1f] to-[#2c2c2e]",
   },
   {
