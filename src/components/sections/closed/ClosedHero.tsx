@@ -29,6 +29,7 @@ export function ClosedHero() {
         </Reveal>
         <Reveal delay={0.05}>
           <TwoToneHeadline
+            as="h1"
             size="section"
             lead="Selected closings."
             follow="Capital markets, debt placement, and investment sales."

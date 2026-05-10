@@ -24,6 +24,7 @@ export function InsightsHero({ featured }: InsightsHeroProps) {
         </Reveal>
         <Reveal delay={0.05}>
           <TwoToneHeadline
+            as="h1"
             size="section"
             lead="Quarterly outlooks, in plain English."
             follow="Cap rates, ADR, and what we're seeing on the ground."
