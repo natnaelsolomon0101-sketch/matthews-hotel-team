@@ -80,7 +80,7 @@ export function SiteFooter() {
               <h3 className="text-[13px] font-semibold tracking-[-0.01em] text-[color:var(--text-primary)] mb-4">
                 {col.heading}
               </h3>
-              <ul className="space-y-2.5">
+              <ul className="space-y-1 md:space-y-2.5">
                 {col.links.map((link) => (
                   <li key={`${col.heading}-${link.label}-${link.href}`}>
                     {link.external ? (
@@ -88,14 +88,14 @@ export function SiteFooter() {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[13px] text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)] hover:underline underline-offset-[3px] transition-colors duration-200"
+                        className="inline-flex min-h-[44px] items-center text-[14px] text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)] hover:underline underline-offset-[3px] transition-colors duration-200 md:min-h-0 md:text-[13px]"
                       >
                         {link.label}
                       </a>
                     ) : (
                       <Link
                         href={link.href}
-                        className="text-[13px] text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)] hover:underline underline-offset-[3px] transition-colors duration-200"
+                        className="inline-flex min-h-[44px] items-center text-[14px] text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)] hover:underline underline-offset-[3px] transition-colors duration-200 md:min-h-0 md:text-[13px]"
                       >
                         {link.label}
                       </Link>
