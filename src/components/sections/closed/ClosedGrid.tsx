@@ -151,9 +151,7 @@ export function ClosedGrid({ filters }: ClosedGridProps) {
       </ul>
 
       <p className="mt-12 text-center text-[12px] tracking-[-0.01em] text-[color:var(--text-tertiary)]">
-        Showing {filtered.length} of {allClosed.length} transactions. Filter to
-        narrow by year, segment, region, brand, sponsor profile, or
-        transaction type.
+        Showing {filtered.length} of {allClosed.length} transactions.
       </p>
     </div>
   );

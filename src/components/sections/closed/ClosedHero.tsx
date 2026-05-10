@@ -39,8 +39,7 @@ export function ClosedHero() {
         <Reveal delay={0.1}>
           <p className="mt-6 max-w-[640px] text-[19px] leading-[1.42] tracking-[0.012em] text-[#86868b]">
             A representative slice of recent hospitality transactions across
-            the team. Filter by year, segment, region, brand, sponsor, or
-            transaction type, the same way buyers think.
+            the team.
           </p>
         </Reveal>
 
