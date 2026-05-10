@@ -14,6 +14,8 @@ export function generateStaticParams() {
   return team.map((m) => ({ slug: m.slug }));
 }
 
+const SITE_URL = "https://matthewshotelmarkets.com";
+
 export async function generateMetadata({
   params,
 }: {
@@ -21,12 +23,28 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const member = team.find((m) => m.slug === slug);
-  if (!member) return { title: "Team, Matthews Hotel Team" };
+  if (!member) return { title: "Team Member Not Found" };
+
+  const url = `${SITE_URL}/team/${member.slug}`;
+  const description = `${member.title}, ${member.office}. Hotel investment sales and ${member.specialties.join(
+    ", ",
+  )} at Matthews Hotel Markets.`;
+
   return {
-    title: `${member.name}, Matthews Hotel Team`,
-    description: `${member.title}, ${member.office}. ${member.specialties.join(
-      ", ",
-    )}.`,
+    title: `${member.name} — ${member.title}`,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      type: "profile",
+      title: `${member.name} — ${member.title}`,
+      description,
+      url,
+    },
+    twitter: {
+      card: "summary",
+      title: `${member.name} — ${member.title}`,
+      description,
+    },
   };
 }
 
@@ -138,10 +156,61 @@ export default async function TeamMemberPage({
   const member = team.find((m) => m.slug === slug);
   if (!member) notFound();
 
+  const personJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: member.name,
+    jobTitle: member.title,
+    image: member.photo
+      ? `${SITE_URL}${member.photo}`
+      : `${SITE_URL}/images/matthews-logo.jpg`,
+    description: member.bio.slice(0, 280),
+    telephone: member.phone,
+    email: member.email,
+    url: `${SITE_URL}/team/${member.slug}`,
+    worksFor: { "@id": `${SITE_URL}/#org` },
+    knowsAbout: member.specialties,
+    workLocation: {
+      "@type": "Place",
+      name: `Matthews Hotel Markets, ${member.office}`,
+    },
+    sameAs: member.linkedin ? [member.linkedin] : undefined,
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Team",
+        item: `${SITE_URL}/team`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: member.name,
+        item: `${SITE_URL}/team/${member.slug}`,
+      },
+    ],
+  };
+
   return (
     <>
       <SiteHeader />
       <main>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbJsonLd),
+          }}
+        />
         <TeamDetailHero member={member} />
         <TeamStats member={member} />
         <div className="bg-white py-16 lg:py-20">
