@@ -39,12 +39,14 @@ export function HomeHero() {
         />
       </motion.div>
 
-      {/* Left-anchored darkening wash. On desktop the photograph breathes
-          on the right; on mobile the same gradient extends darker further
-          right so the type sits cleanly above water. */}
+      {/* Layered washes for headline legibility.
+          - Desktop: heavy on the left, the photo breathes on the right.
+          - Mobile: a much heavier left-to-right wash so the body paragraph
+            and the dl pair sit on a near-solid dark surface, not on the
+            water reflection where they were near-illegible. */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0"
+        className="pointer-events-none absolute inset-0 hidden md:block"
         style={{
           background:
             "linear-gradient(95deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.70) 30%, rgba(0,0,0,0.40) 60%, rgba(0,0,0,0.20) 90%, rgba(0,0,0,0.10) 100%), linear-gradient(180deg, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0) 65%, rgba(0,0,0,0.55) 100%)",
@@ -55,15 +57,18 @@ export function HomeHero() {
         className="pointer-events-none absolute inset-0 md:hidden"
         style={{
           background:
-            "linear-gradient(180deg, rgba(0,0,0,0.30) 0%, rgba(0,0,0,0.55) 100%)",
+            "linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0.78) 100%)",
         }}
       />
 
-      <div className="relative mx-auto flex min-h-screen max-w-[1024px] flex-col items-stretch justify-center px-6 py-32 lg:py-40">
+      <div
+        className="relative mx-auto flex min-h-[640px] max-w-[1024px] flex-col items-stretch justify-center px-6 py-20 md:min-h-screen md:py-32 lg:py-40"
+        style={{ paddingBottom: "max(5rem, env(safe-area-inset-bottom) + 4rem)" }}
+      >
         <div className="flex w-full flex-col">
           <motion.p
             {...heroBody}
-            className="text-[12px] font-medium uppercase tracking-[0.22em] text-white/60"
+            className="text-[12px] font-medium uppercase tracking-[0.22em] text-white/70"
           >
             Matthews Hotel Team
           </motion.p>
@@ -80,7 +85,7 @@ export function HomeHero() {
 
           <motion.p
             {...heroBody}
-            className="mt-6 max-w-[640px] text-[19px] leading-[1.42] tracking-[0.012em] text-[color:var(--text-on-dark-secondary)]"
+            className="mt-6 max-w-[640px] text-[17px] leading-[1.45] tracking-[0.012em] text-white/85 md:text-[19px] md:leading-[1.42] md:text-[color:var(--text-on-dark-secondary)]"
           >
             Whether you want to finance a hotel purchase, refinance a property
             you own, or sell a hotel, we are here to help.
@@ -91,18 +96,18 @@ export function HomeHero() {
             className="mt-10 grid max-w-[640px] grid-cols-1 gap-x-10 gap-y-4 sm:grid-cols-2"
           >
             <div>
-              <dt className="text-[11px] font-medium uppercase tracking-[0.22em] text-white/60">
+              <dt className="text-[11px] font-medium uppercase tracking-[0.22em] text-white/70">
                 Capital Markets
               </dt>
-              <dd className="mt-2 text-[15px] leading-[1.45] tracking-[-0.014em] text-[color:var(--text-on-dark-secondary)]">
+              <dd className="mt-2 text-[15px] leading-[1.45] tracking-[-0.014em] text-white/85 md:text-[color:var(--text-on-dark-secondary)]">
                 Loans from $5M, experience up to $200M, every chain scale.
               </dd>
             </div>
             <div>
-              <dt className="text-[11px] font-medium uppercase tracking-[0.22em] text-white/60">
+              <dt className="text-[11px] font-medium uppercase tracking-[0.22em] text-white/70">
                 Sales
               </dt>
-              <dd className="mt-2 text-[15px] leading-[1.45] tracking-[-0.014em] text-[color:var(--text-on-dark-secondary)]">
+              <dd className="mt-2 text-[15px] leading-[1.45] tracking-[-0.014em] text-white/85 md:text-[color:var(--text-on-dark-secondary)]">
                 Dispositions from $2M, nationwide.
               </dd>
             </div>
@@ -116,17 +121,17 @@ export function HomeHero() {
               View listings
             </Pill>
             <GhostLink href="/contact">Talk to us</GhostLink>
-            <span className="text-[11px] font-medium uppercase tracking-[0.18em] text-white/40">
+            <span className="text-[11px] font-medium uppercase tracking-[0.18em] text-white/50">
               Response 24h
             </span>
           </motion.div>
         </div>
       </div>
 
-      {/* Scroll cue, thin vertical line, gentle drift */}
+      {/* Scroll cue, thin vertical line, desktop only — too tight on mobile. */}
       <motion.div
         aria-hidden="true"
-        className="pointer-events-none absolute bottom-10 left-1/2 -translate-x-1/2"
+        className="pointer-events-none absolute bottom-10 left-1/2 hidden -translate-x-1/2 md:block"
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 2, repeat: Infinity, ease: ease.standard }}
       >
