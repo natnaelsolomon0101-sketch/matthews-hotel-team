@@ -47,7 +47,7 @@ const COLUMNS: FooterColumn[] = [
       { href: "/contact", label: "Contact" },
       { href: "https://www.matthews.com", label: "Matthews.com", external: true },
       {
-        href: "https://www.linkedin.com/company/matthewscre/",
+        href: "https://www.linkedin.com/company/matthews-hotel-markets/",
         label: "LinkedIn",
         external: true,
       },
