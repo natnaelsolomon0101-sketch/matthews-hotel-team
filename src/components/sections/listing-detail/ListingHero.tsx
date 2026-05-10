@@ -17,7 +17,7 @@ export function ListingHero({ listing }: ListingHeroProps) {
   return (
     <section
       className={cn(
-        "dark-section relative overflow-hidden text-white pt-32 pb-20 lg:pt-40 lg:pb-24 min-h-[60vh]",
+        "dark-section relative overflow-hidden text-white pt-24 pb-16 md:pt-32 md:pb-20 lg:pt-40 lg:pb-24 min-h-[480px] md:min-h-[60vh]",
         !photo && "bg-gradient-to-br",
         !photo && listing.toneClass,
       )}
@@ -73,7 +73,9 @@ export function ListingHero({ listing }: ListingHeroProps) {
           </span>
         </p>
 
-        {/* Headline */}
+        {/* Headline. Mobile gets a smaller scale than the home hero
+            because listing detail titles are two clauses (asset name +
+            location), which would consume the whole fold at 48-96px. */}
         <div className="mt-6">
           <TwoToneHeadline
             as="h1"
@@ -81,6 +83,7 @@ export function ListingHero({ listing }: ListingHeroProps) {
             tone="dark"
             lead={`${listing.name}.`}
             follow={`${listing.city}, ${listing.state}.`}
+            className="!text-[36px] md:!text-[clamp(48px,7vw,96px)]"
           />
         </div>
 

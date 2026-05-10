@@ -61,7 +61,7 @@ export default async function ListingDetailPage(
   return (
     <>
       <SiteHeader />
-      <main>
+      <main className={primaryBroker ? "pb-20 lg:pb-0" : undefined}>
         <ListingHero listing={listing} />
         <ListingStatPanel listing={listing} />
 
