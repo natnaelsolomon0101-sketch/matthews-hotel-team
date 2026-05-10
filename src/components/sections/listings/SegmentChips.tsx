@@ -36,7 +36,8 @@ export function SegmentChips({
                 aria-selected={selected}
                 onClick={() => onChange(chip.value)}
                 className={cn(
-                  "inline-flex h-8 items-center rounded-full px-3.5 text-[13px] tracking-[-0.014em] transition-colors duration-200",
+                  // h-11 mobile (44px tap target), h-8 desktop (compact chrome).
+                  "inline-flex h-11 items-center rounded-full px-3.5 text-[14px] tracking-[-0.014em] transition-colors duration-200 md:h-8 md:text-[13px]",
                   selected
                     ? "bg-[color:var(--text-primary)] text-white"
                     : "text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)]",

@@ -11,7 +11,9 @@ export interface GhostLinkProps {
 
 export function GhostLink({ href, children, className }: GhostLinkProps) {
   const classes = cn(
-    "inline-flex items-center gap-1 text-[#1a3a6b] text-[15px] tracking-[-0.014em] hover:underline underline-offset-[3px] [.dark-section_&]:text-[#5d80b8]",
+    // min-h matches Apple HIG 44px tap target. Negative my preserves the
+    // inline-with-prose visual rhythm even though the hit area is larger.
+    "inline-flex items-center gap-1 min-h-[44px] -my-2 text-[#1a3a6b] text-[15px] tracking-[-0.014em] hover:underline underline-offset-[3px] [.dark-section_&]:text-[#5d80b8]",
     className,
   );
 
