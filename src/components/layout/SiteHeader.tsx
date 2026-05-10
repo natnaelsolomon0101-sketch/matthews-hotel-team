@@ -55,6 +55,18 @@ export function SiteHeader() {
     return () => window.removeEventListener("resize", onResize);
   }, []);
 
+  // Lock body scroll while the mobile drawer is open. Without this the page
+  // beneath the drawer keeps responding to touch and the user can scroll the
+  // hidden content underneath.
+  React.useEffect(() => {
+    if (!open) return;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previous;
+    };
+  }, [open]);
+
   const frosted = scrolled || open || !transparentRoute;
   const textColor = frosted ? "text-[color:var(--text-primary)]" : "text-white";
 
@@ -66,7 +78,10 @@ export function SiteHeader() {
           ? "bg-white/72 backdrop-blur-xl backdrop-saturate-150 border-b border-black/[0.08]"
           : "bg-transparent border-b border-transparent",
       )}
-      style={{ transitionTimingFunction: "cubic-bezier(0.32, 0.72, 0, 1)" }}
+      style={{
+        paddingTop: "env(safe-area-inset-top)",
+        transitionTimingFunction: "cubic-bezier(0.32, 0.72, 0, 1)",
+      }}
     >
       <div className="mx-auto max-w-[1024px] px-6">
         <div
@@ -128,7 +143,7 @@ export function SiteHeader() {
             <button
               type="button"
               className={cn(
-                "md:hidden inline-flex items-center justify-center h-9 w-9 rounded-full transition-colors duration-300",
+                "md:hidden inline-flex items-center justify-center h-11 w-11 rounded-full transition-colors duration-300",
                 textColor,
               )}
               aria-label={open ? "Close menu" : "Open menu"}
