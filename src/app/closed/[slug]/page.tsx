@@ -10,6 +10,7 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { TwoToneHeadline } from "@/components/ui/TwoToneHeadline";
 import { closed } from "@/lib/data/closed";
 import { team } from "@/lib/data/team";
+import { closedFaqs, faqJsonLdNode } from "@/lib/seo/faq";
 
 const SITE_URL = "https://matthewshotelmarkets.com";
 
@@ -66,6 +67,7 @@ export default async function ClosedDealPage(props: {
   const image = deal.photo
     ? `${SITE_URL}${deal.photo}`
     : `${SITE_URL}/images/hero-landscape.jpg`;
+  const faqs = closedFaqs(deal);
 
   // @graph: Article (the close announcement) + RealEstateListing-as-Product
   // (with Sold availability) + BreadcrumbList. Brokers credited as authors of
@@ -129,6 +131,7 @@ export default async function ClosedDealPage(props: {
           { "@type": "ListItem", position: 3, name: deal.name, item: url },
         ],
       },
+      faqJsonLdNode(url, faqs),
     ],
   };
 
@@ -294,6 +297,27 @@ export default async function ClosedDealPage(props: {
                 <ChevronRight className="h-3.5 w-3.5" strokeWidth={1.75} aria-hidden="true" />
               </Link>
             </div>
+          </div>
+        </section>
+
+        {/* FAQ — direct citation surface for AI Overview / ChatGPT / Perplexity */}
+        <section className="bg-[color:var(--surface-elevated)] py-16 lg:py-20">
+          <div className="mx-auto max-w-[1024px] px-6">
+            <h2 className="text-[12px] uppercase tracking-[0.18em] font-medium text-[color:var(--text-secondary)]">
+              {deal.name} transaction FAQ
+            </h2>
+            <dl className="mt-8 divide-y divide-[color:var(--divider)]">
+              {faqs.map((f, i) => (
+                <div key={i} className="py-6 first:pt-0 last:pb-0">
+                  <dt className="text-[18px] font-semibold tracking-[-0.014em] text-[color:var(--text-primary)]">
+                    {f.q}
+                  </dt>
+                  <dd className="mt-3 text-[15px] leading-[1.55] tracking-[-0.014em] text-[color:var(--text-secondary)]">
+                    {f.a}
+                  </dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </section>
       </main>

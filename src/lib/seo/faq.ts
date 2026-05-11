@@ -1,7 +1,60 @@
 import type { Market } from "@/lib/data/markets";
 import type { BrandFlag } from "@/lib/data/brands";
+import type { Listing } from "@/lib/data/listings";
+import type { ClosedDeal } from "@/lib/data/closed";
 
 export type Faq = { q: string; a: string };
+
+export function listingFaqs(l: Listing): Faq[] {
+  return [
+    {
+      q: `What's the asking price on the ${l.name}?`,
+      a: `${l.askingPrice}. ${l.callForOffersDate ? `Call for Offers ${l.callForOffersDate}. ` : ""}Confidential conversations available; the OM is gated behind NDA where applicable.`,
+    },
+    {
+      q: `What are the property fundamentals on this ${l.brand} ${l.segment.toLowerCase()}?`,
+      a: `${l.keys} keys. ${l.brand}, ${l.segment} segment. Built ${l.yearBuilt}${l.yearRenovated ? `, renovated ${l.yearRenovated}` : ""}. Located in ${l.city}, ${l.state}. ${l.adr ? `ADR: ${l.adr}. ` : ""}${l.revpar ? `RevPAR: ${l.revpar}. ` : ""}${l.occupancy ? `Occupancy: ${l.occupancy}. ` : ""}Encumbrance: ${l.encumbrance}.`,
+    },
+    {
+      q: `Who is the listing broker?`,
+      a: `${l.brokerSlugs.length > 0 ? l.brokerSlugs.map(slugToName).join(" and ") : "Matthews Hotel Markets investment sales team"} at Matthews Hotel Markets. The team has direct relationships with the institutional, family-office, PE, and HNW buyer pools that bid this asset class.`,
+    },
+    {
+      q: `What does Matthews's disposition process look like?`,
+      a: `Standard 24-week playbook: engagement letter and BOV in weeks 1–4, OM and marketing launch in weeks 5–8, call-for-offers and finalist round in weeks 9–14, definitive agreement and closing in weeks 15–24. Confidential by default; broker-built underwriting on every BOV.`,
+    },
+    {
+      q: `What's the buyer pool for a ${l.segment} hotel like this in ${l.city}?`,
+      a: `${l.segment} assets in this market range typically draw a buyer pool of select-service-focused REITs, family offices, PE roll-ups, owner-operators, and HNW first-time hotel buyers. ${l.brand} brand-loyal buyers compete actively for in-flag acquisitions.`,
+    },
+  ];
+}
+
+export function closedFaqs(d: ClosedDeal): Faq[] {
+  return [
+    {
+      q: `What was the deal size on the ${d.name}?`,
+      a: `${d.dealSize}. ${d.transactionTypeLabel ?? d.transactionType} closed in ${d.year}. ${d.keys} keys, ${d.city}, ${d.state}.`,
+    },
+    {
+      q: `Who at Matthews Hotel Markets executed this transaction?`,
+      a: `${d.brokerSlugs.length > 0 ? d.brokerSlugs.map(slugToName).join(", ") : "Matthews Hotel Markets investment sales team"}. The transaction was sourced through direct relationships with the buyer pool active in this segment and market at the time of close.`,
+    },
+    {
+      q: `Where can I see comparable ${d.brand ?? d.segment} closes?`,
+      a: `Matthews's full closed-transaction list is at /closed. Filter by segment, brand, year, or market. We publish public-data fields on every closed deal where seller permission allows; some confidentiality applies to ownership and pricing where the engagement was off-market.`,
+    },
+    {
+      q: `What were the key value drivers in this transaction?`,
+      a: `${d.keys}-key ${d.segment.toLowerCase()} ${d.brand ? `(${d.brand}) ` : ""}in ${d.city}, ${d.state}. ${d.transactionTypeLabel ?? d.transactionType}. The transaction process surfaced underwriting, brand standards, PIP cycle, and market demand factors typical for this asset profile.`,
+    },
+    {
+      q: `Is Matthews currently advising on similar ${d.segment} mandates?`,
+      a: `Yes — Matthews actively executes ${d.segment.toLowerCase()} dispositions and acquisitions across the United States. Active mandates and recent closes are at /listings and /closed. For confidential conversations on a similar disposition or acquisition, the team responds within 24 hours.`,
+    },
+  ];
+}
+
 
 export function marketFaqs(m: Market): Faq[] {
   return [

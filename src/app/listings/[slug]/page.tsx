@@ -12,6 +12,7 @@ import { ListingLocation } from "@/components/sections/listing-detail/ListingLoc
 import { ListingSimilar } from "@/components/sections/listing-detail/ListingSimilar";
 import { listings, getListing } from "@/lib/data/listings";
 import { getBroker } from "@/lib/data/team";
+import { listingFaqs, faqJsonLdNode } from "@/lib/seo/faq";
 
 const SITE_URL = "https://matthewshotelmarkets.com";
 
@@ -92,6 +93,7 @@ export default async function ListingDetailPage(
   const image = listing.photo
     ? `${SITE_URL}${listing.photo}`
     : `${SITE_URL}/images/hero-landscape.jpg`;
+  const faqs = listingFaqs(listing);
 
   // Single @graph: MTE Product+Hotel + Offer (sell) + Place + BreadcrumbList
   // + WebPage. AI Overview retrievers consume @graph more reliably than
@@ -206,6 +208,7 @@ export default async function ListingDetailPage(
         primaryImageOfPage: image,
         mainEntity: { "@id": `${url}#listing` },
       },
+      faqJsonLdNode(url, faqs),
     ],
   };
 
@@ -248,6 +251,27 @@ export default async function ListingDetailPage(
         </div>
 
         <ListingSimilar currentSlug={listing.slug} />
+
+        {/* FAQ — direct citation surface for AI Overview / ChatGPT / Perplexity */}
+        <section className="bg-[color:var(--surface-elevated)] py-16 lg:py-20">
+          <div className="mx-auto max-w-[1024px] px-6">
+            <h2 className="text-[12px] uppercase tracking-[0.18em] font-medium text-[color:var(--text-secondary)]">
+              {listing.name} FAQ
+            </h2>
+            <dl className="mt-8 divide-y divide-[color:var(--divider)]">
+              {faqs.map((f, i) => (
+                <div key={i} className="py-6 first:pt-0 last:pb-0">
+                  <dt className="text-[18px] font-semibold tracking-[-0.014em] text-[color:var(--text-primary)]">
+                    {f.q}
+                  </dt>
+                  <dd className="mt-3 text-[15px] leading-[1.55] tracking-[-0.014em] text-[color:var(--text-secondary)]">
+                    {f.a}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
       </main>
       <SiteFooter />
       {/* Mobile broker rail spacer so the fixed bar doesn't overlap the footer text */}
