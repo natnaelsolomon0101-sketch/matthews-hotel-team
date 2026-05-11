@@ -1,10 +1,68 @@
 # HUMAN_QUEUE — Items Needing Nate
 
-Compiled from the 5-hour sprint (2026-05-10). Each item is paste-ready or has the URL/contact you need. Grouped by urgency.
+Compiled from the 5-hour sprint + the fix-all sprint (2026-05-10). Each item is paste-ready or has the URL/contact you need. Grouped by urgency.
 
 ---
 
-## P0 — This week (account access, identity verification, money)
+## P0 — Editorial pass on the 8 new articles (1–2 hours your time)
+
+Fact-check agent flagged the following before any of these articles get amplified on LinkedIn or used in PR pitches. **One critical error already fixed**; the rest are tightenings.
+
+- ✅ **Fixed:** `hotel-refinancing-wave-2026.ts` originally cited a "May 7, 2026 FOMC statement" — there was no FOMC meeting in May 2026. Replaced with the real April 29, 2026 statement and the correct fed funds target (3.50–3.75%, not 4.25–4.50%).
+- ⚠️ **Needs your call:** The "$30 billion in U.S. hotel CMBS through year-end 2027" figure appears 6 times in `hotel-refinancing-wave-2026.ts`. Trepp's actual published number is **$18.7 billion in 2026 alone** (Trepp Feb 2025 release via TreppWire). Adding 2027 likely gets to $30B+ but unverified. Either re-anchor every occurrence to "approximately $18.7 billion in 2026 alone, with comparable carry-forward into 2027" OR keep the $30B framing and add the $18.7B-in-2026 specific anchor in the keyStats block.
+- ⚠️ **Easy fix:** `hotel-adr-revpar-recovery-2026.ts` cites Scottsdale March 2026 RevPAR of $339 from "Bonvoyage AZ" — this is almost certainly **short-term rental (Airbnb) data, not hotel STR data**. Article already includes a "(verify with STR primary)" inline caveat, but the number should be removed from `keyStats` until verified or replaced with an STR-sourced number.
+- ⚠️ **Verify:** AHLA "1.349B sold room nights" forecast in `sun-belt-hospitality-investment-2026.ts` — not in any public AHLA summary; may be in the paywalled full report. Confirm or remove before pitching.
+- ✅ **Ship as-is:** `hotel-cmbs-distress-trepp-2026.ts` is the strongest of the set — every load-bearing number (Trepp 7.31% delinquency, 9.37% special servicing, Starwood $577M, Park Hotels $725M) verified to public sources.
+- 📋 Full report: `reports/article-fact-check.md`
+
+---
+
+## P0 — Off-site outreach (drafts shipped, ready to send)
+
+Pre-written pitch pack at `content/outreach/`. **15 ready-to-paste files**, indexed in `content/outreach/README.md` with channel + suggested send date.
+
+Memberships (P0 — start the 60-90 day clock):
+- `memberships/hbi-application-cover.md` → Hospitality Brokers Institute
+- `memberships/ahla-premier-partner-application.md` → AHLA Premier Partner
+- `memberships/uli-hotel-development-council.md` → ULI HDC (Luke nominated)
+- `memberships/aahoa-membership.md` → AAHOA
+
+Press (highest leverage first):
+- `press/jeff-weinstein-hotel-investment-today.md` → Jeff Weinstein (Hotel Investment Today)
+- `press/costar-news-hotels-desk.md` → Natalie Harms + Bryan Wroten (CoStar News)
+- `press/lodging-magazine-stephanie-ricca.md` → Stephanie Ricca (LODGING)
+- `press/bisnow-jon-banister-mark-bonner.md` → Bisnow Texas + national
+
+Podcasts:
+- `podcasts/no-vacancy-news-glenn-haussman.md` → Glenn Haussman
+- `podcasts/hotel-investor-playbook.md`
+- `podcasts/modern-hotelier.md`
+- `podcasts/lodging-leaders.md`
+
+Universities:
+- `universities/cornell-chr-data-partnership.md` → Cornell CHR
+- `universities/nyu-tisch-ihiic.md` → NYU Tisch / IHIIC
+
+All voice rules applied: no em-dashes, no promotional language, no emojis, ≤60 char subject lines, lead with specific number.
+
+---
+
+## P0 — Wikipedia + Wikidata submission package (paste-ready)
+
+Files at `content/wikipedia/` and `content/wikidata/`:
+- `wikipedia/matthews-real-estate-investment-services.wiki` — paste-ready MediaWiki
+- `wikipedia/matthews-hotel-markets.wiki` — paste-ready MediaWiki
+- `wikidata/matthews-real-estate-investment-services.qs` — QuickStatements v1 batch
+- `wikidata/matthews-hotel-markets.qs` — QuickStatements v1 batch (parent Q-id placeholder)
+- `wikipedia/SUBMISSION_GUIDE.md` — step-by-step paste instructions, AfC timeline, decline recovery
+
+**Notability gap (important):** Matthews Hotel Markets sub-brand currently fails WP:NCORP because there's no significant independent secondary coverage of just the sub-brand yet. Submit the **parent firm first** (clears notability bar with LA Business Journal / The Real Deal / Connect CRE / REJournals coverage of the Calabasas → Nashville HQ relocation). Then land 3+ press placements (use the pitch pack above) and resubmit Hotel Markets.
+
+**Material correction baked into drafts:** Matthews HQ is **Nashville, TN**, not Calabasas, CA — Matthews relocated July 2022 (LA Business Journal, The Real Deal, Connect CRE all confirm). Existing site copy still references Austin HQ for Matthews Hotel Markets, which is correct (Hotel Markets is headquartered in Austin even though the parent moved to Nashville).
+
+---
+
+## P0 — Sprint 1 deployment items (still open)
 
 ### 1. Verify Google Search Console + submit sitemap
 - Property: `https://matthewshotelmarkets.com`
@@ -30,6 +88,12 @@ Compiled from the 5-hour sprint (2026-05-10). Each item is paste-ready or has th
 ### 5. Reset Apple Hospitality / Summit / Service Properties Trust per-key averages
 - Article: `src/lib/data/insights-articles/brand-flag-cap-rate-guide-2026.ts`
 - The "$156K Apple Hospitality avg, $142K Sun Belt Courtyard" numbers are reasoned estimates, not pulled from the 10-K supplements during the sprint. Verify against most recent supplementals (apple-hospitality.com IR) before this article goes into PR pitches.
+
+### 6. Refresh Matthews Hotel Index every 90 days (next: 2026-07-15)
+- Live at `/research/mhi/q1-2026` — Q1 2026 dataset across 14 markets
+- Refresh data: `src/lib/data/mhi.ts` — add a `Q2_2026: MhiQuarter` object to `mhiQuarters[]` array, set `publishedAt: "2026-07-15"`, update each `MarketDataPoint.commentary`. Cap rate ranges from CBRE H1 2026 Cap Rate Survey (publishes ~July). RevPAR/ADR from STR Q2 press release.
+- Also refresh `/research/mhi` redirect picks the latest automatically — no other code change needed.
+- Why: This is the recurring data product. Quarterly publish cadence builds permanent citation surface. Skip a quarter and the citation pull decays.
 
 ---
 
@@ -134,6 +198,21 @@ Compiled from the 5-hour sprint (2026-05-10). Each item is paste-ready or has th
 - 41 prioritized content briefs in `reports/content-production-list.md`
 - 9 P0 (next 7 days), 19 P1 (next 30 days), 13 P2 (next 60 days)
 - Top wedges: parent-domain migration trio, BOV cluster (4 nodes), select-service segment page, "who" trio for LLM canonical broker question
+
+### 24. Conversion flow split — DEFERRED, ship next
+- Right now `/contact` is a generic form. Sell-side and buy-side intent need different conversion flows:
+  - Sell-side: "Free BOV in 7 days" with the 24-week timeline, broker callback, asset details intake
+  - Buy-side: "Buyer profile" form, get notified of new listings matching criteria
+- Tracking: form submissions, BOV requests, OM downloads — no event capture today
+- Effort: ~3-4 hours. Want me to ship this in the next session?
+
+### 25. Author E-E-A-T enrichment — placeholders to fill
+Person schema is now richer but several broker fields still read as placeholders:
+- `team.ts` Luke Thompson `careerVolume` and `last12Volume` both say "Confirm". Fill with real numbers.
+- `team.ts` Miles Cortez `yearsExperience: 0` and `last12Volume: "Confirm"`. Fill.
+- `team.ts` Nate Solomon `careerVolume`, `last12Volume`, `yearsExperience: 0`, `topDeals: []`. Fill — topDeals especially powers the schema.org `award` and `knowsAbout` signals.
+- Each broker should have 3-5 `designations` (e.g., "Texas Real Estate Commission License No. 593889" is on Luke's affiliations but not designations) — add CCIM / SIOR if applicable.
+- Real headshot for Nate (current path is `.jpg`, others are `.avif` — check that the actual file is high-res).
 
 ---
 
