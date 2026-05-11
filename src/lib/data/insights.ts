@@ -1,17 +1,35 @@
 export type InsightKind = "outlook" | "white-paper" | "briefing";
 
+export type FaqItem = { q: string; a: string };
+export type Source = { label: string; url: string; publisher?: string };
+export type KeyStat = { value: string; label: string; source?: string };
+
 export type Insight = {
   slug: string;
   kind: InsightKind;
   title: string;
   subtitle: string;
   date: string;
+  /** ISO date for schema.org dateModified — visible "last updated" timestamp */
+  lastUpdated?: string;
   authorSlugs: string[];
   cover: string;
   excerpt: string;
   body: string;
   downloadHref?: string;
   tags: string[];
+  /** TL;DR bullets shown in first viewport. 4–6 items, each a self-contained claim. */
+  tldr?: string[];
+  /** FAQPage schema items + on-page FAQ section. */
+  faq?: FaqItem[];
+  /** Outbound citations (HVS, STR, CBRE, AHLA, Fed, Trepp, JLL, etc.) */
+  sources?: Source[];
+  /** Key data points emphasized as a "by the numbers" block. */
+  keyStats?: KeyStat[];
+  /** Internal links: slug references to other entities. */
+  relatedMarkets?: string[];
+  relatedBrands?: string[];
+  relatedInsights?: string[];
 };
 
 export const insights: Insight[] = [

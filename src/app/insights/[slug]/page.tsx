@@ -68,51 +68,72 @@ export default async function InsightDetailPage(props: {
     .filter((m): m is NonNullable<typeof m> => Boolean(m));
 
   const url = `${SITE_URL}/insights/${insight.slug}`;
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Article",
-        "@id": `${url}#article`,
-        headline: insight.title,
-        description: insight.subtitle,
-        datePublished: insight.date,
-        dateModified: insight.date,
-        inLanguage: "en-US",
-        author:
-          authors.length > 0
-            ? authors.map((a) => ({
-                "@type": "Person",
-                "@id": `${SITE_URL}/team/${a.slug}#person`,
-                name: a.name,
-                url: `${SITE_URL}/team/${a.slug}`,
-              }))
-            : { "@id": `${SITE_URL}/#org` },
-        publisher: { "@id": `${SITE_URL}/#org` },
-        mainEntityOfPage: { "@type": "WebPage", "@id": url },
-        keywords: insight.tags.join(", "),
-        image: `${url}/opengraph-image`,
-      },
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-          {
-            "@type": "ListItem",
-            position: 2,
-            name: "Insights",
-            item: `${SITE_URL}/insights`,
-          },
-          {
-            "@type": "ListItem",
-            position: 3,
-            name: insight.title,
-            item: url,
-          },
-        ],
-      },
-    ],
+
+  const articleNode: Record<string, unknown> = {
+    "@type": "Article",
+    "@id": `${url}#article`,
+    headline: insight.title,
+    description: insight.subtitle,
+    datePublished: insight.date,
+    dateModified: insight.lastUpdated ?? insight.date,
+    inLanguage: "en-US",
+    author:
+      authors.length > 0
+        ? authors.map((a) => ({
+            "@type": "Person",
+            "@id": `${SITE_URL}/team/${a.slug}#person`,
+            name: a.name,
+            url: `${SITE_URL}/team/${a.slug}`,
+          }))
+        : { "@id": `${SITE_URL}/#org` },
+    publisher: { "@id": `${SITE_URL}/#org` },
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    keywords: insight.tags.join(", "),
+    image: `${url}/opengraph-image`,
   };
+  if (insight.sources && insight.sources.length > 0) {
+    articleNode.citation = insight.sources.map((s) => ({
+      "@type": "CreativeWork",
+      name: s.label,
+      url: s.url,
+      ...(s.publisher ? { publisher: { "@type": "Organization", name: s.publisher } } : {}),
+    }));
+  }
+
+  const graph: Array<Record<string, unknown>> = [
+    articleNode,
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Insights",
+          item: `${SITE_URL}/insights`,
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: insight.title,
+          item: url,
+        },
+      ],
+    },
+  ];
+  if (insight.faq && insight.faq.length > 0) {
+    graph.push({
+      "@type": "FAQPage",
+      "@id": `${url}#faq`,
+      mainEntity: insight.faq.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    });
+  }
+
+  const jsonLd = { "@context": "https://schema.org", "@graph": graph };
 
   return (
     <>
