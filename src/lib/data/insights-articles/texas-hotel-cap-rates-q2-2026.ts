@@ -27,7 +27,7 @@ export const draft: Insight = {
 
     "Dallas-Fort Worth is wider, reflecting the metro's scale and sub-market diversity. Stabilized select-service in the DFW Metroplex prices in a 7.75 to 8.50 percent cap range. Convention-adjacent full-service near downtown Dallas and Fort Worth prices tighter, in the 7.00 to 7.75 percent range, on the back of recurring group demand. Plano, Frisco, and Las Colinas have been the most actively traded sub-markets; the airport hospitality cluster has seen increased private-equity bid in 2026 [Source: Matthews Hotel Markets internal transaction database, Q2 2026].",
 
-    "Houston cap rates carry an energy-cycle premium. Stabilized select-service prices in the 7.75 to 8.75 percent range, the widest of the four Texas metros. Texas Medical Center proximity is the single largest cap rate compression factor for any Houston hotel; medical-adjacent select-service trades roughly 50 basis points tighter than the metro average. The Galleria, Energy Corridor, and Woodlands sub-markets each carry distinct underwriting profiles and distinct buyer pools. Per the most recent STR demand data, Houston metro RevPAR ran approximately 4 percent above the 2019 baseline through Q1 2026 [Source: STR / CoStar U.S. Hotel Performance, Q1 2026].",
+    "Houston cap rates carry an energy-cycle premium. Stabilized select-service prices in the 7.75 to 8.75 percent range, the widest of the four Texas metros. Texas Medical Center proximity is the single largest cap rate compression factor for any Houston hotel; medical-adjacent select-service trades roughly 50 basis points tighter than the metro average. The Galleria, Energy Corridor, and Woodlands sub-markets each carry distinct underwriting profiles and distinct buyer pools. Per the most recent STR demand data, Houston metro RevPAR ran approximately 4 percent above the 2019 baseline through Q1 2026 [Source: STR U.S. Hotel Performance, Q1 2026].",
 
     "San Antonio is the most leisure-anchored of the four. Riverwalk full-service trades at the tightest cap rate in the state outside of Austin Hill Country resort, at 6.75 to 7.50 percent on stabilized cash flow. Suburban San Antonio select-service prices in the 7.75 to 8.50 percent range. Joint Base San Antonio and the South Texas Medical Center provide demand-side diversification that the institutional bid has historically underpriced.",
 
@@ -64,7 +64,7 @@ export const draft: Insight = {
 
     "## How does the Texas Triangle compare on RevPAR recovery",
 
-    "RevPAR underwrites the cap rate. Across the Texas Triangle, RevPAR has recovered above the 2019 baseline in every primary metro through Q1 2026, but the recovery pace differs sharply by sub-market. Austin metro RevPAR sits roughly 12 to 14 percent above 2019, the strongest in the state, supported by tech-sector employment that has stabilized and by the maturation of ACL, SXSW, and F1 USGP as recurring compression weeks (industry estimate, verify with Q2 2026 release) [Source: STR / CoStar U.S. Hotel Performance, Q1 2026]. Dallas-Fort Worth runs roughly 8 to 10 percent above 2019, with Plano and Frisco outperforming the metro average on the back of corporate relocations through 2024 and 2025. Houston runs roughly 4 percent above 2019, with the Texas Medical Center sub-market materially outpacing the metro average [Source: STR, Q1 2026]. San Antonio Riverwalk runs in line with the metro average around 6 to 8 percent above 2019, supported by leisure compression that has held through the cycle [Source: AHLA 2026 State of the Hotel Industry, January 2026].",
+    "RevPAR underwrites the cap rate. Across the Texas Triangle, RevPAR has recovered above the 2019 baseline in every primary metro through Q1 2026, but the recovery pace differs sharply by sub-market. Austin metro RevPAR sits roughly 12 to 14 percent above 2019, the strongest in the state, supported by tech-sector employment that has stabilized and by the maturation of ACL, SXSW, and F1 USGP as recurring compression weeks (industry estimate, verify with Q2 2026 release) [Source: STR U.S. Hotel Performance, Q1 2026]. Dallas-Fort Worth runs roughly 8 to 10 percent above 2019, with Plano and Frisco outperforming the metro average on the back of corporate relocations through 2024 and 2025. Houston runs roughly 4 percent above 2019, with the Texas Medical Center sub-market materially outpacing the metro average [Source: STR, Q1 2026]. San Antonio Riverwalk runs in line with the metro average around 6 to 8 percent above 2019, supported by leisure compression that has held through the cycle [Source: AHLA 2026 State of the Hotel Industry, January 2026].",
 
     "## What is the Texas hotel construction pipeline through 2027",
 
@@ -76,7 +76,7 @@ export const draft: Insight = {
 
     "## Sources and methodology",
 
-    "This outlook draws on the Matthews Hotel Markets internal transaction database, public-data summaries from HVS U.S. Market Pulse, STR / CoStar U.S. Hotel Performance reports, JLL Hotels & Hospitality Research, CBRE Hotels Research, AHLA 2026 State of the Hotel Industry, Trepp CMBS Surveillance, and Federal Reserve H.15 statistical releases. Cap rate ranges reflect stabilized PIP-current product unless otherwise noted. Numbers are refreshed quarterly; this edition was submitted to print May 10, 2026.",
+    "This outlook draws on the Matthews internal transaction file, HVS U.S. Market Pulse, STR U.S. Hotel Performance, JLL Hotels Research, CBRE Hotels Research, AHLA State of the Hotel Industry, Trepp CMBS Surveillance, and Federal Reserve H.15 releases. Cap rate ranges reflect stabilized, PIP-current product unless otherwise noted.",
   ].join("\n\n"),
   downloadHref: "#",
   tags: ["Cap Rates", "Texas", "Sun Belt", "Quarterly Outlook"],
@@ -125,9 +125,9 @@ export const draft: Insight = {
       publisher: "HVS",
     },
     {
-      label: "STR / CoStar U.S. Hotel Performance",
+      label: "STR U.S. Hotel Performance",
       url: "https://str.com/data-insights",
-      publisher: "STR / CoStar",
+      publisher: "STR",
     },
     {
       label: "CBRE Hotels Research U.S. Outlook 2026",
@@ -156,8 +156,8 @@ export const draft: Insight = {
     },
     {
       label: "Hotel News Now",
-      url: "https://www.costar.com/news/hotels",
-      publisher: "Hotel News Now / CoStar",
+      url: "https://www.hotelnewsnow.com",
+      publisher: "Hotel News Now",
     },
   ],
   keyStats: [

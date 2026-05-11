@@ -50,9 +50,9 @@ export default async function MhiQuarterPage(props: {
 
   const url = `${SITE_URL}/research/mhi/${q.slug}`;
 
-  // Dataset schema — research analysts and trade press cite Datasets
-  // by URL. variableMeasured spells out the cap rate / ADR / RevPAR
-  // measurements. spatialCoverage names the 14 markets explicitly.
+  // Dataset @graph: variableMeasured spells out cap rate / ADR / RevPAR /
+  // occupancy / txn count; spatialCoverage names each of the 14 markets
+  // with geo coordinates. Released under CC-BY 4.0.
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -292,10 +292,10 @@ export default async function MhiQuarterPage(props: {
         <section className="bg-[color:var(--surface-elevated)] py-16 lg:py-20">
           <div className="mx-auto max-w-[1024px] px-6">
             <div className="rounded-[18px] bg-white p-10 lg:p-14 text-center">
-              <p className="text-[12px] uppercase tracking-[0.18em] text-[color:var(--text-secondary)]">Cite the dataset</p>
-              <p className="mt-4 max-w-[58ch] mx-auto text-[17px] leading-[1.47] tracking-[-0.022em] text-[color:var(--text-primary)]">
-                Research analysts and trade press: cite as &ldquo;Matthews Hotel Index, {q.label} (matthewshotelmarkets.com/research/mhi/{q.slug})&rdquo;. Released under CC-BY 4.0.
-              </p>
+              <p className="text-[12px] uppercase tracking-[0.18em] text-[color:var(--text-secondary)]">{q.label}</p>
+              <h2 className="mt-4 max-w-[58ch] mx-auto text-[clamp(24px,2.6vw,32px)] font-semibold leading-[1.18] tracking-[-0.016em] text-[color:var(--text-primary)]">
+                Selling, buying, or refinancing across these markets?
+              </h2>
               <div className="mt-8 flex justify-center gap-3">
                 <Pill variant="primary" href="/contact">Talk to the team</Pill>
                 <Pill variant="secondary" href="/research">All research</Pill>

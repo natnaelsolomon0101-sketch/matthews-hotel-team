@@ -14,7 +14,7 @@ const SITE_URL = "https://matthewshotelmarkets.com";
 export const metadata: Metadata = {
   title: "Hotel Investment Research | Matthews Hotel Markets",
   description:
-    "Quarterly Matthews Hotel Index, long-form insights, and market commentary. Public data, refreshed quarterly. Cite with attribution.",
+    "The Matthews Hotel Index, long-form insights, and market commentary on hospitality investment sales and capital markets.",
   alternates: { canonical: `${SITE_URL}/research` },
   openGraph: {
     type: "website",
@@ -89,7 +89,7 @@ export default function ResearchHubPage() {
               />
             </div>
             <p className="mt-6 max-w-[64ch] text-[19px] leading-[1.42] tracking-[0.012em] text-[color:var(--text-secondary)]">
-              Public-data only. Cite with attribution to Matthews Hotel Markets and a link back to matthewshotelmarkets.com/research.
+              The Matthews Hotel Index tracks cap rates, ADR, and RevPAR across fourteen U.S. hotel markets. Long-form insights cover capital markets, brand-flag economics, and disposition strategy.
             </p>
           </div>
         </section>

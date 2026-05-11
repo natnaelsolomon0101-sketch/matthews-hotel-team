@@ -55,7 +55,7 @@ export const entry: GlossaryEntry = {
       publisher: "CBRE Research",
     },
     {
-      label: "STR / CoStar US Hotel Performance Reports",
+      label: "STR U.S. Hotel Performance Reports",
       url: "https://str.com/data-insights/news",
       publisher: "STR",
     },

@@ -120,7 +120,7 @@ export const draft: Insight = {
     {
       label: "Hotel News Now disposition coverage, 2025–Q1 2026",
       url: "https://www.hotelnewsnow.com",
-      publisher: "Hotel News Now (CoStar)",
+      publisher: "Hotel News Now",
     },
   ],
   keyStats: [

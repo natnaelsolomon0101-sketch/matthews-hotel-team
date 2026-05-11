@@ -114,7 +114,7 @@ export const draft: Insight = {
     {
       label: "STR US Hotel Performance, 2025 monthly press releases",
       url: "https://str.com/data-insights",
-      publisher: "STR (CoStar Hospitality Analytics)",
+      publisher: "STR",
     },
     {
       label: "AHLA 2025 State of the Industry Report",

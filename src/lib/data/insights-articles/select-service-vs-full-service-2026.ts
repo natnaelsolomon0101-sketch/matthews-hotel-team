@@ -34,7 +34,7 @@ export const draft: Insight = {
 
     "## What does the operating-economics comparison actually look like",
 
-    "On stabilized GOP margin, the leading select-service brands run 38 to 44 percent at the property level. Full-service urban hotels run 28 to 34 percent, with food-and-beverage typically contributing positively but not enough to offset the operating expense load (industry estimate, verify with Q2 2026 release). On labor as a percentage of revenue, select-service runs roughly 22 to 26 percent; full-service runs 32 to 38 percent [Source: STR / CoStar HOST Almanac 2025]. On capital expenditure per key over a typical 7-year hold, select-service averages $8,000 to $14,000; full-service averages $22,000 to $40,000 depending on F&B repositioning needs.",
+    "On stabilized GOP margin, the leading select-service brands run 38 to 44 percent at the property level. Full-service urban hotels run 28 to 34 percent, with food-and-beverage typically contributing positively but not enough to offset the operating expense load (industry estimate, verify with Q2 2026 release). On labor as a percentage of revenue, select-service runs roughly 22 to 26 percent; full-service runs 32 to 38 percent [Source: STR HOST Almanac 2025]. On capital expenditure per key over a typical 7-year hold, select-service averages $8,000 to $14,000; full-service averages $22,000 to $40,000 depending on F&B repositioning needs.",
 
     "The translation to capital markets: a 100-basis-point cap rate spread on the headline number frequently reflects a 50-basis-point spread on a fully-loaded yield basis after adjusting for forward capex reserves and operating volatility. Sophisticated buyers underwrite to the fully-loaded yield. The headline cap rate gap is partly a presentation convention; the economic gap is real but smaller.",
 
@@ -63,7 +63,7 @@ export const draft: Insight = {
 
     "## Which segment has the stronger demand recovery",
 
-    "Both segments have recovered above the 2019 RevPAR baseline through Q1 2026, but the recovery profile differs. Select-service RevPAR nationally runs roughly 8 to 12 percent above 2019, supported by stable transient business demand, the maturation of leisure mid-week travel patterns, and brand loyalty programs that drive direct bookings (industry estimate, verify with Q2 2026 release) [Source: STR / CoStar U.S. Hotel Performance, Q1 2026]. Full-service has bifurcated. Trophy full-service in primary metros runs roughly 6 to 10 percent above 2019, supported by group demand that has rebuilt across 2024 and 2025. Mid-tier full-service in tertiary CBDs remains below 2019 RevPAR in many markets, with the gap concentrated in food-and-beverage and banquet revenue lines that have not recovered [Source: AHLA 2026 State of the Hotel Industry, January 2026].",
+    "Both segments have recovered above the 2019 RevPAR baseline through Q1 2026, but the recovery profile differs. Select-service RevPAR nationally runs roughly 8 to 12 percent above 2019, supported by stable transient business demand, the maturation of leisure mid-week travel patterns, and brand loyalty programs that drive direct bookings (industry estimate, verify with Q2 2026 release) [Source: STR U.S. Hotel Performance, Q1 2026]. Full-service has bifurcated. Trophy full-service in primary metros runs roughly 6 to 10 percent above 2019, supported by group demand that has rebuilt across 2024 and 2025. Mid-tier full-service in tertiary CBDs remains below 2019 RevPAR in many markets, with the gap concentrated in food-and-beverage and banquet revenue lines that have not recovered [Source: AHLA 2026 State of the Hotel Industry, January 2026].",
 
     "## How does PIP exposure differ between segments",
 
@@ -83,7 +83,7 @@ export const draft: Insight = {
 
     "## Sources and methodology",
 
-    "This outlook draws on the Matthews Hotel Markets internal transaction database, public-data summaries from HVS U.S. Market Pulse, STR / CoStar U.S. Hotel Performance and HOST Almanac, JLL Hotels & Hospitality Research, CBRE Hotels Research, AHLA 2026 State of the Hotel Industry, Trepp CMBS Surveillance, Apple Hospitality REIT public filings, and Federal Reserve H.15 statistical releases. Cap rate ranges reflect stabilized PIP-current product unless otherwise noted. Operating margin and labor figures reflect property-level stabilized averages by segment; individual asset performance varies with brand, sub-market, and operator. This edition was submitted to print May 10, 2026.",
+    "This outlook draws on the Matthews internal transaction file, HVS U.S. Market Pulse, STR U.S. Hotel Performance and HOST Almanac, JLL Hotels Research, CBRE Hotels Research, AHLA State of the Hotel Industry, Trepp CMBS Surveillance, Apple Hospitality REIT filings, and Federal Reserve H.15 releases. Cap rate ranges reflect stabilized, PIP-current product unless otherwise noted. Operating margin and labor figures reflect property-level stabilized averages by segment; individual asset performance varies with brand, sub-market, and operator.",
   ].join("\n\n"),
   downloadHref: "#",
   tags: [
@@ -137,9 +137,9 @@ export const draft: Insight = {
       publisher: "HVS",
     },
     {
-      label: "STR / CoStar HOST Almanac and U.S. Hotel Performance",
+      label: "STR HOST Almanac and U.S. Hotel Performance",
       url: "https://str.com/data-insights",
-      publisher: "STR / CoStar",
+      publisher: "STR",
     },
     {
       label: "CBRE Hotels Research U.S. Outlook 2026",
