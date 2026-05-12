@@ -320,6 +320,7 @@ export const closed: ClosedDeal[] = [
     transactionTypeLabel: "Asset Sale + Bridge Financing",
     sponsorProfile: "PE",
     brokerSlugs: ["luke-thompson", "miles-cortez"],
+    photo: "/closed/holiday-inn-express-augusta.jpg",
     toneClass: "from-[#0066cc] to-[#1a56db]",
   },
   {
