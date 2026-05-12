@@ -669,6 +669,7 @@ export const closed: ClosedDeal[] = [
     transactionTypeLabel: "Permanent Financing",
     sponsorProfile: "Developer",
     brokerSlugs: ["luke-thompson", "miles-cortez"],
+    photo: "/closed/home2-suites-merrillville.jpg",
     toneClass: "from-[#0066cc] to-[#1a56db]",
   },
   {
