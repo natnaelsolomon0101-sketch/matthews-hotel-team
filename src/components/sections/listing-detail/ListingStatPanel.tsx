@@ -12,7 +12,7 @@ export function ListingStatPanel({ listing }: ListingStatPanelProps) {
     { label: "Keys", value: listing.keys.toLocaleString() },
     { label: "Brand", value: listing.brand },
     { label: "Chain Scale", value: listing.segment },
-    { label: "Year Built", value: String(listing.yearBuilt) },
+    { label: "Year Built", value: listing.yearBuilt > 0 ? String(listing.yearBuilt) : "," },
     {
       label: "Year Renovated",
       value: listing.yearRenovated ? String(listing.yearRenovated) : ",",

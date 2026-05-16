@@ -28,21 +28,33 @@ const GRADIENT_VARIANTS = [
 ];
 
 export function ListingGallery({ listing }: ListingGalleryProps) {
-  // Every tile uses the listing photo when available, with different
-  // object-position framings for visual variety. Falls back to gradient
-  // tones only when no photo exists at all.
-  const tiles = React.useMemo(
-    () =>
-      GRADIENT_VARIANTS.map((tone, i) => ({
-        id: i,
-        tone,
-        firstTile: i === 0,
-        usePhoto: Boolean(listing.photo),
-      })),
-    [listing.photo],
-  );
+  // When listing.photos[] is set, every tile maps to a distinct photo URL —
+  // real gallery. Otherwise fall back to repeating listing.photo with framing
+  // variants, or gradient tones when no photography exists.
+  const hasRealGallery =
+    Array.isArray(listing.photos) && listing.photos.length > 0;
 
-  // Object-position variants so 6 tiles of the same photo read as 6 different shots.
+  const tiles = React.useMemo(() => {
+    if (hasRealGallery) {
+      return listing.photos!.map((src, i) => ({
+        id: i,
+        tone: GRADIENT_VARIANTS[i % GRADIENT_VARIANTS.length],
+        firstTile: i === 0,
+        usePhoto: true,
+        src,
+      }));
+    }
+    return GRADIENT_VARIANTS.map((tone, i) => ({
+      id: i,
+      tone,
+      firstTile: i === 0,
+      usePhoto: Boolean(listing.photo),
+      src: listing.photo,
+    }));
+  }, [hasRealGallery, listing.photos, listing.photo]);
+
+  // Object-position variants so repeated tiles of the same photo read as
+  // different shots. Real galleries (one photo per tile) use object-center.
   const FRAMINGS = [
     "object-center",
     "object-top",
@@ -109,15 +121,18 @@ export function ListingGallery({ listing }: ListingGalleryProps) {
             className="group relative aspect-[4/3] overflow-hidden rounded-[18px] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1a3a6b] focus-visible:ring-offset-2"
             aria-label={`Open photo ${tile.id + 1} of ${total}`}
           >
-            {tile.usePhoto && listing.photo ? (
+            {tile.usePhoto && tile.src ? (
               <div className="absolute inset-0 transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-[1.04]">
                 <Image
-                  src={listing.photo}
+                  src={tile.src}
                   alt={`${listing.name}, photo ${tile.id + 1}`}
                   fill
                   quality={86}
                   sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                  className={cn("object-cover", FRAMINGS[tile.id])}
+                  className={cn(
+                    "object-cover",
+                    hasRealGallery ? "object-center" : FRAMINGS[tile.id % FRAMINGS.length],
+                  )}
                 />
               </div>
             ) : (
