@@ -20,6 +20,9 @@ const PINNED_SLUGS = [
   "hampton-inn-shelbyville",
 ];
 
+/** Listings pinned to second-to-last position regardless of price. */
+const PINNED_PENULTIMATE = ["apple-mountain-resort-clarkesville"];
+
 /** Parse "$6,400,000" → 6400000. "Upon Request" / unparseable → -Infinity (sorts last). */
 function priceValue(askingPrice: string): number {
   const digits = askingPrice.replace(/[^0-9]/g, "");
@@ -43,11 +46,25 @@ export function ListingsBrowser() {
       base.find((l) => l.slug === slug),
     ).filter((l): l is (typeof base)[number] => Boolean(l));
 
+    const penultimate = PINNED_PENULTIMATE.map((slug) =>
+      base.find((l) => l.slug === slug),
+    ).filter((l): l is (typeof base)[number] => Boolean(l));
+
     const rest = base
-      .filter((l) => !PINNED_SLUGS.includes(l.slug))
+      .filter(
+        (l) =>
+          !PINNED_SLUGS.includes(l.slug) &&
+          !PINNED_PENULTIMATE.includes(l.slug),
+      )
       .sort((a, b) => priceValue(b.askingPrice) - priceValue(a.askingPrice));
 
-    return [...pinned, ...rest];
+    // Insert penultimate items just before the last entry of `rest`.
+    if (penultimate.length > 0 && rest.length > 0) {
+      const last = rest[rest.length - 1];
+      const middle = rest.slice(0, -1);
+      return [...pinned, ...middle, ...penultimate, last];
+    }
+    return [...pinned, ...penultimate, ...rest];
   }, [activeSegment]);
 
   return (
