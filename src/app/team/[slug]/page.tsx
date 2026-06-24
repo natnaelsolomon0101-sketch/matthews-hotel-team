@@ -126,7 +126,6 @@ function BrokerContactRail({ broker }: BrokerRailProps) {
         {broker.linkedin && (
           <a
             href={broker.linkedin}
-            target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-[15px] tracking-[-0.014em] text-[#1d1d1f] hover:text-[#1a3a6b] transition-colors duration-200"
           >

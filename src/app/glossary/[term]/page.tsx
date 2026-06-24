@@ -262,7 +262,6 @@ export default async function GlossaryEntryPage(props: { params: Promise<Params>
                     <a
                       href={s.url}
                       rel="noopener external"
-                      target="_blank"
                       className="text-[#1a3a6b] hover:underline underline-offset-[3px]"
                     >
                       {s.label}

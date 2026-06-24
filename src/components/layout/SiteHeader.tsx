@@ -124,7 +124,6 @@ export function SiteHeader() {
                 <a
                   key={item.href}
                   href={item.href}
-                  target="_blank"
                   rel="noopener noreferrer"
                   className={linkClass}
                 >
@@ -196,7 +195,6 @@ export function SiteHeader() {
                     <a
                       key={item.href}
                       href={item.href}
-                      target="_blank"
                       rel="noopener noreferrer"
                       onClick={() => setOpen(false)}
                       className={drawerLinkClass}
