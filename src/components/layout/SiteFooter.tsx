@@ -86,7 +86,6 @@ export function SiteFooter() {
                     {link.external ? (
                       <a
                         href={link.href}
-                        target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex min-h-[44px] items-center text-[14px] text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)] hover:underline underline-offset-[3px] transition-colors duration-200 md:min-h-0 md:text-[13px]"
                       >

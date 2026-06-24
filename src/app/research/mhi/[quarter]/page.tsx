@@ -279,7 +279,7 @@ export default async function MhiQuarterPage(props: {
             <ol className="mt-6 space-y-3 list-decimal list-outside pl-5 marker:text-[color:var(--text-secondary)]">
               {q.sources.map((s, i) => (
                 <li key={i} className="text-[14px] leading-[1.5] tracking-[-0.014em] text-[color:var(--text-primary)]">
-                  <a href={s.url} rel="noopener external" target="_blank" className="text-[#1a3a6b] hover:underline underline-offset-[3px]">
+                  <a href={s.url} rel="noopener external" className="text-[#1a3a6b] hover:underline underline-offset-[3px]">
                     {s.label}
                   </a>
                   <span className="text-[color:var(--text-secondary)]"> · {s.publisher}</span>
