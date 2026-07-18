@@ -194,7 +194,7 @@ Earlier in his career, Miles co-founded Aventine Capital Partners, where he play
     office: "Austin",
     hasBio: true,
     specialties: ["Select Service"],
-    phone: "(737) 296-3875",
+    phone: "(512) 839-6999",
     email: "nate.solomon@matthews.com",
     linkedin: "https://www.linkedin.com/in/nathaniel-solomon-4b2b9125a/",
     cover: { tone: "navy" },

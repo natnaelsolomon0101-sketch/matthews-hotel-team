@@ -92,7 +92,7 @@ or next week.
 Thanks,
 Nate Solomon
 Matthews Hotel Markets
-nate.solomon@matthews.com / (737) 296-3875
+nate.solomon@matthews.com / (512) 839-6999
 ```
 
 ---
