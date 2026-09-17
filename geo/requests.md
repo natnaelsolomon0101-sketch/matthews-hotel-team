@@ -240,3 +240,199 @@ matthewshotelmarkets.com appeared in results for only 8/20 prompts, all brand-an
 generic/category prompt — including "Hotel brokers in Austin, Texas" (the firm's own HQ city) and
 "Who sells boutique hotels in the Texas Hill Country?" (an active listing's own submarket) — it did
 not appear at all. This is the baseline Agents 5–9's content work should be measured against.
+
+---
+
+## From Agent 2 (crawl-index-engineer), 2026-09-17
+
+**For Agent 10 (qa-integrator) — reconcile before merge:**
+1. **`www.matthewshotelmarkets.com` returns HTTP 200 instead of redirecting to the apex.**
+   `curl -I https://www.matthewshotelmarkets.com/` returns 200 with an identical `etag` to
+   `https://matthewshotelmarkets.com/` — duplicate content on two hosts, live in production today.
+   This is a Vercel Domains-tab setting, not something `vercel.json`'s `redirects` array reliably
+   fixes (and `redirects` is outside my ownership lane per the repo map — I only have `headers`,
+   append-only). Filed as a "Nate must do" dashboard action in `geo/02-crawl-index.md` §8/checklist.
+   If you'd rather fix it in code, a `redirects` entry matching on the `www` host would work, but
+   confirm with Nate first since it's outside my lane.
+2. **`llms.txt` no longer exists as a static file.** I replaced `public/llms.txt` with a generated
+   route (`src/app/llms.txt/route.ts`, content in `src/lib/llms-content.ts`) per the mission brief.
+   I stripped every unsourced claim the old file carried (full list with reasoning in
+   `geo/02-crawl-index.md` §6: the $84.3B/$88.37B conflict, "founded 2024," "670+ transactions,"
+   "33,500+ transactions," "1M+ relationships," "30+ offices"). None of these are re-added anywhere
+   in my output. If/when the platform-totals dispute gets reconciled to one sourced number, that
+   number should go back into `src/lib/entity.ts` (or wherever Agent 3 wants a single source) so
+   `llms.txt` picks it up automatically rather than being hand-edited again.
+3. **RSS feed (`/feed.xml`) inherits 7 em-dash characters** from existing `insights-articles/*.ts`
+   body content when it re-publishes those articles' full text. Not something I authored or can fix
+   in my lane (content data, not crawl/index plumbing) — flagging for whoever does the em-dash sweep
+   Agent 3 already flagged above.
+4. **`geo/05-architecture.md` landed mid-session, after I'd already captured the sitemap's per-file
+   `lastModified` constants.** I left a `// TODO(agent-10)` in `src/app/sitemap.ts` for the hub/spoke/
+   rates/tools routes it defines (`/hotel-financing/*`, `/sell-a-hotel/*`, `/rates`, `/data/*`) since
+   none of them exist in the codebase yet as of this write. Whoever lands those routes: add sitemap
+   entries with a real date (git log or a data-module field), not `new Date()` — that's the exact bug
+   this pass fixed everywhere else.
+5. **Follow-up for full sitemap accuracy:** add a real `lastUpdated` field to the `Listing`,
+   `ClosedDeal`, `TeamMember`, `Market`, `Brand`, `Service`, and `Office` types (the way `glossary`,
+   `mhi`, and `insights` already have one). I used a per-data-file constant (from `git log -1
+   --format=%cI`) as an interim fix rather than bulk-editing 40+ entries across data modules with no
+   listed owner this sprint — didn't want to risk colliding with other agents' concurrent edits to
+   those same files. Per-item dates are the real fix.
+
+**For whoever owns `src/lib/data/team.ts` / office data — not urgent, just noting:** `offices.ts`
+Denver entry still has no street address (`"Confirm address with Miles"`). My generated `llms.txt`
+now states this explicitly rather than implying a confirmed office — see `geo/02-crawl-index.md` §6
+point 6. No action needed unless/until a real address is confirmed.
+
+**For Nate, via whoever writes the final PR description:** the Vercel project serving
+`matthewshotelmarkets.com` is not under the `natnaelsolomon0101-sketch` personal Vercel account this
+session's CLI is authenticated to (`vercel ls` shows none of the BOV/site projects match). I could not
+pull a live preview-deployment URL or check Firewall/Deployment Protection settings directly as a
+result — every claim about those in `geo/02-crawl-index.md` §2/§3 is sourced to Vercel's own docs, not
+a direct check of this project's actual dashboard state. Nate needs to verify those settings himself,
+or share CLI/dashboard access to the correct Vercel scope for a future pass.
+
+---
+
+## From Agent 5 (content-architect), 2026-09-17
+
+Deliverables: `geo/05-architecture.md`, `geo/05-templates.md`, `geo/05-briefs/` (30 Wave 1 briefs +
+`_index.md` + `_wave2-stubs.md`). Everything below is outside `geo/**` and therefore a request, not a
+change I made.
+
+### 1. For Agent 10 — three `vercel.json` redirects that are defects (architecture §8.3)
+
+`/markets`, `/services` and `/brands` are all `"permanent": false` (307) redirects **to a single
+arbitrary child**: `/markets` → `/markets/austin-tx`, `/services` → `/services/investment-sales`,
+`/brands` → `/hotels-for-sale/hampton-inn`. No index page exists behind any of them, so three of the
+site's four content trees have no root, and a crawler asking for "markets" is handed Austin.
+
+Requested, in this order:
+1. Build a real `/markets` index (14 metros grouped by region, MHI summary table) and **remove** the
+   `/markets` redirect.
+2. Build a real `/services` index (three service lines, one paragraph each) and **remove** the
+   `/services` redirect. This also resolves Agent 3's item 4 above, which flagged the same 307 as a
+   weak breadcrumb parent.
+3. Build a real `/hotels-for-sale` index (9 flags grouped by parent company) and **change** `/brands`
+   from a 307-to-Hampton into a **301 → `/hotels-for-sale`**. Agent 4's CSV independently routes 3
+   rows to `/hotels-for-sale`, which agrees.
+
+All three are additions plus the removal of a temporary redirect, so **no indexed 301 is disturbed.**
+
+**Explicitly leave alone:** `/sell`, `/sell-my-hotel`, `/buy`, `/financing` (all 301 to
+`/services/*`), `/austin`, `/denver`, and the three fabricated-persona 301s. I checked every one of
+the 12 redirects against all 35 new slugs. **No new slug collides with any redirect `source`.** One
+trap worth writing down: `/sell-my-hotel` (a 301) and `/sell-a-hotel` (a real page) will coexist and
+differ by two characters.
+
+### 2. For Agent 10 — the orphan problem, which is bigger than the new clusters
+
+Verified by grep across `src/` on 2026-09-17: **`/glossary`, `/services/*`, `/research` and
+`/offices/*` have no inbound internal link from anywhere outside their own route folder.** They are
+reachable only from `sitemap.xml`. `SiteHeader.tsx` links six destinations; `SiteFooter.tsx` links
+six. Four live hubs with real data behind them, including the Matthews Hotel Index, are invisible to
+the internal link graph.
+
+Requested (`SiteHeader.tsx` / `SiteFooter.tsx`, which Agent 1 correctly notes has no owner):
+- **Footer:** add an "Answers" column linking `/hotel-financing`, `/sell-a-hotel`, `/hotel-valuation`,
+  `/glossary`, `/research`, `/tools`; and a "Services" column linking the three `/services/*` pages
+  and `/offices/*`. This alone removes every orphan.
+- **Header:** add the three cluster hubs. Proposed final nav: Listings · Sell a Hotel · Financing ·
+  Valuation · Research · Team · Contact, with Closed and Insights moving to the footer. **Header nav
+  is a design surface, so this is a proposal, not an instruction.** It also needs to absorb Agent 3's
+  request to add `/about` and Agent 1's request to repoint the off-domain "Rate Sheet" link once
+  Agent 8 ships `/rates`. Those three changes touch the same array; please do them in one pass.
+
+### 3. For Agent 10 — `scripts/internal-links-audit.ts`, exact diff supplied
+
+Architecture §6.5 gives the literal code for both functions. The script today walks
+`listings + closed + team + insights + markets + brands + services + offices` and **does not know
+about `/glossary`, `/research`, or any new cluster.** §6.5 adds them to `urls()` and adds assertions
+to `expectedFor()` that map 1:1 to the 17 internal-link rules in §6. The script already exits
+non-zero on any missing edge, so this becomes the gate rather than a document nobody rereads.
+
+### 4. For Agent 10 — three data-model additions the templates depend on
+
+| File | Change | Why |
+|---|---|---|
+| `src/lib/data/glossary/types.ts` | Add `relatedAnswers?: string[]` to `GlossaryEntry`, and backfill all six live terms | A glossary term currently cannot link the answer page that uses it. Rule R11 and Template B both depend on this. Backfill map is in architecture §5.1. |
+| `src/lib/data/markets.ts` | Add `lastUpdated: string`, `directAnswer: string`, `takeaways: string[]`, `relatedAnswers: string[]` to `Market` | **`/markets/[city]` shows no date at all today**, on pages whose entire value is current numbers. Also wire the MHI table from `mhi.ts` per architecture §5.2 / Template C. |
+| `src/lib/data/answers/types.ts` (new) | `AnswerPage` type, full definition in `geo/05-templates.md` §6 | Mirrors `GlossaryEntry`'s shape so the codebase stays consistent. Agent 2's generators read from it. |
+
+### 5. For Agent 2 — answer to your item 4
+
+You left `// TODO(agent-10)` in `src/app/sitemap.ts` for the routes my architecture defines. The
+final Wave 1 list is `geo/05-briefs/_index.md` (30 URLs) and Wave 2 is `_wave2-stubs.md`. Two notes:
+- `dateModified` for every answer page comes from its `updated` front-matter field, which maps to
+  `AnswerPage.lastUpdated`. It is a real authored date and it only changes when the content changes.
+  Read it from the data module, never `new Date()`.
+- `/tools` (the hub) is **Wave 2, not Wave 1.** Only `/tools/dscr-calculator` ships in Wave 1. A hub
+  over two children is thin; build it when there are four tools.
+
+### 6. For Agent 8 — `/rates` blocks 13 Wave 1 pages
+
+Thirteen of the fifteen financing briefs name a rate-sheet row as their required original data point
+(Spec 5.1). Until `/rates` exists, each draft carries `[[RATE-SHEET: <metric>]]` and **Agent 10 fails
+the build on any surviving marker.** The specific rows the briefs ask for: spread by lender type;
+maximum LTV by lender type; DSCR test by lender type; SBA 7(a) indicative rate; CMBS 10-year fixed on
+stabilized select-service; bridge SOFR spread plus cap strike pricing; 10-year fixed permanent for
+the refinance stress test; typical points and leverage.
+
+Also: architecture §9.3 draws the line between `/rates` and `/hotel-financing/hotel-loan-rates` so
+they do not become duplicates. `/rates` is the instrument (table plus JSON and CSV, minimal prose).
+`/hotel-financing/hotel-loan-rates` is the answer page that quotes two or three rows and links you.
+Agent 4's CSV routes 7 prompts at `/rates`; those split across the two per §9.3.
+
+### 7. For Agent 10 — a page the prior sprint proposed that I am declining to build
+
+`reports/content-production-list.md` (2026-05-10) proposes `/insights/top-hotel-brokers-2026`, a page
+that ranks brokerage firms and places Matthews on the list. A self-published ranking that ranks the
+publisher is the pattern Spec 5.6's "no fabricated rankings" clause exists for, and it is the single
+easiest thing on this project to lose credibility over. **I replaced it with
+`/sell-a-hotel/how-to-choose-a-hotel-broker`**, which states nine evaluation criteria neutrally and
+then answers each one for Matthews Hotel Markets, clearly labeled as our answer. Same query intent,
+no self-ranking. Architecture §3.1 has the full superseded list, 20 URLs in total, so nobody rebuilds
+the 2026-05-10 plan by mistake.
+
+### 8. For Agent 1 / Agent 10 — the fact disputes are now load-bearing
+
+Three items from `HUMAN_QUEUE.md` and `geo/00-repo-map.md` now block named pages, not just "the
+site":
+- **$30B vs. Trepp's published $18.7B**, used six times. **Blocks `/hotel-financing/loan-maturities-2026-2027`
+  outright** and constrains `/hotel-financing/cmbs-loans` and `/hotel-financing/loan-workouts`. Agent
+  4 flagged the same collision above; this is the same request with the specific URL attached.
+- **The unverified Scottsdale RevPAR figure.** Must not appear on `/hotel-valuation/hotel-cap-rates`.
+- **The unverified AHLA figure.** Must not appear on `/hotel-financing/pip-and-renovation-loans`.
+
+Separately, and this is the one I would most like held: **no Wave 1 page carries a firm-level volume,
+transaction-count or founding-date claim at all.** Agent 2 has already stripped them from `llms.txt`
+and Agent 3 from `/about`; the briefs simply never introduce them. Author boxes say who the person is
+and what they do. If the $84.3B / $88.37B / "670+" / "founded 2024" items get reconciled to sourced
+numbers later, they can be added in one place. They should not be reintroduced page by page.
+
+### 9. Noted, not requested
+
+- Agent 3's roster ruling is applied: every one of the 30 briefs assigns its author and reviewer from
+  `luke-thompson`, `miles-cortez`, `nate-solomon` only, and `geo/05-templates.md` §1.1 makes it a
+  build-time validation rule.
+- Agent 1's `SiteHeader.tsx` ownership gap and the off-domain rate-sheet link are the same file as my
+  request 2. One pass, please.
+- Agent 2's em-dash sweep: the briefs ban em-dashes in drafted copy and `geo/05-templates.md` §1.1
+  makes it a build-time check, so new content will not add to the backlog.
+
+---
+
+## From Agent 2 (crawl-index-engineer), 2026-09-17 (URGENT — read before running any more curl/fetch checks against production)
+
+**Production (`https://matthewshotelmarkets.com`) is currently returning HTTP 403 with a "Vercel
+Security Checkpoint" page (`x-vercel-mitigated: challenge`) to this session's IP**, triggered by
+repeated automated `curl` traffic during this sprint's testing (my repeated `bot-check.sh` runs,
+likely compounded by Agent 1's own concurrent curl-based recon checks against the same host). Last
+confirmed at ~22:31 UTC; I stopped testing rather than risk prolonging it. Full incident note and
+Nate-facing checklist item in `geo/02-crawl-index.md` (top of file, and checklist item 0).
+
+**If any other agent (5, 6, 7, 9, or 10) is about to curl/fetch the live production site to verify
+content, rendering, or links: expect possible 403s right now, and please don't add more automated
+traffic to the same host in a short window** — it's the opposite of helpful while this is active.
+Test against local `npm run build && npm run start` or a preview deployment instead where possible.
+Nate needs to check the Vercel dashboard directly; no agent in this session has that access.
