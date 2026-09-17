@@ -44,8 +44,21 @@ Plain TypeScript modules under `src/lib/data/` — no CMS, no MDX.
 `team.ts`, `services.ts`, `offices.ts`, `process.ts`, `mhi.ts`, `glossary/`.
 New content should follow this pattern (typed TS modules), not introduce a CMS.
 
-## Team (do not invent people)
-`/team/[slug]` builds exactly three: **luke-thompson, miles-cortez, nate-solomon**.
+## Team (do not invent people) — CORRECTED 2026-09-17 after Agent 4 flagged it
+`src/lib/data/team.ts` exports **22 real people**. Three have `hasBio: true` and therefore get
+detail pages: **luke-thompson, miles-cortez, nate-solomon**. The other **19 are generated as lite
+cards** (`hasBio: false`, see the `.map()` near line 233) and render on `/team` as photo + name +
+title only, with no bio page. `generateStaticParams` filters on `hasBio !== false`, which is why the
+build prerenders exactly 3 `/team/[slug]` routes.
+
+**What this means in practice:**
+- **Authors and reviewers on answer pages must be one of the three with bios.** The other 19 have no
+  bio, no `knowsAbout` data, and no verified LinkedIn in the repo.
+- **Person JSON-LD:** the 19 lite members ARE visible on `/team` with name and title, so minimal
+  `Person` nodes for them mirror visible content and are legitimate. Do not invent `sameAs`,
+  `knowsAbout`, or bios for them. If the repo has no LinkedIn URL for a person, omit `sameAs`.
+- Do not write "a three-person team" anywhere. It is a 22-person team, three of whom are published
+  in depth.
 `vercel.json` 301s `/team/sarah-chen`, `/team/marcus-reyes`, `/team/elena-park` → `/team`.
 Those three were fabricated personas that a previous pass removed. **Never re-create them.**
 
