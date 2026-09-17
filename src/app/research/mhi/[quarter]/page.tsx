@@ -14,8 +14,8 @@ import {
   formatCapBand,
   joinWithMarket,
 } from "@/lib/data/mhi";
-
-const SITE_URL = "https://matthewshotelmarkets.com";
+import JsonLd from "@/components/seo/JsonLd";
+import { SITE_URL } from "@/lib/entity";
 
 type Params = { quarter: string };
 
@@ -53,9 +53,7 @@ export default async function MhiQuarterPage(props: {
   // Dataset @graph: variableMeasured spells out cap rate / ADR / RevPAR /
   // occupancy / txn count; spatialCoverage names each of the 14 markets
   // with geo coordinates. Released under CC-BY 4.0.
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
+  const graph = [
       {
         "@type": "Dataset",
         "@id": `${url}#dataset`,
@@ -121,17 +119,13 @@ export default async function MhiQuarterPage(props: {
           { "@type": "ListItem", position: 4, name: q.label, item: url },
         ],
       },
-    ],
-  };
+  ];
 
   return (
     <>
       <SiteHeader />
       <main className="pt-16">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <JsonLd graph={graph} />
 
         <section className="bg-white py-16 lg:py-20">
           <div className="mx-auto max-w-[1024px] px-6">

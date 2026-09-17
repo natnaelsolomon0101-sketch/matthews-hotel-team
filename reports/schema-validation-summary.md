@@ -1,6 +1,6 @@
-# Schema validation — 2026-05-11T01:03:50.249Z
+# Schema validation — 2026-09-17T22:21:45.987Z
 
-Base: `https://matthewshotelmarkets.com` · URLs: 74 · Blocks: 139 · Valid: 139 · Pass rate: 100%
+Base: `https://matthewshotelmarkets.com` · URLs: 120 · Blocks: 119 · Valid: 119 · Pass rate: 100%
 
 ## 1 Issues
 

@@ -11,8 +11,8 @@ import { team } from "@/lib/data/team";
 import { markets } from "@/lib/data/markets";
 import { brands } from "@/lib/data/brands";
 import { insights as allInsights } from "@/lib/data/insights";
-
-const SITE_URL = "https://matthewshotelmarkets.com";
+import JsonLd from "@/components/seo/JsonLd";
+import { SITE_URL } from "@/lib/entity";
 
 type Params = { term: string };
 
@@ -57,16 +57,19 @@ export default async function GlossaryEntryPage(props: { params: Promise<Params>
     .map((s) => allInsights.find((i) => i.slug === s))
     .filter((i): i is NonNullable<typeof i> => Boolean(i));
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
+  const graph = [
       {
         "@type": "DefinedTerm",
         "@id": `${url}#term`,
         name: entry.term,
         description: entry.shortDef,
         url,
-        inDefinedTermSet: { "@id": `${SITE_URL}/glossary#glossary` },
+        inDefinedTermSet: {
+          "@type": "DefinedTermSet",
+          "@id": `${SITE_URL}/glossary#glossary`,
+          name: "Hotel Investment Glossary",
+          url: `${SITE_URL}/glossary`,
+        },
       },
       {
         "@type": "Article",
@@ -111,8 +114,7 @@ export default async function GlossaryEntryPage(props: { params: Promise<Params>
           { "@type": "ListItem", position: 3, name: entry.term, item: url },
         ],
       },
-    ],
-  };
+  ];
 
   const bodyParagraphs = entry.body.split(/\n\n+/).map((p) => p.trim()).filter(Boolean);
   const lastUpdatedFormatted = (() => {
@@ -125,10 +127,7 @@ export default async function GlossaryEntryPage(props: { params: Promise<Params>
     <>
       <SiteHeader />
       <main className="pt-16">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <JsonLd graph={graph} />
 
         <article className="bg-white pt-16 pb-24">
           <div className="mx-auto max-w-[692px] px-6">

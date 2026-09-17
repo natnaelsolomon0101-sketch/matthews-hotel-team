@@ -14,8 +14,8 @@ import { closed } from "@/lib/data/closed";
 import { team } from "@/lib/data/team";
 import { brands } from "@/lib/data/brands";
 import { marketFaqs, faqJsonLdNode } from "@/lib/seo/faq";
-
-const SITE_URL = "https://matthewshotelmarkets.com";
+import JsonLd from "@/components/seo/JsonLd";
+import { SITE_URL } from "@/lib/entity";
 
 type Params = { city: string };
 
@@ -85,9 +85,7 @@ export default async function MarketPage(props: { params: Promise<Params> }) {
   // listings + BreadcrumbList + FAQPage. Place schema gives this market page
   // a real entity that AI Overview retrievers can attach to "hotels for sale
   // [city]" queries.
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
+  const graph = [
       {
         "@type": "Place",
         "@id": `${url}#place`,
@@ -141,17 +139,13 @@ export default async function MarketPage(props: { params: Promise<Params> }) {
         ],
       },
       faqJsonLdNode(url, faqs),
-    ],
-  };
+  ];
 
   return (
     <>
       <SiteHeader />
       <main className="pt-16">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <JsonLd graph={graph} />
 
         <section className="bg-white py-16 lg:py-20">
           <div className="mx-auto max-w-[1024px] px-6">

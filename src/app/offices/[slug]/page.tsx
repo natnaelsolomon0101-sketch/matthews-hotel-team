@@ -10,8 +10,18 @@ import { TwoToneHeadline } from "@/components/ui/TwoToneHeadline";
 import { Pill } from "@/components/ui/Pill";
 import { offices } from "@/lib/data/offices";
 import { team } from "@/lib/data/team";
+import JsonLd from "@/components/seo/JsonLd";
+import {
+  BRAND,
+  EMAIL,
+  ID,
+  SITE_URL,
+  breadcrumb,
+  webPage,
+} from "@/lib/entity";
 
-const SITE_URL = "https://matthewshotelmarkets.com";
+/** Schema.org State expects a name, not a postal abbreviation. */
+const STATE_NAMES: Record<string, string> = { TX: "Texas", CO: "Colorado" };
 
 type Params = { slug: string };
 
@@ -52,70 +62,65 @@ export default async function OfficePage(props: {
 
   const url = `${SITE_URL}/offices/${office.slug}`;
 
-  // LocalBusiness schema with office Place node + broker references.
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": ["LocalBusiness", "RealEstateAgent"],
-        "@id": `${url}#office`,
-        name: `Matthews Hotel Markets — ${office.city}`,
-        description: office.marketCommentary,
-        url,
-        telephone: office.phone,
-        email: "hotelteam@matthews.com",
-        parentOrganization: { "@id": `${SITE_URL}/#org` },
-        address: {
-          "@type": "PostalAddress",
-          ...(office.streetAddress
-            ? { streetAddress: office.streetAddress }
-            : {}),
-          addressLocality: office.city,
-          addressRegion: office.state,
-          ...(office.zip ? { postalCode: office.zip } : {}),
-          addressCountry: "US",
-        },
-        ...(office.geo
-          ? {
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: office.geo.lat,
-                longitude: office.geo.lng,
-              },
-            }
-          : {}),
-        areaServed: { "@type": "State", name: office.state },
-        employee: officeBrokers.map((b) => ({
-          "@type": "Person",
-          "@id": `${SITE_URL}/team/${b.slug}#person`,
-          name: b.name,
-          url: `${SITE_URL}/team/${b.slug}`,
-        })),
-      },
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-          {
-            "@type": "ListItem",
-            position: 2,
-            name: "Offices",
-            item: `${SITE_URL}/offices`,
+  // LocalBusiness is a local-pack claim, so it is only emitted for an office
+  // with a real street address. offices.ts has one for Austin and does not
+  // have one for Denver ("Confirm address with Miles"), so Denver renders as
+  // an Organization sub-unit with areaServed only. No invented address, and no
+  // address-less LocalBusiness pretending to be a storefront.
+  const hasStreetAddress = Boolean(office.streetAddress);
+
+  const officeNode: Record<string, unknown> = {
+    "@type": hasStreetAddress
+      ? ["LocalBusiness", "RealEstateAgent"]
+      : "Organization",
+    "@id": hasStreetAddress ? ID.hq : `${url}#office`,
+    name: `${BRAND}, ${office.city}`,
+    description: office.marketCommentary,
+    url,
+    email: EMAIL,
+    parentOrganization: { "@id": ID.org },
+    address: {
+      "@type": "PostalAddress",
+      ...(office.streetAddress ? { streetAddress: office.streetAddress } : {}),
+      addressLocality: office.city,
+      addressRegion: office.state,
+      ...(office.zip ? { postalCode: office.zip } : {}),
+      addressCountry: "US",
+    },
+    ...(office.phone ? { telephone: office.phone } : {}),
+    ...(hasStreetAddress && office.geo
+      ? {
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: office.geo.lat,
+            longitude: office.geo.lng,
           },
-          { "@type": "ListItem", position: 3, name: office.city, item: url },
-        ],
-      },
-    ],
+        }
+      : {}),
+    areaServed: { "@type": "State", name: STATE_NAMES[office.state] ?? office.state },
+    employee: officeBrokers.map((b) => ({ "@id": ID.person(b.slug) })),
   };
+
+  const graph = [
+    {
+      ...webPage({
+        url,
+        name: `${BRAND}, ${office.city}`,
+        description: office.marketCommentary,
+        mainEntity: officeNode["@id"] as string,
+      }),
+    },
+    officeNode,
+    // No /offices index route exists, so no intermediate crumb is claimed.
+    // Requested from Agent 10 in geo/requests.md.
+    breadcrumb([{ name: `${office.city} office`, path: `/offices/${office.slug}` }]),
+  ];
 
   return (
     <>
       <SiteHeader />
       <main className="pt-16">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <JsonLd graph={graph} />
 
         <section className="bg-white py-16 lg:py-20">
           <div className="mx-auto max-w-[1024px] px-6">
@@ -188,11 +193,11 @@ export default async function OfficePage(props: {
                     </a>
                   )}
                   <a
-                    href="mailto:hotelteam@matthews.com"
+                    href={`mailto:${EMAIL}`}
                     className="flex items-center gap-3 hover:text-[#1a3a6b] transition-colors"
                   >
                     <Mail className="h-4 w-4 shrink-0 text-[#1a3a6b]" strokeWidth={1.75} aria-hidden="true" />
-                    <span>hotelteam@matthews.com</span>
+                    <span>{EMAIL}</span>
                   </a>
                 </div>
                 <div className="mt-6">

@@ -7,8 +7,8 @@ import SiteFooter from "@/components/layout/SiteFooter";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { TwoToneHeadline } from "@/components/ui/TwoToneHeadline";
 import { glossary } from "@/lib/data/glossary";
-
-const SITE_URL = "https://matthewshotelmarkets.com";
+import JsonLd from "@/components/seo/JsonLd";
+import { SITE_URL } from "@/lib/entity";
 
 export const metadata: Metadata = {
   title: "Hotel Investment Glossary | Matthews Hotel Markets",
@@ -28,9 +28,7 @@ export default function GlossaryIndexPage() {
   const url = `${SITE_URL}/glossary`;
   const entries = [...glossary].sort((a, b) => a.term.localeCompare(b.term));
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
+  const graph = [
       {
         "@type": "DefinedTermSet",
         "@id": `${url}#glossary`,
@@ -52,17 +50,13 @@ export default function GlossaryIndexPage() {
           { "@type": "ListItem", position: 2, name: "Glossary", item: url },
         ],
       },
-    ],
-  };
+  ];
 
   return (
     <>
       <SiteHeader />
       <main className="pt-16">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <JsonLd graph={graph} />
 
         <section className="bg-white py-16 lg:py-20">
           <div className="mx-auto max-w-[1024px] px-6">

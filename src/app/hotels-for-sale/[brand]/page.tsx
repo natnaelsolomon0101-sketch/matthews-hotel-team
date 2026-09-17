@@ -13,8 +13,8 @@ import { listings } from "@/lib/data/listings";
 import { closed } from "@/lib/data/closed";
 import { markets } from "@/lib/data/markets";
 import { brandFaqs, faqJsonLdNode } from "@/lib/seo/faq";
-
-const SITE_URL = "https://matthewshotelmarkets.com";
+import JsonLd from "@/components/seo/JsonLd";
+import { SITE_URL } from "@/lib/entity";
 
 type Params = { brand: string };
 
@@ -80,9 +80,7 @@ export default async function BrandPage(props: { params: Promise<Params> }) {
   // topical-authority signal.
   const topMarkets = markets.slice(0, 6);
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
+  const graph = [
       {
         "@type": "WebPage",
         "@id": url,
@@ -132,17 +130,13 @@ export default async function BrandPage(props: { params: Promise<Params> }) {
         ],
       },
       faqJsonLdNode(url, faqs),
-    ],
-  };
+  ];
 
   return (
     <>
       <SiteHeader />
       <main className="pt-16">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <JsonLd graph={graph} />
 
         <section className="bg-white py-16 lg:py-20">
           <div className="mx-auto max-w-[1024px] px-6">

@@ -4,8 +4,8 @@ import SiteFooter from "@/components/layout/SiteFooter";
 import ContactHero from "@/components/sections/contact/ContactHero";
 import ContactInfo from "@/components/sections/contact/ContactInfo";
 import ContactForm from "@/components/sections/contact/ContactForm";
-
-const SITE_URL = "https://matthewshotelmarkets.com";
+import JsonLd from "@/components/seo/JsonLd";
+import { EMAIL, ID, SITE_URL, breadcrumb, webPage } from "@/lib/entity";
 
 export const metadata: Metadata = {
   title: "Contact a Hotel Broker | Talk to Matthews Hotel Markets",
@@ -28,10 +28,35 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
+  const url = `${SITE_URL}/contact`;
+  const graph = [
+    {
+      ...webPage({
+        url,
+        name: "Contact a Hotel Broker",
+        description: metadata.description as string,
+      }),
+      "@type": "ContactPage",
+    },
+    {
+      "@type": "ContactPoint",
+      "@id": `${url}#contactpoint`,
+      contactType: "sales",
+      email: EMAIL,
+      areaServed: "US",
+      availableLanguage: "English",
+      // No organization-level switchboard number exists in this repo, so none
+      // is claimed here. Broker direct lines live on /team/[slug].
+      parentOrganization: { "@id": ID.org },
+    },
+    breadcrumb([{ name: "Contact", path: "/contact" }]),
+  ];
+
   return (
     <>
       <SiteHeader />
       <main className="pt-16">
+        <JsonLd graph={graph} />
         <ContactHero />
         <section className="bg-white py-16 lg:py-20">
           <div className="mx-auto grid max-w-[1024px] grid-cols-1 gap-10 px-6 lg:grid-cols-[1fr_1.4fr] lg:gap-14">

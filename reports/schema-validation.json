@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-05-11T01:03:50.249Z",
-  "base": "https://matthewshotelmarkets.com",
-  "urlsChecked": 74,
-  "blocksFound": 139,
-  "blocksValid": 139,
+  "runAt": "2026-09-17T22:21:45.987Z",
+  "base": "/Users/nate/Projects/matthews-hotel-team/.next/server/app",
+  "urlsChecked": 120,
+  "blocksFound": 119,
+  "blocksValid": 119,
   "issues": [
     {
       "url": "/listings/walden-retreats-hill-country",
@@ -15,973 +15,833 @@
     {
       "url": "/",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/listings",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,ItemList,BreadcrumbList",
       "valid": true,
       "issues": []
     },
     {
       "url": "/closed",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,ItemList,BreadcrumbList",
       "valid": true,
       "issues": []
     },
     {
       "url": "/team",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,ItemList,Person,Person,Person,Person,Person,Person,Person,Person,Person,Person,Person,Person,Person,Person,Person,Person,Person,Person,Person,BreadcrumbList",
       "valid": true,
       "issues": []
     },
     {
       "url": "/insights",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,ItemList,BreadcrumbList",
       "valid": true,
       "issues": []
     },
     {
       "url": "/process",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,BreadcrumbList",
       "valid": true,
       "issues": []
     },
     {
       "url": "/contact",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,ContactPage,ContactPoint,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/about",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,AboutPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/glossary",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,DefinedTermSet,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/research",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,CollectionPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/glossary/cap-rate",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,DefinedTerm,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/glossary/revpar",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,DefinedTerm,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/glossary/adr",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,DefinedTerm,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/glossary/pip",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,DefinedTerm,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/glossary/bov",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,DefinedTerm,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/glossary/iom",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,DefinedTerm,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/research/mhi/q1-2026",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Dataset,BreadcrumbList",
       "valid": true,
       "issues": []
     },
     {
       "url": "/listings/hampton-inn-shelbyville",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Product,Hotel,Offer,BreadcrumbList,WebPage,FAQPage",
       "valid": true,
       "issues": []
     },
     {
-      "url": "/listings/hampton-inn-shelbyville",
-      "index": 1,
-      "type": "Product,Hotel,Offer,BreadcrumbList,WebPage,FAQPage",
+      "url": "/listings/comfort-suites-daytona-beach",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Product,Hotel,Offer,BreadcrumbList,WebPage,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/listings/super-8-wyndham-kinder",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Product,Hotel,Offer,BreadcrumbList,WebPage,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/listings/microtel-wyndham-sidney",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Product,Hotel,Offer,BreadcrumbList,WebPage,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/listings/quality-inn-blytheville",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Product,Hotel,Offer,BreadcrumbList,WebPage,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/listings/americas-best-value-inn-caldwell",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Product,Hotel,Offer,BreadcrumbList,WebPage,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/listings/hampton-by-hilton-akron",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Product,Hotel,Offer,BreadcrumbList,WebPage,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/listings/springhill-suites-pittsburgh-washington",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Product,Hotel,Offer,BreadcrumbList,WebPage,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/listings/la-quinta-wyndham-lumberton",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Product,Hotel,Offer,BreadcrumbList,WebPage,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/listings/fox-river-resort-sheridan",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Product,Hotel,Offer,BreadcrumbList,WebPage,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/listings/hotel-pad-site-morrisville",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Product,Hotel,Offer,BreadcrumbList,WebPage,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/listings/quality-inn-johnson-city",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Product,Hotel,Offer,BreadcrumbList,WebPage,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/listings/days-inn-wyndham-del-rio",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Product,Hotel,Offer,BreadcrumbList,WebPage,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/listings/fairfield-inn-suites-monaca",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Product,Hotel,Offer,BreadcrumbList,WebPage,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/listings/sinclair-gas-hotel-bluff",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Product,Hotel,Offer,BreadcrumbList,WebPage,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/listings/econo-lodge-suburban-studios-daytona",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Product,Hotel,Offer,BreadcrumbList,WebPage,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/listings/place-in-the-sun-palm-springs",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Product,Hotel,Offer,BreadcrumbList,WebPage,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/listings/red-roof-inn-somerset",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Product,Hotel,Offer,BreadcrumbList,WebPage,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/listings/apple-mountain-resort-clarkesville",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Product,Hotel,Offer,BreadcrumbList,WebPage,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/listings/best-western-plus-fresno",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Product,Hotel,Offer,BreadcrumbList,WebPage,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/closed/26-hotel-portfolio-acquisition-debt",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/closed/26-hotel-portfolio-acquisition-debt",
-      "index": 1,
-      "type": "Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/closed/courtyard-lake-charles-debt",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/closed/courtyard-lake-charles-debt",
-      "index": 1,
-      "type": "Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/closed/marriott-2-pack-del-mar-debt",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/closed/marriott-2-pack-del-mar-debt",
-      "index": 1,
-      "type": "Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/closed/full-service-marriott-fort-collins-debt",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/closed/full-service-marriott-fort-collins-debt",
-      "index": 1,
-      "type": "Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/closed/4-pack-marriott-intercon-portfolio-debt",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/closed/4-pack-marriott-intercon-portfolio-debt",
-      "index": 1,
-      "type": "Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/closed/residence-inn-san-marcos-construction",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/closed/residence-inn-san-marcos-construction",
-      "index": 1,
-      "type": "Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/closed/staybridge-suites-austin-permanent",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/closed/staybridge-suites-austin-permanent",
-      "index": 1,
-      "type": "Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/closed/country-inn-suites-augusta-cmbs",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/closed/country-inn-suites-augusta-cmbs",
-      "index": 1,
-      "type": "Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/closed/hampton-inn-portfolio-atlanta-sale-bridge",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/closed/hampton-inn-portfolio-atlanta-sale-bridge",
-      "index": 1,
-      "type": "Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/closed/crown-plaza-downtown-dallas-permanent",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/closed/crown-plaza-downtown-dallas-permanent",
-      "index": 1,
-      "type": "Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/closed/radisson-hotel-corning-sale",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/closed/radisson-hotel-corning-sale",
-      "index": 1,
-      "type": "Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/closed/hilton-garden-inn-bozeman-permanent",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/closed/hilton-garden-inn-bozeman-permanent",
-      "index": 1,
-      "type": "Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/closed/hampton-inn-suites-beaumont-sale-bridge",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/closed/hampton-inn-suites-beaumont-sale-bridge",
-      "index": 1,
-      "type": "Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/closed/stone-mountain-lodge-lyons-sale-bridge",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/closed/stone-mountain-lodge-lyons-sale-bridge",
-      "index": 1,
-      "type": "Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/closed/holiday-inn-express-augusta-sale-bridge",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/closed/holiday-inn-express-augusta-sale-bridge",
-      "index": 1,
-      "type": "Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/closed/ramada-houston-permanent",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/closed/ramada-houston-permanent",
-      "index": 1,
-      "type": "Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/closed/staybridge-suites-houston-permanent",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/closed/staybridge-suites-houston-permanent",
-      "index": 1,
-      "type": "Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/closed/country-inn-suites-san-antonio-permanent",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/closed/country-inn-suites-san-antonio-permanent",
-      "index": 1,
-      "type": "Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/closed/resort-at-paws-up-missoula-permanent",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/closed/resort-at-paws-up-missoula-permanent",
-      "index": 1,
-      "type": "Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/closed/mansion-at-judges-hill-austin-sale",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
-      "url": "/closed/mansion-at-judges-hill-austin-sale",
-      "index": 1,
-      "type": "Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "url": "/closed/hampton-home2-suites-austin-pref-equity",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/closed/tampa-boutique-multifamily-pref-equity",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/closed/home2-suites-del-rio-construction",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/closed/dual-brand-hampton-home2-austin-construction",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/closed/hampton-inn-beaumont-permanent",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/closed/home2-suites-columbus-permanent",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/closed/hampton-inn-suites-altoona-permanent",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/closed/la-quinta-inn-suites-waco-permanent",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/closed/holiday-inn-express-early-permanent",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/closed/firebrand-hotel-whitefish-permanent",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/closed/home2-suites-hanford-permanent",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/closed/hampton-inn-home2-suites-tulsa-permanent",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/closed/marble-falls-hotel-land-purchase",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/closed/quality-inn-carthage-permanent",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/closed/home2-suites-merrillville-permanent",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/closed/home2-suites-austin-permanent",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/closed/holiday-inn-vidor-permanent",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,Product,Hotel,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/team/luke-thompson",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/team/luke-thompson",
-      "index": 1,
-      "type": "Person,BreadcrumbList",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,ProfilePage,ItemList,BreadcrumbList",
       "valid": true,
       "issues": []
     },
     {
       "url": "/team/miles-cortez",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/team/miles-cortez",
-      "index": 1,
-      "type": "Person,BreadcrumbList",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,ProfilePage,ItemList,BreadcrumbList",
       "valid": true,
       "issues": []
     },
     {
       "url": "/team/nate-solomon",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/team/nate-solomon",
-      "index": 1,
-      "type": "Person,BreadcrumbList",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,ProfilePage,BreadcrumbList",
       "valid": true,
       "issues": []
     },
     {
       "url": "/insights/texas-hotel-cap-rates-q2-2026",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/insights/texas-hotel-cap-rates-q2-2026",
-      "index": 1,
-      "type": "Article,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/insights/select-service-vs-full-service-2026",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/insights/select-service-vs-full-service-2026",
-      "index": 1,
-      "type": "Article,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/insights/hotel-refinancing-wave-2026",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/insights/hotel-refinancing-wave-2026",
-      "index": 1,
-      "type": "Article,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/insights/sun-belt-hospitality-investment-2026",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/insights/sun-belt-hospitality-investment-2026",
-      "index": 1,
-      "type": "Article,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/insights/brand-flag-cap-rate-guide-2026",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/insights/brand-flag-cap-rate-guide-2026",
-      "index": 1,
-      "type": "Article,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/insights/how-to-sell-a-hotel-2026",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/insights/how-to-sell-a-hotel-2026",
-      "index": 1,
-      "type": "Article,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/insights/hotel-cmbs-distress-trepp-2026",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/insights/hotel-cmbs-distress-trepp-2026",
-      "index": 1,
-      "type": "Article,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/insights/hotel-adr-revpar-recovery-2026",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/insights/hotel-adr-revpar-recovery-2026",
-      "index": 1,
-      "type": "Article,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/insights/q1-2026-outlook",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/insights/q1-2026-outlook",
-      "index": 1,
-      "type": "Article,BreadcrumbList",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,BreadcrumbList",
       "valid": true,
       "issues": []
     },
     {
       "url": "/insights/adr-recovery-texas-secondary",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/insights/adr-recovery-texas-secondary",
-      "index": 1,
-      "type": "Article,BreadcrumbList",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,BreadcrumbList",
       "valid": true,
       "issues": []
     },
     {
       "url": "/insights/glamping-investment-thesis",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/insights/glamping-investment-thesis",
-      "index": 1,
-      "type": "Article,BreadcrumbList",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,BreadcrumbList",
       "valid": true,
       "issues": []
     },
     {
       "url": "/insights/select-service-vs-full-service-capital-markets-2026",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/insights/select-service-vs-full-service-capital-markets-2026",
-      "index": 1,
-      "type": "Article,BreadcrumbList",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,BreadcrumbList",
       "valid": true,
       "issues": []
     },
     {
       "url": "/insights/hotel-owners-refinancing-wave-2026",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/insights/hotel-owners-refinancing-wave-2026",
-      "index": 1,
-      "type": "Article,BreadcrumbList",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,BreadcrumbList",
       "valid": true,
       "issues": []
     },
     {
       "url": "/insights/sun-belt-hospitality-2026-investor-sentiment-preview",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/insights/sun-belt-hospitality-2026-investor-sentiment-preview",
-      "index": 1,
-      "type": "Article,BreadcrumbList",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Article,BreadcrumbList",
       "valid": true,
       "issues": []
     },
     {
       "url": "/markets/austin-tx",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/markets/austin-tx",
-      "index": 1,
-      "type": "Place,WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Place,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/markets/dallas-tx",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/markets/dallas-tx",
-      "index": 1,
-      "type": "Place,WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Place,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/markets/houston-tx",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/markets/houston-tx",
-      "index": 1,
-      "type": "Place,WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Place,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/markets/san-antonio-tx",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/markets/san-antonio-tx",
-      "index": 1,
-      "type": "Place,WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Place,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/markets/nashville-tn",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/markets/nashville-tn",
-      "index": 1,
-      "type": "Place,WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Place,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/markets/atlanta-ga",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/markets/atlanta-ga",
-      "index": 1,
-      "type": "Place,WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Place,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/markets/charleston-sc",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/markets/charleston-sc",
-      "index": 1,
-      "type": "Place,WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Place,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/markets/savannah-ga",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/markets/savannah-ga",
-      "index": 1,
-      "type": "Place,WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Place,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/markets/charlotte-nc",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/markets/charlotte-nc",
-      "index": 1,
-      "type": "Place,WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Place,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/markets/phoenix-az",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/markets/phoenix-az",
-      "index": 1,
-      "type": "Place,WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Place,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/markets/denver-co",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/markets/denver-co",
-      "index": 1,
-      "type": "Place,WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Place,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/markets/miami-fl",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/markets/miami-fl",
-      "index": 1,
-      "type": "Place,WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Place,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/markets/tampa-fl",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/markets/tampa-fl",
-      "index": 1,
-      "type": "Place,WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Place,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/markets/orlando-fl",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/markets/orlando-fl",
-      "index": 1,
-      "type": "Place,WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,Place,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/hotels-for-sale/hampton-inn",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/hotels-for-sale/hampton-inn",
-      "index": 1,
-      "type": "WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/hotels-for-sale/holiday-inn-express",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/hotels-for-sale/holiday-inn-express",
-      "index": 1,
-      "type": "WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/hotels-for-sale/marriott",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/hotels-for-sale/marriott",
-      "index": 1,
-      "type": "WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/hotels-for-sale/hilton",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/hotels-for-sale/hilton",
-      "index": 1,
-      "type": "WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/hotels-for-sale/ihg",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/hotels-for-sale/ihg",
-      "index": 1,
-      "type": "WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/hotels-for-sale/best-western",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/hotels-for-sale/best-western",
-      "index": 1,
-      "type": "WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/hotels-for-sale/hyatt",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/hotels-for-sale/hyatt",
-      "index": 1,
-      "type": "WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/hotels-for-sale/choice",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/hotels-for-sale/choice",
-      "index": 1,
-      "type": "WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/hotels-for-sale/wyndham",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/hotels-for-sale/wyndham",
-      "index": 1,
-      "type": "WebPage,BreadcrumbList,FAQPage",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,BreadcrumbList,FAQPage",
       "valid": true,
       "issues": []
     },
     {
       "url": "/services/investment-sales",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/services/investment-sales",
-      "index": 1,
-      "type": "Service,BreadcrumbList",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,BreadcrumbList",
       "valid": true,
       "issues": []
     },
     {
       "url": "/services/capital-markets",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/services/capital-markets",
-      "index": 1,
-      "type": "Service,BreadcrumbList",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,BreadcrumbList",
       "valid": true,
       "issues": []
     },
     {
       "url": "/services/acquisition-advisory",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/services/acquisition-advisory",
-      "index": 1,
-      "type": "Service,BreadcrumbList",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,BreadcrumbList",
       "valid": true,
       "issues": []
     },
     {
       "url": "/offices/austin",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/offices/austin",
-      "index": 1,
-      "type": "LocalBusiness,RealEstateAgent,BreadcrumbList",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,BreadcrumbList",
       "valid": true,
       "issues": []
     },
     {
       "url": "/offices/denver",
       "index": 0,
-      "type": "RealEstateAgent,WebSite",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/offices/denver",
-      "index": 1,
-      "type": "LocalBusiness,RealEstateAgent,BreadcrumbList",
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Organization,BreadcrumbList",
       "valid": true,
       "issues": []
     }

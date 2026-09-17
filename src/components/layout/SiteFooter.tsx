@@ -1,6 +1,13 @@
 import * as React from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import {
+  BOILERPLATE_SHORT,
+  HQ_ADDRESS_LINE,
+  LINKEDIN,
+  PARENT,
+  PARENT_URL,
+} from "@/lib/entity";
 
 interface FooterLink {
   href: string;
@@ -43,11 +50,12 @@ const COLUMNS: FooterColumn[] = [
   {
     heading: "Company",
     links: [
+      { href: "/about", label: "About" },
       { href: "/team", label: "Team" },
       { href: "/contact", label: "Contact" },
-      { href: "https://www.matthews.com", label: "Matthews.com", external: true },
+      { href: PARENT_URL, label: "Matthews.com", external: true },
       {
-        href: "https://www.linkedin.com/company/matthews-hotel-markets/",
+        href: LINKEDIN,
         label: "LinkedIn",
         external: true,
       },
@@ -123,13 +131,22 @@ export function SiteFooter() {
           National investor reach
         </p>
 
+        {/*
+          Boilerplate. Same sentence as Organization.description, /about,
+          /team, and llms.txt. Source of truth: src/lib/entity.ts. Reword it
+          there, never here.
+        */}
+        <p className="mt-6 max-w-[70ch] text-[12px] leading-[1.5] text-[color:var(--text-secondary)]">
+          {BOILERPLATE_SHORT}
+        </p>
+
         {/* Legal */}
         <div className="mt-4 space-y-1.5">
           <p className="text-[11px] tracking-[-0.005em] text-[color:var(--text-tertiary)]">
-            Matthews Real Estate Investment Services, 515 Congress Ave., Suite 2410, Austin, TX 78701.
+            {PARENT}, {HQ_ADDRESS_LINE}.
           </p>
           <p className="text-[11px] tracking-[-0.005em] text-[color:var(--text-tertiary)]">
-            Copyright &copy; {year} Matthews Real Estate Investment Services. All rights reserved.
+            Copyright &copy; {year} {PARENT}. All rights reserved.
           </p>
         </div>
       </div>

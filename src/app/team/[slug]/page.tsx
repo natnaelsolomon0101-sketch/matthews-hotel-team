@@ -1,4 +1,5 @@
 import * as React from "react";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Phone, Mail, ExternalLink } from "lucide-react";
 import SiteHeader from "@/components/layout/SiteHeader";
@@ -9,14 +10,31 @@ import TeamStats from "@/components/sections/team-detail/TeamStats";
 import TeamTopDeals from "@/components/sections/team-detail/TeamTopDeals";
 import TeamCredentials from "@/components/sections/team-detail/TeamCredentials";
 import { team, type TeamMember } from "@/lib/data/team";
+import { closed } from "@/lib/data/closed";
+import JsonLd from "@/components/seo/JsonLd";
+import {
+  BOILERPLATE,
+  ID,
+  SITE_URL,
+  breadcrumb,
+  itemList,
+  personNode,
+  webPage,
+} from "@/lib/entity";
+
+/**
+ * Date the three broker profiles were last reviewed against team.ts and
+ * closed.ts. Bump it when a bio, title, phone, email, or attribution changes,
+ * not on every deploy.
+ */
+const LAST_REVIEWED = "2026-09-17";
+const LAST_REVIEWED_LABEL = "September 17, 2026";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
   return team.filter((m) => m.hasBio !== false).map((m) => ({ slug: m.slug }));
 }
-
-const SITE_URL = "https://matthewshotelmarkets.com";
 
 export async function generateMetadata({
   params,
@@ -33,18 +51,18 @@ export async function generateMetadata({
   )} at Matthews Hotel Markets.`;
 
   return {
-    title: `${member.name} — ${member.title}`,
+    title: `${member.name}, ${member.title}`,
     description,
     alternates: { canonical: url },
     openGraph: {
       type: "profile",
-      title: `${member.name} — ${member.title}`,
+      title: `${member.name}, ${member.title}`,
       description,
       url,
     },
     twitter: {
       card: "summary",
-      title: `${member.name} — ${member.title}`,
+      title: `${member.name}, ${member.title}`,
       description,
     },
   };
@@ -159,124 +177,96 @@ export default async function TeamMemberPage({
 
   const url = `${SITE_URL}/team/${member.slug}`;
 
-  // E-E-A-T-rich Person schema. Author authority for /insights/* citations
-  // depends on this — Google's quality raters and the major LLMs check
-  // sameAs (LinkedIn), alumniOf, memberOf, knowsAbout, and verified
-  // credentials. Bio is full-length (not truncated) so the description
-  // surface matches what Wikipedia / KG ingestion expects.
-  const knowsAbout = Array.from(
-    new Set<string>([
-      ...member.specialties,
-      "Hotel Investment Sales",
-      "Hospitality Capital Markets",
-      "Hotel Acquisition Advisory",
-      "Hotel Underwriting",
-      "Hotel Valuation",
+  // Closed transactions on this site that name this broker. Real attribution
+  // from src/lib/data/closed.ts, rendered visibly below and mirrored in the
+  // graph. Brokers with no named closes get no section and no ItemList.
+  const namedCloses = closed.filter((d) => d.brokerSlugs.includes(member.slug));
+
+  // Person is built ONCE, in src/lib/entity.ts, so the node here is identical
+  // to the one every other page emits for this broker. Author authority for
+  // /insights/* citations depends on that consistency.
+  const person = personNode(member);
+
+  const graph = [
+    {
+      ...webPage({
+        url,
+        name: `${member.name}, ${member.title}`,
+        description: member.bio || BOILERPLATE,
+        mainEntity: ID.person(member.slug),
+      }),
+      "@type": "ProfilePage",
+      dateModified: LAST_REVIEWED,
+    },
+    {
+      ...person,
+      ...(namedCloses.length > 0
+        ? { subjectOf: { "@id": `${url}#transactions` } }
+        : {}),
+    },
+    ...(namedCloses.length > 0
+      ? [
+          itemList(
+            namedCloses.map((d) => ({
+              name: `${d.name}, ${d.city}, ${d.state}`,
+              path: `/closed/${d.slug}`,
+            })),
+            `${url}#transactions`,
+          ),
+        ]
+      : []),
+    breadcrumb([
+      { name: "Team", path: "/team" },
+      { name: member.name, path: `/team/${member.slug}` },
     ]),
-  );
-
-  const personNode: Record<string, unknown> = {
-    "@type": "Person",
-    "@id": `${url}#person`,
-    name: member.name,
-    givenName: member.name.split(/\s+/)[0],
-    familyName: member.name.split(/\s+/).slice(-1)[0],
-    jobTitle: member.title,
-    image: member.photo
-      ? `${SITE_URL}${member.photo}`
-      : `${SITE_URL}/images/matthews-logo.jpg`,
-    description: member.bio,
-    telephone: member.phone,
-    email: member.email,
-    url,
-    worksFor: { "@id": `${SITE_URL}/#org` },
-    affiliation: { "@id": `${SITE_URL}/#org` },
-    parentOrganization: {
-      "@type": "Organization",
-      name: "Matthews Real Estate Investment Services",
-      url: "https://www.matthews.com",
-    },
-    knowsAbout,
-    hasOccupation: {
-      "@type": "Occupation",
-      name: "Real Estate Broker",
-      occupationalCategory: "41-9022.00", // BLS SOC: Real Estate Sales Agents
-      occupationLocation: {
-        "@type": "Place",
-        name: `Matthews Hotel Markets, ${member.office}`,
-      },
-    },
-    workLocation: {
-      "@type": "Place",
-      name: `Matthews Hotel Markets, ${member.office}`,
-    },
-  };
-  if (member.linkedin) {
-    personNode.sameAs = [member.linkedin];
-  }
-  if (member.education && member.education.length > 0) {
-    // alumniOf — parse "Degree, Institution" patterns into EducationalOrganization
-    personNode.alumniOf = member.education.map((e) => {
-      const parts = e.split(",").map((s) => s.trim());
-      const institution = parts[parts.length - 1];
-      return { "@type": "EducationalOrganization", name: institution };
-    });
-  }
-  if (member.affiliations && member.affiliations.length > 0) {
-    // memberOf — every association membership becomes a node
-    personNode.memberOf = member.affiliations.map((a) => ({
-      "@type": "Organization",
-      name: a,
-    }));
-  }
-  if (member.designations && member.designations.length > 0) {
-    personNode.award = member.designations;
-    personNode.honorificSuffix = member.designations.join(", ");
-  }
-  if (member.languages && member.languages.length > 0) {
-    personNode.knowsLanguage = member.languages;
-  }
-
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      personNode,
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-          {
-            "@type": "ListItem",
-            position: 2,
-            name: "Team",
-            item: `${SITE_URL}/team`,
-          },
-          {
-            "@type": "ListItem",
-            position: 3,
-            name: member.name,
-            item: url,
-          },
-        ],
-      },
-    ],
-  };
+  ];
 
   return (
     <>
       <SiteHeader />
       <main>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <JsonLd graph={graph} />
         <TeamDetailHero member={member} />
         <TeamStats member={member} />
         <div className="bg-white py-16 lg:py-20">
           <div className="mx-auto max-w-[1024px] px-6 grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-10">
             <div>
               <TeamTopDeals member={member} />
+
+              {namedCloses.length > 0 && (
+                <section className="mt-12">
+                  <h2 className="text-[12px] uppercase tracking-[0.18em] font-medium text-[color:var(--text-secondary)]">
+                    Transactions on this site
+                  </h2>
+                  <p className="mt-3 max-w-[60ch] text-[15px] leading-[1.5] text-[color:var(--text-secondary)]">
+                    {namedCloses.length} closed transactions published on this
+                    site name {member.name}. Each links to its own page with
+                    keys, market, deal size, and transaction type.
+                  </p>
+                  <ul className="mt-6 divide-y divide-[color:var(--divider)]">
+                    {namedCloses.map((d) => (
+                      <li key={d.slug}>
+                        <Link
+                          href={`/closed/${d.slug}`}
+                          className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 py-3 text-[15px] tracking-[-0.014em] text-[color:var(--text-primary)] hover:text-[#1a3a6b] transition-colors"
+                        >
+                          <span>{d.name}</span>
+                          <span className="text-[13px] text-[color:var(--text-secondary)]">
+                            {d.city}, {d.state} &middot; {d.year} &middot;{" "}
+                            {d.transactionTypeLabel ?? d.transactionType}
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
+
               <TeamCredentials member={member} />
+
+              <p className="mt-12 text-[13px] text-[color:var(--text-secondary)]">
+                Profile last reviewed {LAST_REVIEWED_LABEL}.
+              </p>
             </div>
             <BrokerContactRail broker={member} />
           </div>

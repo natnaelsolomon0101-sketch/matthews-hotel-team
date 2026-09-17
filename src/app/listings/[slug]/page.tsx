@@ -13,8 +13,8 @@ import { ListingSimilar } from "@/components/sections/listing-detail/ListingSimi
 import { listings, getListing } from "@/lib/data/listings";
 import { getBroker } from "@/lib/data/team";
 import { listingFaqs, faqJsonLdNode } from "@/lib/seo/faq";
-
-const SITE_URL = "https://matthewshotelmarkets.com";
+import JsonLd from "@/components/seo/JsonLd";
+import { SITE_URL } from "@/lib/entity";
 
 type Params = { slug: string };
 
@@ -100,9 +100,7 @@ export default async function ListingDetailPage(
   // Single @graph: MTE Product+Hotel + Offer (sell) + Place + BreadcrumbList
   // + WebPage. AI Overview retrievers consume @graph more reliably than
   // multiple separate <script> tags.
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
+  const graph = [
       {
         "@type": ["Product", "Hotel"],
         "@id": `${url}#listing`,
@@ -211,17 +209,13 @@ export default async function ListingDetailPage(
         mainEntity: { "@id": `${url}#listing` },
       },
       faqJsonLdNode(url, faqs),
-    ],
-  };
+  ];
 
   return (
     <>
       <SiteHeader />
       <main className={primaryBroker ? "pb-20 lg:pb-0" : undefined}>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <JsonLd graph={graph} />
         <ListingHero listing={listing} />
         <ListingStatPanel listing={listing} />
 

@@ -8,8 +8,8 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { TwoToneHeadline } from "@/components/ui/TwoToneHeadline";
 import { insights } from "@/lib/data/insights";
 import { getLatestMhi } from "@/lib/data/mhi";
-
-const SITE_URL = "https://matthewshotelmarkets.com";
+import JsonLd from "@/components/seo/JsonLd";
+import { SITE_URL } from "@/lib/entity";
 
 export const metadata: Metadata = {
   title: "Hotel Investment Research | Matthews Hotel Markets",
@@ -32,9 +32,7 @@ export default function ResearchHubPage() {
 
   // CollectionPage @graph — the research hub is a "collection" of
   // datasets and articles. Surfaces topical depth to crawlers.
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
+  const graph = [
       {
         "@type": "CollectionPage",
         "@id": url,
@@ -65,17 +63,13 @@ export default function ResearchHubPage() {
           { "@type": "ListItem", position: 2, name: "Research", item: url },
         ],
       },
-    ],
-  };
+  ];
 
   return (
     <>
       <SiteHeader />
       <main className="pt-16">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <JsonLd graph={graph} />
 
         <section className="bg-white py-16 lg:py-20">
           <div className="mx-auto max-w-[1024px] px-6">

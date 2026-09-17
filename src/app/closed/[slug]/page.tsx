@@ -11,8 +11,8 @@ import { TwoToneHeadline } from "@/components/ui/TwoToneHeadline";
 import { closed } from "@/lib/data/closed";
 import { team } from "@/lib/data/team";
 import { closedFaqs, faqJsonLdNode } from "@/lib/seo/faq";
-
-const SITE_URL = "https://matthewshotelmarkets.com";
+import JsonLd from "@/components/seo/JsonLd";
+import { SITE_URL } from "@/lib/entity";
 
 type Params = { slug: string };
 
@@ -72,9 +72,7 @@ export default async function ClosedDealPage(props: {
   // @graph: Article (the close announcement) + RealEstateListing-as-Product
   // (with Sold availability) + BreadcrumbList. Brokers credited as authors of
   // the close — their E-E-A-T signal compounds.
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
+  const graph = [
       {
         "@type": "Article",
         "@id": `${url}#article`,
@@ -132,17 +130,13 @@ export default async function ClosedDealPage(props: {
         ],
       },
       faqJsonLdNode(url, faqs),
-    ],
-  };
+  ];
 
   return (
     <>
       <SiteHeader />
       <main className="pt-16">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <JsonLd graph={graph} />
 
         <section className="bg-white py-16 lg:py-20">
           <div className="mx-auto max-w-[1024px] px-6">

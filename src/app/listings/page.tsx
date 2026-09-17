@@ -4,8 +4,9 @@ import { SiteFooter } from "@/components/layout/SiteFooter";
 import { ListingsHero } from "@/components/sections/listings/ListingsHero";
 import { ListingsBrowser } from "@/components/sections/listings/ListingsBrowser";
 import PosterCTA from "@/components/sections/shared/PosterCTA";
-
-const SITE_URL = "https://matthewshotelmarkets.com";
+import JsonLd from "@/components/seo/JsonLd";
+import { listings } from "@/lib/data/listings";
+import { SITE_URL, breadcrumb, itemList, webPage } from "@/lib/entity";
 
 export const metadata: Metadata = {
   title: "Hotels for Sale | Active Listings",
@@ -28,10 +29,29 @@ export const metadata: Metadata = {
 };
 
 export default function ListingsPage() {
+  const url = `${SITE_URL}/listings`;
+  const graph = [
+    webPage({
+      url,
+      name: "Hotels for Sale, Active Listings",
+      description: metadata.description as string,
+      mainEntity: `${url}#listings`,
+    }),
+    itemList(
+      listings.map((l) => ({
+        name: `${l.name}, ${l.city}, ${l.state}`,
+        path: `/listings/${l.slug}`,
+      })),
+      `${url}#listings`,
+    ),
+    breadcrumb([{ name: "Listings", path: "/listings" }]),
+  ];
+
   return (
     <>
       <SiteHeader />
       <main className="pt-16">
+        <JsonLd graph={graph} />
         <ListingsHero />
         <ListingsBrowser />
         <PosterCTA
