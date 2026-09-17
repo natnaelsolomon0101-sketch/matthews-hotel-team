@@ -1,0 +1,84 @@
+name: Rate sheet monthly refresh
+
+# Opens one issue on the first of the month with the checklist. The refresh is
+# 20 minutes: one command for the public benchmarks, then the observed spreads,
+# which only a person can supply.
+#
+# It does not commit anything and it does not publish anything. A workflow that
+# auto-published a rate sheet would be publishing numbers nobody read.
+
+on:
+  schedule:
+    # 13:00 UTC on the 1st, which is 8am Central in winter and 7am in summer.
+    - cron: "0 13 1 * *"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  open-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open the refresh checklist
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const now = new Date();
+            const month = now.toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
+            const slug = `${now.getUTCFullYear()}-${String(now.getUTCMonth() + 1).padStart(2, "0")}`;
+            const title = `Rate sheet refresh: ${month}`;
+
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+              labels: "rate-sheet",
+            });
+            if (existing.data.some((i) => i.title === title)) {
+              core.info(`Already open: ${title}`);
+              return;
+            }
+
+            const body = [
+              `Publishing the ${month} edition of \`/rates\`. Full runbook: \`geo/08-data.md\`.`,
+              "",
+              "### 1. Public benchmarks (2 minutes, one command)",
+              "```",
+              "npx tsx scripts/fetch-benchmarks.ts",
+              "```",
+              "- [ ] Script exited 0. If any endpoint failed it says so and keeps the old value, which is then stale. Do not ship a stale benchmark without changing its as-of date.",
+              "- [ ] SBA 504 debenture re-typed by hand from this month's pricing. It is not on a machine endpoint.",
+              "",
+              "### 2. New edition (10 minutes)",
+              "In `src/lib/rates/sheet.ts`:",
+              `- [ ] Add a new \`RateEdition\` with \`slug: "${slug}"\` at the FRONT of \`EDITIONS\`. The old edition stays exactly as it was: someone may have cited it.`,
+              "- [ ] Update `directAnswer` with this month's real numbers.",
+              "- [ ] Write `changelog`: what moved since last month, in basis points, from the two published readings. Compare against the prior edition's own figures.",
+              "- [ ] Set `nextRefresh` to the first business week of next month.",
+              "",
+              "### 3. Observed cells (the part only a person can do)",
+              "- [ ] For each lender type, type in what was actually quoted this month, as `{ basis: \"observed\", value, quoteCount }`.",
+              "- [ ] Any row with fewer than three independent quotes stays `pending`. Do not fill it from memory or from last month.",
+              "- [ ] No lender names. No client, property or transaction detail. Anywhere.",
+              "",
+              "### 4. The index",
+              "- [ ] MHDI: median of this month's qualifying quotes, or `value: null` if fewer than three.",
+              "- [ ] Never backfill a prior month that published as no reading.",
+              "",
+              "### 5. Verify and ship",
+              "```",
+              "npm run build && npx tsx scripts/schema-validate.ts --build",
+              "```",
+              "- [ ] `/rates`, `/rates/methodology`, `/rates.json`, `/rates.csv` all render.",
+              "- [ ] Spot-check three source links still resolve, and bump `verified` in `src/lib/rates/sources.ts` for the ones you opened.",
+              "- [ ] `/data/hotel-financing-statistics`: re-verify anything whose `verified` date is more than 90 days old, or remove it.",
+            ].join("\n");
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body,
+              labels: ["rate-sheet"],
+            });

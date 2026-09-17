@@ -436,3 +436,130 @@ content, rendering, or links: expect possible 403s right now, and please don't a
 traffic to the same host in a short window** — it's the opposite of helpful while this is active.
 Test against local `npm run build && npm run start` or a preview deployment instead where possible.
 Nate needs to check the Vercel dashboard directly; no agent in this session has that access.
+
+---
+
+## From Agent 8 (data-and-rate-sheet), 2026-09-17
+
+Deliverables: `geo/08-data.md`, plus `/rates`, `/rates/2026-09`, `/rates/methodology`, `/rates.json`,
+`/rates.csv`, `/data/hotel-financing-statistics`, `scripts/fetch-benchmarks.ts`,
+`.github/workflows/rates-reminder.yml`. Build green, lint clean, JSON-LD validated by hand.
+
+### 1. For Agent 6 and Agent 10 — the `[[RATE-SHEET: ...]]` markers, and what can actually replace them
+
+`/rates` now exists, so the 13 financing briefs are unblocked, **but three of the eight metrics Agent 5
+asked for have no number and will not have one until Luke supplies the quote log.** Full status table in
+`geo/08-data.md` §2. Short version:
+
+| Metric Agent 5 requested | Can a Wave 1 page cite it today? |
+|---|---|
+| SBA 7(a) indicative rate | **Yes.** "9.75% maximum allowable at the last published Prime of 6.75%" (SBA's published Prime + 3.00% cap). |
+| Maximum LTV by lender type | **Yes, for SBA 504 only.** 85% of project cost, per 13 CFR 120.910 (a hotel is a limited or special purpose property). |
+| CMBS 10-yr fixed / 10-yr permanent / bridge SOFR | **Index only.** 10-yr UST 4.94% and SOFR 3.62%, both dated and sourced. The spread is not published. |
+| Spread by lender type | **SBA 7(a) only.** |
+| DSCR test by lender type | **No. Nothing.** Nobody publishes these. `/tools/dscr-calculator` must not state a lender-type DSCR floor. |
+| Cap strike pricing | **No.** |
+| Typical points and leverage | **No.** |
+
+**Do not leave a `[[RATE-SHEET: ...]]` marker in, and do not invent a number.** Every one of the 13
+pages can satisfy Spec 5.1's original-data requirement today by citing a dated benchmark plus the SBA
+rows, and then saying plainly what is not published. Suggested pattern, which is a differentiator
+rather than an apology:
+
+> "Matthews Hotel Markets' September 2026 rate sheet puts the 10-year Treasury at 4.94% as of
+> September 17 and the SBA 7(a) maximum allowable rate at 9.75%. We do not publish an indicative CMBS
+> spread until we have three independent quotes in a month; the rate sheet shows what is and is not
+> published."
+
+The `/rates` vs `/hotel-financing/hotel-loan-rates` boundary from architecture §9.3 is respected:
+`/rates` is the instrument, minimal prose, no answer-page format, no duplicated FAQ.
+
+### 2. For Agent 10 — `src/components/layout/SiteHeader.tsx`, fourth request on the same file
+
+`/rates` is live on-domain, so the primary-nav item
+`{ href: "https://www.matthewsratesheet.info", label: "Rate Sheet" }` should become `{ href: "/rates",
+label: "Rate Sheet" }`. This is the same file Agent 1 (off-domain link), Agent 3 (add `/about`) and
+Agent 5 (cluster hubs) have all requested. **One pass, four changes.** Nobody owns the file.
+
+The 301 of `matthewsratesheet.info` itself is a Vercel Domains action on the separate
+`matthews-rate-sheet` project and is **Nate's decision and Nate's access**, laid out as a yes/no at the
+top of `geo/08-data.md`. I did not execute any part of it. Recommendation is yes, 301 to
+`matthewshotelmarkets.com/rates`.
+
+One concrete reason it is now urgent rather than theoretical: `matthewsratesheet.info` currently shows
+the 10-year UST at 5.01% (September 16 print) while `/rates` shows 4.94% (September 17). **Two live
+Matthews-branded hotel rate sheets that disagree is worse than either one alone**, and the gap grows
+every day both stay up.
+
+### 3. For Agent 10 — `scripts/schema-validate.ts` does not cover the new pages
+
+Its `urls()` function is a hardcoded list. The "119/119 valid" result does **not** include `/rates`,
+`/rates/2026-09`, `/rates/methodology` or `/data/hotel-financing-statistics`. I validated all four by
+hand against the built HTML (1 `ld+json` block each, single `@graph`, 13 to 14 nodes, zero dangling
+`@id` refs) but CI will not catch a future regression. Please add those four strings to `urls()`.
+
+### 4. For Agent 2 / Agent 10 — `src/app/sitemap.ts` TODO, with real dates available
+
+Agent 2 left `// TODO(agent-10)` for `/rates` and `/data/*`. Real authored dates now exist, so please
+do not use `new Date()`:
+
+| URL | `lastModified` source |
+|---|---|
+| `/rates` | `latestEdition().publishedAt` from `@/lib/rates/sheet` |
+| `/rates/2026-09` | the same edition's `publishedAt` (iterate `EDITIONS`) |
+| `/rates/methodology` | `latestEdition().publishedAt` |
+| `/data/hotel-financing-statistics` | the `UPDATED` constant in that page file (2026-09-17) |
+
+`/rates.json` and `/rates.csv` are data endpoints, not pages. They are in the `Dataset` node's
+`distribution` and do not belong in the sitemap.
+
+### 5. For Agent 10 — the MHI cross-link is currently one-way
+
+Decision, justified at the top of `geo/08-data.md`: the new **Matthews Hotel Debt Index (MHDI)** is a
+**distinct dataset** from the Matthews Hotel Index, not an extension of it. Different cadence
+(monthly vs quarterly), different geography grain (national vs 14 markets), and, decisively, a
+different evidence class (quotes received vs public research). Folding an observation series into MHI
+would falsify MHI's own published methodology statement, which is what its credibility rests on.
+
+`/rates` and `/rates/methodology` both link `/research/mhi` and explain the relationship, and
+`/data/hotel-financing-statistics` cites the MHI Q1 2026 cap rate bands as a first-party statistic.
+**The reverse links do not exist.** `src/app/research/page.tsx` and `src/app/research/mhi/page.tsx` are
+not in my lane. Please add `/rates` and the MHDI to the research hub so the franchise reads as one
+research program rather than two unrelated pages.
+
+### 6. For Agent 10 and Agent 1 — the three disputed figures are resolved on my pages, with receipts
+
+None of them appear anywhere in my output. `/data/hotel-financing-statistics` goes further and carries
+a visible **"Numbers we removed, and why"** table.
+
+- **$30B hotel CMBS:** not published anywhere I could find. Trepp's published figure is **$18.7B
+  maturing in 2026**, and nearly 70% of it floats. Both are on the page, labeled as a
+  trade-publication reading of Trepp (Hotel Dive, 2026-08-03) rather than a direct Trepp reading.
+  **This unblocks `/hotel-financing/loan-maturities-2026-2027`**, which Agent 4 and Agent 5 both
+  flagged as blocked. Use $18.7B for 2026, do not extend it to 2027 without a source.
+- **Scottsdale $339 RevPAR:** removed, with the reasoning stated on the page.
+- **AHLA "1.349B room nights":** removed. **I read AHLA's public 2026 State of the Industry release on
+  2026-09-17 and the figure is not in it.** That release publishes guest spending, tax contribution,
+  wages, employment and GOPPAR, not room nights. All five figures that ARE in it are on the page,
+  sourced. The room-nights figure may be in the paid full report, which I have not read.
+
+`HUMAN_QUEUE.md` items on all three can be closed as "resolved, see
+`/data/hotel-financing-statistics`" rather than staying open for Nate.
+
+### 7. For Agent 10 — a `/data` index does not exist, and the breadcrumb reflects that
+
+`/data/hotel-financing-statistics` ships with a **single-crumb** breadcrumb rather than a `Data`
+parent, because there is no `/data` route and Agent 3 correctly flagged that a crumb pointing at a 404
+is worse than a shallow crumb. If a `/data` index is ever built (Wave 2 has `/tools` in the same
+position), add the parent crumb then.
+
+### 8. Noted, not requested
+
+- I made **no HTTP request to `matthewshotelmarkets.com`** at any point, per the coordinator's 403
+  warning. Everything was verified against the local build output.
+- `npm run lint` is clean for every file I added. The three remaining warnings are pre-existing:
+  unused `image` in `closed/[slug]`, unused `ChevronRight` in `glossary/[term]`, unused `Pill` in
+  `SiteHeader.tsx`.
+- No em-dashes in any user-facing copy I wrote.
+- `scripts/fetch-benchmarks.ts` was run end to end and reproduced every hand-entered benchmark value
+  exactly, from Treasury, the NY Fed and FRED. All three endpoints are public and keyless.
