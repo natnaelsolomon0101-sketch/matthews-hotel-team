@@ -1,0 +1,221 @@
+{
+  "auditedAt": "2026-09-17",
+  "auditedBy": "recon-auditor (Agent 1)",
+  "productionUrl": "https://matthewshotelmarkets.com",
+  "productionLastDeployed": "2026-07-18T19:29:52.699Z",
+  "productionLastDeployedNote": "Inferred from the pre-GEO-branch main HEAD commit a759f67 (2026-07-18 14:27:57 -0500) and confirmed by the sitemap.xml lastmod value baked into the static build (113 of 120 URLs share this exact timestamp). Production has not been redeployed in 61 days as of this audit. Any repo fixes landing on geo/ai-visibility, or any prior-sprint work merged to main since July 18, are NOT live until the next deploy.",
+  "sitemapUrlCount": 120,
+  "sitemapLastmodDistribution": {
+    "2026-07-18T19:29:52.699Z": 113,
+    "2026-05-10T00:00:00.000Z": 6,
+    "2026-04-15T00:00:00.000Z": 1
+  },
+  "sitemapLastmodNote": "Verified live 2026-09-17. 113 of 120 sitemap entries share one identical timestamp — the moment of the last production build, not a real content-edit date. This matches src/app/sitemap.ts using `lastModified: new Date()` for every route except glossary (6, real per-item lastUpdated) and the one mhi quarter (1, real publishedAt). NOTE: while this audit was running, Agent 2 (crawl-index-engineer) edited src/app/sitemap.ts in the local repo to replace new Date() with per-file git-derived constants — that fix is not yet deployed to production; this record describes the live state as of the audit.",
+  "robotsTxtLive": "User-Agent: *\nAllow: /\nDisallow: /api/\nDisallow: /_next/\n\nHost: https://matthewshotelmarkets.com\nSitemap: https://matthewshotelmarkets.com/sitemap.xml",
+  "robotsTxtNote": "Single wildcard group, no per-bot Allow groups, as of the live fetch 2026-09-17. Agent 2 rewrote src/app/robots.ts locally during this audit (per-token groups for search/answer bots, user-triggered fetchers, and training crawlers, plus dropping the /_next/ disallow per Google's own rendering guidance) — not yet deployed.",
+  "discoveryFiles": {
+    "/robots.txt": { "status": 200, "present": true },
+    "/sitemap.xml": { "status": 200, "present": true },
+    "/llms.txt": { "status": 200, "present": true, "note": "Hand-written static file in public/, not generated from src/lib/data/*. Contains the stale $84.3B figure (see contradictions) and two unsourced claims: 'Founded as a dedicated hospitality vertical in 2024' and '670+ hotel transactions'." },
+    "/llms-full.txt": { "status": 404, "present": false },
+    "/feed.xml": { "status": 404, "present": false },
+    "/rss.xml": { "status": 404, "present": false },
+    "/.well-known/": { "status": 308, "present": "redirects, not a real index" },
+    "/ai.txt": { "status": 404, "present": false, "note": "Not a real standard; checked out of caution, absent as expected." }
+  },
+  "routes": [
+    {
+      "template": "/",
+      "instances": 1,
+      "rendering": "static",
+      "buildMarker": "○",
+      "httpStatus": 200,
+      "bytes": 79079,
+      "title": "Matthews Hotel Markets | National Hotel Investment Sales & Brokerage",
+      "h1": "Hospitality finance and sales. Nationwide.",
+      "opensWithDirectAnswer": false,
+      "opensWithMarketingCopy": true,
+      "lighthouseMobile": { "lcpSeconds": 2.7, "cls": 0, "tbtMs": 0, "speedIndexSeconds": 2.8, "totalJsKiB": 485, "perfScore": 0.94, "note": "LCP 2.7s exceeds the 2.5s threshold in the brief -> P1. INP not measurable via lab Lighthouse (needs field/CrUX data); not fabricated here." },
+      "contradictionsOnThisPage": [
+        "meta description says '$84.3B closed' (layout.tsx, matches llms.txt); visible body copy (HomeWhy.tsx) says '$88.37B closed.' -- both claim to be the same cumulative platform figure, verified present simultaneously in the raw HTML sha e4b7248d.",
+        "A third, older stat block (HomeStats.tsx) shows '$890M+ closed in hospitality' / 8,600+ rooms / 30 cities / 12 states under the eyebrow 'Matthews Hospitality · 2019–2021' and the footer line 'As of Q4 2021' -- a 5-year-stale, hospitality-only figure sitting on the same page as two different current whole-platform figures.",
+        "'Last refresh Q1 2026' (HomeFeatured.tsx) is hardcoded and will read as stale-or-wrong for the rest of calendar 2026 regardless of actual listings freshness."
+      ]
+    },
+    {
+      "template": "/listings",
+      "instances": 1,
+      "rendering": "static",
+      "buildMarker": "○",
+      "httpStatus": 200,
+      "bytes": 133215,
+      "note": "Renders all active listing names/cards server-side, confirmed in raw HTML (e.g. 'Walden Retreats Hill Country' present)."
+    },
+    {
+      "template": "/listings/[slug]",
+      "instances": 21,
+      "rendering": "ssg",
+      "buildMarker": "●",
+      "sampleHttpStatus": 200,
+      "sampleBytes": 125687,
+      "specialCase": {
+        "slug": "walden-retreats-hill-country",
+        "httpStatus": 307,
+        "redirectsTo": "https://walden-retreats-om.vercel.app/",
+        "cause": "listing.omUrl set in src/lib/data/listings.ts; src/app/listings/[slug]/page.tsx calls redirect(listing.omUrl) before rendering when omUrl is present (only 1 of 21 listings has this field).",
+        "impact": "generateMetadata still builds a full canonical/OG/JSON-LD payload for this URL, but the actual response is a bare 307 with no body content -- the sitemap lists this URL at priority 0.85 with an image, but it can never be indexed as Matthews content; any citation of this specific deal attributes to the external, unrelated-looking walden-retreats-om.vercel.app domain instead of matthewshotelmarkets.com."
+      }
+    },
+    {
+      "template": "/closed",
+      "instances": 1,
+      "rendering": "static",
+      "buildMarker": "○",
+      "httpStatus": 200,
+      "bytes": 113366
+    },
+    {
+      "template": "/closed/[slug]",
+      "instances": 37,
+      "rendering": "ssg",
+      "buildMarker": "●",
+      "sampleHttpStatus": 200,
+      "sampleBytes": 67720
+    },
+    {
+      "template": "/team",
+      "instances": 1,
+      "rendering": "static",
+      "buildMarker": "○",
+      "httpStatus": 200,
+      "bytes": 113966,
+      "namedPeopleVisible": 22,
+      "namedPeopleNote": "CORRECTION to the mission-brief 'verified facts': team.ts is NOT limited to 3 people. It has 3 full-bio brokers (Luke Thompson, Miles Cortez, Nate Solomon; hasBio true, get /team/[slug] detail pages) PLUS 19 additional real Matthews personnel (hasBio: false; e.g. Mitchell Glasson, Francisco Nacorda, Dustin Robinett, ...) rendered as photo+name+title lite cards only, sourced from cms.matthews.com photo URLs with real @matthews.com emails and phone numbers. These are NOT the fabricated personas (sarah-chen/marcus-reyes/elena-park) the brief warns about -- those never existed in team.ts and are only present as vercel.json redirect sources. Total named, visible people on /team: 22. TeamCard.tsx correctly omits the <Link> wrapper for hasBio:false members (confirmed /team/mitchell-glasson -> 404), so there is no dead-internal-link issue, but Agent 3 should know 19 real people are visible with zero Person schema (only the 3 hasBio:true members get JSON-LD)."
+    },
+    {
+      "template": "/team/[slug]",
+      "instances": 3,
+      "rendering": "ssg",
+      "buildMarker": "●",
+      "sampleHttpStatus": 200,
+      "sampleBytes": 64433,
+      "hasPersonJsonLd": true
+    },
+    {
+      "template": "/insights",
+      "instances": 1,
+      "rendering": "static",
+      "buildMarker": "○",
+      "httpStatus": 200,
+      "bytes": 70841
+    },
+    {
+      "template": "/insights/[slug]",
+      "instances": 14,
+      "rendering": "ssg",
+      "buildMarker": "●",
+      "sampleSlug": "hotel-refinancing-wave-2026",
+      "sampleHttpStatus": 200,
+      "sampleBytes": 129186,
+      "lighthouseMobile": { "lcpSeconds": 2.2, "cls": 0.001, "tbtMs": 0, "speedIndexSeconds": 2.2, "totalJsKiB": 505, "perfScore": 0.97 },
+      "note": "hotel-refinancing-wave-2026.ts and how-to-sell-a-hotel-2026.ts both repeat an unverified '$30 billion' CMBS maturity figure -- see contradictions."
+    },
+    { "template": "/process", "instances": 1, "rendering": "static", "buildMarker": "○", "httpStatus": 200, "bytes": 64219 },
+    { "template": "/contact", "instances": 1, "rendering": "static", "buildMarker": "○", "httpStatus": 200, "bytes": 47336 },
+    { "template": "/glossary", "instances": 1, "rendering": "static", "buildMarker": "○", "httpStatus": 200, "bytes": 58440 },
+    {
+      "template": "/glossary/[term]",
+      "instances": 6,
+      "rendering": "ssg",
+      "buildMarker": "●",
+      "sampleSlug": "cap-rate",
+      "sampleHttpStatus": 200,
+      "hasVisibleLastUpdated": true,
+      "note": "Confirmed 'Updated May 10, 2026' visible directly under H1, matches dateModified in JSON-LD -- glossary is the one template that fully satisfies the Spec 5.1 'last updated' requirement today."
+    },
+    {
+      "template": "/markets/[city]",
+      "instances": 14,
+      "rendering": "ssg",
+      "buildMarker": "●",
+      "sampleSlug": "austin-tx",
+      "sampleHttpStatus": 200,
+      "sampleBytes": 92726
+    },
+    {
+      "template": "/hotels-for-sale/[brand]",
+      "instances": 9,
+      "rendering": "ssg",
+      "buildMarker": "●",
+      "sampleSlug": "hampton-inn",
+      "sampleHttpStatus": 200,
+      "sampleBytes": 82821
+    },
+    {
+      "template": "/services/[slug]",
+      "instances": 3,
+      "rendering": "ssg",
+      "buildMarker": "●",
+      "sampleSlug": "investment-sales",
+      "sampleHttpStatus": 200,
+      "sampleBytes": 50486
+    },
+    {
+      "template": "/offices/[slug]",
+      "instances": 2,
+      "rendering": "ssg",
+      "buildMarker": "●",
+      "slugs": ["austin", "denver"],
+      "austinHttpStatus": 200,
+      "denverHttpStatus": 200,
+      "denverAddressStatus": "NO REAL STREET ADDRESS. src/lib/data/offices.ts denver entry has address: 'Confirm address with Miles', empty zip, no streetAddress field. Both the visible page and the layout.tsx / offices/[slug] JSON-LD correctly guard on `office.streetAddress &&` so the placeholder text does NOT leak to production HTML or schema -- but no real LocalBusiness/Place node can be emitted for Denver until a real address is supplied."
+    },
+    { "template": "/research", "instances": 1, "rendering": "static", "buildMarker": "○", "httpStatus": 200, "bytes": 61124 },
+    {
+      "template": "/research/mhi",
+      "instances": 1,
+      "rendering": "dynamic-redirect",
+      "httpStatus": 307,
+      "redirectsTo": "/research/mhi/q1-2026 (internal)",
+      "note": "Intentional: src/app/research/mhi/page.tsx always 307s to the latest quarter, by design ('a stable URL for citations'). Listed in sitemap.xml at priority 0.85 alongside the quarter page it redirects to -- functionally harmless but redundant crawl budget."
+    },
+    {
+      "template": "/research/mhi/[quarter]",
+      "instances": 1,
+      "rendering": "ssg",
+      "buildMarker": "●",
+      "slug": "q1-2026",
+      "httpStatus": 200,
+      "bytes": 117171
+    },
+    { "template": "/robots.txt", "instances": 1, "rendering": "static", "buildMarker": "○", "httpStatus": 200 },
+    { "template": "/sitemap.xml", "instances": 1, "rendering": "static", "buildMarker": "○", "httpStatus": 200 }
+  ],
+  "botAccessAudit": {
+    "method": "curl with 15 first-party-documented bot UA strings (see geo/01-bot-uas.txt) plus a curl-default and a real-Chrome-UA control, against 5 routes: /, /listings/hampton-inn-shelbyville, /insights/hotel-refinancing-wave-2026, /team, /contact.",
+    "result": "PASS, clean. All 17 UA variants returned identical HTTP 200, identical byte length, and identical sha256 body hash on every one of the 5 routes tested. No 403/429/401, no JS/WAF challenge page, no x-robots-tag header anywhere, no cloaking. No UA-based differentiation of any kind observed.",
+    "caveat": "ClaudeBot/Claude-User/Claude-SearchBot exact UA strings are NOT published verbatim by Anthropic's own support article (it names the robots.txt tokens but gives no literal UA string); the string tested is the most common third-party-reported form. This does not change the PASS result (the server doesn't appear to branch on UA at all) but flagging per the 'no source, say so' rule."
+  },
+  "structuredData": {
+    "sharedGraphExists": true,
+    "sharedGraphNote": "CORRECTION to the mission-brief's characterization ('no shared entity source and no @graph'): src/app/layout.tsx DOES define a shared @graph with @id-addressable nodes (`${SITE_URL}/#org` as RealEstateAgent, `${SITE_URL}/#website`), and most route files (closed/[slug], glossary/[term], insights/[slug], markets/[city], services/[slug], research/mhi/[quarter], listings/[slug], hotels-for-sale/[brand], offices/[slug], team/[slug]) reference it correctly via {\"@id\": \"${SITE_URL}/#org\"}. What IS true and worth fixing: this shared node is a hardcoded literal object inside layout.tsx, not an imported constant from a single lib/entity.ts module, so every reference is a bare string match on the URL rather than a typed import -- fragile to rename, and not actually 'DRY' at the source-code level even though the runtime graph is correctly connected. team/[slug] additionally emits a redundant inline `parentOrganization` Organization node (name only, no @id) alongside its correct `worksFor`/`affiliation` @id references -- harmless duplication, not a contradiction.",
+    "orgNameVariantsFound": {
+      "Matthews Hotel Markets": 91,
+      "Matthews Real Estate Investment Services": 8,
+      "Matthews Hotel Team": 9,
+      "Matthews™ (bare, in team bios)": 3,
+      "Matthews REIS / Matthews™ REIS": 2,
+      "Matthews™ Capital Markets (sub-brand, in Miles Cortez bio only)": 1
+    },
+    "orgNameVariantsNote": "Counts are grep occurrences across src/app, src/lib/seo, public/llms.txt as of 2026-09-17. 6 distinct strings refer to the same legal/brand entity across the codebase."
+  },
+  "indexStatus": {
+    "method": "WebSearch tool only -- a single backend, not verified independently against Google Search Console, Bing Webmaster Tools, or DuckDuckGo/Brave's own indexes. Cannot make per-engine claims from this tool alone; flagging honestly per the 'say so if you can't check' rule. Recommend Agent 10 ask Nate for direct GSC/BWT access for a real per-engine indexed-count.",
+    "siteColonQuery": "site:matthewshotelmarkets.com returned only 2 matthewshotelmarkets.com URLs (homepage, /team) out of 120 sitemap URLs -- all other results were unrelated Matthews-NC-hotel travel listings.",
+    "exactBrandQuery": "'Matthews Hotel Markets' does NOT return matthewshotelmarkets.com first. Top 7 results were all www.matthews.com pages; matthewshotelmarkets.com appeared 8th and 9th of 9 results shown."
+  },
+  "competitorBaseline": {
+    "file": "geo/01-competitors.csv",
+    "summary": "Of the 20 seed prompts, matthewshotelmarkets.com appeared in results for only 8 (all brand-anchored: contains 'Matthews'). For all 12 generic/category prompts (e.g. 'Who are the best hotel brokers in Texas?', 'Hotel brokers in Austin, Texas', 'Top hotel investment sales brokerages in the US in 2026', 'Who sells boutique hotels in the Texas Hill Country?'), matthewshotelmarkets.com did not appear at all -- named competitors instead: CBRE Hotels, Marcus & Millichap, JLL Hotels & Hospitality Group, Colliers Hotels, HotelAVE, Hunter (Hotel) Advisors, HREC, Eastdil Secured, Berkadia, US Hotel Advisors, HTL Hospitality Advisors, Tabani Realty, Singh Commercial Group, Hotel Brokers of America/International/Austin, F10 Hotels, Bridge Marketplace, CMBS.Loans, The Plasencia Group, HotelBrokerOne. Even for the 8 brand-anchored prompts, www.matthews.com (the parent) outranked matthewshotelmarkets.com in most of them, and AI-style summaries pulled specific facts (deal names, figures) almost entirely from matthews.com press releases/success stories, not from matthewshotelmarkets.com's own /closed or /team pages."
+  }
+}

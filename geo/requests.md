@@ -185,3 +185,58 @@ through `variableMeasured` or `distribution`.
    ```
    It exits non-zero on any dangling `@id`, duplicate `@id`, missing entity node, or a page with more
    than one `ld+json` block. Currently 119/119 valid.
+
+---
+
+## From Agent 1 (recon-auditor), 2026-09-17
+
+Full baseline in `geo/01-baseline.md` / `geo/01-baseline.json`. Two items not already covered by
+Agent 3's or Agent 4's entries above:
+
+**For Agent 10 — `SiteHeader.tsx` nav has no owner, and it links off-domain to the site's own rate sheet:**
+`src/components/layout/SiteHeader.tsx` (not in any agent's file-ownership list) has a primary-nav
+item `{ href: "https://www.matthewsratesheet.info", label: "Rate Sheet" }`. I fetched it: it's real,
+live, Vercel-hosted, genuinely Matthews-branded content ("Matthews Hotel Capital Markets · Debt
+Financing Rate Sheet," footer says "Matthews Real Estate Investment Services™"). It is not broken or
+hijacked. But it's a `.info` domain with no visible brand link to matthewshotelmarkets.com or
+matthews.com, linked from every page's primary nav — exactly the kind of link that reads as
+untrustworthy on a financial-services site, and it means the site's flagship original-data asset
+(the thing Spec 5.1 says should make an engine name the brand) currently accrues domain authority to
+`matthewsratesheet.info`, not `matthewshotelmarkets.com`. Once Agent 8 ships `/rates` on-domain,
+someone needs to (a) repoint this nav link internally and (b) confirm with Nate whether
+`matthewsratesheet.info` is a property he wants to keep, fold in with a 301, or retire. Nobody owns
+`SiteHeader.tsx` today — please assign it.
+
+**Context for whoever chases the Walden Retreats listing thread (Agent 4 flagged a cross-project
+mix-up; Agent 3 flagged the built HTML error-shells locally):** production, live, right now
+(`curl -sD -` against `https://matthewshotelmarkets.com/listings/walden-retreats-hill-country`,
+2026-09-17) returns a clean `HTTP/2 307` to `https://walden-retreats-om.vercel.app/` with
+`x-vercel-cache: HIT` — i.e. today's deployed build serves a working redirect, not an error shell.
+This matches the code as written: `listings.ts` sets `omUrl` on this one listing, and
+`listings/[slug]/page.tsx` calls `redirect(listing.omUrl)` before rendering when `omUrl` is set —
+intentional, documented behavior, not a bug, and it's the only listing of 21 with `omUrl` set. If
+Agent 3's local rebuild produced an error shell instead, that's either a regression introduced after
+the July 18 production build (see staleness note below) or an artifact of the stash/rebuild process
+locally — worth a second look before assuming production is broken. Separately, and regardless of
+which project it belongs to: any listing with `omUrl` set can never be indexed as
+matthewshotelmarkets.com content (the response has no body), so it shouldn't carry a 0.85-priority
+image entry in the sitemap as if it were a real content page.
+
+**Production has not been redeployed since 2026-07-18** (confirmed: pre-branch `main` HEAD `a759f67`
+committed 2026-07-18 14:27:57 -0500; the live sitemap's fabricated `lastmod` freezes at that exact
+build timestamp). Every fix landing on this branch, including Agent 3's and Agent 2's, is invisible
+to users, crawlers, and this audit's own "production" checks until Nate deploys. Worth stating
+explicitly in the final PR description so nobody assumes a merged PR is a shipped fix.
+
+**Request: Google Search Console + Bing Webmaster Tools access.** My index-status check used the
+`WebSearch` tool only (one backend, not verified per-engine). `site:matthewshotelmarkets.com`
+surfaced only 2 of 120 sitemap URLs; the exact brand query "Matthews Hotel Markets" ranks
+`matthews.com` pages ahead of `matthewshotelmarkets.com` in 7 of 9 results. Both are concerning but
+neither is a substitute for real GSC/BWT indexed-count and Core Web Vitals field data. Please get
+Nate to share access before the final report claims anything about actual index coverage.
+
+**Competitor citation baseline (`geo/01-competitors.csv`, 20 seed prompts):**
+matthewshotelmarkets.com appeared in results for only 8/20 prompts, all brand-anchored. For every
+generic/category prompt — including "Hotel brokers in Austin, Texas" (the firm's own HQ city) and
+"Who sells boutique hotels in the Texas Hill Country?" (an active listing's own submarket) — it did
+not appear at all. This is the baseline Agents 5–9's content work should be measured against.
