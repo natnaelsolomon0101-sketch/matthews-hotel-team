@@ -225,7 +225,9 @@ export const page: AnswerPage = {
       "/buy-a-hotel/how-much-money-do-you-need",
       "/buy-a-hotel/due-diligence-checklist",
       "/buy-a-hotel/first-hotel-no-experience",
-      "/buy-a-hotel/branded-vs-independent"
+      "/buy-a-hotel/branded-vs-independent",
+      "/buy-a-hotel/seller-financing",
+      "/buy-a-hotel/buying-a-hotel-from-receivership-or-foreclosure"
     ],
     glossary: [
       "/glossary/pip",
