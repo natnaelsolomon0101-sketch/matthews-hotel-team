@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { team } from "@/lib/data/team";
 
 export const runtime = "edge";
-export const alt = "Hotel broker — Matthews Hotel Markets";
+export const alt = "Hotel broker | Matthews Hotel Markets";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

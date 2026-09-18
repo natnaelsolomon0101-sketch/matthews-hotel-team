@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { markets } from "@/lib/data/markets";
 
 export const runtime = "edge";
-export const alt = "Hotel market — Matthews Hotel Markets";
+export const alt = "Hotel market | Matthews Hotel Markets";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -19,7 +19,7 @@ export async function generateImageMetadata({
       size: { width: 1200, height: 630 },
       id: city,
       alt: market
-        ? `${market.city}, ${market.state} hotel market — cap rates, comps, brokers`
+        ? `${market.city}, ${market.state} hotel market: cap rates, comps, brokers`
         : alt,
     },
   ];

@@ -1,6 +1,13 @@
 import * as React from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import {
+  BOILERPLATE_SHORT,
+  HQ_ADDRESS_LINE,
+  LINKEDIN,
+  PARENT,
+  PARENT_URL,
+} from "@/lib/entity";
 
 interface FooterLink {
   href: string;
@@ -13,44 +20,75 @@ interface FooterColumn {
   links: FooterLink[];
 }
 
+/**
+ * FOOTER, rebuilt 2026-09-17.
+ *
+ * Agent 5 verified by grep across src/ that `/glossary`, `/services/*`,
+ * `/research` and `/offices/*` had NO inbound internal link from anywhere
+ * outside their own route folder: four live hubs, including the Matthews Hotel
+ * Index, reachable only from sitemap.xml. The footer is the cheapest place to
+ * fix that, because it renders on every page. Rules R2, R3 and R4 in
+ * geo/05-architecture.md §6.1.
+ *
+ * Two other things changed here:
+ *  - "Press" pointed at /insights and no /press route existed. /press is now
+ *    a real route (src/app/press/page.tsx) and the link points at it.
+ *  - The old "Listings" column was four anchor links into /listings#region.
+ *    It is replaced by the Answers and Services columns, which is what
+ *    actually removes the orphans.
+ */
 const COLUMNS: FooterColumn[] = [
+  {
+    heading: "Answers",
+    links: [
+      { href: "/hotel-financing", label: "Hotel Financing" },
+      { href: "/sell-a-hotel", label: "Sell a Hotel" },
+      { href: "/hotel-valuation", label: "Hotel Valuation" },
+      { href: "/glossary", label: "Glossary" },
+      { href: "/tools/dscr-calculator", label: "DSCR Calculator" },
+    ],
+  },
+  {
+    heading: "Data & Research",
+    links: [
+      { href: "/rates", label: "Rate Sheet" },
+      { href: "/rates/methodology", label: "Rate Sheet Methodology" },
+      { href: "/data/hotel-financing-statistics", label: "Hotel Financing Statistics" },
+      { href: "/research/mhi", label: "Matthews Hotel Index" },
+      { href: "/research", label: "All Research" },
+    ],
+  },
   {
     heading: "Brokerage",
     links: [
       { href: "/listings", label: "Active Listings" },
+      { href: "/hotels-for-sale", label: "Hotels for Sale by Brand" },
+      { href: "/markets", label: "Markets" },
       { href: "/closed", label: "Closed Deals" },
       { href: "/process", label: "Transaction Process" },
-      { href: "/insights", label: "Quarterly Outlook" },
     ],
   },
   {
-    heading: "Listings",
+    heading: "Services",
     links: [
-      { href: "/listings#texas", label: "Texas" },
-      { href: "/listings#southeast", label: "Southeast" },
-      { href: "/listings#midwest", label: "Midwest" },
-      { href: "/listings#west", label: "West" },
-    ],
-  },
-  {
-    heading: "Insights",
-    links: [
-      { href: "/insights", label: "All Insights" },
-      { href: "/insights", label: "Quarterly Outlook" },
-      { href: "/insights", label: "Press" },
+      { href: "/services", label: "All Services" },
+      { href: "/services/investment-sales", label: "Investment Sales" },
+      { href: "/services/capital-markets", label: "Capital Markets" },
+      { href: "/services/acquisition-advisory", label: "Acquisition Advisory" },
+      { href: "/offices/austin", label: "Austin Office" },
+      { href: "/offices/denver", label: "Denver" },
     ],
   },
   {
     heading: "Company",
     links: [
+      { href: "/about", label: "About" },
       { href: "/team", label: "Team" },
+      { href: "/insights", label: "Insights" },
+      { href: "/press", label: "Press" },
       { href: "/contact", label: "Contact" },
-      { href: "https://www.matthews.com", label: "Matthews.com", external: true },
-      {
-        href: "https://www.linkedin.com/company/matthews-hotel-markets/",
-        label: "LinkedIn",
-        external: true,
-      },
+      { href: PARENT_URL, label: "Matthews.com", external: true },
+      { href: LINKEDIN, label: "LinkedIn", external: true },
     ],
   },
 ];
@@ -74,7 +112,7 @@ export function SiteFooter() {
         <div className="mt-8 hairline" />
 
         {/* Columns */}
-        <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6">
+        <div className="mt-10 grid grid-cols-2 gap-8 md:grid-cols-3 md:gap-6 lg:grid-cols-5">
           {COLUMNS.map((col) => (
             <div key={col.heading}>
               <h3 className="text-[13px] font-semibold tracking-[-0.01em] text-[color:var(--text-primary)] mb-4">
@@ -123,13 +161,22 @@ export function SiteFooter() {
           National investor reach
         </p>
 
+        {/*
+          Boilerplate. Same sentence as Organization.description, /about,
+          /team, and llms.txt. Source of truth: src/lib/entity.ts. Reword it
+          there, never here.
+        */}
+        <p className="mt-6 max-w-[70ch] text-[12px] leading-[1.5] text-[color:var(--text-secondary)]">
+          {BOILERPLATE_SHORT}
+        </p>
+
         {/* Legal */}
         <div className="mt-4 space-y-1.5">
           <p className="text-[11px] tracking-[-0.005em] text-[color:var(--text-tertiary)]">
-            Matthews Real Estate Investment Services, 515 Congress Ave., Suite 2410, Austin, TX 78701.
+            {PARENT}, {HQ_ADDRESS_LINE}.
           </p>
           <p className="text-[11px] tracking-[-0.005em] text-[color:var(--text-tertiary)]">
-            Copyright &copy; {year} Matthews Real Estate Investment Services. All rights reserved.
+            Copyright &copy; {year} {PARENT}. All rights reserved.
           </p>
         </div>
       </div>

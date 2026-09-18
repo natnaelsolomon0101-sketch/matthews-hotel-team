@@ -4,7 +4,12 @@ import Image from "next/image";
 import { TwoToneHeadline } from "@/components/ui/TwoToneHeadline";
 import { GhostLink } from "@/components/ui/GhostLink";
 import { Reveal } from "@/components/ui/Reveal";
-import { getListing } from "@/lib/data/listings";
+import { getListing, listings, LISTINGS_UPDATED } from "@/lib/data/listings";
+
+const updatedLabel = new Date(`${LISTINGS_UPDATED}T12:00:00Z`).toLocaleDateString(
+  "en-US",
+  { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" },
+);
 
 type Featured = {
   slug: string;
@@ -51,8 +56,9 @@ export function HomeFeatured() {
 
         <Reveal delay={0.05}>
           <div className="mt-8 border-t border-[color:var(--divider)] pt-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            {/* Comes from listings.ts, not a typed string. */}
             <p className="text-[11px] font-medium uppercase tracking-[0.22em] text-[color:var(--text-tertiary)]">
-              Updated weekly · Last refresh Q1 2026
+              {listings.length} active listings · Updated {updatedLabel}
             </p>
             <GhostLink href="/listings">See all listings</GhostLink>
           </div>

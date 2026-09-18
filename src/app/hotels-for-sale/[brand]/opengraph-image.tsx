@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { brands } from "@/lib/data/brands";
 
 export const runtime = "edge";
-export const alt = "Brand-flag hotel for sale — Matthews Hotel Markets";
+export const alt = "Brand-flag hotel for sale | Matthews Hotel Markets";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -19,7 +19,7 @@ export async function generateImageMetadata({
       size: { width: 1200, height: 630 },
       id: brand,
       alt: flag
-        ? `${flag.name} for sale — investment sales specialists, Matthews Hotel Markets`
+        ? `${flag.name} for sale: investment sales specialists, Matthews Hotel Markets`
         : alt,
     },
   ];

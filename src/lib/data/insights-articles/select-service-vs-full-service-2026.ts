@@ -28,7 +28,7 @@ export const draft: Insight = {
 
     "Three reasons, in order of weight. First, the operating model is more legible. A Hampton Inn or Holiday Inn Express has a known cost structure, a known branded demand base, and a known PIP cycle. An institutional underwriter can produce a defensible underwriting memo on a select-service property in under 60 days. The same underwriter on a full-service asset is working through F&B labor, banquet contribution, and group-pace risk for two to three additional quarters. Speed of execution is a real cap rate compressor [Source: CBRE Hotels Research, U.S. Hotels Outlook 2026].",
 
-    "Second, the capital stack is deeper. Select-service properties have direct access to bank lenders, debt funds, CMBS originators, and bridge lenders willing to take attachment risk. Full-service properties at the upper end of the size band still find capital, but the menu of lenders narrows below the trophy-asset tier. Mid-tier full-service in tertiary CBDs is the single most under-financed segment in the U.S. hotel debt market today [Source: Trepp CMBS Surveillance, Q1 2026]. Roughly $30 billion in U.S. hotel CMBS matures through year-end 2027, and the proceeds gap on full-service refinances is wider than on select-service for that vintage book.",
+    "Second, the capital stack is deeper. Select-service properties have direct access to bank lenders, debt funds, CMBS originators, and bridge lenders willing to take attachment risk. Full-service properties at the upper end of the size band still find capital, but the menu of lenders narrows below the trophy-asset tier. Mid-tier full-service in tertiary CBDs is the single most under-financed segment in the U.S. hotel debt market today [Source: Trepp CMBS Surveillance, Q1 2026]. Trepp counts $18.7 billion of U.S. hotel CMBS maturing in 2026, nearly 70 percent of it floating rate (via Hotel Dive, August 3, 2026), and the proceeds gap on full-service refinances is wider than on select-service for that vintage book.",
 
     "Third, the buyer pool is broader. Select-service attracts HNW first-time hotel buyers, family offices, PE roll-ups, and the dedicated select-service public REITs. Apple Hospitality REIT alone owns over 220 hotels concentrated in upscale select-service [Source: Apple Hospitality REIT 2025 Annual Report, March 2026]. Summit Hotel Properties and Chatham Lodging Trust round out the public REIT bid. Full-service primarily attracts Host Hotels & Resorts, Pebblebrook, Park Hotels & Resorts, sovereign wealth funds at the upper end, and large family offices selectively. The full-service buyer pool is institutional, concentrated, and slower-moving.",
 
@@ -45,13 +45,13 @@ export const draft: Insight = {
     "3. 9.00–10.50 percent: tertiary-CBD stabilized full-service cap range, Q2 2026 [Source: HVS U.S. Market Pulse, April 2026].",
     "4. 38–44 percent: leading select-service brand stabilized property-level GOP margin.",
     "5. 28–34 percent: urban full-service stabilized property-level GOP margin (industry estimate).",
-    "6. ~$30 billion: U.S. hotel CMBS maturing through year-end 2027 [Source: Trepp public summaries].",
+    "6. $18.7 billion: U.S. hotel CMBS maturing in 2026, nearly 70 percent floating rate [Source: Trepp, via Hotel Dive, August 3, 2026].",
     "7. 220+: Apple Hospitality REIT hotel count, concentrated in upscale select-service [Source: Apple Hospitality 2025 Annual Report].",
     "8. Under 60 days: typical institutional underwriting timeline for stabilized select-service; full-service runs 2–3 quarters longer.",
 
     "## Pull quote",
 
-    '"The cap rate gap is real but not the whole story. The full picture is yield to cost, and on yield to cost select-service has been the more efficient hospitality vehicle for institutional capital for two cycles now. 2026 is the year the public REIT and PE bid stopped pretending otherwise." — Luke Thompson, VP & Director, Capital Markets, Matthews Hotel Markets.',
+    '"The cap rate gap is real but not the whole story. The full picture is yield to cost, and on yield to cost select-service has been the more efficient hospitality vehicle for institutional capital for two cycles now. 2026 is the year the public REIT and PE bid stopped pretending otherwise." (Luke Thompson, VP & Director, Capital Markets, Matthews Hotel Markets)',
 
     "## What full-service has to do to compete on capital markets execution",
 
@@ -97,7 +97,7 @@ export const draft: Insight = {
     "Primary-metro stabilized full-service prices 7.00 to 8.00 percent; tertiary-CBD full-service prices 9.00 to 10.50 percent.",
     "Select-service GOP margins run 38 to 44 percent versus 28 to 34 percent for urban full-service.",
     "Apple Hospitality REIT alone owns 220-plus upscale select-service hotels, anchoring the public REIT bid.",
-    "Roughly $30 billion in U.S. hotel CMBS matures through 2027, and the proceeds gap is wider for full-service than for select-service.",
+    "Trepp counts $18.7 billion of U.S. hotel CMBS maturing in 2026, and the proceeds gap is wider for full-service than for select-service.",
     "Mid-tier full-service in tertiary CBDs most often clears at the cap rate it deserves only after a brand-conversion underwriting.",
   ],
   faq: [
@@ -127,7 +127,7 @@ export const draft: Insight = {
     },
     {
       q: "What is happening with hotel CMBS maturities in 2026 and 2027?",
-      a: "Roughly $30 billion in U.S. hotel CMBS matures through year-end 2027 per Trepp public summaries. The proceeds gap on refinances is meaningful for full-service in tertiary CBDs and modest for select-service in Sun Belt secondary markets. Owners with 2026 or 2027 maturities should run refinance and disposition paths in parallel before the maturity calendar dictates the answer.",
+      a: "Trepp counts $18.7 billion of U.S. hotel CMBS maturing in 2026, nearly 70 percent of it floating rate (via Hotel Dive, August 3, 2026); no hotel-specific 2027 figure is publicly published. The proceeds gap on refinances is meaningful for full-service in tertiary CBDs and modest for select-service in Sun Belt secondary markets. Owners with 2026 or 2027 maturities should run refinance and disposition paths in parallel before the maturity calendar dictates the answer.",
     },
   ],
   sources: [
@@ -194,9 +194,9 @@ export const draft: Insight = {
       source: "Apple Hospitality REIT 2025 Annual Report",
     },
     {
-      value: "~$30B",
-      label: "U.S. hotel CMBS maturing through year-end 2027",
-      source: "Trepp public summaries, Q1 2026",
+      value: "$18.7B",
+      label: "U.S. hotel CMBS maturing in 2026, nearly 70% floating rate",
+      source: "Trepp, via Hotel Dive, August 3, 2026",
     },
     {
       value: "<60 days",

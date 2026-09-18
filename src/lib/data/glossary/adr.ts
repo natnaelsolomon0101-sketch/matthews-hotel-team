@@ -70,6 +70,11 @@ export const entry: GlossaryEntry = {
       publisher: "Investopedia",
     },
   ],
+  // geo/05-architecture.md §5.1: link the answer page that uses this term (R11).
+  relatedAnswers: [
+    "/hotel-valuation/how-to-value-a-hotel",
+    "/hotel-valuation/select-service-vs-full-service",
+  ],
   relatedTerms: ["revpar", "cap-rate", "bov"],
   relatedMarkets: ["austin-tx", "san-antonio-tx", "charleston-sc"],
   relatedBrands: ["hampton-inn", "marriott", "hyatt"],

@@ -1,0 +1,67 @@
+# Bot user-agent strings verified against operator documentation, fetched 2026-09-17.
+# Format: one full UA string per line, preceded by a comment with the bot name and source doc URL.
+# "W.X.Y.Z" placeholders in Google/Bing strings are replaced below with a real, current-looking
+# Chrome version per the operators' own examples; the exact version digits do not affect bot
+# detection (the "(compatible; <Token>...)" substring is what WAFs/CDNs key on).
+
+# Googlebot (Smartphone) — source: https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers (fetched 2026-09-17)
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+
+# GoogleOther (Desktop) — source: https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers (fetched 2026-09-17)
+# Used for miscellaneous first-party Google product fetches (not Search indexing). Google-Extended
+# has NO separate UA of its own — it is a robots.txt-only opt-out token that rides on Googlebot's
+# existing crawl (confirmed: the same doc page describes it only as a robots.txt token, no UA string).
+Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GoogleOther) Chrome/124.0.0.0 Safari/537.36
+
+# Bingbot — source: https://blogs.bing.com/webmaster/april-2022/Announcing-user-agent-change-for-Bing-crawler-bingbot
+# NOTE: could not load bing.com/webmasters/help page content directly (WebFetch returned only the
+# page chrome, no body — likely client-rendered). Cross-checked via WebSearch against Bing's own
+# webmaster blog post announcing this exact string; treat as first-party-sourced but not
+# directly re-fetched from the help-center URL cited in the brief.
+Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/124.0.0.0 Safari/537.36
+
+# GPTBot (training) — source: https://developers.openai.com/api/docs/bots (fetched 2026-09-17; platform.openai.com/docs/bots 301-redirects here)
+Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; GPTBot/1.4; +https://openai.com/gptbot
+
+# OAI-SearchBot (search index) — source: https://developers.openai.com/api/docs/bots (fetched 2026-09-17)
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36; compatible; OAI-SearchBot/1.4; +https://openai.com/searchbot
+
+# ChatGPT-User (user-triggered fetch) — source: https://developers.openai.com/api/docs/bots (fetched 2026-09-17)
+Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot
+
+# ClaudeBot (training) — UNVERIFIED EXACT STRING. Source: https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler
+# (fetched 2026-09-17). That page names the robots.txt token "ClaudeBot" and gives an operator
+# contact but does NOT publish a literal UA string. Third-party crawler-tracking sites report
+# slightly different strings for the operator-contact portion. Using the most commonly reported
+# form for testing; flagging as not directly verifiable against a first-party string.
+Mozilla/5.0 (compatible; ClaudeBot/1.0; +https://support.claude.com/en/articles/8896518)
+
+# Claude-User (user-triggered fetch) — UNVERIFIED EXACT STRING, same source/caveat as ClaudeBot above.
+Mozilla/5.0 (compatible; Claude-User/1.0; +https://support.claude.com/en/articles/8896518)
+
+# Claude-SearchBot (search index) — UNVERIFIED EXACT STRING, same source/caveat as ClaudeBot above.
+Mozilla/5.0 (compatible; Claude-SearchBot/1.0; +https://support.claude.com/en/articles/8896518)
+
+# PerplexityBot (search index) — source: https://docs.perplexity.ai/guides/bots (fetched 2026-09-17)
+Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)
+
+# Perplexity-User (user-triggered fetch) — source: https://docs.perplexity.ai/guides/bots (fetched 2026-09-17)
+Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Perplexity-User/1.0; +https://perplexity.ai/perplexity-user)
+
+# Applebot (search/Siri/Spotlight index) — source: https://support.apple.com/en-us/119829 (fetched 2026-09-17)
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15 (Applebot/0.1; +http://www.apple.com/go/applebot)
+
+# CCBot (Common Crawl training corpus) — source: https://commoncrawl.org/ccbot (fetched 2026-09-17)
+CCBot/2.0 (https://commoncrawl.org/faq/)
+
+# DuckAssistBot — source: https://duckduckgo.com/duckduckgo-help-pages/results/duckassistbot (fetched 2026-09-17)
+DuckAssistBot/1.2; (+http://duckduckgo.com/duckassistbot.html)
+
+# Amazonbot (training + Alexa/shopping) — source: https://developer.amazon.com/amazonbot (fetched 2026-09-17)
+Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Amazonbot/0.1; +https://developer.amazon.com/support/amazonbot) Chrome/124.0.0.0 Safari/537.36
+
+# Meta-ExternalAgent (training) — source: https://developers.facebook.com/docs/sharing/webmasters/web-crawlers (fetched 2026-09-17)
+meta-externalagent/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/web-crawlers)
+
+# Chrome (control, not a bot) — for baseline byte-length / sha256 comparison
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36

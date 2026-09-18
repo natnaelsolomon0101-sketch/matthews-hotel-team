@@ -6,8 +6,8 @@ import SiteFooter from "@/components/layout/SiteFooter";
 import { InsightLayout } from "@/components/sections/insight-detail/InsightLayout";
 import { insights, getInsight } from "@/lib/data/insights";
 import { team } from "@/lib/data/team";
-
-const SITE_URL = "https://matthewshotelmarkets.com";
+import JsonLd from "@/components/seo/JsonLd";
+import { SITE_URL } from "@/lib/entity";
 
 export function generateStaticParams() {
   return insights.map((i) => ({ slug: i.slug }));
@@ -133,16 +133,11 @@ export default async function InsightDetailPage(props: {
     });
   }
 
-  const jsonLd = { "@context": "https://schema.org", "@graph": graph };
-
   return (
     <>
       <SiteHeader />
       <main>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <JsonLd graph={graph} />
         <InsightLayout insight={insight} />
       </main>
       <SiteFooter />

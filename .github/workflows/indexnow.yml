@@ -1,0 +1,29 @@
+name: IndexNow submission
+
+# Submits URLs changed in the last 48 hours (per sitemap.xml lastmod) to
+# IndexNow (Bing, Yandex, and other participants — not Google, which does
+# not consume IndexNow; see geo/02-crawl-index.md).
+#
+# Gated to push-to-main only. scripts/indexnow.ts also refuses to run off
+# `main` on its own (defense in depth if someone dispatches this workflow
+# from a feature branch).
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: {}
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+      - run: npm ci
+      - name: Submit changed URLs to IndexNow
+        env:
+          BASE_URL: https://matthewshotelmarkets.com
+        run: npx tsx scripts/indexnow.ts

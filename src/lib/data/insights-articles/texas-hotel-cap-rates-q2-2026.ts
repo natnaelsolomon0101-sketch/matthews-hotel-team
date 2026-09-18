@@ -48,11 +48,11 @@ export const draft: Insight = {
     "5. 6.75 to 7.50 percent: San Antonio Riverwalk full-service cap range, Q2 2026.",
     "6. 6.50 to 7.75 percent: Austin Hill Country resort cap range, Q2 2026.",
     "7. ~4 percent: Houston metro RevPAR above 2019 baseline through Q1 2026 [Source: STR, Q1 2026].",
-    "8. ~$30 billion: U.S. hotel CMBS maturing through year-end 2027 [Source: Trepp public summaries, Q1 2026].",
+    "8. $18.7 billion: U.S. hotel CMBS maturing in 2026, nearly 70 percent floating rate [Source: Trepp, via Hotel Dive, August 3, 2026].",
 
     "## Pull quote",
 
-    '"The compression we are measuring in Texas this quarter is not a rate-cut trade. It is the bid pool rebuilding around stabilized select-service because the underwriting math now closes at current debt cost. That is a more durable signal than waiting on the Fed." — Luke Thompson, VP & Director, Capital Markets, Matthews Hotel Markets.',
+    '"The compression we are measuring in Texas this quarter is not a rate-cut trade. It is the bid pool rebuilding around stabilized select-service because the underwriting math now closes at current debt cost. That is a more durable signal than waiting on the Fed." (Luke Thompson, VP & Director, Capital Markets, Matthews Hotel Markets)',
 
     "## Which Texas sub-markets are most actively traded",
 
@@ -187,9 +187,9 @@ export const draft: Insight = {
       source: "Matthews internal transaction database, Q2 2026",
     },
     {
-      value: "~$30B",
-      label: "U.S. hotel CMBS maturing through year-end 2027",
-      source: "Trepp public summaries, Q1 2026",
+      value: "$18.7B",
+      label: "U.S. hotel CMBS maturing in 2026, nearly 70% floating rate",
+      source: "Trepp, via Hotel Dive, August 3, 2026",
     },
   ],
   relatedMarkets: [

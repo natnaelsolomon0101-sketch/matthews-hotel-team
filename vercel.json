@@ -69,6 +69,18 @@
       "headers": [
         { "key": "Cache-Control", "value": "public, s-maxage=86400, stale-while-revalidate=604800" }
       ]
+    },
+    {
+      "source": "/llms-full.txt",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, s-maxage=86400, stale-while-revalidate=604800" }
+      ]
+    },
+    {
+      "source": "/feed.xml",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, s-maxage=3600, stale-while-revalidate=86400" }
+      ]
     }
   ],
   "redirects": [
@@ -103,19 +115,9 @@
       "permanent": true
     },
     {
-      "source": "/markets",
-      "destination": "/markets/austin-tx",
-      "permanent": false
-    },
-    {
       "source": "/brands",
-      "destination": "/hotels-for-sale/hampton-inn",
-      "permanent": false
-    },
-    {
-      "source": "/services",
-      "destination": "/services/investment-sales",
-      "permanent": false
+      "destination": "/hotels-for-sale",
+      "permanent": true
     },
     {
       "source": "/team/sarah-chen",

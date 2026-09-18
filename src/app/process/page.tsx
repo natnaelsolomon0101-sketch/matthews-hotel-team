@@ -4,8 +4,8 @@ import SiteFooter from "@/components/layout/SiteFooter";
 import ProcessHero from "@/components/sections/process/ProcessHero";
 import ProcessTimeline from "@/components/sections/process/ProcessTimeline";
 import PosterCTA from "@/components/sections/shared/PosterCTA";
-
-const SITE_URL = "https://matthewshotelmarkets.com";
+import JsonLd from "@/components/seo/JsonLd";
+import { SITE_URL, breadcrumb, webPage } from "@/lib/entity";
 
 export const metadata: Metadata = {
   title: "How to Sell a Hotel | 24-Week Transaction Process",
@@ -28,10 +28,21 @@ export const metadata: Metadata = {
 };
 
 export default function ProcessPage() {
+  const url = `${SITE_URL}/process`;
+  const graph = [
+    webPage({
+      url,
+      name: "How to Sell a Hotel, the 24-Week Transaction Process",
+      description: metadata.description as string,
+    }),
+    breadcrumb([{ name: "Process", path: "/process" }]),
+  ];
+
   return (
     <>
       <SiteHeader />
       <main>
+        <JsonLd graph={graph} />
         <ProcessHero />
         <ProcessTimeline />
         <PosterCTA />

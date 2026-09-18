@@ -5,17 +5,17 @@ export const draft: Insight = {
   kind: "white-paper",
   title: "How Hotel Owners Should Navigate the 2026 Refinancing Wave",
   subtitle:
-    "Roughly $30 billion of U.S. hotel CMBS matures by year-end 2027. The bridge-to-perm path, A/B note structures, and recap equity options owners should evaluate before the maturity calendar dictates the answer.",
+    "Trepp counts $18.7 billion of U.S. hotel CMBS maturing in 2026. The bridge-to-perm path, A/B note structures, and recap equity options owners should evaluate before the maturity calendar dictates the answer.",
   date: "May 2026",
   lastUpdated: "2026-05-10",
   authorSlugs: ["luke-thompson", "miles-cortez"],
   cover: "from-[#0a1226] via-[#1a3a6b] to-[#0066cc]",
   excerpt:
-    "Roughly $30 billion in U.S. hotel CMBS matures through year-end 2027 (Trepp, March 2026). For owners who originated debt in the 2017 to 2021 vintage, the refinancing math has changed materially. Underwriting standards are tighter, the in-place cap rate is wider than the cap rate at origination, and the proceeds-to-payoff gap is real. This piece lays out the four refinancing paths, the trigger for each, and the public data owners should be tracking.",
+    "Trepp counts $18.7 billion of U.S. hotel CMBS maturing in 2026, nearly 70 percent of it floating rate (Trepp, via Hotel Dive, August 3, 2026); no public source gives a hotel-specific 2027 figure. For owners who originated debt in the 2017 to 2021 vintage, the refinancing math has changed materially. Underwriting standards are tighter, the in-place cap rate is wider than the cap rate at origination, and the proceeds-to-payoff gap is real. This piece lays out the four refinancing paths, the trigger for each, and the public data owners should be tracking.",
   body: [
-    "Roughly $30 billion in U.S. hotel CMBS matures through year-end 2027, per Trepp's March 2026 maturity summaries. Hotel CMBS delinquency closed Q1 2026 at 7.40 percent, the highest property-type rate in the index, per Trepp's April 2026 monthly report. For owners with 2017 to 2021 vintage paper, the refinancing math has changed materially. The 10-year Treasury sat at 4.36 percent on May 9, 2026 (Federal Reserve H.15), versus a 2.50 to 3.00 percent range during most of the original underwriting window. Cap rates have widened, LTV ceilings have tightened, and the proceeds-to-payoff gap is real for a meaningful share of the maturing book. Owners need a framework for deciding whether to refinance, sell, or restructure before the maturity calendar dictates the answer.",
+    "Trepp counts $18.7 billion of U.S. hotel CMBS maturing in 2026, nearly 70 percent of it floating rate (Trepp, via Hotel Dive, August 3, 2026). No public source gives a hotel-specific 2027 maturity figure, so this piece does not state one. Hotel CMBS delinquency closed Q1 2026 at 7.40 percent, the highest property-type rate in the index, per Trepp's April 2026 monthly report. For owners with 2017 to 2021 vintage paper, the refinancing math has changed materially. The 10-year Treasury sat at 4.36 percent on May 9, 2026 (Federal Reserve H.15), versus a 2.50 to 3.00 percent range during most of the original underwriting window. Cap rates have widened, LTV ceilings have tightened, and the proceeds-to-payoff gap is real for a meaningful share of the maturing book. Owners need a framework for deciding whether to refinance, sell, or restructure before the maturity calendar dictates the answer.",
     "## What is the 2026 hotel refinancing wave?",
-    "The 2026 hotel refinancing wave is the concentrated maturity schedule of U.S. hotel commercial mortgage-backed securities (CMBS) and balance-sheet hotel loans originated during the 2017 to 2021 underwriting window. Trepp's public surveillance data shows roughly $30 billion of hotel CMBS coming due across 2026 and 2027. The Mortgage Bankers Association estimated that $957 billion in commercial and multifamily mortgages were scheduled to mature in 2025 alone (MBA, February 2025), and the carry-forward of extensions and modifications has pushed a meaningful share of that balance into 2026 and 2027. Hotels carry the highest CMBS delinquency rate of any property type at 7.40 percent (Trepp, April 2026 report), and the special-servicing rate sits in the 9 to 10 percent range. The 'wave' is the resulting concentration of refinance, sale, and workout decisions hotel owners must make in the next 24 months.",
+    "The 2026 hotel refinancing wave is the concentrated maturity schedule of U.S. hotel commercial mortgage-backed securities (CMBS) and balance-sheet hotel loans originated during the 2017 to 2021 underwriting window. Trepp counts $18.7 billion of hotel CMBS coming due in 2026, nearly 70 percent of it floating rate (via Hotel Dive, August 3, 2026); it publishes no comparable hotel-specific figure for 2027, and we do not estimate one. The Mortgage Bankers Association estimated that $957 billion in commercial and multifamily mortgages were scheduled to mature in 2025 alone (MBA, February 2025), and the carry-forward of extensions and modifications has pushed a meaningful share of that balance into 2026 and 2027. Hotels carry the highest CMBS delinquency rate of any property type at 7.40 percent (Trepp, April 2026 report), and the special-servicing rate sits in the 9 to 10 percent range. The 'wave' is the resulting concentration of refinance, sale, and workout decisions hotel owners must make in the next 24 months.",
     "## Why is refinancing harder in 2026 than at origination?",
     "Three structural shifts have changed the math. First, the cost of debt is higher. The 10-year Treasury closed May 9, 2026 at 4.36 percent (Federal Reserve H.15). Hotel CMBS spreads over the curve sit in the 250 to 400 basis point range for stabilized select-service paper, putting all-in coupon rates in the 6.75 to 8.25 percent band. Loans originated in 2018 to 2021 typically carried 4.50 to 5.50 percent coupons. Second, lender LTV ceilings have tightened from 65 to 70 percent at origination to 55 to 62 percent today, per public CMBS originator commentary in Q1 2026 earnings calls. Third, the in-place cap rate has widened. Stabilized PIP-current select-service in Sun Belt secondary markets prices in the 7.75 to 8.50 percent range as of Q2 2026 (HVS U.S. Market Pulse, April 2026), versus a 7.00 to 7.75 percent band at typical 2018 origination. Apply the wider cap rate to the same NOI and the implied collateral value falls 8 to 12 percent. Apply tighter LTV underwriting and the maximum proceeds shrink further. The combined effect is a proceeds gap of 12 to 20 percent against the prior loan balance for a meaningful share of the maturing book.",
     "## The four refinancing paths owners are taking",
@@ -45,8 +45,8 @@ export const draft: Insight = {
     "Trepp",
   ],
   tldr: [
-    "Roughly $30 billion of U.S. hotel CMBS matures through year-end 2027 (Trepp, March 2026); hotel CMBS delinquency closed Q1 2026 at 7.40%, the highest of any property type.",
-    "The 10-year Treasury sat at 4.36% on May 9, 2026 (Federal Reserve H.15) versus 2.50–3.00% during the original underwriting window — coupons have re-priced 200+ basis points wider.",
+    "Trepp counts $18.7 billion of U.S. hotel CMBS maturing in 2026, nearly 70% of it floating rate (via Hotel Dive, August 3, 2026); no hotel-specific 2027 figure is publicly published. Hotel CMBS delinquency closed Q1 2026 at 7.40%, the highest of any property type.",
+    "The 10-year Treasury sat at 4.36% on May 9, 2026 (Federal Reserve H.15) versus 2.50–3.00% during the original underwriting window; coupons have re-priced 200+ basis points wider.",
     "Stabilized cap rates widened from 7.00–7.75% at 2018 origination to 7.75–8.50% in Q2 2026, producing a 12–20% proceeds-to-payoff gap on a meaningful share of the maturing book.",
     "Four credible paths: bridge-to-perm refinance, A/B note restructure, recap with fresh preferred equity, or sale at the new cap rate. Each has a distinct trigger.",
     "A/B note executions in hotel CMBS roughly doubled year-over-year through Q1 2026 (Trepp servicing commentary, March 2026).",
@@ -55,11 +55,11 @@ export const draft: Insight = {
   faq: [
     {
       q: "How much hotel CMBS matures in 2026 and 2027?",
-      a: "Roughly $30 billion in U.S. hotel CMBS matures through year-end 2027, per Trepp's March 2026 maturity summaries. The Mortgage Bankers Association reported $957 billion in total commercial and multifamily maturities scheduled for 2025 (MBA, February 2025), with extensions and modifications carrying meaningful balance into 2026 and 2027.",
+      a: "Trepp counts $18.7 billion of U.S. hotel CMBS maturing in 2026, nearly 70 percent of it floating rate (via Hotel Dive, August 3, 2026). No public source gives a hotel-specific 2027 figure. The Mortgage Bankers Association publishes commercial and multifamily maturity totals with no hotel subtotal.",
     },
     {
       q: "What is the current hotel CMBS delinquency rate?",
-      a: "Hotel CMBS delinquency closed Q1 2026 at 7.40 percent per Trepp's April 2026 monthly report — the highest property-type rate in the CMBS universe. Special servicing sits in the 9 to 10 percent range. Distress is concentrated in mid-tier full-service in tertiary CBDs rather than stabilized select-service in Sun Belt markets.",
+      a: "Hotel CMBS delinquency closed Q1 2026 at 7.40 percent per Trepp's April 2026 monthly report, the highest property-type rate in the CMBS universe. Special servicing sits in the 9 to 10 percent range. Distress is concentrated in mid-tier full-service in tertiary CBDs rather than stabilized select-service in Sun Belt markets.",
     },
     {
       q: "What is an A/B note structure and when do lenders agree to it?",
@@ -84,7 +84,7 @@ export const draft: Insight = {
   ],
   sources: [
     {
-      label: "Trepp CMBS Surveillance — Hotel Delinquency, April 2026 Report",
+      label: "Trepp CMBS Surveillance: Hotel Delinquency, April 2026 Report",
       url: "https://www.trepp.com/trepptalk",
       publisher: "Trepp",
     },
@@ -126,9 +126,9 @@ export const draft: Insight = {
   ],
   keyStats: [
     {
-      value: "$30B",
-      label: "U.S. hotel CMBS maturing through year-end 2027",
-      source: "Trepp, March 2026",
+      value: "$18.7B",
+      label: "U.S. hotel CMBS maturing in 2026, nearly 70% floating rate",
+      source: "Trepp, via Hotel Dive, August 3, 2026",
     },
     {
       value: "7.40%",

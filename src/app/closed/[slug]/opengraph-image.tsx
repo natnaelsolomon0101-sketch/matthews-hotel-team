@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { closed } from "@/lib/data/closed";
 
 export const runtime = "edge";
-export const alt = "Closed hotel transaction — Matthews Hotel Markets";
+export const alt = "Closed hotel transaction | Matthews Hotel Markets";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

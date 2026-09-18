@@ -2,6 +2,7 @@ import type { Market } from "@/lib/data/markets";
 import type { BrandFlag } from "@/lib/data/brands";
 import type { Listing } from "@/lib/data/listings";
 import type { ClosedDeal } from "@/lib/data/closed";
+import { team } from "@/lib/data/team";
 
 export type Faq = { q: string; a: string };
 
@@ -50,7 +51,7 @@ export function closedFaqs(d: ClosedDeal): Faq[] {
     },
     {
       q: `Is Matthews currently advising on similar ${d.segment} mandates?`,
-      a: `Yes — Matthews actively executes ${d.segment.toLowerCase()} dispositions and acquisitions across the United States. Active mandates and recent closes are at /listings and /closed. For confidential conversations on a similar disposition or acquisition, the team responds within 24 hours.`,
+      a: `Yes, Matthews actively executes ${d.segment.toLowerCase()} dispositions and acquisitions across the United States. Active mandates and recent closes are at /listings and /closed. For confidential conversations on a similar disposition or acquisition, the team responds within 24 hours.`,
     },
   ];
 }
@@ -68,7 +69,7 @@ export function marketFaqs(m: Market): Faq[] {
     },
     {
       q: `Who are the named demand drivers behind ${m.city} hotel performance?`,
-      a: `${m.demandDrivers.slice(0, 5).join("; ")}. Underwriting in this market keys on the diversification of those drivers — concentration in any single demand source is the most common reason a buyer haircuts our pro-forma RevPAR.`,
+      a: `${m.demandDrivers.slice(0, 5).join("; ")}. Underwriting in this market keys on the diversification of those drivers. Concentration in any single demand source is the most common reason a buyer haircuts our pro-forma RevPAR.`,
     },
     {
       q: `Who at Matthews Hotel Markets covers ${m.city}?`,
@@ -76,7 +77,7 @@ export function marketFaqs(m: Market): Faq[] {
     },
     {
       q: `How long does a typical ${m.city} hotel disposition take?`,
-      a: `Matthews's published 24-week playbook applies in ${m.city} — engagement letter and BOV in weeks 1–4, OM and marketing launch in weeks 5–8, call-for-offers and finalist round in weeks 9–14, definitive agreement and closing in weeks 15–24. Construction-loan workouts and recap structures sometimes compress; PIP-cycle disputes can extend.`,
+      a: `Matthews's published 24-week playbook applies in ${m.city}: engagement letter and BOV in weeks 1–4, OM and marketing launch in weeks 5–8, call-for-offers and finalist round in weeks 9–14, definitive agreement and closing in weeks 15–24. Construction-loan workouts and recap structures sometimes compress; PIP-cycle disputes can extend.`,
     },
   ];
 }
@@ -101,22 +102,26 @@ export function brandFaqs(b: BrandFlag): Faq[] {
     },
     {
       q: `How does Matthews's ${b.name} disposition process work?`,
-      a: `Matthews runs a 24-week playbook on ${b.name} dispositions — broker-built BOV, curated buyer pool drawn from select-service-focused REITs, family offices, PE roll-ups, and HNW capital, confidential by default. Key timing risk for ${b.name} specifically is franchise license renewal and PIP cycle alignment with the marketing window.`,
+      a: `Matthews runs a 24-week playbook on ${b.name} dispositions: broker-built BOV, curated buyer pool drawn from select-service-focused REITs, family offices, PE roll-ups, and HNW capital, confidential by default. Key timing risk for ${b.name} specifically is franchise license renewal and PIP cycle alignment with the marketing window.`,
     },
   ];
 }
 
-const NAME_BY_SLUG: Record<string, string> = {
-  "luke-thompson": "Luke Thompson",
-  "nate-solomon": "Nate Solomon",
-  "miles-cortez": "Miles Cortez",
-};
-
+/** Names come from team.ts so a rename never leaves a stale string here. */
 function slugToName(slug: string): string {
-  return NAME_BY_SLUG[slug] ?? slug;
+  return team.find((m) => m.slug === slug)?.name ?? slug;
 }
 
+/**
+ * FAQPage node. Returns null for an empty list so a page can never emit FAQ
+ * markup with nothing visible behind it. Every caller renders the same `faqs`
+ * array it passes here, one to one. Audited 2026-09-17: listings/[slug],
+ * closed/[slug], markets/[city], hotels-for-sale/[brand], glossary/[term] and
+ * insights/[slug] all render their FAQ visibly under the same condition that
+ * gates the markup. Keep it that way.
+ */
 export function faqJsonLdNode(url: string, faqs: Faq[]) {
+  if (faqs.length === 0) return null;
   return {
     "@type": "FAQPage",
     "@id": `${url}#faq`,

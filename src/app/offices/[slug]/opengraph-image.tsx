@@ -19,7 +19,7 @@ export async function generateImageMetadata({
       size: { width: 1200, height: 630 },
       id: slug,
       alt: office
-        ? `${office.name} — Matthews Hotel Markets ${office.city}, ${office.state}`
+        ? `${office.name} | Matthews Hotel Markets ${office.city}, ${office.state}`
         : alt,
     },
   ];

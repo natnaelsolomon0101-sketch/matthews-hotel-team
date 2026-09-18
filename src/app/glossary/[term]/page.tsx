@@ -1,8 +1,8 @@
 import * as React from "react";
+import { Inline } from "@/components/answers/Prose";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ChevronRight } from "lucide-react";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
 import { Pill } from "@/components/ui/Pill";
@@ -11,8 +11,11 @@ import { team } from "@/lib/data/team";
 import { markets } from "@/lib/data/markets";
 import { brands } from "@/lib/data/brands";
 import { insights as allInsights } from "@/lib/data/insights";
+import JsonLd from "@/components/seo/JsonLd";
+import { SITE_URL } from "@/lib/entity";
 
-const SITE_URL = "https://matthewshotelmarkets.com";
+/** "[2]" links to the visible source list; it means nothing in JSON-LD. */
+const stripRefs = (t: string) => t.replace(/\s*\[\d+\]/g, "");
 
 type Params = { term: string };
 
@@ -25,8 +28,8 @@ export async function generateMetadata(props: { params: Promise<Params> }): Prom
   const entry = getGlossaryEntry(slug);
   if (!entry) return { title: "Glossary" };
   const url = `${SITE_URL}/glossary/${entry.slug}`;
-  const title = `${entry.term} — definition & worked example | Matthews Hotel Markets`;
-  const description = entry.shortDef.slice(0, 160);
+  const title = `${entry.term}: definition & worked example | Matthews Hotel Markets`;
+  const description = stripRefs(entry.shortDef).slice(0, 160);
   return {
     title,
     description,
@@ -57,22 +60,25 @@ export default async function GlossaryEntryPage(props: { params: Promise<Params>
     .map((s) => allInsights.find((i) => i.slug === s))
     .filter((i): i is NonNullable<typeof i> => Boolean(i));
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
+  const graph = [
       {
         "@type": "DefinedTerm",
         "@id": `${url}#term`,
         name: entry.term,
-        description: entry.shortDef,
+        description: stripRefs(entry.shortDef),
         url,
-        inDefinedTermSet: { "@id": `${SITE_URL}/glossary#glossary` },
+        inDefinedTermSet: {
+          "@type": "DefinedTermSet",
+          "@id": `${SITE_URL}/glossary#glossary`,
+          name: "Hotel Investment Glossary",
+          url: `${SITE_URL}/glossary`,
+        },
       },
       {
         "@type": "Article",
         "@id": `${url}#article`,
-        headline: `${entry.term} — definition`,
-        description: entry.fullDef,
+        headline: `${entry.term}: definition`,
+        description: stripRefs(entry.fullDef),
         datePublished: entry.lastUpdated,
         dateModified: entry.lastUpdated,
         inLanguage: "en-US",
@@ -100,7 +106,7 @@ export default async function GlossaryEntryPage(props: { params: Promise<Params>
         mainEntity: entry.faq.map((f) => ({
           "@type": "Question",
           name: f.q,
-          acceptedAnswer: { "@type": "Answer", text: f.a },
+          acceptedAnswer: { "@type": "Answer", text: stripRefs(f.a) },
         })),
       },
       {
@@ -111,8 +117,7 @@ export default async function GlossaryEntryPage(props: { params: Promise<Params>
           { "@type": "ListItem", position: 3, name: entry.term, item: url },
         ],
       },
-    ],
-  };
+  ];
 
   const bodyParagraphs = entry.body.split(/\n\n+/).map((p) => p.trim()).filter(Boolean);
   const lastUpdatedFormatted = (() => {
@@ -125,10 +130,7 @@ export default async function GlossaryEntryPage(props: { params: Promise<Params>
     <>
       <SiteHeader />
       <main className="pt-16">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <JsonLd graph={graph} />
 
         <article className="bg-white pt-16 pb-24">
           <div className="mx-auto max-w-[692px] px-6">
@@ -146,7 +148,7 @@ export default async function GlossaryEntryPage(props: { params: Promise<Params>
 
             {/* Direct-answer lead — the LLM lift */}
             <p className="mt-6 text-[19px] leading-[1.42] tracking-[0.012em] text-[#1d1d1f]">
-              {entry.shortDef}
+              <Inline text={entry.shortDef} />
             </p>
 
             {author && (
@@ -168,7 +170,7 @@ export default async function GlossaryEntryPage(props: { params: Promise<Params>
                 Quick definition
               </h2>
               <p className="mt-3 text-[16px] leading-[1.5] tracking-[-0.014em] text-[#1d1d1f]">
-                {entry.fullDef}
+                <Inline text={entry.fullDef} />
               </p>
             </aside>
 
@@ -190,7 +192,7 @@ export default async function GlossaryEntryPage(props: { params: Promise<Params>
                     key={i}
                     className="text-[17px] leading-[1.47] tracking-[-0.022em] text-[#1d1d1f] mt-6 first:mt-0"
                   >
-                    {p}
+                    <Inline text={p} />
                   </p>
                 );
               })}
@@ -202,7 +204,7 @@ export default async function GlossaryEntryPage(props: { params: Promise<Params>
                 Worked example
               </h2>
               <p className="mt-4 text-[16px] leading-[1.5] tracking-[-0.014em] text-white/95">
-                {entry.example}
+                <Inline text={entry.example} />
               </p>
             </section>
 
@@ -222,7 +224,7 @@ export default async function GlossaryEntryPage(props: { params: Promise<Params>
                         className="absolute left-0 top-[10px] h-1.5 w-1.5 rounded-full bg-[#1a3a6b]"
                         aria-hidden="true"
                       />
-                      {m}
+                      <Inline text={m} />
                     </li>
                   ))}
                 </ul>
@@ -241,7 +243,7 @@ export default async function GlossaryEntryPage(props: { params: Promise<Params>
                       {f.q}
                     </dt>
                     <dd className="mt-3 text-[15px] leading-[1.55] tracking-[-0.014em] text-[#424245]">
-                      {f.a}
+                      <Inline text={f.a} />
                     </dd>
                   </div>
                 ))}
@@ -257,6 +259,7 @@ export default async function GlossaryEntryPage(props: { params: Promise<Params>
                 {entry.sources.map((s, i) => (
                   <li
                     key={i}
+                    id={`source-${i + 1}`}
                     className="text-[14px] leading-[1.5] tracking-[-0.014em] text-[#1d1d1f]"
                   >
                     <a

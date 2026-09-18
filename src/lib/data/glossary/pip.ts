@@ -70,6 +70,11 @@ export const entry: GlossaryEntry = {
       publisher: "Hospitality Net",
     },
   ],
+  // geo/05-architecture.md §5.1: link the answer page that uses this term (R11).
+  relatedAnswers: [
+    "/hotel-financing/pip-and-renovation-loans",
+    "/sell-a-hotel/documents-needed",
+  ],
   relatedTerms: ["bov", "cap-rate", "iom"],
   relatedMarkets: ["dallas-tx", "atlanta-ga", "phoenix-az"],
   relatedBrands: ["hampton-inn", "holiday-inn-express", "marriott"],

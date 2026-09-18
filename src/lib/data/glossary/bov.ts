@@ -70,6 +70,11 @@ export const entry: GlossaryEntry = {
       publisher: "Investopedia",
     },
   ],
+  // geo/05-architecture.md §5.1: link the answer page that uses this term (R11).
+  relatedAnswers: [
+    "/hotel-valuation/broker-opinion-of-value",
+    "/sell-a-hotel",
+  ],
   relatedTerms: ["iom", "cap-rate", "pip"],
   relatedMarkets: ["austin-tx", "dallas-tx", "nashville-tn"],
   relatedBrands: ["hampton-inn", "holiday-inn-express", "hilton"],

@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { listings } from "@/lib/data/listings";
 
 export const runtime = "edge";
-export const alt = "Hotel for sale — Matthews Hotel Markets";
+export const alt = "Hotel for sale | Matthews Hotel Markets";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -19,7 +19,7 @@ export async function generateImageMetadata({
       size: { width: 1200, height: 630 },
       id: slug,
       alt: listing
-        ? `${listing.name} — ${listing.keys}-key ${listing.segment} hotel for sale in ${listing.city}, ${listing.state}`
+        ? `${listing.name}: ${listing.keys}-key ${listing.segment} hotel for sale in ${listing.city}, ${listing.state}`
         : alt,
     },
   ];

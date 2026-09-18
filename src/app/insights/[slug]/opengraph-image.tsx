@@ -3,7 +3,7 @@ import { insights } from "@/lib/data/insights";
 import { team } from "@/lib/data/team";
 
 export const runtime = "edge";
-export const alt = "Hotel investment insights — Matthews Hotel Markets";
+export const alt = "Hotel investment insights | Matthews Hotel Markets";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

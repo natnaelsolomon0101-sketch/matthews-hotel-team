@@ -70,6 +70,11 @@ export const entry: GlossaryEntry = {
       publisher: "Investopedia",
     },
   ],
+  // geo/05-architecture.md §5.1: link the answer page that uses this term (R11).
+  relatedAnswers: [
+    "/hotel-valuation/how-to-value-a-hotel",
+    "/hotel-valuation/hotel-cap-rates",
+  ],
   relatedTerms: ["adr", "cap-rate", "bov"],
   relatedMarkets: ["nashville-tn", "miami-fl", "tampa-fl"],
   relatedBrands: ["hampton-inn", "marriott", "hilton"],

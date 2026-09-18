@@ -9,8 +9,8 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 import { TwoToneHeadline } from "@/components/ui/TwoToneHeadline";
 import { Pill } from "@/components/ui/Pill";
 import { services } from "@/lib/data/services";
-
-const SITE_URL = "https://matthewshotelmarkets.com";
+import JsonLd from "@/components/seo/JsonLd";
+import { SITE_URL } from "@/lib/entity";
 
 type Params = { slug: string };
 
@@ -47,9 +47,7 @@ export default async function ServicePage(props: {
 
   const url = `${SITE_URL}/services/${service.slug}`;
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
+  const graph = [
       {
         "@type": "Service",
         "@id": `${url}#service`,
@@ -83,17 +81,13 @@ export default async function ServicePage(props: {
           { "@type": "ListItem", position: 3, name: service.name, item: url },
         ],
       },
-    ],
-  };
+  ];
 
   return (
     <>
       <SiteHeader />
       <main className="pt-16">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <JsonLd graph={graph} />
 
         <section className="bg-white py-16 lg:py-20">
           <div className="mx-auto max-w-[1024px] px-6">

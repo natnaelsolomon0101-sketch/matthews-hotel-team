@@ -11,8 +11,8 @@ import { TwoToneHeadline } from "@/components/ui/TwoToneHeadline";
 import { closed } from "@/lib/data/closed";
 import { team } from "@/lib/data/team";
 import { closedFaqs, faqJsonLdNode } from "@/lib/seo/faq";
-
-const SITE_URL = "https://matthewshotelmarkets.com";
+import JsonLd from "@/components/seo/JsonLd";
+import { SITE_URL } from "@/lib/entity";
 
 type Params = { slug: string };
 
@@ -28,7 +28,7 @@ export async function generateMetadata(props: {
   if (!deal) return { title: "Closed Transaction" };
 
   const url = `${SITE_URL}/closed/${deal.slug}`;
-  const title = `${deal.name} — ${deal.transactionTypeLabel ?? deal.transactionType}, ${deal.city}, ${deal.state}`;
+  const title = `${deal.name}: ${deal.transactionTypeLabel ?? deal.transactionType}, ${deal.city}, ${deal.state}`;
   const description = `Matthews Hotel Markets closed the ${deal.name} ${deal.transactionTypeLabel ?? deal.transactionType.toLowerCase()} in ${deal.city}, ${deal.state} (${deal.year}). ${deal.keys} keys. ${deal.dealSize}.`;
 
   return {
@@ -64,21 +64,16 @@ export default async function ClosedDealPage(props: {
     .filter((m): m is NonNullable<typeof m> => Boolean(m));
 
   const url = `${SITE_URL}/closed/${deal.slug}`;
-  const image = deal.photo
-    ? `${SITE_URL}${deal.photo}`
-    : `${SITE_URL}/images/hero-landscape.jpg`;
   const faqs = closedFaqs(deal);
 
   // @graph: Article (the close announcement) + RealEstateListing-as-Product
   // (with Sold availability) + BreadcrumbList. Brokers credited as authors of
   // the close — their E-E-A-T signal compounds.
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
+  const graph = [
       {
         "@type": "Article",
         "@id": `${url}#article`,
-        headline: `${deal.name} — closed by Matthews Hotel Markets`,
+        headline: `${deal.name}, closed by Matthews Hotel Markets`,
         description: `${deal.transactionTypeLabel ?? deal.transactionType} of the ${deal.name} (${deal.keys} keys, ${deal.city}, ${deal.state}). ${deal.dealSize}.`,
         datePublished: `${deal.year}-12-31`,
         dateModified: `${deal.year}-12-31`,
@@ -132,17 +127,13 @@ export default async function ClosedDealPage(props: {
         ],
       },
       faqJsonLdNode(url, faqs),
-    ],
-  };
+  ];
 
   return (
     <>
       <SiteHeader />
       <main className="pt-16">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        <JsonLd graph={graph} />
 
         <section className="bg-white py-16 lg:py-20">
           <div className="mx-auto max-w-[1024px] px-6">
