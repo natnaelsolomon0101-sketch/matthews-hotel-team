@@ -215,6 +215,8 @@ export const page: AnswerPage = {
       "/sell-a-hotel/taxes-when-selling-a-hotel",
       "/sell-a-hotel/franchise-agreement-expiration",
       "/sell-a-hotel/selling-a-distressed-hotel",
+      "/sell-a-hotel/what-buyers-look-for",
+      "/sell-a-hotel/selling-a-hotel-on-a-ground-lease",
       "/sell-a-hotel/faq"
     ],
     glossary: [

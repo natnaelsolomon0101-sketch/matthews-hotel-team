@@ -203,7 +203,9 @@ export const page: AnswerPage = {
       "/hotel-valuation/branded-select-service-hotel-value",
       "/hotel-valuation/appraisal-lower-than-expected",
       "/hotel-valuation/pip-and-hotel-value",
-      "/hotel-valuation/interest-rates-and-hotel-value"
+      "/hotel-valuation/interest-rates-and-hotel-value",
+      "/hotel-valuation/property-tax-appeal",
+      "/hotel-valuation/partner-buyout-valuation"
     ],
     glossary: [
       "/glossary/cap-rate",
