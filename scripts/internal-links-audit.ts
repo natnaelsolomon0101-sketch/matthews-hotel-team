@@ -29,7 +29,7 @@ import { tools } from "../src/lib/data/tools/dscr-calculator";
 import { EDITIONS } from "../src/lib/rates/sheet";
 
 const PROD = "https://matthewshotelmarkets.com";
-const LOCAL = "http://localhost:3000";
+const LOCAL = process.env.LOCAL_BASE ?? "http://localhost:3000";
 // Defaults to a local server. Production only with an explicit --prod: a
 // full run is ~160 requests, and repeated scripted traffic trips Vercel's
 // bot challenge, which blocks every AI crawler.
