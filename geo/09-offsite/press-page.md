@@ -33,7 +33,7 @@ that was never sent is not.]
 ### Media contact
 
 Matthews Hotel Markets
-hotelteam@matthews.com
+nate.solomon@matthews.com
 
 [No phone number. No verified organization-level switchboard number exists anywhere in the repo,
 per `geo/03-entity.md` section 4 item 5. Do not add one, and do not substitute a broker's personal

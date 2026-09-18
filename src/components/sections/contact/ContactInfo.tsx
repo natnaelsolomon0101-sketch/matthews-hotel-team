@@ -18,10 +18,10 @@ const rows: Row[] = [
     label: "Email",
     value: (
       <a
-        href="mailto:hotelteam@matthews.com"
+        href="mailto:nate.solomon@matthews.com"
         className="inline-flex min-h-[44px] -my-2 items-center text-[#1a3a6b] hover:underline"
       >
-        hotelteam@matthews.com
+        nate.solomon@matthews.com
       </a>
     ),
   },

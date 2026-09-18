@@ -43,7 +43,7 @@ https://matthewshotelmarkets.com
 
 **Email:**
 ```
-hotelteam@matthews.com
+nate.solomon@matthews.com
 ```
 
 **Phone:** leave blank on every profile below. No verified organization-level switchboard number

@@ -240,8 +240,8 @@ export default function RatesMethodologyPage() {
             </h2>
             <p className="mt-6 max-w-[68ch] text-[15px] leading-[1.55] tracking-[-0.014em] text-[color:var(--text-primary)]">
               If a published figure here is wrong, email{" "}
-              <a href="mailto:hotelteam@matthews.com" className="text-[#1a3a6b] hover:underline underline-offset-[3px]">
-                hotelteam@matthews.com
+              <a href="mailto:nate.solomon@matthews.com" className="text-[#1a3a6b] hover:underline underline-offset-[3px]">
+                nate.solomon@matthews.com
               </a>{" "}
               and it gets fixed in the current edition with a dated line in the
               changelog. Archived editions are never edited in place, because

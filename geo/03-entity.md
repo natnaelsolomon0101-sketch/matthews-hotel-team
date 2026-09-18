@@ -134,7 +134,7 @@ state the real shape: 22 people cover hospitality across the platform, 3 publish
 | Team LinkedIn | `linkedin.com/company/matthews-hotel-markets/` | repo, footer |
 | HQ | 515 Congress Ave., Suite 2410, Austin, TX 78701 | `offices.ts`, footer |
 | HQ geo | 30.2672 / -97.7431 | already in `offices.ts` |
-| Team email | hotelteam@matthews.com | 9 occurrences, consistent |
+| Team email | nate.solomon@matthews.com | 9 occurrences, consistent |
 | Nate Solomon phone | (512) 839-6999 | the **only** number for him in the repo (confirmed by a repo-wide phone sweep) |
 | Roster size | **22 people**, all real, all in `team.ts` | verified against the file and against the prerendered `/team` HTML, where all 22 names, titles, offices, emails and phones render server-side |
 | Published profiles | 3: Luke Thompson, Miles Cortez III, Nate Solomon | `hasBio !== false`; `generateStaticParams` builds exactly these three `/team/[slug]` routes |
@@ -224,7 +224,7 @@ https://matthewshotelmarkets.com
 
 ### Email (paste exactly)
 ```
-hotelteam@matthews.com
+nate.solomon@matthews.com
 ```
 
 ### Phone

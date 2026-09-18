@@ -53,7 +53,7 @@ export function ContactForm() {
       message,
     ].filter((line) => line !== null);
     const body = lines.join("\n");
-    return `mailto:hotelteam@matthews.com?subject=${encodeURIComponent(
+    return `mailto:nate.solomon@matthews.com?subject=${encodeURIComponent(
       subject,
     )}&body=${encodeURIComponent(body)}`;
   }, [firstName, lastName, email, phone, topic, message]);
@@ -103,7 +103,7 @@ export function ContactForm() {
       setState("error");
       setErrorMsg(
         data.error ||
-          "Something went wrong. Email hotelteam@matthews.com directly.",
+          "Something went wrong. Email nate.solomon@matthews.com directly.",
       );
     } catch {
       // Network failure, open mailto as a hard fallback.
