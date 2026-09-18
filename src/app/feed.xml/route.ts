@@ -1,6 +1,6 @@
 import { insights } from "@/lib/data/insights";
 import { answerPages, answerPath } from "@/lib/data/answers";
-import { tools } from "@/lib/data/tools/dscr-calculator";
+import { tools } from "@/lib/data/tools";
 import { latestEdition } from "@/lib/rates/sheet";
 
 /** Inline "[2]" citation markers point at a page's source list, which a feed item does not carry. */

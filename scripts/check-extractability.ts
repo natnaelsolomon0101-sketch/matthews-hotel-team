@@ -10,7 +10,7 @@
  * Exits non-zero on any failure. Part of scripts/geo-check.sh.
  */
 import { answerPages, answerPath } from "../src/lib/data/answers";
-import { tools } from "../src/lib/data/tools/dscr-calculator";
+import { tools } from "../src/lib/data/tools";
 import { glossary } from "../src/lib/data/glossary";
 import { BRAND } from "../src/lib/entity";
 
@@ -20,6 +20,7 @@ const DATE = new RegExp(`${MONTH}( \\d{1,2},)? 20\\d\\d`);
 
 const paths = [
   ...answerPages.map(answerPath),
+  "/tools",
   ...tools.map((t) => `/tools/${t.slug}`),
   ...glossary.map((g) => `/glossary/${g.slug}`),
   "/rates",

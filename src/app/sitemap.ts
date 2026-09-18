@@ -11,7 +11,7 @@ import { mhiQuarters } from "@/lib/data/mhi";
 import { glossary } from "@/lib/data/glossary";
 import { LISTINGS_UPDATED } from "@/lib/data/listings";
 import { answerPages, answerPath, clusters, clusterLastUpdated } from "@/lib/data/answers";
-import { tools as toolPages } from "@/lib/data/tools/dscr-calculator";
+import { tools as toolPages, toolsHub } from "@/lib/data/tools";
 import { latestEdition, EDITIONS } from "@/lib/rates/sheet";
 import { UPDATED as STATS_UPDATED } from "@/app/data/hotel-financing-statistics/updated";
 
@@ -301,12 +301,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     }));
 
-  const toolRoutes: MetadataRoute.Sitemap = toolPages.map((t) => ({
-    url: `${SITE_URL}/tools/${t.slug}`,
-    lastModified: new Date(t.lastUpdated),
-    changeFrequency: "monthly",
-    priority: 0.75,
-  }));
+  const toolRoutes: MetadataRoute.Sitemap = [
+    {
+      url: `${SITE_URL}${toolsHub.path}`,
+      lastModified: new Date(toolsHub.lastUpdated),
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    ...toolPages.map((t) => ({
+      url: `${SITE_URL}/tools/${t.slug}`,
+      lastModified: new Date(t.lastUpdated),
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
+    })),
+  ];
 
   const latest = latestEdition();
   const ratesRoutes: MetadataRoute.Sitemap = [

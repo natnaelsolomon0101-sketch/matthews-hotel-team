@@ -9,7 +9,7 @@
  * Exits non-zero on any failure. Part of scripts/geo-check.sh.
  */
 import { answerPages, answerPath } from "../src/lib/data/answers";
-import { tools } from "../src/lib/data/tools/dscr-calculator";
+import { tools } from "../src/lib/data/tools";
 
 const BANNED = /\b(unlock(s|ed|ing)?|navigate|seamless(ly)?|robust|delve|in today's)\b/i;
 
