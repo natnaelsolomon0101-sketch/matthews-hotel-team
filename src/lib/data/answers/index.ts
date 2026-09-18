@@ -10,6 +10,7 @@
 import { hub as financingHub, spokes as financingSpokes } from "./hotel-financing";
 import { hub as sellHub, spokes as sellSpokes } from "./sell-a-hotel";
 import { hub as valuationHub, spokes as valuationSpokes } from "./hotel-valuation";
+import { hub as buyHub, spokes as buySpokes } from "./buy-a-hotel";
 import type { AnswerCluster, AnswerPage } from "./types";
 
 export type { AnswerCluster, AnswerPage } from "./types";
@@ -40,6 +41,12 @@ export const clusters: ClusterDefinition[] = [
     label: "Valuation",
     hub: valuationHub,
     spokes: valuationSpokes,
+  },
+  {
+    cluster: "buy-a-hotel",
+    label: "Buy a Hotel",
+    hub: buyHub,
+    spokes: buySpokes,
   },
 ];
 

@@ -87,7 +87,7 @@ export const page: AnswerPage = {
       [
         "Maximum SBA exposure",
         "$5,000,000 loan maximum[1]",
-        "Debenture up to $5,500,000; bank first lien sized by the bank[2]"
+        "Debenture up to $5,000,000 on a hotel; bank first lien sized by the bank[9]"
       ],
       [
         "Typical borrower equity",
