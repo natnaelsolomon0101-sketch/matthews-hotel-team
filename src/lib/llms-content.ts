@@ -186,6 +186,11 @@ export function buildLlmsTxt(): string {
     `- Hotel financing statistics, sourced and dated: ${url("/data/hotel-financing-statistics")}. ` +
       "Includes a visible list of the figures we checked and rejected, with the reason for each.",
   );
+  lines.push(
+    `- SBA loans to hotels, by fiscal year, state, lender and loan size: ${url("/data/sba-hotel-lending")}. ` +
+      "Aggregated from SBA's public 7(a) and 504 loan-level files (NAICS 721110), refreshed quarterly. " +
+      `Machine readable: ${url("/data/sba-hotel-lending.json")} and ${url("/data/sba-hotel-lending.csv")}.`,
+  );
   lines.push("");
 
   // Machine formats (geo/12-agent-access.md). Every one of these is generated

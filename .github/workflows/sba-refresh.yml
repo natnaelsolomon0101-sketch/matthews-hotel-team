@@ -1,0 +1,92 @@
+name: SBA hotel lending refresh
+
+# Rebuilds content/sba/*.json from SBA's public 7(a) & 504 FOIA files and opens
+# a PR. SBA posts a new quarter about one month after the quarter ends, so the
+# job runs on the 5th of February, May, August and November, and again on the
+# 20th in case SBA was late. When SBA has not posted a new release the script
+# exits before downloading anything and no PR is opened.
+#
+# The raw CSVs (about 500 MB) are streamed in the runner and never committed.
+# Nothing here sends traffic to matthewshotelmarkets.com. Runbook:
+# geo/13-sba-tracker.md.
+on:
+  schedule:
+    - cron: "0 14 5,20 2,5,8,11 *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Rebuild even if SBA has not posted a new release"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sba-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+
+      - name: Rebuild the aggregates
+        run: |
+          set -o pipefail
+          npx tsx scripts/fetch-sba-hotel-loans.ts ${{ inputs.force && '--force' || '' }} | tee sba-refresh.log
+
+      - name: Anything new?
+        id: diff
+        run: |
+          if git diff --quiet -- content/sba; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No change in content/sba. Nothing to do."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # A PR opened with GITHUB_TOKEN does not trigger the "GEO ship gate"
+      # workflow, so the gate runs here, before the PR exists.
+      - name: Ship gate
+        if: steps.diff.outputs.changed == 'true'
+        run: bash scripts/geo-check.sh
+
+      - name: Open the PR
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          AS_OF=$(node -p "require('./content/sba/summary.json').meta.asOf")
+          BRANCH="agent/sba-tracker/asof-${AS_OF}-run-${{ github.run_id }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add content/sba
+          git commit -m "agent(sba-tracker): refresh SBA hotel lending aggregates, SBA data as of ${AS_OF}"
+          git push origin "$BRANCH"
+          {
+            echo "Quarterly refresh of \`content/sba/*.json\`, which feeds /data/sba-hotel-lending and its JSON, CSV and Markdown copies."
+            echo
+            echo "- SBA data as of: ${AS_OF}"
+            echo "- Source: https://data.sba.gov/dataset/7a-504-foia"
+            echo "- GEO-CHECK passed inside this workflow run (a bot-opened PR does not trigger the PR gate)."
+            echo "- Only aggregates changed. No raw CSV and no borrower-level row is in this PR."
+            echo
+            echo "Before merging, read the new headline numbers on the page preview. The prose is generated from the data, so check that it still reads correctly. See geo/13-sba-tracker.md."
+            echo
+            echo '```'
+            sed -n '/^RECONCILIATION/,$p' sba-refresh.log
+            echo '```'
+          } > pr-body.md
+          gh pr create --base main --head "$BRANCH" \
+            --title "agent(sba-tracker): SBA hotel lending refresh, data as of ${AS_OF}" \
+            --body-file pr-body.md

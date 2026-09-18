@@ -25,6 +25,7 @@ const paths = [
   ...glossary.map((g) => `/glossary/${g.slug}`),
   "/rates",
   "/data/hotel-financing-statistics",
+  "/data/sba-hotel-lending",
   "/about",
   "/press",
 ];

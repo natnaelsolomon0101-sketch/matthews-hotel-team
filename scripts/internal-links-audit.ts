@@ -65,6 +65,7 @@ function urls(): string[] {
     "/rates",
     "/rates/methodology",
     "/data/hotel-financing-statistics",
+    "/data/sba-hotel-lending",
   ];
   for (const l of listings.filter((x) => x.hasDetail !== false && !x.omUrl))
     u.push(`/listings/${l.slug}`);

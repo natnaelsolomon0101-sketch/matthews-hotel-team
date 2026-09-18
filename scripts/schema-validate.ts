@@ -94,6 +94,7 @@ function urls(): string[] {
     "/rates",
     "/rates/methodology",
     "/data/hotel-financing-statistics",
+    "/data/sba-hotel-lending",
   ];
   for (const e of EDITIONS) u.push(`/rates/${e.slug}`);
   for (const c of clusters) {
