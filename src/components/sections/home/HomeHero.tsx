@@ -70,7 +70,7 @@ export function HomeHero() {
             {...heroBody}
             className="text-[12px] font-medium uppercase tracking-[0.22em] text-white/70"
           >
-            Matthews Hotel Team
+            Matthews Hotel Markets
           </motion.p>
 
           <motion.div {...heroH1} className="mt-6">

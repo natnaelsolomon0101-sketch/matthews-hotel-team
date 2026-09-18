@@ -43,7 +43,7 @@ export function TeamDetailHero({ member }: TeamDetailHeroProps) {
           {/* Right column */}
           <div>
             <Reveal>
-              <Eyebrow>Matthews Hotel Team</Eyebrow>
+              <Eyebrow>Matthews Hotel Markets</Eyebrow>
             </Reveal>
             <Reveal delay={0.05}>
               <TwoToneHeadline

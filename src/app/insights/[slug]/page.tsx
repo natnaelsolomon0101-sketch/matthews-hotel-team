@@ -26,7 +26,7 @@ export async function generateMetadata(props: {
     .map((s) => team.find((m) => m.slug === s)?.name)
     .filter((n): n is string => Boolean(n));
   const byline =
-    authorNames.length > 0 ? authorNames.join(" and ") : "Matthews Hotel Team";
+    authorNames.length > 0 ? authorNames.join(" and ") : "Matthews Hotel Markets";
 
   const url = `${SITE_URL}/insights/${insight.slug}`;
   const description = `${insight.subtitle} ${insight.excerpt.slice(0, 100)}…`.slice(
