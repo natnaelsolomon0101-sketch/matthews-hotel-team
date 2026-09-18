@@ -52,7 +52,7 @@ export function ratesDatasetGraph(
     creator: { "@id": ID.org },
     publisher: { "@id": ID.org },
     datePublished: edition.publishedAt,
-    dateModified: edition.publishedAt,
+    dateModified: edition.modifiedAt ?? edition.publishedAt,
     temporalCoverage: edition.slug,
     spatialCoverage: { "@type": "Country", name: "United States" },
     keywords: [
@@ -131,7 +131,7 @@ export function ratesDatasetGraph(
       description,
       mainEntity: `${url}#dataset`,
       datePublished: edition.publishedAt,
-      dateModified: edition.publishedAt,
+      dateModified: edition.modifiedAt ?? edition.publishedAt,
     }),
     dataset,
     breadcrumb(

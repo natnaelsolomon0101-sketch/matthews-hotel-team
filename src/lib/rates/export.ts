@@ -78,6 +78,8 @@ export function ratesJson() {
     permalink: `${SITE_URL}/rates/${e.slug}`,
     edition: e.slug,
     published: e.publishedAt,
+    modified: e.modifiedAt ?? e.publishedAt,
+    corrections: e.corrections ?? [],
     nextRefresh: e.nextRefresh,
     license: RATES_LICENSE,
     citation: citationString(e, SITE_URL),
@@ -210,6 +212,9 @@ export function ratesCsv(): string {
     `# ${MHM_DATASET_NAME}, ${e.label}`,
     `# ${citationString(e, SITE_URL)}`,
     `# License: ${RATES_LICENSE}`,
+    ...(e.corrections ?? []).map(
+      (c) => `# ${c.text} Sources: ${c.sources.join(" ")}`,
+    ),
     `# basis=published: public benchmark or written program rule, see source_ids`,
     `# basis=observed: figure observed by Matthews Hotel Markets in live quotes that month`,
     `# basis=pending: no figure exists; value is the literal text "${PENDING_TEXT}"`,

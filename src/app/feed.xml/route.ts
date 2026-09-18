@@ -94,7 +94,7 @@ function answerItems(): string {
     {
       title: `Matthews Hotel Markets rate sheet, ${edition.label}`,
       url: `${SITE_URL}/rates`,
-      date: edition.publishedAt,
+      date: edition.modifiedAt ?? edition.publishedAt,
       description:
         "The monthly hotel rate sheet: dated public benchmarks and published SBA program rules, with every cell we cannot source marked not yet published.",
     },

@@ -6,7 +6,9 @@
  * the link and read the number off the page. If a number cannot get all five
  * of those, it does not go in this file.
  *
- * Every entry below was opened and read on 2026-09-17. Where the reading was
+ * Every entry below was opened and read on 2026-09-17. The SOFR, Prime,
+ * FOMC, target-range and SBA 7(a) entries were re-read on 2026-09-18 for the
+ * correction that followed the September 16 FOMC decision. Where the reading was
  * taken from a trade publication quoting a primary research house rather than
  * from the research house directly, `note` says so, because a reader deserves
  * to know how many hands the number passed through.
@@ -76,6 +78,8 @@ export const STAT_GROUPS: { key: StatGroup; label: string; blurb: string }[] = [
 ];
 
 const V = "2026-09-17";
+/** Re-verified for the September 18, 2026 correction. */
+const V2 = "2026-09-18";
 
 const TREASURY = {
   sourceName: "Daily Treasury Par Yield Curve Rates",
@@ -153,33 +157,35 @@ export const STATS: Stat[] = [
   {
     id: "sofr",
     group: "rates-and-spreads",
-    text: "SOFR, the index under almost every floating-rate hotel bridge loan, was 3.62% for September 16, 2026.",
+    text: "SOFR, the index under almost every floating-rate hotel bridge loan, was 3.85% for September 17, 2026, the first day under the Fed's new target range.",
     sourceName: "Secured Overnight Financing Rate",
     publisher: "Federal Reserve Bank of New York",
     url: "https://www.newyorkfed.org/markets/reference-rates/sofr",
-    asOf: "2026-09-16",
-    verified: V,
+    asOf: "2026-09-17",
+    verified: V2,
+    note: "Corrected September 18, 2026. This entry first read 3.62% for September 16.",
   },
   {
     id: "sofr-month",
     group: "rates-and-spreads",
-    text: "SOFR fell 6 basis points between August 31 and September 16, 2026, from 3.68% to 3.62%, while fixed-rate term debt got more expensive.",
+    text: "SOFR rose 17 basis points between August 31 and September 17, 2026, from 3.68% to 3.85%, most of it on September 17 after the Fed's September 16 increase. Fixed-rate term debt also got more expensive over the month.",
     sourceName: "Secured Overnight Financing Rate",
     publisher: "Federal Reserve Bank of New York",
     url: "https://www.newyorkfed.org/markets/reference-rates/sofr",
-    asOf: "2026-09-16",
-    verified: V,
+    asOf: "2026-09-17",
+    verified: V2,
+    note: "Corrected September 18, 2026. This entry first read a 6 basis point fall to 3.62% for September 16.",
   },
   {
     id: "prime",
     group: "rates-and-spreads",
-    text: "The bank prime loan rate was 6.75% at its most recent published observation, September 15, 2026.",
-    sourceName: "Bank Prime Loan Rate (DPRIME)",
-    publisher: "Federal Reserve Bank of St. Louis (FRED)",
-    url: "https://fred.stlouisfed.org/series/DPRIME",
-    asOf: "2026-09-15",
-    verified: V,
-    note: "The series had not printed since the September 16 FOMC decision when this page was built.",
+    text: "The prime rate moved from 6.75% to 7.00% effective September 17, 2026, as BNY and PNC announced after the Fed's September 16 increase.",
+    sourceName: "BNY Increases Prime Lending Rate to 7.00%",
+    publisher: "The Bank of New York Mellon Corporation, via PR Newswire",
+    url: "https://www.prnewswire.com/news-releases/bny-increases-prime-lending-rate-to-7-00-302881066.html",
+    asOf: "2026-09-16",
+    verified: V2,
+    note: "PNC announced the same 7.00% rate, also effective September 17. The Federal Reserve's DPRIME series on FRED had not yet printed a post-hike value on September 18, 2026; its last observation is 6.75% on September 15. Corrected September 18, 2026: this entry first read 6.75%.",
   },
   {
     id: "fomc",
@@ -189,7 +195,7 @@ export const STATS: Stat[] = [
     publisher: "Board of Governors of the Federal Reserve System",
     url: "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
     asOf: "2026-09-16",
-    verified: V,
+    verified: V2,
   },
   {
     id: "fedtaru",
@@ -199,7 +205,7 @@ export const STATS: Stat[] = [
     publisher: "Federal Reserve Bank of St. Louis (FRED)",
     url: "https://fred.stlouisfed.org/series/DFEDTARU",
     asOf: "2026-09-17",
-    verified: V,
+    verified: V2,
   },
 
   /* --------------------------------------------------------------- SBA */
@@ -226,13 +232,13 @@ export const STATS: Stat[] = [
   {
     id: "sba-7a-max-today",
     group: "sba",
-    text: "At the last published Prime of 6.75%, the maximum allowable rate on a variable-rate 7(a) hotel loan over $350,000 was 9.75%.",
+    text: "At Prime of 7.00%, effective September 17, 2026, the maximum allowable rate on a variable-rate 7(a) hotel loan over $350,000 is 10.00%.",
     sourceName: "7(a) loan program: terms, conditions, and eligibility",
     publisher: "U.S. Small Business Administration",
     url: "https://www.sba.gov/partners/lenders/7a-loan-program/terms-conditions-eligibility",
     asOf: "2026-09-17",
-    verified: V,
-    note: "Prime plus the 3.00% cap. Expect 10.00% once Prime reflects the September 16 FOMC increase.",
+    verified: V2,
+    note: "Prime plus the 3.00% cap SBA publishes. The 7.00% Prime is from the BNY and PNC announcements listed above. Corrected September 18, 2026: this entry first read 9.75%, on the 6.75% Prime last printed by FRED on September 15.",
   },
   {
     id: "sba-7a-max-loan",

@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Hotel Loan Rates in September 2026",
   h1: "What are current hotel loan interest rates?",
   description: "Where hotel loan rates sit in September 2026 by lender type, what drives the spread over Treasuries and SOFR, and how rate moves change loan size.",
-  lastUpdated: "2026-09-17",
+  lastUpdated: "2026-09-18",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -43,7 +43,7 @@ export const page: AnswerPage = {
     {
       h2: "What spread should I expect over that index?",
       lead: "The spread on a hotel loan is set primarily by the sponsor and the asset, and it moves month to month with the broader lending environment.",
-      body: "Matthews Hotel Markets' September 2026 rate sheet publishes 9 of its 49 priced cells and marks the other 40 as not yet published. The spread over the index is one of the cells we do not publish: no lender type prints one, and we will not print one until three independent lenders quote the same structure in a month. What the sheet does publish is the index every quote is struck against, the 10-year Treasury at 4.94% on September 17, 2026 and SOFR at 3.62% for September 16, 2026, plus the SBA rows, where the maximum allowable 7(a) rate is 9.75%.[5] Spreads are not static. They widen when lenders pull back from hospitality generally, and they tighten when capital is competing for a limited number of financeable deals. A spread quoted in July is not necessarily the spread available in September, which is why any specific number on this page needs a date attached, not a memory."
+      body: "Matthews Hotel Markets' September 2026 rate sheet publishes 9 of its 49 priced cells and marks the other 40 as not yet published. The spread over the index is one of the cells we do not publish: no lender type prints one, and we will not print one until three independent lenders quote the same structure in a month. What the sheet does publish is the index every quote is struck against, the 10-year Treasury at 4.94% on September 17, 2026 and SOFR at 3.85% for September 17, 2026,[2] plus the SBA rows, where the maximum allowable 7(a) rate is 10.00% at the 7.00% Prime in effect since September 17.[5][6] Spreads are not static. They widen when lenders pull back from hospitality generally, and they tighten when capital is competing for a limited number of financeable deals. A spread quoted in July is not necessarily the spread available in September, which is why any specific number on this page needs a date attached, not a memory."
     },
     {
       h2: "Why do hotels price wider than apartments or industrial?",
@@ -128,7 +128,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet publishes 9 of its 49 priced cells and marks the other 40 as not yet published. The published ones are the SBA rows: a 7(a) maximum allowable rate of 9.75% at the last printed Prime of 6.75%, and a 504 hotel structure capped at 85% of project cost.[5]"
+    sentence: "Matthews Hotel Markets' September 2026 rate sheet publishes 9 of its 49 priced cells and marks the other 40 as not yet published. The published ones are the SBA rows: a 7(a) maximum allowable rate of 10.00% at the 7.00% Prime in effect since September 17, 2026, and a 504 hotel structure capped at 85% of project cost.[5]"
   },
   workedExample: {
     label: "Hypothetical: how 50 basis points moves the loan",
@@ -198,6 +198,13 @@ export const page: AnswerPage = {
       label: "Matthews Hotel Markets September 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
+      accessed: "2026-09-18"
+    },
+    {
+      n: 6,
+      label: "BNY Increases Prime Lending Rate to 7.00%",
+      url: "https://www.prnewswire.com/news-releases/bny-increases-prime-lending-rate-to-7-00-302881066.html",
+      publisher: "The Bank of New York Mellon Corporation, via PR Newswire",
       accessed: "2026-09-18"
     }
   ],

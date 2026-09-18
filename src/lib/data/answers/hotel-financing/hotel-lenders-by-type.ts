@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Who Lends on Hotels? Lender Types Compared",
   h1: "Who are the biggest hotel lenders, and which type fits my deal?",
   description: "Banks, life companies, CMBS, SBA and debt funds compared on rate, leverage, recourse and speed, with the deal profile each one wants.",
-  lastUpdated: "2026-09-17",
+  lastUpdated: "2026-09-18",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -48,7 +48,7 @@ export const page: AnswerPage = {
     {
       h2: "Who has the lowest rate, and what do they want in return?",
       lead: "Life insurance companies typically offer the lowest rate on a hotel loan, in exchange for the lowest leverage and the strictest asset-quality and stabilization requirements.",
-      body: "Matthews Hotel Markets' September 2026 rate sheet shows what each lender type will actually put in writing. For SBA that is a lot: a 7(a) maximum allowable rate of 9.75% at the last printed Prime of 6.75%, and a 504 hotel structure capped at 85% of project cost under SBA rules. For banks, life companies, CMBS conduits and debt funds it is the index only, the 10-year Treasury at 4.94% on September 17, 2026 and SOFR at 3.62% for September 16, 2026, with the spread and the working leverage ceiling both marked not yet published.[3] The trade is structural, not just a market quirk: a life company is matching a long-duration liability to a long-duration, low-risk asset, which only works on the most stabilized, best-located hotels at conservative leverage. A borrower chasing the lowest rate without meeting that bar will not find it available, regardless of the quoted spread."
+      body: "Matthews Hotel Markets' September 2026 rate sheet shows what each lender type will actually put in writing. For SBA that is a lot: a 7(a) maximum allowable rate of 10.00%, which is SBA's 3.00% cap[1] over the 7.00% Prime in effect since September 17, 2026,[5][6] and a 504 hotel structure capped at 85% of project cost under SBA rules. For banks, life companies, CMBS conduits and debt funds it is the index only, the 10-year Treasury at 4.94% on September 17, 2026 and SOFR at 3.85% for September 17, 2026,[7] with the spread and the working leverage ceiling both marked not yet published.[3] The trade is structural, not just a market quirk: a life company is matching a long-duration liability to a long-duration, low-risk asset, which only works on the most stabilized, best-located hotels at conservative leverage. A borrower chasing the lowest rate without meeting that bar will not find it available, regardless of the quoted spread."
     },
     {
       h2: "Who will lend on an independent hotel?",
@@ -121,7 +121,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet publishes what each lender type will put in writing. For SBA that is a lot: a 7(a) maximum allowable rate of 9.75% at the last printed Prime of 6.75%, and a 504 hotel structure capped at 85% of project cost. For banks, life companies, CMBS and debt funds it is the index only.[3]"
+    sentence: "Matthews Hotel Markets' September 2026 rate sheet publishes what each lender type will put in writing. For SBA that is a lot: a 7(a) maximum allowable rate of 10.00% at the 7.00% Prime in effect since September 17, 2026, and a 504 hotel structure capped at 85% of project cost. For banks, life companies, CMBS and debt funds it is the index only.[3]"
   },
   workedExample: {
     label: "Hypothetical: the same hotel, three lender types",
@@ -184,6 +184,27 @@ export const page: AnswerPage = {
       label: "SOP 50 10 8, Lender and Development Company Loan Programs (effective June 1, 2025), Section C, Ch. 1: debenture limits (p. 350) and Limited or Special Purpose Property, which lists hotels (pp. 354-355)",
       url: "https://www.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
       publisher: "U.S. Small Business Administration",
+      accessed: "2026-09-18"
+    },
+    {
+      n: 5,
+      label: "BNY Increases Prime Lending Rate to 7.00%",
+      url: "https://www.prnewswire.com/news-releases/bny-increases-prime-lending-rate-to-7-00-302881066.html",
+      publisher: "The Bank of New York Mellon Corporation, via PR Newswire",
+      accessed: "2026-09-18"
+    },
+    {
+      n: 6,
+      label: "PNC Bank, N.A. Changes Prime Rate",
+      url: "https://www.prnewswire.com/news-releases/pnc-bank-na-changes-prime-rate-302881163.html",
+      publisher: "PNC Bank, N.A., via PR Newswire",
+      accessed: "2026-09-18"
+    },
+    {
+      n: 7,
+      label: "Secured Overnight Financing Rate (SOFR)",
+      url: "https://www.newyorkfed.org/markets/reference-rates/sofr",
+      publisher: "Federal Reserve Bank of New York",
       accessed: "2026-09-18"
     }
   ],

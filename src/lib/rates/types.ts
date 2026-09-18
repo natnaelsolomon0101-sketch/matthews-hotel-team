@@ -125,5 +125,22 @@ export type RateEdition = {
   rows: RateRow[];
   /** "What moved since <prior month>". Empty on the first edition. */
   changelog: string[];
+  /**
+   * ISO date of the latest in-place correction to this edition, if any.
+   * Drives dateModified. Absent means the edition is unchanged since
+   * publishedAt.
+   */
+  modifiedAt?: string;
+  /** Dated corrections, newest first. Rendered visibly above the table. */
+  corrections?: RateCorrection[];
   mhdi: MhdiReading;
+};
+
+/** A dated correction published on the edition it corrects. */
+export type RateCorrection = {
+  /** ISO date the correction was published. */
+  date: string;
+  text: string;
+  /** Ids into RATE_SOURCES. */
+  sources: string[];
 };

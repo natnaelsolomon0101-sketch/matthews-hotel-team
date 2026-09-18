@@ -16,7 +16,7 @@ import {
 } from "@/lib/rates/statistics";
 import { latestEdition } from "@/lib/rates/sheet";
 import { RATES_LICENSE } from "@/lib/rates/jsonld";
-import { UPDATED } from "./updated";
+import { PUBLISHED, UPDATED } from "./updated";
 
 const url = `${SITE_URL}/data/hotel-financing-statistics`;
 
@@ -48,7 +48,7 @@ const LONG_DATE = (iso: string) => {
 };
 
 const TAKEAWAYS = [
-  "The 10-year Treasury was 4.94% and SOFR was 3.62% on September 17, 2026. Fixed-rate term debt got more expensive over the month while floating got marginally cheaper.",
+  "The 10-year Treasury was 4.94% and SOFR was 3.85% on September 17, 2026, the day after the Fed raised its target range 25 basis points. Fixed-rate and floating-rate debt both cost more than they did on August 31.",
   "SBA is the only lender type whose maximum rates and leverage are published in writing. A variable-rate 7(a) hotel loan over $350,000 is capped at Prime plus 3.00%, and SBA rules cap a hotel 504 structure at 85% of cost.",
   "Trepp counts $18.7 billion of hotel CMBS maturing in 2026 and nearly 70% of it floats, so SOFR decides whether those loans extend.",
   "CBRE and CoStar are about 190 basis points apart on 2026 RevPAR growth. Both forecasts are below, because underwriting to one of them without knowing about the other is the mistake.",
@@ -62,7 +62,7 @@ export default function HotelFinancingStatisticsPage() {
       name: "Hotel Financing Statistics, 2026",
       description: `${STATS.length} sourced hotel financing statistics, each with the date the source carries and the date it was last verified.`,
       mainEntity: `${url}#dataset`,
-      datePublished: UPDATED,
+      datePublished: PUBLISHED,
       dateModified: UPDATED,
     }),
     {
@@ -76,7 +76,7 @@ export default function HotelFinancingStatisticsPage() {
       isAccessibleForFree: true,
       creator: { "@id": ID.org },
       publisher: { "@id": ID.org },
-      datePublished: UPDATED,
+      datePublished: PUBLISHED,
       dateModified: UPDATED,
       temporalCoverage: "2025/2027",
       spatialCoverage: { "@type": "Country", name: "United States" },
@@ -139,12 +139,20 @@ export default function HotelFinancingStatisticsPage() {
             <p className="mt-6 text-[13px] tracking-[-0.014em] text-[color:var(--text-secondary)]">
               Compiled by {BRAND} &middot; Last updated: {LONG_DATE(UPDATED)}
             </p>
+            <p className="mt-4 rounded-[14px] bg-[#f5f5f7] px-5 py-4 text-[14px] leading-[1.5] tracking-[-0.014em] text-[color:var(--text-primary)]">
+              <strong>Correction, September 18, 2026.</strong> Prime moved to
+              7.00% on September 17 after the Fed&rsquo;s September 16
+              decision, so the SBA 7(a) maximum is 10.00%; SOFR printed 3.85%
+              for September 17. The Prime, SOFR and SBA entries below were
+              updated and each notes its earlier value.
+            </p>
 
             <p className="mt-8 max-w-[68ch] text-[19px] leading-[1.42] tracking-[0.012em] text-[color:var(--text-primary)]">
               {STATS.length} statistics on hotel debt and hotel investment, as
               of September 17, 2026. The 10-year Treasury is 4.94%, SOFR is
-              3.62%, and SBA caps a variable-rate 7(a) hotel loan over $350,000
-              at Prime plus 3.00%, which is 9.75% today. Each entry below links
+              3.85%, and SBA caps a variable-rate 7(a) hotel loan over $350,000
+              at Prime plus 3.00%, which is 10.00% with Prime at 7.00% since
+              September 17. Each entry below links
               its publisher and carries two dates: the date on the source, and
               the date a person here last opened it.
             </p>

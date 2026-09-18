@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Financing a Hotel PIP or Renovation in 2026",
   h1: "How do I finance a hotel PIP or renovation?",
   description: "What a hotel PIP costs per room, how long you get to complete it, and the four ways owners fund one in 2026.",
-  lastUpdated: "2026-09-17",
+  lastUpdated: "2026-09-18",
   authorSlug: "luke-thompson",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -26,7 +26,7 @@ export const page: AnswerPage = {
     "Who pays for a PIP, the buyer or the seller?",
     "What happens if I miss my PIP deadline?"
   ],
-  answer: "A PIP is funded four ways: cash from reserves, a future-funding facility inside a bridge loan, a capex holdback in a refinance, or a price reduction when you sell. The brand sets the scope and the deadline. A future-funding facility floats over SOFR, which was 3.62 percent for September 16, 2026.[1] Get the scope in writing before you price any of the four.",
+  answer: "A PIP is funded four ways: cash from reserves, a future-funding facility inside a bridge loan, a capex holdback in a refinance, or a price reduction when you sell. The brand sets the scope and the deadline. A future-funding facility floats over SOFR, which was 3.85 percent for September 17, 2026.[1] Get the scope in writing before you price any of the four.",
   takeaways: [
     "The PIP scope letter is the document. Everything downstream is priced off it, so get it first.",
     "Per-room cost varies by brand, scope and market. Cite the brand's own published requirement or a public benchmark, never a remembered figure.",
@@ -109,7 +109,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet puts SOFR, the index a future-funding PIP facility floats over, at 3.62% for September 16, 2026, and marks the spread and the cost of the capex facility as not yet published.[1][2] Get both in writing from the lender before you sign the PIP scope letter."
+    sentence: "Matthews Hotel Markets' September 2026 rate sheet puts SOFR, the index a future-funding PIP facility floats over, at 3.85% for September 17, 2026, and marks the spread and the cost of the capex facility as not yet published.[1][2] Get both in writing from the lender before you sign the PIP scope letter."
   },
   workedExample: {
     label: "Hypothetical: funding a $2.6M PIP on 104 keys",

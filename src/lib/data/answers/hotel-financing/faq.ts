@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Hotel Financing FAQ (September 2026)",
   h1: "Hotel financing questions, answered",
   description: "Short answers to the hotel financing questions owners ask most: minimum loan size, points, comfort letters, guarantees, and qualifying with weak occupancy.",
-  lastUpdated: "2026-09-17",
+  lastUpdated: "2026-09-18",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -114,7 +114,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet marks points and working leverage as not yet published for every lender type except SBA, where SBA rules cap a hotel 504 structure at 85% of project cost. What it does publish: the 10-year Treasury at 4.94% on September 17, 2026 and the 7(a) maximum allowable rate at 9.75%.[4]"
+    sentence: "Matthews Hotel Markets' September 2026 rate sheet marks points and working leverage as not yet published for every lender type except SBA, where SBA rules cap a hotel 504 structure at 85% of project cost. What it does publish: the 10-year Treasury at 4.94% on September 17, 2026 and the 7(a) maximum allowable rate at 10.00%, with Prime at 7.00% since September 17, 2026.[4][5]"
   },
   workedExample: {
     label: "Hypothetical: why the same hotel borrows less in 2026 than in 2021",
@@ -181,6 +181,13 @@ export const page: AnswerPage = {
       label: "Matthews Hotel Markets September 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
+      accessed: "2026-09-18"
+    },
+    {
+      n: 5,
+      label: "BNY Increases Prime Lending Rate to 7.00%",
+      url: "https://www.prnewswire.com/news-releases/bny-increases-prime-lending-rate-to-7-00-302881066.html",
+      publisher: "The Bank of New York Mellon Corporation, via PR Newswire",
       accessed: "2026-09-18"
     }
   ],

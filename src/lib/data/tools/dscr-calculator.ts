@@ -107,7 +107,7 @@ export const page: ToolPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' September 2026 rate sheet marks the DSCR floor as not yet published for all seven lender types it covers, because no lender type publishes one.[1] The sheet does publish the index every quote is struck against: the 10-year Treasury at 4.94% on September 17, 2026[2] and SOFR at 3.62% for September 16, 2026.[7]",
+      "Matthews Hotel Markets' September 2026 rate sheet marks the DSCR floor as not yet published for all seven lender types it covers, because no lender type publishes one.[1] The sheet does publish the index every quote is struck against: the 10-year Treasury at 4.94% on September 17, 2026[2] and SOFR at 3.85% for September 17, 2026.[7]",
   },
   workedExample: {
     label:

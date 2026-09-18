@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Hotel Bridge Loans: When They Make Sense",
   h1: "What is a bridge loan and when should a hotel owner use one?",
   description: "How hotel bridge loans are priced and structured in 2026, what the rate cap costs, and the three situations where bridge debt is the right answer.",
-  lastUpdated: "2026-09-17",
+  lastUpdated: "2026-09-18",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -26,7 +26,7 @@ export const page: AnswerPage = {
     "How long does a hotel bridge loan last?",
     "What's the exit on a hotel bridge loan?"
   ],
-  answer: "A bridge loan is short-term floating-rate debt, usually interest-only, used when the hotel is not yet financeable by a permanent lender. It buys time for a PIP, a ramp-up, or a repositioning. It floats over SOFR, which was 3.62 percent for September 16, 2026, and usually requires a purchased rate cap.[1] Identify the exit before you sign, not after.",
+  answer: "A bridge loan is short-term floating-rate debt, usually interest-only, used when the hotel is not yet financeable by a permanent lender. It buys time for a PIP, a ramp-up, or a repositioning. It floats over SOFR, which was 3.85 percent for September 17, 2026, and usually requires a purchased rate cap.[1] Identify the exit before you sign, not after.",
   takeaways: [
     "Bridge debt is priced over SOFR and floats, so lenders usually require a rate cap as a condition of closing.",
     "The three real use cases: an in-progress PIP, a ramp after a brand change, and a maturity you cannot refinance yet.",
@@ -48,7 +48,7 @@ export const page: AnswerPage = {
     {
       h2: "What does a hotel bridge loan cost?",
       lead: "Bridge debt costs more than permanent debt in both rate and required upfront purchases, and that premium is the price of the flexibility and the underwriting risk the lender is taking.",
-      body: "Matthews Hotel Markets' September 2026 rate sheet puts SOFR, the index a hotel bridge loan floats over, at 3.62% for September 16, 2026.[1] It marks the bridge spread and the cap strike as not yet published: nobody publishes either one, and we do not print a number we have not seen quoted by three independent lenders in a month.[2] Ask a bridge lender for both in writing. Beyond the spread itself, bridge loans typically carry an origination fee, an exit fee if the loan is repaid before a set date, and the cost of the rate cap covered below. None of these are exotic; they are the standard cost structure of short-term floating debt, and they should be modeled into the total cost of the bridge period, not just the quoted spread."
+      body: "Matthews Hotel Markets' September 2026 rate sheet puts SOFR, the index a hotel bridge loan floats over, at 3.85% for September 17, 2026.[1] It marks the bridge spread and the cap strike as not yet published: nobody publishes either one, and we do not print a number we have not seen quoted by three independent lenders in a month.[2] Ask a bridge lender for both in writing. Beyond the spread itself, bridge loans typically carry an origination fee, an exit fee if the loan is repaid before a set date, and the cost of the rate cap covered below. None of these are exotic; they are the standard cost structure of short-term floating debt, and they should be modeled into the total cost of the bridge period, not just the quoted spread."
     },
     {
       h2: "What is a rate cap and how much is it?",
@@ -119,7 +119,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet puts SOFR, the index a hotel bridge loan floats over, at 3.62% for September 16, 2026. It marks the bridge spread and the cap strike as not yet published, because nobody publishes them and we will not print a number we have not seen quoted three times in a month.[2]"
+    sentence: "Matthews Hotel Markets' September 2026 rate sheet puts SOFR, the index a hotel bridge loan floats over, at 3.85% for September 17, 2026.[1] It marks the bridge spread and the cap strike as not yet published, because nobody publishes them and we will not print a number we have not seen quoted three times in a month.[2]"
   },
   workedExample: {
     label: "Hypothetical: bridging a $3.0M PIP",

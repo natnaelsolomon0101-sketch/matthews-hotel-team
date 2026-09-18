@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 const FAQS: { q: string; a: string }[] = [
   {
     q: "Where do the index rates come from?",
-    a: "Treasury yields come from the U.S. Treasury's daily par yield curve. SOFR comes from the New York Fed, which administers it. Prime comes from the Federal Reserve's published series. No intermediaries.",
+    a: "Treasury yields come from the U.S. Treasury's daily par yield curve. SOFR comes from the New York Fed, which administers it. Prime comes from the Federal Reserve's published series. When that series lags a rate change the banks have already announced, Prime comes from the banks' own dated announcements until the series catches up, and the sheet says which. No intermediaries.",
   },
   {
     q: "Why do some cells say not yet published?",
@@ -75,7 +75,7 @@ export default function RatesMethodologyPage() {
       name: "Rate Sheet Methodology",
       description:
         "How the Matthews Hotel Markets hotel loan rate sheet is built, sourced and refreshed.",
-      dateModified: edition.publishedAt,
+      dateModified: edition.modifiedAt ?? edition.publishedAt,
     }),
     {
       "@type": "FAQPage",
@@ -110,7 +110,7 @@ export default function RatesMethodologyPage() {
               />
             </div>
             <p className="mt-6 text-[13px] tracking-[-0.014em] text-[color:var(--text-secondary)]">
-              Last updated: {edition.publishedAt}
+              Last updated: {edition.modifiedAt ?? edition.publishedAt}
             </p>
 
             <p className="mt-8 max-w-[68ch] text-[19px] leading-[1.42] tracking-[0.012em] text-[color:var(--text-primary)]">
@@ -168,8 +168,13 @@ export default function RatesMethodologyPage() {
               lists them. The as-of date on the sheet is the date of the
               observation, not the date we ran the script. A benchmark that has
               not printed since a policy move keeps its old date and the
-              changelog says so, which is why September&rsquo;s Prime still
-              reads {BENCHMARKS.find((b) => b.key === "prime")?.value.toFixed(2)}%.
+              changelog says so. When the Federal Reserve&rsquo;s Prime series
+              lags a move the banks have already announced, as it did after
+              the September 16, 2026 FOMC decision, the sheet uses the
+              banks&rsquo; own dated announcements and names them, which is
+              why September&rsquo;s Prime reads{" "}
+              {BENCHMARKS.find((b) => b.key === "prime")?.value.toFixed(2)}% as
+              of September 17, 2026.
             </p>
             <ul className="mt-6 space-y-3 list-disc list-outside pl-5 marker:text-[color:var(--text-secondary)]">
               {BENCHMARKS.map((b) => (

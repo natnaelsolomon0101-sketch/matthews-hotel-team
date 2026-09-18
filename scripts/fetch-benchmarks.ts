@@ -170,6 +170,21 @@ async function main() {
     if (!fetchedKeys.has(b.key)) benchmarks.push(b);
   }
 
+  // Never replace a newer observation with an older one. This happens when a
+  // series lags a move that its publishers have already announced: after the
+  // September 16, 2026 FOMC decision, FRED's DPRIME still ended at 6.75% on
+  // September 15 while the banks' own 7.00% took effect September 17. The
+  // existing file keeps the newer, hand-sourced value until the feed catches up.
+  for (let i = 0; i < benchmarks.length; i++) {
+    const prior = existing.benchmarks.find((b) => b.key === benchmarks[i].key);
+    if (prior && prior.asOf > benchmarks[i].asOf) {
+      console.warn(
+        `  keeping ${prior.key} ${prior.value}% as of ${prior.asOf}; the feed's latest is ${benchmarks[i].value}% as of ${benchmarks[i].asOf}`,
+      );
+      benchmarks[i] = prior;
+    }
+  }
+
   const order = ["prime", "sofr", "ust5", "ust7", "ust10", "sba504"];
   benchmarks.sort((a, b) => order.indexOf(a.key) - order.indexOf(b.key));
 

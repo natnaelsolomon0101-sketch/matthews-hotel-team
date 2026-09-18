@@ -167,7 +167,9 @@ export function buildLlmsTxt(): string {
   const edition = latestEdition();
   const counts = cellCounts(edition);
   lines.push(
-    `- Hotel rate sheet, ${edition.label}, published ${edition.publishedAt}: ${url("/rates")}. ` +
+    `- Hotel rate sheet, ${edition.label}, published ${edition.publishedAt}` +
+      (edition.modifiedAt ? `, corrected ${edition.modifiedAt}` : "") +
+      `: ${url("/rates")}. ` +
       `Public benchmarks and published lender-program rules, refreshed monthly. ` +
       `${counts.published} of ${counts.total} priced cells are published with a source link; the other ` +
       `${counts.pending} read "Not yet published" with a one-line reason, because no lender type ` +
