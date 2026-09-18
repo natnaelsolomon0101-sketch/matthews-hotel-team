@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+# The ship gate. Every check the site must pass before anything merges to
+# main (which deploys matthewshotelmarkets.com). Runs fully offline against a
+# local production build; it never sends traffic to the live site.
+#
+#   bash scripts/geo-check.sh
+#
+# Exits non-zero on the first failing check. Prints "GEO-CHECK PASS" at the
+# end only when everything is green.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+PORT=3000
+BASE="http://localhost:${PORT}"
+step() { printf '\n==> %s\n' "$1"; }
+
+step "typecheck"
+npx tsc --noEmit -p .
+
+step "lint (0 errors, 0 warnings)"
+npx eslint --max-warnings=0 .
+
+step "production build"
+npm run build
+
+step "citations, em-dashes, filler words"
+npx tsx scripts/check-refs.ts
+
+step "JSON-LD (built HTML)"
+npx tsx scripts/schema-validate.ts --build | tail -3
+grep -q '"blocksValid"' reports/schema-validation.json
+node -e 'const r=require("./reports/schema-validation.json"); if (r.blocksValid !== r.blocksFound) { console.error(`schema: ${r.blocksValid}/${r.blocksFound} valid`); process.exit(1) }'
+
+step "start local server"
+if curl -s -o /dev/null "${BASE}/"; then
+  echo "port ${PORT} is already in use; stop that server first" >&2
+  exit 1
+fi
+npx next start -p "${PORT}" >/tmp/geo-check-next.log 2>&1 &
+SERVER_PID=$!
+trap 'kill ${SERVER_PID} 2>/dev/null || true' EXIT
+for _ in $(seq 1 60); do
+  curl -s -o /dev/null "${BASE}/" && break
+  sleep 1
+done
+
+step "internal links (local)"
+npx tsx scripts/internal-links-audit.ts --local | tail -2
+
+step "300-word extractability test (local)"
+npx tsx scripts/check-extractability.ts "${BASE}"
+
+step "bot access, 18 user agents (local)"
+for p in / /hotel-financing /rates; do
+  BASE_URL="${BASE}" PATH_UNDER_TEST="$p" bash scripts/bot-check.sh | tail -2
+done
+
+step "discovery files"
+for p in /robots.txt /sitemap.xml /llms.txt /llms-full.txt /feed.xml /rates.json /rates.csv; do
+  code=$(curl -s -o /dev/null -w '%{http_code}' "${BASE}${p}")
+  [ "$code" = "200" ] || { echo "FAIL ${p}: HTTP ${code}" >&2; exit 1; }
+done
+echo "all 200"
+
+printf '\nGEO-CHECK PASS\n'
