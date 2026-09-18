@@ -614,7 +614,9 @@ export function answerMetadata(page: AnswerPage | ToolPage, path: string) {
   return {
     title,
     description: page.description,
-    alternates: { canonical: url },
+    // The Markdown twin (src/lib/agent/markdown.ts), built from this same
+    // page object. Renders <link rel="alternate" type="text/markdown">.
+    alternates: { canonical: url, types: { "text/markdown": `${url}.md` } },
     openGraph: {
       type: "article" as const,
       title,

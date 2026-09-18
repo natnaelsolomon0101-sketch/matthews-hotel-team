@@ -25,6 +25,7 @@ import { mhiQuarters } from "./data/mhi";
 import { clusters, answerPath } from "./data/answers";
 import { tools, toolsHub } from "./data/tools";
 import { latestEdition, cellCounts } from "./rates/sheet";
+import { twins, mdUrl } from "./agent/markdown";
 import {
   SITE_URL,
   BRAND,
@@ -185,6 +186,23 @@ export function buildLlmsTxt(): string {
     `- Hotel financing statistics, sourced and dated: ${url("/data/hotel-financing-statistics")}. ` +
       "Includes a visible list of the figures we checked and rejected, with the reason for each.",
   );
+  lines.push("");
+
+  // Machine formats (geo/12-agent-access.md). Every one of these is generated
+  // from the same data modules as the HTML page it mirrors.
+  lines.push("## Markdown copies and machine endpoints");
+  lines.push("");
+  lines.push(`- Documentation: ${url("/developers")}`);
+  lines.push(
+    `- Markdown copy of a page: add .md to its URL, or request the URL with "Accept: text/markdown". Same content as the HTML page, which stays the canonical URL. Index of every page with a copy: ${url("/agent-index.json")}`,
+  );
+  lines.push(`- MCP server (Streamable HTTP, read-only, no authentication): ${url("/mcp")}`);
+  lines.push(`- OpenAPI description of the JSON and text endpoints: ${url("/openapi.json")}`);
+  lines.push(`- RSS feed: ${url("/feed.xml")}`);
+  lines.push("- Markdown copies:");
+  for (const t of twins()) {
+    lines.push(`  - ${t.h1}: ${mdUrl(t.path)}`);
+  }
   lines.push("");
 
   lines.push("## Sitemap");
