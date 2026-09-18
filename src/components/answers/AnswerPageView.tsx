@@ -43,6 +43,7 @@ export const CLUSTER_LABEL: Record<string, string> = {
   "sell-a-hotel": "Sell a Hotel",
   "hotel-valuation": "Hotel Valuation",
   "buy-a-hotel": "Buy a Hotel",
+  "hotel-franchise-costs": "Hotel Franchise Costs",
   tools: "Tools",
 };
 
