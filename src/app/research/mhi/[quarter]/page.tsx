@@ -199,9 +199,9 @@ export default async function MhiQuarterPage(props: {
                             {j.market ? `${j.market.city}, ${j.market.state}` : dp.marketSlug}
                           </Link>
                         </td>
-                        <td className="py-3 pr-3 tabular-nums">{ss ? formatCapBand(ss) : "—"}</td>
-                        <td className="py-3 pr-3 tabular-nums">{fs ? formatCapBand(fs) : "—"}</td>
-                        <td className="py-3 pr-3 tabular-nums">{rl ? formatCapBand(rl) : "—"}</td>
+                        <td className="py-3 pr-3 tabular-nums">{ss ? formatCapBand(ss) : "n/a"}</td>
+                        <td className="py-3 pr-3 tabular-nums">{fs ? formatCapBand(fs) : "n/a"}</td>
+                        <td className="py-3 pr-3 tabular-nums">{rl ? formatCapBand(rl) : "n/a"}</td>
                         <td className="py-3 pr-3 tabular-nums">${dp.adrLow}-${dp.adrHigh}</td>
                         <td className="py-3 pr-3 tabular-nums">${dp.revparLow}-${dp.revparHigh}</td>
                         <td className="py-3 pr-3 tabular-nums">{dp.occupancy}%</td>
@@ -260,6 +260,54 @@ export default async function MhiQuarterPage(props: {
             </p>
             <p className="mt-4 text-[13px] tracking-[-0.014em] text-[color:var(--text-tertiary)]">
               Next refresh: {q.nextRefresh}
+            </p>
+          </div>
+        </section>
+
+        {/*
+          The other half of the research franchise. The MHI measures cap rates,
+          ADR, RevPAR and occupancy from public research, quarterly, across 14
+          markets. The rate sheet and the Matthews Hotel Debt Index measure
+          hotel debt pricing from quotes this desk receives, monthly,
+          nationally. Two datasets, cross-linked, never averaged together:
+          folding an observation series into the MHI would falsify the MHI's
+          own published methodology statement. geo/08-data.md, Decision 3.
+        */}
+        <section className="bg-white py-16 lg:py-20">
+          <div className="mx-auto max-w-[1024px] px-6">
+            <h2 className="text-[12px] uppercase tracking-[0.18em] font-medium text-[color:var(--text-secondary)]">
+              The debt side of the same market
+            </h2>
+            <p className="mt-4 max-w-[68ch] text-[17px] leading-[1.47] tracking-[-0.022em] text-[color:var(--text-primary)]">
+              The MHI prices the asset. The{" "}
+              <Link href="/rates" className="text-[#1a3a6b] hover:underline underline-offset-[3px]">
+                monthly hotel rate sheet
+              </Link>{" "}
+              prices the debt against it, and the{" "}
+              <Link
+                href="/rates/methodology"
+                className="text-[#1a3a6b] hover:underline underline-offset-[3px]"
+              >
+                Matthews Hotel Debt Index
+              </Link>{" "}
+              is a separate monthly series with its own rules. They are
+              published side by side and never averaged: this dataset comes
+              from public research, that one from quotes received. Sourced
+              financing statistics are at{" "}
+              <Link
+                href="/data/hotel-financing-statistics"
+                className="text-[#1a3a6b] hover:underline underline-offset-[3px]"
+              >
+                /data/hotel-financing-statistics
+              </Link>
+              , and how cap rates behave is answered at{" "}
+              <Link
+                href="/hotel-valuation/hotel-cap-rates"
+                className="text-[#1a3a6b] hover:underline underline-offset-[3px]"
+              >
+                what is a good cap rate for a hotel in 2026
+              </Link>
+              .
             </p>
           </div>
         </section>

@@ -18,6 +18,16 @@ import path from "node:path";
 
 const TARGET_DOMAIN = "matthewshotelmarkets.com";
 
+/**
+ * Rank-check queries.
+ *
+ * The 30 hand-written queries that used to live here covered brokerage and
+ * investment-sales intent only, from the 2026-05-10 sprint. They are kept
+ * below as the transactional seed set, and the financing, refinance,
+ * valuation, underwriting and 1031 intent from this pass is appended from
+ * geo/tracking/prompts.csv, which also carries each prompt's target URL. Edit
+ * the CSV to change the informational half.
+ */
 const QUERIES: { q: string; intent: string; targetUrl?: string }[] = [
   { q: "hotel broker", intent: "transactional", targetUrl: "/" },
   { q: "hotel investment sales", intent: "transactional", targetUrl: "/services/investment-sales" },
@@ -49,7 +59,50 @@ const QUERIES: { q: string; intent: string; targetUrl?: string }[] = [
   { q: "select-service vs full-service hotel investment", intent: "informational", targetUrl: "/insights/select-service-vs-full-service-2026" },
   { q: "Marcus Millichap vs Matthews", intent: "navigational/comparison" },
   { q: "best hotel brokers 2026", intent: "transactional/comparison" },
+  ...loadCsvQueries(),
 ];
+
+/** Informational queries and their target URLs, from Agent 4's curated CSV. */
+function loadCsvQueries(): { q: string; intent: string; targetUrl?: string }[] {
+  const csv = path.join(process.cwd(), "geo", "tracking", "prompts.csv");
+  let raw: string;
+  try {
+    raw = fs.readFileSync(csv, "utf8");
+  } catch {
+    console.warn("[rank-check] geo/tracking/prompts.csv not found; using the seed queries only");
+    return [];
+  }
+  return raw
+    .trim()
+    .split(/\r?\n/)
+    .slice(1)
+    .map((line): { q: string; intent: string; targetUrl?: string } | null => {
+      const cells: string[] = [];
+      let cur = "";
+      let inQuotes = false;
+      for (let i = 0; i < line.length; i++) {
+        const ch = line[i];
+        if (ch === '"') {
+          if (inQuotes && line[i + 1] === '"') {
+            cur += '"';
+            i++;
+          } else inQuotes = !inQuotes;
+        } else if (ch === "," && !inQuotes) {
+          cells.push(cur);
+          cur = "";
+        } else cur += ch;
+      }
+      cells.push(cur);
+      const [prompt, bucket, , targetUrl] = cells;
+      if (!prompt?.trim()) return null;
+      return {
+        q: prompt.trim(),
+        intent: (bucket || "informational").trim(),
+        targetUrl: targetUrl?.trim() || undefined,
+      };
+    })
+    .filter((x): x is { q: string; intent: string; targetUrl?: string } => x !== null);
+}
 
 type Result = { q: string; intent: string; runAt: string; rank: number | null; cited: boolean; engine: "serpapi" | "ddg"; targetUrl?: string };
 

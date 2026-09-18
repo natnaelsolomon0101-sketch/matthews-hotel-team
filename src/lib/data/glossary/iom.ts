@@ -70,6 +70,11 @@ export const entry: GlossaryEntry = {
       publisher: "JLL",
     },
   ],
+  // geo/05-architecture.md §5.1: link the answer page that uses this term (R11).
+  relatedAnswers: [
+    "/sell-a-hotel/documents-needed",
+    "/sell-a-hotel/how-to-sell-a-hotel",
+  ],
   relatedTerms: ["bov", "cap-rate", "pip"],
   relatedMarkets: ["austin-tx", "atlanta-ga", "miami-fl"],
   relatedBrands: ["hampton-inn", "marriott", "hyatt"],

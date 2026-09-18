@@ -75,6 +75,11 @@ export const entry: GlossaryEntry = {
       publisher: "Federal Reserve",
     },
   ],
+  // geo/05-architecture.md §5.1: link the answer page that uses this term (R11).
+  relatedAnswers: [
+    "/hotel-valuation/hotel-cap-rates",
+    "/hotel-valuation/how-to-value-a-hotel",
+  ],
   relatedTerms: ["revpar", "adr", "bov"],
   relatedMarkets: ["austin-tx", "nashville-tn", "atlanta-ga"],
   relatedBrands: ["hampton-inn", "holiday-inn-express", "marriott"],

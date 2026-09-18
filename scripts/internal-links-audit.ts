@@ -22,6 +22,11 @@ import { markets } from "../src/lib/data/markets";
 import { brands } from "../src/lib/data/brands";
 import { services } from "../src/lib/data/services";
 import { offices } from "../src/lib/data/offices";
+import { glossary } from "../src/lib/data/glossary";
+import { mhiQuarters } from "../src/lib/data/mhi";
+import { clusters, answerPath } from "../src/lib/data/answers";
+import { tools } from "../src/lib/data/tools/dscr-calculator";
+import { EDITIONS } from "../src/lib/rates/sheet";
 
 const PROD = "https://matthewshotelmarkets.com";
 const LOCAL = "http://localhost:3000";
@@ -31,19 +36,57 @@ const TARGET_DOMAIN = "matthewshotelmarkets.com";
 type Edge = { from: string; to: string };
 type PageReport = { url: string; outboundInternal: string[]; missing: string[] };
 
+/**
+ * Every route on the site. This used to stop at listings/closed/team/insights/
+ * markets/brands/services/offices, which meant `/glossary`, `/research` and
+ * every answer-cluster page were invisible to the audit (Agent 5, request 3).
+ * They are all here now, so a dropped <Link> in any of them fails CI.
+ */
 function urls(): string[] {
   const u: string[] = [
-    "/", "/listings", "/closed", "/team", "/insights", "/process", "/contact",
+    "/",
+    "/about",
+    "/listings",
+    "/closed",
+    "/team",
+    "/insights",
+    "/process",
+    "/contact",
+    "/press",
+    "/glossary",
+    "/research",
+    "/research/mhi",
+    "/markets",
+    "/services",
+    "/hotels-for-sale",
+    "/rates",
+    "/rates/methodology",
+    "/data/hotel-financing-statistics",
   ];
-  for (const l of listings) u.push(`/listings/${l.slug}`);
+  for (const l of listings.filter((x) => x.hasDetail !== false && !x.omUrl))
+    u.push(`/listings/${l.slug}`);
   for (const c of closed) u.push(`/closed/${c.slug}`);
-  for (const t of team) u.push(`/team/${t.slug}`);
+  for (const t of team.filter((m) => m.hasBio !== false)) u.push(`/team/${t.slug}`);
   for (const i of insights) u.push(`/insights/${i.slug}`);
   for (const m of markets) u.push(`/markets/${m.slug}`);
   for (const b of brands) u.push(`/hotels-for-sale/${b.slug}`);
   for (const s of services) u.push(`/services/${s.slug}`);
   for (const o of offices) u.push(`/offices/${o.slug}`);
+  for (const g of glossary) u.push(`/glossary/${g.slug}`);
+  for (const q of mhiQuarters) u.push(`/research/mhi/${q.slug}`);
+  for (const e of EDITIONS) u.push(`/rates/${e.slug}`);
+  for (const c of clusters) {
+    u.push(`/${c.cluster}`);
+    for (const p of c.spokes) u.push(answerPath(p));
+  }
+  for (const t of tools) u.push(`/tools/${t.slug}`);
   return u;
+}
+
+/** Wave 1 spoke slugs per cluster, for rule R6 (a hub links every spoke). */
+function spokesFor(hubPath: string): string[] {
+  const c = clusters.find((x) => `/${x.cluster}` === hubPath);
+  return c ? c.spokes.map((s) => s.slug) : [];
 }
 
 function extractHrefs(html: string): string[] {
@@ -131,7 +174,11 @@ function expectedFor(url: string, found: string[]): string[] {
   const missing: string[] = [];
 
   if (url.startsWith("/markets/")) {
-    if (!has("/listings/")) missing.push("≥1 /listings/ link");
+    // Only a market with an active listing in it can link one. Asserting a
+    // listing link on a market with none would push someone to invent one.
+    const m = markets.find((x) => `/markets/${x.slug}` === url);
+    const hasActive = !!m && listings.some((l) => l.city === m.city && l.state === m.state);
+    if (hasActive && !has("/listings/")) missing.push("≥1 /listings/ link");
     if (!has("/team/")) missing.push("≥1 /team/ link");
     if (!has("/hotels-for-sale/")) missing.push("≥1 /hotels-for-sale/ link");
     if (!has("/contact")) missing.push("/contact CTA");
@@ -144,11 +191,59 @@ function expectedFor(url: string, found: string[]): string[] {
     if (!has("/contact")) missing.push("/contact CTA (or omUrl)");
   }
   if (url.startsWith("/insights/")) {
-    if (!has("/team/")) missing.push("byline /team/ link");
+    // Articles with no credited author have no byline to link.
+    const a = insights.find((x) => `/insights/${x.slug}` === url);
+    if ((a?.authorSlugs?.length ?? 0) > 0 && !has("/team/")) missing.push("byline /team/ link");
   }
   if (url === "/" || url === "/team" || url === "/listings" || url === "/closed") {
     if (!has("/insights")) missing.push("/insights link");
   }
+
+  // ------------------------------------------------------------------
+  // Rules R5–R12 from geo/05-architecture.md §6. Each assertion below maps
+  // 1:1 to a numbered rule, so a failure names the rule it broke.
+  // ------------------------------------------------------------------
+  const CLUSTER_HUBS = clusters.map((c) => `/${c.cluster}`);
+
+  // R5 / R7 / R8 / R9 / R10 — every cluster spoke.
+  if (/^\/(hotel-financing|sell-a-hotel|hotel-valuation)\/.+/.test(url)) {
+    const hub = "/" + url.split("/")[1];
+    if (!found.includes(hub)) missing.push(`R5: hub link ${hub}`);
+    const sibs = found.filter((f) => f.startsWith(hub + "/") && f !== url).length;
+    if (sibs < 3) missing.push(`R7: >=3 sibling links (found ${sibs})`);
+    if (!has("/contact")) missing.push("R9: /contact CTA");
+    if (!has("/team/")) missing.push("R10: author /team/ link");
+    if (!has("/rates") && !has("/research/mhi"))
+      missing.push("R8: /rates or /research/mhi");
+  }
+
+  // R6 — every hub links every one of its spokes.
+  if (CLUSTER_HUBS.includes(url)) {
+    for (const s of spokesFor(url)) {
+      if (!found.includes(`${url}/${s}`)) missing.push(`R6: spoke ${s}`);
+    }
+  }
+
+  // R11 — a glossary term links the answer page that uses it.
+  if (url.startsWith("/glossary/")) {
+    if (!CLUSTER_HUBS.some((h) => has(h)))
+      missing.push("R11: >=1 cluster answer link");
+  }
+
+  // Tool pages follow the same rules as a spoke.
+  if (url.startsWith("/tools/")) {
+    if (!has("/contact")) missing.push("R9: /contact CTA");
+    if (!has("/team/")) missing.push("R10: author /team/ link");
+    if (!has("/rates")) missing.push("R8: /rates link");
+  }
+
+  // R1 / R2 / R4 — no orphans. Every page carries the footer, so every page
+  // must reach these. Checking on "/" alone would pass a site whose footer
+  // only rendered on the home page.
+  for (const hub of [...CLUSTER_HUBS, "/glossary", "/research", "/rates", "/markets", "/services", "/hotels-for-sale", "/press"]) {
+    if (hub !== url && !has(hub)) missing.push(`R2: nav/footer ${hub}`);
+  }
+
   return missing;
 }
 

@@ -115,19 +115,9 @@
       "permanent": true
     },
     {
-      "source": "/markets",
-      "destination": "/markets/austin-tx",
-      "permanent": false
-    },
-    {
       "source": "/brands",
-      "destination": "/hotels-for-sale/hampton-inn",
-      "permanent": false
-    },
-    {
-      "source": "/services",
-      "destination": "/services/investment-sales",
-      "permanent": false
+      "destination": "/hotels-for-sale",
+      "permanent": true
     },
     {
       "source": "/team/sarah-chen",

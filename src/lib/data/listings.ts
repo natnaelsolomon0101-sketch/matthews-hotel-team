@@ -809,6 +809,21 @@ export const listings: Listing[] = [
 ];
 
 
+/**
+ * When the listing inventory above was last edited.
+ *
+ * Source: `git log -1 --format=%cI -- src/lib/data/listings.ts`, captured
+ * 2026-05-16. BUMP THIS WHEN YOU EDIT THE ARRAY ABOVE. It is the one place the
+ * date lives: `/` renders it, and `src/app/sitemap.ts` reads it for every
+ * listing route's `lastmod`.
+ *
+ * It replaced a hard-coded "Last refresh Q1 2026" string on the home page,
+ * which was a typed claim nothing could keep honest (and which still read
+ * "Q1 2026" in September 2026). A per-item `lastUpdated` on `Listing` is the
+ * real fix and is filed in geo/requests.md; this is the accurate interim.
+ */
+export const LISTINGS_UPDATED = "2026-05-16";
+
 export const listingSlugs = listings.map((l) => l.slug);
 
 export function getListing(slug: string): Listing | undefined {

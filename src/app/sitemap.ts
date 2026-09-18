@@ -9,6 +9,11 @@ import { services } from "@/lib/data/services";
 import { offices } from "@/lib/data/offices";
 import { mhiQuarters } from "@/lib/data/mhi";
 import { glossary } from "@/lib/data/glossary";
+import { LISTINGS_UPDATED } from "@/lib/data/listings";
+import { answerPages, answerPath, clusters, clusterLastUpdated } from "@/lib/data/answers";
+import { tools as toolPages } from "@/lib/data/tools/dscr-calculator";
+import { latestEdition, EDITIONS } from "@/lib/rates/sheet";
+import { UPDATED as STATS_UPDATED } from "@/app/data/hotel-financing-statistics/updated";
 
 const SITE_URL = "https://matthewshotelmarkets.com";
 
@@ -54,6 +59,9 @@ const FILE_LAST_MODIFIED = {
   // visible "Last updated" constant (src/app/about/page.tsx LAST_UPDATED) —
   // update both together.
   about: "2026-09-17T00:00:00-05:00",
+  // Superseded by LISTINGS_UPDATED in src/lib/data/listings.ts, which the
+  // home page also renders. Kept only as the fallback for the /listings index
+  // if that constant is ever removed.
   listings: "2026-05-16T15:16:49-05:00", // src/lib/data/listings.ts
   closed: "2026-05-12T10:06:25-05:00", // src/lib/data/closed.ts
   team: "2026-07-18T14:27:57-05:00", // src/lib/data/team.ts
@@ -65,6 +73,9 @@ const FILE_LAST_MODIFIED = {
   brands: "2026-05-10T13:24:52-05:00", // src/lib/data/brands.ts
   services: "2026-05-10T13:24:52-05:00", // src/lib/data/services.ts
   offices: "2026-05-10T13:24:52-05:00", // src/lib/data/offices.ts
+  // Shipped on the geo/ai-visibility branch. Mirrors the page's own visible
+  // LAST_UPDATED constant (src/app/press/page.tsx). Update both together.
+  press: "2026-09-17T00:00:00-05:00",
 } as const;
 
 // "March 2026" -> 2026-03-01. Insights carry a human-readable `date` string
@@ -181,10 +192,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const listingRoutes: MetadataRoute.Sitemap = listings
-    .filter((l) => l.hasDetail !== false)
+    // A listing with omUrl 307s off-domain to its OM site, so it has no page
+    // of ours for a crawler to index.
+    .filter((l) => l.hasDetail !== false && !l.omUrl)
     .map((l) => ({
     url: `${SITE_URL}/listings/${l.slug}`,
-    lastModified: new Date(FILE_LAST_MODIFIED.listings),
+    // One date, shared with the home page's visible "Updated" line.
+    lastModified: new Date(`${LISTINGS_UPDATED}T12:00:00Z`),
     changeFrequency: "weekly",
     priority: 0.85,
     images: [
@@ -256,14 +270,111 @@ export default function sitemap(): MetadataRoute.Sitemap {
     images: [`${SITE_URL}/offices/${o.slug}/opengraph-image`],
   }));
 
-  // TODO(agent-10): geo/05-architecture.md did not exist yet when this file
-  // was written (2026-09-17). Read it before merging this branch and add
-  // sitemap entries for every new hub/spoke/glossary/market/tool/rates route
-  // Agent 5 defines (e.g. /hotel-financing/*, /sell-a-hotel/*, /rates,
-  // /data/*), each with a real lastModified per the pattern above — not
-  // `new Date()`.
+  // ---------------------------------------------------------------------
+  // Routes added on the geo/ai-visibility branch. Agent 2 left a TODO here
+  // for them; this is that TODO, closed.
+  //
+  // Every lastModified below is a REAL authored date read from a data module:
+  // AnswerPage.lastUpdated for the clusters and the tool, the rate sheet
+  // edition's publishedAt for /rates, and the page's own UPDATED constant for
+  // /data/hotel-financing-statistics. None of them is `new Date()`, which is
+  // the bug this file already fixed everywhere else.
+  //
+  // /rates.json and /rates.csv are deliberately NOT here. They are data
+  // endpoints, not pages, and they are already declared in the Dataset node's
+  // `distribution` on /rates (geo/requests.md, Agent 8 item 4).
+  // ---------------------------------------------------------------------
+
+  const clusterHubRoutes: MetadataRoute.Sitemap = clusters.map((c) => ({
+    url: `${SITE_URL}/${c.cluster}`,
+    lastModified: new Date(clusterLastUpdated(c)),
+    changeFrequency: "monthly",
+    priority: 0.9,
+  }));
+
+  const answerRoutes: MetadataRoute.Sitemap = answerPages
+    .filter((p) => !p.isHub)
+    .map((p) => ({
+      url: `${SITE_URL}${answerPath(p)}`,
+      lastModified: new Date(p.lastUpdated),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    }));
+
+  const toolRoutes: MetadataRoute.Sitemap = toolPages.map((t) => ({
+    url: `${SITE_URL}/tools/${t.slug}`,
+    lastModified: new Date(t.lastUpdated),
+    changeFrequency: "monthly",
+    priority: 0.75,
+  }));
+
+  const latest = latestEdition();
+  const ratesRoutes: MetadataRoute.Sitemap = [
+    {
+      url: `${SITE_URL}/rates`,
+      lastModified: new Date(latest.publishedAt),
+      changeFrequency: "monthly",
+      priority: 0.95,
+    },
+    {
+      url: `${SITE_URL}/rates/methodology`,
+      lastModified: new Date(latest.publishedAt),
+      changeFrequency: "yearly",
+      priority: 0.7,
+    },
+    ...EDITIONS.map((e) => ({
+      url: `${SITE_URL}/rates/${e.slug}`,
+      lastModified: new Date(e.publishedAt),
+      changeFrequency: "yearly" as const,
+      priority: 0.6,
+    })),
+  ];
+
+  const dataRoutes: MetadataRoute.Sitemap = [
+    {
+      url: `${SITE_URL}/data/hotel-financing-statistics`,
+      lastModified: new Date(STATS_UPDATED),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+  ];
+
+  // Index pages built in the same pass, replacing three vercel.json 307s that
+  // pointed at an arbitrary child with no index behind them.
+  const indexRoutes: MetadataRoute.Sitemap = [
+    {
+      url: `${SITE_URL}/markets`,
+      lastModified: new Date(mhiQuarters[0]?.publishedAt ?? FILE_LAST_MODIFIED.markets),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${SITE_URL}/services`,
+      lastModified: new Date(FILE_LAST_MODIFIED.services),
+      changeFrequency: "yearly",
+      priority: 0.75,
+    },
+    {
+      url: `${SITE_URL}/hotels-for-sale`,
+      lastModified: new Date(FILE_LAST_MODIFIED.brands),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${SITE_URL}/press`,
+      lastModified: new Date(FILE_LAST_MODIFIED.press),
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+  ];
 
   return [
+    ...clusterHubRoutes,
+    ...answerRoutes,
+    ...toolRoutes,
+    ...ratesRoutes,
+    ...dataRoutes,
+    ...indexRoutes,
     ...staticRoutes,
     ...listingRoutes,
     ...closedRoutes,

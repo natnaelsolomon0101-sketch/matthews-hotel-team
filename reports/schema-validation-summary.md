@@ -1,9 +1,5 @@
-# Schema validation — 2026-09-17T22:23:59.688Z
+# Schema validation — 2026-09-18T13:14:45.359Z
 
-Base: `https://matthewshotelmarkets.com` · URLs: 120 · Blocks: 119 · Valid: 119 · Pass rate: 100%
+Base: `https://matthewshotelmarkets.com` · URLs: 157 · Blocks: 157 · Valid: 157 · Pass rate: 100%
 
-## 1 Issues
-
-| URL | Block | Type | Problem |
-| --- | :-: | --- | --- |
-| /listings/walden-retreats-hill-country | -1 | — | no JSON-LD blocks |
+## All blocks valid ✓

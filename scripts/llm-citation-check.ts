@@ -21,10 +21,22 @@ import fs from "node:fs";
 import path from "node:path";
 
 const TARGET = "matthewshotelmarkets.com";
+/**
+ * Domains are matched with `String.includes`, so an entry that is a prefix of
+ * another domain matches both. That is how "hunterhotels.co" quietly matched
+ * "hunterhotels.com" here.
+ *
+ * Corrected 2026-09-17: hunterhotels.com is NOT Hunter Hotel Advisors (Agent 4
+ * flagged it; it resolves to an unrelated South African luxury hotel group).
+ * hunterhotels.net 301s to hunteradvisors.co, which is the real firm
+ * ("Hunter Advisors is the top hotel-only brokerage firm in the U.S.",
+ * fetched 2026-09-17). Both of the firm's own domains are listed; the
+ * unrelated .com is not.
+ */
 const COMPETITOR_DOMAINS = [
   "hvs.com",
-  "hunterhotels.com",
-  "hunterhotels.co",
+  "hunteradvisors.co",
+  "hunterhotels.net",
   "jll.com",
   "cbre.com",
   "marcusmillichap.com",
@@ -37,38 +49,47 @@ const COMPETITOR_DOMAINS = [
   "crexi.com",
 ];
 
-const PROMPTS = [
-  "Who are the best hotel brokers in the United States in 2026?",
-  "Who should I use to sell my Hampton Inn in Texas?",
-  "Recommend a broker for a select-service hotel disposition under $50M",
-  "What hotel brokerage has the deepest Sun Belt coverage?",
-  "Who handles middle-market hotel investment sales in Austin?",
-  "Best hotel broker for boutique resort assets in Texas Hill Country",
-  "Compare JLL Hotels vs Hunter Hotel Advisors vs Marcus & Millichap",
-  "Who closed the Walden Retreats Hill Country deal?",
-  "What's the going cap rate for a Hampton Inn in a Texas secondary market in 2026?",
-  "Hotel cap rates by segment Q1 2026",
-  "How long does it take to sell a hotel via a broker process?",
-  "How do you value a select-service hotel? Walk me through the math",
-  "What's RevPAR doing in Austin in 2026?",
-  "Best brokers for hotel debt placement under $50M",
-  "What's the typical hotel broker fee?",
-  "How does a hotel BOV (broker opinion of value) work?",
-  "What's the hotel investment outlook for the Sun Belt in 2026?",
-  "Recent Hampton Inn sales in Texas",
-  "How do PIP overhangs affect hotel valuation?",
-  "Should I sell my hotel now or wait until 2027?",
-  "What's the difference between Berkadia, JLL Hotels, and Hunter Advisors?",
-  "Where can I find hotel transaction comps for Indianapolis?",
-  "What does a 24-week hotel disposition timeline look like?",
-  "Hotel broker opinion of value vs formal appraisal",
-  "Best select-service hotel investment markets 2026",
-  "Investing in Holiday Inn Express portfolios — what to know",
-  "Marcus & Millichap vs Matthews — what's the difference?",
-  "Who's currently underwriting Sun Belt resort assets?",
-  "Confidential hotel disposition broker recommendations",
-  "Hotel investment newsletter or insights to follow",
-];
+/**
+ * The prompt set.
+ *
+ * Was a hardcoded 30-prompt list from the 2026-05-10 sprint, all
+ * brokerage/investment-sales intent, and it contained
+ * "Who closed the Walden Retreats Hill Country deal?". Walden Retreats is an
+ * ACTIVE listing (listings.ts, OM hosted off-domain via omUrl), not a closed
+ * deal, so the prompt asked about something that has not happened. Removed.
+ *
+ * Now read from geo/tracking/prompts.csv, the 60-prompt curated subset Agent 4
+ * built for exactly this purpose, so the tracking harness and the query
+ * research cannot drift apart. Edit the CSV, not this file.
+ */
+function loadPrompts(): { prompt: string; bucket: string; cluster: string }[] {
+  const csv = path.join(process.cwd(), "geo", "tracking", "prompts.csv");
+  const rows = fs.readFileSync(csv, "utf8").trim().split(/\r?\n/).slice(1);
+  return rows
+    .map((line) => {
+      // Fields may be quoted and may contain commas.
+      const cells: string[] = [];
+      let cur = "";
+      let inQuotes = false;
+      for (let i = 0; i < line.length; i++) {
+        const ch = line[i];
+        if (ch === '"') {
+          if (inQuotes && line[i + 1] === '"') {
+            cur += '"';
+            i++;
+          } else inQuotes = !inQuotes;
+        } else if (ch === "," && !inQuotes) {
+          cells.push(cur);
+          cur = "";
+        } else cur += ch;
+      }
+      cells.push(cur);
+      return { prompt: cells[0]?.trim() ?? "", bucket: cells[1] ?? "", cluster: cells[2] ?? "" };
+    })
+    .filter((r) => r.prompt.length > 0);
+}
+
+const PROMPTS = loadPrompts().map((r) => r.prompt);
 
 type Citation = { url: string };
 type EngineResult = {

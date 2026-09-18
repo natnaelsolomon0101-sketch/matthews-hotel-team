@@ -7,25 +7,19 @@ import { Reveal } from "@/components/ui/Reveal";
  * container. Just introduces the team. No "pick the broker" framing, no
  * marketing-speak, no segment claims.
  *
- * The visible label doubles as the page H1 for SEO (Google needs a single
- * h1 per route). A visually-hidden secondary heading carries the
- * keyword-rich phrase the visible wordmark omits.
+ * The visible label is the page's single H1. It used to be backed by a
+ * visually-hidden, keyword-rich H1; that was hidden text, so it is gone and
+ * the visible label now carries the brand string itself.
  */
 export function TeamHero() {
   return (
     <section className="bg-white pt-20 lg:pt-24 pb-10">
       <div className="mx-auto max-w-[1280px] px-6">
-        <h1 className="sr-only">
-          Matthews Hotel Markets — Hotel Brokers & Capital Markets Team
-        </h1>
         <Reveal>
           <div className="flex items-center gap-6">
-            <p
-              aria-hidden="true"
-              className="text-[13px] font-medium uppercase tracking-[0.32em] text-[#1d1d1f] whitespace-nowrap"
-            >
-              Matthews Hotel Team
-            </p>
+            <h1 className="text-[13px] font-medium uppercase tracking-[0.32em] text-[#1d1d1f]">
+              Matthews Hotel Markets Team
+            </h1>
             <div
               aria-hidden="true"
               className="h-px flex-1 bg-[#1d1d1f]/15"

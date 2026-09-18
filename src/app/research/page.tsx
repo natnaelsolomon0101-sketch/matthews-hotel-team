@@ -10,6 +10,7 @@ import { insights } from "@/lib/data/insights";
 import { getLatestMhi } from "@/lib/data/mhi";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/entity";
+import { latestEdition, MHDI_NAME, MHDI_ABBR } from "@/lib/rates/sheet";
 
 export const metadata: Metadata = {
   title: "Hotel Investment Research | Matthews Hotel Markets",
@@ -27,6 +28,7 @@ export const metadata: Metadata = {
 
 export default function ResearchHubPage() {
   const latestMhi = getLatestMhi();
+  const latestRates = latestEdition();
   const featuredInsights = insights.slice(0, 8);
   const url = `${SITE_URL}/research`;
 
@@ -107,6 +109,71 @@ export default function ResearchHubPage() {
                 <ChevronRight className="h-4 w-4" strokeWidth={1.75} aria-hidden="true" />
               </p>
             </Link>
+          </div>
+        </section>
+
+        {/*
+          The second half of the research franchise. Agent 8 shipped /rates and
+          the Matthews Hotel Debt Index; the links only ran one way, so
+          /research read as one dataset when there are two (geo/requests.md,
+          Agent 8 item 5). The two are deliberately NOT averaged together:
+          different cadence, different geography grain, and different evidence
+          class (public research vs quotes this desk received).
+        */}
+        <section className="bg-white py-16 lg:py-20">
+          <div className="mx-auto max-w-[1024px] px-6">
+            <h2 className="text-[12px] uppercase tracking-[0.18em] font-medium text-[color:var(--text-secondary)]">
+              The monthly rate sheet
+            </h2>
+            <div className="mt-6 grid grid-cols-1 gap-5 md:grid-cols-2">
+              <Link
+                href="/rates"
+                className="group block rounded-[20px] bg-[color:var(--surface-elevated)] p-8 transition-colors hover:bg-[#ececef]"
+              >
+                <h3 className="text-[22px] font-semibold leading-[1.15] tracking-[-0.016em] text-[#1d1d1f]">
+                  Hotel rate sheet, {latestRates.label}
+                </h3>
+                <p className="mt-3 text-[15px] leading-[1.5] tracking-[-0.014em] text-[color:var(--text-secondary)]">
+                  Public benchmarks and published lender-program rules,
+                  refreshed monthly. Every cell we cannot source reads
+                  &ldquo;Not yet published&rdquo; with a one-line reason.
+                  Machine readable at /rates.json and /rates.csv.
+                </p>
+                <p className="mt-5 inline-flex items-center gap-1 text-[15px] tracking-[-0.014em] text-[#1a3a6b] group-hover:underline underline-offset-[3px]">
+                  Open the rate sheet
+                  <ChevronRight className="h-4 w-4" strokeWidth={1.75} aria-hidden="true" />
+                </p>
+              </Link>
+              <Link
+                href="/rates/methodology"
+                className="group block rounded-[20px] bg-[color:var(--surface-elevated)] p-8 transition-colors hover:bg-[#ececef]"
+              >
+                <h3 className="text-[22px] font-semibold leading-[1.15] tracking-[-0.016em] text-[#1d1d1f]">
+                  {MHDI_NAME} ({MHDI_ABBR})
+                </h3>
+                <p className="mt-3 text-[15px] leading-[1.5] tracking-[-0.014em] text-[color:var(--text-secondary)]">
+                  A monthly, national series on one defined loan, built from
+                  quotes this desk receives. It is a separate dataset from the
+                  Matthews Hotel Index, never averaged with it, and its history
+                  is never backfilled. Methodology and rules in full.
+                </p>
+                <p className="mt-5 inline-flex items-center gap-1 text-[15px] tracking-[-0.014em] text-[#1a3a6b] group-hover:underline underline-offset-[3px]">
+                  Read the methodology
+                  <ChevronRight className="h-4 w-4" strokeWidth={1.75} aria-hidden="true" />
+                </p>
+              </Link>
+            </div>
+            <p className="mt-6 text-[14px] leading-[1.5] text-[color:var(--text-secondary)]">
+              Sourced and dated hotel financing statistics, including the
+              figures we checked and rejected, are at{" "}
+              <Link
+                href="/data/hotel-financing-statistics"
+                className="text-[#1a3a6b] hover:underline underline-offset-[3px]"
+              >
+                /data/hotel-financing-statistics
+              </Link>
+              .
+            </p>
           </div>
         </section>
 

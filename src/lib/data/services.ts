@@ -18,7 +18,7 @@ export const services: ServiceLine[] = [
     shortName: "Investment Sales",
     tagline: "Confidential dispositions, every chain scale.",
     description:
-      "Matthews Hotel Markets executes hotel dispositions across select-service, full-service, resort, lifestyle, boutique, and extended-stay segments. We run a 24-week marketing playbook refined across hundreds of closings, with broker-led underwriting, a curated buyer pool drawn from 1M+ relationships, and a confidential process that protects asset performance through close.",
+      "Matthews Hotel Markets executes hotel dispositions across select-service, full-service, resort, lifestyle, boutique, and extended-stay segments. We run a 24-week marketing playbook refined across hundreds of closings, with broker-led underwriting, a curated buyer pool built asset by asset, and a confidential process that protects asset performance through close.",
     audience: "Hotel owners, sponsors, REITs, family offices, developers, and operators planning a sale.",
     rangeLabel: "Disposition range",
     rangeValue: "$2M to $200M+",
@@ -31,7 +31,7 @@ export const services: ServiceLine[] = [
       {
         label: "Direct buyer relationships",
         body:
-          "1M+ investor relationships across PE, REITs, family offices, developers, owner-operators, and HNW capital.",
+          "Direct relationships across PE, REITs, family offices, developers, owner-operators, and HNW capital. We build the buyer list per asset, not from one database.",
       },
       {
         label: "Confidential by default",
@@ -41,7 +41,7 @@ export const services: ServiceLine[] = [
       {
         label: "Underwriting discipline",
         body:
-          "Cap rates, ADR/RevPAR, PIP overhang, debt assumption — every BOV is broker-built, not template-built.",
+          "Cap rates, ADR/RevPAR, PIP overhang, debt assumption: every BOV is broker-built, not template-built.",
       },
     ],
     ctaLabel: "Request a confidential BOV",
@@ -75,7 +75,7 @@ export const services: ServiceLine[] = [
       {
         label: "Underwriting alignment",
         body:
-          "Same hospitality underwriting team that runs investment sales — debt requests get a real read, not a generic CRE pitch.",
+          "Same hospitality underwriting team that runs investment sales: debt requests get a real read, not a generic CRE pitch.",
       },
     ],
     ctaLabel: "Discuss a financing",
@@ -94,7 +94,7 @@ export const services: ServiceLine[] = [
       {
         label: "Off-market sourcing",
         body:
-          "First look at confidential dispositions before they hit market. Our 670+ closing record gives buyers a feed of opportunities.",
+          "First look at confidential dispositions before they hit market. Every hospitality transaction we publish is listed at /closed.",
       },
       {
         label: "Underwriting support",

@@ -20,31 +20,63 @@ interface FooterColumn {
   links: FooterLink[];
 }
 
+/**
+ * FOOTER, rebuilt 2026-09-17.
+ *
+ * Agent 5 verified by grep across src/ that `/glossary`, `/services/*`,
+ * `/research` and `/offices/*` had NO inbound internal link from anywhere
+ * outside their own route folder: four live hubs, including the Matthews Hotel
+ * Index, reachable only from sitemap.xml. The footer is the cheapest place to
+ * fix that, because it renders on every page. Rules R2, R3 and R4 in
+ * geo/05-architecture.md §6.1.
+ *
+ * Two other things changed here:
+ *  - "Press" pointed at /insights and no /press route existed. /press is now
+ *    a real route (src/app/press/page.tsx) and the link points at it.
+ *  - The old "Listings" column was four anchor links into /listings#region.
+ *    It is replaced by the Answers and Services columns, which is what
+ *    actually removes the orphans.
+ */
 const COLUMNS: FooterColumn[] = [
+  {
+    heading: "Answers",
+    links: [
+      { href: "/hotel-financing", label: "Hotel Financing" },
+      { href: "/sell-a-hotel", label: "Sell a Hotel" },
+      { href: "/hotel-valuation", label: "Hotel Valuation" },
+      { href: "/glossary", label: "Glossary" },
+      { href: "/tools/dscr-calculator", label: "DSCR Calculator" },
+    ],
+  },
+  {
+    heading: "Data & Research",
+    links: [
+      { href: "/rates", label: "Rate Sheet" },
+      { href: "/rates/methodology", label: "Rate Sheet Methodology" },
+      { href: "/data/hotel-financing-statistics", label: "Hotel Financing Statistics" },
+      { href: "/research/mhi", label: "Matthews Hotel Index" },
+      { href: "/research", label: "All Research" },
+    ],
+  },
   {
     heading: "Brokerage",
     links: [
       { href: "/listings", label: "Active Listings" },
+      { href: "/hotels-for-sale", label: "Hotels for Sale by Brand" },
+      { href: "/markets", label: "Markets" },
       { href: "/closed", label: "Closed Deals" },
       { href: "/process", label: "Transaction Process" },
-      { href: "/insights", label: "Quarterly Outlook" },
     ],
   },
   {
-    heading: "Listings",
+    heading: "Services",
     links: [
-      { href: "/listings#texas", label: "Texas" },
-      { href: "/listings#southeast", label: "Southeast" },
-      { href: "/listings#midwest", label: "Midwest" },
-      { href: "/listings#west", label: "West" },
-    ],
-  },
-  {
-    heading: "Insights",
-    links: [
-      { href: "/insights", label: "All Insights" },
-      { href: "/insights", label: "Quarterly Outlook" },
-      { href: "/insights", label: "Press" },
+      { href: "/services", label: "All Services" },
+      { href: "/services/investment-sales", label: "Investment Sales" },
+      { href: "/services/capital-markets", label: "Capital Markets" },
+      { href: "/services/acquisition-advisory", label: "Acquisition Advisory" },
+      { href: "/offices/austin", label: "Austin Office" },
+      { href: "/offices/denver", label: "Denver" },
     ],
   },
   {
@@ -52,13 +84,11 @@ const COLUMNS: FooterColumn[] = [
     links: [
       { href: "/about", label: "About" },
       { href: "/team", label: "Team" },
+      { href: "/insights", label: "Insights" },
+      { href: "/press", label: "Press" },
       { href: "/contact", label: "Contact" },
       { href: PARENT_URL, label: "Matthews.com", external: true },
-      {
-        href: LINKEDIN,
-        label: "LinkedIn",
-        external: true,
-      },
+      { href: LINKEDIN, label: "LinkedIn", external: true },
     ],
   },
 ];
@@ -82,7 +112,7 @@ export function SiteFooter() {
         <div className="mt-8 hairline" />
 
         {/* Columns */}
-        <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6">
+        <div className="mt-10 grid grid-cols-2 gap-8 md:grid-cols-3 md:gap-6 lg:grid-cols-5">
           {COLUMNS.map((col) => (
             <div key={col.heading}>
               <h3 className="text-[13px] font-semibold tracking-[-0.01em] text-[color:var(--text-primary)] mb-4">

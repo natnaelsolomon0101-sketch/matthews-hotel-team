@@ -1,12 +1,18 @@
+import Link from "next/link";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { TwoToneHeadline } from "@/components/ui/TwoToneHeadline";
 import { Reveal } from "@/components/ui/Reveal";
 import { Counter } from "@/components/ui/Counter";
+// Computed from src/lib/data/closed.ts, which is what /closed renders. These
+// were typed strings until 2026-09-17 ("$890M+", "8,600+", "30", "12"), which
+// is how they came to sit under a bare "As of Q4 2021" line that read as stale
+// in September 2026. See src/lib/track-record.ts.
+import { HOSPITALITY, HOSPITALITY_BASIS } from "@/lib/track-record";
 
 const supportingStats: { value: string; label: string }[] = [
-  { value: "8,600+", label: "Rooms" },
-  { value: "30", label: "Cities" },
-  { value: "12", label: "States" },
+  { value: `${HOSPITALITY.rooms.toLocaleString("en-US")}`, label: "Rooms" },
+  { value: `${HOSPITALITY.cities}`, label: "Cities" },
+  { value: `${HOSPITALITY.states}`, label: "States" },
 ];
 
 export function HomeStats() {
@@ -16,11 +22,14 @@ export function HomeStats() {
         {/* One reveal wraps the entire block, Apple product-page restraint */}
         <Reveal>
           <div>
-            <Eyebrow>Matthews Hospitality · 2019–2021</Eyebrow>
+            <Eyebrow>
+              Matthews Hospitality · {HOSPITALITY.firstYear}&ndash;
+              {HOSPITALITY.lastYear}
+            </Eyebrow>
 
             <TwoToneHeadline
               size="section"
-              lead="$890M+ closed in hospitality."
+              lead={`${HOSPITALITY.volume} closed in hospitality.`}
               follow="Texas, the Sun Belt, and beyond."
             />
 
@@ -38,8 +47,17 @@ export function HomeStats() {
               ))}
             </div>
 
-            <p className="mt-16 text-[11px] font-medium uppercase tracking-[0.22em] text-[color:var(--text-tertiary)]">
-              As of Q4 2021
+            {/* Was "As of Q4 2021", which read as a stale page rather than a
+                dated dataset. It is the basis of the figures, so say that. */}
+            <p className="mt-16 text-[12px] leading-[1.5] text-[color:var(--text-tertiary)]">
+              {HOSPITALITY_BASIS}{" "}
+              <Link
+                href="/closed"
+                className="underline underline-offset-[3px] hover:text-[color:var(--text-secondary)]"
+              >
+                See every deal
+              </Link>
+              .
             </p>
           </div>
         </Reveal>

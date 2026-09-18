@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Matthews Hotel Markets — National Hotel Investment Sales & Brokerage";
+export const alt = "Matthews Hotel Markets | National Hotel Investment Sales & Brokerage";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -71,7 +71,11 @@ export default async function Image() {
           }}
         >
           <div>matthewshotelmarkets.com</div>
-          <div>$3.5B closed · 670+ hotels</div>
+          {/* Was "$3.5B closed · 670+ hotels". Neither figure could be
+              sourced to anything in this repo or on matthews.com; closed.ts
+              publishes 38 hospitality transactions. Replaced with the
+              boilerplate, which is fully backed. */}
+          <div>Hotel investment sales &amp; capital markets</div>
         </div>
       </div>
     ),

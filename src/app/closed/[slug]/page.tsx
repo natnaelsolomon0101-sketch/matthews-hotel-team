@@ -28,7 +28,7 @@ export async function generateMetadata(props: {
   if (!deal) return { title: "Closed Transaction" };
 
   const url = `${SITE_URL}/closed/${deal.slug}`;
-  const title = `${deal.name} — ${deal.transactionTypeLabel ?? deal.transactionType}, ${deal.city}, ${deal.state}`;
+  const title = `${deal.name}: ${deal.transactionTypeLabel ?? deal.transactionType}, ${deal.city}, ${deal.state}`;
   const description = `Matthews Hotel Markets closed the ${deal.name} ${deal.transactionTypeLabel ?? deal.transactionType.toLowerCase()} in ${deal.city}, ${deal.state} (${deal.year}). ${deal.keys} keys. ${deal.dealSize}.`;
 
   return {
@@ -64,9 +64,6 @@ export default async function ClosedDealPage(props: {
     .filter((m): m is NonNullable<typeof m> => Boolean(m));
 
   const url = `${SITE_URL}/closed/${deal.slug}`;
-  const image = deal.photo
-    ? `${SITE_URL}${deal.photo}`
-    : `${SITE_URL}/images/hero-landscape.jpg`;
   const faqs = closedFaqs(deal);
 
   // @graph: Article (the close announcement) + RealEstateListing-as-Product
@@ -76,7 +73,7 @@ export default async function ClosedDealPage(props: {
       {
         "@type": "Article",
         "@id": `${url}#article`,
-        headline: `${deal.name} — closed by Matthews Hotel Markets`,
+        headline: `${deal.name}, closed by Matthews Hotel Markets`,
         description: `${deal.transactionTypeLabel ?? deal.transactionType} of the ${deal.name} (${deal.keys} keys, ${deal.city}, ${deal.state}). ${deal.dealSize}.`,
         datePublished: `${deal.year}-12-31`,
         dateModified: `${deal.year}-12-31`,

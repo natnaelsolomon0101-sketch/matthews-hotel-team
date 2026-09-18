@@ -26,6 +26,12 @@ export type GlossaryEntry = {
   relatedBrands?: string[];
   /** 2 insight slugs from src/lib/data/insights.ts. */
   relatedInsights?: string[];
+  /**
+   * 1–3 absolute cluster answer paths, e.g. "/hotel-valuation/hotel-cap-rates".
+   * A glossary term could not link the answer page that uses it before this
+   * field existed (geo/05-architecture.md §5.1, rule R11).
+   */
+  relatedAnswers?: string[];
   /** ISO date, surfaced as the visible "last updated" stamp. */
   lastUpdated: string;
   /** Optional author byline slug. */

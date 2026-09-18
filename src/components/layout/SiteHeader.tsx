@@ -6,7 +6,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { Pill } from "@/components/ui/Pill";
 import { ease } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 
@@ -17,16 +16,33 @@ interface NavItem {
   external?: boolean;
 }
 
+/**
+ * PRIMARY NAV, rebuilt 2026-09-17. Four requests landed on this file in one
+ * sprint and nobody owned it; they are all resolved here, in one pass:
+ *
+ *  1. Agent 1 / Agent 8: "Rate Sheet" pointed OFF-DOMAIN to
+ *     matthewsratesheet.info from every page. The site's flagship first-party
+ *     asset now lives on-domain at /rates, so the link points there. (The 301
+ *     of the .info domain itself is a Vercel Domains action on a separate
+ *     project and is Nate's call: geo/08-data.md, Decision 1.)
+ *  2. Agent 3: /about was in the footer only. It is now in the header.
+ *  3. Agent 5 (R1): the three answer-cluster hubs were unreachable from the
+ *     header. Added. Closed and Insights move to the footer, which keeps this
+ *     list at eight items.
+ *  4. Agent 5 (R2/R4): /glossary, /services/*, /research and /offices/* had
+ *     ZERO inbound internal links anywhere on the site. They are all in the
+ *     footer now; see SiteFooter.tsx.
+ *
+ * Adding a ninth item means dropping one. Do not let this list grow.
+ */
 const NAV_ITEMS: NavItem[] = [
   { href: "/listings", label: "Listings" },
-  {
-    href: "https://www.matthewsratesheet.info",
-    label: "Rate Sheet",
-    external: true,
-  },
-  { href: "/closed", label: "Closed" },
+  { href: "/hotel-financing", label: "Financing" },
+  { href: "/sell-a-hotel", label: "Sell a Hotel" },
+  { href: "/hotel-valuation", label: "Valuation" },
+  { href: "/rates", label: "Rate Sheet" },
+  { href: "/about", label: "About" },
   { href: "/team", label: "Team" },
-  { href: "/insights", label: "Insights" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -114,7 +130,7 @@ export function SiteHeader() {
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-7">
+          <nav className="hidden md:flex items-center gap-5 lg:gap-6">
             {NAV_ITEMS.map((item) => {
               const linkClass = cn(
                 "text-[12px] tracking-[-0.01em] transition-colors duration-300 hover:opacity-80",

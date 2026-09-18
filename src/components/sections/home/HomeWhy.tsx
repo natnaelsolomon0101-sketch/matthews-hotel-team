@@ -1,8 +1,14 @@
 import * as React from "react";
+import Link from "next/link";
 import { TrendingUp, Users, Network, Award } from "lucide-react";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { TwoToneHeadline } from "@/components/ui/TwoToneHeadline";
 import { Reveal } from "@/components/ui/Reveal";
+import { PARENT } from "@/lib/entity";
+// One source of truth for every firm-level figure, each with an asOf date and
+// a source. Do not re-type a number here. See src/lib/track-record.ts.
+import { PLATFORM, PLATFORM_ATTRIBUTION } from "@/lib/track-record";
+import { markets } from "@/lib/data/markets";
 
 type Benefit = {
   icon: React.ComponentType<{
@@ -20,25 +26,28 @@ const benefits: Benefit[] = [
     icon: TrendingUp,
     titleLead: "Market intelligence.",
     titleFollow: "Sharp.",
-    body: "Proprietary research on supply, demand, ADR, and cap rates across 30+ markets. Sellers price with confidence. Buyers underwrite with conviction.",
+    body: `The Matthews Hotel Index tracks cap rates, ADR and RevPAR across ${markets.length} metros, republished every quarter. Sellers price with confidence. Buyers underwrite with conviction.`,
   },
   {
     icon: Users,
     titleLead: "Investor reach.",
     titleFollow: "Deep.",
-    body: "Over one million direct relationships. Family offices, REITs, PE, and institutional capital, the right buyer for every brand and class.",
+    // "Over one million direct relationships" was removed on 2026-09-17: no
+    // source exists for it anywhere in the repo or on matthews.com. See
+    // src/lib/track-record.ts.
+    body: "Family offices, REITs, private equity, and institutional capital. We build the buyer list per asset rather than blasting one database.",
   },
   {
     icon: Network,
     titleLead: "National platform.",
     titleFollow: "Local listening.",
-    body: "30+ offices coast to coast. Off-market deals surface first when every sub-market has someone on the ground.",
+    body: `${PLATFORM.offices.value} ${PARENT} offices coast to coast. Off-market deals surface first when every sub-market has someone on the ground.`,
   },
   {
     icon: Award,
-    titleLead: "$88.37B closed.",
+    titleLead: `${PLATFORM.volume.value} closed.`,
     titleFollow: "Across every class.",
-    body: "Matthews has executed across every CRE asset class. Hospitality clients tap a platform proven at every scale.",
+    body: `${PARENT} has executed across every CRE asset class. Hospitality clients tap a platform proven at every scale.`,
   },
 ];
 
@@ -80,6 +89,32 @@ export function HomeWhy() {
             );
           })}
         </div>
+
+        {/*
+          Every firm-level figure above is the PARENT firm's own published
+          number, and the page says so with a date. Before 2026-09-17 this
+          block carried $88.37B with no attribution while llms.txt carried
+          $84.3B; one sourced number in one place is the fix.
+        */}
+        <p className="mt-8 text-[12px] leading-[1.5] text-[color:var(--text-tertiary)]">
+          Firm-wide figures are {PARENT} totals across every asset class, not
+          hospitality totals.{" "}
+          <a
+            href={PLATFORM.volume.sourceUrl}
+            rel="noopener noreferrer"
+            className="underline underline-offset-[3px] hover:text-[color:var(--text-secondary)]"
+          >
+            Source: {PLATFORM_ATTRIBUTION}
+          </a>{" "}
+          Our own hospitality transactions are published at{" "}
+          <Link
+            href="/closed"
+            className="underline underline-offset-[3px] hover:text-[color:var(--text-secondary)]"
+          >
+            /closed
+          </Link>
+          .
+        </p>
       </div>
     </section>
   );

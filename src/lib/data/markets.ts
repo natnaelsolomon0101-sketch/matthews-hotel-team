@@ -178,7 +178,7 @@ export const markets: Market[] = [
     geo: { lat: 32.7765, lng: -79.9311 },
     tagline: "Cap rates, comps, and brokers across the Charleston MSA.",
     marketCommentary:
-      "Charleston is a top-tier Southeast leisure destination with material weekend ADR premium and growing weekday corporate / industrial demand from Boeing, Mercedes-Benz Vans, and the Charleston port. Historic downtown hotel inventory is supply-constrained — this is one of the few Southeast markets where new construction is genuinely difficult, supporting the bid.",
+      "Charleston is a top-tier Southeast leisure destination with material weekend ADR premium and growing weekday corporate / industrial demand from Boeing, Mercedes-Benz Vans, and the Charleston port. Historic downtown hotel inventory is supply-constrained; this is one of the few Southeast markets where new construction is genuinely difficult, supporting the bid.",
     capRateRange:
       "Stabilized PIP-current select-service: 7.25%–8.00%. Downtown historic full-service: 6.25%–7.25% (supply-constrained premium).",
     adrCommentary:
@@ -203,7 +203,7 @@ export const markets: Market[] = [
     geo: { lat: 32.0809, lng: -81.0912 },
     tagline: "Cap rates, comps, and brokers across coastal Georgia.",
     marketCommentary:
-      "Savannah is a similar profile to Charleston — historic-district leisure premium plus growing port and industrial demand from Hyundai's $7.6B Bryan County plant. Boutique and lifestyle hotels in the historic district command top-of-market ADR. Select-service inventory at the I-95/I-16 interchange and around Hunter Army Airfield trades to a different buyer pool.",
+      "Savannah is a similar profile to Charleston: historic-district leisure premium plus growing port and industrial demand from Hyundai's $7.6B Bryan County plant. Boutique and lifestyle hotels in the historic district command top-of-market ADR. Select-service inventory at the I-95/I-16 interchange and around Hunter Army Airfield trades to a different buyer pool.",
     capRateRange:
       "Stabilized PIP-current select-service: 7.50%–8.25%. Historic-district lifestyle/boutique: 6.50%–7.50%.",
     adrCommentary:
@@ -228,7 +228,7 @@ export const markets: Market[] = [
     geo: { lat: 35.2271, lng: -80.8431 },
     tagline: "Cap rates, comps, and brokers across the Charlotte MSA.",
     marketCommentary:
-      "Charlotte is a financial-services driven hotel market — Bank of America, Truist, and Wells Fargo (East Coast HQ) anchor weekday corporate demand. Charlotte Douglas International Airport supports a strong airport hotel cluster. Uptown + South End trade at premium; suburban airport / Concord / Pineville at select-service economics.",
+      "Charlotte is a financial-services driven hotel market. Bank of America, Truist, and Wells Fargo (East Coast HQ) anchor weekday corporate demand. Charlotte Douglas International Airport supports a strong airport hotel cluster. Uptown + South End trade at premium; suburban airport / Concord / Pineville at select-service economics.",
     capRateRange:
       "Stabilized PIP-current select-service: 7.75%–8.50%. Uptown full-service: 7.00%–8.00%.",
     adrCommentary:

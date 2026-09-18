@@ -76,7 +76,7 @@ export function RateSheetView({
           </div>
 
           <p className="mt-6 text-[13px] tracking-[-0.014em] text-[color:var(--text-secondary)]">
-            Last updated: {LONG_DATE(edition.publishedAt)}
+            Published by {BRAND} &middot; Last updated: {LONG_DATE(edition.publishedAt)}
             {isArchive ? null : (
               <>
                 {" "}

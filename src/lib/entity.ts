@@ -462,3 +462,140 @@ export function baseGraph(): JsonLdNode[] {
     ...serviceNodes(),
   ];
 }
+
+/* -------------------------------------------- answer-page / tool nodes --
+ *
+ * Added for the Wave 1 answer clusters (/hotel-financing, /sell-a-hotel,
+ * /hotel-valuation) and the tool shelf. Every node below mirrors something
+ * visible on the page it is emitted from: the FAQ entries are rendered as
+ * visible <dt>/<dd> pairs, the sources are rendered as a numbered list, the
+ * dates are rendered under the H1. Schema for invisible content is forbidden
+ * (SHARED SPEC 5.6), so these helpers only take what the page already shows.
+ */
+
+/** A cluster hub, as a CollectionPage its spokes can point `isPartOf` at. */
+export function collectionPageNode(opts: {
+  url: string;
+  name: string;
+  description: string;
+  dateModified?: string;
+  hasPart?: { url: string; name: string }[];
+}): JsonLdNode {
+  return clean({
+    "@type": "CollectionPage",
+    "@id": `${opts.url}#collection`,
+    url: opts.url,
+    name: opts.name,
+    description: opts.description,
+    isPartOf: { "@id": ID.website },
+    about: { "@id": ID.org },
+    dateModified: opts.dateModified,
+    inLanguage: "en-US",
+    hasPart: opts.hasPart?.map((p) => ({
+      "@type": "WebPage",
+      "@id": p.url,
+      url: p.url,
+      name: p.name,
+    })),
+  });
+}
+
+/** The article body of an answer page. `citation` mirrors the visible sources. */
+export function articleNode(opts: {
+  url: string;
+  headline: string;
+  description: string;
+  datePublished?: string;
+  dateModified: string;
+  authorSlug?: string;
+  reviewerSlug?: string;
+  isPartOf?: string;
+  citation?: { label: string; url: string; publisher?: string }[];
+  about?: string[];
+  wordCount?: number;
+}): JsonLdNode {
+  const author = opts.authorSlug
+    ? bioMembers().find((m) => m.slug === opts.authorSlug)
+    : undefined;
+  const reviewer = opts.reviewerSlug
+    ? bioMembers().find((m) => m.slug === opts.reviewerSlug)
+    : undefined;
+
+  return clean({
+    "@type": "Article",
+    "@id": `${opts.url}#article`,
+    headline: opts.headline,
+    description: opts.description,
+    datePublished: opts.datePublished ?? opts.dateModified,
+    dateModified: opts.dateModified,
+    inLanguage: "en-US",
+    // Only ever a Person with a published /team page. The other 19 roster
+    // members have no page to link and never appear in a byline.
+    author: author ? { "@id": ID.person(author.slug) } : { "@id": ID.org },
+    reviewedBy: reviewer ? { "@id": ID.person(reviewer.slug) } : undefined,
+    publisher: { "@id": ID.org },
+    mainEntityOfPage: { "@type": "WebPage", "@id": opts.url },
+    isPartOf: opts.isPartOf ? { "@id": opts.isPartOf } : undefined,
+    wordCount: opts.wordCount,
+    about: opts.about,
+    citation: opts.citation?.map((c) =>
+      clean({
+        "@type": "CreativeWork",
+        name: c.label,
+        url: c.url.startsWith("http") ? c.url : `${SITE_URL}${c.url}`,
+        publisher: c.publisher
+          ? { "@type": "Organization", name: c.publisher }
+          : undefined,
+      }),
+    ),
+  });
+}
+
+/**
+ * FAQPage. Pass ONLY question/answer pairs that are rendered visibly on the
+ * page, one for one, in the same order.
+ */
+export function faqPageNode(
+  url: string,
+  faq: { q: string; a: string }[],
+): JsonLdNode {
+  return {
+    "@type": "FAQPage",
+    "@id": `${url}#faq`,
+    mainEntity: faq.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      // Inline citation markers like "[2]" link to the visible source list on
+      // the page; they mean nothing inside JSON-LD, so strip them here.
+      acceptedAnswer: { "@type": "Answer", text: f.a.replace(/\s*\[\d+\]/g, "") },
+    })),
+  };
+}
+
+/**
+ * A calculator. No `offers` node: the tool is free and nothing is sold on the
+ * page (geo/05-templates.md §5).
+ */
+export function webApplicationNode(opts: {
+  url: string;
+  name: string;
+  description: string;
+  dateModified: string;
+  featureList?: string[];
+}): JsonLdNode {
+  return clean({
+    "@type": "WebApplication",
+    "@id": `${opts.url}#app`,
+    name: opts.name,
+    description: opts.description,
+    url: opts.url,
+    applicationCategory: "FinanceApplication",
+    operatingSystem: "Any modern web browser",
+    browserRequirements: "Requires JavaScript for the interactive calculator. The formula, the worked example and every threshold are rendered in HTML without it.",
+    isAccessibleForFree: true,
+    creator: { "@id": ID.org },
+    publisher: { "@id": ID.org },
+    dateModified: opts.dateModified,
+    featureList: opts.featureList,
+  });
+}

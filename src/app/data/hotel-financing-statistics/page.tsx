@@ -16,9 +16,10 @@ import {
 } from "@/lib/rates/statistics";
 import { latestEdition } from "@/lib/rates/sheet";
 import { RATES_LICENSE } from "@/lib/rates/jsonld";
+import { UPDATED } from "./updated";
 
 const url = `${SITE_URL}/data/hotel-financing-statistics`;
-const UPDATED = "2026-09-17";
+
 const edition = latestEdition();
 
 export const metadata: Metadata = {
@@ -48,7 +49,7 @@ const LONG_DATE = (iso: string) => {
 
 const TAKEAWAYS = [
   "The 10-year Treasury was 4.94% and SOFR was 3.62% on September 17, 2026. Fixed-rate term debt got more expensive over the month while floating got marginally cheaper.",
-  "SBA is the only lender type whose maximum rates and leverage are published in writing. A variable-rate 7(a) hotel loan over $350,000 is capped at Prime plus 3.00%, and 13 CFR 120.910 caps a hotel 504 structure at 85% of cost.",
+  "SBA is the only lender type whose maximum rates and leverage are published in writing. A variable-rate 7(a) hotel loan over $350,000 is capped at Prime plus 3.00%, and SBA rules cap a hotel 504 structure at 85% of cost.",
   "Trepp counts $18.7 billion of hotel CMBS maturing in 2026 and nearly 70% of it floats, so SOFR decides whether those loans extend.",
   "CBRE and CoStar are about 190 basis points apart on 2026 RevPAR growth. Both forecasts are below, because underwriting to one of them without knowing about the other is the mistake.",
   "Three numbers that circulate in hotel finance commentary are deliberately not on this page. They are listed at the bottom with the reason, so you can see what was checked and rejected rather than only what survived.",
@@ -136,7 +137,7 @@ export default function HotelFinancingStatisticsPage() {
               />
             </div>
             <p className="mt-6 text-[13px] tracking-[-0.014em] text-[color:var(--text-secondary)]">
-              Last updated: {LONG_DATE(UPDATED)}
+              Compiled by {BRAND} &middot; Last updated: {LONG_DATE(UPDATED)}
             </p>
 
             <p className="mt-8 max-w-[68ch] text-[19px] leading-[1.42] tracking-[0.012em] text-[color:var(--text-primary)]">

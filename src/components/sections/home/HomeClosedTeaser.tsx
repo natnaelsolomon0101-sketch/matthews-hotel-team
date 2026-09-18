@@ -6,6 +6,8 @@ import { GhostLink } from "@/components/ui/GhostLink";
 import { Reveal } from "@/components/ui/Reveal";
 import { Card } from "@/components/ui/Card";
 import { StatusBadge } from "@/components/ui/StatusBadge";
+// Computed from closed.ts. See src/lib/track-record.ts.
+import { HOSPITALITY, HOSPITALITY_BASIS } from "@/lib/track-record";
 
 export function HomeClosedTeaser() {
   return (
@@ -17,7 +19,7 @@ export function HomeClosedTeaser() {
               <Eyebrow>Track record</Eyebrow>
               <TwoToneHeadline
                 size="section"
-                lead="$890M+ closed."
+                lead={`${HOSPITALITY.volume} closed.`}
                 follow="Decades of trusted execution."
               />
               <p className="mt-6 max-w-[48ch] text-[17px] leading-[1.47] tracking-[-0.022em] text-[#424245]">
@@ -32,6 +34,9 @@ export function HomeClosedTeaser() {
                 <span className="text-[color:var(--text-secondary)] normal-case tracking-[-0.014em]">
                   Hampton Inn Portfolio Atlanta · $49.9M · Sale
                 </span>
+              </p>
+              <p className="mt-4 text-[12px] leading-[1.5] text-[color:var(--text-tertiary)]">
+                {HOSPITALITY_BASIS}
               </p>
               <div className="mt-8">
                 <GhostLink href="/closed">Explore closed deals</GhostLink>

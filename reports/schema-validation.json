@@ -1,16 +1,10 @@
 {
-  "runAt": "2026-09-17T22:23:59.688Z",
+  "runAt": "2026-09-18T13:14:45.359Z",
   "base": "/Users/nate/Projects/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 120,
-  "blocksFound": 119,
-  "blocksValid": 119,
-  "issues": [
-    {
-      "url": "/listings/walden-retreats-hill-country",
-      "index": -1,
-      "problem": "no JSON-LD blocks"
-    }
-  ],
+  "urlsChecked": 157,
+  "blocksFound": 157,
+  "blocksValid": 157,
+  "issues": [],
   "blocks": [
     {
       "url": "/",
@@ -69,6 +63,13 @@
       "issues": []
     },
     {
+      "url": "/press",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
       "url": "/glossary",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,DefinedTermSet,BreadcrumbList",
@@ -79,6 +80,244 @@
       "url": "/research",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,CollectionPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/markets",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,ItemList,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/services",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,ItemList,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotels-for-sale",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,ItemList,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/rates",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/rates/methodology",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/data/hotel-financing-statistics",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/rates/2026-09",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/1031-exchange-hotels",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/bridge-loans",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/cmbs-loans",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/faq",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/hotel-lenders-by-type",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/hotel-loan-rates",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/how-debt-placement-works",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/loan-maturities-2026-2027",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/loan-requirements",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/loan-workouts",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/pip-and-renovation-loans",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/refinance-or-sell",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/refinance",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/sba-7a-vs-504",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/sell-a-hotel",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/sell-a-hotel/broker-fees",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/sell-a-hotel/documents-needed",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/sell-a-hotel/how-long-it-takes",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/sell-a-hotel/how-to-choose-a-hotel-broker",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/sell-a-hotel/how-to-sell-a-hotel",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-valuation",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-valuation/broker-opinion-of-value",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-valuation/hotel-cap-rates",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-valuation/how-to-value-a-hotel",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-valuation/select-service-vs-full-service",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/tools/dscr-calculator",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList,WebApplication",
       "valid": true,
       "issues": []
     },
@@ -119,6 +358,27 @@
     },
     {
       "url": "/glossary/iom",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,DefinedTerm,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/glossary/dscr",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,DefinedTerm,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/glossary/debt-yield",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,DefinedTerm,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/glossary/noi",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,DefinedTerm,Article,FAQPage,BreadcrumbList",
       "valid": true,

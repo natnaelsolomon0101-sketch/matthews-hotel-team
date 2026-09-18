@@ -172,8 +172,8 @@ const SEPTEMBER_2026_ROWS: RateRow[] = [
     ),
     maxLtv: published(
       "85% of project cost",
-      ["cfr-120-910"],
-      "A hotel is a limited or special purpose property, so 13 CFR 120.910 requires a borrower contribution of at least 15%. If the operating business is also under two years old, the contribution rises to 20% and the ceiling falls to 80%.",
+      ["cfr-120-910", "sba-sop-50-10"],
+      "SBA's SOP 50 10 8 lists hotels as Limited or Special Purpose Property, so 13 CFR 120.910 requires a borrower contribution of at least 15%. If the operating business is also under two years old, the contribution rises to 20% and the ceiling falls to 80%.",
     ),
     dscrFloor: pending(
       "Set by the CDC and the first-lien bank, not by regulation. Only live quotes show it.",
@@ -189,10 +189,10 @@ const SEPTEMBER_2026_ROWS: RateRow[] = [
       "Same guaranty requirement as 7(a). Section A of SOP 50 10 covers core requirements for both programs.",
     ),
     minLoan: pending(
-      "CDC-set. SBA publishes a $5.5 million maximum debenture, not a minimum.",
+      "CDC-set. SBA publishes a $25,000 minimum debenture and a $5 million maximum for a hotel, not a minimum total loan.",
     ),
     notes:
-      "The fixed-rate second lien is the reason to look at 504 instead of 7(a): it locks 40% of the capital stack for 25 years at a published rate.",
+      "The fixed-rate second lien is the reason to look at 504 instead of 7(a): it locks up to 35% of a hotel's capital stack (40% on an ordinary property) for 25 years at a published rate.",
   },
   pendingPricedRow({
     key: "bank-conventional",

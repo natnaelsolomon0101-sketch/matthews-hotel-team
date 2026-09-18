@@ -9,9 +9,9 @@ Compiled from the 5-hour sprint + the fix-all sprint (2026-05-10). Each item is 
 Fact-check agent flagged the following before any of these articles get amplified on LinkedIn or used in PR pitches. **One critical error already fixed**; the rest are tightenings.
 
 - ✅ **Fixed:** `hotel-refinancing-wave-2026.ts` originally cited a "May 7, 2026 FOMC statement" — there was no FOMC meeting in May 2026. Replaced with the real April 29, 2026 statement and the correct fed funds target (3.50–3.75%, not 4.25–4.50%).
-- ⚠️ **Needs your call:** The "$30 billion in U.S. hotel CMBS through year-end 2027" figure appears 6 times in `hotel-refinancing-wave-2026.ts`. Trepp's actual published number is **$18.7 billion in 2026 alone** (Trepp Feb 2025 release via TreppWire). Adding 2027 likely gets to $30B+ but unverified. Either re-anchor every occurrence to "approximately $18.7 billion in 2026 alone, with comparable carry-forward into 2027" OR keep the $30B framing and add the $18.7B-in-2026 specific anchor in the keyStats block.
-- ⚠️ **Easy fix:** `hotel-adr-revpar-recovery-2026.ts` cites Scottsdale March 2026 RevPAR of $339 from "Bonvoyage AZ" — this is almost certainly **short-term rental (Airbnb) data, not hotel STR data**. Article already includes a "(verify with STR primary)" inline caveat, but the number should be removed from `keyStats` until verified or replaced with an STR-sourced number.
-- ⚠️ **Verify:** AHLA "1.349B sold room nights" forecast in `sun-belt-hospitality-investment-2026.ts` — not in any public AHLA summary; may be in the paywalled full report. Confirm or remove before pitching.
+- ✅ **Resolved 2026-09-17 (geo/ai-visibility):** $30B hotel CMBS figure removed; it could not be sourced. Trepp's published $18.7B maturing in 2026 is used instead, with no 2027 extrapolation. Receipts: `/data/hotel-financing-statistics` ("Numbers we removed, and why").
+- ✅ **Resolved 2026-09-17 (geo/ai-visibility):** Scottsdale $339 March 2026 RevPAR removed from `hotel-adr-revpar-recovery-2026.ts`, with the reason stated in the article.
+- ✅ **Resolved 2026-09-17 (geo/ai-visibility):** AHLA "1.349B room nights" removed; it is not in AHLA's public 2026 State of the Industry release. The five figures that release does publish are used instead.
 - ✅ **Ship as-is:** `hotel-cmbs-distress-trepp-2026.ts` is the strongest of the set — every load-bearing number (Trepp 7.31% delinquency, 9.37% special servicing, Starwood $577M, Park Hotels $725M) verified to public sources.
 - 📋 Full report: `reports/article-fact-check.md`
 

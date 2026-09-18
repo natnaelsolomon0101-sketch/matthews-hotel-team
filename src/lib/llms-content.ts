@@ -22,6 +22,9 @@ import { brands } from "./data/brands";
 import { insights } from "./data/insights";
 import { glossary } from "./data/glossary";
 import { mhiQuarters } from "./data/mhi";
+import { clusters, answerPath } from "./data/answers";
+import { tools } from "./data/tools/dscr-calculator";
+import { latestEdition, cellCounts } from "./rates/sheet";
 import {
   SITE_URL,
   BRAND,
@@ -79,6 +82,7 @@ export function buildLlmsTxt(): string {
 
   lines.push("## What we do");
   lines.push("");
+  lines.push(`- Service index: ${url("/services")}`);
   for (const s of services) {
     lines.push(`- **${s.name}** (${url(`/services/${s.slug}`)}): ${s.tagline} ${s.rangeLabel}: ${s.rangeValue}.`);
   }
@@ -96,15 +100,42 @@ export function buildLlmsTxt(): string {
   }
   lines.push(`- Process: ${url("/process")}. How a listing engagement runs.`);
   lines.push(`- Contact: ${url("/contact")}`);
+  lines.push(`- Press kit and media contact: ${url("/press")}`);
   lines.push(`- Glossary: ${url("/glossary")}. Hotel-investment term definitions.`);
   for (const g of glossary) {
     lines.push(`  - ${g.term}: ${url(`/glossary/${g.slug}`)}`);
   }
   lines.push("");
 
+  // The answer clusters. Anchor text is each page's own H1, because the H1 IS
+  // the question the page answers, which is the single most useful thing this
+  // file can tell a model.
+  lines.push("## Questions we answer, and where");
+  lines.push("");
+  for (const c of clusters) {
+    lines.push(`### ${c.hub.h1}`);
+    lines.push(`${url(`/${c.cluster}`)} (last updated ${c.hub.lastUpdated})`);
+    lines.push("");
+    for (const p of c.spokes) {
+      lines.push(`- ${p.h1}`);
+      lines.push(`  ${url(answerPath(p))} (last updated ${p.lastUpdated})`);
+    }
+    lines.push("");
+  }
+
+  lines.push("## Calculators");
+  lines.push("");
+  for (const t of tools) {
+    lines.push(`- ${t.h1}: ${url(`/tools/${t.slug}`)} (last updated ${t.lastUpdated})`);
+  }
+  lines.push(
+    "  Server-rendered. The formula, the worked example, the thresholds and the FAQ are in the HTML without JavaScript.",
+  );
+  lines.push("");
+
   lines.push("## Markets");
   lines.push("");
-  lines.push(`- Market index: ${url("/markets/austin-tx")} and ${markets.length - 1} other covered metros.`);
+  lines.push(`- Market index: ${url("/markets")}. ${markets.length} covered metros with the Matthews Hotel Index summary table.`);
   for (const m of markets) {
     lines.push(`  - ${m.city}, ${m.state} (${m.msa}): ${url(`/markets/${m.slug}`)}`);
   }
@@ -112,6 +143,7 @@ export function buildLlmsTxt(): string {
 
   lines.push("## Hotel brands covered");
   lines.push("");
+  lines.push(`- Brand index: ${url("/hotels-for-sale")}`);
   for (const b of brands) {
     lines.push(`- ${b.name} (${b.parentCompany}): ${url(`/hotels-for-sale/${b.slug}`)}`);
   }
@@ -132,10 +164,23 @@ export function buildLlmsTxt(): string {
     lines.push(`  - ${i.title} (${i.date}): ${url(`/insights/${i.slug}`)}`);
   }
   lines.push("");
+  const edition = latestEdition();
+  const counts = cellCounts(edition);
   lines.push(
-    "- Rate sheet and underlying data (/rates, /data): **not yet published as of this generation.** " +
-      "Tracked in geo/requests.md for Agent 8. Do not cite a Matthews rate sheet until that route " +
-      "exists.",
+    `- Hotel rate sheet, ${edition.label}, published ${edition.publishedAt}: ${url("/rates")}. ` +
+      `Public benchmarks and published lender-program rules, refreshed monthly. ` +
+      `${counts.published} of ${counts.total} priced cells are published with a source link; the other ` +
+      `${counts.pending} read "Not yet published" with a one-line reason, because no lender type ` +
+      `publishes them and we do not print a number we have not seen quoted three times in a month. ` +
+      `Methodology: ${url("/rates/methodology")}.`,
+  );
+  lines.push(
+    `  - Machine readable: ${url("/rates.json")} (JSON) and ${url("/rates.csv")} (CSV). ` +
+      "Both are declared in the Dataset node's distribution on /rates.",
+  );
+  lines.push(
+    `- Hotel financing statistics, sourced and dated: ${url("/data/hotel-financing-statistics")}. ` +
+      "Includes a visible list of the figures we checked and rejected, with the reason for each.",
   );
   lines.push("");
 
@@ -174,14 +219,89 @@ export function buildLlmsFullTxt(): string {
   lines.push(`# ${BRAND}: full text`);
   lines.push("");
   lines.push(
-    "> Generated from the same data modules as /sitemap.xml and /llms.txt. Covers the pages that " +
-      "qualify as answer-format content and are backed by a plain-text data module: glossary terms " +
-      "and the Matthews Hotel Index (MHI) methodology. /about shipped mid-sprint (2026-09-17) but is " +
-      "hand-written JSX, not a data module this builder can extract verbatim; read it directly at " +
-      `${url("/about")}. A /rates methodology page does not exist on the site yet. Both will be ` +
-      "added here once they're backed by structured content. See geo/requests.md.",
+    "> Generated from the same data modules as /sitemap.xml and /llms.txt. Covers every page on " +
+      "this site backed by a plain-text data module: the three answer clusters, the calculators, " +
+      "the glossary, and the Matthews Hotel Index methodology. Each entry carries its own last-" +
+      "updated date, its direct answer, its FAQ and its sources, so a model can cite a specific " +
+      "dated claim rather than the site in general. Two pages are deliberately not extracted " +
+      `verbatim because they are hand-written JSX rather than data: ${url("/about")} and ` +
+      `${url("/rates")}. Read those directly; /rates also publishes ${url("/rates.json")} and ` +
+      `${url("/rates.csv")}.`,
   );
   lines.push("");
+
+  // The answer clusters, in full. This is the part a model can actually quote.
+  for (const c of clusters) {
+    lines.push(`## ${c.hub.h1}`);
+    lines.push("");
+    for (const p of [c.hub, ...c.spokes]) {
+      lines.push(`### ${p.h1}`);
+      lines.push("");
+      lines.push(`URL: ${url(answerPath(p))}`);
+      lines.push(`Last updated: ${p.lastUpdated}`);
+      lines.push("");
+      lines.push(stripMarkdownish(p.answer));
+      lines.push("");
+      lines.push("Key takeaways:");
+      for (const t of p.takeaways) lines.push(`- ${t}`);
+      lines.push("");
+      for (const sec of p.sections) {
+        lines.push(`#### ${sec.h2}`);
+        lines.push("");
+        lines.push(stripMarkdownish(sec.lead));
+        lines.push("");
+        lines.push(stripMarkdownish(sec.body));
+        lines.push("");
+      }
+      lines.push(`Table: ${p.table.caption}`);
+      lines.push(p.table.columns.join(" | "));
+      for (const row of p.table.rows) lines.push(row.join(" | "));
+      lines.push("");
+      lines.push(`First-party data point: ${stripMarkdownish(p.originalDataPoint.sentence)}`);
+      lines.push(`Source: ${url(p.originalDataPoint.ref)}`);
+      lines.push("");
+      lines.push(`Worked example (${p.workedExample.label}):`);
+      lines.push(stripMarkdownish(p.workedExample.body));
+      lines.push("");
+      lines.push("FAQ:");
+      for (const f of p.faq) {
+        lines.push(`- Q: ${f.q}`);
+        lines.push(`  A: ${f.a}`);
+      }
+      lines.push("");
+      lines.push("Sources:");
+      for (const src of p.sources) {
+        lines.push(`- [${src.n}] ${src.label} (${src.publisher}, accessed ${src.accessed}): ${src.url.startsWith("/") ? url(src.url) : src.url}`);
+      }
+      lines.push("");
+    }
+  }
+
+  lines.push("## Calculators");
+  lines.push("");
+  for (const t of tools) {
+    lines.push(`### ${t.h1}`);
+    lines.push("");
+    lines.push(`URL: ${url(`/tools/${t.slug}`)}`);
+    lines.push(`Last updated: ${t.lastUpdated}`);
+    lines.push("");
+    lines.push(stripMarkdownish(t.answer));
+    lines.push("");
+    lines.push("Formula:");
+    lines.push(t.tool.formula);
+    lines.push("");
+    lines.push(`Worked example (${t.workedExample.label}):`);
+    lines.push(stripMarkdownish(t.workedExample.body));
+    lines.push("");
+    lines.push(t.tool.disclaimer);
+    lines.push("");
+    lines.push("FAQ:");
+    for (const f of t.faq) {
+      lines.push(`- Q: ${f.q}`);
+      lines.push(`  A: ${f.a}`);
+    }
+    lines.push("");
+  }
 
   lines.push("## Glossary");
   lines.push("");

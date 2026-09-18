@@ -1,22 +1,33 @@
 import { insights } from "@/lib/data/insights";
+import { answerPages, answerPath } from "@/lib/data/answers";
+import { tools } from "@/lib/data/tools/dscr-calculator";
+import { latestEdition } from "@/lib/rates/sheet";
+
+/** Inline "[2]" citation markers point at a page's source list, which a feed item does not carry. */
+const stripRefs = (t: string) => t.replace(/\s*\[\d+\]/g, "");
 
 // Content only depends on build-time data modules — prerender it once.
 export const dynamic = "force-static";
 
 // RSS 2.0 feed for /insights, full-text via <content:encoded>.
 //
-// /rates is not in scope: it does not exist on the site yet (confirmed
-// missing 2026-09-17, owned by Agent 8 — data-and-rate-sheet). When it
-// ships, add its change feed here; tracked in geo/requests.md.
+// Scope as of 2026-09-17: /insights (dated commentary, full text), the three
+// answer clusters, the tool shelf, and the current rate-sheet edition. The
+// clusters and the rate sheet carry their direct-answer block rather than the
+// full body, because an evergreen answer page is updated in place: pushing its
+// whole text into a feed every time a sentence changes is noise, while the
+// dated `pubDate` still tells a reader something moved.
+//
+// Agent 2 left this route noting /rates did not exist yet. It does now.
 //
 // A `<link rel="alternate" type="application/rss+xml">` pointing at this
 // route was added to src/app/layout.tsx's metadata so feed readers and
 // crawlers can discover it from every page.
 
 const SITE_URL = "https://matthewshotelmarkets.com";
-const FEED_TITLE = "Matthews Hotel Markets | Insights";
+const FEED_TITLE = "Matthews Hotel Markets";
 const FEED_DESCRIPTION =
-  "Hotel investment sales, capital markets, and acquisition advisory commentary from Matthews Hotel Markets.";
+  "Hotel investment sales, capital markets and valuation from Matthews Hotel Markets: dated commentary, evergreen answer pages, calculators and the monthly rate sheet.";
 
 function xmlEscape(value: string): string {
   return value
@@ -59,6 +70,50 @@ function contentEncoded(body: string): string {
   return `<![CDATA[${paragraphs}]]>`;
 }
 
+/** Answer pages and tools publish their direct-answer block, not the full body. */
+function answerItems(): string {
+  const edition = latestEdition();
+  const entries: {
+    title: string;
+    url: string;
+    date: string;
+    description: string;
+  }[] = [
+    ...answerPages.map((p) => ({
+      title: p.h1,
+      url: `${SITE_URL}${answerPath(p)}`,
+      date: p.lastUpdated,
+      description: stripRefs(p.answer),
+    })),
+    ...tools.map((t) => ({
+      title: t.h1,
+      url: `${SITE_URL}/tools/${t.slug}`,
+      date: t.lastUpdated,
+      description: stripRefs(t.answer),
+    })),
+    {
+      title: `Matthews Hotel Markets rate sheet, ${edition.label}`,
+      url: `${SITE_URL}/rates`,
+      date: edition.publishedAt,
+      description:
+        "The monthly hotel rate sheet: dated public benchmarks and published SBA program rules, with every cell we cannot source marked not yet published.",
+    },
+  ];
+
+  return entries
+    .map(
+      (e) => `
+    <item>
+      <title>${xmlEscape(e.title)}</title>
+      <link>${e.url}</link>
+      <guid isPermaLink="true">${e.url}</guid>
+      <pubDate>${new Date(`${e.date}T12:00:00Z`).toUTCString()}</pubDate>
+      <description>${xmlEscape(e.description)}</description>
+    </item>`,
+    )
+    .join("");
+}
+
 export async function GET() {
   const items = insights
     .map((i) => {
@@ -82,7 +137,7 @@ export async function GET() {
     <link>${SITE_URL}/insights</link>
     <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml" />
     <description>${xmlEscape(FEED_DESCRIPTION)}</description>
-    <language>en-us</language>${items}
+    <language>en-us</language>${items}${answerItems()}
   </channel>
 </rss>`;
 

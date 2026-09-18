@@ -42,6 +42,9 @@ import { markets } from "../src/lib/data/markets";
 import { brands } from "../src/lib/data/brands";
 import { services } from "../src/lib/data/services";
 import { offices } from "../src/lib/data/offices";
+import { clusters, answerPath } from "../src/lib/data/answers";
+import { tools } from "../src/lib/data/tools/dscr-calculator";
+import { EDITIONS } from "../src/lib/rates/sheet";
 
 const PROD = "https://matthewshotelmarkets.com";
 const LOCAL = "http://localhost:3000";
@@ -52,6 +55,23 @@ const BUILD_DIR = path.join(process.cwd(), ".next", "server", "app");
 /** Nodes every page is required to carry, by @id suffix. */
 const REQUIRED_IDS = ["/#org", "/#parent-org", "/#website", "/#office-austin"];
 
+/**
+ * EVERY route on the site, computed from the data modules.
+ *
+ * This list used to be hand-maintained, which meant its "119/119 pass" result
+ * silently excluded four pages Agent 8 shipped (/rates, /rates/2026-09,
+ * /rates/methodology, /data/hotel-financing-statistics) and all 30 Wave 1
+ * pages: CI would not have caught a schema regression on any of them
+ * (geo/requests.md, Agent 8 item 3). Anything with a page.tsx belongs here.
+ *
+ * Deliberately excluded, with reasons:
+ *   - /sitemap.xml, /robots.txt, /llms.txt, /llms-full.txt, /feed.xml,
+ *     /rates.json, /rates.csv: not HTML, no ld+json to validate.
+ *   - /api/*: not pages.
+ *   - listings with `omUrl` set: those routes redirect off-domain before
+ *     rendering, so there is no body and no graph to check. That is
+ *     documented behavior in listings/[slug]/page.tsx, not a regression.
+ */
 function urls(): string[] {
   const u: string[] = [
     "/",
@@ -62,12 +82,29 @@ function urls(): string[] {
     "/process",
     "/contact",
     "/about",
+    "/press",
     "/glossary",
     "/research",
+    // NOT "/research/mhi": that route is a redirect to the latest quarter
+    // (src/app/research/mhi/page.tsx), so it has no body and no graph. It is a
+    // stable citation URL, not a page.
+    "/markets",
+    "/services",
+    "/hotels-for-sale",
+    "/rates",
+    "/rates/methodology",
+    "/data/hotel-financing-statistics",
   ];
+  for (const e of EDITIONS) u.push(`/rates/${e.slug}`);
+  for (const c of clusters) {
+    u.push(`/${c.cluster}`);
+    for (const p of c.spokes) u.push(answerPath(p));
+  }
+  for (const t of tools) u.push(`/tools/${t.slug}`);
   for (const g of glossary) u.push(`/glossary/${g.slug}`);
   for (const q of mhiQuarters) u.push(`/research/mhi/${q.slug}`);
-  for (const l of listings) u.push(`/listings/${l.slug}`);
+  for (const l of listings.filter((x) => x.hasDetail !== false && !x.omUrl))
+    u.push(`/listings/${l.slug}`);
   for (const c of closed) u.push(`/closed/${c.slug}`);
   for (const t of team.filter((m) => m.hasBio !== false)) u.push(`/team/${t.slug}`);
   for (const i of insights) u.push(`/insights/${i.slug}`);
