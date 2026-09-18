@@ -22,6 +22,7 @@ import {
   webPage,
 } from "@/lib/entity";
 
+import { seoTitle } from "@/lib/seo-meta";
 /**
  * Date the three broker profiles were last reviewed against team.ts and
  * closed.ts. Bump it when a bio, title, phone, email, or attribution changes,
@@ -51,7 +52,7 @@ export async function generateMetadata({
   )} at Matthews Hotel Markets.`;
 
   return {
-    title: `${member.name}, ${member.title}`,
+    title: seoTitle(`${member.name}, ${member.title}`),
     description,
     alternates: { canonical: url },
     openGraph: {

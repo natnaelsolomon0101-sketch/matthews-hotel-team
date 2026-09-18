@@ -44,9 +44,19 @@ export default async function Image() {
               lineHeight: 1.05,
               letterSpacing: "-0.025em",
               maxWidth: 980,
+              // Satori (next/og) rejects a <div> with more than one child
+              // unless it is display:flex, and the unfixed version of this
+              // image returned an empty response. One flex item per word
+              // keeps the natural line wrapping of the two-tone headline.
+              display: "flex",
+              flexWrap: "wrap",
             }}
           >
-            Hospitality finance and sales.{" "}
+            {["Hospitality", "finance", "and", "sales."].map((w) => (
+              <span key={w} style={{ marginRight: "0.25em" }}>
+                {w}
+              </span>
+            ))}
             <span style={{ color: "rgba(255,255,255,0.55)" }}>Nationwide.</span>
           </div>
           <div

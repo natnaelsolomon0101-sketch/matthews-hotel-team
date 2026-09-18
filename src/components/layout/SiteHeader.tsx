@@ -4,9 +4,7 @@ import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { ease } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 
 interface NavItem {
@@ -54,6 +52,21 @@ export function SiteHeader() {
   const transparentRoute = pathname === "/";
   const [scrolled, setScrolled] = React.useState(false);
   const [open, setOpen] = React.useState(false);
+  // The drawer stays mounted for its 300ms exit animation after `open` goes
+  // false. This flag plus the drawer-in / drawer-out keyframes in globals.css
+  // replaces framer-motion's AnimatePresence, which put about 40 KB of
+  // animation library into the JS of every page on the site for one fade
+  // (geo/14-seo-tech.md). Same offsets, durations and easing.
+  const [drawerMounted, setDrawerMounted] = React.useState(false);
+  React.useEffect(() => {
+    if (open) {
+      setDrawerMounted(true);
+      return;
+    }
+    // Fallback in case animationend never fires (display:none at >= md).
+    const t = window.setTimeout(() => setDrawerMounted(false), 350);
+    return () => window.clearTimeout(t);
+  }, [open]);
 
   React.useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 80);
@@ -177,33 +190,30 @@ export function SiteHeader() {
 
       {/* Mobile drawer + click-outside scrim. Scrim is rendered before the
           drawer so the drawer's static positioning naturally stacks above. */}
-      <AnimatePresence initial={false}>
-        {open && (
-          <motion.button
-            key="drawer-scrim"
-            type="button"
-            aria-label="Close menu"
-            onClick={() => setOpen(false)}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.25, ease: ease.standard }}
-            className="md:hidden fixed left-0 right-0 bottom-0 top-16 cursor-default bg-black/30"
-          />
-        )}
-      </AnimatePresence>
-      <AnimatePresence initial={false}>
-        {open && (
-          <motion.div
-            key="drawer"
-            initial={{ opacity: 0, y: -8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.3, ease: ease.standard }}
-            className="relative md:hidden bg-white/95 backdrop-blur-xl backdrop-saturate-150 border-b border-black/[0.08]"
-          >
-            <div className="mx-auto max-w-[1024px] px-6 py-4">
-              <nav className="flex flex-col">
+      {drawerMounted && (
+        <button
+          type="button"
+          aria-label="Close menu"
+          tabIndex={open ? 0 : -1}
+          onClick={() => setOpen(false)}
+          className={cn(
+            "md:hidden fixed left-0 right-0 bottom-0 top-16 cursor-default bg-black/30",
+            open ? "scrim-in" : "scrim-out",
+          )}
+        />
+      )}
+      {drawerMounted && (
+        <div
+          onAnimationEnd={(e) => {
+            if (!open && e.target === e.currentTarget) setDrawerMounted(false);
+          }}
+          className={cn(
+            "relative md:hidden bg-white/95 backdrop-blur-xl backdrop-saturate-150 border-b border-black/[0.08]",
+            open ? "drawer-in" : "drawer-out",
+          )}
+        >
+          <div className="mx-auto max-w-[1024px] px-6 py-4">
+            <nav className="flex flex-col">
                 {NAV_ITEMS.map((item) => {
                   const drawerLinkClass =
                     "py-3 text-[17px] text-[color:var(--text-primary)] border-b border-[color:var(--divider)] last:border-b-0";
@@ -228,11 +238,10 @@ export function SiteHeader() {
                     </Link>
                   );
                 })}
-              </nav>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            </nav>
+          </div>
+        </div>
+      )}
     </header>
   );
 }

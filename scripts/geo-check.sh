@@ -49,6 +49,14 @@ done
 step "internal links (local)"
 LOCAL_BASE="${BASE}" npx tsx scripts/internal-links-audit.ts --local | tail -2
 
+# Every sitemap URL: 200 and not redirected, title and description present,
+# no duplicate titles, exactly one H1, self-referential canonical, no noindex,
+# every <img> has alt, no internal link to a vercel.json redirect source, and
+# unknown paths are real 404s with nav and hub links. Length problems are
+# warnings only. See geo/14-seo-tech.md.
+step "metadata and crawl hygiene, every sitemap URL (local)"
+node scripts/metadata-audit.mjs "${BASE}"
+
 step "300-word extractability test (local)"
 npx tsx scripts/check-extractability.ts "${BASE}"
 

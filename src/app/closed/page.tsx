@@ -8,10 +8,11 @@ import JsonLd from "@/components/seo/JsonLd";
 import { closed } from "@/lib/data/closed";
 import { SITE_URL, breadcrumb, itemList, webPage } from "@/lib/entity";
 
+import { DEFAULT_OG_IMAGES, seoTitle } from "@/lib/seo-meta";
 export const metadata: Metadata = {
-  title: "Closed Hotel Transactions | Track Record",
+  title: seoTitle("Closed Hotel Transactions | Track Record"),
   description:
-    "Recent hotel closings by Matthews Hotel Markets. Investment sales, capital markets, and debt placements across select-service, full-service, resort, and boutique segments.",
+    "Recent hotel closings by Matthews Hotel Markets. Investment sales and debt placements across select-service, full-service, resort, and boutique segments.",
   alternates: { canonical: `${SITE_URL}/closed` },
   openGraph: {
     title: "Closed Hotel Transactions | Matthews Hotel Markets",
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
       "Recent hotel closings: investment sales, capital markets, and debt placements across the United States.",
     url: `${SITE_URL}/closed`,
     type: "website",
+    images: DEFAULT_OG_IMAGES,
   },
   twitter: {
     card: "summary_large_image",

@@ -105,12 +105,12 @@ export default async function Image({
                 marginTop: 8,
               }}
             >
-              {member.office} · {member.specialties.join(" · ")}
+              {`${member.office} · ${member.specialties.join(" · ")}`}
             </div>
           </div>
 
           <div style={{ fontSize: 22, color: "rgba(255,255,255,0.65)" }}>
-            matthewshotelmarkets.com/team/{member.slug}
+            {`matthewshotelmarkets.com/team/${member.slug}`}
           </div>
         </div>
 

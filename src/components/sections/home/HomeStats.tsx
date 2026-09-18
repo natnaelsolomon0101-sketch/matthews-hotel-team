@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { TwoToneHeadline } from "@/components/ui/TwoToneHeadline";
 import { Reveal } from "@/components/ui/Reveal";
-import { Counter } from "@/components/ui/Counter";
+import { HomeStatValue } from "./HomeStatValue";
 // Computed from src/lib/data/closed.ts, which is what /closed renders. These
 // were typed strings until 2026-09-17 ("$890M+", "8,600+", "30", "12"), which
 // is how they came to sit under a bare "As of Q4 2021" line that read as stale
@@ -36,7 +36,7 @@ export function HomeStats() {
             <div className="mt-20 grid grid-cols-1 gap-12 border-t border-[color:var(--divider)] pt-12 sm:grid-cols-3 sm:gap-8">
               {supportingStats.map((stat) => (
                 <div key={stat.label}>
-                  <Counter
+                  <HomeStatValue
                     value={stat.value}
                     className="block text-[#1d1d1f] font-semibold tabular-nums text-[clamp(32px,4vw,56px)] leading-none tracking-[-0.03em]"
                   />

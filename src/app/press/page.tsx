@@ -19,6 +19,7 @@ import {
   webPage,
 } from "@/lib/entity";
 
+import { DEFAULT_OG_IMAGES, seoTitle } from "@/lib/seo-meta";
 /**
  * /press — the press kit.
  *
@@ -46,15 +47,20 @@ const LAST_UPDATED_LABEL = "September 17, 2026";
 
 const DESCRIPTION = `Media contact, company boilerplate and press assets for ${BRAND}, the hospitality investment sales and capital markets team of ${PARENT}.`;
 
+// <meta name=description> only: DESCRIPTION is 182 characters, over the
+// 160 a search result shows. Same words, shorter; schema keeps DESCRIPTION.
+const META_DESCRIPTION = `Media contact, company boilerplate and press assets for ${BRAND}, the hospitality team of ${PARENT}.`;
+
 export const metadata: Metadata = {
-  title: `Press | ${BRAND}`,
-  description: DESCRIPTION,
+  title: seoTitle(`Press | ${BRAND}`),
+  description: META_DESCRIPTION,
   alternates: { canonical: URL },
   openGraph: {
     type: "website",
     title: `Press | ${BRAND}`,
     description: DESCRIPTION,
     url: URL,
+    images: DEFAULT_OG_IMAGES,
   },
   twitter: {
     card: "summary_large_image",

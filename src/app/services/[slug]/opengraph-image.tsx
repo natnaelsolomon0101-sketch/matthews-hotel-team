@@ -128,7 +128,7 @@ export default async function Image({
             color: "rgba(255,255,255,0.7)",
           }}
         >
-          <div>matthewshotelmarkets.com/services/{service.slug}</div>
+          <div>{`matthewshotelmarkets.com/services/${service.slug}`}</div>
           <div style={{ fontWeight: 600, color: "#ffffff" }}>
             {service.rangeValue}
           </div>

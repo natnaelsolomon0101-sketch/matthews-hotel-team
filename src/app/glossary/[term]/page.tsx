@@ -14,10 +14,16 @@ import { insights as allInsights } from "@/lib/data/insights";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/entity";
 
+import { DEFAULT_OG_IMAGES, seoTitleFrom } from "@/lib/seo-meta";
 /** "[2]" links to the visible source list; it means nothing in JSON-LD. */
 const stripRefs = (t: string) => t.replace(/\s*\[\d+\]/g, "");
 
 type Params = { term: string };
+
+// Unknown slugs get the server-rendered 404 page (src/app/not-found.tsx).
+// Without this the 404 status was right but the body only rendered after
+// JavaScript ran. Every valid slug is in generateStaticParams below.
+export const dynamicParams = false;
 
 export function generateStaticParams(): Params[] {
   return glossary.map((g) => ({ term: g.slug }));
@@ -31,10 +37,10 @@ export async function generateMetadata(props: { params: Promise<Params> }): Prom
   const title = `${entry.term}: definition & worked example | Matthews Hotel Markets`;
   const description = stripRefs(entry.shortDef).slice(0, 160);
   return {
-    title,
+    title: seoTitleFrom([title, `${entry.term}: definition & example`, `${entry.term}: definition`]),
     description,
     alternates: { canonical: url },
-    openGraph: { type: "article", title, description, url },
+    openGraph: { type: "article", title, description, url, images: DEFAULT_OG_IMAGES },
     twitter: { card: "summary_large_image", title, description },
   };
 }

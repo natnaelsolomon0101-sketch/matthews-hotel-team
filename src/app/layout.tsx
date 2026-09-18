@@ -27,6 +27,13 @@ const fraunces = Fraunces({
   axes: ["opsz"],
   style: ["normal", "italic"],
   display: "swap",
+  // Fraunces is only used for monograms, step numerals and one pull quote,
+  // none of them above the fold on any template. next/font preloads every
+  // font by default, so every page pulled about 150 KB of Fraunces (roman and
+  // italic) at High priority ahead of its LCP element. On Lighthouse's slow
+  // 4G that was most of the gap between FCP and LCP. The files still load,
+  // with display: swap, as soon as a rule that uses them matches.
+  preload: false,
 });
 
 // Search-console ownership tokens. Nate pastes the token value into Vercel
@@ -45,8 +52,10 @@ const verification: Metadata["verification"] = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default:
-      "Matthews Hotel Markets | National Hotel Investment Sales & Brokerage",
+    // 59 characters (was 68 and truncated in results). Matches the hero
+    // line, "Hospitality finance and sales." og/twitter titles have no such
+    // limit and are unchanged.
+    default: "Matthews Hotel Markets | Hotel Investment Sales & Financing",
     template: "%s | Matthews Hotel Markets",
   },
   // Same sentence as Organization.description, /about, /team, and the footer.

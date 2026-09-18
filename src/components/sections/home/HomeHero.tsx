@@ -1,43 +1,24 @@
-"use client";
-
 import * as React from "react";
-import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
 import { TwoToneHeadline } from "@/components/ui/TwoToneHeadline";
 import { Pill } from "@/components/ui/Pill";
 import { GhostLink } from "@/components/ui/GhostLink";
-import { heroH1, heroBody, heroCta, ease } from "@/lib/motion";
+import { HeroPhoto } from "./HeroPhoto";
 
+/**
+ * Server component since 2026-09-18 (geo/14-seo-tech.md). It used to be a
+ * client component animated by framer-motion, which meant (a) the H1 and the
+ * rest of the hero copy were server-rendered at opacity 0 and stayed
+ * invisible until the JS bundle downloaded and hydrated, and (b) about 40 KB
+ * of animation library sat on the home page's critical path. The entrance
+ * animation is now the CSS `hero-rise` keyframes in globals.css (same
+ * offsets, durations, delays and easing as the heroH1 / heroBody / heroCta
+ * presets in src/lib/motion.ts), so it starts at first paint. The only
+ * client code left is the 1.00 to 1.05 parallax in HeroPhoto.
+ */
 export function HomeHero() {
-  const sectionRef = React.useRef<HTMLElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start start", "end start"],
-  });
-  const photoScale = useTransform(scrollYProgress, [0, 1], [1, 1.05]);
-
   return (
-    <section
-      ref={sectionRef}
-      className="dark-section relative overflow-hidden bg-[color:var(--surface-inverse)] text-[color:var(--text-on-dark)]"
-    >
-      {/* Hero photograph backdrop. Slow parallax zoom as the section scrolls
-          past, capped at 1.05 to stay subtle. */}
-      <motion.div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0"
-        style={{ scale: photoScale, transformOrigin: "center" }}
-      >
-        <Image
-          src="/images/hero-landscape.jpg"
-          alt=""
-          fill
-          quality={88}
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
-      </motion.div>
+    <section className="dark-section relative overflow-hidden bg-[color:var(--surface-inverse)] text-[color:var(--text-on-dark)]">
+      <HeroPhoto />
 
       {/* Layered washes for headline legibility.
           - Desktop: heavy on the left, the photo breathes on the right.
@@ -66,14 +47,11 @@ export function HomeHero() {
         style={{ paddingBottom: "max(5rem, env(safe-area-inset-bottom) + 4rem)" }}
       >
         <div className="flex w-full flex-col">
-          <motion.p
-            {...heroBody}
-            className="text-[12px] font-medium uppercase tracking-[0.22em] text-white/70"
-          >
+          <p className="hero-rise hero-rise-body text-[12px] font-medium uppercase tracking-[0.22em] text-white/70">
             Matthews Hotel Markets
-          </motion.p>
+          </p>
 
-          <motion.div {...heroH1} className="mt-6">
+          <div className="hero-rise hero-rise-h1 mt-6">
             <TwoToneHeadline
               as="h1"
               size="hero"
@@ -81,20 +59,14 @@ export function HomeHero() {
               lead="Hospitality finance and sales."
               follow="Nationwide."
             />
-          </motion.div>
+          </div>
 
-          <motion.p
-            {...heroBody}
-            className="mt-6 max-w-[640px] text-[17px] leading-[1.45] tracking-[0.012em] text-white/85 md:text-[19px] md:leading-[1.42] md:text-[color:var(--text-on-dark-secondary)]"
-          >
+          <p className="hero-rise hero-rise-body mt-6 max-w-[640px] text-[17px] leading-[1.45] tracking-[0.012em] text-white/85 md:text-[19px] md:leading-[1.42] md:text-[color:var(--text-on-dark-secondary)]">
             Whether you want to finance a hotel purchase, refinance a property
             you own, or sell a hotel, we are here to help.
-          </motion.p>
+          </p>
 
-          <motion.dl
-            {...heroBody}
-            className="mt-10 grid max-w-[640px] grid-cols-1 gap-x-10 gap-y-4 sm:grid-cols-2"
-          >
+          <dl className="hero-rise hero-rise-body mt-10 grid max-w-[640px] grid-cols-1 gap-x-10 gap-y-4 sm:grid-cols-2">
             <div>
               <dt className="text-[11px] font-medium uppercase tracking-[0.22em] text-white/70">
                 Capital Markets
@@ -111,12 +83,9 @@ export function HomeHero() {
                 Dispositions from $2M, nationwide.
               </dd>
             </div>
-          </motion.dl>
+          </dl>
 
-          <motion.div
-            {...heroCta}
-            className="mt-10 flex flex-wrap items-center gap-5"
-          >
+          <div className="hero-rise hero-rise-cta mt-10 flex flex-wrap items-center gap-5">
             <Pill variant="primary" href="/listings">
               View listings
             </Pill>
@@ -124,19 +93,17 @@ export function HomeHero() {
             <span className="text-[11px] font-medium uppercase tracking-[0.18em] text-white/50">
               Response 24h
             </span>
-          </motion.div>
+          </div>
         </div>
       </div>
 
-      {/* Scroll cue, thin vertical line, desktop only — too tight on mobile. */}
-      <motion.div
+      {/* Scroll cue, thin vertical line, desktop only: too tight on mobile. */}
+      <div
         aria-hidden="true"
         className="pointer-events-none absolute bottom-10 left-1/2 hidden -translate-x-1/2 md:block"
-        animate={{ y: [0, 8, 0] }}
-        transition={{ duration: 2, repeat: Infinity, ease: ease.standard }}
       >
-        <span className="block h-6 w-px bg-white/30" />
-      </motion.div>
+        <span className="hero-scroll-cue block h-6 w-px bg-white/30" />
+      </div>
     </section>
   );
 }

@@ -16,6 +16,7 @@ import { listingFaqs, faqJsonLdNode } from "@/lib/seo/faq";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/entity";
 
+import { seoTitle } from "@/lib/seo-meta";
 type Params = { slug: string };
 
 export const dynamicParams = false;
@@ -39,7 +40,7 @@ export async function generateMetadata(
   );
 
   return {
-    title,
+    title: seoTitle(title),
     description,
     alternates: { canonical: url },
     openGraph: {

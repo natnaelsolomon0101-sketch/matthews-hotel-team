@@ -57,13 +57,14 @@ import {
 } from "@/lib/sba/tables";
 import ApprovalsChart from "./ApprovalsChart";
 
+import { DEFAULT_OG_IMAGES, seoTitle } from "@/lib/seo-meta";
 const DESCRIPTION = `SBA 7(a) and 504 loans to hotels (NAICS 721110) by fiscal year, state, lender and loan size, compiled from SBA loan-level data as of ${longDate(meta.asOf)}.`;
 
 export const metadata: Metadata = {
-  title: `${TITLE} | Matthews Hotel`,
+  title: seoTitle(`${TITLE} | Matthews Hotel`),
   description: DESCRIPTION,
   alternates: { canonical: SBA_URL, types: { "text/markdown": `${SBA_URL}.md` } },
-  openGraph: { type: "article", title: TITLE, description: DESCRIPTION, url: SBA_URL },
+  openGraph: { type: "article", title: TITLE, description: DESCRIPTION, url: SBA_URL, images: DEFAULT_OG_IMAGES },
   twitter: { card: "summary_large_image", title: TITLE },
 };
 

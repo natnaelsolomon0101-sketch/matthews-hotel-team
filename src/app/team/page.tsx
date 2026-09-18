@@ -16,10 +16,11 @@ import {
   webPage,
 } from "@/lib/entity";
 
+import { DEFAULT_OG_IMAGES, seoTitle } from "@/lib/seo-meta";
 export const metadata: Metadata = {
-  title: "Hotel Brokers & Capital Markets Team",
+  title: seoTitle("Hotel Brokers & Capital Markets Team"),
   description:
-    "Meet the Matthews Hotel Markets team. Hotel brokers and capital markets advisors specializing in select-service, full-service, resort, and boutique investment sales nationwide.",
+    "Meet the Matthews Hotel Markets team. Hotel brokers and capital markets advisors for select-service, full-service, resort, and boutique hotels nationwide.",
   alternates: { canonical: `${SITE_URL}/team` },
   openGraph: {
     title: "Hotel Brokers & Capital Markets Team | Matthews Hotel Markets",
@@ -27,6 +28,7 @@ export const metadata: Metadata = {
       "Hotel brokers and capital markets advisors. Select-service, full-service, resort, and boutique investment sales nationwide.",
     url: `${SITE_URL}/team`,
     type: "website",
+    images: DEFAULT_OG_IMAGES,
   },
   twitter: {
     card: "summary_large_image",

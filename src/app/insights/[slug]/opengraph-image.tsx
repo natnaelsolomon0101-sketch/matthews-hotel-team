@@ -115,7 +115,7 @@ export default async function Image({
             color: "rgba(255,255,255,0.65)",
           }}
         >
-          <div>By {byline}</div>
+          <div>{`By ${byline}`}</div>
           <div>{insight.date}</div>
         </div>
       </div>

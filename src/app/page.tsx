@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
 import HomeHero from "@/components/sections/home/HomeHero";
@@ -8,6 +9,15 @@ import HomeClosedTeaser from "@/components/sections/home/HomeClosedTeaser";
 import HomeInsightTeaser from "@/components/sections/home/HomeInsightTeaser";
 import JsonLd from "@/components/seo/JsonLd";
 import { BOILERPLATE, BRAND, SITE_URL, webPage } from "@/lib/entity";
+
+// The root layout's description is the 262-character boilerplate, which
+// /about also used (a duplicate) and which is 100 characters over what a
+// result shows. These are the boilerplate's own facts in 152 characters.
+// openGraph and twitter are inherited from the layout unchanged.
+export const metadata: Metadata = {
+  description:
+    "Matthews Hotel Markets sells hotels from $2 million and places hotel debt from $5 million, nationwide. Part of Matthews Real Estate Investment Services.",
+};
 
 export default function Home() {
   // Home carries the entity nodes only (added by <JsonLd />) plus its own

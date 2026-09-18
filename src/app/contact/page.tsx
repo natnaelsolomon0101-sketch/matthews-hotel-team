@@ -7,10 +7,11 @@ import ContactForm from "@/components/sections/contact/ContactForm";
 import JsonLd from "@/components/seo/JsonLd";
 import { EMAIL, ID, SITE_URL, breadcrumb, webPage } from "@/lib/entity";
 
+import { DEFAULT_OG_IMAGES, seoTitle } from "@/lib/seo-meta";
 export const metadata: Metadata = {
-  title: "Contact a Hotel Broker | Talk to Matthews Hotel Markets",
+  title: seoTitle("Contact a Hotel Broker | Talk to Matthews Hotel Markets"),
   description:
-    "Talk to a hotel broker at Matthews Hotel Markets. Investment sales, capital markets, acquisitions, and market intelligence. Austin HQ + Denver. We respond within one business day.",
+    "Talk to a hotel broker at Matthews Hotel Markets. Investment sales, capital markets and acquisitions. Austin HQ + Denver. We respond within one business day.",
   alternates: { canonical: `${SITE_URL}/contact` },
   openGraph: {
     type: "website",
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     description:
       "Investment sales, capital markets, acquisitions, market intelligence. Austin HQ + Denver.",
     url: `${SITE_URL}/contact`,
+    images: DEFAULT_OG_IMAGES,
   },
   twitter: {
     card: "summary",

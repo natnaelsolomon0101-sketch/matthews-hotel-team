@@ -16,6 +16,7 @@ import {
   webPage,
 } from "@/lib/entity";
 
+import { DEFAULT_OG_IMAGES, seoTitle } from "@/lib/seo-meta";
 /**
  * /hotels-for-sale — the brand index.
  *
@@ -36,7 +37,7 @@ const LAST_UPDATED_LABEL = "September 17, 2026";
 const DESCRIPTION = `${BRAND} sells hotels under ${brands.length} major flags. Underwriting notes, buyer pools and current inventory for each brand family.`;
 
 export const metadata: Metadata = {
-  title: `Hotels for Sale by Brand | ${BRAND}`,
+  title: seoTitle(`Hotels for Sale by Brand | ${BRAND}`),
   description: DESCRIPTION,
   alternates: { canonical: URL },
   openGraph: {
@@ -44,6 +45,7 @@ export const metadata: Metadata = {
     title: `Hotels for sale by brand | ${BRAND}`,
     description: DESCRIPTION,
     url: URL,
+    images: DEFAULT_OG_IMAGES,
   },
   twitter: {
     card: "summary_large_image",

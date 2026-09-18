@@ -14,7 +14,13 @@ import { closedFaqs, faqJsonLdNode } from "@/lib/seo/faq";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/entity";
 
+import { seoTitleFrom } from "@/lib/seo-meta";
 type Params = { slug: string };
+
+// Unknown slugs get the server-rendered 404 page (src/app/not-found.tsx).
+// Without this the 404 status was right but the body only rendered after
+// JavaScript ran. Every valid slug is in generateStaticParams below.
+export const dynamicParams = false;
 
 export function generateStaticParams(): Params[] {
   return closed.map((d) => ({ slug: d.slug }));
@@ -28,11 +34,18 @@ export async function generateMetadata(props: {
   if (!deal) return { title: "Closed Transaction" };
 
   const url = `${SITE_URL}/closed/${deal.slug}`;
-  const title = `${deal.name}: ${deal.transactionTypeLabel ?? deal.transactionType}, ${deal.city}, ${deal.state}`;
+  const type = deal.transactionTypeLabel ?? deal.transactionType;
+  const title = `${deal.name}: ${type}, ${deal.city}, ${deal.state}`;
   const description = `Matthews Hotel Markets closed the ${deal.name} ${deal.transactionTypeLabel ?? deal.transactionType.toLowerCase()} in ${deal.city}, ${deal.state} (${deal.year}). ${deal.keys} keys. ${deal.dealSize}.`;
 
   return {
-    title,
+    // <title> only: when the full line is over 60 characters, drop the city
+    // (it is usually already in the hotel's name), then the state.
+    title: seoTitleFrom([
+      title,
+      `${deal.name}: ${type}, ${deal.state}`,
+      `${deal.name}: ${type}`,
+    ]),
     description,
     alternates: { canonical: url },
     openGraph: {
