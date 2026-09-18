@@ -42,6 +42,8 @@ import { RATES_LICENSE } from "../rates/jsonld";
 import { REMOVED_FIGURES, STATS, STAT_GROUPS, statsIn } from "../rates/statistics";
 import type { Cell } from "../rates/types";
 import { UPDATED as STATS_UPDATED } from "../../app/data/hotel-financing-statistics/updated";
+import * as sba from "../sba";
+import * as sbaTables from "../sba/tables";
 import { citeAsPage, footer, header, longDate, table } from "./md";
 import type { Twin } from "./markdown";
 
@@ -545,5 +547,67 @@ export function aboutTwin(): Twin {
     summary: BOILERPLATE,
     citeAs: citeAsPage(`About ${BRAND}`, "/about", ABOUT_UPDATED),
     markdown: aboutMarkdown,
+  };
+}
+
+/* ------------------------------------------------------- SBA hotel lending */
+
+// /data/sba-hotel-lending. The page and this twin both read their prose and
+// their table cells from src/lib/sba, so there is nothing to transcribe. Only
+// the headings below are a second copy of the page's JSX.
+function sbaMarkdown(): string {
+  const out = header({ h1: sba.H1, path: sba.SBA_PATH, lastUpdated: sba.SBA_UPDATED });
+  const t = (x: sbaTables.SbaTable) => table(x.columns, x.rows);
+
+  out.push(
+    `Compiled by ${BRAND} · Last updated: ${longDate(sba.SBA_UPDATED)} · SBA data as of ${longDate(sba.meta.asOf)}`,
+    "",
+    sba.DIRECT_ANSWER,
+    "",
+  );
+  out.push("## Key takeaways", "");
+  for (const x of sba.TAKEAWAYS) out.push(`- ${x}`);
+  out.push("", `**What is counted.** ${sba.SCOPE_NOTE}`, "");
+
+  out.push("## SBA hotel loan approvals by fiscal year", "", sba.BY_YEAR_INTRO, "", sba.CHART_CAPTION, "", ...t(sbaTables.byYearTable()), "");
+  out.push("## SBA hotel loans by state", "", sba.BY_STATE_INTRO, "", ...t(sbaTables.byStateTable()), "");
+  out.push(`## Top SBA hotel lenders, ${sba.fyRange(sba.T3)}`, "", sba.LENDERS_INTRO, "");
+  out.push("### Top 25 7(a) lenders by number of hotel loans", "", ...t(sbaTables.lenders7aByCountTable()), "");
+  out.push("### Top 25 7(a) lenders by hotel loan dollars", "", ...t(sbaTables.lenders7aByDollarsTable()), "");
+  out.push("### Top 25 504 certified development companies by number of hotel loans", "", ...t(sbaTables.cdcsByCountTable()), "");
+  out.push("### Top 25 504 certified development companies by hotel loan dollars", "", ...t(sbaTables.cdcsByDollarsTable()), "");
+  out.push("## Most active SBA hotel lenders in each state", "", sba.STATE_LENDERS_INTRO, "", ...t(sbaTables.stateLendersTable()), "");
+  out.push("## How big are SBA hotel loans?", "", sba.BUCKETS_INTRO, "", ...t(sbaTables.bucketsTable()), "");
+  out.push("## Share of SBA hotel loans charged off, by approval year", "", sba.CHARGEOFF_INTRO, "", ...t(sbaTables.chargeOffTable()), "");
+  out.push("## Other accommodation codes, reported separately", "", sba.OTHER_NAICS_INTRO, "", ...t(sbaTables.otherNaicsTable()), "");
+
+  out.push("## Methodology and caveats", "");
+  for (const m of sba.METHODOLOGY) out.push(`- **${m.label}** ${m.text}`);
+  out.push("");
+
+  out.push("## Downloads", "", sba.DOWNLOADS_TEXT, "", `- ${sba.SBA_JSON_URL}`, `- ${sba.SBA_CSV_URL}`, "");
+  out.push("## Cite as", "", `${sba.CITE_INTRO} License: [CC BY 4.0](${sba.SBA_LICENSE})`, "", "```", sba.citeAs(), "```", "");
+
+  out.push("## Sources", "");
+  for (const s of sba.SOURCES) out.push(`${s.n}. [${s.name}](${s.url}) · ${s.publisher} · ${s.note}`);
+  out.push("");
+
+  out.push(sba.CTA_HEADLINE, "", `[Talk to the team](${SITE_URL}/contact)`, "");
+  for (const r of sba.RELATED) out.push(`- [${r.label}](${SITE_URL}${r.href})`);
+
+  out.push(...footer(sba.citeAs()));
+  return out.join("\n");
+}
+
+export function sbaHotelLendingTwin(): Twin {
+  return {
+    path: sba.SBA_PATH,
+    kind: "data",
+    title: sba.TITLE,
+    h1: sba.H1,
+    lastUpdated: sba.SBA_UPDATED,
+    summary: sba.DIRECT_ANSWER,
+    citeAs: sba.citeAs(),
+    markdown: sbaMarkdown,
   };
 }

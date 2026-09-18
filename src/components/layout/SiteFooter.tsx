@@ -55,6 +55,7 @@ const COLUMNS: FooterColumn[] = [
       { href: "/rates", label: "Rate Sheet" },
       { href: "/rates/methodology", label: "Rate Sheet Methodology" },
       { href: "/data/hotel-financing-statistics", label: "Hotel Financing Statistics" },
+      { href: "/data/sba-hotel-lending", label: "SBA Loans to Hotels" },
       { href: "/research/mhi", label: "Matthews Hotel Index" },
       { href: "/research", label: "All Research" },
     ],

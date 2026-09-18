@@ -14,6 +14,7 @@ import { answerPages, answerPath, clusters, clusterLastUpdated } from "@/lib/dat
 import { tools as toolPages, toolsHub } from "@/lib/data/tools";
 import { latestEdition, EDITIONS } from "@/lib/rates/sheet";
 import { UPDATED as STATS_UPDATED } from "@/app/data/hotel-financing-statistics/updated";
+import { SBA_UPDATED } from "@/lib/sba";
 
 const SITE_URL = "https://matthewshotelmarkets.com";
 
@@ -342,6 +343,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${SITE_URL}/data/hotel-financing-statistics`,
       lastModified: new Date(STATS_UPDATED),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${SITE_URL}/data/sba-hotel-lending`,
+      lastModified: new Date(SBA_UPDATED),
       changeFrequency: "monthly",
       priority: 0.85,
     },
