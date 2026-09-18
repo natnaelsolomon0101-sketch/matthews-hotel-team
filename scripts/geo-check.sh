@@ -58,10 +58,16 @@ for p in / /hotel-financing /rates; do
 done
 
 step "discovery files"
-for p in /robots.txt /sitemap.xml /llms.txt /llms-full.txt /feed.xml /rates.json /rates.csv; do
+for p in /robots.txt /sitemap.xml /llms.txt /llms-full.txt /feed.xml /rates.json /rates.csv /openapi.json /agent-index.json /developers; do
   code=$(curl -s -o /dev/null -w '%{http_code}' "${BASE}${p}")
   [ "$code" = "200" ] || { echo "FAIL ${p}: HTTP ${code}" >&2; exit 1; }
 done
 echo "all 200"
+
+# Markdown twins (200, text/markdown, H1, and line-by-line parity with the
+# HTML page so a twin can never say something its page does not), plus an MCP
+# initialize + tools/list round trip. See geo/12-agent-access.md.
+step "agent access: Markdown twins, parity with HTML, MCP (local)"
+node scripts/agent-access-check.mjs "${BASE}"
 
 printf '\nGEO-CHECK PASS\n'
