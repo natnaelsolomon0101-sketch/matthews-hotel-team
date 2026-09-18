@@ -30,7 +30,10 @@ import { EDITIONS } from "../src/lib/rates/sheet";
 
 const PROD = "https://matthewshotelmarkets.com";
 const LOCAL = "http://localhost:3000";
-const base = process.argv.includes("--local") ? LOCAL : PROD;
+// Defaults to a local server. Production only with an explicit --prod: a
+// full run is ~160 requests, and repeated scripted traffic trips Vercel's
+// bot challenge, which blocks every AI crawler.
+const base = process.argv.includes("--prod") ? PROD : LOCAL;
 const TARGET_DOMAIN = "matthewshotelmarkets.com";
 
 type Edge = { from: string; to: string };

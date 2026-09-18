@@ -19,6 +19,11 @@ on:
           - schema
           - links
 
+# The jobs commit their reports back to the repo; without this the default
+# token is read-only and every run since July failed at git push (403).
+permissions:
+  contents: write
+
 jobs:
   rank:
     if: github.event.schedule == '0 9 * * 1' || github.event.inputs.job == 'rank'
@@ -88,4 +93,4 @@ jobs:
           node-version: "20"
           cache: "npm"
       - run: npm ci
-      - run: npx tsx scripts/internal-links-audit.ts
+      - run: npx tsx scripts/internal-links-audit.ts --prod

@@ -59,6 +59,9 @@ async function main() {
   const args = process.argv.slice(2);
   const force = args.includes("--force");
   const dryRun = args.includes("--dry-run");
+  // --all submits every sitemap URL regardless of lastmod. Use it once after
+  // a large launch, or when a normal run was missed; not on every deploy.
+  const all = args.includes("--all");
 
   const branch = currentBranch();
   if (branch !== "main" && !force) {
@@ -80,6 +83,7 @@ async function main() {
 
   const cutoff = Date.now() - WINDOW_HOURS * 60 * 60 * 1000;
   const changed = entries.filter((e) => {
+    if (all) return true;
     if (!e.lastmod) return false;
     const t = new Date(e.lastmod).getTime();
     return Number.isFinite(t) && t >= cutoff;
