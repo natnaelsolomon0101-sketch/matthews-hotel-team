@@ -21,6 +21,7 @@ import { answerPath, clusters, type AnswerPage } from "@/lib/data/answers";
 import type { ToolPage } from "@/lib/data/answers/types";
 import { glossary } from "@/lib/data/glossary";
 import { team } from "@/lib/data/team";
+import { KNOWN_PATH_LABELS } from "@/lib/data/answers/path-labels";
 
 /**
  * Template A (answer + hub) and Template D (tool) from geo/05-templates.md.
@@ -64,20 +65,7 @@ function labelForPath(path: string): string {
   }
   const term = glossary.find((g) => `/glossary/${g.slug}` === path);
   if (term) return term.term;
-  const KNOWN: Record<string, string> = {
-    "/rates": "Matthews Hotel Markets rate sheet",
-    "/rates/methodology": "How the rate sheet is built",
-    "/research/mhi": "The Matthews Hotel Index",
-    "/research/mhi/q1-2026": "Matthews Hotel Index, Q1 2026",
-    "/data/hotel-financing-statistics": "Hotel financing statistics",
-    "/process": "How a listing engagement runs",
-    "/tools": "Hotel finance calculators",
-    "/tools/dscr-calculator": "Hotel DSCR calculator",
-    "/tools/refinance-vs-sell": "Refinance vs sell calculator",
-    "/tools/debt-yield-calculator": "Hotel debt yield calculator",
-    "/tools/cap-rate-calculator": "Hotel cap rate calculator",
-  };
-  return KNOWN[path] ?? path;
+  return KNOWN_PATH_LABELS[path] ?? path;
 }
 
 type Props = {
