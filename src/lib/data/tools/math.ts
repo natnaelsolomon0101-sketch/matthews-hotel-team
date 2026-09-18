@@ -124,6 +124,261 @@ export function computeCapRate(v: CapRateInput): CapRateResult {
   return { impliedCapRate, pricePerKey, value, valuePerKey };
 }
 
+/* ------------------------------------------------- hotel value estimator */
+
+/** One market's published cap-rate bands, in the shape src/lib/data/mhi.ts uses. */
+export type BandPoint = {
+  marketSlug: string;
+  capRates: { segment: string; low: number; high: number }[];
+};
+
+export type ResolvedBand = {
+  /** Percent. */
+  low: number;
+  high: number;
+  /** "market": that market publishes this segment. "all-markets": the envelope. */
+  scope: "market" | "all-markets";
+  /** True when a market was asked for and it publishes no band for the segment. */
+  fellBack: boolean;
+  /** How many markets publish a band for this segment. */
+  marketsWithBand: number;
+};
+
+/**
+ * The cap-rate band for a segment. With a market, that market's own band. With
+ * no market, or a market that publishes no band for the segment, the envelope
+ * across every market that does: lowest low to highest high. The envelope is a
+ * range of ranges, not an average. Returns null when no market publishes the
+ * segment at all.
+ */
+export function resolveCapBand(
+  points: BandPoint[],
+  segment: string,
+  marketSlug: string | null,
+): ResolvedBand | null {
+  const bands: { slug: string; low: number; high: number }[] = [];
+  for (const p of points) {
+    const b = p.capRates.find((c) => c.segment === segment);
+    if (
+      b &&
+      Number.isFinite(b.low) &&
+      Number.isFinite(b.high) &&
+      b.low > 0 &&
+      b.high >= b.low
+    ) {
+      bands.push({ slug: p.marketSlug, low: b.low, high: b.high });
+    }
+  }
+  if (bands.length === 0) return null;
+
+  const own = marketSlug ? bands.find((x) => x.slug === marketSlug) : undefined;
+  if (own) {
+    return {
+      low: own.low,
+      high: own.high,
+      scope: "market",
+      fellBack: false,
+      marketsWithBand: bands.length,
+    };
+  }
+  return {
+    low: Math.min(...bands.map((x) => x.low)),
+    high: Math.max(...bands.map((x) => x.high)),
+    scope: "all-markets",
+    fellBack: Boolean(marketSlug),
+    marketsWithBand: bands.length,
+  };
+}
+
+export type ValueEstimateInput = {
+  keys: number;
+  /** Used when it is above zero. Otherwise NOI is revenue x margin. */
+  noi: number;
+  revenue: number;
+  noiMarginPct: number;
+  pip: number;
+  /** Percent. The tight end of the band gives the high value. */
+  bandLow: number;
+  bandHigh: number;
+};
+
+export type ValueEstimateResult = {
+  noiUsed: number | null;
+  /** NOI / bandHigh and NOI / bandLow, before the PIP. */
+  grossLow: number | null;
+  grossHigh: number | null;
+  /** After the PIP. Can be negative when the PIP is larger than the value. */
+  valueLow: number | null;
+  valueHigh: number | null;
+  perKeyLow: number | null;
+  perKeyHigh: number | null;
+};
+
+export function computeValueEstimate(v: ValueEstimateInput): ValueEstimateResult {
+  const out: ValueEstimateResult = {
+    noiUsed: null,
+    grossLow: null,
+    grossHigh: null,
+    valueLow: null,
+    valueHigh: null,
+    perKeyLow: null,
+    perKeyHigh: null,
+  };
+  const noi =
+    v.noi > 0
+      ? v.noi
+      : v.revenue > 0 && v.noiMarginPct > 0
+        ? v.revenue * (v.noiMarginPct / 100)
+        : 0;
+  if (!(noi > 0) || !Number.isFinite(noi)) return out;
+  out.noiUsed = noi;
+  if (!(v.bandLow > 0) || !(v.bandHigh >= v.bandLow)) return out;
+
+  const pip = v.pip > 0 ? v.pip : 0;
+  out.grossLow = noi / (v.bandHigh / 100);
+  out.grossHigh = noi / (v.bandLow / 100);
+  out.valueLow = out.grossLow - pip;
+  out.valueHigh = out.grossHigh - pip;
+  if (v.keys > 0) {
+    out.perKeyLow = out.valueLow / v.keys;
+    out.perKeyHigh = out.valueHigh / v.keys;
+  }
+  return out;
+}
+
+/* ------------------------------------------------------------ loan sizing */
+
+export type LoanSizingInput = {
+  noi: number;
+  /** Appraised value, or purchase price / total cost for an LTC test. */
+  value: number;
+  /** Index plus spread, percent. */
+  rate: number;
+  amortYears: number;
+  /** The user's own tests. Zero or less means the test is skipped. */
+  testDscr: number;
+  testDebtYield: number;
+  testLtv: number;
+};
+
+export type SizingTest = "dscr" | "debtYield" | "ltv";
+
+export type LoanSizingResult = {
+  byDscr: number | null;
+  byDebtYield: number | null;
+  byLtv: number | null;
+  /** The smallest of the tests that were entered. */
+  maxLoan: number | null;
+  binding: SizingTest | null;
+  /** value - maxLoan. */
+  equity: number | null;
+  /** At maxLoan. */
+  impliedDscr: number | null;
+  impliedDebtYield: number | null;
+  impliedLtv: number | null;
+};
+
+export function computeLoanSizing(v: LoanSizingInput): LoanSizingResult {
+  const okNoi = v.noi > 0;
+  const constant =
+    v.rate >= 0 && v.amortYears > 0 ? loanConstant(v.rate, v.amortYears) : null;
+
+  const byDscr =
+    okNoi && constant !== null && v.testDscr > 0 ? v.noi / v.testDscr / constant : null;
+  const byDebtYield = okNoi && v.testDebtYield > 0 ? v.noi / (v.testDebtYield / 100) : null;
+  const byLtv = v.value > 0 && v.testLtv > 0 ? v.value * (v.testLtv / 100) : null;
+
+  const entered: [SizingTest, number][] = [];
+  if (byDscr !== null) entered.push(["dscr", byDscr]);
+  if (byDebtYield !== null) entered.push(["debtYield", byDebtYield]);
+  if (byLtv !== null) entered.push(["ltv", byLtv]);
+
+  if (entered.length === 0) {
+    return {
+      byDscr,
+      byDebtYield,
+      byLtv,
+      maxLoan: null,
+      binding: null,
+      equity: null,
+      impliedDscr: null,
+      impliedDebtYield: null,
+      impliedLtv: null,
+    };
+  }
+  const [binding, maxLoan] = entered.reduce((a, b) => (b[1] < a[1] ? b : a));
+  return {
+    byDscr,
+    byDebtYield,
+    byLtv,
+    maxLoan,
+    binding,
+    equity: v.value > 0 ? v.value - maxLoan : null,
+    impliedDscr: okNoi && constant !== null && maxLoan > 0 ? v.noi / (maxLoan * constant) : null,
+    impliedDebtYield: okNoi && maxLoan > 0 ? (v.noi / maxLoan) * 100 : null,
+    impliedLtv: v.value > 0 ? (maxLoan / v.value) * 100 : null,
+  };
+}
+
+/* ------------------------------------------------- SBA 504 hotel structure */
+
+/** 13 CFR 120.910 and 120.920, and SOP 50 10 8 pp. 350, 354-355. */
+export const SBA_504_HOTEL = {
+  /** Third Party Lender minimum for a limited or single purpose asset. */
+  bankMinPct: 50,
+  /** Borrower minimum for a limited or single purpose building. */
+  borrowerMinPct: 15,
+  /** Borrower minimum when the business has also operated two years or less. */
+  borrowerMinPctNew: 20,
+  debentureCap: 5_000_000,
+} as const;
+
+export type Sba504Input = {
+  projectCost: number;
+  /** The operating business is two years old or less. */
+  newBusiness: boolean;
+};
+
+export type Sba504Result = {
+  bankLoan: number | null;
+  debenture: number | null;
+  borrowerMin: number | null;
+  /** Project cost the three minimum pieces do not cover once the cap binds. */
+  gap: number | null;
+  capBinds: boolean;
+  /** Percent of project cost left for the debenture before the cap. */
+  debenturePct: number | null;
+};
+
+export function computeSba504(v: Sba504Input): Sba504Result {
+  if (!(v.projectCost > 0) || !Number.isFinite(v.projectCost)) {
+    return {
+      bankLoan: null,
+      debenture: null,
+      borrowerMin: null,
+      gap: null,
+      capBinds: false,
+      debenturePct: null,
+    };
+  }
+  const borrowerPct = v.newBusiness
+    ? SBA_504_HOTEL.borrowerMinPctNew
+    : SBA_504_HOTEL.borrowerMinPct;
+  const debenturePct = 100 - SBA_504_HOTEL.bankMinPct - borrowerPct;
+  const bankLoan = (v.projectCost * SBA_504_HOTEL.bankMinPct) / 100;
+  const borrowerMin = (v.projectCost * borrowerPct) / 100;
+  const uncapped = (v.projectCost * debenturePct) / 100;
+  const debenture = Math.min(uncapped, SBA_504_HOTEL.debentureCap);
+  return {
+    bankLoan,
+    debenture,
+    borrowerMin,
+    gap: uncapped - debenture,
+    capBinds: uncapped > SBA_504_HOTEL.debentureCap,
+    debenturePct,
+  };
+}
+
 /* ------------------------------------------------------------ formatting */
 
 const USD = new Intl.NumberFormat("en-US", {
