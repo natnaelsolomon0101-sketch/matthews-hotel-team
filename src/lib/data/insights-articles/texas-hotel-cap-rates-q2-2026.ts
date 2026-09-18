@@ -52,7 +52,6 @@ export const draft: Insight = {
 
     "## Pull quote",
 
-    '"The compression we are measuring in Texas this quarter is not a rate-cut trade. It is the bid pool rebuilding around stabilized select-service because the underwriting math now closes at current debt cost. That is a more durable signal than waiting on the Fed." (Luke Thompson, VP & Director, Capital Markets, Matthews Hotel Markets)',
 
     "## Which Texas sub-markets are most actively traded",
 
