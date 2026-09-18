@@ -214,7 +214,8 @@ export const page: AnswerPage = {
     ],
     data: [
       "/research/mhi/q1-2026",
-      "/tools"
+      "/tools",
+      "/tools/hotel-value-estimator"
     ]
   },
   cta: {

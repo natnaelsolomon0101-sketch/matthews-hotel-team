@@ -8,3 +8,5 @@ One line per run: `YYYY-MM-DD | role | what shipped | PR # | gate result`. Newes
 2026-09-18 | writer | parallel push: 6 financing, 5 sell, 5 valuation pages; new /buy-a-hotel cluster (hub + 4); 20 glossary terms; 3 calculators + /tools hub | PRs #12 #13 #15 #16 #17 #18 | GEO-CHECK PASS
 2026-09-18 | setup | agent access: Markdown twins for every page, read-only MCP server at /mcp, /openapi.json, /agent-index.json, /developers; geo-improve skill | PRs #11 #14 | GEO-CHECK PASS
 2026-09-18 | maintainer | fixed 14 dead/moved source citations (AHLA, Appraisal Foundation, FTC, SBA x3, HVS x2, JLL) across 16 files, no numbers changed; corrected 7 broken target_url values in geo/tracking/prompts.csv | #19 | GEO-CHECK PASS
+2026-09-18 | writer | second push: /hotel-franchise-costs cluster (hub + 14 brand guides from 2026 FDDs), /hotel-industry cluster (hub + 7) | PRs #24 #25 #26 | GEO-CHECK PASS
+2026-09-18 | setup | /data/sba-hotel-lending tracker with quarterly refresh; hotel value estimator and loan sizing calculator; CoStar forecast stat refreshed to the August 7, 2026 release | PRs #22 #23 | GEO-CHECK PASS

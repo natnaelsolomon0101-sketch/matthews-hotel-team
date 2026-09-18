@@ -225,7 +225,8 @@ export const page: AnswerPage = {
     ],
     data: [
       "/research/mhi/q1-2026",
-      "/tools/refinance-vs-sell"
+      "/tools/refinance-vs-sell",
+      "/tools/hotel-value-estimator"
     ]
   },
   cta: {

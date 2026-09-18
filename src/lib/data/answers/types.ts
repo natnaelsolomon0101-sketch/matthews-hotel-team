@@ -20,7 +20,8 @@ export type AnswerCluster =
   | "sell-a-hotel"
   | "hotel-valuation"
   | "buy-a-hotel"
-  | "hotel-franchise-costs";
+  | "hotel-franchise-costs"
+  | "hotel-industry";
 
 export type AnswerSection = {
   /** The sub-question, rendered as the section's <h2>. */

@@ -221,7 +221,8 @@ export const page: AnswerPage = {
       "/glossary/debt-yield"
     ],
     data: [
-      "/rates"
+      "/rates",
+      "/tools/hotel-loan-sizing-calculator"
     ]
   },
   cta: {

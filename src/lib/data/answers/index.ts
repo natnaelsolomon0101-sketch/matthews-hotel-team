@@ -12,6 +12,7 @@ import { hub as sellHub, spokes as sellSpokes } from "./sell-a-hotel";
 import { hub as valuationHub, spokes as valuationSpokes } from "./hotel-valuation";
 import { hub as buyHub, spokes as buySpokes } from "./buy-a-hotel";
 import { hub as franchiseHub, spokes as franchiseSpokes } from "./hotel-franchise-costs";
+import { hub as industryHub, spokes as industrySpokes } from "./hotel-industry";
 import type { AnswerCluster, AnswerPage } from "./types";
 
 export type { AnswerCluster, AnswerPage } from "./types";
@@ -54,6 +55,12 @@ export const clusters: ClusterDefinition[] = [
     label: "Hotel Franchise Costs",
     hub: franchiseHub,
     spokes: franchiseSpokes,
+  },
+  {
+    cluster: "hotel-industry",
+    label: "Hotel Industry Basics",
+    hub: industryHub,
+    spokes: industrySpokes,
   },
 ];
 

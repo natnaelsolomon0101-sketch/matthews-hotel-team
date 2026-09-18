@@ -242,7 +242,9 @@ export const page: AnswerPage = {
       "/glossary/noi"
     ],
     data: [
-      "/rates"
+      "/rates",
+      "/tools/hotel-loan-sizing-calculator",
+      "/data/sba-hotel-lending"
     ]
   },
   cta: {
