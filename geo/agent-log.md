@@ -10,3 +10,6 @@ One line per run: `YYYY-MM-DD | role | what shipped | PR # | gate result`. Newes
 2026-09-18 | maintainer | fixed 14 dead/moved source citations (AHLA, Appraisal Foundation, FTC, SBA x3, HVS x2, JLL) across 16 files, no numbers changed; corrected 7 broken target_url values in geo/tracking/prompts.csv | #19 | GEO-CHECK PASS
 2026-09-18 | writer | second push: /hotel-franchise-costs cluster (hub + 14 brand guides from 2026 FDDs), /hotel-industry cluster (hub + 7) | PRs #24 #25 #26 | GEO-CHECK PASS
 2026-09-18 | setup | /data/sba-hotel-lending tracker with quarterly refresh; hotel value estimator and loan sizing calculator; CoStar forecast stat refreshed to the August 7, 2026 release | PRs #22 #23 | GEO-CHECK PASS
+2026-09-18 | setup | technical SEO: doubled-brand titles fixed on ~220 pages, OG images repaired, real 404 page, metadata audit in the gate; visibility: HTML site map, canonical headers on data files, dates from existing data, hub ItemLists, fuller RSS | PRs #33 #34 | GEO-CHECK PASS
+2026-09-18 | setup | service-claims audit: 1,262 first-party sentences reviewed, 58 overreaching claims removed or reworded | PR #35 | GEO-CHECK PASS
+2026-09-18 | writer | 44 SBA state pages; 12 financing pages; 6 owner-question pages; 6 hotel-industry pages; 10 more brand guides | PRs #29 #30 #31 #32 #36 #37 | GEO-CHECK PASS
