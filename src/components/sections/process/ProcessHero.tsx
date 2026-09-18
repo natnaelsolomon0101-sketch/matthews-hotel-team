@@ -14,8 +14,7 @@ export function ProcessHero() {
         />
         <p className="mt-6 max-w-[64ch] text-[17px] leading-[1.47] tracking-[-0.022em] text-[color:var(--text-secondary)]">
           The hospitality team&apos;s published marketing playbook. Four
-          phases, twenty-four weeks, refined across hundreds of closed
-          transactions. Sellers see exactly what happens, when it happens,
+          phases, twenty-four weeks. Sellers see exactly what happens, when it happens,
           and what we deliver at every step.
         </p>
 

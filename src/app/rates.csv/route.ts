@@ -1,4 +1,5 @@
 import { ratesCsv } from "@/lib/rates/export";
+import { SITE_URL } from "@/lib/entity";
 
 export const dynamic = "force-static";
 
@@ -12,6 +13,9 @@ export async function GET() {
   return new Response(ratesCsv(), {
     headers: {
       "Content-Type": "text/csv; charset=utf-8",
+      // The HTML page that presents this data is the canonical URL (Google
+      // documents the rel="canonical" HTTP header for non-HTML files).
+      Link: `<${SITE_URL}/rates>; rel="canonical"`,
       "Content-Disposition": 'inline; filename="matthews-hotel-rate-sheet.csv"',
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET, OPTIONS",

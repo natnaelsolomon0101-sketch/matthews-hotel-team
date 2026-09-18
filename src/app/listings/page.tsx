@@ -5,7 +5,8 @@ import { ListingsHero } from "@/components/sections/listings/ListingsHero";
 import { ListingsBrowser } from "@/components/sections/listings/ListingsBrowser";
 import PosterCTA from "@/components/sections/shared/PosterCTA";
 import JsonLd from "@/components/seo/JsonLd";
-import { listings } from "@/lib/data/listings";
+import { listings, LISTINGS_UPDATED } from "@/lib/data/listings";
+import { formatDate } from "@/lib/format-date";
 import { SITE_URL, breadcrumb, itemList, webPage } from "@/lib/entity";
 
 import { DEFAULT_OG_IMAGES, seoTitle } from "@/lib/seo-meta";
@@ -38,6 +39,7 @@ export default function ListingsPage() {
       name: "Hotels for Sale, Active Listings",
       description: metadata.description as string,
       mainEntity: `${url}#listings`,
+      dateModified: LISTINGS_UPDATED,
     }),
     itemList(
       listings.map((l) => ({
@@ -55,6 +57,12 @@ export default function ListingsPage() {
       <main className="pt-16">
         <JsonLd graph={graph} />
         <ListingsHero />
+        <div className="bg-white">
+          <p className="mx-auto -mt-10 max-w-[1024px] px-6 pb-6 text-[13px] tracking-[-0.014em] text-[color:var(--text-tertiary)]">
+            Listings last updated{" "}
+            <time dateTime={LISTINGS_UPDATED}>{formatDate(LISTINGS_UPDATED)}</time>
+          </p>
+        </div>
         <ListingsBrowser />
         <PosterCTA
           lead="Don't see your asset?"

@@ -173,6 +173,117 @@ const CATALOG = {
     url: "/data/hotel-financing-statistics",
     publisher: "Matthews Hotel Markets (first-party)",
   },
+  // Added 2026-09-18 (fourth push). Every entry below was opened and read that day.
+  hostK: {
+    label: "Host Hotels & Resorts, Inc. Form 10-K for fiscal year 2025 (filed February 25, 2026): Item 1, management agreements; Item 7, results of operations and comparable hotel data",
+    url: "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000054/hst-20251231.htm",
+    publisher: "U.S. Securities and Exchange Commission, EDGAR",
+  },
+  appleK: {
+    label: "Apple Hospitality REIT, Inc. Form 10-K for fiscal year 2025 (filed February 23, 2026): Item 1, hotel operating agreements; Item 7, results of operations; note on management and franchise agreements",
+    url: "https://www.sec.gov/Archives/edgar/data/1418121/000119312526064008/aple-20251231.htm",
+    publisher: "U.S. Securities and Exchange Commission, EDGAR",
+  },
+  summitK: {
+    label: "Summit Hotel Properties, Inc. Form 10-K for fiscal year 2025 (filed February 25, 2026): management agreements note and consolidated statements of operations",
+    url: "https://www.sec.gov/Archives/edgar/data/1497645/000149764526000015/inn-20251231.htm",
+    publisher: "U.S. Securities and Exchange Commission, EDGAR",
+  },
+  summitPR: {
+    label: "Summit Hotel Properties Reports Fourth Quarter and Full Year 2025 Results (February 25, 2026), Exhibit 99.1 to Form 8-K",
+    url: "https://www.sec.gov/Archives/edgar/data/1497645/000149764526000017/exhibit99112-31x2025.htm",
+    publisher: "Summit Hotel Properties, Inc., via SEC EDGAR",
+  },
+  pebK: {
+    label: "Pebblebrook Hotel Trust Form 10-K for fiscal year 2025 (filed February 25, 2026): Item 2, management agreements; commitments note",
+    url: "https://www.sec.gov/Archives/edgar/data/1474098/000147409826000015/peb-20251231.htm",
+    publisher: "U.S. Securities and Exchange Commission, EDGAR",
+  },
+  rljK: {
+    label: "RLJ Lodging Trust Form 10-K for fiscal year 2025 (filed February 27, 2026): Our Hotel Properties, management agreements and franchise agreements",
+    url: "https://www.sec.gov/Archives/edgar/data/1511337/000151133726000007/rlj-20251231.htm",
+    publisher: "U.S. Securities and Exchange Commission, EDGAR",
+  },
+  chathamK: {
+    label: "Chatham Lodging Trust Form 10-K for fiscal year 2025 (filed February 27, 2026): hotel management agreements",
+    url: "https://www.sec.gov/Archives/edgar/data/1476045/000143774926006103/cldt20251231_10k.htm",
+    publisher: "U.S. Securities and Exchange Commission, EDGAR",
+  },
+  hyattK: {
+    label: "Hyatt Hotels Corporation Form 10-K for fiscal year 2025 (filed February 13, 2026), Item 1, Business: brand descriptions",
+    url: "https://www.sec.gov/Archives/edgar/data/1468174/000146817426000007/h-20251231.htm",
+    publisher: "U.S. Securities and Exchange Commission, EDGAR",
+  },
+  hampton26: {
+    label: "2026 Hampton Franchise Disclosure Document (issued March 30, 2026): Items 6, 7, 15 and 19",
+    url: "https://hmd-wp.go-vip.net/wp-content/uploads/2026/03/2026-US-FDD-Hampton.pdf",
+    publisher: "Hilton Franchise Holding LLC",
+  },
+  home226: {
+    label: "2026 Home2 Suites by Hilton Franchise Disclosure Document (issued March 30, 2026): Items 1, 6, 7 and 19",
+    url: "https://hmd-wp.go-vip.net/wp-content/uploads/2026/03/2026-US-FDD-Home2.pdf",
+    publisher: "Hilton Franchise Holding LLC",
+  },
+  homewood26: {
+    label: "2026 Homewood Suites by Hilton Franchise Disclosure Document (issued March 30, 2026): Items 7 and 19",
+    url: "https://hmd-wp.go-vip.net/wp-content/uploads/2026/03/2026-US-FDD-Homewood.pdf",
+    publisher: "Hilton Franchise Holding LLC",
+  },
+  tru26: {
+    label: "2026 Tru by Hilton Franchise Disclosure Document (issued March 30, 2026): Items 7 and 19",
+    url: "https://hmd-wp.go-vip.net/wp-content/uploads/2026/03/2026-US-FDD-Tru.pdf",
+    publisher: "Hilton Franchise Holding LLC",
+  },
+  hgi26: {
+    label: "2026 Hilton Garden Inn Franchise Disclosure Document (issued March 30, 2026): Item 7",
+    url: "https://hmd-wp.go-vip.net/wp-content/uploads/2026/03/2026-US-FDD-HGI.pdf",
+    publisher: "Hilton Franchise Holding LLC",
+  },
+  spark26: {
+    label: "2026 Spark by Hilton Franchise Disclosure Document (issued March 30, 2026): Item 7, 100-room conversion",
+    url: "https://hmd-wp.go-vip.net/wp-content/uploads/2026/03/2026-US-FDD-Spark.pdf",
+    publisher: "Hilton Franchise Holding LLC",
+  },
+  livsmart26: {
+    label: "2026 LivSmart Studios by Hilton Franchise Disclosure Document (issued March 30, 2026): Item 7",
+    url: "https://hmd-wp.go-vip.net/wp-content/uploads/2026/03/2026-US-FDD-LivSmart-Studios.pdf",
+    publisher: "Hilton Franchise Holding LLC",
+  },
+  hvsCost: {
+    label: "HVS U.S. Hotel Development Cost Survey 2026 (July 13, 2026)",
+    url: "https://www.hvs.com/article/10509-hvs-us-hotel-development-cost-survey-2026",
+    publisher: "HVS",
+  },
+  censusC30: {
+    label: "Monthly Construction Spending, July 2026 (release CB26-140, September 1, 2026), Table 1: lodging",
+    url: "https://www.census.gov/construction/c30/pdf/release.pdf",
+    publisher: "U.S. Census Bureau",
+  },
+  jll2025: {
+    label: "Hotel investment momentum builds as U.S. market posts $24 billion in 2025 transaction volume (January 30, 2026)",
+    url: "https://www.jll.com/en-us/newsroom/jll-releases-2025-us-hotel-investment-trends-report",
+    publisher: "JLL",
+  },
+  lwhaQ2: {
+    label: "LW Hospitality Advisors Q2/Midyear 2026 Major U.S. Hotel Sales Survey and Lodging Sector Overview (August 5, 2026)",
+    url: "https://www.hotel-online.com/news/lw-hospitality-advisors-lwha-q2midyear-2026-major-us-hotel-sales-survey-lodging-sector-overview",
+    publisher: "LW Hospitality Advisors, republished by Hotel Online",
+  },
+  usc1031: {
+    label: "26 U.S.C. Section 1031: exchange of real property held for productive use or investment",
+    url: "https://www.law.cornell.edu/uscode/text/26/1031",
+    publisher: "Legal Information Institute, Cornell Law School",
+  },
+  edgar: {
+    label: "Search Filings: EDGAR company search, full text search and tutorials",
+    url: "https://www.sec.gov/search-filings",
+    publisher: "U.S. Securities and Exchange Commission",
+  },
+  sbaTracker: {
+    label: "SBA loans to hotels: 7(a) and 504 approvals for NAICS 721110, built from SBA's public FOIA data as of June 30, 2026",
+    url: "/data/sba-hotel-lending",
+    publisher: "Matthews Hotel Markets (first-party tracker of SBA public data)",
+  },
 } as const;
 
 export type SourceKey = keyof typeof CATALOG;

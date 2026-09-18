@@ -11,6 +11,7 @@ import {
   SITE_URL,
   breadcrumb,
   collectionPageNode,
+  itemList,
   webPage,
 } from "@/lib/entity";
 import { clusters } from "@/lib/data/answers";
@@ -71,6 +72,11 @@ export default function ToolsHubPage() {
         name: t.h1,
       })),
     }),
+    // The visible list of calculators, one for one.
+    itemList(
+      tools.map((t) => ({ name: t.h1, path: `/tools/${t.slug}` })),
+      `${url}#tools`,
+    ),
     breadcrumb([{ name: "Tools", path: toolsHub.path }]),
   ];
 

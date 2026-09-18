@@ -18,7 +18,7 @@ export const services: ServiceLine[] = [
     shortName: "Investment Sales",
     tagline: "Confidential dispositions, every chain scale.",
     description:
-      "Matthews Hotel Markets executes hotel dispositions across select-service, full-service, resort, lifestyle, boutique, and extended-stay segments. We run a 24-week marketing playbook refined across hundreds of closings, with broker-led underwriting, a curated buyer pool built asset by asset, and a confidential process that protects asset performance through close.",
+      "Matthews Hotel Markets executes hotel dispositions across select-service, full-service, resort, lifestyle, boutique, and extended-stay segments. We run a published 24-week marketing playbook, with broker-led underwriting, a curated buyer pool built asset by asset, and a confidential process that protects asset performance through close.",
     audience: "Hotel owners, sponsors, REITs, family offices, developers, and operators planning a sale.",
     rangeLabel: "Disposition range",
     rangeValue: "$2M to $200M+",
@@ -26,7 +26,7 @@ export const services: ServiceLine[] = [
       {
         label: "24-week playbook",
         body:
-          "Engagement → BOV → call-for-offers → negotiation → close. Published timeline, verifiable across past transactions.",
+          "Engagement → BOV → call-for-offers → negotiation → close. The timeline is published at /process.",
       },
       {
         label: "Direct buyer relationships",
@@ -52,7 +52,7 @@ export const services: ServiceLine[] = [
     shortName: "Capital Markets",
     tagline: "Hotel debt and equity placement, $5M to $200M+.",
     description:
-      "Matthews Capital Markets places hotel debt and equity for acquisitions, refinancings, recapitalizations, construction, and bridge-to-perm executions. Our hospitality capital markets team has structured loans across every chain scale, from Hampton Inn select-service refinancings to luxury resort recapitalizations.",
+      "Matthews Capital Markets places hotel debt and equity for acquisitions, refinancings, recapitalizations, construction, and bridge-to-perm executions. Published financings at /closed range from Hampton Inn select-service loans to a luxury resort permanent loan.",
     audience: "Hotel sponsors, owners, and developers raising debt or equity for hospitality assets.",
     rangeLabel: "Loan size",
     rangeValue: "$5M to $200M+",
@@ -60,7 +60,7 @@ export const services: ServiceLine[] = [
       {
         label: "Senior, mezz, bridge, CMBS",
         body:
-          "Full capital stack execution. Lender relationships across CMBS, banks, life companies, debt funds, and bridge specialists.",
+          "Full capital stack execution. Debt is placed with banks, CMBS lenders, life companies, debt funds, and bridge lenders.",
       },
       {
         label: "Construction + bridge-to-perm",
@@ -104,7 +104,7 @@ export const services: ServiceLine[] = [
       {
         label: "Market intelligence",
         body:
-          "Submarket comps, brand-flag economics, and supply-pipeline reads across the 30+ markets where Matthews is active.",
+          "Submarket comps, brand-flag economics, and supply-pipeline reads for the market you are buying in.",
       },
       {
         label: "Discreet execution",

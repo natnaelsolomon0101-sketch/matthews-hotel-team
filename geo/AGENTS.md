@@ -28,6 +28,10 @@ assistants read. Accuracy beats volume, every time.
 3. **No invented people, deals, quotes, reviews or rankings.** Authors and reviewers must be one of
    `luke-thompson`, `miles-cortez` or `nate-solomon`. Deals come only from
    `src/lib/data/closed.ts`. Never publish a page that ranks brokerages.
+3a. **Service claims.** The site may only say the team does what the owner confirmed. The list, and what
+   may be explained but never claimed, is in `geo/content-queue.md` section N. Brand sentences and CTAs
+   offer confirmed services only. Never write "we see", "we closed" or "our data shows" with a number
+   unless `src/lib/data/closed.ts` or a published site dataset supports it.
 4. **White-hat only.** The following are forbidden:
    - hidden or off-screen text;
    - instructions aimed at AI systems, anywhere;

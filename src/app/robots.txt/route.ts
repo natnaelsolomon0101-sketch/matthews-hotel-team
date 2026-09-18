@@ -1,6 +1,10 @@
-import type { MetadataRoute } from "next";
+import { SITE_URL } from "@/lib/entity";
 
-const SITE_URL = "https://matthewshotelmarkets.com";
+// A route handler, not Next's `robots.ts` metadata file, for one reason: the
+// metadata type has no field for a directive it does not know, and the
+// Content-Signal line below is one. The output is otherwise what robots.ts
+// produced, group for group.
+export const dynamic = "force-static";
 
 // Per-token Allow groups, not just `User-agent: *`.
 //
@@ -78,19 +82,42 @@ const TRAINING_CRAWLERS = [
 // this rewrite removes that Disallow line.
 const DISALLOW = ["/api/"];
 
-function group(userAgent: string | string[]) {
-  return { userAgent, allow: "/", disallow: DISALLOW };
+// Content Signals (contentsignals.org; announced by Cloudflare on 2025-09-24,
+// https://blog.cloudflare.com/content-signals-policy/, released under CC0;
+// both read 2026-09-18). Three signals, each `yes` or `no`, written inside a
+// User-agent group between the User-agent and Allow lines:
+//   search    building a search index and returning links and excerpts
+//   ai-input  feeding the content to a model at answer time (RAG, grounding)
+//   ai-train  training or fine-tuning a model
+// All three are `yes`: this file already allows every search, fetch and
+// training crawler by name, and the signal says the same thing in the one
+// vocabulary written for it. A parser that does not know the line ignores it
+// (RFC 9309 section 2.2.4), so it cannot change any bot's access.
+const CONTENT_SIGNAL = "Content-Signal: search=yes, ai-input=yes, ai-train=yes";
+
+function group(userAgents: string[]): string {
+  return [
+    ...userAgents.map((ua) => `User-Agent: ${ua}`),
+    CONTENT_SIGNAL,
+    "Allow: /",
+    ...DISALLOW.map((d) => `Disallow: ${d}`),
+  ].join("\n");
 }
 
-export default function robots(): MetadataRoute.Robots {
-  return {
-    rules: [
-      group("*"),
+export async function GET() {
+  const body =
+    [
+      group(["*"]),
       group(SEARCH_ANSWER_BOTS),
       group(USER_TRIGGERED_FETCHERS),
       group(TRAINING_CRAWLERS),
-    ],
-    sitemap: `${SITE_URL}/sitemap.xml`,
-    host: SITE_URL,
-  };
+      `Host: ${SITE_URL}\nSitemap: ${SITE_URL}/sitemap.xml`,
+    ].join("\n\n") + "\n";
+
+  return new Response(body, {
+    headers: {
+      "Content-Type": "text/plain",
+      "Cache-Control": "public, max-age=0, must-revalidate",
+    },
+  });
 }

@@ -202,7 +202,7 @@ export const page: AnswerPage = {
     label: "Get both numbers run for your hotel",
     href: "/contact"
   },
-  brandSentence: "Matthews Hotel Markets runs both sides of this for owners, and a fair number of those conversations end with us saying hold."
+  brandSentence: "Matthews Hotel Markets arranges hotel refinancing and sells hotels, so it can run both sides of this for an owner, and it will say hold when the numbers say hold."
 };
 
 export default page;

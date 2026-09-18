@@ -39,7 +39,7 @@ export function closedFaqs(d: ClosedDeal): Faq[] {
     },
     {
       q: `Who at Matthews Hotel Markets executed this transaction?`,
-      a: `${d.brokerSlugs.length > 0 ? d.brokerSlugs.map(slugToName).join(", ") : "Matthews Hotel Markets investment sales team"}. The transaction was sourced through direct relationships with the buyer pool active in this segment and market at the time of close.`,
+      a: `${d.brokerSlugs.length > 0 ? d.brokerSlugs.map(slugToName).join(", ") : "Matthews Hotel Markets investment sales team"}.`,
     },
     {
       q: `Where can I see comparable ${d.brand ?? d.segment} closes?`,
@@ -51,7 +51,7 @@ export function closedFaqs(d: ClosedDeal): Faq[] {
     },
     {
       q: `Is Matthews currently advising on similar ${d.segment} mandates?`,
-      a: `Yes, Matthews actively executes ${d.segment.toLowerCase()} dispositions and acquisitions across the United States. Active mandates and recent closes are at /listings and /closed. For confidential conversations on a similar disposition or acquisition, the team responds within 24 hours.`,
+      a: `Yes, Matthews actively executes ${d.segment.toLowerCase()} dispositions and acquisitions across the United States. Current listings and published closings are at /listings and /closed. For a confidential conversation on a similar disposition or acquisition, reach the team at /contact.`,
     },
   ];
 }
@@ -69,11 +69,11 @@ export function marketFaqs(m: Market): Faq[] {
     },
     {
       q: `Who are the named demand drivers behind ${m.city} hotel performance?`,
-      a: `${m.demandDrivers.slice(0, 5).join("; ")}. Underwriting in this market keys on the diversification of those drivers. Concentration in any single demand source is the most common reason a buyer haircuts our pro-forma RevPAR.`,
+      a: `${m.demandDrivers.slice(0, 5).join("; ")}. Underwriting in this market keys on the diversification of those drivers. Concentration in any single demand source is a common reason a buyer haircuts a pro-forma RevPAR.`,
     },
     {
       q: `Who at Matthews Hotel Markets covers ${m.city}?`,
-      a: `Our ${m.city} mandates are led by ${m.brokerSlugs.length > 0 ? m.brokerSlugs.map(slugToName).join(" and ") : "the Matthews Hotel Markets investment sales team"}. ${m.brokerSlugs.length > 0 ? `Direct contact info is on each broker's profile. ` : ""}For confidential disposition or acquisition conversations, the team responds within 24 hours.`,
+      a: `Our ${m.city} mandates are led by ${m.brokerSlugs.length > 0 ? m.brokerSlugs.map(slugToName).join(" and ") : "the Matthews Hotel Markets investment sales team"}. ${m.brokerSlugs.length > 0 ? `Direct contact info is on each broker's profile. ` : ""}For confidential disposition or acquisition conversations, reach the team at /contact.`,
     },
     {
       q: `How long does a typical ${m.city} hotel disposition take?`,

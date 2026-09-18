@@ -32,7 +32,7 @@ export const offices: Office[] = [
     geo: { lat: 30.2672, lng: -97.7431 },
     marketTagline: "Texas Sun Belt hotel investment sales, anchored downtown.",
     marketCommentary:
-      "Austin is the densest hospitality investment-sales market in Texas, and Matthews Hotel Markets's headquarters sits two blocks from the Capitol on Congress Ave. Our Austin team covers Hill Country resort assets, Austin MSA select-service hotels, and capital markets execution across the Texas triangle (Austin / San Antonio / Houston / Dallas-Fort Worth). Texas accounted for the largest single-state share of the team's 2024 production.",
+      "Austin is the densest hospitality investment-sales market in Texas, and Matthews Hotel Markets's headquarters sits two blocks from the Capitol on Congress Ave. Our Austin team covers Hill Country resort assets, Austin MSA select-service hotels, and capital markets execution across the Texas triangle (Austin / San Antonio / Houston / Dallas-Fort Worth). Texas is the largest single-state share of the transactions published at /closed.",
     brokerSlugs: ["luke-thompson", "nate-solomon"],
     hq: true,
   },

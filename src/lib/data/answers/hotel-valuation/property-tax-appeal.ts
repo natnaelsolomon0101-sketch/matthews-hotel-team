@@ -249,7 +249,7 @@ export const page: AnswerPage = {
     label: "Ask for a broker opinion of value",
     href: "/contact"
   },
-  brandSentence: "Matthews Hotel Markets values hotels for owners who are deciding whether to sell, refinance or hold, and the same income analysis is the starting point for a tax appeal."
+  brandSentence: "Matthews Hotel Markets does not file or argue property tax appeals and is not an appraiser. It prepares free broker opinions of value for hotel owners deciding whether to sell, refinance or hold."
 };
 
 export default page;
