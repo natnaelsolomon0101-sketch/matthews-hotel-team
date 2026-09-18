@@ -96,6 +96,7 @@ why in its description.
 | Tools | `src/lib/data/tools/`, `src/app/tools/` |
 | Rate sheet | `src/lib/rates/` (`sheet.ts`, `sources.ts`, `statistics.ts`), runbook in `geo/08-data.md` |
 | Entity facts (brand, address, team, JSON-LD) | `src/lib/entity.ts`, the only place they are defined |
+| Markdown twins, `/mcp`, `/openapi.json`, `/developers` | `src/lib/agent/**`, documented in `geo/12-agent-access.md`. Twins are generated from the data modules. Four pages have hand-written prose (`/rates` intro, `/rates/methodology`, `/about`, the statistics intro), transcribed in `src/lib/agent/static-pages.ts`: if you edit that prose in the page, edit it there too, or the gate's parity check fails. MCP tool descriptions describe data only and never instruct a model. |
 | Sitemap, llms.txt, feed | Generated from the data modules; new pages appear automatically once registered |
 | Briefs and priorities | `geo/05-briefs/`, `geo/05-briefs/_wave2-stubs.md`, `geo/04-queries.csv`, `geo/04-queries.md` |
 | The working skill: how to pick, write and check GEO work | `.claude/skills/geo-improve/SKILL.md` (read it after this file) |

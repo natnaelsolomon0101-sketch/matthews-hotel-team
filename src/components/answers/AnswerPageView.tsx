@@ -71,7 +71,11 @@ function labelForPath(path: string): string {
     "/research/mhi/q1-2026": "Matthews Hotel Index, Q1 2026",
     "/data/hotel-financing-statistics": "Hotel financing statistics",
     "/process": "How a listing engagement runs",
+    "/tools": "Hotel finance calculators",
     "/tools/dscr-calculator": "Hotel DSCR calculator",
+    "/tools/refinance-vs-sell": "Refinance vs sell calculator",
+    "/tools/debt-yield-calculator": "Hotel debt yield calculator",
+    "/tools/cap-rate-calculator": "Hotel cap rate calculator",
   };
   return KNOWN[path] ?? path;
 }

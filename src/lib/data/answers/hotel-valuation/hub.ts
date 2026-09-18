@@ -213,7 +213,8 @@ export const page: AnswerPage = {
       "/glossary/bov"
     ],
     data: [
-      "/research/mhi/q1-2026"
+      "/research/mhi/q1-2026",
+      "/tools"
     ]
   },
   cta: {

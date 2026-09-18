@@ -204,7 +204,8 @@ export const page: AnswerPage = {
       "/glossary/noi"
     ],
     data: [
-      "/rates"
+      "/rates",
+      "/tools"
     ]
   },
   cta: {

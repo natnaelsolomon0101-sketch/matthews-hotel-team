@@ -224,7 +224,8 @@ export const page: AnswerPage = {
       "/glossary/cap-rate"
     ],
     data: [
-      "/research/mhi/q1-2026"
+      "/research/mhi/q1-2026",
+      "/tools/refinance-vs-sell"
     ]
   },
   cta: {
