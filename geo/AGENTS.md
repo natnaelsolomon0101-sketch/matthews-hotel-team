@@ -80,7 +80,11 @@ why in its description.
    https://matthewshotelmarkets.com, confirm HTTP 200 and the new content, and do nothing more
    against production.
 7. Append one line to `geo/agent-log.md` in the same PR:
-   `YYYY-MM-DD | role | what shipped | PR # | gate result`.
+   `YYYY-MM-DD | role | what shipped | PR # | gate result`. **Every run logs, even one that changes
+   nothing.** In that case the PR contains only the log line, for example
+   `no changes needed: 0 dead links`. The **Agent watchdog** Action reads this file every evening and
+   opens an issue for Nate when a role goes quiet. A missing line looks exactly like a broken
+   agent. Use the role names `writer`, `maintainer` and `rates`.
 
 ## 4. Where things live
 
