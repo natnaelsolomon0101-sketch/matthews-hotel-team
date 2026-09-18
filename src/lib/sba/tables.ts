@@ -21,8 +21,10 @@ import {
   year,
   type RankRow,
 } from "./index";
+import { NO_STATE_PAGE, stateLinkLabel, statePageByCode } from "./states";
 
-export type SbaTable = { columns: string[]; rows: string[][] };
+/** `links`, when present, has one entry per row: a site path that the row's last cell links to, or null. */
+export type SbaTable = { columns: string[]; rows: string[][]; links?: (string | null)[] };
 
 const fyLabel = (fy: number) => (year(fy, "7a").partialYear ? `FY${fy} (partial)` : `FY${fy}`);
 
@@ -39,7 +41,8 @@ export function byYearTable(): SbaTable {
 
 export function byStateTable(): SbaTable {
   return {
-    columns: ["State", `FY${LAST_FY} loans`, `FY${LAST_FY} gross approval`, `${fyRange(T5)} loans`, `${fyRange(T5)} 7(a) loans`, `${fyRange(T5)} 504 loans`, `${fyRange(T5)} gross approval`],
+    columns: ["State", `FY${LAST_FY} loans`, `FY${LAST_FY} gross approval`, `${fyRange(T5)} loans`, `${fyRange(T5)} 7(a) loans`, `${fyRange(T5)} 504 loans`, `${fyRange(T5)} gross approval`, "State page"],
+    links: statesByTrailing5.map((s) => statePageByCode(s.state)?.path ?? null),
     rows: statesByTrailing5.map((s) => [
       stateName(s.state),
       int(s.lastFullFiscalYear.count),
@@ -48,6 +51,7 @@ export function byStateTable(): SbaTable {
       int(s.trailing5.count7a),
       int(s.trailing5.count504),
       usdM(s.trailing5.grossApproval),
+      ((p) => (p ? stateLinkLabel(p) : NO_STATE_PAGE))(statePageByCode(s.state)),
     ]),
   };
 }

@@ -50,6 +50,7 @@ const nextConfig: NextConfig = {
       { source: "/rates/methodology", headers: alt("/rates/methodology") },
       { source: "/data/hotel-financing-statistics", headers: alt("/data/hotel-financing-statistics") },
       { source: "/data/sba-hotel-lending", headers: alt("/data/sba-hotel-lending") },
+      { source: "/data/sba-hotel-lending/:state((?!.*\\.md$)[^/]+)", headers: alt("/data/sba-hotel-lending/:state") },
     ];
   },
 
@@ -72,6 +73,7 @@ const nextConfig: NextConfig = {
           destination: "/agent-md/data/hotel-financing-statistics",
         },
         { source: "/data/sba-hotel-lending", has: wantsMarkdown, destination: "/agent-md/data/sba-hotel-lending" },
+        { source: "/data/sba-hotel-lending/:state", has: wantsMarkdown, destination: "/agent-md/data/sba-hotel-lending/:state" },
       ],
       afterFiles: [],
       fallback: [],

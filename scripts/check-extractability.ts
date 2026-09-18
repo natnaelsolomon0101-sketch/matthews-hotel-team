@@ -13,6 +13,7 @@ import { answerPages, answerPath } from "../src/lib/data/answers";
 import { tools } from "../src/lib/data/tools";
 import { glossary } from "../src/lib/data/glossary";
 import { BRAND } from "../src/lib/entity";
+import { statePages } from "../src/lib/sba/states";
 
 const base = (process.argv[2] ?? "http://localhost:3000").replace(/\/$/, "");
 const MONTH = "(January|February|March|April|May|June|July|August|September|October|November|December)";
@@ -26,6 +27,7 @@ const paths = [
   "/rates",
   "/data/hotel-financing-statistics",
   "/data/sba-hotel-lending",
+  ...statePages.map((s) => s.path),
   "/about",
   "/press",
 ];

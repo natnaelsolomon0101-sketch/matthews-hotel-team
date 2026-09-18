@@ -45,6 +45,7 @@ import { offices } from "../src/lib/data/offices";
 import { clusters, answerPath } from "../src/lib/data/answers";
 import { tools } from "../src/lib/data/tools";
 import { EDITIONS } from "../src/lib/rates/sheet";
+import { statePages } from "../src/lib/sba/states";
 
 const PROD = "https://matthewshotelmarkets.com";
 const LOCAL = "http://localhost:3000";
@@ -96,6 +97,7 @@ function urls(): string[] {
     "/data/hotel-financing-statistics",
     "/data/sba-hotel-lending",
   ];
+  for (const s of statePages) u.push(s.path);
   for (const e of EDITIONS) u.push(`/rates/${e.slug}`);
   for (const c of clusters) {
     u.push(`/${c.cluster}`);

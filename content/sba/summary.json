@@ -9,7 +9,7 @@
     "license": "https://www.usa.gov/publicdomain/label/1.0/",
     "datasetModified": "2026-04-28T18:42:49+00:00",
     "asOf": "2026-06-30",
-    "fetchedAt": "2026-09-18T18:26:05.865Z",
+    "fetchedAt": "2026-09-18T20:57:02.089Z",
     "naics": "721110",
     "sinceFiscalYear": 2010,
     "lastFullFiscalYear": 2025,
@@ -698,6 +698,31 @@
         "name": "by-state FY2025 vs by-year FY2025",
         "expected": 1051,
         "actual": 1051
+      },
+      {
+        "name": "state-detail year cells vs straight count",
+        "expected": 17360,
+        "actual": 17360
+      },
+      {
+        "name": "state-detail trailing 5 vs by-year FY2021-FY2025",
+        "expected": 5298,
+        "actual": 5298
+      },
+      {
+        "name": "state-detail size bands vs by-year FY2021-FY2025",
+        "expected": 5298,
+        "actual": 5298
+      },
+      {
+        "name": "state-detail national trailing 5 vs by-year FY2021-FY2025",
+        "expected": 5298,
+        "actual": 5298
+      },
+      {
+        "name": "states whose state-detail trailing 5 differs from by-state.json",
+        "expected": 0,
+        "actual": 0
       },
       {
         "name": "FOIA_504_FY2010_Present_asof_260630.csv: hotel rows = before FY2010 + cancelled + counted",

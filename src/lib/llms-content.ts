@@ -37,6 +37,7 @@ import {
   HQ_ADDRESS_LINE,
   bioMembers,
 } from "./entity";
+import { STATE_PAGE_FLOOR, statePages as sbaStatePages } from "./sba/states";
 
 function url(path: string) {
   return `${SITE_URL}${path}`;
@@ -191,6 +192,13 @@ export function buildLlmsTxt(): string {
       "Aggregated from SBA's public 7(a) and 504 loan-level files (NAICS 721110), refreshed quarterly. " +
       `Machine readable: ${url("/data/sba-hotel-lending.json")} and ${url("/data/sba-hotel-lending.csv")}.`,
   );
+  lines.push(
+    `- SBA loans to hotels by state, ${sbaStatePages.length} pages, one for each state with at least ${STATE_PAGE_FLOOR} SBA hotel loans in the last five full fiscal years. ` +
+      "Each has that state's loans by fiscal year and program, top ten 7(a) lenders and 504 CDCs, and loan sizes against the national figures:",
+  );
+  for (const s of [...sbaStatePages].sort((a, b) => a.name.localeCompare(b.name))) {
+    lines.push(`  - ${s.name}: ${s.url}`);
+  }
   lines.push("");
 
   // Machine formats (geo/12-agent-access.md). Every one of these is generated

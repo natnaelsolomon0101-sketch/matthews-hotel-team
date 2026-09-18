@@ -243,6 +243,8 @@ type FileRecon = {
 
 const byYear = new Map<string, YearCell>(); // `${fy}|${program}`
 const byStateYear = new Map<string, Agg>(); // `${state}|${fy}|${program}`
+/** Loan amounts per state, year and program, held in memory only, for the per-state medians and size bands. */
+const stateAmounts = new Map<string, number[]>(); // `${state}|${fy}|${program}`
 const byLenderYear = new Map<string, Agg>(); // `${program}|${fy}|${state}|${name}`
 const byBucketYear = new Map<string, Agg>(); // `${program}|${fy}|${bucket}`
 const otherNaics = new Map<string, Agg>(); // `${naics}|${fy}|${program}`
@@ -348,6 +350,8 @@ async function processFile(d: Dist) {
     const sk = `${state}|${fy}|${d.program}`;
     if (!byStateYear.has(sk)) byStateYear.set(sk, agg());
     add(byStateYear.get(sk)!, amt);
+    if (!stateAmounts.has(sk)) stateAmounts.set(sk, []);
+    stateAmounts.get(sk)!.push(amt);
 
     const lender = (row[c[lenderCol]] ?? "").trim().replace(/\s+/g, " ") || "Not reported";
     const lk = `${d.program}|${fy}|${state}|${lender}`;
@@ -403,6 +407,16 @@ function rankLenders(program: Program, years: number[], state: string | null, by
     }));
 }
 
+/** How many different lender or CDC names appear in a state and program over the given years. */
+function distinctLenders(program: Program, years: number[], state: string): number {
+  const names = new Set<string>();
+  for (const k of byLenderYear.keys()) {
+    const [p, fy, st, ...rest] = k.split("|");
+    if (p === program && st === state && years.includes(Number(fy))) names.add(rest.join("|"));
+  }
+  return names.size;
+}
+
 async function main() {
   console.log(`SBA hotel lending refresh${DRY ? " (dry run, nothing will be written)" : ""}`);
   console.log(`metadata: ${METADATA_URL}`);
@@ -412,7 +426,7 @@ async function main() {
 
   // Skip the 500 MB download when SBA has not posted a new quarter.
   const existing = path.join(OUT_DIR, "summary.json");
-  if (!DRY && !FORCE && existsSync(existing)) {
+  if (!DRY && !FORCE && existsSync(existing) && existsSync(path.join(OUT_DIR, "state-detail.json"))) {
     try {
       const prev = JSON.parse(await readFile(existing, "utf8")) as { meta?: { files?: { title: string }[] } };
       const before = (prev.meta?.files ?? []).map((f) => f.title).sort().join("\n");
@@ -505,6 +519,51 @@ async function main() {
     }),
   );
 
+  /* per-state detail, for the state pages under /data/sba-hotel-lending/<state> */
+  // Dollars, averages and medians are withheld (null) in any cell with one or
+  // two loans, because they would expose a single loan amount.
+  const SMALL = 3;
+  const amountsFor = (st: string | null, fys: number[], program: Program) => {
+    const out: number[] = [];
+    for (const [k, v] of stateAmounts) {
+      const [s, fy, p] = k.split("|");
+      if ((st === null || s === st) && p === program && fys.includes(Number(fy))) out.push(...v);
+    }
+    return out;
+  };
+  const windowStats = (xs: number[]) => {
+    const gross = xs.reduce((s, x) => s + x, 0);
+    const open = xs.length >= SMALL;
+    return {
+      count: xs.length,
+      grossApproval: open ? round(gross) : xs.length ? null : 0,
+      averageLoan: open ? round(gross / xs.length) : null,
+      medianLoan: open ? round(median(xs)) : null,
+    };
+  };
+  const bucketCounts = (xs: number[]) =>
+    BUCKETS.map((b) => ({ bucket: b.key, label: b.label, count: xs.filter((x) => (BUCKETS.find((y) => x >= y.min && x < y.max) ?? BUCKETS[0]) === b).length }));
+  const detailFor = (st: string | null) => ({
+    trailing5: { "7a": windowStats(amountsFor(st, trailing5, "7a")), "504": windowStats(amountsFor(st, trailing5, "504")) },
+    sizeBuckets: { "7a": bucketCounts(amountsFor(st, trailing5, "7a")), "504": bucketCounts(amountsFor(st, trailing5, "504")) },
+  });
+  const stateDetail = states.map((st) => ({
+    state: st,
+    byFiscalYear: years.flatMap((fy) =>
+      (["7a", "504"] as Program[]).map((program) => {
+        const v = byStateYear.get(`${st}|${fy}|${program}`);
+        const count = v?.count ?? 0;
+        return { fiscalYear: fy, partialYear: fy > lastFullFy, program, count, grossApproval: count === 0 ? 0 : count < SMALL ? null : round(v!.gross) };
+      }),
+    ),
+    ...detailFor(st),
+    lenders7a: rankLenders("7a", trailing3, st, "count", 10),
+    cdcs504: rankLenders("504", trailing3, st, "count", 10),
+    distinctLenders7a: distinctLenders("7a", trailing3, st),
+    distinctCdcs504: distinctLenders("504", trailing3, st),
+  }));
+  const nationalDetail = detailFor(null);
+
   /* adjacent NAICS codes, reported separately */
   const otherCodes = Object.entries(OTHER_NAICS).map(([code, description]) => {
     const win = (fys: number[]) => {
@@ -544,6 +603,18 @@ async function main() {
     { name: `size buckets vs by-year FY${trailing5[0]}-FY${lastFullFy}`, expected: t5Year, actual: t5Bucket },
     { name: `by-state FY${lastFullFy} vs by-year FY${lastFullFy}`, expected: lfyYear, actual: lfyState },
   ];
+  const detailYearCount = stateDetail.reduce((s, x) => s + x.byFiscalYear.reduce((t, y) => t + y.count, 0), 0);
+  const detailT5 = stateDetail.reduce((s, x) => s + x.trailing5["7a"].count + x.trailing5["504"].count, 0);
+  const detailBuckets = stateDetail.reduce((s, x) => s + [...x.sizeBuckets["7a"], ...x.sizeBuckets["504"]].reduce((t, b) => t + b.count, 0), 0);
+  const natDetailT5 = nationalDetail.trailing5["7a"].count + nationalDetail.trailing5["504"].count;
+  const detailVsByState = stateDetail.filter((x, i) => x.trailing5["7a"].count !== byState[i].trailing5.count7a || x.trailing5["504"].count !== byState[i].trailing5.count504).length;
+  checks.push(
+    { name: "state-detail year cells vs straight count", expected: straightCount, actual: detailYearCount },
+    { name: `state-detail trailing 5 vs by-year FY${trailing5[0]}-FY${lastFullFy}`, expected: t5Year, actual: detailT5 },
+    { name: `state-detail size bands vs by-year FY${trailing5[0]}-FY${lastFullFy}`, expected: t5Year, actual: detailBuckets },
+    { name: `state-detail national trailing 5 vs by-year FY${trailing5[0]}-FY${lastFullFy}`, expected: t5Year, actual: natDetailT5 },
+    { name: "states whose state-detail trailing 5 differs from by-state.json", expected: 0, actual: detailVsByState },
+  );
   for (const r of recon) {
     checks.push({
       name: `${r.file}: hotel rows = before FY${SINCE_FY} + cancelled + counted`,
@@ -620,8 +691,10 @@ async function main() {
   };
   const statesOut = { asOf, lastFullFiscalYear: lastFullFy, trailing5, lenderFiscalYears: trailing3, states: byState };
 
+  const stateDetailOut = { asOf, lastFullFiscalYear: lastFullFy, trailing5, lenderFiscalYears: trailing3, smallCellRule: `dollars, averages and medians are null where a cell has fewer than ${SMALL} loans`, national: nationalDetail, states: stateDetail };
+
   if (DRY) {
-    console.log(`\nDry run: would write summary.json, by-state.json and lenders.json to ${OUT_DIR}`);
+    console.log(`\nDry run: would write summary.json, by-state.json, lenders.json and state-detail.json to ${OUT_DIR}`);
     console.log(`Hotel loans counted since FY${SINCE_FY}: ${straightCount.toLocaleString("en-US")}, $${round(straightGross).toLocaleString("en-US")} gross approval.`);
     return;
   }
@@ -630,7 +703,8 @@ async function main() {
   await write("summary.json", summary);
   await write("by-state.json", statesOut);
   await write("lenders.json", lenders);
-  console.log(`\nWrote content/sba/summary.json, by-state.json, lenders.json (as of ${asOf}).`);
+  await write("state-detail.json", stateDetailOut);
+  console.log(`\nWrote content/sba/summary.json, by-state.json, lenders.json, state-detail.json (as of ${asOf}).`);
 }
 
 main().catch((e) => die((e as Error).stack ?? String(e)));

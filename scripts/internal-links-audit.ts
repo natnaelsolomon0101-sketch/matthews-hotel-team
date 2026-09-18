@@ -27,6 +27,7 @@ import { mhiQuarters } from "../src/lib/data/mhi";
 import { clusters, answerPath } from "../src/lib/data/answers";
 import { tools } from "../src/lib/data/tools";
 import { EDITIONS } from "../src/lib/rates/sheet";
+import { statePages } from "../src/lib/sba/states";
 
 const PROD = "https://matthewshotelmarkets.com";
 const LOCAL = process.env.LOCAL_BASE ?? "http://localhost:3000";
@@ -67,6 +68,7 @@ function urls(): string[] {
     "/data/hotel-financing-statistics",
     "/data/sba-hotel-lending",
   ];
+  for (const s of statePages) u.push(s.path);
   for (const l of listings.filter((x) => x.hasDetail !== false && !x.omUrl))
     u.push(`/listings/${l.slug}`);
   for (const c of closed) u.push(`/closed/${c.slug}`);
