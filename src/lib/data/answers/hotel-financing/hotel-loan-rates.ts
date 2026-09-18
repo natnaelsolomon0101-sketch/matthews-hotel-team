@@ -182,14 +182,14 @@ export const page: AnswerPage = {
     {
       n: 3,
       label: "7(a) loan program: terms, conditions, and eligibility",
-      url: "https://www.sba.gov/partners/lenders/7a-loan-program/terms-conditions-eligibility",
+      url: "https://www.sba.gov/sba-lenders/#7a-terms",
       publisher: "U.S. Small Business Administration",
       accessed: "2026-09-18"
     },
     {
       n: 4,
       label: "504 loans",
-      url: "https://www.sba.gov/funding-programs/loans/504-loans",
+      url: "https://www.sba.gov/loans/504-loans/",
       publisher: "U.S. Small Business Administration",
       accessed: "2026-09-18"
     },

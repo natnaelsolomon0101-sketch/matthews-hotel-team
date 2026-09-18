@@ -46,7 +46,7 @@ export const entry: GlossaryEntry = {
   sources: [
     {
       label: "HVS US Hotel Market Pulse",
-      url: "https://www.hvs.com/article/category/126-market-pulse",
+      url: "https://www.hvs.com/insights/",
       publisher: "HVS",
     },
     {
@@ -61,7 +61,7 @@ export const entry: GlossaryEntry = {
     },
     {
       label: "AHLA 2026 State of the Hotel Industry",
-      url: "https://www.ahla.com/research/state-hotel-industry",
+      url: "https://www.ahla.com/resource/2026-state-industry",
       publisher: "AHLA",
     },
     {
@@ -87,6 +87,6 @@ export const entry: GlossaryEntry = {
     "select-service-vs-full-service-capital-markets-2026",
     "q1-2026-outlook",
   ],
-  lastUpdated: "2026-05-10",
+  lastUpdated: "2026-09-18",
   authorSlug: "luke-thompson",
 };
