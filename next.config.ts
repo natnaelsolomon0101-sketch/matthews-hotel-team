@@ -1,5 +1,14 @@
 import type { NextConfig } from "next";
 import path from "node:path";
+import fs from "node:fs";
+
+// Answer clusters are the directories under src/lib/data/answers, so a new
+// cluster gets its Markdown twin routing without an edit here.
+const ANSWER_CLUSTERS = fs
+  .readdirSync(path.resolve(__dirname, "src/lib/data/answers"), { withFileTypes: true })
+  .filter((d) => d.isDirectory())
+  .map((d) => d.name)
+  .join("|");
 
 const nextConfig: NextConfig = {
   // Pin Turbopack workspace root to silence the multi-lockfile warning
@@ -28,7 +37,7 @@ const nextConfig: NextConfig = {
   // (RFC 8288), so pages whose metadata is not built by answerMetadata()
   // announce their Markdown copy too.
   async headers() {
-    const CLUSTERS = "hotel-financing|sell-a-hotel|hotel-valuation";
+    const CLUSTERS = ANSWER_CLUSTERS;
     const SITE = "https://matthewshotelmarkets.com";
     const alt = (p: string) => [
       { key: "Link", value: `<${SITE}${p}.md>; rel="alternate"; type="text/markdown"` },
@@ -47,7 +56,7 @@ const nextConfig: NextConfig = {
     const wantsMarkdown = [
       { type: "header" as const, key: "accept", value: "(.*)text/markdown(.*)" },
     ];
-    const CLUSTERS = "hotel-financing|sell-a-hotel|hotel-valuation";
+    const CLUSTERS = ANSWER_CLUSTERS;
     return {
       beforeFiles: [
         { source: "/:path*.md", destination: "/agent-md/:path*" },
