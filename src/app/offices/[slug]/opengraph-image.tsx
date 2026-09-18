@@ -107,7 +107,7 @@ export default async function Image({
               maxWidth: 1050,
             }}
           >
-            {office.city}, {office.state}
+            {`${office.city}, ${office.state}`}
           </div>
           <div
             style={{
@@ -130,7 +130,7 @@ export default async function Image({
             color: "rgba(255,255,255,0.7)",
           }}
         >
-          <div>matthewshotelmarkets.com/offices/{office.slug}</div>
+          <div>{`matthewshotelmarkets.com/offices/${office.slug}`}</div>
           <div style={{ fontWeight: 600, color: "#ffffff" }}>
             {office.streetAddress || office.city}
           </div>

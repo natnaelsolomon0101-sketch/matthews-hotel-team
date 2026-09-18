@@ -107,7 +107,7 @@ export default async function Image({
               maxWidth: 1000,
             }}
           >
-            {market.city}, {market.state}
+            {`${market.city}, ${market.state}`}
           </div>
           <div
             style={{
@@ -117,7 +117,7 @@ export default async function Image({
               lineHeight: 1.2,
             }}
           >
-            Hotel cap rates, transaction comps, and named brokers across the {market.msa}.
+            {`Hotel cap rates, transaction comps, and named brokers across the ${market.msa}.`}
           </div>
         </div>
 
@@ -130,7 +130,7 @@ export default async function Image({
             color: "rgba(255,255,255,0.7)",
           }}
         >
-          <div>matthewshotelmarkets.com/markets/{market.slug}</div>
+          <div>{`matthewshotelmarkets.com/markets/${market.slug}`}</div>
           <div style={{ fontWeight: 600, color: "#ffffff" }}>
             {market.capRateRange.split(".")[0]}
           </div>

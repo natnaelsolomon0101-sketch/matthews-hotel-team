@@ -16,6 +16,7 @@ import {
   webPage,
 } from "@/lib/entity";
 
+import { DEFAULT_OG_IMAGES, seoTitle } from "@/lib/seo-meta";
 /**
  * /markets — the market index.
  *
@@ -41,7 +42,7 @@ const LAST_UPDATED_LABEL = new Date(`${LAST_UPDATED}T12:00:00Z`).toLocaleDateStr
 const DESCRIPTION = `Hotel cap rates, ADR, RevPAR and occupancy across the ${markets.length} U.S. metros ${BRAND} covers, from the Matthews Hotel Index for ${mhi.label}.`;
 
 export const metadata: Metadata = {
-  title: `Hotel Markets We Cover | ${BRAND}`,
+  title: seoTitle(`Hotel Markets We Cover | ${BRAND}`),
   description: DESCRIPTION,
   alternates: { canonical: URL },
   openGraph: {
@@ -49,6 +50,7 @@ export const metadata: Metadata = {
     title: `Hotel markets covered by ${BRAND}`,
     description: DESCRIPTION,
     url: URL,
+    images: DEFAULT_OG_IMAGES,
   },
   twitter: {
     card: "summary_large_image",

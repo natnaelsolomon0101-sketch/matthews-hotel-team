@@ -12,7 +12,13 @@ import { services } from "@/lib/data/services";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/entity";
 
+import { seoTitle } from "@/lib/seo-meta";
 type Params = { slug: string };
+
+// Unknown slugs get the server-rendered 404 page (src/app/not-found.tsx).
+// Without this the 404 status was right but the body only rendered after
+// JavaScript ran. Every valid slug is in generateStaticParams below.
+export const dynamicParams = false;
 
 export function generateStaticParams(): Params[] {
   return services.map((s) => ({ slug: s.slug }));
@@ -30,7 +36,7 @@ export async function generateMetadata(props: {
   const description = `${service.tagline} ${service.description.slice(0, 110)}`;
 
   return {
-    title,
+    title: seoTitle(title),
     description: description.slice(0, 160),
     alternates: { canonical: url },
     openGraph: { type: "website", title, description, url },

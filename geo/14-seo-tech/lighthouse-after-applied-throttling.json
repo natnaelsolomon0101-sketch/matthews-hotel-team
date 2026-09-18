@@ -1,0 +1,38 @@
+{
+  "home": {
+    "runs": 3,
+    "perf": 99,
+    "seo": 100,
+    "a11y": 96,
+    "fcp": 1536.236,
+    "lcp": 1595.756,
+    "tbt": 0,
+    "cls": 0,
+    "si": 1638,
+    "lcpEl": "<img alt=\"\" fetchpriority=\"high\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" sizes=\"100vw\" srcset=\"/_next/image?url=%2Fimages%2Fhero-landscape.jpg&amp;w=640&amp;q=75 640w, /_next/im…\" src=\"http://localhost:4517/_next/image?url=%2Fimages%2Fhero-landscape.jpg&amp;w=750…\">"
+  },
+  "hotel-financing_refinance": {
+    "runs": 3,
+    "perf": 100,
+    "seo": 100,
+    "a11y": 93,
+    "fcp": 1531.843,
+    "lcp": 1531.844,
+    "tbt": 0,
+    "cls": 0.01394269485808814,
+    "si": 1557,
+    "lcpEl": "<p class=\"mt-7 text-[19px] leading-[1.45] tracking-[0.012em] text-[#1d1d1f]\">"
+  },
+  "rates": {
+    "runs": 3,
+    "perf": 99,
+    "seo": 100,
+    "a11y": 93,
+    "fcp": 1552.283,
+    "lcp": 1552.284,
+    "tbt": 0,
+    "cls": 0.01082087062516492,
+    "si": 1568,
+    "lcpEl": "<p class=\"mt-2 text-[13px] leading-[1.5] tracking-[-0.014em] text-[color:var(--text-…\">"
+  }
+}

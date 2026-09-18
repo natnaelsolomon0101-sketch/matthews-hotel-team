@@ -17,11 +17,12 @@ import { clusters } from "@/lib/data/answers";
 import { inputLabels, tools, toolsHub } from "@/lib/data/tools";
 import { MHI_LABEL, MHI_PATH } from "@/lib/data/tools/hotel-value-estimator";
 
+import { DEFAULT_OG_IMAGES, seoTitle } from "@/lib/seo-meta";
 const url = `${SITE_URL}${toolsHub.path}`;
 const title = `${toolsHub.title} | ${BRAND}`;
 
 export const metadata: Metadata = {
-  title,
+  title: seoTitle(title),
   description: toolsHub.description,
   alternates: { canonical: url },
   openGraph: {
@@ -29,6 +30,7 @@ export const metadata: Metadata = {
     title,
     description: toolsHub.description,
     url,
+    images: DEFAULT_OG_IMAGES,
   },
   twitter: { card: "summary_large_image", title, description: toolsHub.description },
 };

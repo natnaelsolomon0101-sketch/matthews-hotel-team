@@ -12,8 +12,9 @@ import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/entity";
 import { latestEdition, MHDI_NAME, MHDI_ABBR } from "@/lib/rates/sheet";
 
+import { DEFAULT_OG_IMAGES, seoTitle } from "@/lib/seo-meta";
 export const metadata: Metadata = {
-  title: "Hotel Investment Research | Matthews Hotel Markets",
+  title: seoTitle("Hotel Investment Research | Matthews Hotel Markets"),
   description:
     "The Matthews Hotel Index, long-form insights, and market commentary on hospitality investment sales and capital markets.",
   alternates: { canonical: `${SITE_URL}/research` },
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
     title: "Hotel Investment Research | Matthews Hotel Markets",
     description: "Matthews Hotel Index quarterly cap-rate dataset, long-form insights, and market commentary.",
     url: `${SITE_URL}/research`,
+    images: DEFAULT_OG_IMAGES,
   },
   twitter: { card: "summary_large_image", title: "Hotel Investment Research | Matthews Hotel Markets" },
 };

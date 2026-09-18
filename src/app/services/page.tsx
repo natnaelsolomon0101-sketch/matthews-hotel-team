@@ -17,6 +17,7 @@ import {
   webPage,
 } from "@/lib/entity";
 
+import { DEFAULT_OG_IMAGES, seoTitle } from "@/lib/seo-meta";
 /**
  * /services — the service index.
  *
@@ -39,15 +40,19 @@ const LAST_UPDATED_LABEL = "September 17, 2026";
 
 const DESCRIPTION = `The three things ${BRAND} does: hotel investment sales from $2 million, hotel debt and equity placement from $5 million, and buy-side acquisition advisory.`;
 
+// <meta name=description> only (DESCRIPTION is 169 characters; 160 fit).
+const META_DESCRIPTION = `What ${BRAND} does: hotel investment sales from $2 million, hotel debt and equity placement from $5 million, and buy-side acquisition advisory.`;
+
 export const metadata: Metadata = {
-  title: `What We Do | ${BRAND}`,
-  description: DESCRIPTION,
+  title: seoTitle(`What We Do | ${BRAND}`),
+  description: META_DESCRIPTION,
   alternates: { canonical: URL },
   openGraph: {
     type: "website",
     title: `Services | ${BRAND}`,
     description: DESCRIPTION,
     url: URL,
+    images: DEFAULT_OG_IMAGES,
   },
   twitter: {
     card: "summary_large_image",

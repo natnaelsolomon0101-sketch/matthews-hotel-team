@@ -22,6 +22,7 @@ import type { ToolPage } from "@/lib/data/answers/types";
 import { glossary } from "@/lib/data/glossary";
 import { team } from "@/lib/data/team";
 import { KNOWN_PATH_LABELS } from "@/lib/data/answers/path-labels";
+import { DEFAULT_OG_IMAGES, seoTitle, socialTitle } from "@/lib/seo-meta";
 
 /**
  * Template A (answer + hub) and Template D (tool) from geo/05-templates.md.
@@ -605,9 +606,13 @@ export default AnswerPageView;
 /** Shared metadata builder so every page in the clusters is consistent. */
 export function answerMetadata(page: AnswerPage | ToolPage, path: string) {
   const url = `${SITE_URL}${path}`;
-  const title = `${page.title} | ${BRAND}`;
+  // `title` was `${page.title} | ${BRAND}` handed to the root layout's
+  // "%s | BRAND" template, so every answer page shipped the brand twice.
+  // seoTitle() is absolute (no template) and drops the brand when the page's
+  // own title already fills the 60 characters. Social cards keep the brand.
+  const title = socialTitle(page.title);
   return {
-    title,
+    title: seoTitle(page.title),
     description: page.description,
     // The Markdown twin (src/lib/agent/markdown.ts), built from this same
     // page object. Renders <link rel="alternate" type="text/markdown">.
@@ -619,6 +624,7 @@ export function answerMetadata(page: AnswerPage | ToolPage, path: string) {
       url,
       publishedTime: page.lastUpdated,
       modifiedTime: page.lastUpdated,
+      images: DEFAULT_OG_IMAGES,
     },
     twitter: {
       card: "summary_large_image" as const,

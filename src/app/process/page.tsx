@@ -7,10 +7,11 @@ import PosterCTA from "@/components/sections/shared/PosterCTA";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL, breadcrumb, webPage } from "@/lib/entity";
 
+import { DEFAULT_OG_IMAGES, seoTitle } from "@/lib/seo-meta";
 export const metadata: Metadata = {
-  title: "How to Sell a Hotel | 24-Week Transaction Process",
+  title: seoTitle("How to Sell a Hotel | 24-Week Transaction Process"),
   description:
-    "How to sell a hotel: a four-phase, 24-week marketing playbook from Matthews Hotel Markets. From engagement and underwriting to closing. Refined across hundreds of completed transactions.",
+    "How to sell a hotel: a four-phase, 24-week marketing playbook from Matthews Hotel Markets. From engagement and underwriting to closing.",
   alternates: { canonical: `${SITE_URL}/process` },
   openGraph: {
     type: "article",
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     description:
       "Four-phase, 24-week hotel disposition playbook. From engagement to close.",
     url: `${SITE_URL}/process`,
+    images: DEFAULT_OG_IMAGES,
   },
   twitter: {
     card: "summary_large_image",

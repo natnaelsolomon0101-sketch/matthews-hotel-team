@@ -12,6 +12,7 @@ import { offices } from "@/lib/data/offices";
 import { team } from "@/lib/data/team";
 import {
   BOILERPLATE,
+  BOILERPLATE_SHORT,
   BRAND,
   EMAIL,
   HQ_ADDRESS_LINE,
@@ -25,19 +26,27 @@ import {
   webPage,
 } from "@/lib/entity";
 
+import { DEFAULT_OG_IMAGES, seoTitle } from "@/lib/seo-meta";
 const URL = `${SITE_URL}/about`;
 const LAST_UPDATED = "2026-09-17";
 const LAST_UPDATED_LABEL = "September 17, 2026";
 
+// <meta name=description> only. BOILERPLATE is 262 characters and was also
+// the home page's description (a duplicate). BOILERPLATE_SHORT is its first
+// sentence minus the street address. Schema and the visible page keep
+// BOILERPLATE unchanged.
+const META_DESCRIPTION = BOILERPLATE_SHORT;
+
 export const metadata: Metadata = {
-  title: "About Matthews Hotel Markets",
-  description: BOILERPLATE,
+  title: seoTitle("About Matthews Hotel Markets"),
+  description: META_DESCRIPTION,
   alternates: { canonical: URL },
   openGraph: {
     type: "website",
     title: `About ${BRAND}`,
     description: BOILERPLATE,
     url: URL,
+    images: DEFAULT_OG_IMAGES,
   },
   twitter: {
     card: "summary_large_image",

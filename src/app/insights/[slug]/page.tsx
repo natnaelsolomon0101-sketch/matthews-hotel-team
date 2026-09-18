@@ -9,6 +9,12 @@ import { team } from "@/lib/data/team";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/entity";
 
+import { seoTitle } from "@/lib/seo-meta";
+// Unknown slugs get the server-rendered 404 page (src/app/not-found.tsx).
+// Without this the 404 status was right but the body only rendered after
+// JavaScript ran. Every valid slug is in generateStaticParams below.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return insights.map((i) => ({ slug: i.slug }));
 }
@@ -35,7 +41,7 @@ export async function generateMetadata(props: {
   );
 
   return {
-    title: insight.title,
+    title: seoTitle(insight.title),
     description,
     alternates: { canonical: url },
     authors: [{ name: byline }],

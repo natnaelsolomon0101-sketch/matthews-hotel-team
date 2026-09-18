@@ -18,12 +18,13 @@ import {
 } from "@/lib/rates/sheet";
 import { RATE_SOURCES } from "@/lib/rates/sources";
 
+import { DEFAULT_OG_IMAGES, seoTitle } from "@/lib/seo-meta";
 const edition = latestEdition();
 const url = `${SITE_URL}/rates/methodology`;
 
 export const metadata: Metadata = {
   // 52 characters.
-  title: "Rate Sheet Methodology | Matthews Hotel Markets",
+  title: seoTitle("Rate Sheet Methodology | Matthews Hotel Markets"),
   description:
     "How the Matthews Hotel Markets rate sheet is built: which numbers come from public sources, which come from live quotes, and which are not published at all.",
   alternates: { canonical: url },
@@ -33,6 +34,7 @@ export const metadata: Metadata = {
     description:
       "Which numbers are public, which are our observations, and which we do not publish.",
     url,
+    images: DEFAULT_OG_IMAGES,
   },
   twitter: { card: "summary_large_image", title: "Rate Sheet Methodology" },
 };

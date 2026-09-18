@@ -107,7 +107,7 @@ export default async function Image({
               maxWidth: 1050,
             }}
           >
-            {flag.name} for sale
+            {`${flag.name} for sale`}
           </div>
           <div
             style={{
@@ -117,7 +117,7 @@ export default async function Image({
               lineHeight: 1.2,
             }}
           >
-            {flag.segment} · investment sales, capital markets, and acquisition advisory.
+            {`${flag.segment} · investment sales, capital markets, and acquisition advisory.`}
           </div>
         </div>
 
@@ -130,7 +130,7 @@ export default async function Image({
             color: "rgba(255,255,255,0.7)",
           }}
         >
-          <div>matthewshotelmarkets.com/hotels-for-sale/{flag.slug}</div>
+          <div>{`matthewshotelmarkets.com/hotels-for-sale/${flag.slug}`}</div>
           <div style={{ fontWeight: 600, color: "#ffffff" }}>
             {flag.parentTicker || flag.parentCompany}
           </div>

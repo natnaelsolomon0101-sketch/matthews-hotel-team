@@ -11,20 +11,22 @@ import { latestEdition } from "@/lib/rates/sheet";
 import { twins } from "@/lib/agent/markdown";
 import { RATE_LIMIT_DESCRIPTION } from "@/lib/agent/rate-limit";
 
+import { DEFAULT_OG_IMAGES, seoTitle } from "@/lib/seo-meta";
 const url = `${SITE_URL}/developers`;
 const UPDATED = "2026-09-18";
 const UPDATED_LABEL = "September 18, 2026";
 
 export const metadata: Metadata = {
-  title: "For Developers and AI Agents | Matthews Hotel Markets",
+  title: seoTitle("For Developers and AI Agents | Matthews Hotel Markets"),
   description:
-    "Read Matthews Hotel Markets hotel finance data by machine: Markdown copies of pages, the rate sheet as JSON and CSV, an OpenAPI file, and a read-only MCP server.",
+    "Read Matthews Hotel Markets hotel finance data by machine: Markdown copies of pages, the rate sheet as JSON and CSV, an OpenAPI file and a read-only MCP server.",
   alternates: { canonical: url },
   openGraph: {
     type: "article",
     title: "For developers and AI agents",
     description: "Markdown copies, JSON, CSV, OpenAPI and a read-only MCP server.",
     url,
+    images: DEFAULT_OG_IMAGES,
   },
   twitter: { card: "summary_large_image", title: "For developers and AI agents" },
 };

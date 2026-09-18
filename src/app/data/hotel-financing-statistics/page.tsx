@@ -18,21 +18,23 @@ import { latestEdition } from "@/lib/rates/sheet";
 import { RATES_LICENSE } from "@/lib/rates/jsonld";
 import { PUBLISHED, UPDATED } from "./updated";
 
+import { DEFAULT_OG_IMAGES, seoTitle } from "@/lib/seo-meta";
 const url = `${SITE_URL}/data/hotel-financing-statistics`;
 
 const edition = latestEdition();
 
 export const metadata: Metadata = {
   // 56 characters.
-  title: "Hotel Financing Statistics, 2026 | Matthews Hotel",
+  title: seoTitle("Hotel Financing Statistics, 2026 | Matthews Hotel"),
   description:
-    `${STATS.length} hotel financing statistics, each with a source link, the date the source carries, and the date we last checked it. Rates, SBA, lending volume, maturities, transactions, fundamentals.`,
+    `${STATS.length} hotel financing statistics, each with a source link, the date the source carries and the date we last checked it. Rates, SBA, lending volume, maturities.`,
   alternates: { canonical: url },
   openGraph: {
     type: "article",
     title: "Hotel Financing Statistics, 2026",
     description: `${STATS.length} hotel finance numbers, each with a source and two dates.`,
     url,
+    images: DEFAULT_OG_IMAGES,
   },
   twitter: { card: "summary_large_image", title: "Hotel Financing Statistics, 2026" },
 };

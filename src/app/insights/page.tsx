@@ -8,8 +8,9 @@ import { insights } from "@/lib/data/insights";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL, breadcrumb, itemList, webPage } from "@/lib/entity";
 
+import { DEFAULT_OG_IMAGES, seoTitle } from "@/lib/seo-meta";
 export const metadata: Metadata = {
-  title: "Hotel Investment Insights | Quarterly Outlooks & White Papers",
+  title: seoTitle("Hotel Investment Insights | Quarterly Outlooks & White Papers"),
   description:
     "Quarterly hotel investment outlooks, white papers, and market briefings from Matthews Hotel Markets. Cap rates, ADR recovery, and the year ahead in hospitality.",
   alternates: { canonical: `${SITE_URL}/insights` },
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     description:
       "Quarterly hotel investment outlooks, white papers, and market briefings.",
     url: `${SITE_URL}/insights`,
+    images: DEFAULT_OG_IMAGES,
   },
   twitter: {
     card: "summary_large_image",

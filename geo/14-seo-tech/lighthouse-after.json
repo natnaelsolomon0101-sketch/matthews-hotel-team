@@ -1,0 +1,62 @@
+{
+  "home": {
+    "runs": 5,
+    "perf": 94,
+    "seo": 100,
+    "a11y": 96,
+    "fcp": 1360.35765,
+    "lcp": 3010.35765,
+    "tbt": 0,
+    "cls": 0,
+    "si": 1360.35765,
+    "lcpEl": "<img alt=\"\" fetchpriority=\"high\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" sizes=\"100vw\" srcset=\"/_next/image?url=%2Fimages%2Fhero-landscape.jpg&amp;w=640&amp;q=75 640w, /_next/im…\" src=\"http://localhost:4517/_next/image?url=%2Fimages%2Fhero-landscape.jpg&amp;w=750…\">"
+  },
+  "hotel-financing_refinance": {
+    "runs": 5,
+    "perf": 98,
+    "seo": 100,
+    "a11y": 93,
+    "fcp": 905.9419,
+    "lcp": 2454.9419,
+    "tbt": 0,
+    "cls": 0,
+    "si": 905.9419,
+    "lcpEl": "<p class=\"mt-7 text-[19px] leading-[1.45] tracking-[0.012em] text-[#1d1d1f]\">"
+  },
+  "hotel-franchise-costs_hampton-inn": {
+    "runs": 5,
+    "perf": 98,
+    "seo": 100,
+    "a11y": 93,
+    "fcp": 904.5464999999999,
+    "lcp": 2454.9331,
+    "tbt": 0,
+    "cls": 0,
+    "si": 904.5464999999999,
+    "lcpEl": "<p class=\"mt-7 text-[19px] leading-[1.45] tracking-[0.012em] text-[#1d1d1f]\">"
+  },
+  "listings": {
+    "runs": 5,
+    "perf": 96,
+    "seo": 100,
+    "a11y": 83,
+    "fcp": 906.1104,
+    "lcp": 2755.5994,
+    "tbt": 0,
+    "cls": 0,
+    "si": 906.1104,
+    "lcpEl": "<img alt=\"Walden Retreats Hill Country\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" sizes=\"(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw\" srcset=\"/_next/image?url=%2Flistings%2Fwalden-retreats-hill-country.jpg&amp;w=256&amp;q=88…\" src=\"http://localhost:4517/_next/image?url=%2Flistings%2Fwalden-retreats-hill-c…\">"
+  },
+  "rates": {
+    "runs": 5,
+    "perf": 98,
+    "seo": 100,
+    "a11y": 93,
+    "fcp": 905.2934,
+    "lcp": 2452.9875,
+    "tbt": 0,
+    "cls": 0,
+    "si": 905.2934,
+    "lcpEl": "<p class=\"mt-2 text-[13px] leading-[1.5] tracking-[-0.014em] text-[color:var(--text-…\">"
+  }
+}

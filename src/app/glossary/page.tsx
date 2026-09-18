@@ -10,8 +10,9 @@ import { glossary } from "@/lib/data/glossary";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/entity";
 
+import { DEFAULT_OG_IMAGES, seoTitle } from "@/lib/seo-meta";
 export const metadata: Metadata = {
-  title: "Hotel Investment Glossary | Matthews Hotel Markets",
+  title: seoTitle("Hotel Investment Glossary | Matthews Hotel Markets"),
   description:
     "Definitions for the terms hotel investors actually use: cap rate, RevPAR, ADR, PIP, BOV, IM. Trade-journalism voice, public sources cited.",
   alternates: { canonical: `${SITE_URL}/glossary` },
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     title: "Hotel Investment Glossary | Matthews Hotel Markets",
     description: "Definitions for the terms hotel investors actually use.",
     url: `${SITE_URL}/glossary`,
+    images: DEFAULT_OG_IMAGES,
   },
   twitter: { card: "summary_large_image", title: "Hotel Investment Glossary" },
 };

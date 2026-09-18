@@ -65,7 +65,7 @@ export default async function Image({
             fontWeight: 500,
           }}
         >
-          <div>Closed · {deal.year}</div>
+          <div>{`Closed · ${deal.year}`}</div>
           <div
             style={{
               padding: "8px 16px",
@@ -97,7 +97,7 @@ export default async function Image({
               maxWidth: 900,
             }}
           >
-            {deal.keys} keys · {deal.segment} · {deal.city}, {deal.state}
+            {`${deal.keys} keys · ${deal.segment} · ${deal.city}, ${deal.state}`}
           </div>
         </div>
 

@@ -159,13 +159,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
-    {
-      url: `${SITE_URL}/research/mhi`,
-      // Index of quarters — track the newest quarter's publish date.
-      lastModified: new Date(mhiQuarters[0]?.publishedAt ?? FILE_LAST_MODIFIED.research),
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
+    // /research/mhi is deliberately NOT listed: it is a 307 to the newest
+    // quarter (a stable alias for citations), and a sitemap lists only URLs
+    // that answer 200. The quarter pages are in mhiRoutes below.
+    // scripts/metadata-audit.mjs fails the gate on a redirected sitemap URL.
     {
       url: `${SITE_URL}/glossary`,
       lastModified: new Date(

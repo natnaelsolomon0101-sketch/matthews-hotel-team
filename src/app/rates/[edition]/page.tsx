@@ -9,6 +9,7 @@ import { EDITIONS, getEdition } from "@/lib/rates/sheet";
 import { ratesDatasetGraph } from "@/lib/rates/jsonld";
 import RateSheetView from "../_components/RateSheetView";
 
+import { DEFAULT_OG_IMAGES, seoTitle } from "@/lib/seo-meta";
 type Params = { edition: string };
 
 /**
@@ -29,12 +30,14 @@ export async function generateMetadata(props: {
   const e = getEdition(slug);
   if (!e) return { title: "Rate sheet archive" };
   const url = `${SITE_URL}/rates/${e.slug}`;
-  const title = `Hotel Loan Rate Sheet, ${e.label} | Matthews`;
+  // "Archive" keeps this title distinct from /rates, which shows the same
+  // month while that edition is current (duplicate-title gate check).
+  const title = `${e.label} Hotel Loan Rate Sheet (Archive)`;
   return {
-    title,
+    title: seoTitle(title),
     description: `Archived ${e.label} hotel loan rate sheet from Matthews Hotel Markets, kept exactly as published so a citation to it stays true.`,
     alternates: { canonical: url },
-    openGraph: { type: "article", title, url, publishedTime: e.publishedAt },
+    openGraph: { type: "article", title, url, publishedTime: e.publishedAt, images: DEFAULT_OG_IMAGES },
     twitter: { card: "summary_large_image", title },
   };
 }

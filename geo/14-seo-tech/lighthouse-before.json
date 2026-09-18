@@ -1,0 +1,62 @@
+{
+  "home": {
+    "runs": 3,
+    "perf": 90,
+    "seo": 100,
+    "a11y": 96,
+    "fcp": 904.9246,
+    "lcp": 3689.7738,
+    "tbt": 0,
+    "cls": 0,
+    "si": 904.9246,
+    "lcpEl": "<img alt=\"\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" sizes=\"100vw\" srcset=\"/_next/image?url=%2Fimages%2Fhero-landscape.jpg&amp;w=640&amp;q=88 640w, /_next/im…\" src=\"http://localhost:4517/_next/image?url=%2Fimages%2Fhero-landscape.jpg&amp;w=750…\">"
+  },
+  "hotel-financing_refinance": {
+    "runs": 3,
+    "perf": 91,
+    "seo": 100,
+    "a11y": 93,
+    "fcp": 905.6276,
+    "lcp": 3464.069,
+    "tbt": 0,
+    "cls": 0,
+    "si": 905.6276,
+    "lcpEl": "<p class=\"mt-7 text-[19px] leading-[1.45] tracking-[0.012em] text-[#1d1d1f]\">"
+  },
+  "hotel-franchise-costs_hampton-inn": {
+    "runs": 3,
+    "perf": 91,
+    "seo": 100,
+    "a11y": 93,
+    "fcp": 904.6994,
+    "lcp": 3460.8642499999996,
+    "tbt": 0,
+    "cls": 0,
+    "si": 904.6994,
+    "lcpEl": "<p class=\"mt-7 text-[19px] leading-[1.45] tracking-[0.012em] text-[#1d1d1f]\">"
+  },
+  "listings": {
+    "runs": 3,
+    "perf": 87,
+    "seo": 100,
+    "a11y": 83,
+    "fcp": 905.7523000000001,
+    "lcp": 4139.06955,
+    "tbt": 0,
+    "cls": 0,
+    "si": 905.7523000000001,
+    "lcpEl": "<img alt=\"Walden Retreats Hill Country\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" sizes=\"(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw\" srcset=\"/_next/image?url=%2Flistings%2Fwalden-retreats-hill-country.jpg&amp;w=256&amp;q=88…\" src=\"http://localhost:4517/_next/image?url=%2Flistings%2Fwalden-retreats-hill-c…\">"
+  },
+  "rates": {
+    "runs": 3,
+    "perf": 91,
+    "seo": 100,
+    "a11y": 93,
+    "fcp": 904.6837,
+    "lcp": 3461.70925,
+    "tbt": 0,
+    "cls": 0,
+    "si": 904.6837,
+    "lcpEl": "<p class=\"mt-2 text-[13px] leading-[1.5] tracking-[-0.014em] text-[color:var(--text-…\">"
+  }
+}

@@ -8,10 +8,11 @@ import JsonLd from "@/components/seo/JsonLd";
 import { listings } from "@/lib/data/listings";
 import { SITE_URL, breadcrumb, itemList, webPage } from "@/lib/entity";
 
+import { DEFAULT_OG_IMAGES, seoTitle } from "@/lib/seo-meta";
 export const metadata: Metadata = {
-  title: "Hotels for Sale | Active Listings",
+  title: seoTitle("Hotels for Sale | Active Listings"),
   description:
-    "Active hotel investment listings from Matthews Hotel Markets. Select-service, full-service, resort, lifestyle, and boutique hotels for sale across Texas, the Sun Belt, and the United States.",
+    "Active hotel listings from Matthews Hotel Markets. Select-service, full-service, resort, lifestyle, and boutique hotels for sale across the United States.",
   alternates: { canonical: `${SITE_URL}/listings` },
   openGraph: {
     title: "Hotels for Sale | Matthews Hotel Markets",
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
       "Active hotel investment listings. Select-service, full-service, resort, lifestyle, and boutique hotels for sale nationwide.",
     url: `${SITE_URL}/listings`,
     type: "website",
+    images: DEFAULT_OG_IMAGES,
   },
   twitter: {
     card: "summary_large_image",

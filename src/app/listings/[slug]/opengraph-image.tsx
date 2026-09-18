@@ -116,8 +116,7 @@ export default async function Image({
               maxWidth: 900,
             }}
           >
-            {listing.keys} keys · {listing.segment} · {listing.city},{" "}
-            {listing.state}
+            {`${listing.keys} keys · ${listing.segment} · ${listing.city}, ${listing.state}`}
           </div>
         </div>
 

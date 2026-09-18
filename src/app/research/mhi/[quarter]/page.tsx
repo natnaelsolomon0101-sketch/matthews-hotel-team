@@ -17,7 +17,13 @@ import {
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/entity";
 
+import { DEFAULT_OG_IMAGES, seoTitle } from "@/lib/seo-meta";
 type Params = { quarter: string };
+
+// Unknown slugs get the server-rendered 404 page (src/app/not-found.tsx).
+// Without this the 404 status was right but the body only rendered after
+// JavaScript ran. Every valid slug is in generateStaticParams below.
+export const dynamicParams = false;
 
 export function generateStaticParams(): Params[] {
   return mhiQuarters.map((q) => ({ quarter: q.slug }));
@@ -33,10 +39,10 @@ export async function generateMetadata(props: {
   const title = `Matthews Hotel Index, ${q.label} | Quarterly Cap Rate Dataset`;
   const description = `${q.headline} ${q.label} cap rates, ADR, and RevPAR across 14 U.S. hotel markets. Public data, refreshed every 90 days.`.slice(0, 160);
   return {
-    title,
+    title: seoTitle(title),
     description,
     alternates: { canonical: url },
-    openGraph: { type: "article", title, description, url, publishedTime: q.publishedAt },
+    openGraph: { type: "article", title, description, url, publishedTime: q.publishedAt, images: DEFAULT_OG_IMAGES },
     twitter: { card: "summary_large_image", title, description },
   };
 }

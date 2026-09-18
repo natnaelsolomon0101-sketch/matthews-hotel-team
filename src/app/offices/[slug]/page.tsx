@@ -20,10 +20,16 @@ import {
   webPage,
 } from "@/lib/entity";
 
+import { seoTitle } from "@/lib/seo-meta";
 /** Schema.org State expects a name, not a postal abbreviation. */
 const STATE_NAMES: Record<string, string> = { TX: "Texas", CO: "Colorado" };
 
 type Params = { slug: string };
+
+// Unknown slugs get the server-rendered 404 page (src/app/not-found.tsx).
+// Without this the 404 status was right but the body only rendered after
+// JavaScript ran. Every valid slug is in generateStaticParams below.
+export const dynamicParams = false;
 
 export function generateStaticParams(): Params[] {
   return offices.map((o) => ({ slug: o.slug }));
@@ -41,7 +47,7 @@ export async function generateMetadata(props: {
   const description = `Matthews Hotel Markets ${office.city}, ${office.state}. ${office.marketTagline} ${office.marketCommentary.slice(0, 60)}`;
 
   return {
-    title,
+    title: seoTitle(title),
     description: description.slice(0, 160),
     alternates: { canonical: url },
     openGraph: { type: "website", title, description, url },

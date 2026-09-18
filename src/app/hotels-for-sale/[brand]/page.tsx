@@ -16,7 +16,13 @@ import { brandFaqs, faqJsonLdNode } from "@/lib/seo/faq";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/entity";
 
+import { seoTitle } from "@/lib/seo-meta";
 type Params = { brand: string };
+
+// Unknown slugs get the server-rendered 404 page (src/app/not-found.tsx).
+// Without this the 404 status was right but the body only rendered after
+// JavaScript ran. Every valid slug is in generateStaticParams below.
+export const dynamicParams = false;
 
 export function generateStaticParams(): Params[] {
   return brands.map((b) => ({ brand: b.slug }));
@@ -59,7 +65,7 @@ export async function generateMetadata(props: {
   const description = `${b.tagline} ${b.intro.slice(0, 100)}`.slice(0, 160);
 
   return {
-    title,
+    title: seoTitle(title),
     description,
     alternates: { canonical: url },
     openGraph: { type: "website", title, description, url },
