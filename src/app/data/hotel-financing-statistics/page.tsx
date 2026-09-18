@@ -384,10 +384,10 @@ export default function HotelFinancingStatisticsPage() {
             <p className="mt-6 max-w-[68ch] text-[14px] leading-[1.55] tracking-[-0.014em] text-[color:var(--text-secondary)]">
               Found a number here that is wrong or out of date? Email{" "}
               <a
-                href="mailto:hotelteam@matthews.com"
+                href="mailto:nate.solomon@matthews.com"
                 className="text-[#1a3a6b] hover:underline underline-offset-[3px]"
               >
-                hotelteam@matthews.com
+                nate.solomon@matthews.com
               </a>{" "}
               and it gets fixed with a new verification date, or removed.
             </p>

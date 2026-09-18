@@ -51,7 +51,7 @@ $2 million and places hotel debt from $5 million, nationwide.
 
 [NAME]
 Matthews Hotel Markets
-hotelteam@matthews.com
+nate.solomon@matthews.com
 matthewshotelmarkets.com/press
 
 ###

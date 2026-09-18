@@ -34,7 +34,7 @@ export const PARENT = "Matthews Real Estate Investment Services";
 export const PARENT_URL = "https://www.matthews.com";
 
 /** Team inbox. The only org-level contact address on the site. */
-export const EMAIL = "hotelteam@matthews.com";
+export const EMAIL = "nate.solomon@matthews.com";
 
 /**
  * There is NO organization-level telephone number anywhere in this repo: the
