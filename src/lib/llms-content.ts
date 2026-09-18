@@ -222,7 +222,7 @@ export function buildLlmsFullTxt(): string {
   lines.push("");
   lines.push(
     "> Generated from the same data modules as /sitemap.xml and /llms.txt. Covers every page on " +
-      "this site backed by a plain-text data module: the three answer clusters, the calculators, " +
+      "this site backed by a plain-text data module: the answer clusters, the calculators, " +
       "the glossary, and the Matthews Hotel Index methodology. Each entry carries its own last-" +
       "updated date, its direct answer, its FAQ and its sources, so a model can cite a specific " +
       "dated claim rather than the site in general. Two pages are deliberately not extracted " +

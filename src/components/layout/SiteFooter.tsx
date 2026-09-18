@@ -44,6 +44,7 @@ const COLUMNS: FooterColumn[] = [
       { href: "/hotel-financing", label: "Hotel Financing" },
       { href: "/sell-a-hotel", label: "Sell a Hotel" },
       { href: "/hotel-valuation", label: "Hotel Valuation" },
+      { href: "/buy-a-hotel", label: "Buy a Hotel" },
       { href: "/glossary", label: "Glossary" },
       { href: "/tools/dscr-calculator", label: "DSCR Calculator" },
     ],
