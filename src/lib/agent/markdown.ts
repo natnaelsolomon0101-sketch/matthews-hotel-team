@@ -24,7 +24,7 @@ import { markets } from "../data/markets";
 import { brands } from "../data/brands";
 import { insights } from "../data/insights";
 import { abs, mdUrl, longDate, inline, paragraphs, table, citeAsPage, header, footer } from "./md";
-import { aboutTwin, methodologyTwin, ratesTwin, sbaHotelLendingTwin, statisticsTwin } from "./static-pages";
+import { aboutTwin, methodologyTwin, ratesTwin, sbaHotelLendingTwin, sbaStateTwins, statisticsTwin } from "./static-pages";
 import { KNOWN_PATH_LABELS } from "../data/answers/path-labels";
 
 export type Twin = {
@@ -271,7 +271,7 @@ export function twins(): Twin[] {
       markdown: () => glossaryMarkdown(g),
     });
   }
-  out.push(ratesTwin(), methodologyTwin(), statisticsTwin(), sbaHotelLendingTwin(), aboutTwin());
+  out.push(ratesTwin(), methodologyTwin(), statisticsTwin(), sbaHotelLendingTwin(), ...sbaStateTwins(), aboutTwin());
 
   cache = out;
   return out;

@@ -11,7 +11,8 @@ hotels, aggregated from SBA's own loan-level files, refreshed each quarter by a 
 | Downloads | `/data/sba-hotel-lending.json`, `/data/sba-hotel-lending.csv` (route handlers beside the page; not under `/api/`, which robots.txt disallows) |
 | Markdown twin | `/data/sba-hotel-lending.md`, built by `sbaHotelLendingTwin()` in `src/lib/agent/static-pages.ts` |
 | Prose, tables, JSON and CSV builders | `src/lib/sba/index.ts`, `src/lib/sba/tables.ts` |
-| Aggregates (committed) | `content/sba/summary.json`, `by-state.json`, `lenders.json` |
+| State pages (added 2026-09-18 by `sba-states`) | `/data/sba-hotel-lending/<state-slug>`, one per state with at least 25 hotel loans in the trailing five full fiscal years (44 at first publication). Route `src/app/data/sba-hotel-lending/[state]/page.tsx`, chart `StateChart.tsx`, all prose and tables in `src/lib/sba/states.ts`, twins from `sbaStateTwins()` in `src/lib/agent/static-pages.ts` |
+| Aggregates (committed) | `content/sba/summary.json`, `by-state.json`, `lenders.json`, `state-detail.json` |
 | Build script | `scripts/fetch-sba-hotel-loans.ts` |
 | Quarterly job | `.github/workflows/sba-refresh.yml` |
 
@@ -57,6 +58,31 @@ the date in `meta.fetchedAt`; "SBA data as of" is the `AsOfDate` column in SBA's
 - **Privacy**: aggregates only. No borrower name, address or loan row is written anywhere. In the
   per-state lender lists, dollars are `null` when a lender has fewer than three hotel loans in the
   state, because one or two loans would expose a single loan amount.
+
+## 3a. State pages
+
+- **Floor**: `STATE_PAGE_FLOOR = 25` in `src/lib/sba/states.ts`. States below it get no page, and the
+  national by-state table prints "Too few loans for a state page" in its last column. The list of
+  pages is derived from the data, so a refresh can add or drop a state. The sitemap, llms.txt, the
+  Markdown twins, `schema-validate`, `check-extractability` and `internal-links-audit` all read
+  `statePages`, so nothing is registered by hand. A dropped state would 404; add a redirect to the
+  national page in that PR if it ever happens.
+- **Data**: `content/sba/state-detail.json` has, per state, loans and dollars by fiscal year and
+  program, trailing-five count, dollars, average and median by program, size-band counts, the top
+  ten 7(a) lenders and 504 CDCs over the trailing three years, and the number of distinct lender
+  names. A `national` block carries the same trailing-five statistics for comparison.
+- **Small cells**: dollars, averages and medians are `null` wherever a cell has one or two loans
+  (year and program cells, and lenders, as before). The page prints "Withheld". Counts are never
+  withheld. Size bands carry counts only.
+- **Not a noun swap**: each page's direct answer, observations, comparison table, lender tables,
+  band table and chart are computed from that state's rows. The observations compare the state with
+  the national figure (504 share, median loan size, lender concentration, peak year), and tie
+  handling is explicit: two or three names level at the top are all named; more than three prints
+  "No single name is on more than N".
+- **Neutrality**: same rule as the national page. Rankings are counts of public records, with the
+  disclaimer printed above every state's lender tables.
+- Five extra reconciliation checks tie `state-detail.json` to the straight row count and to
+  `by-state.json`. The script rebuilds when `state-detail.json` is missing even if SBA posted nothing new.
 
 ## 4. The quarterly refresh
 

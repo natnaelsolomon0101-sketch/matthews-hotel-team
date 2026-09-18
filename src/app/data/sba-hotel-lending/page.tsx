@@ -55,6 +55,7 @@ import {
   stateLendersTable,
   type SbaTable,
 } from "@/lib/sba/tables";
+import { STATE_PAGES_NOTE } from "@/lib/sba/states";
 import ApprovalsChart from "./ApprovalsChart";
 
 const DESCRIPTION = `SBA 7(a) and 504 loans to hotels (NAICS 721110) by fiscal year, state, lender and loan size, compiled from SBA loan-level data as of ${longDate(meta.asOf)}.`;
@@ -91,7 +92,7 @@ function DataTable({ table, caption, minWidth = 780, wrap = false }: { table: Sb
           </tr>
         </thead>
         <tbody>
-          {table.rows.map((r) => (
+          {table.rows.map((r, ri) => (
             <tr key={r.slice(0, 2).join("|")} className="border-b border-[color:var(--divider)] align-top">
               {r.map((cell, i) =>
                 i === 0 ? (
@@ -100,7 +101,13 @@ function DataTable({ table, caption, minWidth = 780, wrap = false }: { table: Sb
                   </th>
                 ) : (
                   <td key={i} className={`py-2.5 pr-4 leading-[1.5] ${wrap ? "" : "text-right tabular-nums whitespace-nowrap"}`}>
-                    {cell}
+                    {i === r.length - 1 && table.links?.[ri] ? (
+                      <Link href={table.links[ri]!} className={A}>
+                        {cell}
+                      </Link>
+                    ) : (
+                      cell
+                    )}
                   </td>
                 ),
               )}
@@ -237,7 +244,8 @@ export default function SbaHotelLendingPage() {
         <Section id="by-state">
           <h2 className={H2}>SBA hotel loans by state</h2>
           <p className={P}>{BY_STATE_INTRO}</p>
-          <DataTable table={byStateTable()} caption="SBA hotel loans by state" />
+          <p className={P}>{STATE_PAGES_NOTE}</p>
+          <DataTable table={byStateTable()} caption="SBA hotel loans by state" minWidth={980} />
         </Section>
 
         <Section id="lenders" alt>

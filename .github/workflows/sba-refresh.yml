@@ -74,12 +74,14 @@ jobs:
           git commit -m "agent(sba-tracker): refresh SBA hotel lending aggregates, SBA data as of ${AS_OF}"
           git push origin "$BRANCH"
           {
-            echo "Quarterly refresh of \`content/sba/*.json\`, which feeds /data/sba-hotel-lending and its JSON, CSV and Markdown copies."
+            echo "Quarterly refresh of \`content/sba/*.json\`, which feeds /data/sba-hotel-lending, every state page under /data/sba-hotel-lending/<state>, and their JSON, CSV and Markdown copies."
             echo
             echo "- SBA data as of: ${AS_OF}"
             echo "- Source: https://data.sba.gov/dataset/7a-504-foia"
             echo "- GEO-CHECK passed inside this workflow run (a bot-opened PR does not trigger the PR gate)."
             echo "- Only aggregates changed. No raw CSV and no borrower-level row is in this PR."
+            echo
+            echo "State pages are generated from content/sba/state-detail.json. A state gains or loses its page when it crosses the 25-loan floor (STATE_PAGE_FLOOR in src/lib/sba/states.ts); the sitemap, llms.txt, twins and gate lists follow automatically."
             echo
             echo "Before merging, read the new headline numbers on the page preview. The prose is generated from the data, so check that it still reads correctly. See geo/13-sba-tracker.md."
             echo

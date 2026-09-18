@@ -13,6 +13,7 @@
 import summaryJson from "../../../content/sba/summary.json";
 import byStateJson from "../../../content/sba/by-state.json";
 import lendersJson from "../../../content/sba/lenders.json";
+import stateDetailJson from "../../../content/sba/state-detail.json";
 import { BRAND, SITE_URL } from "../entity";
 
 export type Program = "7a" | "504";
@@ -265,7 +266,7 @@ export const citeAs = () =>
   `${BRAND}. "SBA Loans to Hotels: Who Lends, How Much, and Where." ${SBA_URL}. SBA data as of ${meta.asOf}. Last updated ${SBA_UPDATED}.`;
 
 export const DOWNLOADS_TEXT =
-  `The JSON file has every table on this page plus gross approval dollars by lender and the reconciliation counts. The CSV has the same tables in long form. Cross-origin requests are allowed.`;
+  `The JSON file has every table on this page plus gross approval dollars by lender, the per-state detail behind the state pages and the reconciliation counts. The CSV has the same tables in long form. Cross-origin requests are allowed.`;
 
 export const RELATED: { href: string; label: string }[] = [
   { href: "/hotel-financing/sba-7a-vs-504", label: "What is the difference between an SBA 7(a) loan and an SBA 504 loan for a hotel?" },
@@ -292,6 +293,9 @@ export function sbaJson() {
     byState: states,
     topLendersNational: { fiscalYears: T3, ...nationalLenders },
     sizeBuckets: { fiscalYears: T5, rows: sizeBuckets },
+    // Per-state detail behind /data/sba-hotel-lending/<state>: loans by year and
+    // program, trailing-five medians and averages, size bands and top ten lenders.
+    stateDetail: stateDetailJson,
     otherNaics,
     reconciliation,
   };
@@ -328,6 +332,15 @@ export function sbaCsv(): string {
   for (const s of states) {
     for (const r of s.top5Lenders7a) rows.push(["state_top_lenders", fyRange(T3), `${s.state}: ${r.name}`, "7(a)", r.count, r.grossApproval, null, null, null, meta.asOf]);
     for (const r of s.top5Cdcs504) rows.push(["state_top_cdcs", fyRange(T3), `${s.state}: ${r.name}`, "504", r.count, r.grossApproval, null, null, null, meta.asOf]);
+  }
+  for (const s of stateDetailJson.states) {
+    for (const y of s.byFiscalYear) {
+      rows.push(["state_by_fiscal_year", `FY${y.fiscalYear}${y.partialYear ? " (partial)" : ""}`, s.state, programLabel(y.program as Program), y.count, y.grossApproval, null, null, null, meta.asOf]);
+    }
+    for (const p of ["7a", "504"] as Program[]) {
+      const w = s.trailing5[p];
+      rows.push(["state_loan_size", fyRange(T5), s.state, programLabel(p), w.count, w.grossApproval, w.averageLoan, w.medianLoan, null, meta.asOf]);
+    }
   }
   for (const b of sizeBuckets) rows.push(["size_bucket", fyRange(T5), b.label, programLabel(b.program), b.count, b.grossApproval, null, null, null, meta.asOf]);
   for (const o of otherNaics) {

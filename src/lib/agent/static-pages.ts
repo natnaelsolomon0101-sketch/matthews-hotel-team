@@ -44,6 +44,7 @@ import type { Cell } from "../rates/types";
 import { UPDATED as STATS_UPDATED } from "../../app/data/hotel-financing-statistics/updated";
 import * as sba from "../sba";
 import * as sbaTables from "../sba/tables";
+import * as sbaStates from "../sba/states";
 import { citeAsPage, footer, header, longDate, table } from "./md";
 import type { Twin } from "./markdown";
 
@@ -555,9 +556,18 @@ export function aboutTwin(): Twin {
 // /data/sba-hotel-lending. The page and this twin both read their prose and
 // their table cells from src/lib/sba, so there is nothing to transcribe. Only
 // the headings below are a second copy of the page's JSX.
+/** A table whose last column may link to a site path (SbaTable.links). */
+function sbaTableMd(x: sbaTables.SbaTable): string[] {
+  const rows = x.rows.map((r, i) => {
+    const href = x.links?.[i];
+    return href ? [...r.slice(0, -1), `[${r[r.length - 1]}](${SITE_URL}${href})`] : r;
+  });
+  return table(x.columns, rows);
+}
+
 function sbaMarkdown(): string {
   const out = header({ h1: sba.H1, path: sba.SBA_PATH, lastUpdated: sba.SBA_UPDATED });
-  const t = (x: sbaTables.SbaTable) => table(x.columns, x.rows);
+  const t = sbaTableMd;
 
   out.push(
     `Compiled by ${BRAND} · Last updated: ${longDate(sba.SBA_UPDATED)} · SBA data as of ${longDate(sba.meta.asOf)}`,
@@ -570,7 +580,7 @@ function sbaMarkdown(): string {
   out.push("", `**What is counted.** ${sba.SCOPE_NOTE}`, "");
 
   out.push("## SBA hotel loan approvals by fiscal year", "", sba.BY_YEAR_INTRO, "", sba.CHART_CAPTION, "", ...t(sbaTables.byYearTable()), "");
-  out.push("## SBA hotel loans by state", "", sba.BY_STATE_INTRO, "", ...t(sbaTables.byStateTable()), "");
+  out.push("## SBA hotel loans by state", "", sba.BY_STATE_INTRO, "", sbaStates.STATE_PAGES_NOTE, "", ...t(sbaTables.byStateTable()), "");
   out.push(`## Top SBA hotel lenders, ${sba.fyRange(sba.T3)}`, "", sba.LENDERS_INTRO, "");
   out.push("### Top 25 7(a) lenders by number of hotel loans", "", ...t(sbaTables.lenders7aByCountTable()), "");
   out.push("### Top 25 7(a) lenders by hotel loan dollars", "", ...t(sbaTables.lenders7aByDollarsTable()), "");
@@ -597,6 +607,59 @@ function sbaMarkdown(): string {
 
   out.push(...footer(sba.citeAs()));
   return out.join("\n");
+}
+
+// /data/sba-hotel-lending/<state>. Same arrangement: every sentence and cell
+// comes from src/lib/sba/states.ts, which the page also renders.
+function sbaStateMarkdown(p: sbaStates.StatePage): string {
+  const out = header({ h1: sbaStates.stateH1(p), path: p.path, lastUpdated: sba.SBA_UPDATED });
+  const t = sbaTableMd;
+  const national = `[${sbaStates.NATIONAL_LINK_LABEL}](${sba.SBA_URL})`;
+
+  out.push(
+    `Compiled by ${BRAND} · Last updated: ${longDate(sba.SBA_UPDATED)} · SBA data as of ${longDate(sba.meta.asOf)}`,
+    "",
+    sbaStates.stateDirectAnswer(p),
+    "",
+  );
+  out.push(`## What stands out in ${p.name}`, "");
+  for (const x of sbaStates.stateObservations(p)) out.push(`- ${x}`);
+  out.push("", `**What is counted.** ${sbaStates.stateScopeNote(p)} ${national}`, "");
+
+  out.push(`## ${p.name} against the national figures`, "", sbaStates.COMPARE_INTRO, "", ...t(sbaStates.compareTable(p)), "");
+  out.push(`## SBA hotel loans in ${p.name} by fiscal year`, "", sbaStates.YEAR_INTRO(p), "", sbaStates.stateChartCaption(p), "", ...t(sbaStates.stateYearTable(p)), "");
+  out.push(`## Top SBA hotel lenders in ${p.name}, ${sba.fyRange(sba.T3)}`, "", sbaStates.STATE_LENDERS_NOTE(p), "");
+  out.push(`### 7(a) lenders with the most hotel loans in ${p.name}`, "", sbaStates.stateLendersCount(p, "7a"), "", ...t(sbaStates.stateLenders7aTable(p)), "");
+  out.push(`### 504 certified development companies with the most hotel loans in ${p.name}`, "", sbaStates.stateLendersCount(p, "504"), "", ...t(sbaStates.stateCdcsTable(p)), "");
+  out.push(`## How big are SBA hotel loans in ${p.name}?`, "", sbaStates.stateBucketsIntro(p), "", ...t(sbaStates.stateBucketsTable(p)), "");
+
+  out.push("## Methodology", "", `${sbaStates.STATE_METHOD(p)} ${national}`, "");
+  out.push("## Cite as", "", `${sbaStates.STATE_CITE_INTRO} License: [CC BY 4.0](${sba.SBA_LICENSE})`, "", "```", sbaStates.stateCiteAs(p), "```", "");
+
+  out.push("## Sources", "");
+  for (const s of sba.SOURCES) out.push(`${s.n}. [${s.name}](${s.url}) · ${s.publisher} · ${s.note}`);
+  out.push("");
+
+  out.push(sbaStates.STATE_CTA(p), "", `[Talk to the team](${SITE_URL}/contact)`, "");
+  for (const r of sbaStates.stateRelated(p)) out.push(`- [${r.label}](${SITE_URL}${r.href})`);
+  out.push("", "## SBA hotel lending in other states", "", sbaStates.OTHER_STATES_INTRO, "");
+  for (const s of sbaStates.otherStates(p)) out.push(`- [${s.label}](${SITE_URL}${s.href})`);
+
+  out.push(...footer(sbaStates.stateCiteAs(p)));
+  return out.join("\n");
+}
+
+export function sbaStateTwins(): Twin[] {
+  return sbaStates.statePages.map((p) => ({
+    path: p.path,
+    kind: "data" as const,
+    title: sbaStates.stateTitle(p),
+    h1: sbaStates.stateH1(p),
+    lastUpdated: sba.SBA_UPDATED,
+    summary: sbaStates.stateDirectAnswer(p),
+    citeAs: sbaStates.stateCiteAs(p),
+    markdown: () => sbaStateMarkdown(p),
+  }));
 }
 
 export function sbaHotelLendingTwin(): Twin {
