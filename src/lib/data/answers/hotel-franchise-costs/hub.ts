@@ -388,6 +388,7 @@ export const page: AnswerPage = {
       "/hotel-financing/brand-conversion-financing",
       "/hotel-financing/pip-and-renovation-loans",
       "/buy-a-hotel/branded-vs-independent",
+      "/hotel-industry"
     ],
     glossary: [
       "/glossary/franchise-fdd",

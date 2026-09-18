@@ -75,8 +75,11 @@ export default async function ClosedDealPage(props: {
         "@id": `${url}#article`,
         headline: `${deal.name}, closed by Matthews Hotel Markets`,
         description: `${deal.transactionTypeLabel ?? deal.transactionType} of the ${deal.name} (${deal.keys} keys, ${deal.city}, ${deal.state}). ${deal.dealSize}.`,
-        datePublished: `${deal.year}-12-31`,
-        dateModified: `${deal.year}-12-31`,
+        // The repo records the closing YEAR only, and the page says
+        // "Closed <year>". An ISO 8601 year is a valid schema.org Date;
+        // "<year>-12-31" was a day nobody recorded.
+        datePublished: String(deal.year),
+        dateModified: String(deal.year),
         inLanguage: "en-US",
         author:
           brokers.length > 0

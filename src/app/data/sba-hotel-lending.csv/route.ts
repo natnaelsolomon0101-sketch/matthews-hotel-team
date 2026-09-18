@@ -1,4 +1,5 @@
 import { sbaCsv } from "@/lib/sba";
+import { SITE_URL } from "@/lib/entity";
 
 export const dynamic = "force-static";
 
@@ -7,6 +8,9 @@ export async function GET() {
   return new Response(sbaCsv(), {
     headers: {
       "Content-Type": "text/csv; charset=utf-8",
+      // The HTML page that presents this data is the canonical URL (Google
+      // documents the rel="canonical" HTTP header for non-HTML files).
+      Link: `<${SITE_URL}/data/sba-hotel-lending>; rel="canonical"`,
       "Content-Disposition": 'inline; filename="sba-hotel-lending.csv"',
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET, OPTIONS",

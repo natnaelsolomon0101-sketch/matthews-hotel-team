@@ -196,7 +196,8 @@ export const page: AnswerPage = {
       "/hotel-financing/loan-requirements",
       "/hotel-financing/hotel-lenders-by-type",
       "/hotel-financing/refinance",
-      "/hotel-financing/how-debt-placement-works"
+      "/hotel-financing/how-debt-placement-works",
+      "/buy-a-hotel"
     ],
     glossary: [
       "/glossary/dscr",

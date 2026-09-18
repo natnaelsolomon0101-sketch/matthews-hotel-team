@@ -190,7 +190,8 @@ export const page: AnswerPage = {
       "/hotel-industry/who-owns-hotels",
       "/hotel-industry/chain-scales-and-classes",
       "/hotel-industry/industry-size-2026",
-      "/hotel-industry/outlook-2026-2027"
+      "/hotel-industry/outlook-2026-2027",
+      "/hotel-franchise-costs"
     ],
     glossary: [
       "/glossary/revpar",
@@ -202,7 +203,8 @@ export const page: AnswerPage = {
     data: [
       "/rates",
       "/research/mhi/q1-2026",
-      "/data/hotel-financing-statistics"
+      "/data/hotel-financing-statistics",
+      "/research"
     ]
   },
   cta: {

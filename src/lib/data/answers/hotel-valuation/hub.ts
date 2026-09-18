@@ -205,7 +205,8 @@ export const page: AnswerPage = {
       "/hotel-valuation/pip-and-hotel-value",
       "/hotel-valuation/interest-rates-and-hotel-value",
       "/hotel-valuation/property-tax-appeal",
-      "/hotel-valuation/partner-buyout-valuation"
+      "/hotel-valuation/partner-buyout-valuation",
+      "/buy-a-hotel"
     ],
     glossary: [
       "/glossary/cap-rate",
@@ -217,7 +218,8 @@ export const page: AnswerPage = {
     data: [
       "/research/mhi/q1-2026",
       "/tools",
-      "/tools/hotel-value-estimator"
+      "/tools/hotel-value-estimator",
+      "/research"
     ]
   },
   cta: {

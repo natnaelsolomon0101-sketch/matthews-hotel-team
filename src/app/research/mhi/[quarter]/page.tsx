@@ -16,6 +16,7 @@ import {
 } from "@/lib/data/mhi";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/entity";
+import { formatDate } from "@/lib/format-date";
 
 type Params = { quarter: string };
 
@@ -39,6 +40,16 @@ export async function generateMetadata(props: {
     openGraph: { type: "article", title, description, url, publishedTime: q.publishedAt },
     twitter: { card: "summary_large_image", title, description },
   };
+}
+
+/** "2026-Q1" -> "2026-01-01/2026-03-31". Falls back to the input. */
+function quarterInterval(yearQuarter: string): string {
+  const m = yearQuarter.match(/^(\d{4})-Q([1-4])$/);
+  if (!m) return yearQuarter;
+  const ends = ["03-31", "06-30", "09-30", "12-31"];
+  const n = Number(m[2]);
+  const startMonth = String((n - 1) * 3 + 1).padStart(2, "0");
+  return `${m[1]}-${startMonth}-01/${m[1]}-${ends[n - 1]}`;
 }
 
 export default async function MhiQuarterPage(props: {
@@ -67,7 +78,9 @@ export default async function MhiQuarterPage(props: {
         publisher: { "@id": `${SITE_URL}/#org` },
         datePublished: q.publishedAt,
         dateModified: q.publishedAt,
-        temporalCoverage: q.yearQuarter,
+        // ISO 8601 interval for the quarter in `yearQuarter` ("2026-Q1" is not
+        // a value a parser can read).
+        temporalCoverage: quarterInterval(q.yearQuarter),
         spatialCoverage: q.data.map((dp) => {
           const j = joinWithMarket(dp);
           return j.market
@@ -152,7 +165,9 @@ export default async function MhiQuarterPage(props: {
               </div>
               <div>
                 <dt className="text-[12px] uppercase tracking-[0.18em] text-[color:var(--text-secondary)]">Published</dt>
-                <dd className="mt-2 text-[14px] tracking-[-0.014em] text-[color:var(--text-primary)]">{q.publishedAt}</dd>
+                <dd className="mt-2 text-[14px] tracking-[-0.014em] text-[color:var(--text-primary)]">
+                  <time dateTime={q.publishedAt}>{formatDate(q.publishedAt)}</time>
+                </dd>
               </div>
               <div>
                 <dt className="text-[12px] uppercase tracking-[0.18em] text-[color:var(--text-secondary)]">Markets</dt>

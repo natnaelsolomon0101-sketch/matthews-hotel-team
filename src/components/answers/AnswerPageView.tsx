@@ -13,6 +13,7 @@ import {
   breadcrumb,
   collectionPageNode,
   faqPageNode,
+  itemList,
   webApplicationNode,
   webPage,
   type JsonLdNode,
@@ -113,6 +114,11 @@ export function AnswerPageView({ page, spokes, island, extraGraph = [] }: Props)
         { name: page.title, path },
       ];
 
+  // Hub only: newest first; ties keep the cluster's own order (sort is stable).
+  const recent = isHub
+    ? [...(spokes ?? [])].sort((a, b) => b.lastUpdated.localeCompare(a.lastUpdated)).slice(0, 5)
+    : [];
+
   const wordCount =
     page.answer.split(/\s+/).length +
     page.takeaways.join(" ").split(/\s+/).length +
@@ -148,6 +154,11 @@ export function AnswerPageView({ page, spokes, island, extraGraph = [] }: Props)
               name: s.h1,
             })),
           }),
+          // The visible "Every question in this guide" list, one for one.
+          itemList(
+            (spokes ?? []).map((s) => ({ name: s.h1, path: answerPath(s) })),
+            `${url}#spokes`,
+          ),
         ]
       : [
           {
@@ -378,6 +389,29 @@ export function AnswerPageView({ page, spokes, island, extraGraph = [] }: Props)
                       <p className="mt-1 text-[14px] leading-[1.45] tracking-[-0.014em] text-[#86868b]">
                         {s.description}
                       </p>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            {/* Hub only: the five most recently updated pages in this guide,
+                from each page's own lastUpdated. No new data, just a second
+                way into the same spokes. */}
+            {isHub && recent.length > 0 && (
+              <section aria-labelledby="recently-updated">
+                <h2 id="recently-updated" className={H2}>
+                  Recently updated
+                </h2>
+                <ul className="mt-6 space-y-3">
+                  {recent.map((s) => (
+                    <li key={s.slug} className="text-[15px] leading-[1.45] tracking-[-0.014em]">
+                      <Link href={answerPath(s)} className={LINK}>
+                        {s.h1}
+                      </Link>{" "}
+                      <span className="text-[13px] text-[#86868b]">
+                        Updated <time dateTime={s.lastUpdated}>{formatDate(s.lastUpdated)}</time>
+                      </span>
                     </li>
                   ))}
                 </ul>

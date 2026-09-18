@@ -10,7 +10,8 @@ import { ListingNarrative } from "@/components/sections/listing-detail/ListingNa
 import { ListingGallery } from "@/components/sections/listing-detail/ListingGallery";
 import { ListingLocation } from "@/components/sections/listing-detail/ListingLocation";
 import { ListingSimilar } from "@/components/sections/listing-detail/ListingSimilar";
-import { listings, getListing } from "@/lib/data/listings";
+import { listings, getListing, LISTINGS_UPDATED } from "@/lib/data/listings";
+import { formatDate } from "@/lib/format-date";
 import { getBroker } from "@/lib/data/team";
 import { listingFaqs, faqJsonLdNode } from "@/lib/seo/faq";
 import JsonLd from "@/components/seo/JsonLd";
@@ -207,6 +208,9 @@ export default async function ListingDetailPage(
         isPartOf: { "@id": `${SITE_URL}/#website` },
         primaryImageOfPage: image,
         mainEntity: { "@id": `${url}#listing` },
+        // The one date the listings file carries; the same date is visible
+        // under the stat panel and on the home page.
+        dateModified: LISTINGS_UPDATED,
       },
       faqJsonLdNode(url, faqs),
   ];
@@ -222,6 +226,10 @@ export default async function ListingDetailPage(
         <div className="bg-white py-16 lg:py-20">
           <div className="mx-auto max-w-[1024px] px-6 grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-10">
             <div className="min-w-0">
+              <p className="mb-8 text-[13px] tracking-[-0.014em] text-[color:var(--text-tertiary)]">
+                Listings last updated{" "}
+                <time dateTime={LISTINGS_UPDATED}>{formatDate(LISTINGS_UPDATED)}</time>
+              </p>
               <ListingNarrative listing={listing} />
               <ListingGallery listing={listing} />
               <ListingLocation listing={listing} />

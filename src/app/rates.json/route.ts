@@ -1,4 +1,5 @@
 import { ratesJson } from "@/lib/rates/export";
+import { SITE_URL } from "@/lib/entity";
 
 // Built entirely from typed data modules, same as sitemap.ts and llms.txt.
 export const dynamic = "force-static";
@@ -14,6 +15,9 @@ export async function GET() {
   return new Response(JSON.stringify(ratesJson(), null, 2) + "\n", {
     headers: {
       "Content-Type": "application/json; charset=utf-8",
+      // The HTML page that presents this data is the canonical URL (Google
+      // documents the rel="canonical" HTTP header for non-HTML files).
+      Link: `<${SITE_URL}/rates>; rel="canonical"`,
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET, OPTIONS",
       "Access-Control-Allow-Headers": "Content-Type",
