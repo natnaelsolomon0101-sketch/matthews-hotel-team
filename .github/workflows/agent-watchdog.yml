@@ -9,6 +9,11 @@ on:
   schedule:
     - cron: "0 23 * * *" # 6pm Chicago (CDT), after every agent's scheduled run
   workflow_dispatch:
+    inputs:
+      as_of:
+        description: "Pretend today is YYYY-MM-DD (to test the alert path). Leave blank for real runs."
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -23,7 +28,7 @@ jobs:
         id: check
         run: |
           set +e
-          node scripts/agent-watchdog.mjs > report.md
+          node scripts/agent-watchdog.mjs ${{ github.event.inputs.as_of }} > report.md
           echo "status=$?" >> "$GITHUB_OUTPUT"
           cat report.md
       - name: Open, update or close the watchdog issue
