@@ -98,6 +98,7 @@ why in its description.
 | Entity facts (brand, address, team, JSON-LD) | `src/lib/entity.ts`, the only place they are defined |
 | Sitemap, llms.txt, feed | Generated from the data modules; new pages appear automatically once registered |
 | Briefs and priorities | `geo/05-briefs/`, `geo/05-briefs/_wave2-stubs.md`, `geo/04-queries.csv`, `geo/04-queries.md` |
+| The working skill: how to pick, write and check GEO work | `.claude/skills/geo-improve/SKILL.md` (read it after this file) |
 | Everything still needed, and who does it | `geo/11-everything-needed.md` |
 | The content queue | `geo/content-queue.md` (the Writer maintains it) |
 | Run log | `geo/agent-log.md` |
