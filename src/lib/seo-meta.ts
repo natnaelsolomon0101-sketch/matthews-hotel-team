@@ -23,27 +23,22 @@ export function bareTitle(raw: string): string {
 }
 
 /**
- * Fit a title into 60 characters where possible, in this order of preference:
- *   1. "<title> | Matthews Hotel Markets"
- *   2. "<title> | Matthews"
- *   3. "<title>"
- * and, when the title has " | " sub-segments and still does not fit, the same
- * three attempts again with the last sub-segment dropped. A single segment
- * longer than 60 characters is returned as is: the words of the page's own
- * headline are never cut or rewritten here.
+ * "<title> | Matthews Hotel Markets", always with the full brand string.
+ *
+ * The brand is the entity signal search engines and AI assistants read, so it
+ * is never shortened to "Matthews" (the parent's name) and never dropped to
+ * fit a length. Sixty characters is only where Google truncates the DISPLAY;
+ * the whole title is still read. When a title has " | " sub-segments and runs
+ * long, trailing sub-segments are dropped before the brand is.
  */
 export function fitTitle(raw: string): string {
   const segments = bareTitle(raw).split(/\s+\|\s+/);
+  const withBrand = (base: string) => (base.includes(BRAND) ? base : `${base} | ${BRAND}`);
   for (let n = segments.length; n >= 1; n--) {
-    const base = segments.slice(0, n).join(" | ");
-    const brandAlreadyIn = base.includes(BRAND);
-    const candidates = brandAlreadyIn
-      ? [base]
-      : [`${base} | ${BRAND}`, `${base} | ${SHORT_BRAND}`, base];
-    const fit = candidates.find((c) => c.length <= TITLE_MAX);
-    if (fit) return fit;
+    const candidate = withBrand(segments.slice(0, n).join(" | "));
+    if (candidate.length <= TITLE_MAX) return candidate;
   }
-  return segments[0];
+  return withBrand(segments[0]);
 }
 
 /** Use as `title: seoTitle("...")` in a route's metadata. */
