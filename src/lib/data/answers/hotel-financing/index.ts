@@ -26,6 +26,12 @@ import { page as a_refinance_or_sell } from "./refinance-or-sell";
 import { page as a_refinance } from "./refinance";
 import { page as a_sba_7a_vs_504 } from "./sba-7a-vs-504";
 import { page as a_usda_b_and_i_loans } from "./usda-b-and-i-loans";
+import { page as a_capital_stack } from "./capital-stack";
+import { page as a_cash_out_refinance } from "./cash-out-refinance";
+import { page as a_closing_costs } from "./closing-costs";
+import { page as a_covenants_and_cash_management } from "./covenants-and-cash-management";
+import { page as a_interest_rate_caps } from "./interest-rate-caps";
+import { page as a_mezzanine_debt_and_preferred_equity } from "./mezzanine-debt-and-preferred-equity";
 import type { AnswerPage } from "../types";
 
 export const hub: AnswerPage = a_hub;
@@ -57,6 +63,12 @@ export const spokes: AnswerPage[] = [
   a_refinance,
   a_sba_7a_vs_504,
   a_usda_b_and_i_loans,
+  a_capital_stack,
+  a_cash_out_refinance,
+  a_closing_costs,
+  a_covenants_and_cash_management,
+  a_interest_rate_caps,
+  a_mezzanine_debt_and_preferred_equity,
 ];
 
 export const pages: AnswerPage[] = [hub, ...spokes];
