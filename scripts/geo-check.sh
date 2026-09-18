@@ -10,7 +10,9 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-PORT=3000
+# PORT can be set by the caller; otherwise pick a free one so several
+# worktrees can run the gate at the same time.
+PORT="${PORT:-$(node -e 'const s=require("net").createServer();s.listen(0,()=>{console.log(s.address().port);s.close()})')}"
 BASE="http://localhost:${PORT}"
 step() { printf '\n==> %s\n' "$1"; }
 
@@ -45,7 +47,7 @@ for _ in $(seq 1 60); do
 done
 
 step "internal links (local)"
-npx tsx scripts/internal-links-audit.ts --local | tail -2
+LOCAL_BASE="${BASE}" npx tsx scripts/internal-links-audit.ts --local | tail -2
 
 step "300-word extractability test (local)"
 npx tsx scripts/check-extractability.ts "${BASE}"
