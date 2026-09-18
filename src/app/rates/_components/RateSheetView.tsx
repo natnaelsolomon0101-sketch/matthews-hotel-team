@@ -76,7 +76,7 @@ export function RateSheetView({
           </div>
 
           <p className="mt-6 text-[13px] tracking-[-0.014em] text-[color:var(--text-secondary)]">
-            Published by {BRAND} &middot; Last updated: {LONG_DATE(edition.publishedAt)}
+            Published by {BRAND} &middot; Last updated: {LONG_DATE(edition.modifiedAt ?? edition.publishedAt)}
             {isArchive ? null : (
               <>
                 {" "}
@@ -95,6 +95,41 @@ export function RateSheetView({
               .
             </p>
           ) : null}
+
+          {(edition.corrections ?? []).map((c) => (
+            <div
+              key={c.date + c.text}
+              className="mt-4 rounded-[14px] border border-[color:var(--divider)] bg-[#f5f5f7] px-5 py-4"
+            >
+              <p className="text-[14px] leading-[1.5] tracking-[-0.014em] text-[color:var(--text-primary)]">
+                <strong>Correction.</strong> {c.text} This edition was first
+                published {LONG_DATE(edition.publishedAt)} and was corrected in
+                place on {LONG_DATE(c.date)}; the changelog below records the
+                earlier values.
+              </p>
+              <p className="mt-2 text-[13px] leading-[1.5] tracking-[-0.014em] text-[color:var(--text-secondary)]">
+                Sources:{" "}
+                {c.sources.map((id, i) => {
+                  const src = RATE_SOURCES.find((r) => r.id === id);
+                  if (!src) return null;
+                  return (
+                    <React.Fragment key={id}>
+                      {i > 0 ? "; " : null}
+                      <a
+                        href={src.url}
+                        rel="noopener external"
+                        className="text-[#1a3a6b] hover:underline underline-offset-[3px]"
+                      >
+                        {src.name}
+                      </a>{" "}
+                      ({src.publisher}, source date {src.asOf})
+                    </React.Fragment>
+                  );
+                })}
+                .
+              </p>
+            </div>
+          ))}
 
           {/* The 40 to 70 word lift block. */}
           <p className="mt-8 max-w-[68ch] text-[19px] leading-[1.42] tracking-[0.012em] text-[color:var(--text-primary)]">

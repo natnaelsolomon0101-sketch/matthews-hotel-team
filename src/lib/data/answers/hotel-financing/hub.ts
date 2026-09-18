@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Hotel Financing: Rates, Terms and Lenders (2026)",
   h1: "How does hotel financing work, and what does it cost right now?",
   description: "How hotel loans are sized, priced and placed in 2026: lender types, DSCR and debt-yield tests, and what a hotel loan costs today.",
-  lastUpdated: "2026-09-17",
+  lastUpdated: "2026-09-18",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -43,7 +43,7 @@ export const page: AnswerPage = {
     {
       h2: "What does a hotel loan cost in September 2026?",
       lead: "Hotel loan pricing is quoted as an index plus a spread, and the spread on hotels runs wider than on apartments or industrial property.",
-      body: "Fixed-rate hotel quotes track the 5- or 10-year Treasury; floating quotes track SOFR.[1][2] The spread over that index is set by five things, in the order we see lenders weigh them: the sponsor's experience and liquidity, the franchise flag and its market position, whether a PIP is open or funded, the market itself, and finally the loan structure. A hotel with an experienced sponsor, a top-performing flag, a funded PIP and no near-term renovation prices tighter than an identical building with a first-time buyer and an open PIP notice, even at the same leverage.\n\nMatthews Hotel Markets' September 2026 rate sheet puts the 10-year Treasury at 4.94% as of September 17, 2026 and the SBA 7(a) maximum allowable rate at 9.75%. It marks the conventional spread over that index as not yet published, because we do not print a spread until three independent lenders quote the same structure in a month.[4] The sheet shows what is and is not published, which is the part most rate sheets leave out. See the full breakout by lender type on `/hotel-financing/hotel-loan-rates`."
+      body: "Fixed-rate hotel quotes track the 5- or 10-year Treasury; floating quotes track SOFR.[1][2] The spread over that index is set by five things, in the order we see lenders weigh them: the sponsor's experience and liquidity, the franchise flag and its market position, whether a PIP is open or funded, the market itself, and finally the loan structure. A hotel with an experienced sponsor, a top-performing flag, a funded PIP and no near-term renovation prices tighter than an identical building with a first-time buyer and an open PIP notice, even at the same leverage.\n\nMatthews Hotel Markets' September 2026 rate sheet puts the 10-year Treasury at 4.94% as of September 17, 2026 and the SBA 7(a) maximum allowable rate at 10.00%, which is SBA's 3.00% cap over the 7.00% Prime in effect since September 17, 2026.[3][6] It marks the conventional spread over that index as not yet published, because we do not print a spread until three independent lenders quote the same structure in a month.[4] The sheet shows what is and is not published, which is the part most rate sheets leave out. See the full breakout by lender type on `/hotel-financing/hotel-loan-rates`."
     },
     {
       h2: "Who actually lends on hotels?",
@@ -179,6 +179,13 @@ export const page: AnswerPage = {
       label: "SOP 50 10 8, Lender and Development Company Loan Programs (effective June 1, 2025), Section C, Ch. 1: debenture limits (p. 350) and Limited or Special Purpose Property, which lists hotels (pp. 354-355)",
       url: "https://www.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
       publisher: "U.S. Small Business Administration",
+      accessed: "2026-09-18"
+    },
+    {
+      n: 6,
+      label: "BNY Increases Prime Lending Rate to 7.00%",
+      url: "https://www.prnewswire.com/news-releases/bny-increases-prime-lending-rate-to-7-00-302881066.html",
+      publisher: "The Bank of New York Mellon Corporation, via PR Newswire",
       accessed: "2026-09-18"
     }
   ],

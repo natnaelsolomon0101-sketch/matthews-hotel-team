@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "SBA 7(a) vs 504 for Hotels: Which One?",
   h1: "What is the difference between an SBA 7(a) loan and an SBA 504 loan for a hotel?",
   description: "SBA 7(a) versus 504 for a hotel purchase: eligibility, down payment, rate structure, loan caps and which one fits which deal.",
-  lastUpdated: "2026-09-17",
+  lastUpdated: "2026-09-18",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -53,7 +53,7 @@ export const page: AnswerPage = {
     {
       h2: "Are the rates fixed or variable?",
       lead: "504's debenture piece is fixed for the life of that portion of the loan; 7(a) is usually variable off Prime, though a fixed-rate 7(a) option exists.",
-      body: "The 504 debenture is fixed for 10, 20 or 25 years and is pegged to an increment above the 10-year Treasury.[2] The 25-year rate for September 2026 funding was 6.54 percent, fees included.[4] The bank's first lien in a 504 structure is priced by the bank and can be fixed or variable depending on the lender. A standard 7(a) loan is usually variable, pegged to Prime or an optional peg rate, with a maximum spread SBA sets by loan size: Prime plus 3.00 percent above $350,000.[1] At the last printed Prime of 6.75 percent, that caps the rate at 9.75 percent.[7] SBA also publishes maximum fixed rates for 7(a).[1]"
+      body: "The 504 debenture is fixed for 10, 20 or 25 years and is pegged to an increment above the 10-year Treasury.[2] The 25-year rate for September 2026 funding was 6.54 percent, fees included.[4] The bank's first lien in a 504 structure is priced by the bank and can be fixed or variable depending on the lender. A standard 7(a) loan is usually variable, pegged to Prime or an optional peg rate, with a maximum spread SBA sets by loan size: Prime plus 3.00 percent above $350,000.[1] With Prime at 7.00 percent since September 17, 2026,[10][11] that caps the rate at 10.00 percent.[7] SBA also publishes maximum fixed rates for 7(a).[1]"
     },
     {
       h2: "How big a hotel can each program finance?",
@@ -119,7 +119,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet puts the SBA 7(a) maximum allowable rate at 9.75%, which is the last published Prime of 6.75% plus the 3.00% cap SBA sets on loans over $350,000, and the 25-year 504 debenture at 6.54% as of September 10, 2026.[7]"
+    sentence: "Matthews Hotel Markets' September 2026 rate sheet puts the SBA 7(a) maximum allowable rate at 10.00%, which is the 7.00% Prime in effect since September 17, 2026 plus the 3.00% cap SBA sets on loans over $350,000, and the 25-year 504 debenture at 6.54% as of September 10, 2026.[7]"
   },
   workedExample: {
     label: "Hypothetical: $6.0M hotel purchase under each program",
@@ -217,6 +217,20 @@ export const page: AnswerPage = {
       label: "SOP 50 10 8, Lender and Development Company Loan Programs (effective June 1, 2025), Section C, Ch. 1: debenture limits (p. 350) and Limited or Special Purpose Property, which lists hotels (pp. 354-355)",
       url: "https://www.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
       publisher: "U.S. Small Business Administration",
+      accessed: "2026-09-18"
+    },
+    {
+      n: 10,
+      label: "BNY Increases Prime Lending Rate to 7.00%",
+      url: "https://www.prnewswire.com/news-releases/bny-increases-prime-lending-rate-to-7-00-302881066.html",
+      publisher: "The Bank of New York Mellon Corporation, via PR Newswire",
+      accessed: "2026-09-18"
+    },
+    {
+      n: 11,
+      label: "PNC Bank, N.A. Changes Prime Rate",
+      url: "https://www.prnewswire.com/news-releases/pnc-bank-na-changes-prime-rate-302881163.html",
+      publisher: "PNC Bank, N.A., via PR Newswire",
       accessed: "2026-09-18"
     }
   ],

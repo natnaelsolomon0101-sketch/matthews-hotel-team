@@ -127,9 +127,9 @@ const SEPTEMBER_2026_ROWS: RateRow[] = [
       "SBA's maximum allowable spread on a variable-rate 7(a) loan over $350,000. It is a ceiling set by the agency, not a quote, and a good lender prices inside it.",
     ),
     allIn: published(
-      "9.75% maximum allowable",
-      ["sba-7a-terms", "fred-dprime", "fomc-2026-09"],
-      "Prime 6.75% (last published observation, September 15, 2026) plus the 3.00% cap. The FOMC raised the target range 25 basis points on September 16, so expect 10.00% once Prime prints again.",
+      "10.00% maximum allowable",
+      ["sba-7a-terms", "bny-prime-2026-09", "pnc-prime-2026-09", "fred-dprime", "fomc-2026-09"],
+      "Prime 7.00%, effective September 17, 2026, as announced by BNY and PNC after the FOMC raised the target range 25 basis points on September 16, plus the 3.00% cap. The Federal Reserve's DPRIME series had not yet printed a post-hike value on September 18, 2026; its last observation is 6.75% on September 15. Corrected September 18, 2026: this cell first read 9.75%, on the 6.75% Prime.",
     ),
     maxLtv: pending(
       "SBA publishes no LTV cap for 7(a). The working ceiling is the lender's, and only live quotes show it.",
@@ -263,14 +263,30 @@ export const EDITIONS: RateEdition[] = [
     publishedAt: "2026-09-17",
     nextRefresh: "2026-10-05",
     directAnswer:
-      "As of September 17, 2026, the 10-year Treasury is 4.94%, the 5-year is 4.78%, SOFR is 3.62%, and Prime is 6.75%. SBA caps a variable-rate 7(a) loan over $350,000 at Prime plus 3.00%, which is 9.75% today. The 25-year SBA 504 debenture priced at 6.54% on September 10. Rows that depend on what lenders are actually quoting are marked not yet published.",
+      "As of September 17, 2026, the 10-year Treasury is 4.94%, the 5-year is 4.78%, SOFR is 3.85%, and Prime is 7.00%. SBA caps a variable-rate 7(a) loan over $350,000 at Prime plus 3.00%, which is 10.00% today. The 25-year SBA 504 debenture priced at 6.54% on September 10. Rows that depend on what lenders are actually quoting are marked not yet published.",
+    modifiedAt: "2026-09-18",
+    corrections: [
+      {
+        date: "2026-09-18",
+        text: "Corrected September 18, 2026: Prime moved to 7.00% on September 17 after the Fed's September 16 decision, so the SBA 7(a) maximum is 10.00%; SOFR printed 3.85% for September 17.",
+        sources: [
+          "fomc-2026-09",
+          "bny-prime-2026-09",
+          "pnc-prime-2026-09",
+          "fred-dprime",
+          "fred-dfedtaru",
+          "sba-7a-terms",
+          "nyfed-sofr",
+        ],
+      },
+    ],
     rows: SEPTEMBER_2026_ROWS,
     changelog: [
       "The FOMC raised the target range for the federal funds rate 25 basis points to 3-3/4 to 4 percent on September 16, 2026, on a 12 to 0 vote. The effective target range upper limit moved to 4.00% on September 17.",
-      "Prime still reads 6.75% here because September 15 is the most recent published observation in the Federal Reserve's series. It has not printed since the meeting. Expect 7.00%, and expect the SBA 7(a) maximum allowable rate to follow it to 10.00%.",
+      "Prime moved from 6.75% to 7.00% effective September 17, as announced by BNY and PNC. That lifts the SBA 7(a) maximum allowable rate on a variable-rate loan over $350,000 from 9.75% to 10.00%. The Federal Reserve's DPRIME series had not yet printed a post-hike value on September 18; its last observation is 6.75% on September 15.",
       "The 5-year Treasury rose 29 basis points, from 4.49% on August 31 to 4.78% on September 17.",
       "The 10-year Treasury rose 19 basis points, from 4.75% on August 31 to 4.94% on September 17. The 5s10s curve flattened by 10 basis points over the same stretch.",
-      "SOFR fell 6 basis points, from 3.68% on August 31 to 3.62% on September 16. Short-term floating debt got marginally cheaper while fixed-rate term debt got more expensive.",
+      "SOFR drifted from 3.68% on August 31 to 3.62% on September 16, then printed 3.85% for September 17, the first day under the new target range. That is 17 basis points above August 31, so floating-rate debt now costs more than it did at the start of the month, along with fixed-rate term debt.",
       "The 25-year SBA 504 debenture priced at 6.54% on September 10, which is inside the 10-year Treasury. For a qualifying owner-operator it is the cheapest fixed-rate money on this sheet.",
     ],
     mhdi: SEPTEMBER_2026_MHDI,
@@ -332,6 +348,7 @@ export function citedSourceIds(edition: RateEdition): string[] {
   ids.add("treasury-yield-curve");
   ids.add("nyfed-sofr");
   ids.add("fred-dprime");
+  for (const c of edition.corrections ?? []) c.sources.forEach((s) => ids.add(s));
   const fields: (keyof RateRow)[] = [
     "spread",
     "allIn",

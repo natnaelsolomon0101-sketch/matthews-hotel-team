@@ -28,7 +28,7 @@ export const page: AnswerPage = {
   h1: "How much hotel debt is maturing in 2026 and 2027?",
   description:
     "What public sources actually say about hotel loan maturities in 2026 and 2027, how to tell if yours is at risk, and what to do 12 months out.",
-  lastUpdated: "2026-09-17",
+  lastUpdated: "2026-09-18",
   authorSlug: "miles-cortez",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -53,7 +53,7 @@ export const page: AnswerPage = {
     {
       h2: "How much hotel debt is actually maturing, and who says so?",
       lead: "Trepp counts $18.7 billion of hotel CMBS maturing in 2026, nearly 70 percent of it floating; nobody publishes a hotel-specific 2027 number, and the figures that do exist count different loan universes.",
-      body: "Trepp's figure covers securitized hotel CMBS only.[1] It does not include bank balance-sheet hotel loans, life company loans, SBA loans, or debt-fund paper, none of which Trepp's CMBS count covers. So $18.7 billion is a real, dated, checkable number for one slice of the market, and it is not the size of the hotel maturity wall.\n\nThe floating-rate detail matters more than the headline. If nearly 70 percent of that 2026 book floats, then SOFR, not the 10-year Treasury, is the number that decides whether those specific loans can extend.[1] SOFR was 3.62% for September 16, 2026.[4] A floating loan that was underwritten when SOFR was near zero has already repriced; the question for that borrower is whether the cap they bought is still in the money and what a replacement cap costs, which is covered on `/hotel-financing/bridge-loans`.\n\nFor 2027 we found nothing publishable. The Mortgage Bankers Association's maturity survey says 30 percent of hotel/motel loan balances come due in 2026, but it gives no hotel dollar amount and no hotel breakdown for 2027, only a $652 billion total for all commercial and multifamily loans maturing that year.[2] Quoting that total here would imply a hotel figure that the release does not contain. The Federal Reserve publishes bank-held commercial real estate balances in H.8 with no hotel split at all.[3] A larger, round-number, multi-year hotel figure covering 2026 through year-end 2027 circulates in the trade press and, until this update, in three articles on this site. We could not source it to any publisher, so we removed it from those articles and we do not restate it here, not even to knock it down. Adding an unknown 2027 book to a sourced 2026 figure and attributing the total to a research house is not sourcing. The reasoning is on `/data/hotel-financing-statistics`, which lists every figure we rejected and why.",
+      body: "Trepp's figure covers securitized hotel CMBS only.[1] It does not include bank balance-sheet hotel loans, life company loans, SBA loans, or debt-fund paper, none of which Trepp's CMBS count covers. So $18.7 billion is a real, dated, checkable number for one slice of the market, and it is not the size of the hotel maturity wall.\n\nThe floating-rate detail matters more than the headline. If nearly 70 percent of that 2026 book floats, then SOFR, not the 10-year Treasury, is the number that decides whether those specific loans can extend.[1] SOFR was 3.85% for September 17, 2026.[4] A floating loan that was underwritten when SOFR was near zero has already repriced; the question for that borrower is whether the cap they bought is still in the money and what a replacement cap costs, which is covered on `/hotel-financing/bridge-loans`.\n\nFor 2027 we found nothing publishable. The Mortgage Bankers Association's maturity survey says 30 percent of hotel/motel loan balances come due in 2026, but it gives no hotel dollar amount and no hotel breakdown for 2027, only a $652 billion total for all commercial and multifamily loans maturing that year.[2] Quoting that total here would imply a hotel figure that the release does not contain. The Federal Reserve publishes bank-held commercial real estate balances in H.8 with no hotel split at all.[3] A larger, round-number, multi-year hotel figure covering 2026 through year-end 2027 circulates in the trade press and, until this update, in three articles on this site. We could not source it to any publisher, so we removed it from those articles and we do not restate it here, not even to knock it down. Adding an unknown 2027 book to a sourced 2026 figure and attributing the total to a research house is not sourcing. The reasoning is on `/data/hotel-financing-statistics`, which lists every figure we rejected and why.",
     },
     {
       h2: "How do I tell if my loan is at risk?",
@@ -126,7 +126,7 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' September 2026 rate sheet gives you the index to run your own maturity stress test against: the 10-year Treasury at 4.94% on September 17, 2026 and SOFR at 3.62% for September 16, 2026. It marks the spread over each as not yet published, because we do not print a spread until three independent lenders quote the same structure in a month.[7]",
+      "Matthews Hotel Markets' September 2026 rate sheet gives you the index to run your own maturity stress test against: the 10-year Treasury at 4.94% on September 17, 2026 and SOFR at 3.85% for September 17, 2026.[4] It marks the spread over each as not yet published, because we do not print a spread until three independent lenders quote the same structure in a month.[7]",
   },
   workedExample: {
     label: "Hypothetical: the one calculation that tells you if you are at risk",
@@ -190,7 +190,7 @@ export const page: AnswerPage = {
       label: "Secured Overnight Financing Rate (SOFR)",
       url: "https://www.newyorkfed.org/markets/reference-rates/sofr",
       publisher: "Federal Reserve Bank of New York",
-      accessed: "2026-09-17",
+      accessed: "2026-09-18",
     },
     {
       n: 5,

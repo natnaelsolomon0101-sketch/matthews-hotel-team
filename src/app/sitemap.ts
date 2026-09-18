@@ -312,19 +312,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const ratesRoutes: MetadataRoute.Sitemap = [
     {
       url: `${SITE_URL}/rates`,
-      lastModified: new Date(latest.publishedAt),
+      lastModified: new Date(latest.modifiedAt ?? latest.publishedAt),
       changeFrequency: "monthly",
       priority: 0.95,
     },
     {
       url: `${SITE_URL}/rates/methodology`,
-      lastModified: new Date(latest.publishedAt),
+      lastModified: new Date(latest.modifiedAt ?? latest.publishedAt),
       changeFrequency: "yearly",
       priority: 0.7,
     },
     ...EDITIONS.map((e) => ({
       url: `${SITE_URL}/rates/${e.slug}`,
-      lastModified: new Date(e.publishedAt),
+      lastModified: new Date(e.modifiedAt ?? e.publishedAt),
       changeFrequency: "yearly" as const,
       priority: 0.6,
     })),

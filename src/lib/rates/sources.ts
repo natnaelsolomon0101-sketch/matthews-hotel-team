@@ -6,7 +6,9 @@ import type { RateSource } from "./types";
  * link. Cells reference these by id. A cell with no source id cannot be
  * marked `published`.
  *
- * All links were opened and read on 2026-09-17.
+ * All links were opened and read on 2026-09-17. The Treasury, SOFR, FRED,
+ * FOMC, SBA 7(a) and prime-rate announcement sources were re-read on
+ * 2026-09-18 for the September correction.
  */
 export const RATE_SOURCES: RateSource[] = [
   {
@@ -15,15 +17,15 @@ export const RATE_SOURCES: RateSource[] = [
     publisher: "U.S. Department of the Treasury",
     url: "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
     asOf: "2026-09-17",
-    verified: "2026-09-17",
+    verified: "2026-09-18",
   },
   {
     id: "nyfed-sofr",
     name: "Secured Overnight Financing Rate (SOFR)",
     publisher: "Federal Reserve Bank of New York",
     url: "https://www.newyorkfed.org/markets/reference-rates/sofr",
-    asOf: "2026-09-16",
-    verified: "2026-09-17",
+    asOf: "2026-09-17",
+    verified: "2026-09-18",
   },
   {
     id: "fred-dprime",
@@ -31,7 +33,31 @@ export const RATE_SOURCES: RateSource[] = [
     publisher: "Federal Reserve Bank of St. Louis (FRED)",
     url: "https://fred.stlouisfed.org/series/DPRIME",
     asOf: "2026-09-15",
-    verified: "2026-09-17",
+    verified: "2026-09-18",
+  },
+  {
+    id: "bny-prime-2026-09",
+    name: "BNY Increases Prime Lending Rate to 7.00%, effective September 17, 2026",
+    publisher: "The Bank of New York Mellon Corporation, via PR Newswire",
+    url: "https://www.prnewswire.com/news-releases/bny-increases-prime-lending-rate-to-7-00-302881066.html",
+    asOf: "2026-09-16",
+    verified: "2026-09-18",
+  },
+  {
+    id: "pnc-prime-2026-09",
+    name: "PNC Bank, N.A. Changes Prime Rate to 7.00%, effective September 17, 2026",
+    publisher: "PNC Bank, N.A., via PR Newswire",
+    url: "https://www.prnewswire.com/news-releases/pnc-bank-na-changes-prime-rate-302881163.html",
+    asOf: "2026-09-16",
+    verified: "2026-09-18",
+  },
+  {
+    id: "fred-dfedtaru",
+    name: "Federal Funds Target Range, Upper Limit (DFEDTARU)",
+    publisher: "Federal Reserve Bank of St. Louis (FRED)",
+    url: "https://fred.stlouisfed.org/series/DFEDTARU",
+    asOf: "2026-09-17",
+    verified: "2026-09-18",
   },
   {
     id: "fomc-2026-09",
@@ -39,7 +65,7 @@ export const RATE_SOURCES: RateSource[] = [
     publisher: "Board of Governors of the Federal Reserve System",
     url: "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
     asOf: "2026-09-16",
-    verified: "2026-09-17",
+    verified: "2026-09-18",
   },
   {
     id: "sba-7a-terms",
@@ -47,7 +73,7 @@ export const RATE_SOURCES: RateSource[] = [
     publisher: "U.S. Small Business Administration",
     url: "https://www.sba.gov/partners/lenders/7a-loan-program/terms-conditions-eligibility",
     asOf: "2026-09-17",
-    verified: "2026-09-17",
+    verified: "2026-09-18",
   },
   {
     id: "sba-504-program",

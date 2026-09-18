@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "How Hotel Debt Placement Works",
   h1: "How does hotel debt placement actually work?",
   description: "What a debt placement broker does on a hotel loan, how lenders are selected, what it costs, and when to run a process instead of calling your bank.",
-  lastUpdated: "2026-09-17",
+  lastUpdated: "2026-09-18",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -53,7 +53,7 @@ export const page: AnswerPage = {
     {
       h2: "What does debt placement cost?",
       lead: "A placement fee is typically quoted as a percentage of the loan amount, paid at closing, and it is a negotiable line item, not a fixed industry rate.",
-      body: "Matthews Hotel Markets' September 2026 rate sheet marks the spread between lender types as not yet published, and that is exactly the point: the gap a placement process captures is not a number anyone prints, which is why an owner cannot look it up and decide on their own whether the process is worth the fee. What the sheet does publish is the index every quote is struck against, the 10-year Treasury at 4.94% on September 17, 2026 and SOFR at 3.62% for September 16, 2026.[1][2][3] The fee should be agreed in writing before the process starts, not negotiated after term sheets are in hand, and an owner should ask directly what the fee is and whether it is contingent on closing."
+      body: "Matthews Hotel Markets' September 2026 rate sheet marks the spread between lender types as not yet published, and that is exactly the point: the gap a placement process captures is not a number anyone prints, which is why an owner cannot look it up and decide on their own whether the process is worth the fee. What the sheet does publish is the index every quote is struck against, the 10-year Treasury at 4.94% on September 17, 2026 and SOFR at 3.85% for September 17, 2026.[1][2][3] The fee should be agreed in writing before the process starts, not negotiated after term sheets are in hand, and an owner should ask directly what the fee is and whether it is contingent on closing."
     },
     {
       h2: "When should I just call my bank?",
@@ -119,7 +119,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet marks the spread between lender types as not yet published, and that is the point: the number a placement process captures is not a number anyone prints. The sheet does publish the index every quote is struck against, the 10-year Treasury at 4.94% on September 17, 2026 and SOFR at 3.62% for September 16, 2026.[3]"
+    sentence: "Matthews Hotel Markets' September 2026 rate sheet marks the spread between lender types as not yet published, and that is the point: the number a placement process captures is not a number anyone prints. The sheet does publish the index every quote is struck against, the 10-year Treasury at 4.94% on September 17, 2026 and SOFR at 3.85% for September 17, 2026.[2][3]"
   },
   workedExample: {
     label: "Hypothetical: does the fee pay for itself?",
