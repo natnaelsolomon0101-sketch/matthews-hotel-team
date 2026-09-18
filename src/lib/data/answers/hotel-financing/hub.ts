@@ -48,7 +48,7 @@ export const page: AnswerPage = {
     {
       h2: "Who actually lends on hotels?",
       lead: "Five lender types compete for hotel debt, and each one wants a different deal, not the same deal at a different price.",
-      body: "Banks and credit unions want a relationship and will usually ask for recourse. Life insurance companies want the lowest leverage and the longest, most stabilized hold, in exchange for the lowest rate. CMBS conduits want stabilized cash flow they can pool and sell, sized to a debt yield floor, non-recourse with standard carve-outs. SBA lenders want an owner-operator inside the program's caps. Debt funds and bridge lenders want a transition story: a PIP in progress, a ramp after a brand change, or a maturity that cannot yet refinance permanently.\n\nThe full comparison, with typical leverage and minimum loan size by type, is on `/hotel-financing/hotel-lenders-by-type`."
+      body: "Banks and credit unions want a relationship and will usually ask for recourse. Life insurance companies want the lowest leverage and the longest, most stabilized hold, in exchange for the lowest rate. CMBS conduits want stabilized cash flow they can pool and sell, sized to a debt yield floor, non-recourse with standard carve-outs. SBA lenders want an owner-operator inside the program's caps. Debt funds and bridge lenders want a transition story: a PIP in progress, a ramp after a brand change, or a maturity that cannot yet refinance permanently.\n\nThe full comparison, with typical leverage and minimum loan size by type, is on `/hotel-financing/hotel-lenders-by-type`. Recourse is covered on `/hotel-financing/non-recourse-loans`, interest-only structures on `/hotel-financing/interest-only-loans`, ground-up projects on `/hotel-financing/construction-loans`, reflags on `/hotel-financing/brand-conversion-financing`, and extended-stay hotels on `/hotel-financing/extended-stay-financing`."
     },
     {
       h2: "What do I need before a lender will quote me?",
@@ -68,7 +68,7 @@ export const page: AnswerPage = {
     {
       h2: "What is the smallest hotel loan a lender will do?",
       lead: "Minimum loan size is a quiet filter that rules out entire lender types before rate ever comes up.",
-      body: "SBA's 7(a) program terms set a $5 million maximum and list no minimum loan size, so SBA lenders go smaller than any other type.[3] CMBS conduits and life insurance companies generally prefer larger loans, because the fixed cost of underwriting and, for CMBS, pooling a small loan does not pencil against the fee. Banks sit in between and will size to a relationship even on a smaller loan. If your loan need is small, the practical lender universe narrows to banks, credit unions, SBA, and some debt funds before you ever discuss rate."
+      body: "SBA's 7(a) program terms set a $5 million maximum and list no minimum loan size, so SBA lenders go smaller than any other type.[3] CMBS conduits and life insurance companies generally prefer larger loans, because the fixed cost of underwriting and, for CMBS, pooling a small loan does not pencil against the fee. Banks sit in between and will size to a relationship even on a smaller loan. If your loan need is small, the practical lender universe narrows to banks, credit unions, SBA, and some debt funds before you ever discuss rate. `/hotel-financing/lenders-under-5-million` compares the small-balance options, including the USDA guarantee for rural hotels."
     }
   ],
   table: {
