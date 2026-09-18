@@ -1,0 +1,22 @@
+name: GEO ship gate
+
+# Runs scripts/geo-check.sh on every PR into main. The maintenance agents may
+# only merge a PR after this check is green. It builds and tests locally in
+# the runner and never sends traffic to the production site.
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  geo-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: bash scripts/geo-check.sh
