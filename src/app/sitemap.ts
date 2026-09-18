@@ -374,6 +374,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.5,
     },
+    {
+      url: `${SITE_URL}/developers`,
+      // Authored 2026-09-18 with the agent-access layer; bump when it changes.
+      lastModified: new Date("2026-09-18T12:00:00Z"),
+      changeFrequency: "monthly",
+      priority: 0.4,
+    },
   ];
 
   return [

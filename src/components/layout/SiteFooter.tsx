@@ -44,8 +44,9 @@ const COLUMNS: FooterColumn[] = [
       { href: "/hotel-financing", label: "Hotel Financing" },
       { href: "/sell-a-hotel", label: "Sell a Hotel" },
       { href: "/hotel-valuation", label: "Hotel Valuation" },
+      { href: "/buy-a-hotel", label: "Buy a Hotel" },
       { href: "/glossary", label: "Glossary" },
-      { href: "/tools/dscr-calculator", label: "DSCR Calculator" },
+      { href: "/tools", label: "Calculators" },
     ],
   },
   {
@@ -86,6 +87,7 @@ const COLUMNS: FooterColumn[] = [
       { href: "/team", label: "Team" },
       { href: "/insights", label: "Insights" },
       { href: "/press", label: "Press" },
+      { href: "/developers", label: "For Developers and AI Agents" },
       { href: "/contact", label: "Contact" },
       { href: PARENT_URL, label: "Matthews.com", external: true },
       { href: LINKEDIN, label: "LinkedIn", external: true },

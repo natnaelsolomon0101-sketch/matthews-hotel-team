@@ -25,6 +25,7 @@ import { brands } from "../data/brands";
 import { insights } from "../data/insights";
 import { abs, mdUrl, longDate, inline, paragraphs, table, citeAsPage, header, footer } from "./md";
 import { aboutTwin, methodologyTwin, ratesTwin, statisticsTwin } from "./static-pages";
+import { KNOWN_PATH_LABELS } from "../data/answers/path-labels";
 
 export type Twin = {
   /** HTML path, e.g. "/hotel-financing/sba-7a-vs-504". */
@@ -53,16 +54,7 @@ function labelForPath(path: string): string {
   const term = glossary.find((g) => `/glossary/${g.slug}` === path);
   if (term) return term.term;
   // Same fallbacks as AnswerPageView's labelForPath, so link text matches.
-  const KNOWN: Record<string, string> = {
-    "/rates": "Matthews Hotel Markets rate sheet",
-    "/rates/methodology": "How the rate sheet is built",
-    "/research/mhi": "The Matthews Hotel Index",
-    "/research/mhi/q1-2026": "Matthews Hotel Index, Q1 2026",
-    "/data/hotel-financing-statistics": "Hotel financing statistics",
-    "/process": "How a listing engagement runs",
-    "/tools/dscr-calculator": "Hotel DSCR calculator",
-  };
-  return KNOWN[path] ?? path;
+  return KNOWN_PATH_LABELS[path] ?? path;
 }
 
 function link(path: string): string {
