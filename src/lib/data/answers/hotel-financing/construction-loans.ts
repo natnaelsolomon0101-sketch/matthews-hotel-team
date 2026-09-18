@@ -192,14 +192,14 @@ export const page: AnswerPage = {
     {
       n: 5,
       label: "7(a) loan program: terms, conditions, and eligibility",
-      url: "https://www.sba.gov/partners/lenders/7a-loan-program/terms-conditions-eligibility",
+      url: "https://www.sba.gov/sba-lenders/#7a-terms",
       publisher: "U.S. Small Business Administration",
       accessed: "2026-09-18"
     },
     {
       n: 6,
       label: "SOP 50 10 8, Lender and Development Company Loan Programs (effective June 1, 2025): amortization and balloons (p. 125), 7(a) construction loan provisions (pp. 311-312), 504 interim financing (pp. 332-333), debenture limits (p. 350), hotels as Limited or Special Purpose Property (pp. 354-355)",
-      url: "https://www.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
+      url: "https://legacy.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
       publisher: "U.S. Small Business Administration",
       accessed: "2026-09-18"
     },

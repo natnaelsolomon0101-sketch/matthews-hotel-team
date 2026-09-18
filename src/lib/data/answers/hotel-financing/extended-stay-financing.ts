@@ -167,7 +167,7 @@ export const page: AnswerPage = {
     {
       n: 1,
       label: "SOP 50 10 8, Lender and Development Company Loan Programs (effective June 1, 2025), Section A, Ch. 1, passive businesses: hotels and the 30-day transient revenue test (pp. 19-20); third-party verification of seller financial data (p. 91)",
-      url: "https://www.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
+      url: "https://legacy.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
       publisher: "U.S. Small Business Administration",
       accessed: "2026-09-18"
     },
@@ -195,7 +195,7 @@ export const page: AnswerPage = {
     {
       n: 5,
       label: "7(a) loan program: terms, conditions, and eligibility",
-      url: "https://www.sba.gov/partners/lenders/7a-loan-program/terms-conditions-eligibility",
+      url: "https://www.sba.gov/sba-lenders/#7a-terms",
       publisher: "U.S. Small Business Administration",
       accessed: "2026-09-18"
     },

@@ -174,7 +174,7 @@ export const page: AnswerPage = {
     {
       n: 2,
       label: "SOP 50 10 8, Lender and Development Company Loan Programs (effective June 1, 2025), Section B: amortization, no balloon payments (p. 125); note terms and interest-only payment periods (p. 316)",
-      url: "https://www.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
+      url: "https://legacy.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
       publisher: "U.S. Small Business Administration",
       accessed: "2026-09-18"
     },
@@ -202,7 +202,7 @@ export const page: AnswerPage = {
     {
       n: 6,
       label: "7(a) loan program: terms, conditions, and eligibility",
-      url: "https://www.sba.gov/partners/lenders/7a-loan-program/terms-conditions-eligibility",
+      url: "https://www.sba.gov/sba-lenders/#7a-terms",
       publisher: "U.S. Small Business Administration",
       accessed: "2026-09-18"
     },

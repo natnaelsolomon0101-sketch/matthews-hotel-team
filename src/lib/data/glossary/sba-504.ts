@@ -43,7 +43,7 @@ export const entry: GlossaryEntry = {
   sources: [
     {
       label: "504 loans",
-      url: "https://www.sba.gov/funding-programs/loans/504-loans",
+      url: "https://www.sba.gov/loans/504-loans/",
       publisher: "U.S. Small Business Administration"
     },
     {
@@ -58,7 +58,7 @@ export const entry: GlossaryEntry = {
     },
     {
       label: "SOP 50 10 8, Lender and Development Company Loan Programs (effective June 1, 2025), Section C, Ch. 1: debenture limits (p. 350) and Limited or Special Purpose Property, which lists hotels (pp. 354-355)",
-      url: "https://www.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
+      url: "https://legacy.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
       publisher: "U.S. Small Business Administration"
     },
     {

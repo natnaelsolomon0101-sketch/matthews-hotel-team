@@ -51,7 +51,7 @@ export const entry: GlossaryEntry = {
     },
     {
       label: "AHLA Hotel Transaction Resources",
-      url: "https://www.ahla.com/research",
+      url: "https://www.ahla.com/resource-center",
       publisher: "AHLA",
     },
     {
@@ -66,7 +66,7 @@ export const entry: GlossaryEntry = {
     },
     {
       label: "JLL Hotels & Hospitality Research",
-      url: "https://www.us.jll.com/en/industries/hotels-and-hospitality",
+      url: "https://www.jll.com/en-us/property-types/hotels-hospitality",
       publisher: "JLL",
     },
   ],
@@ -82,6 +82,6 @@ export const entry: GlossaryEntry = {
     "hotel-owners-refinancing-wave-2026",
     "sun-belt-hospitality-2026-investor-sentiment-preview",
   ],
-  lastUpdated: "2026-05-10",
+  lastUpdated: "2026-09-18",
   authorSlug: "nate-solomon",
 };

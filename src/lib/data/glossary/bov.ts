@@ -51,12 +51,12 @@ export const entry: GlossaryEntry = {
     },
     {
       label: "USPAP (Uniform Standards of Professional Appraisal Practice)",
-      url: "https://www.appraisalfoundation.org/imis/TAF/Standards/USPAP/TAF/USPAP.aspx",
+      url: "https://appraisalfoundation.org/pages/uspap",
       publisher: "The Appraisal Foundation",
     },
     {
       label: "AHLA Hotel Investment Resources",
-      url: "https://www.ahla.com/research",
+      url: "https://www.ahla.com/resource-center",
       publisher: "AHLA",
     },
     {
@@ -82,6 +82,6 @@ export const entry: GlossaryEntry = {
     "hotel-owners-refinancing-wave-2026",
     "select-service-vs-full-service-capital-markets-2026",
   ],
-  lastUpdated: "2026-05-10",
+  lastUpdated: "2026-09-18",
   authorSlug: "nate-solomon",
 };

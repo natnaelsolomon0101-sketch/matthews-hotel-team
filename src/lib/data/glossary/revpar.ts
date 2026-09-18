@@ -51,12 +51,12 @@ export const entry: GlossaryEntry = {
     },
     {
       label: "AHLA State of the Hotel Industry 2026",
-      url: "https://www.ahla.com/research/state-hotel-industry",
+      url: "https://www.ahla.com/resource/2026-state-industry",
       publisher: "AHLA",
     },
     {
       label: "HVS US Hotel Market Pulse",
-      url: "https://www.hvs.com/article/category/126-market-pulse",
+      url: "https://www.hvs.com/insights/",
       publisher: "HVS",
     },
     {
@@ -82,6 +82,6 @@ export const entry: GlossaryEntry = {
     "adr-recovery-texas-secondary",
     "sun-belt-hospitality-2026-investor-sentiment-preview",
   ],
-  lastUpdated: "2026-05-10",
+  lastUpdated: "2026-09-18",
   authorSlug: "luke-thompson",
 };

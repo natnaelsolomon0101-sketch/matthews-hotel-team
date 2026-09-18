@@ -167,7 +167,7 @@ export const page: AnswerPage = {
     {
       n: 1,
       label: "7(a) loan program: terms, conditions, and eligibility",
-      url: "https://www.sba.gov/partners/lenders/7a-loan-program/terms-conditions-eligibility",
+      url: "https://www.sba.gov/sba-lenders/#7a-terms",
       publisher: "U.S. Small Business Administration",
       accessed: "2026-09-18"
     },
@@ -188,7 +188,7 @@ export const page: AnswerPage = {
     {
       n: 4,
       label: "SOP 50 10 8, Lender and Development Company Loan Programs (effective June 1, 2025): 30-day transient revenue test (pp. 19-20), no balloon payments (p. 125), debenture limits (p. 350), hotels as Limited or Special Purpose Property (pp. 354-355)",
-      url: "https://www.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
+      url: "https://legacy.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
       publisher: "U.S. Small Business Administration",
       accessed: "2026-09-18"
     },
@@ -244,7 +244,7 @@ export const page: AnswerPage = {
     {
       n: 12,
       label: "504 loans",
-      url: "https://www.sba.gov/funding-programs/loans/504-loans",
+      url: "https://www.sba.gov/loans/504-loans/",
       publisher: "U.S. Small Business Administration",
       accessed: "2026-09-18"
     },

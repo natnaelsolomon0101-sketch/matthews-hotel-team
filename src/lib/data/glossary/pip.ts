@@ -46,12 +46,12 @@ export const entry: GlossaryEntry = {
   sources: [
     {
       label: "HVS PIP Cost Estimating Guides",
-      url: "https://www.hvs.com/Search?q=property+improvement+plan",
+      url: "https://www.hvs.com/insights/",
       publisher: "HVS",
     },
     {
       label: "AHLA Lodging Industry Investment Council",
-      url: "https://www.ahla.com/research",
+      url: "https://www.ahla.com/resource-center",
       publisher: "AHLA",
     },
     {
@@ -61,7 +61,7 @@ export const entry: GlossaryEntry = {
     },
     {
       label: "Hotel Franchise Disclosure Documents (FDD) Overview",
-      url: "https://www.ftc.gov/business-guidance/resources/franchise-rule-frequently-asked-questions",
+      url: "https://www.ftc.gov/business-guidance/resources/amended-franchise-rule-faqs",
       publisher: "FTC",
     },
     {
@@ -82,6 +82,6 @@ export const entry: GlossaryEntry = {
     "select-service-vs-full-service-capital-markets-2026",
     "hotel-owners-refinancing-wave-2026",
   ],
-  lastUpdated: "2026-05-10",
+  lastUpdated: "2026-09-18",
   authorSlug: "luke-thompson",
 };

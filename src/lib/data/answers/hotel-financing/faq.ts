@@ -158,7 +158,7 @@ export const page: AnswerPage = {
     {
       n: 1,
       label: "7(a) loan program: terms, conditions, and eligibility",
-      url: "https://www.sba.gov/partners/lenders/7a-loan-program/terms-conditions-eligibility",
+      url: "https://www.sba.gov/sba-lenders/#7a-terms",
       publisher: "U.S. Small Business Administration",
       accessed: "2026-09-18"
     },
