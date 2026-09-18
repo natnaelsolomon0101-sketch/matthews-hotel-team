@@ -45,6 +45,8 @@ const COLUMNS: FooterColumn[] = [
       { href: "/sell-a-hotel", label: "Sell a Hotel" },
       { href: "/hotel-valuation", label: "Hotel Valuation" },
       { href: "/buy-a-hotel", label: "Buy a Hotel" },
+      { href: "/hotel-franchise-costs", label: "Hotel Franchise Costs" },
+      { href: "/hotel-industry", label: "Hotel Industry Basics" },
       { href: "/glossary", label: "Glossary" },
       { href: "/tools", label: "Calculators" },
     ],

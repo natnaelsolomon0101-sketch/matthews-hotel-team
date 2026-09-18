@@ -182,7 +182,8 @@ export const page: AnswerPage = {
       "/glossary/pip"
     ],
     data: [
-      "/rates"
+      "/rates",
+      "/tools/hotel-loan-sizing-calculator"
     ]
   },
   cta: {

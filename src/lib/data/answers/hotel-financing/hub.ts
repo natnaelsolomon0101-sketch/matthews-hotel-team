@@ -205,7 +205,9 @@ export const page: AnswerPage = {
     ],
     data: [
       "/rates",
-      "/tools"
+      "/tools",
+      "/tools/hotel-loan-sizing-calculator",
+      "/data/sba-hotel-lending"
     ]
   },
   cta: {

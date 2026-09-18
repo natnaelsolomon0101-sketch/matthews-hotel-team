@@ -217,7 +217,8 @@ export const page: AnswerPage = {
     ],
     data: [
       "/research/mhi/q1-2026",
-      "/rates"
+      "/rates",
+      "/hotel-franchise-costs"
     ]
   },
   cta: {

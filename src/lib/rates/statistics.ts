@@ -532,12 +532,12 @@ export const STATS: Stat[] = [
   {
     id: "costar-2026-forecast",
     group: "operating-fundamentals",
-    text: "CoStar and Tourism Economics forecast U.S. RevPAR growth of 0.6% for full-year 2026, on ADR growth of 1.0% and demand growth of 0.4%.",
+    text: "CoStar and Tourism Economics forecast U.S. RevPAR growth of 4.4% for full-year 2026, on ADR growth of 3.1% and occupancy of 63.1%, and RevPAR growth of 2.1% for 2027. They raised the 2026 figure twice during the year, from 0.6% in February and 2.8% in June.",
     sourceName:
-      "2026 forecast shows modest RevPAR growth amid lingering industry headwinds",
-    publisher: "Hotel Online, citing STR and Tourism Economics (CoStar Group)",
-    url: "https://www.hotel-online.com/news/2026-forecast-shows-modest-revpar-growth-amid-lingering-industry-headwinds",
-    asOf: "2026-02-10",
+      "CoStar, Tourism Economics 'significantly' boost US hotel outlook",
+    publisher: "Hotel Dive, citing CoStar and Tourism Economics",
+    url: "https://www.hoteldive.com/news/costar-tourism-economics-raise-us-hotel-performance-outlook-2026/827318/",
+    asOf: "2026-08-07",
     verified: V,
   },
   {
@@ -549,7 +549,7 @@ export const STATS: Stat[] = [
     url: "https://www.cbre.com/insights/books/us-real-estate-market-outlook-midyear-review-2026/hotels",
     asOf: "2026-06-30",
     verified: V,
-    note: "CBRE and CoStar are roughly 190 basis points apart on the same year. Anyone underwriting to a single RevPAR forecast should know that the two most-cited houses disagree by more than the forecast itself.",
+    note: "CBRE's midyear 2.5% and CoStar's August 4.4% are roughly 190 basis points apart on the same year, and the order flipped during 2026: in February CoStar was the lower of the two at 0.6%. Anyone underwriting to a single RevPAR forecast should know the two most-cited houses disagree, and that both revise.",
   },
   {
     id: "cbre-occupancy",
