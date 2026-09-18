@@ -210,7 +210,7 @@ function expectedFor(url: string, found: string[]): string[] {
   const CLUSTER_HUBS = clusters.map((c) => `/${c.cluster}`);
 
   // R5 / R7 / R8 / R9 / R10 — every cluster spoke.
-  if (/^\/(hotel-financing|sell-a-hotel|hotel-valuation)\/.+/.test(url)) {
+  if (CLUSTER_HUBS.some((h) => url.startsWith(h + "/"))) {
     const hub = "/" + url.split("/")[1];
     if (!found.includes(hub)) missing.push(`R5: hub link ${hub}`);
     const sibs = found.filter((f) => f.startsWith(hub + "/") && f !== url).length;

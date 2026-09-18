@@ -1,6 +1,7 @@
 /**
- * ANSWER PAGES — the typed content model for the three answer clusters
- * (/hotel-financing, /sell-a-hotel, /hotel-valuation) and the tool shelf.
+ * ANSWER PAGES — the typed content model for the answer clusters
+ * (/hotel-financing, /sell-a-hotel, /hotel-valuation, /buy-a-hotel) and the
+ * tool shelf.
  *
  * The shape mirrors `GlossaryEntry` (src/lib/data/glossary/types.ts) on
  * purpose: content on this site lives in typed TypeScript modules under
@@ -14,7 +15,11 @@
  * only.
  */
 
-export type AnswerCluster = "hotel-financing" | "sell-a-hotel" | "hotel-valuation";
+export type AnswerCluster =
+  | "hotel-financing"
+  | "sell-a-hotel"
+  | "hotel-valuation"
+  | "buy-a-hotel";
 
 export type AnswerSection = {
   /** The sub-question, rendered as the section's <h2>. */
@@ -57,7 +62,7 @@ export type AnswerRelated = {
 export type AnswerPage = {
   slug: string;
   cluster: AnswerCluster;
-  /** True for the three cluster hubs, which also render a spoke list. */
+  /** True for the cluster hubs, which also render a spoke list. */
   isHub: boolean;
   /** ≤60 chars. */
   title: string;
