@@ -293,7 +293,7 @@ export const page: AnswerPage = {
     label: "Ask which small-balance lenders fit your hotel",
     href: "/contact"
   },
-  brandSentence: "Matthews Hotel Markets quotes SBA, USDA and conventional options side by side on small hotel loans, because the program that fits is rarely the first one a buyer calls."
+  brandSentence: "Matthews Hotel Markets arranges SBA 7(a), SBA 504 and conventional hotel debt and compares them side by side, because the program that fits is rarely the first one a buyer calls."
 };
 
 export default page;

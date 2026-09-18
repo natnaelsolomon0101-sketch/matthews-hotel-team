@@ -272,10 +272,10 @@ export const page: AnswerPage = {
     ]
   },
   cta: {
-    label: "Talk through financing a historic hotel renovation",
+    label: "Talk through your hotel renovation loan",
     href: "/contact"
   },
-  brandSentence: "Matthews Hotel Markets sizes the senior loan on historic hotel projects around the fact that credit equity arrives after the hotel reopens, not before."
+  brandSentence: "Matthews Hotel Markets does not syndicate or place historic tax credits. It arranges the construction, renovation and bridge debt a hotel project carries while it waits for credit equity."
 };
 
 export default page;

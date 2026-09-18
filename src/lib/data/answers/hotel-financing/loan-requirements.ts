@@ -203,7 +203,7 @@ export const page: AnswerPage = {
     label: "Send us your T-12 and we will size it",
     href: "/contact"
   },
-  brandSentence: "Matthews Hotel Markets runs this package for clients before the first lender call, which is why our quotes come back sized rather than caveated."
+  brandSentence: "Matthews Hotel Markets assembles this package with clients before the first lender call, so a lender can size the loan from a complete file."
 };
 
 export default page;

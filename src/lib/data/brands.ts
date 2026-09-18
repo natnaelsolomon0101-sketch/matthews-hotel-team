@@ -32,7 +32,7 @@ export const brands: BrandFlag[] = [
     buyerPool:
       "Family offices, HNW first-time hotel buyers, PE roll-ups, and select-service REITs (Apple Hospitality, Summit, Chatham, Service Properties Trust).",
     ourActivity:
-      "Matthews has closed Hampton Inn dispositions across Texas, the Sun Belt, and the Midwest. We currently advise on Hampton acquisitions and dispositions ranging from single-asset to multi-property portfolios.",
+      "Matthews Hotel Markets sells and arranges financing for Hampton hotels. Published Hampton transactions at /closed include sales and financings in Texas, Georgia, Iowa and Oklahoma.",
   },
   {
     slug: "holiday-inn-express",
@@ -56,7 +56,7 @@ export const brands: BrandFlag[] = [
     buyerPool:
       "PE select-service roll-ups, family offices, owner-operators, and franchise-experienced HNW investors. IHG-affiliated operating groups and Apple Hospitality / Summit / Chatham buyers when the asset fits portfolio strategy.",
     ourActivity:
-      "Matthews advises on HIE dispositions, capital markets placement, and acquisition mandates across the Sun Belt, Midwest, and Mountain West. Hampton Inn Portfolio Atlanta and the broader Sun Belt HIE pipeline have been recent areas of focus.",
+      "Matthews Hotel Markets sells and arranges financing for Holiday Inn Express hotels. Published Holiday Inn Express transactions in Georgia and Texas are listed at /closed.",
   },
   {
     slug: "marriott",
@@ -84,7 +84,7 @@ export const brands: BrandFlag[] = [
     buyerPool:
       "Select-service Marriott: REITs (Apple, Summit, Chatham, Diamondrock), family offices, PE roll-ups. Full-service Marriott: Host Hotels, Pebblebrook, sovereign wealth funds, large family offices, Bonvoy-strategic operators.",
     ourActivity:
-      "Active Marriott dispositions span Courtyard, Fairfield, and Residence Inn flags across Texas, the Sun Belt, and Mountain West.",
+      "Published Marriott-family transactions at /closed include Courtyard, Residence Inn and full-service Marriott hotels.",
   },
   {
     slug: "hilton",
@@ -113,7 +113,7 @@ export const brands: BrandFlag[] = [
     buyerPool:
       "Spans the full institutional capital stack: Apple Hospitality (select-service Hilton REIT focus), Park Hotels (full-service spin-off), family offices, PE roll-ups, and luxury-focused buyers for Conrad / Waldorf.",
     ourActivity:
-      "Hampton Inn family is documented separately. Active Hilton transactions include Hilton Garden Inn, Home2 Suites, and DoubleTree across the Sun Belt.",
+      "Hampton Inn family is documented separately. Published Hilton transactions at /closed include Hilton Garden Inn and Home2 Suites hotels.",
   },
   {
     slug: "ihg",
@@ -133,7 +133,7 @@ export const brands: BrandFlag[] = [
     segment: "Midscale Select-Service through Full Service + Luxury (InterContinental)",
     tagline: "IHG hotels for sale: Holiday Inn, Express, Staybridge, Candlewood.",
     intro:
-      "Matthews Hotel Markets executes hotel transactions across the IHG portfolio. Holiday Inn Express is documented separately as our most actively traded IHG flag. Beyond HIE: Holiday Inn (mid-tier full-service), Staybridge Suites and Candlewood Suites (extended-stay), InterContinental and Crowne Plaza (full-service / convention), and the newer voco and Avid Hotels flags.",
+      "Matthews Hotel Markets executes hotel transactions across the IHG portfolio. Holiday Inn Express is documented separately. Beyond HIE: Holiday Inn (mid-tier full-service), Staybridge Suites and Candlewood Suites (extended-stay), InterContinental and Crowne Plaza (full-service / convention), and the newer voco and Avid Hotels flags.",
     underwritingNotes: [
       "Holiday Inn full-service is a workout segment; many properties carry PIP overhang and conversion-candidate economics rather than stabilized cash flow.",
       "Staybridge Suites and Candlewood Suites trade at extended-stay premium cap discipline; buyer pool overlaps with WoodSpring and TownePlace.",
@@ -143,7 +143,7 @@ export const brands: BrandFlag[] = [
     buyerPool:
       "Holiday Inn Express + Staybridge + Candlewood: select-service REITs (Apple, Summit, Chatham, Service Properties Trust), family offices, PE. Full-service IHG (InterContinental, Crowne Plaza): Host, Pebblebrook, sovereign / international capital.",
     ourActivity:
-      "Active across Holiday Inn Express portfolios, Staybridge Suites dispositions, and select-service IHG capital markets placements.",
+      "Published IHG transactions at /closed include Holiday Inn Express, Holiday Inn, Staybridge Suites and Crowne Plaza hotels.",
   },
   {
     slug: "best-western",
@@ -168,7 +168,7 @@ export const brands: BrandFlag[] = [
     buyerPool:
       "Owner-operators, family offices, AAHOA membership-network buyers, smaller PE select-service funds.",
     ourActivity:
-      "Best Western dispositions across Texas, the Midwest, and Mountain West. Track record includes multiple Best Western and Best Western Plus closes.",
+      "Matthews Hotel Markets sells and arranges financing for Best Western family hotels nationwide. Every transaction the team publishes is listed at /closed.",
   },
   {
     slug: "hyatt",
@@ -197,7 +197,7 @@ export const brands: BrandFlag[] = [
     buyerPool:
       "Select-service Hyatt: Apple Hospitality, Summit, Chatham, family offices. Full-service: Pebblebrook, Sunstone, Host (selectively). Lifestyle (Andaz / Centric): boutique-focused PE funds, family offices, branded-experience operators.",
     ourActivity:
-      "Active Hyatt transactions span Hyatt Place and Hyatt House select-service through full-service Hyatt Regency assets.",
+      "Matthews Hotel Markets sells and arranges financing for Hyatt family hotels nationwide. Every transaction the team publishes is listed at /closed.",
   },
   {
     slug: "choice",
@@ -228,7 +228,7 @@ export const brands: BrandFlag[] = [
     buyerPool:
       "Comfort / Quality / Sleep Inn: owner-operators, family offices, AAHOA buyers. WoodSpring Suites: extended-stay-focused REITs and PE. Cambria: upscale-focused buyers, including larger family offices and PE.",
     ourActivity:
-      "Active Choice transactions span Comfort Inn, Quality Inn, and WoodSpring Suites across Texas, the Sun Belt, and the Midwest.",
+      "Published Choice-family transactions at /closed include Quality Inn, Country Inn & Suites and Radisson hotels.",
   },
   {
     slug: "wyndham",
@@ -262,7 +262,7 @@ export const brands: BrandFlag[] = [
     buyerPool:
       "La Quinta / Wingate / Microtel: family offices, owner-operators, smaller PE roll-ups. Days Inn / Super 8 / Travelodge: economy-focused investor pool, often franchise-experienced AAHOA-network buyers.",
     ourActivity:
-      "Active Wyndham transactions span La Quinta and Days Inn family flags across Texas and the Sun Belt.",
+      "Published Wyndham transactions at /closed include La Quinta and Ramada hotels in Texas.",
   },
 ];
 

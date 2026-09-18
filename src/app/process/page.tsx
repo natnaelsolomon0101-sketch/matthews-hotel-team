@@ -10,7 +10,7 @@ import { SITE_URL, breadcrumb, webPage } from "@/lib/entity";
 export const metadata: Metadata = {
   title: "How to Sell a Hotel | 24-Week Transaction Process",
   description:
-    "How to sell a hotel: a four-phase, 24-week marketing playbook from Matthews Hotel Markets. From engagement and underwriting to closing. Refined across hundreds of completed transactions.",
+    "How to sell a hotel: a four-phase, 24-week marketing playbook from Matthews Hotel Markets. From engagement and underwriting to closing.",
   alternates: { canonical: `${SITE_URL}/process` },
   openGraph: {
     type: "article",

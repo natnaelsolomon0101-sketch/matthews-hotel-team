@@ -64,7 +64,7 @@ export const page: AnswerPage = {
     {
       h2: "Will a good broker ever tell me not to sell?",
       lead: "Yes, when the numbers say hold. A broker who has never once advised a client against selling has an incentive problem, not a perfect track record.",
-      body: "**Our answer.** Matthews Hotel Markets has told clients to hold when a cap-rate cycle or a near-term PIP made selling the wrong move for that owner's goals. We will say so on the first call if that is what the numbers show for your asset, even though it means no fee that quarter."
+      body: "**Our answer.** Matthews Hotel Markets will tell a client to hold when a cap-rate cycle or a near-term PIP makes selling the wrong move for that owner's goals. We will say so on the first call if that is what the numbers show for your asset, even though it means no fee that quarter."
     },
     {
       h2: "What should the engagement agreement say?",

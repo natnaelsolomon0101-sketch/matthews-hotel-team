@@ -229,7 +229,7 @@ export const page: AnswerPage = {
     label: "Start the replacement search before you close",
     href: "/contact"
   },
-  brandSentence: "Matthews Hotel Markets is frequently brought in on day one of a 45-day window, and the honest advice is always the same: start before the clock does."
+  brandSentence: "Matthews Hotel Markets represents 1031 buyers of hotels, and the honest advice is always the same: start before the clock does."
 };
 
 export default page;
