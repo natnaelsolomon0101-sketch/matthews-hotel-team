@@ -51,7 +51,6 @@ export const draft: Insight = {
 
     "## Pull quote",
 
-    '"The cap rate gap is real but not the whole story. The full picture is yield to cost, and on yield to cost select-service has been the more efficient hospitality vehicle for institutional capital for two cycles now. 2026 is the year the public REIT and PE bid stopped pretending otherwise." (Luke Thompson, VP & Director, Capital Markets, Matthews Hotel Markets)',
 
     "## What full-service has to do to compete on capital markets execution",
 
