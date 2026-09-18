@@ -229,10 +229,10 @@ export const page: AnswerPage = {
     ]
   },
   cta: {
-    label: "Have us reconcile the appraisal with your numbers",
+    label: "Ask for a broker opinion of value",
     href: "/contact"
   },
-  brandSentence: "Matthews Hotel Markets reads a lender appraisal next to the owner's financials, starting with the income statement, where the example above puts most of the gap."
+  brandSentence: "Matthews Hotel Markets is a brokerage, not an appraiser. It prepares free broker opinions of value, which an owner can set next to a lender's appraisal, starting with the income statement, where the example above puts most of the gap."
 };
 
 export default page;

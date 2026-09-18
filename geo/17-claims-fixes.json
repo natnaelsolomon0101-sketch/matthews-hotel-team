@@ -1,0 +1,292 @@
+[
+ {
+  "file": "src/lib/data/answers/hotel-financing/eb-5-financing.ts",
+  "old": "Matthews Hotel Markets arranges the senior debt that EB-5 capital sits behind, so we plan for what happens to the construction loan if the EB-5 money arrives late.",
+  "new": "Matthews Hotel Markets does not raise or place EB-5 capital. It arranges hotel construction, bridge and permanent debt, the senior loans an EB-5 tranche would sit behind."
+ },
+ {
+  "file": "src/lib/data/answers/hotel-financing/usda-b-and-i-loans.ts",
+  "old": "Matthews Hotel Markets prices USDA B&I next to SBA and conventional debt on rural hotels, because a 40-year ceiling on the term changes the coverage math.",
+  "new": "Matthews Hotel Markets does not originate or package USDA B&I loans. It arranges SBA 7(a), SBA 504 and conventional hotel debt, the options a rural hotel owner would compare a B&I loan against."
+ },
+ {
+  "file": "src/lib/data/answers/hotel-financing/usda-b-and-i-loans.ts",
+  "old": "label: \"Ask whether your hotel's address qualifies\"",
+  "new": "label: \"Talk through financing your hotel\""
+ },
+ {
+  "file": "src/lib/data/answers/hotel-financing/historic-tax-credits.ts",
+  "old": "Matthews Hotel Markets sizes the senior loan on historic hotel projects around the fact that credit equity arrives after the hotel reopens, not before.",
+  "new": "Matthews Hotel Markets does not syndicate or place historic tax credits. It arranges the construction, renovation and bridge debt a hotel project carries while it waits for credit equity."
+ },
+ {
+  "file": "src/lib/data/answers/hotel-financing/historic-tax-credits.ts",
+  "old": "label: \"Talk through financing a historic hotel renovation\"",
+  "new": "label: \"Talk through your hotel renovation loan\""
+ },
+ {
+  "file": "src/lib/data/answers/hotel-financing/opportunity-zones.ts",
+  "old": "When a seller has a large gain, Matthews Hotel Markets looks at the closing date and the reinvestment date together, because in late 2026 the two can land under different rules.",
+  "new": "Matthews Hotel Markets does not run opportunity zone funds or give tax advice. It sells hotels, represents hotel buyers and arranges hotel financing, and your CPA decides how a gain is reinvested."
+ },
+ {
+  "file": "src/lib/data/answers/hotel-financing/opportunity-zones.ts",
+  "old": "label: \"Talk through your hotel sale and reinvestment plan\"",
+  "new": "label: \"Talk through selling or financing your hotel\""
+ },
+ {
+  "file": "src/lib/data/answers/hotel-valuation/property-tax-appeal.ts",
+  "old": "Matthews Hotel Markets values hotels for owners who are deciding whether to sell, refinance or hold, and the same income analysis is the starting point for a tax appeal.",
+  "new": "Matthews Hotel Markets does not file or argue property tax appeals and is not an appraiser. It prepares free broker opinions of value for hotel owners deciding whether to sell, refinance or hold."
+ },
+ {
+  "file": "src/lib/data/answers/hotel-valuation/appraisal-lower-than-expected.ts",
+  "old": "label: \"Have us reconcile the appraisal with your numbers\"",
+  "new": "label: \"Ask for a broker opinion of value\""
+ },
+ {
+  "file": "src/lib/data/answers/hotel-valuation/appraisal-lower-than-expected.ts",
+  "old": "Matthews Hotel Markets reads a lender appraisal next to the owner's financials, starting with the income statement, where the example above puts most of the gap.",
+  "new": "Matthews Hotel Markets is a brokerage, not an appraiser. It prepares free broker opinions of value, which an owner can set next to a lender's appraisal, starting with the income statement, where the example above puts most of the gap."
+ },
+ {
+  "file": "src/lib/data/answers/hotel-financing/lenders-under-5-million.ts",
+  "old": "Matthews Hotel Markets quotes SBA, USDA and conventional options side by side on small hotel loans, because the program that fits is rarely the first one a buyer calls.",
+  "new": "Matthews Hotel Markets arranges SBA 7(a), SBA 504 and conventional hotel debt and compares them side by side, because the program that fits is rarely the first one a buyer calls."
+ },
+ {
+  "file": "src/lib/data/answers/hotel-financing/1031-exchange-hotels.ts",
+  "old": "Matthews Hotel Markets is frequently brought in on day one of a 45-day window, and the honest advice is always the same: start before the clock does.",
+  "new": "Matthews Hotel Markets represents 1031 buyers of hotels, and the honest advice is always the same: start before the clock does."
+ },
+ {
+  "file": "src/lib/data/answers/hotel-financing/loan-workouts.ts",
+  "old": "Matthews Hotel Markets is often brought in at the transfer, and the first thing we produce is a value opinion, because you cannot negotiate a workout without one.",
+  "new": "Matthews Hotel Markets prepares free broker opinions of value, and a value opinion is the first thing a borrower needs at the transfer, because you cannot negotiate a workout without one."
+ },
+ {
+  "file": "src/lib/data/answers/hotel-financing/refinance-or-sell.ts",
+  "old": "Matthews Hotel Markets runs both sides of this for owners, and a fair number of those conversations end with us saying hold.",
+  "new": "Matthews Hotel Markets arranges hotel refinancing and sells hotels, so it can run both sides of this for an owner, and it will say hold when the numbers say hold."
+ },
+ {
+  "file": "src/lib/data/answers/hotel-financing/loan-requirements.ts",
+  "old": "Matthews Hotel Markets runs this package for clients before the first lender call, which is why our quotes come back sized rather than caveated.",
+  "new": "Matthews Hotel Markets assembles this package with clients before the first lender call, so a lender can size the loan from a complete file."
+ },
+ {
+  "file": "src/lib/data/answers/sell-a-hotel/how-to-choose-a-hotel-broker.ts",
+  "old": "Matthews Hotel Markets has told clients to hold when a cap-rate cycle or a near-term PIP made selling the wrong move for that owner's goals.",
+  "new": "Matthews Hotel Markets will tell a client to hold when a cap-rate cycle or a near-term PIP makes selling the wrong move for that owner's goals."
+ },
+ {
+  "file": "src/lib/data/insights.ts",
+  "old": "We are seeing PIP-current Hampton Inns and Holiday Inn Express boxes change hands at high-7s when the underwriting room-night growth is plausible, low-8s when there is a story to tell about the comp set.",
+  "new": "(deleted)"
+ },
+ {
+  "file": "src/lib/data/insights.ts",
+  "old": "Our conviction here is high enough that we are tracking eight separate recap conversations actively as of this writing.",
+  "new": "(deleted)"
+ },
+ {
+  "file": "src/lib/data/insights.ts",
+  "old": "\"Underwriting implication. We are advising sponsors to underwrite Texas secondary select-service assets at 78 percent of the market's stabilized RevPAR for the first twelve months, then escalate at 4.5 percent annually through year three. That is roughly 200 basis points more aggressive than the consensus underwriting we are seeing on the buy side, and our trailing-twelve-month transaction performance supports it. Of the eight Texas secondary select-service deals we closed in 2024 and 2025, six produced first-year RevPAR above 82 percent of the market stabilized number.\",",
+  "new": "(deleted)"
+ },
+ {
+  "file": "src/lib/data/insights.ts",
+  "old": "carry well-documented commodity-price risk, and we exclude them from the core Texas secondary recommendation.",
+  "new": "carry well-documented commodity-price risk, and this paper excludes them from the core Texas secondary basket."
+ },
+ {
+  "file": "src/lib/data/insights.ts",
+  "old": "Investment surface. The three trades we have actively in market or recently closed in this category have all priced in the 6.5 to 7.5 percent cap range on stabilized cash flow, with sponsors showing 18 to 24 percent unlevered IRRs at exit. That is full-service luxury return geometry on select-service operating risk. We expect",
+  "new": "Investment surface. We expect"
+ },
+ {
+  "file": "src/lib/data/insights.ts",
+  "old": "Sellers we have advised in the first half of 2026 are increasingly choosing this path for assets where their forward RevPAR view is moderate rather than aggressive.\",",
+  "new": "This path fits assets where the owner's forward RevPAR view is moderate rather than aggressive.\","
+ },
+ {
+  "file": "src/lib/data/insights.ts",
+  "old": "What we are advising. We are running BOVs alongside refinance evaluations for any client facing a 2026 or 2027 maturity. The cost",
+  "new": "What to do now. Matthews Hotel Markets prepares free broker opinions of value and arranges hotel refinancing, so an owner facing a 2026 or 2027 maturity can run both paths side by side. The cost"
+ },
+ {
+  "file": "src/lib/data/insights.ts",
+  "old": "Early indicators from Matthews investor relationships ahead of the full Q3 2026 Investor Outlook survey.",
+  "new": "Early indicators from investor conversations ahead of the full Q3 2026 Investor Outlook survey."
+ },
+ {
+  "file": "src/lib/data/insights.ts",
+  "old": "an annual survey of 500+ hotel investor relationships covering",
+  "new": "an annual survey of hotel investors covering"
+ },
+ {
+  "file": "src/lib/data/insights.ts",
+  "old": "The pattern we are hearing. Three out of four hotel investors who deployed into primary urban metros in the 2018 to 2022 vintage are now actively rotating Sun Belt secondary on the next vintage.",
+  "new": "The pattern we are hearing. Hotel investors who deployed into primary urban metros in the 2018 to 2022 vintage are looking at Sun Belt secondary for the next vintage."
+ },
+ {
+  "file": "src/lib/data/insights.ts",
+  "old": "The deal pace we are seeing for family-office buyers in Sun Belt secondary markets has roughly doubled year-over-year through the first half of 2026.",
+  "new": "(deleted)"
+ },
+ {
+  "file": "src/lib/data/insights-articles/brand-flag-cap-rate-guide-2026.ts",
+  "old": "This is the working guide our team uses to brief sellers and buyers in the first call.",
+  "new": "This guide sets out those bands for sellers and buyers, flag by flag."
+ },
+ {
+  "file": "src/lib/data/insights-articles/hotel-adr-revpar-recovery-2026.ts",
+  "old": "What we are advising clients in May 2026. For owners",
+  "new": "What this means in May 2026. For owners"
+ },
+ {
+  "file": "src/lib/data/insights-articles/hotel-cmbs-distress-trepp-2026.ts",
+  "old": "What we are advising clients in May 2026. For owners",
+  "new": "What this means in May 2026. For owners"
+ },
+ {
+  "file": "src/lib/data/insights-articles/hotel-refinancing-wave-2026.ts",
+  "old": "Sellers we have advised in the first half of 2026 are increasingly choosing this path for assets where their forward RevPAR view is moderate rather than aggressive, and where the brand-standard PIP would consume any equity injection within 18 months anyway. Matthews maintains active sale-side dialogue across the [Texas Triangle](/markets/austin-tx), the [Sun Belt secondary basket](/markets/nashville-tn), and the [Mountain West corridor](/markets/denver-co).",
+  "new": "This path fits assets where the owner's forward RevPAR view is moderate rather than aggressive, and where the brand-standard PIP would consume any equity injection within 18 months anyway. Matthews Hotel Markets sells hotels nationwide, including the [Texas Triangle](/markets/austin-tx), the [Sun Belt secondary basket](/markets/nashville-tn), and the [Mountain West corridor](/markets/denver-co)."
+ },
+ {
+  "file": "src/lib/data/insights-articles/hotel-refinancing-wave-2026.ts",
+  "old": "We frequently run BOVs and refinance scenario models in parallel for clients facing 2026 and 2027 maturities; the cost",
+  "new": "Matthews Hotel Markets prepares free broker opinions of value and arranges hotel refinancing, so an owner facing a 2026 or 2027 maturity can run both in parallel; the cost"
+ },
+ {
+  "file": "src/lib/data/insights-articles/hotel-refinancing-wave-2026.ts",
+  "old": "Matthews runs BOVs (Broker Opinion of Value) alongside refinance scenario models for clients facing 2026 and 2027 maturities.",
+  "new": "Matthews Hotel Markets prepares free BOVs (Broker Opinion of Value) and arranges hotel refinancing, so an owner facing a 2026 or 2027 maturity can compare both paths."
+ },
+ {
+  "file": "src/lib/data/insights-articles/how-to-sell-a-hotel-2026.ts",
+  "old": "We run BOVs alongside refinance evaluations for clients facing this decision so the math is on paper before the call is made.",
+  "new": "Matthews Hotel Markets prepares free BOVs and arranges hotel refinancing, so the math on both can be on paper before the call is made."
+ },
+ {
+  "file": "src/lib/data/insights-articles/sun-belt-hospitality-investment-2026.ts",
+  "old": "Matthews maintains active sale-side, buy-side, and recapitalization mandates across all six Sun Belt states; the [team contact page](/team) lists the broker assigned to each market.",
+  "new": "Matthews Hotel Markets sells hotels, represents buyers and arranges hotel financing nationwide, including all six Sun Belt states; the [team contact page](/team) lists the brokers."
+ },
+ {
+  "file": "src/lib/data/insights-articles/sun-belt-hospitality-investment-2026.ts",
+  "old": "Matthews maintains broker coverage across all six Sun Belt states. Reach",
+  "new": "Matthews Hotel Markets works nationwide, including all six Sun Belt states. Reach"
+ },
+ {
+  "file": "src/lib/data/brands.ts",
+  "old": "Matthews has closed Hampton Inn dispositions across Texas, the Sun Belt, and the Midwest. We currently advise on Hampton acquisitions and dispositions ranging from single-asset to multi-property portfolios.",
+  "new": "Matthews Hotel Markets sells and arranges financing for Hampton hotels. Published Hampton transactions at /closed include sales and financings in Texas, Georgia, Iowa and Oklahoma."
+ },
+ {
+  "file": "src/lib/data/brands.ts",
+  "old": "Matthews advises on HIE dispositions, capital markets placement, and acquisition mandates across the Sun Belt, Midwest, and Mountain West. Hampton Inn Portfolio Atlanta and the broader Sun Belt HIE pipeline have been recent areas of focus.",
+  "new": "Matthews Hotel Markets sells and arranges financing for Holiday Inn Express hotels. Published Holiday Inn Express transactions in Georgia and Texas are listed at /closed."
+ },
+ {
+  "file": "src/lib/data/brands.ts",
+  "old": "Active Marriott dispositions span Courtyard, Fairfield, and Residence Inn flags across Texas, the Sun Belt, and Mountain West.",
+  "new": "Published Marriott-family transactions at /closed include Courtyard, Residence Inn and full-service Marriott hotels."
+ },
+ {
+  "file": "src/lib/data/brands.ts",
+  "old": "Active Hilton transactions include Hilton Garden Inn, Home2 Suites, and DoubleTree across the Sun Belt.",
+  "new": "Published Hilton transactions at /closed include Hilton Garden Inn and Home2 Suites hotels."
+ },
+ {
+  "file": "src/lib/data/brands.ts",
+  "old": "Active across Holiday Inn Express portfolios, Staybridge Suites dispositions, and select-service IHG capital markets placements.",
+  "new": "Published IHG transactions at /closed include Holiday Inn Express, Holiday Inn, Staybridge Suites and Crowne Plaza hotels."
+ },
+ {
+  "file": "src/lib/data/brands.ts",
+  "old": "Best Western dispositions across Texas, the Midwest, and Mountain West. Track record includes multiple Best Western and Best Western Plus closes.",
+  "new": "Matthews Hotel Markets sells and arranges financing for Best Western family hotels nationwide. Every transaction the team publishes is listed at /closed."
+ },
+ {
+  "file": "src/lib/data/brands.ts",
+  "old": "Active Hyatt transactions span Hyatt Place and Hyatt House select-service through full-service Hyatt Regency assets.",
+  "new": "Matthews Hotel Markets sells and arranges financing for Hyatt family hotels nationwide. Every transaction the team publishes is listed at /closed."
+ },
+ {
+  "file": "src/lib/data/brands.ts",
+  "old": "Active Choice transactions span Comfort Inn, Quality Inn, and WoodSpring Suites across Texas, the Sun Belt, and the Midwest.",
+  "new": "Published Choice-family transactions at /closed include Quality Inn, Country Inn & Suites and Radisson hotels."
+ },
+ {
+  "file": "src/lib/data/brands.ts",
+  "old": "Active Wyndham transactions span La Quinta and Days Inn family flags across Texas and the Sun Belt.",
+  "new": "Published Wyndham transactions at /closed include La Quinta and Ramada hotels in Texas."
+ },
+ {
+  "file": "src/lib/data/brands.ts",
+  "old": "Holiday Inn Express is documented separately as our most actively traded IHG flag.",
+  "new": "Holiday Inn Express is documented separately."
+ },
+ {
+  "file": "src/lib/data/services.ts",
+  "old": "We run a 24-week marketing playbook refined across hundreds of closings, with broker-led underwriting,",
+  "new": "We run a published 24-week marketing playbook, with broker-led underwriting,"
+ },
+ {
+  "file": "src/lib/data/services.ts",
+  "old": "Published timeline, verifiable across past transactions.",
+  "new": "The timeline is published at /process."
+ },
+ {
+  "file": "src/lib/data/services.ts",
+  "old": "Our hospitality capital markets team has structured loans across every chain scale, from Hampton Inn select-service refinancings to luxury resort recapitalizations.",
+  "new": "Published financings at /closed range from Hampton Inn select-service loans to a luxury resort permanent loan."
+ },
+ {
+  "file": "src/lib/data/services.ts",
+  "old": "Submarket comps, brand-flag economics, and supply-pipeline reads across the 30+ markets where Matthews is active.",
+  "new": "Submarket comps, brand-flag economics, and supply-pipeline reads for the market you are buying in."
+ },
+ {
+  "file": "src/lib/data/offices.ts",
+  "old": "Texas accounted for the largest single-state share of the team's 2024 production.",
+  "new": "Texas is the largest single-state share of the transactions published at /closed."
+ },
+ {
+  "file": "src/lib/seo/faq.ts",
+  "old": "The transaction was sourced through direct relationships with the buyer pool active in this segment and market at the time of close.",
+  "new": "(deleted)"
+ },
+ {
+  "file": "src/lib/seo/faq.ts",
+  "old": "Active mandates and recent closes are at /listings and /closed. For confidential conversations on a similar disposition or acquisition, the team responds within 24 hours.",
+  "new": "Current listings and published closings are at /listings and /closed. For a confidential conversation on a similar disposition or acquisition, reach the team at /contact."
+ },
+ {
+  "file": "src/lib/seo/faq.ts",
+  "old": "For confidential disposition or acquisition conversations, the team responds within 24 hours.",
+  "new": "For confidential disposition or acquisition conversations, reach the team at /contact."
+ },
+ {
+  "file": "src/lib/seo/faq.ts",
+  "old": "is the most common reason a buyer haircuts our pro-forma RevPAR.",
+  "new": "is a common reason a buyer haircuts a pro-forma RevPAR."
+ },
+ {
+  "file": "src/app/process/page.tsx",
+  "old": "From engagement and underwriting to closing. Refined across hundreds of completed transactions.",
+  "new": "From engagement and underwriting to closing."
+ },
+ {
+  "file": "src/components/sections/process/ProcessHero.tsx",
+  "old": "phases, twenty-four weeks, refined across hundreds of closed\n          transactions. Sellers see",
+  "new": "phases, twenty-four weeks. Sellers see"
+ },
+ {
+  "file": "src/lib/data/services.ts",
+  "old": "Full capital stack execution. Lender relationships across CMBS, banks, life companies, debt funds, and bridge specialists.",
+  "new": "Full capital stack execution. Debt is placed with banks, CMBS lenders, life companies, debt funds, and bridge lenders."
+ }
+]

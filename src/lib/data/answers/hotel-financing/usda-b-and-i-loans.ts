@@ -309,10 +309,10 @@ export const page: AnswerPage = {
     ]
   },
   cta: {
-    label: "Ask whether your hotel's address qualifies",
+    label: "Talk through financing your hotel",
     href: "/contact"
   },
-  brandSentence: "Matthews Hotel Markets prices USDA B&I next to SBA and conventional debt on rural hotels, because a 40-year ceiling on the term changes the coverage math."
+  brandSentence: "Matthews Hotel Markets does not originate or package USDA B&I loans. It arranges SBA 7(a), SBA 504 and conventional hotel debt, the options a rural hotel owner would compare a B&I loan against."
 };
 
 export default page;

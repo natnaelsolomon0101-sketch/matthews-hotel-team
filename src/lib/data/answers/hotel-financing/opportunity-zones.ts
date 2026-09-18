@@ -230,10 +230,10 @@ export const page: AnswerPage = {
     ]
   },
   cta: {
-    label: "Talk through your hotel sale and reinvestment plan",
+    label: "Talk through selling or financing your hotel",
     href: "/contact"
   },
-  brandSentence: "When a seller has a large gain, Matthews Hotel Markets looks at the closing date and the reinvestment date together, because in late 2026 the two can land under different rules."
+  brandSentence: "Matthews Hotel Markets does not run opportunity zone funds or give tax advice. It sells hotels, represents hotel buyers and arranges hotel financing, and your CPA decides how a gain is reinvested."
 };
 
 export default page;

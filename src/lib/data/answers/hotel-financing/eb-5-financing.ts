@@ -217,7 +217,7 @@ export const page: AnswerPage = {
     label: "Talk through your hotel's capital stack",
     href: "/contact"
   },
-  brandSentence: "Matthews Hotel Markets arranges the senior debt that EB-5 capital sits behind, so we plan for what happens to the construction loan if the EB-5 money arrives late."
+  brandSentence: "Matthews Hotel Markets does not raise or place EB-5 capital. It arranges hotel construction, bridge and permanent debt, the senior loans an EB-5 tranche would sit behind."
 };
 
 export default page;

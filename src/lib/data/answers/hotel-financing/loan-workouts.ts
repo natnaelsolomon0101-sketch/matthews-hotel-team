@@ -205,7 +205,7 @@ export const page: AnswerPage = {
     label: "Talk through a workout before the transfer",
     href: "/contact"
   },
-  brandSentence: "Matthews Hotel Markets is often brought in at the transfer, and the first thing we produce is a value opinion, because you cannot negotiate a workout without one."
+  brandSentence: "Matthews Hotel Markets prepares free broker opinions of value, and a value opinion is the first thing a borrower needs at the transfer, because you cannot negotiate a workout without one."
 };
 
 export default page;
