@@ -190,7 +190,13 @@ export const page: AnswerPage = {
       "/hotel-industry/who-owns-hotels",
       "/hotel-industry/chain-scales-and-classes",
       "/hotel-industry/industry-size-2026",
-      "/hotel-industry/outlook-2026-2027"
+      "/hotel-industry/outlook-2026-2027",
+      "/hotel-industry/hotel-management-agreements",
+      "/hotel-industry/hotel-operating-costs",
+      "/hotel-industry/extended-stay-hotels",
+      "/hotel-industry/cost-to-build-a-hotel",
+      "/hotel-industry/who-buys-hotels",
+      "/hotel-industry/how-hotel-reits-work"
     ],
     glossary: [
       "/glossary/revpar",
