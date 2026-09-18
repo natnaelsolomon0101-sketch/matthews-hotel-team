@@ -15,4 +15,6 @@ export const KNOWN_PATH_LABELS: Record<string, string> = {
   "/tools/refinance-vs-sell": "Refinance vs sell calculator",
   "/tools/debt-yield-calculator": "Hotel debt yield calculator",
   "/tools/cap-rate-calculator": "Hotel cap rate calculator",
+  "/tools/hotel-value-estimator": "Hotel value estimator",
+  "/tools/hotel-loan-sizing-calculator": "Hotel loan sizing calculator",
 };

@@ -19,9 +19,10 @@ export default function ToolExtras({
   paired,
 }: {
   page: ToolPage;
-  /** The answer page this calculator is the arithmetic for. */
-  paired?: { href: string; label: string };
+  /** The answer page, or pages, this calculator is the arithmetic for. */
+  paired?: { href: string; label: string } | { href: string; label: string }[];
 }) {
+  const pairs = paired ? (Array.isArray(paired) ? paired : [paired]) : [];
   const others = tools.filter((t) => t.slug !== page.slug);
   return (
     <>
@@ -36,13 +37,29 @@ export default function ToolExtras({
         </pre>
       </section>
 
-      {paired && (
+      {pairs.length === 1 && (
         <p className="mt-8 text-[15px] leading-[1.5] tracking-[-0.014em] text-[#424245]">
           The reasoning behind this calculator:{" "}
-          <Link href={paired.href} className={LINK}>
-            {paired.label}
+          <Link href={pairs[0].href} className={LINK}>
+            {pairs[0].label}
           </Link>
         </p>
+      )}
+      {pairs.length > 1 && (
+        <section aria-labelledby="reasoning" className="mt-8">
+          <h2 id="reasoning" className={EYEBROW}>
+            The reasoning behind this calculator
+          </h2>
+          <ul className="mt-4 space-y-2">
+            {pairs.map((p) => (
+              <li key={p.href}>
+                <Link href={p.href} className={`${LINK} text-[15px]`}>
+                  {p.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
 
       <section aria-labelledby="more-calculators" className="mt-8">

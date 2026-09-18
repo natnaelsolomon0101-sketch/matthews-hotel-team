@@ -14,7 +14,8 @@ import {
   webPage,
 } from "@/lib/entity";
 import { clusters } from "@/lib/data/answers";
-import { tools, toolsHub } from "@/lib/data/tools";
+import { inputLabels, tools, toolsHub } from "@/lib/data/tools";
+import { MHI_LABEL, MHI_PATH } from "@/lib/data/tools/hotel-value-estimator";
 
 const url = `${SITE_URL}${toolsHub.path}`;
 const title = `${toolsHub.title} | ${BRAND}`;
@@ -41,7 +42,8 @@ const H2 =
 
 /**
  * The tool hub. Built only once four calculators existed
- * (geo/05-briefs/_wave2-stubs.md, section D: a hub over two children is thin).
+ * (geo/05-briefs/_wave2-stubs.md, section D: a hub over two children is thin);
+ * it now lists six, straight from the registry.
  * Fully server-rendered. Every tool is linked with its own H1 as anchor text.
  */
 export default function ToolsHubPage() {
@@ -129,7 +131,7 @@ export default function ToolsHubPage() {
                       {t.description}
                     </p>
                     <p className="mt-2 text-[13px] leading-[1.5] tracking-[-0.014em] text-[#86868b]">
-                      You enter: {t.tool.inputs.map((i) => i.label).join(", ")}.
+                      You enter: {inputLabels(t).join(", ")}.
                       <br />
                       You get: {t.tool.outputs.map((o) => o.label).join(", ")}.
                     </p>
@@ -144,14 +146,27 @@ export default function ToolsHubPage() {
               </h2>
               <div className="mt-5 space-y-5 text-[17px] leading-[1.47] tracking-[-0.022em] text-[#1d1d1f]">
                 <p>
+                  If the question is what the hotel is worth, start with the
+                  value estimator. It gives a screening range from the cap rate
+                  bands in the {MHI_LABEL} Matthews Hotel Index, less your PIP.
+                  It is not a valuation. A broker opinion of value is.
+                </p>
+                <p>
+                  If the question is how much you can borrow, start with the
+                  loan sizing calculator. It runs your lender&apos;s DSCR, debt
+                  yield and LTV tests together, names the one that binds, and
+                  shows the equity that leaves. It has an SBA 504 mode.
+                </p>
+                <p>
                   If a loan is maturing and you are deciding what to do with the
                   hotel, start with refinance vs sell. It runs the loan your NOI
                   supports and the cash a sale would leave, side by side, from
                   one set of inputs.
                 </p>
                 <p>
-                  If you are sizing a loan, run DSCR and debt yield together. A
-                  lender applies both, plus a loan-to-value test, and lends the
+                  To look at one sizing test at a time, with its own sensitivity
+                  table, use the DSCR and debt yield calculators. A lender
+                  applies both, plus a loan-to-value test, and lends the
                   smallest result. DSCR moves with the interest rate. Debt yield
                   does not.
                 </p>
@@ -162,8 +177,11 @@ export default function ToolsHubPage() {
                   different sizes.
                 </p>
                 <p>
-                  Every starting value in these tools is hypothetical. None of
-                  them is a quote, a lender requirement or a market cap rate.
+                  Every starting hotel, lender test and typed cap rate in these
+                  tools is hypothetical. None of them is a quote, a lender
+                  requirement or a market cap rate. The only cap rates we
+                  publish are the index bands the value estimator uses, shown
+                  with their quarter.
                 </p>
               </div>
             </section>
@@ -180,6 +198,11 @@ export default function ToolsHubPage() {
                     </Link>
                   </li>
                 ))}
+                <li>
+                  <Link href={MHI_PATH} className={`${LINK} text-[15px]`}>
+                    Matthews Hotel Index, {MHI_LABEL}
+                  </Link>
+                </li>
                 <li>
                   <Link href="/glossary" className={`${LINK} text-[15px]`}>
                     Hotel investment glossary
