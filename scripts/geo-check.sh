@@ -78,4 +78,11 @@ echo "all 200"
 step "agent access: Markdown twins, parity with HTML, MCP (local)"
 node scripts/agent-access-check.mjs "${BASE}"
 
+# Sitemap hygiene and crawl depth (visibility, 2026-09-18): every sitemap.xml
+# URL is 200 text/html with no redirect, self-canonical, indexable and dated;
+# /sitemap lists exactly the same URLs; nothing is more than 3 clicks from /;
+# the .json/.csv endpoints send a canonical Link header to their HTML page.
+step "sitemap hygiene, click depth, machine-format canonicals (local)"
+node scripts/sitemap-check.mjs "${BASE}"
+
 printf '\nGEO-CHECK PASS\n'

@@ -67,6 +67,8 @@ function urls(): string[] {
     "/rates/methodology",
     "/data/hotel-financing-statistics",
     "/data/sba-hotel-lending",
+    "/developers",
+    "/sitemap",
   ];
   for (const s of statePages) u.push(s.path);
   for (const l of listings.filter((x) => x.hasDetail !== false && !x.omUrl))

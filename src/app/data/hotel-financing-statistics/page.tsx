@@ -81,6 +81,12 @@ export default function HotelFinancingStatisticsPage() {
       datePublished: PUBLISHED,
       dateModified: UPDATED,
       temporalCoverage: "2025/2027",
+      // The list itself: this page, and its Markdown twin (the same rows,
+      // served at <url>.md and advertised in this page's Link header).
+      distribution: [
+        { "@type": "DataDownload", encodingFormat: "text/html", contentUrl: url },
+        { "@type": "DataDownload", encodingFormat: "text/markdown", contentUrl: `${url}.md` },
+      ],
       spatialCoverage: { "@type": "Country", name: "United States" },
       keywords: [
         "hotel financing statistics",

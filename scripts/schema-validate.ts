@@ -96,6 +96,8 @@ function urls(): string[] {
     "/rates/methodology",
     "/data/hotel-financing-statistics",
     "/data/sba-hotel-lending",
+    "/developers",
+    "/sitemap",
   ];
   for (const s of statePages) u.push(s.path);
   for (const e of EDITIONS) u.push(`/rates/${e.slug}`);
@@ -118,6 +120,19 @@ function urls(): string[] {
   for (const o of offices) u.push(`/offices/${o.slug}`);
   return u;
 }
+
+/** Hub path -> the pages its ItemList must name. */
+const HUB_ITEMS: Record<string, string[]> = {
+  ...Object.fromEntries(clusters.map((c) => [`/${c.cluster}`, c.spokes.map((p) => answerPath(p))])),
+  "/tools": tools.map((t) => `/tools/${t.slug}`),
+  "/glossary": glossary.map((g) => `/glossary/${g.slug}`),
+  "/closed": closed.map((c) => `/closed/${c.slug}`),
+  "/listings": listings.filter((x) => x.hasDetail !== false && !x.omUrl).map((l) => `/listings/${l.slug}`),
+  "/markets": markets.map((m) => `/markets/${m.slug}`),
+  "/services": services.map((x) => `/services/${x.slug}`),
+  "/hotels-for-sale": brands.map((b) => `/hotels-for-sale/${b.slug}`),
+  "/insights": insights.map((i) => `/insights/${i.slug}`),
+};
 
 type Issue = { url: string; index: number; problem: string; type?: string };
 type Block = { url: string; index: number; type: string | string[]; valid: boolean; issues: string[] };
@@ -211,6 +226,67 @@ function validate(block: string, url: string, index: number): Block {
       for (const k of keys) if (k !== "@id") walk(o[k]);
     };
     for (const g of graph) walk(g);
+
+    // ---- 2026-09-18 (visibility): content checks on what already exists ----
+    const nodes = graph as Record<string, unknown>[];
+    const typesOf = (n: Record<string, unknown>) => ([] as unknown[]).concat(n["@type"] ?? []) as string[];
+    const ofType = (t: string) => nodes.filter((n) => typesOf(n).includes(t));
+
+    // 1. Every page except the home page carries a BreadcrumbList that starts
+    //    at Home and ends on a named item.
+    if (url !== "/") {
+      const crumbs = ofType("BreadcrumbList");
+      if (crumbs.length !== 1) issues.push(`expected exactly 1 BreadcrumbList, found ${crumbs.length}`);
+      for (const c of crumbs) {
+        const items = (c.itemListElement ?? []) as Record<string, unknown>[];
+        if (items.length < 2) issues.push("BreadcrumbList has fewer than 2 items");
+        if (items.some((it, i) => it.position !== i + 1 || !it.name))
+          issues.push("BreadcrumbList items need consecutive positions and names");
+      }
+    }
+
+    // 2. A Dataset states its license, creator, period and where to get it.
+    for (const d of ofType("Dataset")) {
+      for (const k of ["license", "creator", "temporalCoverage", "distribution"]) {
+        if (!d[k]) issues.push(`Dataset ${d["@id"] ?? ""} is missing ${k}`);
+      }
+      const tc = d.temporalCoverage;
+      if (typeof tc === "string" && !/^\d{4}(-\d{2}(-\d{2})?)?(\/(\d{4}(-\d{2}(-\d{2})?)?|\.\.))?$/.test(tc))
+        issues.push(`Dataset temporalCoverage "${tc}" is not an ISO 8601 date or interval`);
+      for (const dist of ([] as unknown[]).concat(d.distribution ?? []) as Record<string, unknown>[]) {
+        if (typeof dist.contentUrl !== "string" || !dist.contentUrl.startsWith("https://"))
+          issues.push(`Dataset ${d["@id"] ?? ""} has a distribution with no contentUrl`);
+      }
+    }
+
+    // 3. A hub lists its spokes: an ItemList whose URLs include every page the
+    //    hub is required to link (the same sets the internal-links audit uses).
+    const expected = HUB_ITEMS[url];
+    if (expected) {
+      // The glossary's list is a DefinedTermSet, the more specific type for
+      // a list of terms; its hasDefinedTerm URLs count.
+      const listed = new Set([
+        ...ofType("ItemList").flatMap((l) =>
+          ((l.itemListElement ?? []) as Record<string, unknown>[]).map((it) => String(it.url ?? it.item ?? "")),
+        ),
+        ...ofType("DefinedTermSet").flatMap((l) =>
+          ((l.hasDefinedTerm ?? []) as Record<string, unknown>[]).map((it) => String(it.url ?? "")),
+        ),
+      ]);
+      if (listed.size === 0) issues.push("hub has no ItemList");
+      for (const pth of expected) {
+        if (!listed.has(`https://matthewshotelmarkets.com${pth}`)) issues.push(`hub ItemList is missing ${pth}`);
+      }
+    }
+
+    // 4. No date in the future, anywhere in the graph.
+    const tomorrow = Date.now() + 86_400_000;
+    for (const n of nodes) {
+      for (const k of ["datePublished", "dateModified"]) {
+        const v = n[k];
+        if (typeof v === "string" && Date.parse(v) > tomorrow) issues.push(`${k} ${v} is in the future`);
+      }
+    }
 
     for (const suffix of REQUIRED_IDS) {
       if (![...declared].some((d) => d.endsWith(suffix))) {

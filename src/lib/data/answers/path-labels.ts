@@ -6,6 +6,7 @@
 export const KNOWN_PATH_LABELS: Record<string, string> = {
   "/rates": "Matthews Hotel Markets rate sheet",
   "/rates/methodology": "How the rate sheet is built",
+  "/research": "Hotel investment research",
   "/research/mhi": "The Matthews Hotel Index",
   "/research/mhi/q1-2026": "Matthews Hotel Index, Q1 2026",
   "/data/hotel-financing-statistics": "Hotel financing statistics",

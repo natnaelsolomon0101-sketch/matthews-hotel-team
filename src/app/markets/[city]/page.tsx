@@ -16,6 +16,8 @@ import { brands } from "@/lib/data/brands";
 import { marketFaqs, faqJsonLdNode } from "@/lib/seo/faq";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/entity";
+import { mhiQuarters } from "@/lib/data/mhi";
+import { formatDate } from "@/lib/format-date";
 
 import { seoTitle } from "@/lib/seo-meta";
 type Params = { city: string };
@@ -83,6 +85,12 @@ export default async function MarketPage(props: { params: Promise<Params> }) {
   const url = `${SITE_URL}/markets/${m.slug}`;
   const faqs = marketFaqs(m);
 
+  // "Data as of": the newest Matthews Hotel Index quarter that carries this
+  // market. Its publish date is the only date the market figures have, so it
+  // is the visible date and the JSON-LD dateModified. A market with no MHI
+  // row shows no date at all rather than an invented one.
+  const mhi = mhiQuarters.find((q) => q.data.some((d) => d.marketSlug === m.slug));
+
   // Brand-flag pages relevant to this market (surface as cross-links for
   // topical-authority signal).
   const relatedBrands = brands.slice(0, 4);
@@ -115,6 +123,7 @@ export default async function MarketPage(props: { params: Promise<Params> }) {
         isPartOf: { "@id": `${SITE_URL}/#website` },
         about: { "@id": `${url}#place` },
         provider: { "@id": `${SITE_URL}/#org` },
+        ...(mhi ? { dateModified: mhi.publishedAt } : {}),
         mainEntity: {
           "@type": "ItemList",
           name: `Active hotels for sale in ${m.city}, ${m.state}`,
@@ -167,6 +176,18 @@ export default async function MarketPage(props: { params: Promise<Params> }) {
             <p className="mt-6 max-w-[64ch] text-[19px] leading-[1.42] tracking-[0.012em] text-[color:var(--text-secondary)]">
               {m.marketCommentary}
             </p>
+            {mhi && (
+              <p className="mt-4 text-[13px] tracking-[-0.014em] text-[color:var(--text-tertiary)]">
+                Data as of <time dateTime={mhi.publishedAt}>{formatDate(mhi.publishedAt)}</time>, the{" "}
+                <Link
+                  href={`/research/mhi/${mhi.slug}`}
+                  className="underline underline-offset-[3px] hover:text-[color:var(--text-primary)]"
+                >
+                  Matthews Hotel Index, {mhi.label}
+                </Link>
+                .
+              </p>
+            )}
 
             <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 border-t border-[color:var(--divider)] pt-10">
               <div>

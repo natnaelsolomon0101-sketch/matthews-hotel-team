@@ -92,6 +92,7 @@ const COLUMNS: FooterColumn[] = [
       { href: "/press", label: "Press" },
       { href: "/developers", label: "For Developers and AI Agents" },
       { href: "/contact", label: "Contact" },
+      { href: "/sitemap", label: "Site map" },
       { href: PARENT_URL, label: "Matthews.com", external: true },
       { href: LINKEDIN, label: "LinkedIn", external: true },
     ],

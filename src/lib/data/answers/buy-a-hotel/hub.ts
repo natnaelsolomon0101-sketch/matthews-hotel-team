@@ -227,7 +227,8 @@ export const page: AnswerPage = {
       "/buy-a-hotel/first-hotel-no-experience",
       "/buy-a-hotel/branded-vs-independent",
       "/buy-a-hotel/seller-financing",
-      "/buy-a-hotel/buying-a-hotel-from-receivership-or-foreclosure"
+      "/buy-a-hotel/buying-a-hotel-from-receivership-or-foreclosure",
+      "/hotel-industry"
     ],
     glossary: [
       "/glossary/pip",
@@ -238,7 +239,8 @@ export const page: AnswerPage = {
     data: [
       "/rates",
       "/research/mhi/q1-2026",
-      "/hotel-franchise-costs"
+      "/hotel-franchise-costs",
+      "/data/sba-hotel-lending"
     ]
   },
   cta: {

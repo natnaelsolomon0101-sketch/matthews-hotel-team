@@ -2,6 +2,10 @@ import { insights } from "@/lib/data/insights";
 import { answerPages, answerPath } from "@/lib/data/answers";
 import { tools } from "@/lib/data/tools";
 import { latestEdition } from "@/lib/rates/sheet";
+import { glossary } from "@/lib/data/glossary";
+import { mhiQuarters } from "@/lib/data/mhi";
+import { SBA_PATH, SBA_UPDATED, TITLE as SBA_TITLE, DIRECT_ANSWER as SBA_DIRECT_ANSWER } from "@/lib/sba";
+import { UPDATED as STATS_UPDATED } from "@/app/data/hotel-financing-statistics/updated";
 
 /** Inline "[2]" citation markers point at a page's source list, which a feed item does not carry. */
 const stripRefs = (t: string) => t.replace(/\s*\[\d+\]/g, "");
@@ -98,6 +102,34 @@ function answerItems(): string {
       description:
         "The monthly hotel rate sheet: dated public benchmarks and published SBA program rules, with every cell we cannot source marked not yet published.",
     },
+    // 2026-09-18: the other dated page types, each with a date and a sentence
+    // its own page already carries. Listings, closed deals, markets, brands,
+    // services and offices stay out: none of them has a per-item date.
+    {
+      title: SBA_TITLE,
+      url: `${SITE_URL}${SBA_PATH}`,
+      date: SBA_UPDATED,
+      description: stripRefs(SBA_DIRECT_ANSWER),
+    },
+    {
+      title: "Hotel Financing Statistics, 2026",
+      url: `${SITE_URL}/data/hotel-financing-statistics`,
+      date: STATS_UPDATED,
+      description:
+        "Sourced hotel financing statistics, each with the date the source carries and the date it was last verified.",
+    },
+    ...mhiQuarters.map((q) => ({
+      title: `Matthews Hotel Index, ${q.label}`,
+      url: `${SITE_URL}/research/mhi/${q.slug}`,
+      date: q.publishedAt,
+      description: q.summary,
+    })),
+    ...glossary.map((g) => ({
+      title: g.term,
+      url: `${SITE_URL}/glossary/${g.slug}`,
+      date: g.lastUpdated,
+      description: g.shortDef,
+    })),
   ];
 
   return entries
@@ -107,7 +139,7 @@ function answerItems(): string {
       <title>${xmlEscape(e.title)}</title>
       <link>${e.url}</link>
       <guid isPermaLink="true">${e.url}</guid>
-      <pubDate>${new Date(`${e.date}T12:00:00Z`).toUTCString()}</pubDate>
+      <pubDate>${new Date(`${e.date.slice(0, 10)}T12:00:00Z`).toUTCString()}</pubDate>
       <description>${xmlEscape(e.description)}</description>
     </item>`,
     )
