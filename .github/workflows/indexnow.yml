@@ -4,17 +4,26 @@ name: IndexNow submission
 # IndexNow (Bing, Yandex, and other participants — not Google, which does
 # not consume IndexNow; see geo/02-crawl-index.md).
 #
-# Gated to push-to-main only. scripts/indexnow.ts also refuses to run off
-# `main` on its own (defense in depth if someone dispatches this workflow
-# from a feature branch).
+# Fires when Vercel reports a successful Production deployment, so the
+# sitemap it reads is the one that just went live. (It used to fire on push,
+# which read the old sitemap before the deploy finished and submitted
+# nothing.) Production deploys only ever come from main. Manual runs can pass
+# all=true to resubmit every URL once.
 on:
-  push:
-    branches:
-      - main
-  workflow_dispatch: {}
+  deployment_status:
+  workflow_dispatch:
+    inputs:
+      all:
+        description: "Submit every sitemap URL, not just the last 48h"
+        type: boolean
+        default: false
 
 jobs:
   submit:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.deployment_status.state == 'success' &&
+       github.event.deployment.environment == 'Production')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,4 +35,6 @@ jobs:
       - name: Submit changed URLs to IndexNow
         env:
           BASE_URL: https://matthewshotelmarkets.com
-        run: npx tsx scripts/indexnow.ts
+        # --force: a deployment_status event runs on the deployed SHA, not a
+        # branch ref; Production deployments only come from main.
+        run: npx tsx scripts/indexnow.ts --force ${{ github.event.inputs.all == 'true' && '--all' || '' }}
