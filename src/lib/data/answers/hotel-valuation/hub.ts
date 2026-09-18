@@ -198,7 +198,12 @@ export const page: AnswerPage = {
       "/hotel-valuation/how-to-value-a-hotel",
       "/hotel-valuation/hotel-cap-rates",
       "/hotel-valuation/broker-opinion-of-value",
-      "/hotel-valuation/select-service-vs-full-service"
+      "/hotel-valuation/select-service-vs-full-service",
+      "/hotel-valuation/revpar-multiples-and-per-key",
+      "/hotel-valuation/branded-select-service-hotel-value",
+      "/hotel-valuation/appraisal-lower-than-expected",
+      "/hotel-valuation/pip-and-hotel-value",
+      "/hotel-valuation/interest-rates-and-hotel-value"
     ],
     glossary: [
       "/glossary/cap-rate",
