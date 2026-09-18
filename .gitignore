@@ -11,3 +11,4 @@ node_modules
 # Plan documents — not part of build
 SEO_LLM_PLAN.md
 SEO_LLM_PLAN_v2.md
+.claude/worktrees/
