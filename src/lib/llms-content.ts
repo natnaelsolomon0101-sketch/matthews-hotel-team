@@ -23,7 +23,7 @@ import { insights } from "./data/insights";
 import { glossary } from "./data/glossary";
 import { mhiQuarters } from "./data/mhi";
 import { clusters, answerPath } from "./data/answers";
-import { tools } from "./data/tools/dscr-calculator";
+import { tools, toolsHub } from "./data/tools";
 import { latestEdition, cellCounts } from "./rates/sheet";
 import {
   SITE_URL,
@@ -125,6 +125,7 @@ export function buildLlmsTxt(): string {
 
   lines.push("## Calculators");
   lines.push("");
+  lines.push(`- ${toolsHub.h1}: ${url(toolsHub.path)} (last updated ${toolsHub.lastUpdated})`);
   for (const t of tools) {
     lines.push(`- ${t.h1}: ${url(`/tools/${t.slug}`)} (last updated ${t.lastUpdated})`);
   }

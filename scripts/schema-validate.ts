@@ -43,7 +43,7 @@ import { brands } from "../src/lib/data/brands";
 import { services } from "../src/lib/data/services";
 import { offices } from "../src/lib/data/offices";
 import { clusters, answerPath } from "../src/lib/data/answers";
-import { tools } from "../src/lib/data/tools/dscr-calculator";
+import { tools } from "../src/lib/data/tools";
 import { EDITIONS } from "../src/lib/rates/sheet";
 
 const PROD = "https://matthewshotelmarkets.com";
@@ -100,6 +100,7 @@ function urls(): string[] {
     u.push(`/${c.cluster}`);
     for (const p of c.spokes) u.push(answerPath(p));
   }
+  u.push("/tools");
   for (const t of tools) u.push(`/tools/${t.slug}`);
   for (const g of glossary) u.push(`/glossary/${g.slug}`);
   for (const q of mhiQuarters) u.push(`/research/mhi/${q.slug}`);

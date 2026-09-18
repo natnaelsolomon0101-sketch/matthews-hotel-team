@@ -25,7 +25,7 @@ import { offices } from "../src/lib/data/offices";
 import { glossary } from "../src/lib/data/glossary";
 import { mhiQuarters } from "../src/lib/data/mhi";
 import { clusters, answerPath } from "../src/lib/data/answers";
-import { tools } from "../src/lib/data/tools/dscr-calculator";
+import { tools } from "../src/lib/data/tools";
 import { EDITIONS } from "../src/lib/rates/sheet";
 
 const PROD = "https://matthewshotelmarkets.com";
@@ -82,6 +82,7 @@ function urls(): string[] {
     u.push(`/${c.cluster}`);
     for (const p of c.spokes) u.push(answerPath(p));
   }
+  u.push("/tools");
   for (const t of tools) u.push(`/tools/${t.slug}`);
   return u;
 }
@@ -238,6 +239,17 @@ function expectedFor(url: string, found: string[]): string[] {
     if (!has("/contact")) missing.push("R9: /contact CTA");
     if (!has("/team/")) missing.push("R10: author /team/ link");
     if (!has("/rates")) missing.push("R8: /rates link");
+  }
+
+  // The tool hub links every tool, and every tool links back to the hub.
+  if (url === "/tools") {
+    for (const t of tools) {
+      if (!found.includes(`/tools/${t.slug}`)) missing.push(`tool hub: ${t.slug}`);
+    }
+    if (!has("/contact")) missing.push("R9: /contact CTA");
+  }
+  if (url.startsWith("/tools/") && !found.includes("/tools")) {
+    missing.push("tool hub link /tools");
   }
 
   // R1 / R2 / R4 — no orphans. Every page carries the footer, so every page
