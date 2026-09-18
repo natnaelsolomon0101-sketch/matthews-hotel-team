@@ -1,0 +1,46 @@
+name: Agent watchdog
+
+# Every evening, checks geo/agent-log.md for a recent run from each scheduled
+# site agent (Content Writer, Site Maintainer, Rate Sheet). If one is overdue
+# it opens a GitHub issue, which emails the repo owner; while it stays
+# overdue it comments on that same issue; once everything is healthy it closes
+# it. Runs on GitHub, so it works whether or not any local machine is on.
+on:
+  schedule:
+    - cron: "0 23 * * *" # 6pm Chicago (CDT), after every agent's scheduled run
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  watchdog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check agent run log
+        id: check
+        run: |
+          set +e
+          node scripts/agent-watchdog.mjs > report.md
+          echo "status=$?" >> "$GITHUB_OUTPUT"
+          cat report.md
+      - name: Open, update or close the watchdog issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          STATUS: ${{ steps.check.outputs.status }}
+        run: |
+          gh label create agent-watchdog --color B60205 --description "Site agents missed a run" 2>/dev/null || true
+          open=$(gh issue list --label agent-watchdog --state open --json number -q '.[0].number')
+          if [ "$STATUS" != "0" ]; then
+            if [ -n "$open" ]; then
+              gh issue comment "$open" --body-file report.md
+            else
+              gh issue create --title "Site agents missed a scheduled run" --label agent-watchdog --assignee "${{ github.repository_owner }}" --body-file report.md
+            fi
+          elif [ -n "$open" ]; then
+            gh issue close "$open" --comment "All site agents are back on schedule.
+
+          $(cat report.md)"
+          fi
