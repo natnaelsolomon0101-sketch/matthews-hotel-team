@@ -48,7 +48,7 @@ export const page: AnswerPage = {
     {
       h2: "What does it cost?",
       lead: "A success fee at closing that scales down as price rises, plus title, legal, transfer tax and prorations that are not part of the commission.",
-      body: "The brokerage fee is the largest single line item, but it is not the only cost. Title insurance, escrow, state transfer taxes, seller's counsel, and, on a CMBS loan, defeasance can add up to a large share of the total, especially when a loan must be paid off early. The full cost stack, with a worked example, is at [Hotel broker fees](/sell-a-hotel/broker-fees)."
+      body: "The brokerage fee is the largest single line item, but it is not the only cost. Title insurance, escrow, state transfer taxes, seller's counsel, and, on a CMBS loan, defeasance can add up to a large share of the total, especially when a loan must be paid off early. The full cost stack, with a worked example, is at [Hotel broker fees](/sell-a-hotel/broker-fees). Tax on the gain is separate and is covered at [What taxes do I pay when I sell a hotel?](/sell-a-hotel/taxes-when-selling-a-hotel)"
     },
     {
       h2: "What do I have to prepare?",
@@ -58,7 +58,7 @@ export const page: AnswerPage = {
     {
       h2: "Should I sell confidentially or market it openly?",
       lead: "Confidential protects staff and vendor relationships and narrows the buyer pool; marketed reaches more buyers and creates price tension at the cost of discretion.",
-      body: "A confidential process works when the owner cannot risk staff, guests or lenders learning the asset is for sale before a deal is signed, common on a single trophy asset or a family-owned property with long-tenured management. A broadly marketed process, syndicated to a wider buyer list, produces more competitive tension and typically a tighter timeline to a call for offers, because more buyers are underwriting at once. Most owners land somewhere in between: a targeted, NDA-gated list that is broad enough to create competition without a public listing."
+      body: "A confidential process works when the owner cannot risk staff, guests or lenders learning the asset is for sale before a deal is signed, common on a single trophy asset or a family-owned property with long-tenured management. A broadly marketed process, syndicated to a wider buyer list, produces more competitive tension and typically a tighter timeline to a call for offers, because more buyers are underwriting at once. Most owners land somewhere in between: a targeted, NDA-gated list that is broad enough to create competition without a public listing. The three methods are compared side by side at [Should I sell my hotel off-market or list it publicly?](/sell-a-hotel/off-market-vs-marketed)"
     },
     {
       h2: "Does an open PIP kill my deal?",
@@ -210,7 +210,12 @@ export const page: AnswerPage = {
       "/sell-a-hotel/how-long-it-takes",
       "/sell-a-hotel/broker-fees",
       "/sell-a-hotel/documents-needed",
-      "/sell-a-hotel/how-to-choose-a-hotel-broker"
+      "/sell-a-hotel/how-to-choose-a-hotel-broker",
+      "/sell-a-hotel/off-market-vs-marketed",
+      "/sell-a-hotel/taxes-when-selling-a-hotel",
+      "/sell-a-hotel/franchise-agreement-expiration",
+      "/sell-a-hotel/selling-a-distressed-hotel",
+      "/sell-a-hotel/faq"
     ],
     glossary: [
       "/glossary/bov",
