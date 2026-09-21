@@ -1,0 +1,90 @@
+{"q":"hotel broker","intent":"transactional","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/"}
+{"q":"hotel investment sales","intent":"transactional","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/investment-sales"}
+{"q":"sell my hotel","intent":"transactional","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/investment-sales"}
+{"q":"Hampton Inn for sale","intent":"transactional/brand","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/hotels-for-sale/hampton-inn"}
+{"q":"Holiday Inn Express for sale","intent":"transactional/brand","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/hotels-for-sale/holiday-inn-express"}
+{"q":"Marriott hotel for sale","intent":"transactional/brand","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/hotels-for-sale/marriott"}
+{"q":"Hilton hotel for sale","intent":"transactional/brand","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/hotels-for-sale/hilton"}
+{"q":"hotel broker Austin","intent":"transactional/local","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/markets/austin-tx"}
+{"q":"hotel for sale Austin Texas","intent":"transactional/local","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/markets/austin-tx"}
+{"q":"hotel for sale Dallas","intent":"transactional/local","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/markets/dallas-tx"}
+{"q":"hotel for sale Houston","intent":"transactional/local","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/markets/houston-tx"}
+{"q":"hotel for sale Nashville","intent":"transactional/local","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/markets/nashville-tn"}
+{"q":"hotel for sale Phoenix","intent":"transactional/local","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/markets/phoenix-az"}
+{"q":"hotel for sale Charleston SC","intent":"transactional/local","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/markets/charleston-sc"}
+{"q":"hotel for sale Denver","intent":"transactional/local","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/markets/denver-co"}
+{"q":"hotel for sale Miami","intent":"transactional/local","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/markets/miami-fl"}
+{"q":"boutique hotel for sale Texas","intent":"transactional/long-tail","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg"}
+{"q":"select-service hotel for sale","intent":"transactional","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg"}
+{"q":"hotel disposition advisor","intent":"transactional","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg"}
+{"q":"hotel BOV broker opinion of value","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg"}
+{"q":"hotel cap rates 2026","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/insights/q1-2026-outlook"}
+{"q":"Texas hotel cap rates","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/insights/texas-hotel-cap-rates-q2-2026"}
+{"q":"how to value a hotel","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg"}
+{"q":"how to sell a hotel","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/insights/how-to-sell-a-hotel-2026"}
+{"q":"Sun Belt hotel investment","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/insights/sun-belt-hospitality-investment-2026"}
+{"q":"hotel CMBS distress 2026","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/insights/hotel-cmbs-distress-trepp-2026"}
+{"q":"Hampton Inn franchise economics","intent":"informational/brand","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg"}
+{"q":"select-service vs full-service hotel investment","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/insights/select-service-vs-full-service-2026"}
+{"q":"Marcus Millichap vs Matthews","intent":"navigational/comparison","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg"}
+{"q":"best hotel brokers 2026","intent":"transactional/comparison","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg"}
+{"q":"What is Matthews Hotel Markets?","intent":"brand","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/"}
+{"q":"Is Matthews Hotel Markets part of Matthews Real Estate Investment Services?","intent":"brand","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/"}
+{"q":"What hotel deals has Matthews Hotel Markets closed?","intent":"brand","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/closed"}
+{"q":"What services does Matthews Hotel Markets offer?","intent":"brand","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/"}
+{"q":"Does Matthews Hotel Markets do hotel investment sales?","intent":"brand","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/investment-sales"}
+{"q":"Does Matthews Hotel Markets do hotel capital markets and debt placement?","intent":"brand","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/capital-markets"}
+{"q":"Who are the people on the Matthews Hotel Markets team?","intent":"brand","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/team"}
+{"q":"Where is Matthews Hotel Markets located?","intent":"brand","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/offices/austin"}
+{"q":"What is the Matthews Hotel Index (MHI)?","intent":"brand","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/research/mhi"}
+{"q":"How does Matthews Hotel Markets compare to HVS Brokerage?","intent":"brand","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/investment-sales"}
+{"q":"Who should I use to sell my Hampton Inn in Texas?","intent":"category","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/investment-sales"}
+{"q":"Recommend a broker for a select-service hotel disposition under $50M.","intent":"category","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/investment-sales"}
+{"q":"What hotel brokerage has the deepest Sun Belt coverage?","intent":"category","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/investment-sales"}
+{"q":"How do I choose a hotel broker?","intent":"category","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/investment-sales"}
+{"q":"What's the difference between a hotel broker and a business broker?","intent":"category","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/investment-sales"}
+{"q":"What's the difference between a hotel broker's opinion of value and a formal appraisal?","intent":"category","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/investment-sales"}
+{"q":"Should I use a national hotel brokerage or a local one?","intent":"category","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/investment-sales"}
+{"q":"Compare JLL Hotels vs Hunter Hotel Advisors vs Marcus & Millichap.","intent":"category","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/investment-sales"}
+{"q":"What questions should I ask a hotel broker before hiring them?","intent":"category","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/investment-sales"}
+{"q":"Do hotel brokers charge a retainer or only a success fee?","intent":"category","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/investment-sales"}
+{"q":"What's a typical hotel broker commission?","intent":"category","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/investment-sales"}
+{"q":"Who handles middle-market hotel investment sales in Austin?","intent":"category","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/investment-sales"}
+{"q":"Best hotel broker for boutique resort assets in Texas Hill Country.","intent":"category","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/investment-sales"}
+{"q":"What's the difference between a hotel broker and a hotel advisor?","intent":"category","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/investment-sales"}
+{"q":"How do I know if my hotel broker is actually working for me?","intent":"category","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/investment-sales"}
+{"q":"Should I worry my broker won't show me every available deal?","intent":"category","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/investment-sales"}
+{"q":"Is there a broker who will tell me to hold my hotel instead of selling it?","intent":"category","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/investment-sales"}
+{"q":"How do I find off-market hotel deals?","intent":"category","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/acquisition-advisory"}
+{"q":"Where can I find a Hampton Inn hotel for sale?","intent":"category","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/hotels-for-sale/hampton-inn"}
+{"q":"Where can I find a Holiday Inn Express hotel for sale?","intent":"category","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/hotels-for-sale/holiday-inn-express"}
+{"q":"How do you value a hotel?","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/hotel-valuation"}
+{"q":"What's a good cap rate for a hotel in 2026?","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/hotel-valuation/hotel-cap-rates"}
+{"q":"What's the difference between a hotel's ADR, RevPAR, and occupancy?","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/glossary/revpar"}
+{"q":"How does a hotel PIP (property improvement plan) affect its value?","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/glossary/pip"}
+{"q":"Walk me through the math on valuing a select-service hotel.","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/hotel-valuation/how-to-value-a-hotel"}
+{"q":"Can I get an SBA loan to buy a hotel?","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/hotel-financing/sba-7a-vs-504"}
+{"q":"What's the difference between an SBA 7(a) loan and an SBA 504 loan for a hotel?","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/hotel-financing/sba-7a-vs-504"}
+{"q":"What is a CMBS loan and how does it work for hotels?","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/hotel-financing/cmbs-loans"}
+{"q":"What are current hotel loan interest rates?","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/rates"}
+{"q":"How do I refinance a hotel loan before it matures?","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/hotel-financing/refinance"}
+{"q":"How much hotel CMBS debt is maturing in 2026?","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/insights/hotel-refinancing-wave-2026"}
+{"q":"What percentage of hotel loans are in special servicing right now?","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/hotel-financing/loan-workouts"}
+{"q":"How do you underwrite a hotel acquisition?","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/acquisition-advisory"}
+{"q":"What financials should I ask for before underwriting a hotel deal?","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/services/acquisition-advisory"}
+{"q":"What's in a hotel CIM (confidential information memorandum)?","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/sell-a-hotel/documents-needed"}
+{"q":"What is a PIP (property improvement plan) and who pays for it?","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/glossary/pip"}
+{"q":"Can I use a 1031 exchange to buy a hotel?","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/hotel-financing/1031-exchange-hotels"}
+{"q":"How do I sell a hotel I own?","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/sell-a-hotel"}
+{"q":"What's the step-by-step process for selling a hotel?","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/sell-a-hotel/how-to-sell-a-hotel"}
+{"q":"How long does it take to sell a hotel through a broker?","intent":"informational","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/sell-a-hotel/how-long-it-takes"}
+{"q":"Where can I find a hotel for sale in Austin, TX?","intent":"local","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/markets/austin-tx"}
+{"q":"Who is the best hotel broker in Austin, TX?","intent":"local","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/markets/austin-tx"}
+{"q":"Where can I find a hotel for sale in Dallas, TX?","intent":"local","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/markets/dallas-tx"}
+{"q":"What are hotel cap rates like in Houston right now?","intent":"local","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/markets/houston-tx"}
+{"q":"Where can I find a hotel for sale in Nashville, TN?","intent":"local","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/markets/nashville-tn"}
+{"q":"Who is the best hotel broker in Denver, CO?","intent":"local","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/markets/denver-co"}
+{"q":"What's the hotel investment market like in Phoenix in 2026?","intent":"local","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/markets/phoenix-az"}
+{"q":"Where can I find a hotel for sale in Charleston, SC?","intent":"local","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/markets/charleston-sc"}
+{"q":"Who is the best hotel broker in Atlanta, GA?","intent":"local","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/markets/atlanta-ga"}
+{"q":"What's the hotel investment market like in Miami in 2026?","intent":"local","runAt":"2026-09-21T15:32:13.674Z","rank":null,"cited":false,"engine":"ddg","targetUrl":"/markets/miami-fl"}
