@@ -1,10 +1,10 @@
 {
-  "urls": 308,
+  "urls": 309,
   "maxDepth": 2,
   "byDepth": {
     "0": 1,
     "1": 32,
-    "2": 275
+    "2": 276
   },
   "depth": {
     "/": 0,
@@ -109,6 +109,7 @@
     "/sell-a-hotel/how-to-choose-a-hotel-broker": 2,
     "/sell-a-hotel/faq": 2,
     "/sell-a-hotel/franchise-agreement-expiration": 2,
+    "/sell-a-hotel/franchise-transfer": 2,
     "/sell-a-hotel/selling-a-distressed-hotel": 2,
     "/sell-a-hotel/selling-a-hotel-on-a-ground-lease": 2,
     "/sell-a-hotel/what-buyers-look-for": 2,

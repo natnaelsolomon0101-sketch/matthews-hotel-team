@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-09-21T13:39:30.508Z",
-  "base": "http://localhost:44551",
+  "runAt": "2026-09-21T14:32:33.977Z",
+  "base": "http://localhost:40819",
   "edges": [
     {
       "from": "/",
@@ -4109,6 +4109,10 @@
     {
       "from": "/sitemap",
       "to": "/sell-a-hotel/franchise-agreement-expiration"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/sell-a-hotel/franchise-transfer"
     },
     {
       "from": "/sitemap",
@@ -50084,6 +50088,10 @@
     },
     {
       "from": "/sell-a-hotel",
+      "to": "/sell-a-hotel/franchise-transfer"
+    },
+    {
+      "from": "/sell-a-hotel",
       "to": "/sell-a-hotel/selling-a-distressed-hotel"
     },
     {
@@ -51056,6 +51064,202 @@
     },
     {
       "from": "/sell-a-hotel/franchise-agreement-expiration",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/_next/static/chunks/20f15be7d67f23fd.css"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/_next/static/chunks/67ad59f8cb18da41.js"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/sell-a-hotel/franchise-transfer.md"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/listings"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/rates"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/about"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/team"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/contact"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/process"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/sell-a-hotel/franchise-agreement-expiration"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/sell-a-hotel/how-long-it-takes"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/sell-a-hotel/documents-needed"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/sell-a-hotel/how-to-sell-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/glossary"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/glossary/franchise-agreement"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/glossary/franchise-fdd"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/glossary/comfort-letter"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/glossary/pip"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/tools"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/research"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/markets"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/closed"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/services"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/insights"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/press"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/developers"
+    },
+    {
+      "from": "/sell-a-hotel/franchise-transfer",
       "to": "/sitemap"
     },
     {
@@ -67954,6 +68158,7 @@
         "/sell-a-hotel/documents-needed",
         "/sell-a-hotel/faq",
         "/sell-a-hotel/franchise-agreement-expiration",
+        "/sell-a-hotel/franchise-transfer",
         "/sell-a-hotel/how-long-it-takes",
         "/sell-a-hotel/how-to-choose-a-hotel-broker",
         "/sell-a-hotel/how-to-sell-a-hotel",
@@ -80713,6 +80918,7 @@
         "/sell-a-hotel/how-to-choose-a-hotel-broker",
         "/sell-a-hotel/faq",
         "/sell-a-hotel/franchise-agreement-expiration",
+        "/sell-a-hotel/franchise-transfer",
         "/sell-a-hotel/selling-a-distressed-hotel",
         "/sell-a-hotel/selling-a-hotel-on-a-ground-lease",
         "/sell-a-hotel/what-buyers-look-for",
@@ -80959,6 +81165,61 @@
         "/glossary/pip",
         "/glossary/bov",
         "/glossary/cap-rate",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/sell-a-hotel/franchise-transfer",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/_next/static/chunks/20f15be7d67f23fd.css",
+        "/_next/static/chunks/67ad59f8cb18da41.js",
+        "/",
+        "/sell-a-hotel/franchise-transfer.md",
+        "/favicon.ico",
+        "/images/matthews-logo.jpg",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/nate-solomon",
+        "/team/luke-thompson",
+        "/process",
+        "/sell-a-hotel/franchise-agreement-expiration",
+        "/sell-a-hotel/how-long-it-takes",
+        "/sell-a-hotel/documents-needed",
+        "/sell-a-hotel/how-to-sell-a-hotel",
+        "/glossary",
+        "/glossary/franchise-agreement",
+        "/glossary/franchise-fdd",
+        "/glossary/comfort-letter",
+        "/glossary/pip",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
