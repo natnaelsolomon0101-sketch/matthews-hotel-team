@@ -25,6 +25,18 @@ npx eslint --max-warnings=0 .
 step "production build"
 npm run build
 
+# Vercel's image optimizer quota is spent: any /_next/image URL answers 402 on
+# production, so every photo on the site goes blank after a deploy. Images must
+# be served as static files. See the images block in next.config.ts.
+step "images served as static files (no /_next/image)"
+grep -Eq 'unoptimized:[[:space:]]*true' next.config.ts || { echo "FAIL next.config.ts: images.unoptimized must be true" >&2; exit 1; }
+if grep -rlq '/_next/image' .next/server/app --include='*.html' 2>/dev/null; then
+  echo "FAIL built HTML references /_next/image:" >&2
+  grep -rl '/_next/image' .next/server/app --include='*.html' | head -5 >&2
+  exit 1
+fi
+echo "ok"
+
 step "citations, em-dashes, filler words"
 npx tsx scripts/check-refs.ts
 
