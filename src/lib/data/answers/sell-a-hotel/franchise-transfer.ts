@@ -43,8 +43,8 @@ export const page: AnswerPage = {
     },
     {
       h2: "What does a hotel franchise transfer cost?",
-      lead: "Hilton lists $200,000 for a Hampton or Hilton Garden Inn change of ownership, Choice charges its then-current affiliation fee or $45,000 on Quality, whichever is greater, and Hyatt's change-of-ownership application fee is capped at $200,000.[1][2][3][4]",
-      body: "List price and paid price are not the same number, and Hilton publishes the gap. The 2026 Hampton document discloses that in 2025 franchisees paid change-of-ownership application fees ranging from $25,000 to $200,000, and says Hilton may reduce the fee after considering criteria that include the hotel's market position, the property size and the number of hotels in the system the franchisee operates.[1] That is the only disclosed basis for a discount.\n\nSmaller line items sit around it. Hilton charges a $10,000 PIP fee to write the improvement plan for a change of ownership.[1] Hyatt's PIP preparation fee runs $5,000 to $10,000 and is due when the application is filed.[3] Choice's WoodSpring Suites transfer fee is its then-current affiliation fee or $60,000, whichever is greater, so the floor moves by brand inside one franchisor.[5]\n\nWho writes the check is a purchase agreement term. The Hampton agreement says \"you or Transferee\" must pay the PIP fee and all amounts due to Hilton at or before closing, and lets the two of you escrow the estimate.[1] Settle it in the letter of intent, before it becomes a closing-week argument."
+      lead: "Hilton lists $200,000 for a Hampton or Hilton Garden Inn change of ownership, Choice charges its then-current affiliation fee or $45,000 on Quality, whichever is greater, and Hyatt charges $150,000 against a $200,000 cap.[1][2][3][4]",
+      body: "List price and paid price are not the same number, and Hilton publishes the gap. The 2026 Hampton document discloses that in 2025 franchisees paid change-of-ownership application fees ranging from $25,000 to $200,000, and says Hilton may reduce the fee after considering criteria that include the hotel's market position, the property size and the number of hotels in the system the franchisee operates.[1] That is the only disclosed basis for a discount.\n\nSmaller line items sit around it. Hilton charges a $10,000 PIP fee to write the improvement plan for a change of ownership.[1] Hyatt's PIP preparation fee runs $5,000 to $10,000, due when the application is filed.[3] Choice's WoodSpring Suites transfer fee is its then-current affiliation fee or $60,000, whichever is greater, so the floor moves by brand inside one franchisor.[5]\n\nWho writes the check is a purchase agreement term. The Hampton agreement says \"you or Transferee\" must pay the PIP fee and all amounts due to Hilton at or before closing, and lets the two of you escrow the estimate.[1] Settle it in the letter of intent, before it becomes a closing-week argument."
     },
     {
       h2: "How long does franchise approval take?",
@@ -123,7 +123,7 @@ export const page: AnswerPage = {
       ],
       [
         "Hyatt House, Hyatt (March 27, 2026, amended August 5, 2026)",
-        "Change-of-ownership application fee, capped at $200,000[3]",
+        "$150,000, against a cap of $200,000[3]",
         "10 days before you list the hotel for sale[3]",
         "60 days from a completed application[3]",
         "Right of first offer, only where Exhibit C was signed; 30 days to elect[3]"
