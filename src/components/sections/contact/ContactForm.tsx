@@ -84,6 +84,13 @@ export function ContactForm() {
       });
 
       if (res.ok) {
+        // Tie this browser's HubSpot tracking cookie to the email, so the
+        // visitor's earlier page views land on their contact record. The
+        // queue is safe to push to before the tracking script has loaded.
+        const w = window as unknown as { _hsq?: unknown[] };
+        const hsq = (w._hsq = w._hsq || []);
+        hsq.push(["identify", { email, firstname: firstName, lastname: lastName }]);
+        hsq.push(["trackPageView"]);
         setState("success");
         return;
       }
