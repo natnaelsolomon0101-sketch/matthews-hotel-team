@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Fraunces } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { BOILERPLATE, BRAND, PARENT, SITE_URL } from "@/lib/entity";
 
@@ -35,6 +36,11 @@ const fraunces = Fraunces({
   // with display: swap, as soon as a rule that uses them matches.
   preload: false,
 });
+
+// HubSpot tracking code for the Matthews portal (the same portal the contact
+// form writes to). It records page views on known contacts' timelines and
+// matches visits to companies. lazyOnload keeps it off the LCP path.
+const HUBSPOT_PORTAL_ID = "246112508";
 
 // Search-console ownership tokens. Nate pastes the token value into Vercel
 // env vars once he verifies the property; until then these are undefined and
@@ -141,6 +147,11 @@ export default function RootLayout({
       */}
       <body className="min-h-screen bg-[color:var(--surface)] text-[color:var(--text-primary)]">
         {children}
+        <Script
+          id="hs-script-loader"
+          src={`https://js-na2.hs-scripts.com/${HUBSPOT_PORTAL_ID}.js`}
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );
