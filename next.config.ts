@@ -16,6 +16,11 @@ const nextConfig: NextConfig = {
     root: path.resolve(__dirname),
   },
   images: {
+    // Serve every image as the static file. Vercel's image optimizer quota on
+    // this account is spent, so any /_next/image URL that is not already cached
+    // returns 402 and the photo goes blank after each deploy (2026-09-21).
+    // scripts/geo-check.sh fails the gate if this is removed.
+    unoptimized: true,
     formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 750, 1080, 1200, 1470, 1920, 2560],
     minimumCacheTTL: 31536000,
