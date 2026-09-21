@@ -8,7 +8,8 @@
  *
  * Every entry below was opened and read on 2026-09-17. The SOFR, Prime,
  * FOMC, target-range and SBA 7(a) entries were re-read on 2026-09-18 for the
- * correction that followed the September 16 FOMC decision. Where the reading was
+ * correction that followed the September 16 FOMC decision, and the Prime, FOMC,
+ * target-range and SBA 7(a) maximum entries again on 2026-09-21. Where the reading was
  * taken from a trade publication quoting a primary research house rather than
  * from the research house directly, `note` says so, because a reader deserves
  * to know how many hands the number passed through.
@@ -80,6 +81,8 @@ export const STAT_GROUPS: { key: StatGroup; label: string; blurb: string }[] = [
 const V = "2026-09-17";
 /** Re-verified for the September 18, 2026 correction. */
 const V2 = "2026-09-18";
+/** Re-verified 2026-09-21, when the Fed's H.15 and FRED DPRIME printed the post-hike Prime. */
+const V3 = "2026-09-21";
 
 const TREASURY = {
   sourceName: "Daily Treasury Par Yield Curve Rates",
@@ -184,8 +187,8 @@ export const STATS: Stat[] = [
     publisher: "The Bank of New York Mellon Corporation, via PR Newswire",
     url: "https://www.prnewswire.com/news-releases/bny-increases-prime-lending-rate-to-7-00-302881066.html",
     asOf: "2026-09-16",
-    verified: V2,
-    note: "PNC announced the same 7.00% rate, also effective September 17. The Federal Reserve's DPRIME series on FRED had not yet printed a post-hike value on September 18, 2026; its last observation is 6.75% on September 15. Corrected September 18, 2026: this entry first read 6.75%.",
+    verified: V3,
+    note: "PNC announced the same 7.00% rate, also effective September 17. The Federal Reserve's H.15 release and the FRED DPRIME series have since printed 7.00% for September 17, 2026, confirming the announcements. Corrected September 18, 2026: this entry first read 6.75%.",
   },
   {
     id: "fomc",
@@ -195,7 +198,7 @@ export const STATS: Stat[] = [
     publisher: "Board of Governors of the Federal Reserve System",
     url: "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
     asOf: "2026-09-16",
-    verified: V2,
+    verified: V3,
   },
   {
     id: "fedtaru",
@@ -205,7 +208,7 @@ export const STATS: Stat[] = [
     publisher: "Federal Reserve Bank of St. Louis (FRED)",
     url: "https://fred.stlouisfed.org/series/DFEDTARU",
     asOf: "2026-09-17",
-    verified: V2,
+    verified: V3,
   },
 
   /* --------------------------------------------------------------- SBA */
@@ -237,8 +240,8 @@ export const STATS: Stat[] = [
     publisher: "U.S. Small Business Administration",
     url: "https://www.sba.gov/sba-lenders/#7a-terms",
     asOf: "2026-09-17",
-    verified: V2,
-    note: "Prime plus the 3.00% cap SBA publishes. The 7.00% Prime is from the BNY and PNC announcements listed above. Corrected September 18, 2026: this entry first read 9.75%, on the 6.75% Prime last printed by FRED on September 15.",
+    verified: V3,
+    note: "Prime plus the 3.00% cap SBA publishes. The 7.00% Prime is from the BNY and PNC announcements listed above, and is now also printed for September 17, 2026 in the Federal Reserve's H.15 release and the FRED DPRIME series. Corrected September 18, 2026: this entry first read 9.75%, on the 6.75% Prime then last printed by FRED on September 15.",
   },
   {
     id: "sba-7a-max-loan",

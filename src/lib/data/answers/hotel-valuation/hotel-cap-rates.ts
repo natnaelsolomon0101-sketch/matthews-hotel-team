@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Hotel Cap Rates in 2026: What Is Good?",
   h1: "What is a good cap rate for a hotel in 2026?",
   description: "Hotel cap rates by segment and market in 2026, what drives compression and expansion, and the spread between Sun Belt and gateway assets.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-09-21",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -38,7 +38,7 @@ export const page: AnswerPage = {
     {
       h2: "What cap rate applies to my hotel?",
       lead: "The band for your segment and market in the current Matthews Hotel Index, adjusted up or down for brand strength, PIP status and submarket supply.",
-      body: "Start with the segment band in the table above, then move within it based on what makes your specific asset different from the median property in that band: a stronger brand and a clean franchise term push toward the tight end, an open PIP or a single-demand-driver local economy push toward the wide end. A broker opinion of value applies this adjustment explicitly, comp by comp, rather than picking a number from the middle of the range. For a public cross-check, HVS reported in April 2026 that U.S. hotel trades averaged an 8.2 percent cap rate in 2025, with stabilized hotels typically selling at 8 to 9 percent.[3]"
+      body: "Start with the segment band in the table above, then move within it based on what makes your specific asset different from the median property in that band: a stronger brand and a clean franchise term push toward the tight end, an open PIP or a single-demand-driver local economy push toward the wide end. A broker opinion of value applies this adjustment explicitly, comp by comp, rather than picking a number from the middle of the range. For a public cross-check, HVS reported in its U.S. Market Pulse of August 27, 2026 that the industry's average cap rate fell to 7.7 percent in the second quarter of 2026, that the trailing-twelve-month average was 8.2 percent, and that stabilized and near-stabilized hotels generally support 8.0 to 8.5 percent.[5] Its April 2026 edition put 2025 trades at an 8.2 percent average for the year.[3]"
     },
     {
       h2: "How do cap rates differ by segment?",
@@ -171,6 +171,13 @@ export const page: AnswerPage = {
       url: "https://www.cbre.com/insights/reports/us-cap-rate-survey-h2-2025",
       publisher: "CBRE Research",
       accessed: "2026-09-18"
+    },
+    {
+      n: 5,
+      label: "HVS U.S. Market Pulse: August 2026",
+      url: "https://www.hvs.com/article/10541-hvs-us-market-pulse-august-2026",
+      publisher: "HVS",
+      accessed: "2026-09-21"
     }
   ],
   related: {

@@ -231,8 +231,9 @@ export default function MarketsIndexPage() {
                 <Link href={`/research/mhi/${mhi.slug}`} className={LINK}>
                   Matthews Hotel Index, {mhi.label}
                 </Link>
-                , published {LAST_UPDATED_LABEL}. Next refresh {mhi.nextRefresh}.
-                Full methodology and outside sources are on that page.
+                , published {LAST_UPDATED_LABEL}.{" "}
+                {mhi.refreshNote ?? `Next refresh ${mhi.nextRefresh}.`} Full
+                methodology and outside sources are on that page.
               </p>
             </section>
 

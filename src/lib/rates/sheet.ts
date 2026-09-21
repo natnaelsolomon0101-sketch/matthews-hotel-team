@@ -128,8 +128,8 @@ const SEPTEMBER_2026_ROWS: RateRow[] = [
     ),
     allIn: published(
       "10.00% maximum allowable",
-      ["sba-7a-terms", "bny-prime-2026-09", "pnc-prime-2026-09", "fred-dprime", "fomc-2026-09"],
-      "Prime 7.00%, effective September 17, 2026, as announced by BNY and PNC after the FOMC raised the target range 25 basis points on September 16, plus the 3.00% cap. The Federal Reserve's DPRIME series had not yet printed a post-hike value on September 18, 2026; its last observation is 6.75% on September 15. Corrected September 18, 2026: this cell first read 9.75%, on the 6.75% Prime.",
+      ["sba-7a-terms", "bny-prime-2026-09", "pnc-prime-2026-09", "fred-dprime", "fed-h15", "fomc-2026-09"],
+      "Prime 7.00%, effective September 17, 2026, as announced by BNY and PNC after the FOMC raised the target range 25 basis points on September 16, plus the 3.00% cap. The Federal Reserve's H.15 release and the FRED DPRIME series have since printed 7.00% for September 17, confirming the announcements; both were re-read on September 21, 2026. Corrected September 18, 2026: this cell first read 9.75%, on the 6.75% Prime.",
     ),
     maxLtv: pending(
       "SBA publishes no LTV cap for 7(a). The working ceiling is the lender's, and only live quotes show it.",
@@ -264,7 +264,7 @@ export const EDITIONS: RateEdition[] = [
     nextRefresh: "2026-10-05",
     directAnswer:
       "As of September 17, 2026, the 10-year Treasury is 4.94%, the 5-year is 4.78%, SOFR is 3.85%, and Prime is 7.00%. SBA caps a variable-rate 7(a) loan over $350,000 at Prime plus 3.00%, which is 10.00% today. The 25-year SBA 504 debenture priced at 6.54% on September 10. Rows that depend on what lenders are actually quoting are marked not yet published.",
-    modifiedAt: "2026-09-18",
+    modifiedAt: "2026-09-21",
     corrections: [
       {
         date: "2026-09-18",
@@ -279,11 +279,16 @@ export const EDITIONS: RateEdition[] = [
           "nyfed-sofr",
         ],
       },
+      {
+        date: "2026-09-21",
+        text: "Sourcing note, September 21, 2026: no value on this edition changed. The September 17 Prime of 7.00% was first published here on the BNY and PNC announcements, because the Federal Reserve had not yet printed a post-hike value. The H.15 release and the FRED DPRIME series have since printed 7.00% for September 17, and the notes below now say so.",
+        sources: ["fed-h15", "fred-dprime"],
+      },
     ],
     rows: SEPTEMBER_2026_ROWS,
     changelog: [
       "The FOMC raised the target range for the federal funds rate 25 basis points to 3-3/4 to 4 percent on September 16, 2026, on a 12 to 0 vote. The effective target range upper limit moved to 4.00% on September 17.",
-      "Prime moved from 6.75% to 7.00% effective September 17, as announced by BNY and PNC. That lifts the SBA 7(a) maximum allowable rate on a variable-rate loan over $350,000 from 9.75% to 10.00%. The Federal Reserve's DPRIME series had not yet printed a post-hike value on September 18; its last observation is 6.75% on September 15.",
+      "Prime moved from 6.75% to 7.00% effective September 17, as announced by BNY and PNC. That lifts the SBA 7(a) maximum allowable rate on a variable-rate loan over $350,000 from 9.75% to 10.00%. The Federal Reserve's H.15 release and the FRED DPRIME series have since printed 7.00% for September 17, so the announcements now carry a Federal Reserve source as well.",
       "The 5-year Treasury rose 29 basis points, from 4.49% on August 31 to 4.78% on September 17.",
       "The 10-year Treasury rose 19 basis points, from 4.75% on August 31 to 4.94% on September 17. The 5s10s curve flattened by 10 basis points over the same stretch.",
       "SOFR drifted from 3.68% on August 31 to 3.62% on September 16, then printed 3.85% for September 17, the first day under the new target range. That is 17 basis points above August 31, so floating-rate debt now costs more than it did at the start of the month, along with fixed-rate term debt.",

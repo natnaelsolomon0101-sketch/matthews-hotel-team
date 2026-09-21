@@ -39,7 +39,15 @@ export type MhiQuarter = {
   label: string;             // e.g., "Q1 2026"
   yearQuarter: string;       // ISO-ish "2026-Q1"
   publishedAt: string;       // ISO date
-  nextRefresh: string;       // ISO date — when the next quarter publishes
+  nextRefresh: string;       // ISO date: when the next quarter was due
+  /**
+   * Set this once `nextRefresh` has passed and the next quarter is not out.
+   * A page that keeps printing a refresh date already in the past tells a
+   * reader the next edition arrived when it did not. Authored, never derived
+   * from `new Date()`: see src/lib/format-date.ts. Clear it when the next
+   * quarter ships.
+   */
+  refreshNote?: string;
   headline: string;
   summary: string;
   methodology: string;
@@ -260,6 +268,8 @@ const Q1_2026: MhiQuarter = {
   yearQuarter: "2026-Q1",
   publishedAt: "2026-04-15",
   nextRefresh: "2026-07-15",
+  refreshNote:
+    "Q1 2026 is the most recent published quarter. The Q2 2026 edition was due July 15, 2026 and has not published yet, so every figure on this page is a Q1 2026 reading.",
   headline: "Cap rates compressed 25-50bps off the 2024 peak across Sun Belt select-service.",
   summary:
     "Q1 2026 marked the first full quarter of compressed bid-ask in two years. Sun Belt secondary markets continued to outperform primary metros on RevPAR recovery while pricing more aggressively on cap rate. Select-service is the most actively bid category by transaction count; resort and lifestyle is the tightest cap rate band by spread. Construction-loan freeze that lasted from late 2022 to early 2025 is now fully thawed for sponsors with track records, but supply pipeline remains constrained.",

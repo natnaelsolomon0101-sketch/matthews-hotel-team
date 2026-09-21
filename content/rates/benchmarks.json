@@ -7,7 +7,7 @@
       "label": "Prime rate",
       "value": 7.0,
       "asOf": "2026-09-17",
-      "sourceName": "Prime rate announcements by BNY and PNC, effective September 17, 2026 (FRED series DPRIME has not yet printed a post-hike value; its last observation is 6.75% on September 15, 2026)",
+      "sourceName": "Prime rate announcements by BNY and PNC, effective September 17, 2026, since confirmed by the Federal Reserve H.15 release and FRED series DPRIME, which both print 7.00% for September 17, 2026",
       "sourceUrl": "https://www.prnewswire.com/news-releases/bny-increases-prime-lending-rate-to-7-00-302881066.html"
     },
     {
