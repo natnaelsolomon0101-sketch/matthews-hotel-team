@@ -72,14 +72,25 @@ pattern; do not.
 
 | Done | Slug | Evidence in `closed.ts` | Notes |
 |---|---|---|---|
-| [ ] | `bozeman-mt` | Bozeman, Missoula and Whitefish closings, plus one active MT listing | Highest confidence of the three. Needs public dated market data for the metro before it can ship. |
-| [ ] | `fort-collins-co` | Fort Collins and Lyons closings | Medium confidence. Miles Cortez is the Denver-based broker. |
-| [ ] | `tulsa-ok` | One Tulsa closing | Low confidence. Drop it if the sourcing is thin. |
+| [ ] | `bozeman-mt` | Bozeman, Missoula and Whitefish closings, plus one active MT listing | SKIPPED (2026-09-21): the live `/markets/[city]` template renders a required "Cap rate range" block and an "ADR + RevPAR commentary" block, sourced on the page to the CBRE Cap Rate Survey, HVS US Market Pulse and STR press releases. None of those publishes Bozeman-level cap rates or ADR: CBRE's survey covers major markets only and STR's free releases are national and Top-25. Shipping this row means either inventing the two numbers (rule 1) or changing a shared template across 14 live commercial pages, which is an architect change, not a content run. Reopen when `Market` grows honest optional fields, or when Nate supplies observed values. |
+| [ ] | `fort-collins-co` | Fort Collins and Lyons closings | SKIPPED (2026-09-21): same blocker as `bozeman-mt`. No public source publishes Fort Collins metro hotel cap rates or ADR. |
+| [ ] | `tulsa-ok` | One Tulsa closing | SKIPPED (2026-09-21): same blocker as `bozeman-mt`, and one closing is thin evidence besides. |
 
 ## G. Brand sub-flags
 
 New `BrandFlag` entries in `brands.ts` under the live `/hotels-for-sale/[brand]` route. Do not build
 a `/brands/*` tree.
+
+**Blocked, 2026-09-21 (not a skip: this is fixable, it just is not a content change).** Two problems
+found this run, both needing a decision before any sub-flag ships.
+1. `findActiveListings` and `findRecentClosed` in `src/app/hotels-for-sale/[brand]/page.tsx` match a
+   listing or a closed deal by the **first word** of each flag family. A `hilton-garden-inn` entry
+   with `flagFamilies: ["Hilton Garden Inn"]` would match on `hilton` and pull in all 13 Hilton
+   closes. Sub-flags need an explicit match field before they can be right.
+2. `/hotels-for-sale/hilton` already covers the Hilton family and
+   `/hotel-franchise-costs/hilton-garden-inn` already carries the FDD-sourced brand economics. A
+   third page on the same noun with the same CTA is the noun-swapped pattern `geo/AGENTS.md` rule 4
+   forbids, unless it carries content neither of those has. That is the architect's call.
 
 | Done | Flag |
 |---|---|
@@ -123,6 +134,12 @@ environment, not the sources: `/hotel-financing/construction-loans` remains the 
 and the log line are what the run shipped. The environment's network policy needs to allow the
 primary-source domains above before the Writer can run.
 
+
+**2026-09-21, Content Writer.** Shipped `/sell-a-hotel/franchise-transfer`, taken from section J and
+the `geo/04-queries.csv` row `/sell-a-hotel/franchise-transfer` that had no page. Sections A to E are
+complete, F is now SKIPPED for a sourcing reason that will still hold next run, and G is blocked on a
+matcher bug plus a rule 4 question. Outbound HTTPS worked this run, unlike 2026-09-18: five 2026
+franchise disclosure documents were downloaded and read for the page.
 
 ## I. Shipped 2026-09-18 outside the original queue
 

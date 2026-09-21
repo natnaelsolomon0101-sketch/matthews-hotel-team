@@ -65,6 +65,7 @@ export const entry: GlossaryEntry = {
   ],
   relatedAnswers: [
     "/sell-a-hotel/documents-needed",
+    "/sell-a-hotel/franchise-transfer",
     "/hotel-financing/pip-and-renovation-loans",
     "/sell-a-hotel/how-to-sell-a-hotel"
   ],

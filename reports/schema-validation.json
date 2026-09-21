@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-09-21T13:39:23.073Z",
+  "runAt": "2026-09-21T14:36:39.234Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 308,
-  "blocksFound": 308,
-  "blocksValid": 308,
+  "urlsChecked": 309,
+  "blocksFound": 309,
+  "blocksValid": 309,
   "issues": [],
   "blocks": [
     {
@@ -722,6 +722,13 @@
     },
     {
       "url": "/sell-a-hotel/franchise-agreement-expiration",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/sell-a-hotel/franchise-transfer",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,
