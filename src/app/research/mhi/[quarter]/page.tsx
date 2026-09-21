@@ -280,7 +280,7 @@ export default async function MhiQuarterPage(props: {
               {q.methodology}
             </p>
             <p className="mt-4 text-[13px] tracking-[-0.014em] text-[color:var(--text-tertiary)]">
-              Next refresh: {q.nextRefresh}
+              {q.refreshNote ?? `Next refresh: ${q.nextRefresh}`}
             </p>
           </div>
         </section>

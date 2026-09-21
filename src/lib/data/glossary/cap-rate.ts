@@ -11,7 +11,7 @@ export const entry: GlossaryEntry = {
     "Cap rates are the single most-quoted underwriting metric in hotel investment sales. They translate a property's operating performance into a yield that capital allocators can compare against Treasury rates, corporate bonds, and other commercial real estate categories. When a hotel broker quotes an 8.25 percent cap on a Holiday Inn Express in a Sun Belt secondary market, that single number encodes the buyer's view of cash flow stability, brand quality, PIP exposure, and submarket supply risk all at once.",
     "The formula is straightforward. Stabilized NOI divided by purchase price equals the cap rate. NOI is revenue minus operating expenses, with capital expenditures, debt service, and income taxes excluded. The word stabilized matters. Buyers underwrite a forward NOI that assumes the property is operating at its sustainable run rate, not a depressed trailing twelve months caused by a renovation, a brand transition, or a one-time revenue disruption. That stabilized number is what gets divided into price.",
     "Cap rates move inversely with price. When a buyer accepts a tighter cap rate, they are paying more dollars per dollar of NOI. A hotel producing $1.6 million of NOI sells for $20.0 million at an 8.0 percent cap, $21.3 million at 7.5 percent, and $18.8 million at 8.5 percent. Fifty basis points of cap rate compression on a typical select-service trade moves the price by roughly six percent. That is why owners and brokers track cap rate movement closely.",
-    "Cap rate bands vary by chain scale, market, and PIP status. As of Q1 2026, stabilized PIP-current select-service hotels in Sun Belt secondary markets price in the 7.50 to 8.50 percent range. Trophy full-service in primary metros prices 7.00 to 8.00 percent. Resort and lifestyle assets in supply-constrained leisure destinations price tighter, often 6.00 to 7.50 percent. Economy and tertiary-market assets price wider, sometimes 9.00 percent or more. The spread between segments has widened, not narrowed, since 2023.",
+    "Cap rate bands vary by chain scale, market, and PIP status. HVS reported in its U.S. Market Pulse of August 27, 2026 that the industry's average cap rate fell to 7.7 percent in the second quarter of 2026, that the trailing-twelve-month average was 8.2 percent, and that stabilized and near-stabilized hotels generally support cap rates in the 8.0 to 8.5 percent range. Segment and market bands sit around that average rather than on it. The Matthews Hotel Index publishes them market by market for the 14 markets this team covers, and [What is a good cap rate for a hotel in 2026?](/hotel-valuation/hotel-cap-rates) works through how to pick the band that matches one specific asset.",
     "The two variables that move cap rates the most are interest rates and perceived cash flow risk. When the 10-year Treasury moves 100 basis points, hotel cap rates eventually follow, though with a lag of two to four quarters. When buyers grow more confident in the durability of NOI, they accept lower cap rates. When uncertainty rises, around brand standards, PIP costs, F&B labor, or supply growth, buyers demand higher cap rates as compensation for that risk.",
     "Cap rates are unlevered yields. They say nothing about the financing structure. A buyer paying an 8.0 percent cap with 60 percent debt at 7.0 percent interest is targeting a meaningfully different return than a cash buyer at the same cap rate. Sponsors translate cap rates into levered IRRs through their capital stack assumptions. The cap rate is the input. The IRR is the output.",
   ].join("\n\n"),
@@ -24,7 +24,7 @@ export const entry: GlossaryEntry = {
   faq: [
     {
       q: "What is a typical hotel cap rate in 2026?",
-      a: "Stabilized PIP-current select-service hotels in Sun Belt secondary markets are trading in the 7.50 to 8.50 percent cap range as of Q1 2026, per HVS US Market Pulse. Full-service trophy assets in primary metros price 7.00 to 8.00 percent. Resort and lifestyle assets in supply-constrained markets price tighter, often 6.00 to 7.50 percent.",
+      a: "HVS's U.S. Market Pulse of August 27, 2026 puts the industry's average cap rate at 7.7 percent for the second quarter of 2026, the trailing-twelve-month average at 8.2 percent, and the range stabilized and near-stabilized hotels generally support at 8.0 to 8.5 percent. Bands by segment and market, for the 14 markets this team covers, are in the Matthews Hotel Index on /hotel-valuation/hotel-cap-rates.",
     },
     {
       q: "How is hotel NOI calculated for cap rate purposes?",
@@ -36,22 +36,22 @@ export const entry: GlossaryEntry = {
     },
     {
       q: "How do interest rates affect hotel cap rates?",
-      a: "Cap rates and the 10-year Treasury move directionally together with a two-to-four-quarter lag. Roughly 50 to 75 percent of a sustained Treasury move translates into hotel cap rates over time, though risk premiums and segment-specific factors influence the exact transmission. Cap rates compressed about 50 basis points off the 2024 peak through Q1 2026.",
+      a: "Cap rates and the 10-year Treasury move directionally together, with a lag, and not one for one. CBRE's H1 2026 U.S. Cap Rate Survey, published August 12, 2026, is the clean example: the all-property average cap rate was essentially flat while Treasury yields rose, and hotel cap rates compressed. Risk premiums specific to hotels, PIP exposure, labor costs and brand standard changes, move independently of rates and can offset or amplify the rate effect in either direction.",
     },
     {
       q: "What is the difference between going-in cap rate and exit cap rate?",
-      a: "The going-in cap rate is the yield at acquisition, calculated against the purchase price. The exit cap rate is the assumed yield at sale, used in underwriting models to derive the residual value. Sponsors typically underwrite exit caps 25 to 50 basis points wider than going-in caps to be conservative on residual.",
+      a: "The going-in cap rate is the yield at acquisition, calculated against the purchase price. The exit cap rate is the assumed yield at sale, used in underwriting models to derive the residual value. Exit caps are underwritten wider than going-in caps: HVS's U.S. Market Pulse of August 27, 2026 puts them roughly 100 basis points above the cap rate a stabilized hotel supports today.",
     },
   ],
   sources: [
     {
-      label: "HVS US Hotel Market Pulse",
-      url: "https://www.hvs.com/insights/",
+      label: "HVS U.S. Market Pulse, August 27, 2026",
+      url: "https://www.hvs.com/article/10541-hvs-us-market-pulse-august-2026",
       publisher: "HVS",
     },
     {
-      label: "CBRE H2 2025 US Cap Rate Survey",
-      url: "https://www.cbre.com/insights/reports/us-cap-rate-survey-h2-2025",
+      label: "CBRE H1 2026 U.S. Cap Rate Survey, published August 12, 2026",
+      url: "https://www.cbre.com/insights/reports/us-cap-rate-survey-h1-2026",
       publisher: "CBRE Research",
     },
     {
@@ -87,6 +87,6 @@ export const entry: GlossaryEntry = {
     "select-service-vs-full-service-capital-markets-2026",
     "q1-2026-outlook",
   ],
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-09-21",
   authorSlug: "luke-thompson",
 };

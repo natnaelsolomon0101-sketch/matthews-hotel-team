@@ -8,7 +8,8 @@ import type { RateSource } from "./types";
  *
  * All links were opened and read on 2026-09-17. The Treasury, SOFR, FRED,
  * FOMC, SBA 7(a) and prime-rate announcement sources were re-read on
- * 2026-09-18 for the September correction.
+ * 2026-09-18 for the September correction. The FRED and FOMC sources were
+ * re-read again on 2026-09-21, when DPRIME had printed the post-hike value.
  */
 export const RATE_SOURCES: RateSource[] = [
   {
@@ -32,8 +33,16 @@ export const RATE_SOURCES: RateSource[] = [
     name: "Bank Prime Loan Rate (DPRIME)",
     publisher: "Federal Reserve Bank of St. Louis (FRED)",
     url: "https://fred.stlouisfed.org/series/DPRIME",
-    asOf: "2026-09-15",
-    verified: "2026-09-18",
+    asOf: "2026-09-17",
+    verified: "2026-09-21",
+  },
+  {
+    id: "fed-h15",
+    name: "Selected Interest Rates (Daily), H.15, bank prime loan rate",
+    publisher: "Board of Governors of the Federal Reserve System",
+    url: "https://www.federalreserve.gov/releases/h15/",
+    asOf: "2026-09-17",
+    verified: "2026-09-21",
   },
   {
     id: "bny-prime-2026-09",
@@ -57,7 +66,7 @@ export const RATE_SOURCES: RateSource[] = [
     publisher: "Federal Reserve Bank of St. Louis (FRED)",
     url: "https://fred.stlouisfed.org/series/DFEDTARU",
     asOf: "2026-09-17",
-    verified: "2026-09-18",
+    verified: "2026-09-21",
   },
   {
     id: "fomc-2026-09",
@@ -65,7 +74,7 @@ export const RATE_SOURCES: RateSource[] = [
     publisher: "Board of Governors of the Federal Reserve System",
     url: "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
     asOf: "2026-09-16",
-    verified: "2026-09-18",
+    verified: "2026-09-21",
   },
   {
     id: "sba-7a-terms",
