@@ -1,0 +1,67 @@
+name: Site monitor
+
+# Every 15 minutes, checks the live site: key pages answer 200, no Vercel bot
+# challenge, and every photo loads (scripts/site-monitor.mjs). A failure is
+# re-checked once two minutes later so a single blip never alerts. If it is
+# still broken it opens a GitHub issue labeled site-down, which emails the repo
+# owner; while it stays broken it comments on that issue once an hour; once the
+# site is healthy it closes it. Runs on GitHub, so it works whether or not any
+# local machine is on.
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      base_url:
+        description: "Site to check (leave blank for https://matthewshotelmarkets.com)"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: site-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check the live site
+        id: check
+        run: |
+          set +e
+          node scripts/site-monitor.mjs ${{ github.event.inputs.base_url }} > report.md
+          status=$?
+          if [ "$status" != "0" ]; then
+            sleep 120
+            node scripts/site-monitor.mjs ${{ github.event.inputs.base_url }} > report.md
+            status=$?
+          fi
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          cat report.md
+      - name: Open, update or close the site-down issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          STATUS: ${{ steps.check.outputs.status }}
+        run: |
+          gh label create site-down --color B60205 --description "Live site check failed" 2>/dev/null || true
+          open=$(gh issue list --label site-down --state open --json number -q '.[0].number')
+          if [ "$STATUS" != "0" ]; then
+            if [ -z "$open" ]; then
+              gh issue create --title "matthewshotelmarkets.com: live check failed" --label site-down --assignee "${{ github.repository_owner }}" --body-file report.md
+            elif [ "$(date -u +%M)" -lt 15 ]; then
+              gh issue comment "$open" --body-file report.md
+            fi
+          elif [ -n "$open" ]; then
+            gh issue close "$open" --comment "The live site is healthy again.
+
+          $(cat report.md)"
+          fi

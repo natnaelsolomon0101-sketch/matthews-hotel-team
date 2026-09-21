@@ -116,3 +116,4 @@ why in its description.
 | Everything still needed, and who does it | `geo/11-everything-needed.md` |
 | The content queue | `geo/content-queue.md` (the Writer maintains it) |
 | Run log | `geo/agent-log.md` |
+| Live-site monitor (every 15 min, GitHub Actions) | `.github/workflows/site-monitor.yml`, `scripts/site-monitor.mjs`. An open `site-down` issue means production is broken: fixing it comes before any other work in your run. |
