@@ -3,6 +3,7 @@ import { page as a_broker_fees } from "./broker-fees";
 import { page as a_documents_needed } from "./documents-needed";
 import { page as a_faq } from "./faq";
 import { page as a_franchise_agreement_expiration } from "./franchise-agreement-expiration";
+import { page as a_franchise_transfer } from "./franchise-transfer";
 import { page as a_how_long_it_takes } from "./how-long-it-takes";
 import { page as a_how_to_choose_a_hotel_broker } from "./how-to-choose-a-hotel-broker";
 import { page as a_how_to_sell_a_hotel } from "./how-to-sell-a-hotel";
@@ -21,6 +22,7 @@ export const spokes: AnswerPage[] = [
   a_documents_needed,
   a_faq,
   a_franchise_agreement_expiration,
+  a_franchise_transfer,
   a_how_long_it_takes,
   a_how_to_choose_a_hotel_broker,
   a_how_to_sell_a_hotel,

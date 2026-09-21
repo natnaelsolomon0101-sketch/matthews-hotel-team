@@ -55,6 +55,7 @@ export const entry: GlossaryEntry = {
   ],
   relatedAnswers: [
     "/hotel-financing/loan-requirements",
+    "/sell-a-hotel/franchise-transfer",
     "/hotel-financing/faq",
     "/hotel-financing/how-debt-placement-works"
   ],
