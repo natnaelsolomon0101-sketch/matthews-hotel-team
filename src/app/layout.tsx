@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Fraunces } from "next/font/google";
 import Script from "next/script";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { BOILERPLATE, BRAND, PARENT, SITE_URL } from "@/lib/entity";
 
@@ -152,6 +153,9 @@ export default function RootLayout({
           src={`https://js-na2.hs-scripts.com/${HUBSPOT_PORTAL_ID}.js`}
           strategy="lazyOnload"
         />
+        {/* Vercel Speed Insights: real-visitor Core Web Vitals, read in the
+            Vercel dashboard. Loads its own small script after hydration. */}
+        <SpeedInsights />
       </body>
     </html>
   );
