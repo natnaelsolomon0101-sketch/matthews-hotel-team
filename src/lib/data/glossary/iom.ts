@@ -74,6 +74,7 @@ export const entry: GlossaryEntry = {
   relatedAnswers: [
     "/sell-a-hotel/documents-needed",
     "/sell-a-hotel/how-to-sell-a-hotel",
+    "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
   ],
   relatedTerms: ["bov", "cap-rate", "pip"],
   relatedMarkets: ["austin-tx", "atlanta-ga", "miami-fl"],

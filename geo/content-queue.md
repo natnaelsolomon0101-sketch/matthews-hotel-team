@@ -135,6 +135,14 @@ and the log line are what the run shipped. The environment's network policy need
 primary-source domains above before the Writer can run.
 
 
+**2026-09-22, Content Writer.** Shipped `/buy-a-hotel/how-to-underwrite-a-hotel-deal` from section J.
+Sections A to E are complete, F is SKIPPED, G is blocked, H is done, so the pick came from the
+`geo/04-queries.csv` "Deal docs & underwriting" cluster, which had 13 rows and no dedicated page.
+Outbound HTTPS worked for SEC EDGAR, Cornell LII, leginfo.legislature.ca.gov, sba.gov and the Hilton
+FDD host. str.com and costar.com answered 403 to scripted readers, as they did on 2026-09-18, so no
+figure on the page depends on them. `node_modules` was absent at the start of the run and `npm ci` was
+needed before the gate would typecheck.
+
 **2026-09-21, Content Writer.** Shipped `/sell-a-hotel/franchise-transfer`, taken from section J and
 the `geo/04-queries.csv` row `/sell-a-hotel/franchise-transfer` that had no page. Sections A to E are
 complete, F is now SKIPPED for a sourcing reason that will still hold next run, and G is blocked on a
@@ -154,10 +162,22 @@ Conversational pages added by the parallel push. Listed so nobody rewrites them.
 ## J. Next up when A to H are done
 
 Pick from `geo/04-queries.csv` prompts with no dedicated page, phrased the way people ask an assistant.
-Candidates: hotel loan assumption, seller financing for a hotel, preferred equity (needs a citable
-source), what buyers look for in a hotel, selling a hotel with a ground lease, hotel property tax
-appeals, receivership from the owner's side, STR report explained (public STR pages block scripts; use
-an FDD Item 19 definition).
+
+| Done | URL | Source rows | Notes |
+|---|---|---|---|
+| [x] | `/buy-a-hotel/how-to-underwrite-a-hotel-deal` | 7 rows in the CSV's "Deal docs & underwriting" cluster, including two priority-1 prompts ("How do you underwrite a hotel acquisition?", "What financials should I ask for before underwriting a hotel deal?"), all targeting `/services/acquisition-advisory` | Shipped 2026-09-22. Covers the T-12, the expense lines owner-operators leave out, FDD Item 19 as a benchmark, offering-memorandum red flags, published leverage ceilings, and pro forma to offer price. Kept clear of `/hotel-valuation/how-to-value-a-hotel` (single-year NOI math) and `/buy-a-hotel/due-diligence-checklist` (post-LOI verification). |
+
+Remaining candidates: hotel loan assumption, seller financing for a hotel, preferred equity (needs a
+citable source), what buyers look for in a hotel, selling a hotel with a ground lease, hotel property
+tax appeals, receivership from the owner's side. Most of these now have pages; check the H1 list in
+`src/lib/data/answers/` before starting one.
+
+**STR report explained: do not build as a standalone page.** Checked 2026-09-22.
+`/hotel-industry/revpar-adr-occupancy` already carries "What are MPI, ARI and RGI?" and "How do buyers
+and lenders use these numbers?" as H2s, and `/buy-a-hotel/due-diligence-checklist` carries "What does
+the STR report tell me?". A third page on the same nouns is the pattern `geo/AGENTS.md` rule 4 forbids.
+str.com and costar.com both answer 403 to scripted readers, so the only sourcing route is an FDD
+Item 19 definition, which the new underwriting page now cites.
 
 ## K. Shipped 2026-09-18 (second push)
 
