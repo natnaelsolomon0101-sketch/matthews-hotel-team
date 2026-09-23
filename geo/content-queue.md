@@ -135,6 +135,19 @@ and the log line are what the run shipped. The environment's network policy need
 primary-source domains above before the Writer can run.
 
 
+**2026-09-23, Content Writer.** Shipped `/buy-a-hotel/depreciation-and-cost-segregation` from section J.
+Sections A to E are complete, F is SKIPPED, G is blocked, H is done, so the pick came from the gap
+scan again: no page in the repo covered buy-side depreciation, and the topic has unusually good
+primary sourcing (Title 26 on Cornell LII, IRS Publication 946, the Form 4562 instructions, IR-2026-06
+and the bonus FAQ). Outbound HTTPS worked for law.cornell.edu, irs.gov and uscode.house.gov. Two
+notes for the next run. IRS PDFs cannot be read in this environment: `pdftotext` and `poppler-utils`
+are absent, and both `pypdf` and `pdfminer.six` crash on import because the system `cryptography`
+package has a broken Rust binding, so Publication 5653 (the Cost Segregation Audit Techniques Guide)
+was downloaded but never read and is deliberately not cited. Cornell's copy of 26 U.S.C. 461(l) and
+uscode.house.gov's copy of 168(k) both still show pre-OBBBA text, so the bonus depreciation facts on
+the new page come from IRS sources rather than from those two. `node_modules` was absent at the start
+of the run and `npm ci` was needed before the gate would typecheck, as on 2026-09-22.
+
 **2026-09-22, Content Writer.** Shipped `/buy-a-hotel/how-to-underwrite-a-hotel-deal` from section J.
 Sections A to E are complete, F is SKIPPED, G is blocked, H is done, so the pick came from the
 `geo/04-queries.csv` "Deal docs & underwriting" cluster, which had 13 rows and no dedicated page.
@@ -165,6 +178,7 @@ Pick from `geo/04-queries.csv` prompts with no dedicated page, phrased the way p
 
 | Done | URL | Source rows | Notes |
 |---|---|---|---|
+| [x] | `/buy-a-hotel/depreciation-and-cost-segregation` | No CSV row targets it directly, but the "Buying a hotel / 1031" and "Deal docs & underwriting" clusters are full of tax-driven buyer questions and the repo had zero coverage: "bonus depreciation" appeared nowhere in `src/lib/data/`, and "cost segregation" only in passing on two pages | Shipped 2026-09-23 in PR #48. Covers the section 1060 allocation, what a cost segregation study reaches on a hotel, the permanent 100 percent bonus deduction for property acquired after January 19, 2025, the section 469 seven-day rule that keeps most hotels out of the automatic rental-activity trap, and section 1245 recapture at exit. Kept clear of `/sell-a-hotel/taxes-when-selling-a-hotel` (sale side) and `/buy-a-hotel/how-much-money-do-you-need` (equity, not tax). Prints no "typical" reclassification percentage: no public source publishes one. |
 | [x] | `/buy-a-hotel/how-to-underwrite-a-hotel-deal` | 7 rows in the CSV's "Deal docs & underwriting" cluster, including two priority-1 prompts ("How do you underwrite a hotel acquisition?", "What financials should I ask for before underwriting a hotel deal?"), all targeting `/services/acquisition-advisory` | Shipped 2026-09-22. Covers the T-12, the expense lines owner-operators leave out, FDD Item 19 as a benchmark, offering-memorandum red flags, published leverage ceilings, and pro forma to offer price. Kept clear of `/hotel-valuation/how-to-value-a-hotel` (single-year NOI math) and `/buy-a-hotel/due-diligence-checklist` (post-LOI verification). |
 
 Remaining candidates: hotel loan assumption, seller financing for a hotel, preferred equity (needs a

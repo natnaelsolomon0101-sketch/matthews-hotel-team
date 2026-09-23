@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-09-22T14:33:59.635Z",
+  "runAt": "2026-09-23T14:22:58.420Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 310,
-  "blocksFound": 310,
-  "blocksValid": 310,
+  "urlsChecked": 311,
+  "blocksFound": 311,
+  "blocksValid": 311,
   "issues": [],
   "blocks": [
     {
@@ -890,6 +890,13 @@
     },
     {
       "url": "/buy-a-hotel/buying-a-hotel-from-receivership-or-foreclosure",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/buy-a-hotel/depreciation-and-cost-segregation",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,

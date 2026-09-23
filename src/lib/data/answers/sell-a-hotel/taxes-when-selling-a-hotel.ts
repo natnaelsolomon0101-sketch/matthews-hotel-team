@@ -17,7 +17,7 @@ export const page: AnswerPage = {
   title: "Taxes When You Sell a Hotel: A 2026 Owner's Guide",
   h1: "What taxes do I pay when I sell a hotel?",
   description: "Capital gain, unrecaptured section 1250 gain at up to 25%, section 1245 recapture on FF&E, the 3.8% NIIT, state transfer tax and 1031 exchanges.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-09-23",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -56,7 +56,7 @@ export const page: AnswerPage = {
     {
       h2: "How is the FF&E taxed?",
       lead: "As ordinary income, up to the depreciation you took. Furniture, fixtures and equipment are section 1245 property.",
-      body: "Publication 544 is direct: gain on the disposition of section 1245 property is treated as ordinary income to the extent of depreciation allowed or allowable, and only gain above that is section 1231 gain.[2] Section 1245 property includes depreciable personal property, which covers guest room furniture, televisions, kitchen and laundry equipment and vehicles. Hotel FF&E is usually depreciated fast and is often fully depreciated, so nearly every dollar of price allocated to it is ordinary income.\n\nThe same rule reaches anything else you depreciated as personal property. If a cost segregation study moved parts of the building into shorter-lived personal property classes, you took faster deductions then, and that depreciation comes back as ordinary income now."
+      body: "Publication 544 is direct: gain on the disposition of section 1245 property is treated as ordinary income to the extent of depreciation allowed or allowable, and only gain above that is section 1231 gain.[2] Section 1245 property includes depreciable personal property, which covers guest room furniture, televisions, kitchen and laundry equipment and vehicles. Hotel FF&E is usually depreciated fast and is often fully depreciated, so nearly every dollar of price allocated to it is ordinary income.\n\nThe same rule reaches anything else you depreciated as personal property. If a cost segregation study moved parts of the building into shorter-lived personal property classes, you took faster deductions then, and that depreciation comes back as ordinary income now. The other side of that trade, including how a purchase price splits among land, building and personal property, is at [hotel depreciation and cost segregation](/buy-a-hotel/depreciation-and-cost-segregation)."
     },
     {
       h2: "What other taxes apply on top?",
