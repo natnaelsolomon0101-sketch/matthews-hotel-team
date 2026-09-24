@@ -1,10 +1,10 @@
 {
-  "urls": 311,
+  "urls": 312,
   "maxDepth": 2,
   "byDepth": {
     "0": 1,
     "1": 32,
-    "2": 278
+    "2": 279
   },
   "depth": {
     "/": 0,
@@ -177,6 +177,7 @@
     "/buy-a-hotel/branded-vs-independent": 2,
     "/buy-a-hotel/buying-a-hotel-from-receivership-or-foreclosure": 2,
     "/buy-a-hotel/depreciation-and-cost-segregation": 2,
+    "/buy-a-hotel/how-to-make-an-offer": 2,
     "/buy-a-hotel/how-to-underwrite-a-hotel-deal": 2,
     "/buy-a-hotel/seller-financing": 2,
     "/glossary/franchise-fdd": 2,

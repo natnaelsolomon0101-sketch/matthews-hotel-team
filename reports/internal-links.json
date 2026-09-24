@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-09-23T14:23:07.149Z",
-  "base": "http://localhost:38873",
+  "runAt": "2026-09-24T14:18:16.777Z",
+  "base": "http://localhost:40891",
   "edges": [
     {
       "from": "/",
@@ -4233,6 +4233,10 @@
     {
       "from": "/sitemap",
       "to": "/buy-a-hotel/how-much-money-do-you-need"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
     },
     {
       "from": "/sitemap",
@@ -55628,6 +55632,10 @@
     },
     {
       "from": "/buy-a-hotel",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/buy-a-hotel",
       "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
     },
     {
@@ -56440,6 +56448,10 @@
     },
     {
       "from": "/buy-a-hotel/due-diligence-checklist",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/buy-a-hotel/due-diligence-checklist",
       "to": "/sell-a-hotel/how-long-it-takes"
     },
     {
@@ -56967,6 +56979,218 @@
       "to": "/sitemap"
     },
     {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/_next/static/chunks/20f15be7d67f23fd.css"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/buy-a-hotel/how-to-make-an-offer.md"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/listings"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/rates"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/about"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/team"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/contact"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/sell-a-hotel/franchise-transfer"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/glossary/franchise-agreement"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/glossary/pip"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/buy-a-hotel/depreciation-and-cost-segregation"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/glossary/per-key"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/buy-a-hotel/how-much-money-do-you-need"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/buy-a-hotel/seller-financing"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/glossary"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/glossary/franchise-fdd"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/glossary/comfort-letter"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/glossary/iom"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/tools"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/research"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/markets"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/closed"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/process"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/services"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/insights"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/press"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/developers"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/sitemap"
+    },
+    {
       "from": "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
       "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     },
@@ -57081,6 +57305,10 @@
     {
       "from": "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
       "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
     },
     {
       "from": "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
@@ -68733,6 +68961,7 @@
         "/buy-a-hotel/due-diligence-checklist",
         "/buy-a-hotel/first-hotel-no-experience",
         "/buy-a-hotel/how-much-money-do-you-need",
+        "/buy-a-hotel/how-to-make-an-offer",
         "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
         "/buy-a-hotel/seller-financing",
         "/hotel-franchise-costs",
@@ -83003,6 +83232,7 @@
         "/glossary/noi",
         "/buy-a-hotel/buying-a-hotel-from-receivership-or-foreclosure",
         "/buy-a-hotel/depreciation-and-cost-segregation",
+        "/buy-a-hotel/how-to-make-an-offer",
         "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
         "/buy-a-hotel/seller-financing",
         "/team/luke-thompson",
@@ -83230,6 +83460,7 @@
         "/glossary/revpar",
         "/glossary/adr",
         "/glossary/pip",
+        "/buy-a-hotel/how-to-make-an-offer",
         "/sell-a-hotel/how-long-it-takes",
         "/sell-a-hotel/documents-needed",
         "/hotel-valuation/how-to-value-a-hotel",
@@ -83378,6 +83609,65 @@
       "missing": []
     },
     {
+      "url": "/buy-a-hotel/how-to-make-an-offer",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/20f15be7d67f23fd.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/buy-a-hotel/how-to-make-an-offer.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/buy-a-hotel",
+        "/team/nate-solomon",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/sell-a-hotel/franchise-transfer",
+        "/glossary/franchise-agreement",
+        "/glossary/pip",
+        "/buy-a-hotel/depreciation-and-cost-segregation",
+        "/glossary/per-key",
+        "/team/luke-thompson",
+        "/buy-a-hotel/how-much-money-do-you-need",
+        "/buy-a-hotel/seller-financing",
+        "/glossary",
+        "/glossary/franchise-fdd",
+        "/glossary/comfort-letter",
+        "/glossary/iom",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
       "url": "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
       "outboundInternal": [
         "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
@@ -83409,6 +83699,7 @@
         "/glossary/debt-yield",
         "/glossary/per-key",
         "/hotel-valuation/how-to-value-a-hotel",
+        "/buy-a-hotel/how-to-make-an-offer",
         "/team/nate-solomon",
         "/buy-a-hotel/how-much-money-do-you-need",
         "/buy-a-hotel/branded-vs-independent",
