@@ -135,6 +135,21 @@ and the log line are what the run shipped. The environment's network policy need
 primary-source domains above before the Writer can run.
 
 
+**2026-09-24, Content Writer.** Shipped `/buy-a-hotel/how-to-make-an-offer` from section J. Sections A
+to E are complete, F is SKIPPED, G is blocked, H is done, so the pick came from a gap scan of
+`geo/04-queries.csv` again: the priority-2 row "What's the process for making an offer on a hotel?"
+had no page, and "letter of intent" appeared in only two files in `src/lib/data/answers/` and
+"purchase and sale agreement" in two more, all in passing. Outbound HTTPS worked for
+`efts.sec.gov` and `www.sec.gov` (EDGAR requires a User-Agent carrying a contact address; the
+default agent string gets a 403), `law.cornell.edu` and `tabc.texas.gov`. Two notes for the next
+run. `statutes.capitol.texas.gov` renders its statute text with JavaScript and `law.justia.com`
+answers 403 to scripts, so Texas Alcoholic Beverage Code section 11.11 could not be read and is not
+cited; the page uses TABC's own licensing page for the 30-day notification instead. `node_modules`
+was absent at the start of the run and `npm ci` was needed before the gate would typecheck, as on
+2026-09-22 and 2026-09-23. The page runs about 2,800 words against the brief's 2,500 ceiling, after
+two trimming passes; the site's other evidence-heavy pages sit at 2,700 to 2,960 by the same count,
+and nothing left is padding.
+
 **2026-09-23, Content Writer.** Shipped `/buy-a-hotel/depreciation-and-cost-segregation` from section J.
 Sections A to E are complete, F is SKIPPED, G is blocked, H is done, so the pick came from the gap
 scan again: no page in the repo covered buy-side depreciation, and the topic has unusually good
@@ -179,12 +194,26 @@ Pick from `geo/04-queries.csv` prompts with no dedicated page, phrased the way p
 | Done | URL | Source rows | Notes |
 |---|---|---|---|
 | [x] | `/buy-a-hotel/depreciation-and-cost-segregation` | No CSV row targets it directly, but the "Buying a hotel / 1031" and "Deal docs & underwriting" clusters are full of tax-driven buyer questions and the repo had zero coverage: "bonus depreciation" appeared nowhere in `src/lib/data/`, and "cost segregation" only in passing on two pages | Shipped 2026-09-23 in PR #48. Covers the section 1060 allocation, what a cost segregation study reaches on a hotel, the permanent 100 percent bonus deduction for property acquired after January 19, 2025, the section 469 seven-day rule that keeps most hotels out of the automatic rental-activity trap, and section 1245 recapture at exit. Kept clear of `/sell-a-hotel/taxes-when-selling-a-hotel` (sale side) and `/buy-a-hotel/how-much-money-do-you-need` (equity, not tax). Prints no "typical" reclassification percentage: no public source publishes one. |
+| [x] | `/buy-a-hotel/how-to-make-an-offer` | `geo/04-queries.csv` row "What's the process for making an offer on a hotel?" (priority 2, "Buying a hotel / 1031"), which had no page | Shipped 2026-09-24 in PR #49. Built from three hotel purchase and sale agreements filed as Form 8-K exhibits on EDGAR by Moody National REIT II (Residence Inn Grapevine, December 13, 2024, $22,500,000; Homewood Suites Houston-Woodlands, November 17, 2025, $8,400,000; Homewood Suites Austin/Airport Area South, November 24, 2025, $9,400,000). Covers deposit size and when it hardens, inspection and study windows, the brand's veto over the sale, title, liquor and allocation gates, liquidated damages, and the survival, basket and cap on seller representations. Prints nothing about what a "typical" letter of intent contains: letters of intent are private and no public source describes one, and the page says so. Kept clear of `/buy-a-hotel/how-to-underwrite-a-hotel-deal` (reaching the price) and `/buy-a-hotel/due-diligence-checklist` (doing the work after signing); both now link to it and it links back. |
 | [x] | `/buy-a-hotel/how-to-underwrite-a-hotel-deal` | 7 rows in the CSV's "Deal docs & underwriting" cluster, including two priority-1 prompts ("How do you underwrite a hotel acquisition?", "What financials should I ask for before underwriting a hotel deal?"), all targeting `/services/acquisition-advisory` | Shipped 2026-09-22. Covers the T-12, the expense lines owner-operators leave out, FDD Item 19 as a benchmark, offering-memorandum red flags, published leverage ceilings, and pro forma to offer price. Kept clear of `/hotel-valuation/how-to-value-a-hotel` (single-year NOI math) and `/buy-a-hotel/due-diligence-checklist` (post-LOI verification). |
 
 Remaining candidates: hotel loan assumption, seller financing for a hotel, preferred equity (needs a
 citable source), what buyers look for in a hotel, selling a hotel with a ground lease, hotel property
 tax appeals, receivership from the owner's side. Most of these now have pages; check the H1 list in
 `src/lib/data/answers/` before starting one.
+
+**Checked 2026-09-24 and ruled out for the next run.** The "Choosing a broker" cluster's 18 CSV rows
+all target `/services/investment-sales`, and four of them ask for a brokerage comparison or ranking,
+which `geo/AGENTS.md` rule 3 forbids outright. The "Distress & maturities" cluster's 13 rows are
+covered across `/hotel-financing/loan-workouts`, `/hotel-financing/loan-maturities-2026-2027`,
+`/sell-a-hotel/selling-a-distressed-hotel` and
+`/buy-a-hotel/buying-a-hotel-from-receivership-or-foreclosure`; a fifth page on special servicing
+would be the rule 4 pattern. The valuation cluster's `/hotel-valuation/income-approach` and
+`/hotel-valuation/sales-comparison-approach` CSV targets are aliases, not gaps:
+`/hotel-valuation/how-to-value-a-hotel` carries both approaches as H2s. A standalone CIM or offering
+memorandum page is the closest real remaining gap (about 6 CSV rows), but
+`/buy-a-hotel/how-to-underwrite-a-hotel-deal` already answers offering-memorandum red flags as an
+H2, and no primary source publishes what a hotel CIM contains, so it needs the architect first.
 
 **STR report explained: do not build as a standalone page.** Checked 2026-09-22.
 `/hotel-industry/revpar-adr-occupancy` already carries "What are MPI, ARI and RGI?" and "How do buyers

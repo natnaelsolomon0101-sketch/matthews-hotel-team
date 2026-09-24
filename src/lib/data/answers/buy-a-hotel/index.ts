@@ -5,6 +5,7 @@ import { page as a_depreciation_and_cost_segregation } from "./depreciation-and-
 import { page as a_due_diligence_checklist } from "./due-diligence-checklist";
 import { page as a_first_hotel_no_experience } from "./first-hotel-no-experience";
 import { page as a_how_much_money_do_you_need } from "./how-much-money-do-you-need";
+import { page as a_how_to_make_an_offer } from "./how-to-make-an-offer";
 import { page as a_how_to_underwrite_a_hotel_deal } from "./how-to-underwrite-a-hotel-deal";
 import { page as a_hub } from "./hub";
 import { page as a_seller_financing } from "./seller-financing";
@@ -19,6 +20,7 @@ export const spokes: AnswerPage[] = [
   a_due_diligence_checklist,
   a_first_hotel_no_experience,
   a_how_much_money_do_you_need,
+  a_how_to_make_an_offer,
   a_how_to_underwrite_a_hotel_deal,
   a_seller_financing,
 ];

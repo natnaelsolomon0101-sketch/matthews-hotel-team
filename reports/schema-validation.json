@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-09-23T14:22:58.420Z",
+  "runAt": "2026-09-24T14:18:08.531Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 311,
-  "blocksFound": 311,
-  "blocksValid": 311,
+  "urlsChecked": 312,
+  "blocksFound": 312,
+  "blocksValid": 312,
   "issues": [],
   "blocks": [
     {
@@ -918,6 +918,13 @@
     },
     {
       "url": "/buy-a-hotel/how-much-money-do-you-need",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/buy-a-hotel/how-to-make-an-offer",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,
