@@ -1,10 +1,10 @@
 {
-  "urls": 312,
+  "urls": 313,
   "maxDepth": 2,
   "byDepth": {
     "0": 1,
     "1": 32,
-    "2": 279
+    "2": 280
   },
   "depth": {
     "/": 0,
@@ -107,6 +107,7 @@
     "/sell-a-hotel/documents-needed": 2,
     "/sell-a-hotel/off-market-vs-marketed": 2,
     "/sell-a-hotel/how-to-choose-a-hotel-broker": 2,
+    "/sell-a-hotel/employees-when-you-sell": 2,
     "/sell-a-hotel/faq": 2,
     "/sell-a-hotel/franchise-agreement-expiration": 2,
     "/sell-a-hotel/franchise-transfer": 2,

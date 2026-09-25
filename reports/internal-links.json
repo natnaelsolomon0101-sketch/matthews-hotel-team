@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-09-24T14:18:16.777Z",
-  "base": "http://localhost:40891",
+  "runAt": "2026-09-25T14:14:43.922Z",
+  "base": "http://localhost:33119",
   "edges": [
     {
       "from": "/",
@@ -4117,6 +4117,10 @@
     {
       "from": "/sitemap",
       "to": "/sell-a-hotel/documents-needed"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/sell-a-hotel/employees-when-you-sell"
     },
     {
       "from": "/sitemap",
@@ -50184,6 +50188,10 @@
     },
     {
       "from": "/sell-a-hotel",
+      "to": "/sell-a-hotel/employees-when-you-sell"
+    },
+    {
+      "from": "/sell-a-hotel",
       "to": "/sell-a-hotel/faq"
     },
     {
@@ -50592,6 +50600,10 @@
     },
     {
       "from": "/sell-a-hotel/documents-needed",
+      "to": "/sell-a-hotel/employees-when-you-sell"
+    },
+    {
+      "from": "/sell-a-hotel/documents-needed",
       "to": "/sell-a-hotel/how-long-it-takes"
     },
     {
@@ -50720,6 +50732,206 @@
     },
     {
       "from": "/sell-a-hotel/documents-needed",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/_next/static/chunks/20f15be7d67f23fd.css"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/sell-a-hotel/employees-when-you-sell.md"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/listings"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/rates"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/about"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/team"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/contact"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/research/mhi/q1-2026"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/sell-a-hotel/documents-needed"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/sell-a-hotel/franchise-transfer"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/sell-a-hotel/how-to-sell-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/sell-a-hotel/how-long-it-takes"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/sell-a-hotel/off-market-vs-marketed"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/glossary"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/glossary/gop"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/glossary/franchise-agreement"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/glossary/noi"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/tools"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/research"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/markets"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/closed"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/process"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/services"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/insights"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/press"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/developers"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
       "to": "/sitemap"
     },
     {
@@ -68932,6 +69144,7 @@
         "/hotel-financing/mezzanine-debt-and-preferred-equity",
         "/sell-a-hotel/broker-fees",
         "/sell-a-hotel/documents-needed",
+        "/sell-a-hotel/employees-when-you-sell",
         "/sell-a-hotel/faq",
         "/sell-a-hotel/franchise-agreement-expiration",
         "/sell-a-hotel/franchise-transfer",
@@ -81714,6 +81927,7 @@
         "/sell-a-hotel/documents-needed",
         "/sell-a-hotel/off-market-vs-marketed",
         "/sell-a-hotel/how-to-choose-a-hotel-broker",
+        "/sell-a-hotel/employees-when-you-sell",
         "/sell-a-hotel/faq",
         "/sell-a-hotel/franchise-agreement-expiration",
         "/sell-a-hotel/franchise-transfer",
@@ -81828,6 +82042,7 @@
         "/contact",
         "/team/nate-solomon",
         "/research/mhi/q1-2026",
+        "/sell-a-hotel/employees-when-you-sell",
         "/sell-a-hotel/how-long-it-takes",
         "/team/luke-thompson",
         "/process",
@@ -81851,6 +82066,62 @@
         "/hotels-for-sale",
         "/markets",
         "/closed",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/sell-a-hotel/employees-when-you-sell",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/20f15be7d67f23fd.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/sell-a-hotel/employees-when-you-sell.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/nate-solomon",
+        "/research/mhi/q1-2026",
+        "/team/miles-cortez",
+        "/sell-a-hotel/documents-needed",
+        "/sell-a-hotel/franchise-transfer",
+        "/sell-a-hotel/how-to-sell-a-hotel",
+        "/sell-a-hotel/how-long-it-takes",
+        "/sell-a-hotel/off-market-vs-marketed",
+        "/glossary",
+        "/glossary/gop",
+        "/glossary/franchise-agreement",
+        "/glossary/noi",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
         "/services",
         "/services/investment-sales",
         "/services/capital-markets",

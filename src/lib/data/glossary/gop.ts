@@ -61,7 +61,8 @@ export const entry: GlossaryEntry = {
   relatedAnswers: [
     "/hotel-valuation/how-to-value-a-hotel",
     "/hotel-valuation/select-service-vs-full-service",
-    "/sell-a-hotel/documents-needed"
+    "/sell-a-hotel/documents-needed",
+    "/sell-a-hotel/employees-when-you-sell"
   ],
   lastUpdated: "2026-09-18",
   authorSlug: "nate-solomon"

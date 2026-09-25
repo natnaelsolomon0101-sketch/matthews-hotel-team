@@ -210,6 +210,7 @@ export const page: AnswerPage = {
       "/sell-a-hotel/how-long-it-takes",
       "/sell-a-hotel/broker-fees",
       "/sell-a-hotel/documents-needed",
+      "/sell-a-hotel/employees-when-you-sell",
       "/sell-a-hotel/how-to-choose-a-hotel-broker",
       "/sell-a-hotel/off-market-vs-marketed",
       "/sell-a-hotel/taxes-when-selling-a-hotel",
