@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-09-24T14:18:08.531Z",
+  "runAt": "2026-09-25T14:14:36.896Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 312,
-  "blocksFound": 312,
-  "blocksValid": 312,
+  "urlsChecked": 313,
+  "blocksFound": 313,
+  "blocksValid": 313,
   "issues": [],
   "blocks": [
     {
@@ -708,6 +708,13 @@
     },
     {
       "url": "/sell-a-hotel/documents-needed",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/sell-a-hotel/employees-when-you-sell",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,

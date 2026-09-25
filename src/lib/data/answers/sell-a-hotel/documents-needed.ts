@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Documents Needed to Sell a Hotel",
   h1: "What documents do I need to sell my hotel?",
   description: "The full document package a hotel sale requires, what a buyer will ask for in due diligence, and what goes in a CIM versus the data room.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-09-25",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -64,7 +64,7 @@ export const page: AnswerPage = {
     {
       h2: "What happens to my staff at closing?",
       lead: "Employees are commonly terminated by the seller's operator and rehired by the buyer's operator, and employers with 100 or more employees may owe federal WARN Act notice.[6]",
-      body: "This is standard in hotel transactions because the operating agreement, not just the real estate, changes hands. Sellers should plan the employee communication timeline with counsel. Where WARN applies, notice generally must be served 60 days before a plant closing or mass layoff, and in a sale the seller is responsible for notice of any layoff up to and including the closing, the buyer after it.[7]"
+      body: "This is standard in hotel transactions because the operating agreement, not just the real estate, changes hands. Sellers should plan the employee communication timeline with counsel. Where WARN applies, notice generally must be served 60 days before a plant closing or mass layoff, and in a sale the seller is responsible for notice of any layoff up to and including the closing, the buyer after it.[7] The thresholds, the state laws that sit below the federal ones, and what the purchase agreement should say about it are at [What happens to my employees when I sell my hotel?](/sell-a-hotel/employees-when-you-sell)."
     },
     {
       h2: "What should I start gathering today?",

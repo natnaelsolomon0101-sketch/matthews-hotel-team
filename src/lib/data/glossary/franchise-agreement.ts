@@ -63,7 +63,8 @@ export const entry: GlossaryEntry = {
     "/sell-a-hotel/franchise-transfer",
     "/hotel-financing/pip-and-renovation-loans",
     "/sell-a-hotel/documents-needed",
-    "/buy-a-hotel/how-to-make-an-offer"
+    "/buy-a-hotel/how-to-make-an-offer",
+    "/sell-a-hotel/employees-when-you-sell"
   ],
   lastUpdated: "2026-09-18",
   authorSlug: "nate-solomon"

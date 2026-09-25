@@ -135,6 +135,23 @@ and the log line are what the run shipped. The environment's network policy need
 primary-source domains above before the Writer can run.
 
 
+**2026-09-25, Content Writer.** Shipped `/sell-a-hotel/employees-when-you-sell` from section J. Sections A
+to E are complete, F is SKIPPED, G is blocked, H is done, so the pick came from a gap scan of
+`geo/04-queries.csv` again: the "Selling a hotel" row "What happens to my staff and franchise agreement
+when I sell my hotel?" pointed at `/sell-a-hotel/franchise-transfer`, which answers the franchise half
+and nothing about the staff. "WARN" appeared in seven files under `src/lib/data/` and never as more
+than a two-sentence aside. Outbound HTTPS worked for `law.cornell.edu`, `www.ecfr.gov`,
+`www.dol.gov`, `dol.ny.gov`, `leginfo.legislature.ca.gov`, `data.bls.gov` and `www.irs.gov`. Three
+notes for the next run. `www.nysenate.gov` answers 403 to scripted readers, so New York Labor Law
+article 25-A could not be read as statute and the page cites the New York State Department of Labor's
+own WARN page for the state's thresholds instead. `api.census.gov` requires a key, so County Business
+Patterns establishment-size classes for NAICS 721110 were not available; the BLS QCEW open-data
+endpoint needs no key and carries the 2025 annual figures the page uses. `node_modules` was absent at
+the start of the run and `npm ci` was needed before the gate would typecheck, as on every run since
+2026-09-22. The page runs about 2,890 words against the brief's 2,500 ceiling, after three trimming
+passes; every paragraph left carries a citation, and the site's other evidence-heavy pages sit at
+2,700 to 2,960 by the same count.
+
 **2026-09-24, Content Writer.** Shipped `/buy-a-hotel/how-to-make-an-offer` from section J. Sections A
 to E are complete, F is SKIPPED, G is blocked, H is done, so the pick came from a gap scan of
 `geo/04-queries.csv` again: the priority-2 row "What's the process for making an offer on a hotel?"
@@ -194,6 +211,7 @@ Pick from `geo/04-queries.csv` prompts with no dedicated page, phrased the way p
 | Done | URL | Source rows | Notes |
 |---|---|---|---|
 | [x] | `/buy-a-hotel/depreciation-and-cost-segregation` | No CSV row targets it directly, but the "Buying a hotel / 1031" and "Deal docs & underwriting" clusters are full of tax-driven buyer questions and the repo had zero coverage: "bonus depreciation" appeared nowhere in `src/lib/data/`, and "cost segregation" only in passing on two pages | Shipped 2026-09-23 in PR #48. Covers the section 1060 allocation, what a cost segregation study reaches on a hotel, the permanent 100 percent bonus deduction for property acquired after January 19, 2025, the section 469 seven-day rule that keeps most hotels out of the automatic rental-activity trap, and section 1245 recapture at exit. Kept clear of `/sell-a-hotel/taxes-when-selling-a-hotel` (sale side) and `/buy-a-hotel/how-much-money-do-you-need` (equity, not tax). Prints no "typical" reclassification percentage: no public source publishes one. |
+| [x] | `/sell-a-hotel/employees-when-you-sell` | `geo/04-queries.csv` row "What happens to my staff and franchise agreement when I sell my hotel?" (priority 3, "Selling a hotel"), whose franchise half was live at `/sell-a-hotel/franchise-transfer` and whose staff half had no page | Shipped 2026-09-25 in PR #50. "WARN" appeared in seven files in `src/lib/data/` but never as more than a two-sentence aside. Covers the terminate-and-rehire mechanic, both federal WARN tests, the 29 U.S.C. 2101(b)(1) rule that deems the seller's employees the buyer's at closing, who owes notice on each side of the closing hour under 20 CFR 639.4(c), Cal/WARN and New York thresholds, the California hotel recall statute that follows a change of ownership until it goes inoperative January 1, 2027, NLRA successorship under Fall River Dyeing, the 60-day damages cap, and the five employee clauses a purchase agreement needs. Prints no "typical" severance or retention figure: none is published. Kept clear of `/sell-a-hotel/documents-needed` (the employee census as a document) and `/sell-a-hotel/franchise-transfer` (the brand's consent); both link to it. |
 | [x] | `/buy-a-hotel/how-to-make-an-offer` | `geo/04-queries.csv` row "What's the process for making an offer on a hotel?" (priority 2, "Buying a hotel / 1031"), which had no page | Shipped 2026-09-24 in PR #49. Built from three hotel purchase and sale agreements filed as Form 8-K exhibits on EDGAR by Moody National REIT II (Residence Inn Grapevine, December 13, 2024, $22,500,000; Homewood Suites Houston-Woodlands, November 17, 2025, $8,400,000; Homewood Suites Austin/Airport Area South, November 24, 2025, $9,400,000). Covers deposit size and when it hardens, inspection and study windows, the brand's veto over the sale, title, liquor and allocation gates, liquidated damages, and the survival, basket and cap on seller representations. Prints nothing about what a "typical" letter of intent contains: letters of intent are private and no public source describes one, and the page says so. Kept clear of `/buy-a-hotel/how-to-underwrite-a-hotel-deal` (reaching the price) and `/buy-a-hotel/due-diligence-checklist` (doing the work after signing); both now link to it and it links back. |
 | [x] | `/buy-a-hotel/how-to-underwrite-a-hotel-deal` | 7 rows in the CSV's "Deal docs & underwriting" cluster, including two priority-1 prompts ("How do you underwrite a hotel acquisition?", "What financials should I ask for before underwriting a hotel deal?"), all targeting `/services/acquisition-advisory` | Shipped 2026-09-22. Covers the T-12, the expense lines owner-operators leave out, FDD Item 19 as a benchmark, offering-memorandum red flags, published leverage ceilings, and pro forma to offer price. Kept clear of `/hotel-valuation/how-to-value-a-hotel` (single-year NOI math) and `/buy-a-hotel/due-diligence-checklist` (post-LOI verification). |
 
