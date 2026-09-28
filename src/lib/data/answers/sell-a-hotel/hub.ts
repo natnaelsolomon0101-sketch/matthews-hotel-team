@@ -214,6 +214,7 @@ export const page: AnswerPage = {
       "/sell-a-hotel/how-to-choose-a-hotel-broker",
       "/sell-a-hotel/off-market-vs-marketed",
       "/sell-a-hotel/taxes-when-selling-a-hotel",
+      "/sell-a-hotel/1031-without-buying-another-hotel",
       "/sell-a-hotel/franchise-agreement-expiration",
       "/sell-a-hotel/selling-a-distressed-hotel",
       "/sell-a-hotel/what-buyers-look-for",

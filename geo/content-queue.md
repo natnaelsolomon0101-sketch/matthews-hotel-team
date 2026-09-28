@@ -135,6 +135,25 @@ and the log line are what the run shipped. The environment's network policy need
 primary-source domains above before the Writer can run.
 
 
+**2026-09-28, Content Writer.** Shipped `/sell-a-hotel/1031-without-buying-another-hotel` from section J.
+Sections A to E are complete, F is SKIPPED, G is blocked, H is done, so the pick came from a gap scan of
+`geo/04-queries.csv` again. Two priority-2 rows pointed at `/sell-a-hotel/1031-timing`, which does not exist, and
+`/hotel-financing/1031-exchange-hotels` answers the mechanics but says nothing about what an owner can exchange into
+if they do not want to operate another hotel. "Delaware statutory trust", "tenancy in common" and "Rev. Rul. 2004-86"
+each appeared in zero files under `src/lib/data/`. Outbound HTTPS worked for `www.irs.gov`, `www.law.cornell.edu`,
+`efts.sec.gov`, `www.sec.gov`, `delcode.delaware.gov`, `fred.stlouisfed.org`, `www.bls.gov`, `www.federalreserve.gov`,
+`www.census.gov`, `www.hud.gov` and `www.sba.gov`. Four notes for the next run. `www.congress.gov`, `content.naic.org`
+and `www.fema.gov` all answer 403 to scripted readers. IRS revenue rulings are readable without a PDF tool through the
+Internal Revenue Bulletin HTML at `irs.gov/irb/<year>-<issue>_IRB`, which is how Rev. Rul. 2004-86 was read this run;
+the `irb/2002-14_IRB` path 404s, so Rev. Proc. 2002-22 could not be read and the tenancy-in-common row in the table
+carries no co-owner count. EDGAR full-text search at `efts.sec.gov/LATEST/search-index` works and needs a User-Agent
+carrying a contact address; a Form D search for "Delaware statutory trust" plus "hotel" in 2026 returned exactly one
+issuer, Driftwood Hotel Income I, DST, whose filing supplies the page's only market figures. `node_modules` was absent
+at the start of the run and `npm ci` was needed before the gate would typecheck, as on every run since 2026-09-22.
+The page runs about 2,920 words against the brief's 2,500 ceiling, after three trimming passes; every paragraph left
+carries a citation or an internal link, and the site's other evidence-heavy pages sit at 2,700 to 2,960 by the same
+count.
+
 **2026-09-25, Content Writer.** Shipped `/sell-a-hotel/employees-when-you-sell` from section J. Sections A
 to E are complete, F is SKIPPED, G is blocked, H is done, so the pick came from a gap scan of
 `geo/04-queries.csv` again: the "Selling a hotel" row "What happens to my staff and franchise agreement
@@ -213,6 +232,7 @@ Pick from `geo/04-queries.csv` prompts with no dedicated page, phrased the way p
 | [x] | `/buy-a-hotel/depreciation-and-cost-segregation` | No CSV row targets it directly, but the "Buying a hotel / 1031" and "Deal docs & underwriting" clusters are full of tax-driven buyer questions and the repo had zero coverage: "bonus depreciation" appeared nowhere in `src/lib/data/`, and "cost segregation" only in passing on two pages | Shipped 2026-09-23 in PR #48. Covers the section 1060 allocation, what a cost segregation study reaches on a hotel, the permanent 100 percent bonus deduction for property acquired after January 19, 2025, the section 469 seven-day rule that keeps most hotels out of the automatic rental-activity trap, and section 1245 recapture at exit. Kept clear of `/sell-a-hotel/taxes-when-selling-a-hotel` (sale side) and `/buy-a-hotel/how-much-money-do-you-need` (equity, not tax). Prints no "typical" reclassification percentage: no public source publishes one. |
 | [x] | `/sell-a-hotel/employees-when-you-sell` | `geo/04-queries.csv` row "What happens to my staff and franchise agreement when I sell my hotel?" (priority 3, "Selling a hotel"), whose franchise half was live at `/sell-a-hotel/franchise-transfer` and whose staff half had no page | Shipped 2026-09-25 in PR #50. "WARN" appeared in seven files in `src/lib/data/` but never as more than a two-sentence aside. Covers the terminate-and-rehire mechanic, both federal WARN tests, the 29 U.S.C. 2101(b)(1) rule that deems the seller's employees the buyer's at closing, who owes notice on each side of the closing hour under 20 CFR 639.4(c), Cal/WARN and New York thresholds, the California hotel recall statute that follows a change of ownership until it goes inoperative January 1, 2027, NLRA successorship under Fall River Dyeing, the 60-day damages cap, and the five employee clauses a purchase agreement needs. Prints no "typical" severance or retention figure: none is published. Kept clear of `/sell-a-hotel/documents-needed` (the employee census as a document) and `/sell-a-hotel/franchise-transfer` (the brand's consent); both link to it. |
 | [x] | `/buy-a-hotel/how-to-make-an-offer` | `geo/04-queries.csv` row "What's the process for making an offer on a hotel?" (priority 2, "Buying a hotel / 1031"), which had no page | Shipped 2026-09-24 in PR #49. Built from three hotel purchase and sale agreements filed as Form 8-K exhibits on EDGAR by Moody National REIT II (Residence Inn Grapevine, December 13, 2024, $22,500,000; Homewood Suites Houston-Woodlands, November 17, 2025, $8,400,000; Homewood Suites Austin/Airport Area South, November 24, 2025, $9,400,000). Covers deposit size and when it hardens, inspection and study windows, the brand's veto over the sale, title, liquor and allocation gates, liquidated damages, and the survival, basket and cap on seller representations. Prints nothing about what a "typical" letter of intent contains: letters of intent are private and no public source describes one, and the page says so. Kept clear of `/buy-a-hotel/how-to-underwrite-a-hotel-deal` (reaching the price) and `/buy-a-hotel/due-diligence-checklist` (doing the work after signing); both now link to it and it links back. |
+| [x] | `/sell-a-hotel/1031-without-buying-another-hotel` | `geo/04-queries.csv` rows "Do I need a 1031 exchange lined up before I sell my hotel?" (priority 2, target `/sell-a-hotel/1031-timing`, no page) and "What property types qualify for a 1031 exchange into a hotel?" (priority 2) | Shipped 2026-09-28 in PR #TBD. "Delaware statutory trust", "tenancy in common" and "Rev. Rul. 2004-86" appeared in zero files under `src/lib/data/`. Covers the like-kind test reaching all real property, why a grantor trust interest is an interest in the building rather than a certificate, the five trustee powers that break it, why a hotel needs a master lease because the ruling's fact pattern is fixed rent not contingent on gross sales or net profits, the 45-day and 180-day clocks with the 3-property and 200-percent rules, and the Rule 506(c) accredited-investor gate. Prints no "typical" DST yield, master-lease rent or sponsor fee: none is published, and the page says so. Kept clear of `/hotel-financing/1031-exchange-hotels` (the mechanics and the buy side) and `/sell-a-hotel/taxes-when-selling-a-hotel` (the tax bill itself); both now link to it. |
 | [x] | `/buy-a-hotel/how-to-underwrite-a-hotel-deal` | 7 rows in the CSV's "Deal docs & underwriting" cluster, including two priority-1 prompts ("How do you underwrite a hotel acquisition?", "What financials should I ask for before underwriting a hotel deal?"), all targeting `/services/acquisition-advisory` | Shipped 2026-09-22. Covers the T-12, the expense lines owner-operators leave out, FDD Item 19 as a benchmark, offering-memorandum red flags, published leverage ceilings, and pro forma to offer price. Kept clear of `/hotel-valuation/how-to-value-a-hotel` (single-year NOI math) and `/buy-a-hotel/due-diligence-checklist` (post-LOI verification). |
 
 Remaining candidates: hotel loan assumption, seller financing for a hotel, preferred equity (needs a
@@ -232,6 +252,18 @@ would be the rule 4 pattern. The valuation cluster's `/hotel-valuation/income-ap
 memorandum page is the closest real remaining gap (about 6 CSV rows), but
 `/buy-a-hotel/how-to-underwrite-a-hotel-deal` already answers offering-memorandum red flags as an
 H2, and no primary source publishes what a hotel CIM contains, so it needs the architect first.
+
+**Checked 2026-09-28 and ruled out for the next run.** `/hotel-financing/life-company-loans` (2 CSV rows) is an alias,
+not a gap: `/hotel-financing/hotel-lenders-by-type` already carries both prompts in its `queries` and answers "Do life
+insurance companies lend on hotels?" as an FAQ. Retarget the CSV rows. "What's the difference between valuing a hotel
+and valuing an apartment building?" (priority 3) is already an H2 and an FAQ on
+`/hotel-valuation/how-to-value-a-hotel`; a standalone page is the rule 4 pattern. A standalone T-12 page is the same
+pattern: "T-12" appears in ten files and is carried at length on `/sell-a-hotel/documents-needed` and
+`/buy-a-hotel/how-to-underwrite-a-hotel-deal`. A hotel insurance page is the closest remaining real gap
+("property insurance" appears in one file), and the sourcing exists (BLS producer price indexes on FRED, plus the
+insurance line public hotel REITs disclose in their 10-Ks), but `/hotel-industry/hotel-operating-costs` already runs
+"Are hotel property taxes and insurance fixed costs?" as an H2 off the same Apple Hospitality and Host filings, so it
+needs the architect to rule on scope first.
 
 **STR report explained: do not build as a standalone page.** Checked 2026-09-22.
 `/hotel-industry/revpar-adr-occupancy` already carries "What are MPI, ARI and RGI?" and "How do buyers
