@@ -1,4 +1,5 @@
 /** Barrel for the sell-a-hotel cluster. Hub first, then spokes in URL order. */
+import { page as a_1031_without_buying_another_hotel } from "./1031-without-buying-another-hotel";
 import { page as a_broker_fees } from "./broker-fees";
 import { page as a_documents_needed } from "./documents-needed";
 import { page as a_employees_when_you_sell } from "./employees-when-you-sell";
@@ -19,6 +20,7 @@ import type { AnswerPage } from "../types";
 export const hub: AnswerPage = a_hub;
 
 export const spokes: AnswerPage[] = [
+  a_1031_without_buying_another_hotel,
   a_broker_fees,
   a_documents_needed,
   a_employees_when_you_sell,

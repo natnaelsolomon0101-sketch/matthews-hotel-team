@@ -77,6 +77,7 @@ export const entry: GlossaryEntry = {
   ],
   // geo/05-architecture.md §5.1: link the answer page that uses this term (R11).
   relatedAnswers: [
+    "/sell-a-hotel/1031-without-buying-another-hotel",
     "/hotel-valuation/hotel-cap-rates",
     "/hotel-valuation/how-to-value-a-hotel",
     "/buy-a-hotel/how-to-underwrite-a-hotel-deal",

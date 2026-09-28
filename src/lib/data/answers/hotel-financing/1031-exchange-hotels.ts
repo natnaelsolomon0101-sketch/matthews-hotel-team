@@ -69,7 +69,7 @@ export const page: AnswerPage = {
     {
       h2: "Should I line the exchange up before I list my hotel?",
       lead: "Yes. The 45-day clock is unusually tight for a hotel purchase, and the underwriting work should start before the relinquished property is even under contract.",
-      body: "Underwriting a replacement hotel requires a trailing twelve-month P&L, a STAR report, a PIP status letter, and a franchise application, and franchise approval runs on the brand's timeline, not yours. Owners who wait until their sale closes to start looking at replacement hotels risk missing the 45-day window or being forced into a weaker replacement property under deadline pressure. The work needs to start while the relinquished property is still being marketed. Buy-side representation for the replacement search is covered on `/services/acquisition-advisory`."
+      body: "Underwriting a replacement hotel requires a trailing twelve-month P&L, a STAR report, a PIP status letter, and a franchise application, and franchise approval runs on the brand's timeline, not yours. Owners who wait until their sale closes to start looking at replacement hotels risk missing the 45-day window or being forced into a weaker replacement property under deadline pressure. The work needs to start while the relinquished property is still being marketed. Buy-side representation for the replacement search is covered on `/services/acquisition-advisory`. The replacement does not have to be another hotel: section 1031 asks for like-kind real property, and the passive alternatives an owner can identify instead are set out at [Can I do a 1031 exchange without buying another hotel?](/sell-a-hotel/1031-without-buying-another-hotel)."
     }
   ],
   table: {
