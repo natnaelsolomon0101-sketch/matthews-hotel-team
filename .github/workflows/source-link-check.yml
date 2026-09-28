@@ -1,0 +1,57 @@
+name: Source-link check
+
+# Every Sunday evening, fetches every external source URL cited on the answer
+# pages, glossary terms, tool pages, /rates and /data/hotel-financing-statistics
+# and reports the dead and moved ones. It opens a GitHub issue when something
+# is dead or has moved, comments on that same issue while it stays broken, and
+# closes it once every link is good again. Runs the night before the Site
+# Maintainer's Monday run, so the maintainer starts with a list.
+#
+# It never edits a page and it never touches matthewshotelmarkets.com: a
+# citation is only changed by an agent or a person who read the replacement
+# document. A 403 or a timeout is not a dead link (geo/AGENTS.md section 1),
+# so those are reported separately and never open an issue.
+on:
+  schedule:
+    - cron: "0 1 * * 1" # 01:00 UTC Monday, twelve hours before the Site Maintainer runs
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+      - run: npm ci
+      - name: Fetch every cited source
+        id: check
+        run: |
+          set +e
+          npx tsx scripts/source-link-check.ts > report.md
+          echo "status=$?" >> "$GITHUB_OUTPUT"
+          cat report.md
+      - name: Open, update or close the source-rot issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          STATUS: ${{ steps.check.outputs.status }}
+        run: |
+          gh label create source-rot --color D93F0B --description "Cited sources are dead or have moved" 2>/dev/null || true
+          open=$(gh issue list --label source-rot --state open --json number -q '.[0].number')
+          if [ "$STATUS" != "0" ]; then
+            if [ -n "$open" ]; then
+              gh issue comment "$open" --body-file report.md
+            else
+              gh issue create --title "Cited sources are dead or have moved" --label source-rot --assignee "${{ github.repository_owner }}" --body-file report.md
+            fi
+          elif [ -n "$open" ]; then
+            gh issue close "$open" --comment "Every cited source resolves again.
+
+          $(cat report.md)"
+          fi
