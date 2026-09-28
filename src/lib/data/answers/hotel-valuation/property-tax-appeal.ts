@@ -17,7 +17,7 @@ export const page: AnswerPage = {
   title: "How to Appeal a Hotel Property Tax Assessment",
   h1: "How do I appeal my hotel's property tax assessment?",
   description: "Hotel property tax appeals in Texas, Florida and California: deadlines, where to file, and how to separate the taxable real estate from the business.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-09-28",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -192,16 +192,16 @@ export const page: AnswerPage = {
     {
       n: 6,
       label: "Florida Statutes section 193.011, Factors to consider in deriving just valuation",
-      url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0193/Sections/0193.011.html",
+      url: "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0193/Sections/0193.011.html",
       publisher: "The Florida Legislature, Online Sunshine",
-      accessed: "2026-09-18"
+      accessed: "2026-09-28"
     },
     {
       n: 7,
       label: "Florida Statutes section 194.011, Assessment notice; objections to assessments",
-      url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0194/Sections/0194.011.html",
+      url: "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0194/Sections/0194.011.html",
       publisher: "The Florida Legislature, Online Sunshine",
-      accessed: "2026-09-18"
+      accessed: "2026-09-28"
     },
     {
       n: 8,
