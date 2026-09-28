@@ -342,6 +342,12 @@ numbers.
 2. **Source-link check.** Fetch every source URL cited on answer pages, `/rates` and `/data` (third-party
    hosts, not our own site). Open an issue listing 404s, redirects and pages whose text no longer
    contains the cited figure. Do not edit the page automatically.
+   *Shipped 2026-09-28: `scripts/source-link-check.ts` and the **Source-link check** Action
+   (`.github/workflows/source-link-check.yml`), 01:00 UTC every Monday, twelve hours before the Site
+   Maintainer runs. It opens, comments on and closes one `source-rot` issue. It reads the cited URL
+   and its status only, not the page text, so the "no longer contains the cited figure" half is still
+   the Maintainer's to do by hand. A 403, a 429 or a timeout is listed as "could not be checked" and
+   never opens an issue.*
 3. **Freshness report.** List pages whose `lastUpdated` is older than 90 days and stats on
    `/data/hotel-financing-statistics` whose `verified` date is older than 90 days. Open one issue.
 4. **Build checks on a local build only:** `tsc`, lint, `schema-validate.ts --build`,
