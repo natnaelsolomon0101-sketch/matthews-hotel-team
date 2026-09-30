@@ -48,7 +48,7 @@ export const page: AnswerPage = {
     {
       h2: "What does a PIP cost per room?",
       lead: "Per-room PIP cost varies by brand, scope, and market, and any specific figure needs to come from the brand's own published requirement or a public industry benchmark, with a date attached.",
-      body: "A light refresh, soft goods only, costs meaningfully less per key than a full renovation that includes case goods, bathrooms, and public space. A brand conversion PIP, moving a property to a new flag entirely, typically costs more than a standard-cycle PIP on an existing flag. The worked example on this page uses a hypothetical $25,000-per-key figure purely to illustrate the financing arithmetic; it is explicitly not a market benchmark, and a real PIP estimate should come from the brand's own FDD or a published industry study, dated and cited."
+      body: "A light refresh, soft goods only, costs meaningfully less per key than a full renovation that includes case goods, bathrooms, and public space. A brand conversion PIP, moving a property to a new flag entirely, typically costs more than a standard-cycle PIP on an existing flag. The worked example on this page uses a hypothetical $25,000-per-key figure purely to illustrate the financing arithmetic; it is explicitly not a market benchmark, and a real PIP estimate should come from the brand's own FDD or a published industry study, dated and cited. One line item sits outside the brand's scope entirely: where the work moves a wall it becomes an alteration under the ADA, which carries its own required room counts and a cap on path-of-travel spending. See [hotel ADA requirements and renovations](/hotel-industry/ada-requirements)."
     },
     {
       h2: "How do I pay for it?",

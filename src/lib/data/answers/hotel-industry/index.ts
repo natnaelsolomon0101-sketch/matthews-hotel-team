@@ -1,4 +1,5 @@
 /** Barrel for the hotel-industry cluster. Hub first, then spokes in URL order. */
+import { page as a_ada_requirements } from "./ada-requirements";
 import { page as a_chain_scales_and_classes } from "./chain-scales-and-classes";
 import { page as a_how_hotels_make_money } from "./how-hotels-make-money";
 import { page as a_hub } from "./hub";
@@ -18,6 +19,7 @@ import type { AnswerPage } from "../types";
 export const hub: AnswerPage = a_hub;
 
 export const spokes: AnswerPage[] = [
+  a_ada_requirements,
   a_chain_scales_and_classes,
   a_how_hotels_make_money,
   a_industry_size_2026,

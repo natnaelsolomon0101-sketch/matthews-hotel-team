@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-09-28T14:34:14.726Z",
+  "runAt": "2026-09-30T14:24:50.091Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 314,
-  "blocksFound": 314,
-  "blocksValid": 314,
+  "urlsChecked": 315,
+  "blocksFound": 315,
+  "blocksValid": 315,
   "issues": [],
   "blocks": [
     {
@@ -1137,6 +1137,13 @@
       "url": "/hotel-industry",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,ItemList,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-industry/ada-requirements",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,
       "issues": []
     },

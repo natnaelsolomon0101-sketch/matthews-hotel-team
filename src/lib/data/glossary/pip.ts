@@ -75,6 +75,7 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/pip-and-renovation-loans",
     "/sell-a-hotel/documents-needed",
     "/sell-a-hotel/franchise-transfer",
+    "/hotel-industry/ada-requirements",
   ],
   relatedTerms: ["bov", "cap-rate", "iom"],
   relatedMarkets: ["dallas-tx", "atlanta-ga", "phoenix-az"],
