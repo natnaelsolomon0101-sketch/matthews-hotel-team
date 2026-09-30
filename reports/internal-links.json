@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-09-28T14:34:22.179Z",
-  "base": "http://localhost:43667",
+  "runAt": "2026-09-30T14:29:38.258Z",
+  "base": "http://localhost:36685",
   "edges": [
     {
       "from": "/",
@@ -4357,6 +4357,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-industry"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-industry/ada-requirements"
     },
     {
       "from": "/sitemap",
@@ -47876,6 +47880,10 @@
     },
     {
       "from": "/hotel-financing/pip-and-renovation-loans",
+      "to": "/hotel-industry/ada-requirements"
+    },
+    {
+      "from": "/hotel-financing/pip-and-renovation-loans",
       "to": "/hotel-financing/bridge-loans"
     },
     {
@@ -56876,6 +56884,10 @@
     },
     {
       "from": "/buy-a-hotel/due-diligence-checklist",
+      "to": "/hotel-industry/ada-requirements"
+    },
+    {
+      "from": "/buy-a-hotel/due-diligence-checklist",
       "to": "/glossary/pip"
     },
     {
@@ -63888,6 +63900,10 @@
     },
     {
       "from": "/hotel-industry",
+      "to": "/hotel-industry/ada-requirements"
+    },
+    {
+      "from": "/hotel-industry",
       "to": "/hotel-industry/hotel-management-agreements"
     },
     {
@@ -64016,6 +64032,206 @@
     },
     {
       "from": "/hotel-industry",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/_next/static/chunks/20f15be7d67f23fd.css"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/hotel-industry/ada-requirements.md"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/glossary/pip"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/hotel-financing/pip-and-renovation-loans"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/hotel-industry/hotel-operating-costs"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/hotel-industry/cost-to-build-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/hotel-industry/hotel-management-agreements"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/hotel-industry/owner-franchisor-management-company"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/glossary/ffe-reserve"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/glossary/franchise-agreement"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
       "to": "/sitemap"
     },
     {
@@ -69424,6 +69640,7 @@
         "/hotel-franchise-costs/tru-by-hilton",
         "/hotel-franchise-costs/woodspring-suites",
         "/hotel-industry",
+        "/hotel-industry/ada-requirements",
         "/hotel-industry/chain-scales-and-classes",
         "/hotel-industry/how-hotels-make-money",
         "/hotel-industry/industry-size-2026",
@@ -81503,6 +81720,7 @@
         "/contact",
         "/team/luke-thompson",
         "/glossary/pip",
+        "/hotel-industry/ada-requirements",
         "/hotel-financing/bridge-loans",
         "/hotel-financing/refinance",
         "/team/nate-solomon",
@@ -84011,6 +84229,7 @@
         "/glossary/noi",
         "/glossary/revpar",
         "/glossary/adr",
+        "/hotel-industry/ada-requirements",
         "/glossary/pip",
         "/buy-a-hotel/how-to-make-an-offer",
         "/sell-a-hotel/how-long-it-takes",
@@ -85950,6 +86169,7 @@
         "/hotel-industry/industry-size-2026",
         "/hotel-industry/outlook-2026-2027",
         "/buy-a-hotel",
+        "/hotel-industry/ada-requirements",
         "/hotel-industry/hotel-management-agreements",
         "/hotel-industry/hotel-operating-costs",
         "/hotel-industry/extended-stay-hotels",
@@ -85969,6 +86189,62 @@
         "/rates/methodology",
         "/data/sba-hotel-lending",
         "/research/mhi",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/hotel-industry/ada-requirements",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/20f15be7d67f23fd.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-industry/ada-requirements.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/hotel-industry",
+        "/team/luke-thompson",
+        "/glossary/pip",
+        "/hotel-financing/pip-and-renovation-loans",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/team/nate-solomon",
+        "/hotel-industry/hotel-operating-costs",
+        "/hotel-industry/cost-to-build-a-hotel",
+        "/hotel-industry/hotel-management-agreements",
+        "/hotel-industry/owner-franchisor-management-company",
+        "/glossary",
+        "/glossary/ffe-reserve",
+        "/glossary/franchise-agreement",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
         "/hotels-for-sale",
         "/markets",
         "/closed",

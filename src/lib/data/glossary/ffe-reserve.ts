@@ -66,7 +66,8 @@ export const entry: GlossaryEntry = {
   relatedAnswers: [
     "/hotel-valuation/how-to-value-a-hotel",
     "/hotel-financing/pip-and-renovation-loans",
-    "/sell-a-hotel/documents-needed"
+    "/sell-a-hotel/documents-needed",
+    "/hotel-industry/ada-requirements"
   ],
   lastUpdated: "2026-09-18",
   authorSlug: "nate-solomon"

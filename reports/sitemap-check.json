@@ -1,10 +1,10 @@
 {
-  "urls": 314,
+  "urls": 315,
   "maxDepth": 2,
   "byDepth": {
     "0": 1,
     "1": 32,
-    "2": 281
+    "2": 282
   },
   "depth": {
     "/": 0,
@@ -219,6 +219,7 @@
     "/hotel-industry/chain-scales-and-classes": 2,
     "/hotel-industry/industry-size-2026": 2,
     "/hotel-industry/outlook-2026-2027": 2,
+    "/hotel-industry/ada-requirements": 2,
     "/hotel-industry/hotel-management-agreements": 2,
     "/hotel-industry/hotel-operating-costs": 2,
     "/hotel-industry/extended-stay-hotels": 2,
