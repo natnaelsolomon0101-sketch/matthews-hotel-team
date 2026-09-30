@@ -52,7 +52,7 @@ export const page: AnswerPage = {
     "Not all construction is an alteration. Reroofing, painting, wallpapering, asbestos removal and mechanical changes are excluded unless they affect usability, so a soft-goods refresh usually sits outside the rule and moving a bathroom wall sits inside it.[1]",
     "Room counts scale with the work, not the hotel. Where guest rooms are altered, the scoping tables apply to the rooms being altered until the total reaches the new-construction minimum.[5]",
     "Elements you have not altered since March 15, 2012 that already met the 1991 Standards need not be rebuilt to the 2010 Standards. Pools, spas, saunas and exercise equipment are named exclusions from that safe harbor.[3]",
-    "The most-claimed hotel duty is not construction. It is the reservations rule: describe accessible features, hold those rooms back, block a booked room out of the system, guarantee it.[6]"
+    "One duty is not construction at all. The reservations rule makes you describe accessible features, hold those rooms back, block a booked room out of the system and guarantee it, and the Department of Justice says it draws many complaints a year.[6]"
   ],
   sections: [
     {
@@ -82,7 +82,7 @@ export const page: AnswerPage = {
     },
     {
       h2: "What does the ADA require of my reservations system?",
-      lead: "Five specific things, none of them construction, and this is where the complaints concentrate.",
+      lead: "Five specific things, none of them construction, and the Department of Justice says failed reservations draw many complaints a year.",
       body: "28 CFR 36.302(e)(1) applies to reservations made by any means, including by telephone, in person or through a third party, and requires all five of these: policies that let people with disabilities reserve accessible rooms in the same hours and manner as everyone else; accessible features described in enough detail for a guest to judge independently whether the room meets their needs; accessible rooms held back until all other rooms of that type are gone; on request, a specific accessible room reserved and blocked out of every reservation system; and a guarantee that the room reserved is held for that guest.[6]\n\nThe Department of Justice said in the preamble to the 2010 rule that it receives many complaints each year from people who reserved an accessible room and found on arrival that it was unavailable or not accessible.[6] None of this depends on the building: a hotel that satisfies every scoping table and then lets a channel manager resell its one roll-in-shower room is in the exact failure the rule addresses. The hold-back, block-out and guarantee duties do not apply to units the operator does not own or substantially control, which is the condominium-hotel case.[6]"
     },
     {
