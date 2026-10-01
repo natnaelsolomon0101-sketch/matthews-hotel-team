@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-10-01T13:42:01.490Z",
+  "runAt": "2026-10-01T14:24:41.730Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 316,
-  "blocksFound": 316,
-  "blocksValid": 316,
+  "urlsChecked": 317,
+  "blocksFound": 317,
+  "blocksValid": 317,
   "issues": [],
   "blocks": [
     {
@@ -1240,6 +1240,13 @@
     },
     {
       "url": "/hotel-industry/how-hotel-reits-work",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-industry/resort-fees",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,

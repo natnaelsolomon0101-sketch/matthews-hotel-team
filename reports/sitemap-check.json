@@ -1,10 +1,10 @@
 {
-  "urls": 316,
+  "urls": 317,
   "maxDepth": 2,
   "byDepth": {
     "0": 1,
     "1": 32,
-    "2": 283
+    "2": 284
   },
   "depth": {
     "/": 0,
@@ -227,6 +227,7 @@
     "/hotel-industry/cost-to-build-a-hotel": 2,
     "/hotel-industry/who-buys-hotels": 2,
     "/hotel-industry/how-hotel-reits-work": 2,
+    "/hotel-industry/resort-fees": 2,
     "/glossary/gop": 2,
     "/glossary/comp-set": 2,
     "/glossary/defeasance": 2,
