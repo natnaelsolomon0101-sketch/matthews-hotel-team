@@ -18,7 +18,7 @@ export const page: AnswerPage = {
   title: "Hotel Management Agreements: Fees, Terms, Termination",
   h1: "How do hotel management agreements work, and what do they cost?",
   description: "Base and incentive fees, contract length, termination on sale and owner approval rights, taken from the fiscal 2025 10-K filings of six hotel REITs.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   targetPrompts: [
     "How do hotel management agreements work?",
@@ -76,7 +76,7 @@ export const page: AnswerPage = {
     {
       h2: "Why do lenders and buyers care about my management agreement?",
       lead: "Lenders and buyers care because the management fee comes off the top of the income they are valuing, and because the contract decides whether a new owner can bring its own operator.",
-      body: "The Uniform System of Accounts for the Lodging Industry puts management fees on their own schedule, base and incentive, below gross operating profit and above non-operating expenses such as property taxes and insurance.[9] A buyer or lender who sees a statement with no management fee will add one back before capitalizing the income, which is why an owner-operated hotel's broker opinion of value usually shows a lower income figure than the owner's own statement. The method is at [Walk me through the math on valuing a select-service hotel](/hotel-valuation/how-to-value-a-hotel).\n\nPublic REITs cannot avoid the fee. The tax code lets a REIT lease a hotel to its taxable subsidiary only if an eligible independent contractor operates it, so every hotel REIT pays an outside manager.[8] A private owner has the choice, but the debt market does not give credit for it. As of September 17, 2026, the 10-year Treasury is 4.94 percent and SOFR is 3.85 percent, and lenders do not publish the spreads or coverage tests they apply on top.[10] Financing starts at [How does hotel financing work, and what does it cost right now?](/hotel-financing), and a sale starts at [What is involved in selling a hotel?](/sell-a-hotel)."
+      body: "The Uniform System of Accounts for the Lodging Industry puts management fees on their own schedule, base and incentive, below gross operating profit and above non-operating expenses such as property taxes and insurance.[9] A buyer or lender who sees a statement with no management fee will add one back before capitalizing the income, which is why an owner-operated hotel's broker opinion of value usually shows a lower income figure than the owner's own statement. The method is at [Walk me through the math on valuing a select-service hotel](/hotel-valuation/how-to-value-a-hotel).\n\nPublic REITs cannot avoid the fee. The tax code lets a REIT lease a hotel to its taxable subsidiary only if an eligible independent contractor operates it, so every hotel REIT pays an outside manager.[8] A private owner has the choice, but the debt market does not give credit for it. As of September 30, 2026, the 10-year Treasury is 5.29 percent and SOFR is 3.90 percent, and lenders do not publish the spreads or coverage tests they apply on top.[10] Financing starts at [How does hotel financing work, and what does it cost right now?](/hotel-financing), and a sale starts at [What is involved in selling a hotel?](/sell-a-hotel)."
     }
   ],
   table: {
@@ -143,7 +143,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet records the 10-year Treasury at 4.94% and SOFR at 3.85% on September 17, 2026, and records that no lender type publishes its coverage floor, so a management fee of 2 to 4 percent of revenue is one of the few fixed numbers a lender can underwrite ahead of debt service.[10]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet records the 10-year Treasury at 5.29% and SOFR at 3.90% on September 30, 2026, and records that no lender type publishes its coverage floor, so a management fee of 2 to 4 percent of revenue is one of the few fixed numbers a lender can underwrite ahead of debt service.[10]"
   },
   workedExample: {
     label: "Hypothetical: a base fee and an incentive fee on a 150-room hotel, using percentages inside the ranges Host disclosed",

@@ -17,7 +17,7 @@ export const page: AnswerPage = {
   title: "USDA B&I Loans for Hotels: Rules and Fees",
   h1: "Can I get a USDA B&I loan for a hotel?",
   description: "USDA B&I guaranteed loans for rural hotels: eligibility, the $25 million limit, equity rules, fiscal 2026 fees, appraisal and refinance tests.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -132,7 +132,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet shows Prime at 7.00% since September 17, 2026 and the 10-year Treasury at 4.94% on the same date. B&I rates are negotiated between the bank and the borrower, so the sheet publishes the indexes and not a B&I coupon.[11]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet shows Prime at 7.00% since September 17, 2026 and the 10-year Treasury at 5.29% on September 30, 2026. B&I rates are negotiated between the bank and the borrower, so the sheet publishes the indexes and not a B&I coupon.[11]"
   },
   workedExample: {
     label: "Hypothetical: an $8.0M purchase of an 85-key hotel in a town of 12,000",
@@ -245,7 +245,7 @@ export const page: AnswerPage = {
     },
     {
       n: 11,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

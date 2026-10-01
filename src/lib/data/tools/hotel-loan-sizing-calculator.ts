@@ -15,7 +15,7 @@
  * - Because the default rate follows the rate sheet, every number in the
  *   worked example and the table is computed here from math.ts, never typed.
  * - SBA 504 mode uses only published rules: 13 CFR 120.910, 13 CFR 120.920 and
- *   SOP 50 10 8 (pp. 350, 354-355), the same citations as
+ *   SOP 50 10 8.1 (pp. 243, 244), the same citations as
  *   /hotel-financing/sba-7a-vs-504.
  */
 import type { ToolPage } from "../answers/types";
@@ -94,7 +94,7 @@ export const page: ToolPage = {
   h1: "How big a loan can my hotel support? A hotel loan sizing calculator",
   description:
     "Enter NOI, value, rate, amortization and your lender's DSCR, debt yield and LTV tests. See the loan under each test, which one binds, and the equity. SBA 504 mode included.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "miles-cortez",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -227,7 +227,7 @@ export const page: ToolPage = {
     {
       n: 5,
       label:
-        "SOP 50 10 8, Lender and Development Company Loan Programs (effective June 1, 2025), Section C, Ch. 1: debenture limits (p. 350) and Limited or Special Purpose Property, which lists hotels (pp. 354-355)",
+        "SOP 50 10 8.1, Lender and Development Company Loan Programs (effective October 1, 2026), Section C, Ch. 1: Debenture Limits, $5 million maximum gross debenture (Para. D.1, p. 243) and Borrower's Contribution with the Limited or Special Purpose Property list, which names hotels, motels and other lodging facilities (Para. E.1.c, p. 244)",
       url: "https://legacy.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
       publisher: "U.S. Small Business Administration",
       accessed: "2026-09-18",

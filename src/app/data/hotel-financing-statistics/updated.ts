@@ -8,7 +8,7 @@
  *
  * Bump it when a statistic on that page changes, not on every deploy.
  */
-export const UPDATED = "2026-09-18";
+export const UPDATED = "2026-10-01";
 
 /** When the page first went live. Never changes. */
 export const PUBLISHED = "2026-09-17";

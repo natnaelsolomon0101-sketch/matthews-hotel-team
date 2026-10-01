@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Refinance or Sell Your Hotel? How to Decide",
   h1: "Should I refinance my hotel or sell it instead?",
   description: "A numbers-first framework for deciding whether to refinance, extend or sell a hotel in 2026, with the arithmetic shown both ways.",
-  lastUpdated: "2026-09-17",
+  lastUpdated: "2026-10-01",
   authorSlug: "miles-cortez",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -26,7 +26,7 @@ export const page: AnswerPage = {
     "How do I compare holding versus selling my hotel?",
     "What happens if I can't refinance my hotel loan when it matures?"
   ],
-  answer: "Run both numbers before you decide. Refinancing works when today's NOI supports today's balance at today's rate and you still believe the hold thesis. Selling works when the proceeds gap is permanent, the PIP is larger than your appetite, or the equity is better deployed elsewhere. The binding variable is usually NOI, not the rate. The 10-year Treasury was 4.94 percent on September 17, 2026.[1]",
+  answer: "Run both numbers before you decide. Refinancing works when today's NOI supports today's balance at today's rate and you still believe the hold thesis. Selling works when the proceeds gap is permanent, the PIP is larger than your appetite, or the equity is better deployed elsewhere. The binding variable is usually NOI, not the rate. The 10-year Treasury was 5.29 percent on September 30, 2026.[1]",
   takeaways: [
     "This is an arithmetic question first and a preference question second. Do the arithmetic first.",
     "Refinance proceeds are set by NOI, not by what you paid or what you owe.",

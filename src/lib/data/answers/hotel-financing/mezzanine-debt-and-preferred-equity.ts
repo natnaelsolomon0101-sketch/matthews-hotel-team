@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Hotel Mezzanine Debt vs Preferred Equity (2026)",
   h1: "How do mezzanine debt and preferred equity work on a hotel deal?",
   description: "Where mezzanine debt and preferred equity sit in a hotel deal, what the intercreditor agreement does, what each costs you in control, and a worked example.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -122,7 +122,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet puts the 10-year Treasury at 4.94% and SOFR at 3.85% as of September 17, 2026. It prints no mezzanine or preferred equity pricing, because no lender publishes any and we do not print a number without a public source.[4]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet puts the 10-year Treasury at 5.29% and SOFR at 3.90% as of September 30, 2026. It prints no mezzanine or preferred equity pricing, because no lender publishes any and we do not print a number without a public source.[4]"
   },
   workedExample: {
     label: "Hypothetical: a $3.0M mezzanine loan behind a $12.0M first mortgage on a $20.0M hotel",
@@ -182,7 +182,7 @@ export const page: AnswerPage = {
     },
     {
       n: 4,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

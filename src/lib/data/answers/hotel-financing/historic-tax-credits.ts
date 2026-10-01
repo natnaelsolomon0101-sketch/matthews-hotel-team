@@ -17,7 +17,7 @@ export const page: AnswerPage = {
   title: "Historic Tax Credits for Hotel Renovations",
   h1: "Can I use historic tax credits to renovate a hotel?",
   description: "The 20% federal historic tax credit on a hotel: which buildings qualify, the substantial rehabilitation test, the 5-year claim, recapture, state credits.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -132,7 +132,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet shows Prime at 7.00% and SOFR at 3.85% as of September 17, 2026, the two indexes a construction or renovation loan floats over, and marks the construction spread as not yet published. A historic credit lowers the equity a project needs. It does not change what the senior loan costs.[10]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet shows Prime at 7.00% and SOFR at 3.90% as of September 30, 2026, the two indexes a construction or renovation loan floats over, and marks the construction spread as not yet published. A historic credit lowers the equity a project needs. It does not change what the senior loan costs.[10]"
   },
   workedExample: {
     label: "Hypothetical: a $9.0M renovation of a 1920s downtown hotel",
@@ -238,7 +238,7 @@ export const page: AnswerPage = {
     },
     {
       n: 10,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

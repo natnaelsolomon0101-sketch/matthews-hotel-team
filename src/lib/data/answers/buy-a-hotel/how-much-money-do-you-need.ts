@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "How Much Money Do You Need to Buy a Hotel?",
   h1: "How much money do I need to buy a hotel?",
   description: "The cash a hotel purchase takes: the SBA 504 equity minimum, why conventional equity is lender-set, plus franchise fees, PIP, closing costs and reserves.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -42,7 +42,7 @@ export const page: AnswerPage = {
     {
       h2: "How much do conventional lenders want down?",
       lead: "They do not say in public. No bank, CMBS lender, life company or debt fund publishes its loan-to-value ceiling for hotels.[4]",
-      body: "Our September 2026 rate sheet marks maximum loan-to-value as not yet published for every lender type except SBA, because no lender type prints one.[4] What is public is the cost of the money. The 10-year Treasury was 4.94 percent on September 17, 2026, SOFR was 3.85 percent for the same day, and Prime has been 7.00 percent since September 17, 2026.[4] A lender's equity requirement follows from its own sizing tests on the hotel's income, so two lenders can look at the same hotel and ask for different down payments. The way to find your number is to ask for it in a written term sheet. The comparison of lender types is at [Which lenders finance hotels?](/hotel-financing/hotel-lenders-by-type), and the sizing tests are explained at [What do lenders require for a hotel loan?](/hotel-financing/loan-requirements)."
+      body: "Our October 2026 rate sheet marks maximum loan-to-value as not yet published for every lender type except SBA, because no lender type prints one.[4] What is public is the cost of the money. The 10-year Treasury was 5.29 percent on September 30, 2026, SOFR was 3.90 percent for the same day, and Prime has been 7.00 percent since September 17, 2026.[4] A lender's equity requirement follows from its own sizing tests on the hotel's income, so two lenders can look at the same hotel and ask for different down payments. The way to find your number is to ask for it in a written term sheet. The comparison of lender types is at [Which lenders finance hotels?](/hotel-financing/hotel-lenders-by-type), and the sizing tests are explained at [What do lenders require for a hotel loan?](/hotel-financing/loan-requirements)."
     },
     {
       h2: "What does SBA 7(a) require?",
@@ -128,7 +128,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet publishes the one hotel leverage ceiling that is written down anywhere: SBA rules cap a 504 hotel structure at 85% of project cost. It marks maximum LTV as not yet published for every other lender type, and it puts the 25-year 504 debenture at 6.54% as of September 10, 2026.[4]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet publishes the one hotel leverage ceiling that is written down anywhere: SBA rules cap a 504 hotel structure at 85% of project cost. It marks maximum LTV as not yet published for every other lender type, and it puts the 25-year 504 debenture at 6.54% as of September 10, 2026.[4]"
   },
   workedExample: {
     label: "Hypothetical: cash to close on an $8.0M, 80-key Hampton under SBA 504",
@@ -157,7 +157,7 @@ export const page: AnswerPage = {
     },
     {
       q: "What interest rate should I budget for?",
-      a: "As of September 17, 2026, the 10-year Treasury is 4.94 percent, SOFR is 3.85 percent and Prime is 7.00 percent. The SBA 7(a) maximum is 10.00 percent and the 25-year 504 debenture priced at 6.54 percent.[4] Conventional spreads are not published."
+      a: "As of September 30, 2026, the 10-year Treasury is 5.29 percent, SOFR is 3.90 percent and Prime is 7.00 percent. The SBA 7(a) maximum is 10.00 percent and the 25-year 504 debenture priced at 6.54 percent.[4] Conventional spreads are not published."
     },
     {
       q: "How large a hotel can an SBA loan finance?",
@@ -174,7 +174,7 @@ export const page: AnswerPage = {
     },
     {
       n: 2,
-      label: "SOP 50 10 8, Lender and Development Company Loan Programs (effective June 1, 2025), Section C, Ch. 1: debenture limits (p. 350) and Limited or Special Purpose Property, which lists hotels (pp. 354-355)",
+      label: "SOP 50 10 8.1, Lender and Development Company Loan Programs (effective October 1, 2026), Section C, Ch. 1: Debenture Limits, $5 million maximum gross debenture (Para. D.1, p. 243) and Borrower's Contribution with the Limited or Special Purpose Property list, which names hotels, motels and other lodging facilities (Para. E.1.c, p. 244)",
       url: "https://legacy.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
       publisher: "U.S. Small Business Administration",
       accessed: "2026-09-18"
@@ -188,7 +188,7 @@ export const page: AnswerPage = {
     },
     {
       n: 4,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

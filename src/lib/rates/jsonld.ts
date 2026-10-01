@@ -14,7 +14,6 @@
 import { ID, SITE_URL, breadcrumb, webPage } from "@/lib/entity";
 import { RATE_SOURCES } from "./sources";
 import {
-  BENCHMARKS,
   MHDI_ABBR,
   MHDI_DEFINITION,
   MHDI_NAME,
@@ -66,7 +65,7 @@ export function ratesDatasetGraph(
       edition.label,
     ].join(", "),
     variableMeasured: [
-      ...BENCHMARKS.map((b) => ({
+      ...edition.benchmarks.map((b) => ({
         "@type": "PropertyValue",
         name: b.label,
         value: b.value,

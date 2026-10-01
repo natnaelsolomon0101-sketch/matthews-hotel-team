@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Extended-Stay Hotel Financing: What Is Different",
   h1: "How is extended-stay hotel financing different?",
   description: "What changes when a lender underwrites an extended-stay hotel: the SBA 30-day transient test, occupancy and rate profile, tax treatment and lender fit.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -123,7 +123,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet does not carry a separate extended-stay row. It prices hotel debt by lender type, with the SBA 7(a) maximum at 10.00% on the 7.00% Prime in effect since September 17, 2026, and it marks conventional DSCR floors, leverage and spreads as not yet published for every hotel type, extended-stay included.[4]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet does not carry a separate extended-stay row. It prices hotel debt by lender type, with the SBA 7(a) maximum at 10.00% on the 7.00% Prime in effect since September 17, 2026, and it marks conventional DSCR floors, leverage and spreads as not yet published for every hotel type, extended-stay included.[4]"
   },
   workedExample: {
     label: "Hypothetical: the SBA 30-day revenue test on two extended-stay hotels",
@@ -187,7 +187,7 @@ export const page: AnswerPage = {
     },
     {
       n: 4,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

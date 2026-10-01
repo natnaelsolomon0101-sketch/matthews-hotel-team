@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "C-PACE Financing for Hotels: How It Works",
   h1: "Can I use C-PACE financing on a hotel?",
   description: "C-PACE on a hotel: what it funds, why your lender must consent, where the assessment sits in the capital stack, and how retroactive C-PACE works.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -68,7 +68,7 @@ export const page: AnswerPage = {
     {
       h2: "Does C-PACE cost less than the capital it replaces?",
       lead: "It depends on the rate you are quoted, and nobody publishes a hotel C-PACE rate sheet, so compare a written quote against your actual alternatives.",
-      body: "The Texas PACE Authority says rates depend on a variety of factors and that project rates in its program have hovered around 6 percent. It does not date that statement, so take it as history and not as a quote.[2] For reference, the 10-year Treasury was 4.94 percent on September 17, 2026, and the 25-year SBA 504 debenture priced at 6.54 percent on September 10, 2026.[10]\n\nWhat C-PACE offers that short-term capital does not is a fixed rate, a long amortization and no balloon. What it costs you is a senior lien that a future buyer and lender must accept, a consent process with your current lender, and closing costs for the engineering review. In Texas an independent third-party reviewer has to confirm the projected savings, and the program expects savings to exceed the cost of the project over its life.[2] If the hotel also qualifies for SBA financing, price the fixed-rate 504 structure as well: [What is the difference between an SBA 7(a) loan and an SBA 504 loan for a hotel?](/hotel-financing/sba-7a-vs-504)."
+      body: "The Texas PACE Authority says rates depend on a variety of factors and that project rates in its program have hovered around 6 percent. It does not date that statement, so take it as history and not as a quote.[2] For reference, the 10-year Treasury was 5.29 percent on September 30, 2026, and the 25-year SBA 504 debenture priced at 6.54 percent on September 10, 2026.[10]\n\nWhat C-PACE offers that short-term capital does not is a fixed rate, a long amortization and no balloon. What it costs you is a senior lien that a future buyer and lender must accept, a consent process with your current lender, and closing costs for the engineering review. In Texas an independent third-party reviewer has to confirm the projected savings, and the program expects savings to exceed the cost of the project over its life.[2] If the hotel also qualifies for SBA financing, price the fixed-rate 504 structure as well: [What is the difference between an SBA 7(a) loan and an SBA 504 loan for a hotel?](/hotel-financing/sba-7a-vs-504)."
     }
   ],
   table: {
@@ -124,7 +124,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet puts the 10-year Treasury at 4.94% as of September 17, 2026 and the 25-year SBA 504 debenture at 6.54% as of September 10, 2026. It carries no C-PACE row, because C-PACE capital providers do not publish rates.[10]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet puts the 10-year Treasury at 5.29% as of September 30, 2026 and the 25-year SBA 504 debenture at 6.54% as of September 10, 2026. It carries no C-PACE row, because C-PACE capital providers do not publish rates.[10]"
   },
   workedExample: {
     label: "Hypothetical: $1.8M of C-PACE inside a 120-key hotel renovation",
@@ -230,7 +230,7 @@ export const page: AnswerPage = {
     },
     {
       n: 10,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

@@ -16,7 +16,7 @@ export const page: AnswerPage = {
   title: "How to Sell a Hotel That Is Losing Money or in Default",
   h1: "How do I sell a hotel that is losing money or in default?",
   description: "How a distressed hotel changes hands: lender-approved sale, receivership sale, note sale, deed in lieu or bankruptcy sale. Who controls each, and the tax.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -123,7 +123,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet shows what a buyer's new loan is priced from: the 10-year Treasury was 4.94% on September 17, 2026 and SOFR was 3.85%.[5] A distressed hotel sells to a buyer who has to finance it at today's index, which is why the price is set by today's debt cost and not by the old loan balance."
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet shows what a buyer's new loan is priced from: the 10-year Treasury was 5.29% on September 30, 2026 and SOFR was 3.90%.[5] A distressed hotel sells to a buyer who has to finance it at today's index, which is why the price is set by today's debt cost and not by the old loan balance."
   },
   workedExample: {
     label: "Hypothetical: a sale that does not clear the loan, and the tax that follows",
@@ -194,7 +194,7 @@ export const page: AnswerPage = {
     },
     {
       n: 5,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)",
       accessed: "2026-09-18"

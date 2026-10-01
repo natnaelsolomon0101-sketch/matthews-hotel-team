@@ -16,7 +16,7 @@ export const page: AnswerPage = {
   title: "RevPAR, ADR and Occupancy: What Is a Good Number?",
   h1: "What are RevPAR, ADR and occupancy, and what is a good number?",
   description: "Plain definitions of occupancy, ADR and RevPAR, the latest public US figures with dates, and why a good number depends on your comp set.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   targetPrompts: [
     "What's the difference between a hotel's ADR, RevPAR, and occupancy?",

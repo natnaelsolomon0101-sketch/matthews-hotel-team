@@ -17,7 +17,7 @@ export const page: AnswerPage = {
   title: "SureStay by Best Western Franchise Cost in 2026",
   h1: "How much does a SureStay by Best Western franchise cost in 2026?",
   description: "SureStay by Best Western franchise fees from the 2026 FDD: $35,000 initial fee, 4% royalty, 4% sales and marketing fee, $176,975 to $1,221,975 to convert 60 rooms.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -98,7 +98,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet records Prime at 7.00% effective September 17, 2026 and the SBA 7(a) maximum allowable rate at 10.00%, the indexes a loan for an initial fee, a PIP or a conversion is priced against.[2]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet records Prime at 7.00% effective September 17, 2026 and the SBA 7(a) maximum allowable rate at 10.00%, the indexes a loan for an initial fee, a PIP or a conversion is priced against.[2]"
   },
   workedExample: {
     label: "Hypothetical: a year of SureStay brand fees on assumed rooms revenue",
@@ -144,7 +144,7 @@ export const page: AnswerPage = {
     },
     {
       n: 2,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

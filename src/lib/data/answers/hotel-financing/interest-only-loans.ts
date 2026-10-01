@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Interest-Only Hotel Loans: Who Offers Them (2026)",
   h1: "Can I get an interest-only hotel loan?",
   description: "Which hotel lenders offer interest-only periods in 2026, which programs forbid them, and what interest-only does to payment, DSCR and the balloon.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -49,7 +49,7 @@ export const page: AnswerPage = {
     {
       h2: "How much does interest-only lower the payment?",
       lead: "On a $10 million loan at 7.00 percent, interest-only is $700,000 a year, against about $848,000 on a 25-year amortization schedule.",
-      body: "The rate in that comparison is an assumption for the arithmetic, not a quote. Interest-only is simply the balance times the rate: $10,000,000 times 7.00 percent equals $700,000 a year, or $58,333 a month. A 25-year amortizing payment at the same rate is $70,678 a month, or $848,135 a year. The difference is $148,135 a year.\n\nThe saving shrinks as amortization lengthens and as rates rise, because at higher rates more of an amortizing payment is interest anyway. The 10-year Treasury, the index a fixed-rate quote is struck against, was 4.94 percent on September 17, 2026.[5][7] Run your own numbers with `/tools/dscr-calculator`."
+      body: "The rate in that comparison is an assumption for the arithmetic, not a quote. Interest-only is simply the balance times the rate: $10,000,000 times 7.00 percent equals $700,000 a year, or $58,333 a month. A 25-year amortizing payment at the same rate is $70,678 a month, or $848,135 a year. The difference is $148,135 a year.\n\nThe saving shrinks as amortization lengthens and as rates rise, because at higher rates more of an amortizing payment is interest anyway. The 10-year Treasury, the index a fixed-rate quote is struck against, was 5.29 percent on September 30, 2026.[5][7] Run your own numbers with `/tools/dscr-calculator`."
     },
     {
       h2: "Does interest-only help me qualify for a bigger loan?",
@@ -123,7 +123,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet puts the 10-year Treasury at 4.94% and SOFR at 3.85% as of September 17, 2026, and describes both SBA programs as fully amortizing. It publishes no interest-only terms for conventional lenders, because none of them publishes any.[5]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet puts the 10-year Treasury at 5.29% and SOFR at 3.90% as of September 30, 2026, and describes both SBA programs as fully amortizing. It publishes no interest-only terms for conventional lenders, because none of them publishes any.[5]"
   },
   workedExample: {
     label: "Hypothetical: a $10.0M hotel loan, interest-only versus 25-year amortization",
@@ -194,7 +194,7 @@ export const page: AnswerPage = {
     },
     {
       n: 5,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

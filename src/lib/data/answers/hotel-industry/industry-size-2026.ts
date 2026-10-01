@@ -18,7 +18,7 @@ export const page: AnswerPage = {
   title: "How Big Is the US Hotel Industry in 2026?",
   h1: "How big is the US hotel industry in 2026?",
   description: "US hotel industry size in 2026: guest spending, jobs, wages, taxes, hotel counts, rooms under construction. Every figure dated and attributed.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   targetPrompts: [
     "How big is the US hotel industry?",
@@ -76,7 +76,7 @@ export const page: AnswerPage = {
     {
       h2: "How much of that capacity is being used?",
       lead: "U.S. hotels sold 62.3 percent of their available room nights in 2025, at an average rate of $160.54, according to CoStar.[6]",
-      body: "Demand has picked up since. CoStar and Tourism Economics said on August 7, 2026 that the industry sold a record number of room nights in the first half of 2026, 11.4 million more than in the first half of 2025, and that room revenue rose by $5.4 billion.[12] The metrics are defined at [What are RevPAR, ADR and occupancy, and what is a good number?](/hotel-industry/revpar-adr-occupancy). If you are sizing this market because you plan to enter it, the buyer's guide is at [How do I buy a hotel?](/buy-a-hotel), and current borrowing costs are on the rate sheet: the 10-year Treasury was 4.94 percent and SOFR 3.85 percent on September 17, 2026.[13]"
+      body: "Demand has picked up since. CoStar and Tourism Economics said on August 7, 2026 that the industry sold a record number of room nights in the first half of 2026, 11.4 million more than in the first half of 2025, and that room revenue rose by $5.4 billion.[12] The metrics are defined at [What are RevPAR, ADR and occupancy, and what is a good number?](/hotel-industry/revpar-adr-occupancy). If you are sizing this market because you plan to enter it, the buyer's guide is at [How do I buy a hotel?](/buy-a-hotel), and current borrowing costs are on the rate sheet: the 10-year Treasury was 5.29 percent and SOFR 3.90 percent on September 30, 2026.[13]"
     }
   ],
   table: {
@@ -103,7 +103,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet prices the debt behind all of this: the 10-year Treasury at 4.94% on September 17, 2026, SOFR at 3.85%, and the 25-year SBA 504 debenture at 6.54%.[13]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet prices the debt behind all of this: the 10-year Treasury at 5.29% on September 30, 2026, SOFR at 3.90%, and the 25-year SBA 504 debenture at 6.54%.[13]"
   },
   workedExample: {
     label: "Worked arithmetic: why $805 billion of guest spending is not hotel revenue",

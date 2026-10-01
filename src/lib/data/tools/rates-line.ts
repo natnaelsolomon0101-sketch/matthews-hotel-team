@@ -19,7 +19,7 @@ function longDate(iso: string): string {
 /** "September 2026" */
 export const EDITION_LABEL = latestEdition().label;
 
-/** "4.94% on September 17, 2026" */
+/** "5.29% on September 30, 2026" */
 export function benchmarkOn(key: BenchmarkKey): string {
   const b = benchmark(key);
   if (!b) throw new Error(`rate sheet has no benchmark "${key}"`);

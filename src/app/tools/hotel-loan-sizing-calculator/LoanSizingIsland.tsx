@@ -186,7 +186,7 @@ export default function LoanSizingIsland({ tool }: { tool: ToolPage["tool"] }) {
             </label>
             <p className={`${HELP} mt-3`}>
               Uses the value field above as total project cost. Hotel minimums and the debenture
-              cap come from 13 CFR 120.910, 13 CFR 120.920 and SOP 50 10 8. They are regulatory
+              cap come from 13 CFR 120.910, 13 CFR 120.920 and SOP 50 10 8.1. They are regulatory
               minimums, not a lender&apos;s terms.
             </p>
             <dl className="mt-3 grid grid-cols-1 gap-y-1">

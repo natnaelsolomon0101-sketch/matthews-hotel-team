@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Non-Recourse Hotel Loans: Who Offers Them in 2026",
   h1: "Can I get a non-recourse loan on a hotel?",
   description: "Which hotel lenders lend non-recourse in 2026, what the carve-outs really cover, who signs the guaranty, and how recourse changes the tax result.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -27,7 +27,7 @@ export const page: AnswerPage = {
     "What's the difference between recourse and non-recourse debt when a hotel is foreclosed?",
     "What credit score do I need to get a hotel loan?"
   ],
-  answer: "Yes, on a stabilized hotel from the right lender. CMBS conduits, life companies and many debt funds lend non-recourse with carve-outs. Banks usually want a guaranty, and SBA rules generally require one from every owner of 20 percent or more.[1] The 10-year Treasury, the index for a fixed-rate non-recourse quote, was 4.94 percent on September 17, 2026.[2][3] Non-recourse is never unconditional.",
+  answer: "Yes, on a stabilized hotel from the right lender. CMBS conduits, life companies and many debt funds lend non-recourse with carve-outs. Banks usually want a guaranty, and SBA rules generally require one from every owner of 20 percent or more.[1] The 10-year Treasury, the index for a fixed-rate non-recourse quote, was 5.29 percent on September 30, 2026.[2][3] Non-recourse is never unconditional.",
   takeaways: [
     "Non-recourse means the lender's remedy for an ordinary default is the hotel, not your other assets. It does not mean nobody signs anything.",
     "A person or entity with real net worth signs a carve-out guaranty. Public hotel borrowers list the usual triggers: fraud, misrepresentation, waste, misappropriated rents, voluntary bankruptcy, unpermitted transfers and environmental liabilities.[4]",
@@ -117,7 +117,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet lists the SBA 7(a) and 504 rows as recourse and describes the CMBS row as fixed-rate, non-recourse and securitized, struck against a 10-year Treasury of 4.94% as of September 17, 2026. It marks the CMBS spread as not yet published, so it prints no recourse premium.[2]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet lists the SBA 7(a) and 504 rows as recourse and describes the CMBS row as fixed-rate, non-recourse and securitized, struck against a 10-year Treasury of 5.29% as of September 30, 2026. It marks the CMBS spread as not yet published, so it prints no recourse premium.[2]"
   },
   workedExample: {
     label: "Hypothetical: the same failed hotel under recourse and non-recourse debt",
@@ -167,7 +167,7 @@ export const page: AnswerPage = {
     },
     {
       n: 2,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

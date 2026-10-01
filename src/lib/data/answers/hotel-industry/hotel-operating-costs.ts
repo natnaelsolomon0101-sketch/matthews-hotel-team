@@ -18,7 +18,7 @@ export const page: AnswerPage = {
   title: "What Does It Cost to Operate a Hotel? Sourced Figures",
   h1: "What does it cost to operate a hotel?",
   description: "Hotel operating costs by USALI department, labor with BLS wage data, brand fees, property tax and insurance, using 2025 figures two public REITs reported.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   targetPrompts: [
     "What does it cost to operate a hotel?",
@@ -71,7 +71,7 @@ export const page: AnswerPage = {
     {
       h2: "What is left after operating costs, and what still has to come out of it?",
       lead: "About a third of revenue was left at the select-service REITs' hotels in 2025, and a replacement reserve, debt service and income taxes still come out of that third.",
-      body: "Apple Hospitality's comparable hotels adjusted hotel EBITDA margin was 34.3 percent for 2025.[10] Summit Hotel Properties, another select-service owner, reported a pro forma hotel EBITDA margin of 33.4 percent for 2025, down from 35.7 percent in 2024.[8] Host, with large food and beverage operations, reported a comparable hotel EBITDA margin of 28.9 percent, down 40 basis points, and said operational improvements were offset by the increase in wages expense.[1]\n\nThe replacement reserve is the next deduction. Host says a specified percentage of gross revenues, typically 4 to 5 percent, is deposited into a reserve account for furniture, fixtures and equipment.[1] Apple Hospitality says its restricted cash includes reserves for furniture, fixtures and equipment of up to 5 percent of property revenue at certain hotels, as required by management or mortgage agreements.[2] See [FF&E reserve](/glossary/ffe-reserve).\n\nDebt service comes after that. As of September 17, 2026, the 10-year Treasury is 4.94 percent and the maximum SBA 7(a) rate is 10.00 percent, and lenders do not publish their spreads or coverage floors.[9] The income that remains is what a buyer capitalizes, which is covered at [What is my hotel worth, and who decides?](/hotel-valuation). Owners comparing a refinance with a sale can start at [How does hotel financing work, and what does it cost right now?](/hotel-financing) or [What is involved in selling a hotel?](/sell-a-hotel)."
+      body: "Apple Hospitality's comparable hotels adjusted hotel EBITDA margin was 34.3 percent for 2025.[10] Summit Hotel Properties, another select-service owner, reported a pro forma hotel EBITDA margin of 33.4 percent for 2025, down from 35.7 percent in 2024.[8] Host, with large food and beverage operations, reported a comparable hotel EBITDA margin of 28.9 percent, down 40 basis points, and said operational improvements were offset by the increase in wages expense.[1]\n\nThe replacement reserve is the next deduction. Host says a specified percentage of gross revenues, typically 4 to 5 percent, is deposited into a reserve account for furniture, fixtures and equipment.[1] Apple Hospitality says its restricted cash includes reserves for furniture, fixtures and equipment of up to 5 percent of property revenue at certain hotels, as required by management or mortgage agreements.[2] See [FF&E reserve](/glossary/ffe-reserve).\n\nDebt service comes after that. As of September 30, 2026, the 10-year Treasury is 5.29 percent and the maximum SBA 7(a) rate is 10.00 percent, and lenders do not publish their spreads or coverage floors.[9] The income that remains is what a buyer capitalizes, which is covered at [What is my hotel worth, and who decides?](/hotel-valuation). Owners comparing a refinance with a sale can start at [How does hotel financing work, and what does it cost right now?](/hotel-financing) or [What is involved in selling a hotel?](/sell-a-hotel)."
     }
   ],
   table: {
@@ -101,7 +101,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet puts the cost that comes after operating costs in context: the 10-year Treasury at 4.94% and the SBA 7(a) maximum at 10.00% on September 17, 2026, against a hotel-level margin of roughly a third of revenue at the select-service REITs.[9][10][8]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet puts the cost that comes after operating costs in context: the 10-year Treasury at 5.29% and the SBA 7(a) maximum at 10.00% on September 30, 2026, against a hotel-level margin of roughly a third of revenue at the select-service REITs.[9][10][8]"
   },
   workedExample: {
     label: "Hypothetical: what a one-dollar wage increase costs a 100-room hotel, using BLS hours and an assumed staffing level",

@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "CMBS Loans for Hotels: How They Work (2026)",
   h1: "What is a CMBS loan and how does it work for hotels?",
   description: "How hotel CMBS loans are sized, priced and serviced in 2026, what non-recourse actually costs, and when a CMBS execution is the wrong choice.",
-  lastUpdated: "2026-09-17",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -26,7 +26,7 @@ export const page: AnswerPage = {
     "What's the difference between a bank loan and a CMBS loan for a hotel?",
     "What happens after my hotel loan gets sent to special servicing?"
   ],
-  answer: "A CMBS loan is a fixed-rate hotel loan originated to be pooled and sold as bonds. It is non-recourse with standard carve-outs, often has interest-only periods, and is sized to a debt yield floor. Its fixed rate starts from Treasuries; the 10-year was 4.94 percent on September 17, 2026.[1] You get non-recourse and give up flexibility, because the servicer follows the documents.",
+  answer: "A CMBS loan is a fixed-rate hotel loan originated to be pooled and sold as bonds. It is non-recourse with standard carve-outs, often has interest-only periods, and is sized to a debt yield floor. Its fixed rate starts from Treasuries; the 10-year was 5.29 percent on September 30, 2026.[1] You get non-recourse and give up flexibility, because the servicer follows the documents.",
   takeaways: [
     "CMBS is non-recourse with carve-outs. It is not no-recourse.",
     "Debt yield, not LTV, is usually the binding constraint on a hotel CMBS loan.",
@@ -124,7 +124,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet puts the 10-year Treasury, the index a fixed-rate CMBS quote is struck against, at 4.94% as of September 17, 2026, and marks the CMBS spread itself as not yet published. We do not print a spread until three independent lenders quote the same structure in a month.[4]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet puts the 10-year Treasury, the index a fixed-rate CMBS quote is struck against, at 5.29% as of September 30, 2026, and marks the CMBS spread itself as not yet published. We do not print a spread until three independent lenders quote the same structure in a month.[4]"
   },
   workedExample: {
     label: "Hypothetical: why the debt yield floor binds",
@@ -188,7 +188,7 @@ export const page: AnswerPage = {
     },
     {
       n: 4,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

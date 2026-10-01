@@ -16,7 +16,7 @@ export const page: AnswerPage = {
   title: "Hotel Owner vs Franchisor vs Management Company",
   h1: "What is the difference between a hotel owner, a franchisor and a management company?",
   description: "Who owns a hotel, who licenses the brand and who runs it, with franchise and management fees and terms from public FDDs and 10-K filings.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   targetPrompts: [
     "What's the actual difference between a hotel brand and a hotel franchise?",
@@ -74,7 +74,7 @@ export const page: AnswerPage = {
     {
       h2: "What does this structure mean when I finance or sell a hotel?",
       lead: "When you finance or sell a hotel, the franchise and management agreements are underwritten alongside the real estate, because they decide who can run the hotel and what comes off the top.",
-      body: "A lender reads the fees as fixed charges ahead of its debt service and wants to know the flag will stay if it has to take the property, which is what a [comfort letter](/glossary/comfort-letter) addresses. As of September 17, 2026, the 10-year Treasury is 4.94 percent and SOFR is 3.85 percent, and lenders do not publish the spreads or coverage tests they apply, so the agreements in your file are part of what earns a better quote.[10] USALI's 12th edition, effective January 1, 2026, added a schedule that gathers annual mandatory brand and operator costs in one place, which makes this easier for a lender or buyer to see.[9]\n\nA buyer does not inherit your franchise. It applies for its own and takes on the brand's improvement plan. Start at [How does hotel financing work, and what does it cost right now?](/hotel-financing), [What is involved in selling a hotel?](/sell-a-hotel) or [Should I buy a branded or independent hotel?](/buy-a-hotel/branded-vs-independent)."
+      body: "A lender reads the fees as fixed charges ahead of its debt service and wants to know the flag will stay if it has to take the property, which is what a [comfort letter](/glossary/comfort-letter) addresses. As of September 30, 2026, the 10-year Treasury is 5.29 percent and SOFR is 3.90 percent, and lenders do not publish the spreads or coverage tests they apply, so the agreements in your file are part of what earns a better quote.[10] USALI's 12th edition, effective January 1, 2026, added a schedule that gathers annual mandatory brand and operator costs in one place, which makes this easier for a lender or buyer to see.[9]\n\nA buyer does not inherit your franchise. It applies for its own and takes on the brand's improvement plan. Start at [How does hotel financing work, and what does it cost right now?](/hotel-financing), [What is involved in selling a hotel?](/sell-a-hotel) or [Should I buy a branded or independent hotel?](/buy-a-hotel/branded-vs-independent)."
     }
   ],
   table: {
@@ -121,7 +121,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet records that no lender type publishes its spread, coverage floor or loan-to-value ceiling, so the fees above are some of the few hard numbers in a hotel loan file: they come off revenue before debt service priced over a 10-year Treasury of 4.94% on September 17, 2026.[10]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet records that no lender type publishes its spread, coverage floor or loan-to-value ceiling, so the fees above are some of the few hard numbers in a hotel loan file: they come off revenue before debt service priced over a 10-year Treasury of 5.29% on September 30, 2026.[10]"
   },
   workedExample: {
     label: "Hypothetical: what the brand and the manager take from a 120-room franchised hotel",

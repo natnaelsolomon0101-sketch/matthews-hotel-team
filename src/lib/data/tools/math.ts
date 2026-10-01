@@ -322,7 +322,7 @@ export function computeLoanSizing(v: LoanSizingInput): LoanSizingResult {
 
 /* ------------------------------------------------- SBA 504 hotel structure */
 
-/** 13 CFR 120.910 and 120.920, and SOP 50 10 8 pp. 350, 354-355. */
+/** 13 CFR 120.910 and 120.920, and SOP 50 10 8.1 pp. 243, 244. */
 export const SBA_504_HOTEL = {
   /** Third Party Lender minimum for a limited or single purpose asset. */
   bankMinPct: 50,

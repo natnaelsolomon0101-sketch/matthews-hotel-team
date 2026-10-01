@@ -16,7 +16,7 @@ export const page: AnswerPage = {
   title: "Best Western Franchise Cost in 2026: Membership Fees",
   h1: "How much does a Best Western franchise cost in 2026?",
   description: "Best Western membership fees from the 2026 FDD: $54,000 entrance fee for 75 rooms, 5% monthly fees, 2.10% marketing and technology, dues, Item 7 and term.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -99,7 +99,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet records Prime at 7.00% effective September 17, 2026 and the SBA 7(a) maximum allowable rate at 10.00%, the indexes a loan for an entrance fee, a PIP or a conversion is priced against.[2]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet records Prime at 7.00% effective September 17, 2026 and the SBA 7(a) maximum allowable rate at 10.00%, the indexes a loan for an entrance fee, a PIP or a conversion is priced against.[2]"
   },
   workedExample: {
     label: "Hypothetical: a year of Best Western fees on assumed room revenue",
@@ -145,7 +145,7 @@ export const page: AnswerPage = {
     },
     {
       n: 2,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

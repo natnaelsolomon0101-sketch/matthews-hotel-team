@@ -16,7 +16,7 @@ export const page: AnswerPage = {
   title: "How Rising Interest Rates Change Hotel Value",
   h1: "How do rising interest rates change what my hotel is worth?",
   description: "Rates reach hotel value through the buyer's loan and the cap rate. What the 2026 Treasury, CBRE and HVS evidence shows, and what it does not.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -27,13 +27,13 @@ export const page: AnswerPage = {
     "How do rising interest rates affect my hotel refinance options?",
     "What is Matthews Hotel Markets' current view on hotel cap rates?"
   ],
-  answer: "Higher rates lower what a leveraged buyer can pay, because the same NOI supports a smaller loan. They also put upward pressure on cap rates, but not one for one and not on a fixed schedule. The 10-year Treasury rose from 4.75 percent on August 31, 2026 to 4.94 percent on September 17.[1] In CBRE's H1 2026 survey, hotel cap rates compressed while Treasury yields rose.[2]",
+  answer: "Higher rates lower what a leveraged buyer can pay, because the same NOI supports a smaller loan. They also put upward pressure on cap rates, but not one for one and not on a fixed schedule. The 10-year Treasury rose from 4.75 percent on August 31, 2026 to 5.29 percent on September 30.[1] In CBRE's H1 2026 survey, hotel cap rates compressed while Treasury yields rose.[2]",
   takeaways: [
     "Rates reach your value through two channels: the size of the loan a buyer can get, and the return buyers require, which is the cap rate.",
     "The loan channel is arithmetic. In the hypothetical below, one point of loan rate cuts supportable loan proceeds by 8.4 percent on the same NOI.",
     "The cap-rate channel is looser. CBRE reported the 10-year peaking at 4.67 percent in mid-May 2026 while the all-property average cap rate was essentially flat and hotel cap rates compressed.[2]",
     "We do not publish a lag or a ratio between Treasury yields and hotel cap rates. The 2026 public evidence does not support one.",
-    "The 10-year Treasury rose 19 basis points between August 31 and September 17, 2026.[1][3] That move is too recent to show up in any published cap-rate survey."
+    "The 10-year Treasury rose 54 basis points between August 31 and September 30, 2026.[1][3] That move is too recent to show up in any published cap-rate survey."
   ],
   sections: [
     {
@@ -44,7 +44,7 @@ export const page: AnswerPage = {
     {
       h2: "Do hotel cap rates move one for one with the 10-year Treasury?",
       lead: "No. The 2026 evidence shows cap rates holding or compressing through a period of higher and volatile Treasury yields.",
-      body: "CBRE's U.S. Cap Rate Survey for H1 2026 reports that Treasury yields were volatile and increased substantially during the first half of the year. The 10-year fell below 4 percent in late February, then peaked at 4.67 percent in mid-May.[2] Over the same period the all-property average cap rate was essentially flat, and on average neighborhood retail compressed the most, followed by hotel and industrial.[2] The survey reflects more than 200 CBRE professionals responding in late June, informed by deals that closed in the first six months.[2] HVS, writing in April 2026, said transactions averaged an 8.2 percent cap rate in 2025 and that it expects average cap rates to trend downward in 2026.[4] With the 10-year at 4.94 percent on September 17,[1] that 2025 average sits more than three points above the Treasury. A spread that wide leaves room for buyers to absorb part of a rate move, which may be one reason the pass-through has been partial. The two figures are from different dates, so read the gap as rough."
+      body: "CBRE's U.S. Cap Rate Survey for H1 2026 reports that Treasury yields were volatile and increased substantially during the first half of the year. The 10-year fell below 4 percent in late February, then peaked at 4.67 percent in mid-May.[2] Over the same period the all-property average cap rate was essentially flat, and on average neighborhood retail compressed the most, followed by hotel and industrial.[2] The survey reflects more than 200 CBRE professionals responding in late June, informed by deals that closed in the first six months.[2] HVS, writing in April 2026, said transactions averaged an 8.2 percent cap rate in 2025 and that it expects average cap rates to trend downward in 2026.[4] With the 10-year at 5.29 percent on September 30,[1] that 2025 average sits nearly three points above the Treasury. A spread that wide leaves room for buyers to absorb part of a rate move, which may be one reason the pass-through has been partial. The two figures are from different dates, so read the gap as rough."
     },
     {
       h2: "Is there a lag between rates and cap rates?",
@@ -53,8 +53,8 @@ export const page: AnswerPage = {
     },
     {
       h2: "What happened to rates in September 2026?",
-      lead: "The 10-year Treasury rose 19 basis points in under three weeks, from 4.75 percent on August 31 to 4.94 percent on September 17.",
-      body: "Treasury's daily par yield curve shows the 10-year at 4.75 percent on August 31, 2026 and 4.94 percent on September 17, with the 5-year moving from 4.49 to 4.78 percent.[1] The Matthews Hotel Markets September 2026 rate sheet records the same move, along with SOFR at 3.85 percent and Prime at 7.00 percent.[3] The September 17 reading is 27 basis points above the mid-May peak CBRE cited.[2] For an owner, the near-term effect is on loan quotes, since fixed-rate hotel loans are priced as a spread over the matching Treasury. Lenders do not publish those spreads, so the way to learn the all-in rate is to get quotes. See [What are current hotel loan interest rates?](/hotel-financing/hotel-loan-rates)"
+      lead: "The 10-year Treasury rose 54 basis points over September, from 4.75 percent on August 31 to 5.29 percent on September 30.",
+      body: "Treasury's daily par yield curve shows the 10-year at 4.75 percent on August 31, 2026 and 5.29 percent on September 30, with the 5-year moving from 4.49 to 5.09 percent.[1] The Matthews Hotel Markets October 2026 rate sheet records the same move, along with SOFR at 3.90 percent and Prime at 7.00 percent.[3] The September 30 reading is 62 basis points above the mid-May peak CBRE cited.[2] For an owner, the near-term effect is on loan quotes, since fixed-rate hotel loans are priced as a spread over the matching Treasury. Lenders do not publish those spreads, so the way to learn the all-in rate is to get quotes. See [What are current hotel loan interest rates?](/hotel-financing/hotel-loan-rates)"
     },
     {
       h2: "Why did my value fall when my NOI held up?",
@@ -80,7 +80,7 @@ export const page: AnswerPage = {
         "Buyer's loan",
         "A higher loan rate means the same NOI supports a smaller loan, so a leveraged buyer can pay less",
         "Immediate. Loan quotes reprice with the index",
-        "10-year Treasury 4.75% on August 31, 4.94% on September 17[1]"
+        "10-year Treasury 4.75% on August 31, 5.29% on September 30[1]"
       ],
       [
         "Cap rate",
@@ -99,7 +99,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet shows the 10-year Treasury at 4.94 percent on September 17, 2026, up 19 basis points from 4.75 percent on August 31, with SOFR at 3.85 percent and Prime at 7.00 percent.[3]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet shows the 10-year Treasury at 5.29 percent on September 30, 2026, up 54 basis points from 4.75 percent on August 31, with SOFR at 3.90 percent and Prime at 7.00 percent.[3]"
   },
   workedExample: {
     label: "Hypothetical: one point of loan rate on $1.42M of NOI",
@@ -124,7 +124,7 @@ export const page: AnswerPage = {
     },
     {
       q: "Where is the 10-year Treasury now?",
-      a: "4.94 percent on September 17, 2026, up from 4.75 percent on August 31, per Treasury's daily par yield curve.[1] The current reading is on /rates."
+      a: "5.29 percent on September 30, 2026, up 54 basis points from 4.75 percent on August 31, per Treasury's daily par yield curve.[1] The current reading is on /rates."
     },
     {
       q: "Should I sell before rates rise more?",
@@ -138,7 +138,7 @@ export const page: AnswerPage = {
   sources: [
     {
       n: 1,
-      label: "Daily Treasury Par Yield Curve Rates (readings for August 31 and September 17, 2026)",
+      label: "Daily Treasury Par Yield Curve Rates (readings for August 31 and September 30, 2026)",
       url: "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
       publisher: "U.S. Department of the Treasury",
       accessed: "2026-09-18"
@@ -152,7 +152,7 @@ export const page: AnswerPage = {
     },
     {
       n: 3,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

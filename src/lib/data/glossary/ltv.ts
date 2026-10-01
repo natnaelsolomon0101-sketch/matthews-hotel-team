@@ -11,7 +11,7 @@ export const entry: GlossaryEntry = {
   term: "Loan-to-Value (LTV)",
   shortDef: "Loan-to-value is the loan amount divided by the hotel's appraised value, as a percentage. A $6.5 million loan on a $10 million appraisal is 65 percent LTV.",
   fullDef: "LTV is the share of a hotel's value that the lender finances. Federal guidelines cap a bank's internal limit at 85 percent for improved property, but no hotel lender publishes its own ceiling, and it is set by the lender.[1][4] The denominator is the appraisal or the price, whichever is lower.",
-  body: "The formula is loan amount divided by value. The argument is always about the value. Banks generally must order an appraisal on a commercial real estate loan above $500,000,[2] and a lender sizes to the lower of the appraised value and the contract price, so a low appraisal cuts proceeds even when the price is agreed.\n\nThe only published LTV numbers are supervisory, not market. The interagency real estate lending guidelines tell banks to set internal limits no higher than 85 percent on improved property and 80 percent on commercial construction, and say that loans at those levels are not automatically sound.[1] Hotel lenders set their own ceilings below that and do not publish them. Matthews Hotel Markets' September 2026 rate sheet marks every lender-set LTV cell as not yet published.[4] SBA 504 is the exception with a published structure: a hotel borrower contributes at least 15 percent of project cost.[3]\n\nLTV is one of three sizing tests. See [DSCR](/glossary/dscr) and [Debt Yield](/glossary/debt-yield). The smallest loan wins.",
+  body: "The formula is loan amount divided by value. The argument is always about the value. Banks generally must order an appraisal on a commercial real estate loan above $500,000,[2] and a lender sizes to the lower of the appraised value and the contract price, so a low appraisal cuts proceeds even when the price is agreed.\n\nThe only published LTV numbers are supervisory, not market. The interagency real estate lending guidelines tell banks to set internal limits no higher than 85 percent on improved property and 80 percent on commercial construction, and say that loans at those levels are not automatically sound.[1] Hotel lenders set their own ceilings below that and do not publish them. Matthews Hotel Markets' October 2026 rate sheet marks every lender-set LTV cell as not yet published.[4] SBA 504 is the exception with a published structure: a hotel borrower contributes at least 15 percent of project cost.[3]\n\nLTV is one of three sizing tests. See [DSCR](/glossary/dscr) and [Debt Yield](/glossary/debt-yield). The smallest loan wins.",
   example: "Hypothetical. Contract price $9,400,000. Appraisal $9,000,000. The lender sizes to the lower figure. At a lender-set 65% LTV, the loan is 0.65 x $9,000,000 = $5,850,000. The buyer expected 0.65 x $9,400,000 = $6,110,000. The $400,000 appraisal gap costs $260,000 of proceeds, which the buyer covers with cash or a price cut. The 65% is an assumption for the arithmetic, not a quoted lender term.",
   misconceptions: [
     "LTV is not loan-to-cost. LTV divides by appraised value. Loan-to-cost divides by the total project budget, including a PIP. Construction and bridge lenders often quote loan-to-cost, and the two can differ by several points on the same deal.",
@@ -57,7 +57,7 @@ export const entry: GlossaryEntry = {
       publisher: "Legal Information Institute, Cornell Law School"
     },
     {
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)"
     }
@@ -73,7 +73,7 @@ export const entry: GlossaryEntry = {
     "/tools/dscr-calculator",
     "/hotel-financing/sba-7a-vs-504"
   ],
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson"
 };
 

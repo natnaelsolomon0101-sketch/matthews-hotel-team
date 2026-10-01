@@ -18,7 +18,7 @@ export const page: AnswerPage = {
   title: "Opportunity Zones and Hotels: The 2027 Rules",
   h1: "Do opportunity zones still help hotel investors?",
   description: "Opportunity zones after the 2025 law change: the December 31, 2026 deadline, new zones from January 1, 2027, rural bonuses, and how hotels meet the tests.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -118,7 +118,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet puts the 10-year Treasury at 4.94% and SOFR at 3.85% as of September 17, 2026. An opportunity zone hotel borrows against those same indexes. The tax benefit changes the investors' return, not the lender's price.[7]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet puts the 10-year Treasury at 5.29% and SOFR at 3.90% as of September 30, 2026. An opportunity zone hotel borrows against those same indexes. The tax benefit changes the investors' return, not the lender's price.[7]"
   },
   workedExample: {
     label: "Hypothetical: a $3.0M gain from a hotel sale, under the old and new rules",
@@ -203,7 +203,7 @@ export const page: AnswerPage = {
     },
     {
       n: 7,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

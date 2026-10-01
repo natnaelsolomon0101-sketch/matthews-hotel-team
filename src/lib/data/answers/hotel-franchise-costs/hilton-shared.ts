@@ -16,7 +16,7 @@
 import type { AnswerSection, AnswerSource } from "../types";
 
 export const HILTON_FDD_ISSUED = "March 30, 2026";
-export const HILTON_LAST_UPDATED = "2026-09-18";
+export const HILTON_LAST_UPDATED = "2026-10-01";
 
 export type HiltonShared = {
   /** Short brand name used in prose, e.g. "Hampton". */
@@ -86,7 +86,7 @@ export function financingSection(s: HiltonShared): AnswerSection {
   return {
     h2: `How do owners finance ${s.short} franchise fees, a PIP or a conversion?`,
     lead: `Inside the acquisition or construction loan when the costs are part of a purchase or a build, or with a separate renovation loan when they are not.`,
-    body: `Lenders size the loan to the hotel's income, and no lender type publishes its leverage limits or spreads. As of September 17, 2026, Prime is 7.00 percent, SOFR is 3.85 percent and the SBA 7(a) maximum allowable rate is 10.00 percent.[2] Item 7 of the ${s.short} FDD notes that many lenders will require an environmental assessment report.[1] The loan structures are at [How do I finance converting my hotel to a new brand?](/hotel-financing/brand-conversion-financing) and [How do I finance a hotel PIP or renovation?](/hotel-financing/pip-and-renovation-loans). The wider trade between a flag and independence is at [Should I buy a branded or independent hotel?](/buy-a-hotel/branded-vs-independent), and the upgrade list itself is defined at [PIP](/glossary/pip).`,
+    body: `Lenders size the loan to the hotel's income, and no lender type publishes its leverage limits or spreads. As of September 30, 2026, Prime is 7.00 percent, SOFR is 3.90 percent and the SBA 7(a) maximum allowable rate is 10.00 percent.[2] Item 7 of the ${s.short} FDD notes that many lenders will require an environmental assessment report.[1] The loan structures are at [How do I finance converting my hotel to a new brand?](/hotel-financing/brand-conversion-financing) and [How do I finance a hotel PIP or renovation?](/hotel-financing/pip-and-renovation-loans). The wider trade between a flag and independence is at [Should I buy a branded or independent hotel?](/buy-a-hotel/branded-vs-independent), and the upgrade list itself is defined at [PIP](/glossary/pip).`,
   };
 }
 
@@ -121,7 +121,7 @@ export function hiltonSources(label: string, url: string): AnswerSource[] {
     },
     {
       n: 2,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: HILTON_LAST_UPDATED,
@@ -133,7 +133,7 @@ export const HILTON_DATA_POINT = {
   source: "rates" as const,
   ref: "/rates",
   sentence:
-    "Matthews Hotel Markets' September 2026 rate sheet records Prime at 7.00% effective September 17, 2026, SOFR at 3.85% and the SBA 7(a) maximum allowable rate at 10.00%, the indexes a loan for franchise fees, a PIP or a conversion is priced against.[2]",
+    "Matthews Hotel Markets' October 2026 rate sheet records Prime at 7.00% effective September 17, 2026, SOFR at 3.90% on September 30, 2026 and the SBA 7(a) maximum allowable rate at 10.00%, the indexes a loan for franchise fees, a PIP or a conversion is priced against.[2]",
 };
 
 export const HILTON_GLOSSARY = [

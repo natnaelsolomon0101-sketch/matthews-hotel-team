@@ -18,7 +18,7 @@ export const page: AnswerPage = {
   title: "Hyatt House Franchise Cost in 2026: Fees From the FDD",
   h1: "How much does a Hyatt House franchise cost in 2026?",
   description: "Hyatt House franchise fees from the 2026 FDD: $75,000 application fee, 5% royalty, 3.5% commercial services fee, $26.9M to $33.4M to build 128 rooms, Item 19.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -99,7 +99,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet records Prime at 7.00% effective September 17, 2026 and SOFR at 3.85%, the indexes a construction loan or an acquisition loan for a franchised hotel is priced against.[2]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet records Prime at 7.00% effective September 17, 2026 and SOFR at 3.90% on September 30, 2026, the indexes a construction loan or an acquisition loan for a franchised hotel is priced against.[2]"
   },
   workedExample: {
     label: "Hypothetical: a year of Hyatt House brand fees on assumed rooms revenue",
@@ -145,7 +145,7 @@ export const page: AnswerPage = {
     },
     {
       n: 2,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

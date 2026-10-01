@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Branded vs Independent Hotel: Which to Buy?",
   h1: "Should I buy a branded or independent hotel?",
   description: "What a hotel brand costs, from public franchise disclosure documents, what it delivers, what it takes to leave, and how lenders treat each.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -62,7 +62,7 @@ export const page: AnswerPage = {
     {
       h2: "Do lenders treat branded and independent hotels differently?",
       lead: "No lender publishes separate terms. Underwriting turns on the hotel's income history, its market and who operates it.[2]",
-      body: "Our September 2026 rate sheet marks conventional spreads and leverage as not yet published for every hotel segment, because lenders do not print them.[2] In practice a brand helps the credit story in two ways: the lender can see index data against a competitive set, and the reservation system gives it some comfort about demand if the operator changes. A branded loan also brings the franchisor into the file. Hilton issues a lender comfort letter only on request and only if the request meets its qualifications, for a $3,500 processing fee.[1]\n\nAn independent with a long record of stable income and a proven operator can be financed. A first-time owner buying an independent with thin records should expect a harder conversation. SBA's procedures list hotels, motels and other lodging facilities as limited or special purpose property and draw no line between flagged and unflagged.[6] The options are compared at [Which lenders finance hotels?](/hotel-financing/hotel-lenders-by-type)."
+      body: "Our October 2026 rate sheet marks conventional spreads and leverage as not yet published for every hotel segment, because lenders do not print them.[2] In practice a brand helps the credit story in two ways: the lender can see index data against a competitive set, and the reservation system gives it some comfort about demand if the operator changes. A branded loan also brings the franchisor into the file. Hilton issues a lender comfort letter only on request and only if the request meets its qualifications, for a $3,500 processing fee.[1]\n\nAn independent with a long record of stable income and a proven operator can be financed. A first-time owner buying an independent with thin records should expect a harder conversation. SBA's procedures list hotels, motels and other lodging facilities as limited or special purpose property and draw no line between flagged and unflagged.[6] The options are compared at [Which lenders finance hotels?](/hotel-financing/hotel-lenders-by-type)."
     }
   ],
   table: {
@@ -169,7 +169,7 @@ export const page: AnswerPage = {
     },
     {
       n: 2,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"
@@ -197,7 +197,7 @@ export const page: AnswerPage = {
     },
     {
       n: 6,
-      label: "SOP 50 10 8, Lender and Development Company Loan Programs (effective June 1, 2025), Section C, Ch. 1: Limited or Special Purpose Property, which lists hotels (pp. 354-355)",
+      label: "SOP 50 10 8.1, Lender and Development Company Loan Programs (effective October 1, 2026), Section C, Ch. 1: Borrower's Contribution and the Limited or Special Purpose Property list, which names hotels, motels and other lodging facilities (Para. E.1.c, p. 244)",
       url: "https://legacy.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
       publisher: "U.S. Small Business Administration",
       accessed: "2026-09-18"

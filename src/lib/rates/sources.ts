@@ -10,6 +10,14 @@ import type { RateSource } from "./types";
  * FOMC, SBA 7(a) and prime-rate announcement sources were re-read on
  * 2026-09-18 for the September correction. The FRED and FOMC sources were
  * re-read again on 2026-09-21, when DPRIME had printed the post-hike value.
+ *
+ * For the October 2026 edition, every source below except the two bank
+ * prime-rate announcements and the two September FOMC series was re-opened on
+ * 2026-10-01. SOP 50 10 moved to its 8.1 edition that day, so the SOP entry
+ * now points at the 8.1 document and the cells that cite it carry SBA's own
+ * page numbers. The BNY and PNC announcements are left as they were: they are
+ * what the September edition published, and an archived edition's sources do
+ * not get re-dated.
  */
 export const RATE_SOURCES: RateSource[] = [
   {
@@ -17,32 +25,32 @@ export const RATE_SOURCES: RateSource[] = [
     name: "Daily Treasury Par Yield Curve Rates",
     publisher: "U.S. Department of the Treasury",
     url: "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
-    asOf: "2026-09-17",
-    verified: "2026-09-18",
+    asOf: "2026-09-30",
+    verified: "2026-10-01",
   },
   {
     id: "nyfed-sofr",
     name: "Secured Overnight Financing Rate (SOFR)",
     publisher: "Federal Reserve Bank of New York",
     url: "https://www.newyorkfed.org/markets/reference-rates/sofr",
-    asOf: "2026-09-17",
-    verified: "2026-09-18",
+    asOf: "2026-09-30",
+    verified: "2026-10-01",
   },
   {
     id: "fred-dprime",
     name: "Bank Prime Loan Rate (DPRIME)",
     publisher: "Federal Reserve Bank of St. Louis (FRED)",
     url: "https://fred.stlouisfed.org/series/DPRIME",
-    asOf: "2026-09-17",
-    verified: "2026-09-21",
+    asOf: "2026-09-28",
+    verified: "2026-10-01",
   },
   {
     id: "fed-h15",
     name: "Selected Interest Rates (Daily), H.15, bank prime loan rate",
     publisher: "Board of Governors of the Federal Reserve System",
     url: "https://www.federalreserve.gov/releases/h15/",
-    asOf: "2026-09-17",
-    verified: "2026-09-21",
+    asOf: "2026-09-29",
+    verified: "2026-10-01",
   },
   {
     id: "bny-prime-2026-09",
@@ -81,24 +89,24 @@ export const RATE_SOURCES: RateSource[] = [
     name: "7(a) loan program: terms, conditions, and eligibility",
     publisher: "U.S. Small Business Administration",
     url: "https://www.sba.gov/sba-lenders/#7a-terms",
-    asOf: "2026-09-17",
-    verified: "2026-09-18",
+    asOf: "2026-10-01",
+    verified: "2026-10-01",
   },
   {
     id: "sba-504-program",
     name: "504 loans",
     publisher: "U.S. Small Business Administration",
     url: "https://www.sba.gov/loans/504-loans/",
-    asOf: "2026-09-17",
-    verified: "2026-09-17",
+    asOf: "2026-10-01",
+    verified: "2026-10-01",
   },
   {
     id: "cfr-120-910",
     name: "13 CFR 120.910, How much must the Borrower contribute?",
     publisher: "Code of Federal Regulations",
     url: "https://www.law.cornell.edu/cfr/text/13/120.910",
-    asOf: "2026-09-17",
-    verified: "2026-09-17",
+    asOf: "2026-10-01",
+    verified: "2026-10-01",
   },
   {
     id: "nadco-504-debenture",
@@ -106,7 +114,7 @@ export const RATE_SOURCES: RateSource[] = [
     publisher: "SomerCor (Certified Development Company), republishing NADCO pricing",
     url: "https://somercor.com/september-2026-sba-504-interest-rates/",
     asOf: "2026-09-10",
-    verified: "2026-09-17",
+    verified: "2026-10-01",
   },
   {
     id: "cdcloans-504-debenture",
@@ -114,15 +122,31 @@ export const RATE_SOURCES: RateSource[] = [
     publisher: "CDC Small Business Finance",
     url: "https://cdcloans.com/sba-504-rates/",
     asOf: "2026-09-10",
-    verified: "2026-09-17",
+    verified: "2026-10-01",
   },
   {
     id: "sba-sop-50-10",
-    name: "SOP 50 10, Lender and Development Company Loan Programs (edition 8.1, effective October 1, 2026)",
-    publisher: "U.S. Small Business Administration",
+    name: "SOP 50 10 8.1 with Technical Policy Updates, Lender and Development Company Loan Programs, published September 25, 2026 and effective October 1, 2026",
+    publisher: "U.S. Small Business Administration, Office of Capital Access",
     url: "https://legacy.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
     asOf: "2026-10-01",
-    verified: "2026-09-17",
+    verified: "2026-10-01",
+  },
+  {
+    id: "cfr-120-160",
+    name: "13 CFR 120.160, What are the requirements for a guaranty?",
+    publisher: "Code of Federal Regulations",
+    url: "https://www.law.cornell.edu/cfr/text/13/120.160",
+    asOf: "2026-10-01",
+    verified: "2026-10-01",
+  },
+  {
+    id: "fomc-calendar-2026",
+    name: "FOMC meeting calendar, 2026 (next meeting October 27 and 28, 2026)",
+    publisher: "Board of Governors of the Federal Reserve System",
+    url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    asOf: "2026-10-01",
+    verified: "2026-10-01",
   },
 ];
 

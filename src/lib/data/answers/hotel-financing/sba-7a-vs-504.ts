@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "SBA 7(a) vs 504 for Hotels: Which One?",
   h1: "What is the difference between an SBA 7(a) loan and an SBA 504 loan for a hotel?",
   description: "SBA 7(a) versus 504 for a hotel purchase: eligibility, down payment, rate structure, loan caps and which one fits which deal.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -119,7 +119,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet puts the SBA 7(a) maximum allowable rate at 10.00%, which is the 7.00% Prime in effect since September 17, 2026 plus the 3.00% cap SBA sets on loans over $350,000, and the 25-year 504 debenture at 6.54% as of September 10, 2026.[7]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet puts the SBA 7(a) maximum allowable rate at 10.00%, which is the 7.00% Prime in effect since September 17, 2026 plus the 3.00% cap SBA sets on loans over $350,000, and the 25-year 504 debenture at 6.54% as of September 10, 2026.[7]"
   },
   workedExample: {
     label: "Hypothetical: $6.0M hotel purchase under each program",
@@ -200,7 +200,7 @@ export const page: AnswerPage = {
     },
     {
       n: 7,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"
@@ -214,7 +214,7 @@ export const page: AnswerPage = {
     },
     {
       n: 9,
-      label: "SOP 50 10 8, Lender and Development Company Loan Programs (effective June 1, 2025), Section C, Ch. 1: debenture limits (p. 350) and Limited or Special Purpose Property, which lists hotels (pp. 354-355)",
+      label: "SOP 50 10 8.1, Lender and Development Company Loan Programs (effective October 1, 2026), Section C, Ch. 1: Debenture Limits, $5 million maximum gross debenture (Para. D.1, p. 243) and Borrower's Contribution with the Limited or Special Purpose Property list, which names hotels, motels and other lodging facilities (Para. E.1.c, p. 244)",
       url: "https://legacy.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
       publisher: "U.S. Small Business Administration",
       accessed: "2026-09-18"

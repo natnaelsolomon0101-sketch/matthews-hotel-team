@@ -18,7 +18,7 @@ export const page: AnswerPage = {
   title: "What Hotel Buyers Look For Before They Make an Offer",
   h1: "What do buyers look for when buying a hotel?",
   description: "What a hotel buyer and its lender check first: provable NOI, RevPAR index, PIP and transfer costs, franchise term, and whether the deal can be financed.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -57,7 +57,7 @@ export const page: AnswerPage = {
     {
       h2: "Why does the buyer's financing affect my price?",
       lead: "Because a buyer who borrows has its loan sized on your hotel's income. If the income cannot carry the debt, the buyer needs more cash or a lower price.",
-      body: "No bank, CMBS lender or debt fund publishes its coverage or leverage limits. SBA does, and its programs are one route for buying a smaller hotel. SOP 50 10 8 requires operating cash flow of at least 1.15 times debt service on all business debt, and an equity injection of at least 10 percent of total project costs on a change of ownership (pp. 129-131).[3] SBA has posted SOP 50 10 8.1 with an October 1, 2026 effective date, and it raises the required coverage on an initial acquisition to 1.25, tested on historical or adjusted results.[4]\n\nRates set the other half of the test. On September 17, 2026 the 10-year Treasury was 4.94 percent and the SBA 7(a) maximum variable rate was 10.00 percent, with the 25-year SBA 504 debenture at 6.54 percent.[2] At higher rates the same NOI supports a smaller loan. You can see what your income supports at `/tools/hotel-loan-sizing-calculator`, and SBA's actual hotel lending is tracked at `/data/sba-hotel-lending`.\n\nSellers can help. A hotel with clean financials, a current STR report, a recent survey and environmental report, and a known PIP is faster to finance, and a faster closing is worth money to both sides. A seller note can also bridge a gap, within the limits explained at `/buy-a-hotel/seller-financing`."
+      body: "No bank, CMBS lender or debt fund publishes its coverage or leverage limits. SBA does, and its programs are one route for buying a smaller hotel. SOP 50 10 8 requires operating cash flow of at least 1.15 times debt service on all business debt, and an equity injection of at least 10 percent of total project costs on a change of ownership (pp. 129-131).[3] SBA has posted SOP 50 10 8.1 with an October 1, 2026 effective date, and it raises the required coverage on an initial acquisition to 1.25, tested on historical or adjusted results.[4]\n\nRates set the other half of the test. On September 30, 2026 the 10-year Treasury was 5.29 percent and the SBA 7(a) maximum variable rate was 10.00 percent, with the 25-year SBA 504 debenture at 6.54 percent.[2] At higher rates the same NOI supports a smaller loan. You can see what your income supports at `/tools/hotel-loan-sizing-calculator`, and SBA's actual hotel lending is tracked at `/data/sba-hotel-lending`.\n\nSellers can help. A hotel with clean financials, a current STR report, a recent survey and environmental report, and a known PIP is faster to finance, and a faster closing is worth money to both sides. A seller note can also bridge a gap, within the limits explained at `/buy-a-hotel/seller-financing`."
     },
     {
       h2: "What physical and legal issues do buyers check?",
@@ -163,7 +163,7 @@ export const page: AnswerPage = {
     },
     {
       n: 2,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)",
       accessed: "2026-09-18"

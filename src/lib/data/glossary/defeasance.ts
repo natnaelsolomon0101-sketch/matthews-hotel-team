@@ -11,7 +11,7 @@ export const entry: GlossaryEntry = {
   term: "Defeasance",
   shortDef: "Defeasance releases a hotel from a CMBS mortgage by replacing the property with government securities that make the remaining loan payments. Tax rules bar it within 2 years of the securitization's startup day.",
   fullDef: "In a defeasance the loan is not paid off. The borrower buys a portfolio of government securities that produces every remaining payment, pledges it to the trust, and the lien on the hotel is released. Treasury regulations let a securitized mortgage keep its tax status through this swap if four conditions are met.[1]",
-  body: "CMBS loans are held in REMIC trusts, and bondholders bought a fixed stream of payments. Prepaying would break that stream, so most CMBS notes prohibit prepayment and allow defeasance instead.\n\nThe rule is in 26 CFR 1.860G-2(a)(8). A defeased mortgage stays a qualified mortgage if the substitute collateral consists solely of government securities, the mortgage documents allow the substitution, the lien is released to facilitate a disposition of the property or another customary commercial transaction, and the release is not within 2 years of the startup day.[1] That last condition is why a CMBS note has a lockout at the start.\n\nCost depends on rates. When Treasury yields are below the note rate, the securities cost more than the loan balance, and the difference is the borrower's cost. When yields are above the note rate, the securities can cost less than the balance. The 10-year Treasury was 4.94 percent on September 17, 2026.[2] The borrower also pays the servicer, a securities intermediary, accountants and counsel. Compare with [Yield Maintenance](/glossary/yield-maintenance).",
+  body: "CMBS loans are held in REMIC trusts, and bondholders bought a fixed stream of payments. Prepaying would break that stream, so most CMBS notes prohibit prepayment and allow defeasance instead.\n\nThe rule is in 26 CFR 1.860G-2(a)(8). A defeased mortgage stays a qualified mortgage if the substitute collateral consists solely of government securities, the mortgage documents allow the substitution, the lien is released to facilitate a disposition of the property or another customary commercial transaction, and the release is not within 2 years of the startup day.[1] That last condition is why a CMBS note has a lockout at the start.\n\nCost depends on rates. When Treasury yields are below the note rate, the securities cost more than the loan balance, and the difference is the borrower's cost. When yields are above the note rate, the securities can cost less than the balance. The 10-year Treasury was 5.29 percent on September 30, 2026.[2] The borrower also pays the servicer, a securities intermediary, accountants and counsel. Compare with [Yield Maintenance](/glossary/yield-maintenance).",
   example: "Hypothetical. Loan balance $9,200,000, note rate 5.25%, four years to maturity. A defeasance consultant prices the Treasury portfolio that replicates the remaining payments at $9,350,000. Securities cost over balance: $9,350,000 - $9,200,000 = $150,000. Add an assumed $85,000 of servicer, legal and accounting fees: total cost $235,000, or $235,000 / $9,200,000 = 2.6% of the balance. If yields rise, the portfolio gets cheaper. All prices here are assumptions. Get a live quote.",
   misconceptions: [
     "Defeasance is not a prepayment. The loan stays outstanding and keeps paying bondholders from the securities. Only the hotel is released.",
@@ -47,7 +47,7 @@ export const entry: GlossaryEntry = {
       publisher: "Legal Information Institute, Cornell Law School"
     },
     {
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)"
     }
@@ -62,7 +62,7 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/refinance-or-sell",
     "/hotel-financing/refinance"
   ],
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson"
 };
 

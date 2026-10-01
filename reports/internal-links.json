@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-09-30T14:29:38.258Z",
-  "base": "http://localhost:36685",
+  "runAt": "2026-10-01T13:42:10.262Z",
+  "base": "http://localhost:40259",
   "edges": [
     {
       "from": "/",
@@ -2980,6 +2980,10 @@
     },
     {
       "from": "/rates",
+      "to": "/rates/2026-10"
+    },
+    {
+      "from": "/rates",
       "to": "/rates/2026-09"
     },
     {
@@ -3281,6 +3285,10 @@
     {
       "from": "/data/hotel-financing-statistics",
       "to": "/contact"
+    },
+    {
+      "from": "/data/hotel-financing-statistics",
+      "to": "/rates/2026-09"
     },
     {
       "from": "/data/hotel-financing-statistics",
@@ -4445,6 +4453,10 @@
     {
       "from": "/sitemap",
       "to": "/rates/methodology"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/rates/2026-10"
     },
     {
       "from": "/sitemap",
@@ -43119,6 +43131,178 @@
       "to": "/sitemap"
     },
     {
+      "from": "/rates/2026-10",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/_next/static/chunks/20f15be7d67f23fd.css"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/listings"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/rates"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/about"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/team"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/contact"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/rates.json"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/rates.csv"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/rates/2026-09"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/glossary"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/research"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/tools"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/markets"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/closed"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/process"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/services"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/insights"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/press"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/developers"
+    },
+    {
+      "from": "/rates/2026-10",
+      "to": "/sitemap"
+    },
+    {
       "from": "/rates/2026-09",
       "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     },
@@ -43189,6 +43373,10 @@
     {
       "from": "/rates/2026-09",
       "to": "/rates.csv"
+    },
+    {
+      "from": "/rates/2026-09",
+      "to": "/rates/2026-10"
     },
     {
       "from": "/rates/2026-09",
@@ -69265,6 +69453,7 @@
         "/research/mhi",
         "/rates.json",
         "/rates.csv",
+        "/rates/2026-10",
         "/rates/2026-09",
         "/team/luke-thompson",
         "/team/nate-solomon",
@@ -69353,6 +69542,7 @@
         "/about",
         "/team",
         "/contact",
+        "/rates/2026-09",
         "/research/mhi/q1-2026",
         "/team/luke-thompson",
         "/team/nate-solomon",
@@ -69662,6 +69852,7 @@
         "/tools/debt-yield-calculator",
         "/tools/cap-rate-calculator",
         "/rates/methodology",
+        "/rates/2026-10",
         "/rates/2026-09",
         "/data/hotel-financing-statistics",
         "/data/sba-hotel-lending",
@@ -80390,6 +80581,55 @@
       "missing": []
     },
     {
+      "url": "/rates/2026-10",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/20f15be7d67f23fd.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/rates/methodology",
+        "/research/mhi",
+        "/rates.json",
+        "/rates.csv",
+        "/rates/2026-09",
+        "/team/luke-thompson",
+        "/team/nate-solomon",
+        "/services/capital-markets",
+        "/data/hotel-financing-statistics",
+        "/glossary",
+        "/research",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/data/sba-hotel-lending",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
       "url": "/rates/2026-09",
       "outboundInternal": [
         "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
@@ -80410,6 +80650,7 @@
         "/research/mhi",
         "/rates.json",
         "/rates.csv",
+        "/rates/2026-10",
         "/team/luke-thompson",
         "/team/nate-solomon",
         "/services/capital-markets",

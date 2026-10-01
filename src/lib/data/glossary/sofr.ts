@@ -9,10 +9,10 @@ import type { GlossaryEntry } from "./types";
 export const entry: GlossaryEntry = {
   slug: "sofr",
   term: "SOFR (Secured Overnight Financing Rate)",
-  shortDef: "SOFR is the benchmark rate for most floating-rate commercial loans. It measures the cost of borrowing cash overnight against Treasury securities. It was 3.85 percent on September 17, 2026.",
-  fullDef: "The New York Fed publishes SOFR each business day at about 8:00 a.m. Eastern. It is a volume-weighted median of overnight Treasury repo transactions.[1] A floating-rate hotel loan is quoted as SOFR plus a spread. SOFR was 3.85 percent on September 17, 2026; the spread is set by the lender.[2]",
-  body: "The New York Fed defines SOFR as a broad measure of the cost of borrowing cash overnight collateralized by Treasury securities. It is calculated from tri-party repo data, GCF Repo transactions and bilateral Treasury repo cleared through FICC.[1] Because it is built from real trades, it replaced LIBOR as the base rate for U.S. floating-rate debt.\n\nOn a hotel loan, SOFR shows up in bridge loans, construction loans and many debt fund and bank floaters. The note usually uses Term SOFR, a forward-looking one-month version, or a 30-day average, rather than the overnight print. The all-in rate is SOFR plus the lender's spread. Matthews Hotel Markets' September 2026 rate sheet publishes the index, 3.85 percent on September 17, and marks the spreads as not yet published because no lender publishes them.[2]\n\nFloating-rate lenders usually require an interest rate cap, and many set a SOFR floor. Both are set by the lender. Compare with [Prime Rate](/glossary/prime-rate).",
-  example: "Hypothetical. An $8,000,000 interest-only bridge loan at SOFR plus an assumed 3.50% spread. With SOFR at 3.85%,[2] the rate is 3.85% + 3.50% = 7.35%, and annual interest is 0.0735 x $8,000,000 = $588,000. If SOFR rises 0.25%, interest rises 0.0025 x $8,000,000 = $20,000 a year. The 3.50% spread is an assumption for the arithmetic, not a quoted lender term.",
+  shortDef: "SOFR is the benchmark rate for most floating-rate commercial loans. It measures the cost of borrowing cash overnight against Treasury securities. It was 3.90 percent on September 30, 2026.",
+  fullDef: "The New York Fed publishes SOFR each business day at about 8:00 a.m. Eastern. It is a volume-weighted median of overnight Treasury repo transactions.[1] A floating-rate hotel loan is quoted as SOFR plus a spread. SOFR was 3.90 percent on September 30, 2026; the spread is set by the lender.[2]",
+  body: "The New York Fed defines SOFR as a broad measure of the cost of borrowing cash overnight collateralized by Treasury securities. It is calculated from tri-party repo data, GCF Repo transactions and bilateral Treasury repo cleared through FICC.[1] Because it is built from real trades, it replaced LIBOR as the base rate for U.S. floating-rate debt.\n\nOn a hotel loan, SOFR shows up in bridge loans, construction loans and many debt fund and bank floaters. The note usually uses Term SOFR, a forward-looking one-month version, or a 30-day average, rather than the overnight print. The all-in rate is SOFR plus the lender's spread. Matthews Hotel Markets' October 2026 rate sheet publishes the index, 3.90 percent on September 30, and marks the spreads as not yet published because no lender publishes them.[2]\n\nFloating-rate lenders usually require an interest rate cap, and many set a SOFR floor. Both are set by the lender. Compare with [Prime Rate](/glossary/prime-rate).",
+  example: "Hypothetical. An $8,000,000 interest-only bridge loan at SOFR plus an assumed 3.50% spread. With SOFR at 3.90%,[2] the rate is 3.90% + 3.50% = 7.40%, and annual interest is 0.0740 x $8,000,000 = $592,000. If SOFR rises 0.25%, interest rises 0.0025 x $8,000,000 = $20,000 a year. The 3.50% spread is an assumption for the arithmetic, not a quoted lender term.",
   misconceptions: [
     "SOFR is not set by the Federal Reserve's rate decision. It is measured from repo trades. It tends to track the federal funds target range, but it is a market rate.",
     "SOFR is not your interest rate. Your rate is SOFR plus a spread, subject to any floor in the note.",
@@ -21,11 +21,11 @@ export const entry: GlossaryEntry = {
   faq: [
     {
       q: "What does SOFR plus 350 mean on my term sheet?",
-      a: "Your interest rate floats at the SOFR index plus 3.50 percentage points. With SOFR at 3.85 percent on September 17, 2026, that is 7.35 percent.[2] The rate resets, usually monthly."
+      a: "Your interest rate floats at the SOFR index plus 3.50 percentage points. With SOFR at 3.90 percent on September 30, 2026, that is 7.40 percent.[2] The rate resets, usually monthly."
     },
     {
       q: "What is SOFR today?",
-      a: "The New York Fed publishes it each business day at about 8:00 a.m. Eastern.[1] Our rate sheet at /rates shows 3.85 percent for September 17, 2026.[2]"
+      a: "The New York Fed publishes it each business day at about 8:00 a.m. Eastern.[1] Our rate sheet at /rates shows 3.90 percent for September 30, 2026.[2]"
     },
     {
       q: "Is a SOFR loan or a fixed-rate loan better for my hotel?",
@@ -47,7 +47,7 @@ export const entry: GlossaryEntry = {
       publisher: "Federal Reserve Bank of New York"
     },
     {
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)"
     }
@@ -62,7 +62,7 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/bridge-loans",
     "/hotel-financing/refinance"
   ],
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson"
 };
 

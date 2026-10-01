@@ -20,7 +20,7 @@ export const page: AnswerPage = {
   title: "Who Buys Hotels in the United States? Buyer Types",
   h1: "Who buys hotels in the United States?",
   description: "The five kinds of hotel buyer, what each one looks for, and public 2025 and 2026 transaction figures from JLL, LW Hospitality Advisors and REIT filings.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   targetPrompts: [
     "Who buys hotels in the United States?",
@@ -78,7 +78,7 @@ export const page: AnswerPage = {
     {
       h2: "Which buyer is right for my hotel, and how do I reach them?",
       lead: "The right buyer for a hotel depends on its size, its brand, its capital needs and its debt, and the way to find out is to put the hotel in front of more than one type of buyer.",
-      body: "An owner-operator with an SBA lender will pay for stable income it can finance. A fund will pay for a problem it knows how to fix. An exchange buyer will pay for certainty of closing. A hotel facing a large improvement plan may be worth more to a buyer who renovates for a living than to the current owner, which is the trade Summit describes in its own sales.[5]\n\nFinancing sets the ceiling for all of them. As of September 17, 2026, the 10-year Treasury is 4.94 percent, SOFR is 3.85 percent and the maximum SBA 7(a) rate is 10.00 percent, and no lender publishes its coverage floor or spread.[10] What each buyer type checks is at [What do buyers look for when buying a hotel?](/sell-a-hotel/what-buyers-look-for). The choice between a quiet sale and a marketed one is at [Should I sell my hotel off-market or list it publicly?](/sell-a-hotel/off-market-vs-marketed). Buyers can start at [How do I buy a hotel?](/buy-a-hotel), and sellers at [What is involved in selling a hotel?](/sell-a-hotel)."
+      body: "An owner-operator with an SBA lender will pay for stable income it can finance. A fund will pay for a problem it knows how to fix. An exchange buyer will pay for certainty of closing. A hotel facing a large improvement plan may be worth more to a buyer who renovates for a living than to the current owner, which is the trade Summit describes in its own sales.[5]\n\nFinancing sets the ceiling for all of them. As of September 30, 2026, the 10-year Treasury is 5.29 percent, SOFR is 3.90 percent and the maximum SBA 7(a) rate is 10.00 percent, and no lender publishes its coverage floor or spread.[10] What each buyer type checks is at [What do buyers look for when buying a hotel?](/sell-a-hotel/what-buyers-look-for). The choice between a quiet sale and a marketed one is at [Should I sell my hotel off-market or list it publicly?](/sell-a-hotel/off-market-vs-marketed). Buyers can start at [How do I buy a hotel?](/buy-a-hotel), and sellers at [What is involved in selling a hotel?](/sell-a-hotel)."
     }
   ],
   table: {
@@ -131,7 +131,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet shows the borrowing costs every buyer type on this page is underwriting: the 10-year Treasury at 4.94%, SOFR at 3.85% and the SBA 7(a) maximum at 10.00% on September 17, 2026, with no lender type publishing its spread.[10]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet shows the borrowing costs every buyer type on this page is underwriting: the 10-year Treasury at 5.29%, SOFR at 3.90% and the SBA 7(a) maximum at 10.00% on September 30, 2026, with no lender type publishing its spread.[10]"
   },
   workedExample: {
     label: "How to read a REIT's disposition disclosure for what buyers paid, using Summit Hotel Properties' February 25, 2026 results release",

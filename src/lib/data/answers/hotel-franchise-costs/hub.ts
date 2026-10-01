@@ -20,7 +20,7 @@ export const page: AnswerPage = {
   h1: "How much does a hotel franchise cost?",
   description:
     "What a hotel franchise costs in 2026, read from the brands' public Franchise Disclosure Documents: application fees, royalties, program fees and Item 7.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -79,7 +79,7 @@ export const page: AnswerPage = {
     {
       h2: "How do I pay for franchise fees, a PIP or a conversion?",
       lead: "With equity and a loan sized to the hotel's income. The franchise costs sit inside the project budget your lender underwrites.",
-      body: "As of September 17, 2026, Prime is 7.00 percent, SOFR is 3.85 percent and the SBA 7(a) maximum allowable rate is 10.00 percent.[10] Lenders do not publish their spreads or leverage limits, so the only real quote is a written one. The loan structures are at [How do I finance converting my hotel to a new brand?](/hotel-financing/brand-conversion-financing) and [How do I finance a hotel PIP or renovation?](/hotel-financing/pip-and-renovation-loans). The trade between a flag and independence is at [Should I buy a branded or independent hotel?](/buy-a-hotel/branded-vs-independent). Flagged hotels on the market are listed at [Hampton Inn hotels for sale](/hotels-for-sale/hampton-inn) and [Hilton hotels for sale](/hotels-for-sale/hilton).",
+      body: "As of September 30, 2026, Prime is 7.00 percent, SOFR is 3.90 percent and the SBA 7(a) maximum allowable rate is 10.00 percent.[10] Lenders do not publish their spreads or leverage limits, so the only real quote is a written one. The loan structures are at [How do I finance converting my hotel to a new brand?](/hotel-financing/brand-conversion-financing) and [How do I finance a hotel PIP or renovation?](/hotel-financing/pip-and-renovation-loans). The trade between a flag and independence is at [Should I buy a branded or independent hotel?](/buy-a-hotel/branded-vs-independent). Flagged hotels on the market are listed at [Hampton Inn hotels for sale](/hotels-for-sale/hampton-inn) and [Hilton hotels for sale](/hotels-for-sale/hilton).",
     },
   ],
   table: {
@@ -292,7 +292,7 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' September 2026 rate sheet records Prime at 7.00% effective September 17, 2026 and the SBA 7(a) maximum allowable rate at 10.00%, the indexes a loan for a franchise fee, a PIP or a conversion is priced against.[10]",
+      "Matthews Hotel Markets' October 2026 rate sheet records Prime at 7.00% effective September 17, 2026 and the SBA 7(a) maximum allowable rate at 10.00%, the indexes a loan for a franchise fee, a PIP or a conversion is priced against.[10]",
   },
   workedExample: {
     label: "Hypothetical: what a buyer of an existing Hampton Inn pays the brand in year one",
@@ -402,7 +402,7 @@ export const page: AnswerPage = {
     },
     {
       n: 10,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18",

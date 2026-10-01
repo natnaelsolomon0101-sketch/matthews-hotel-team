@@ -122,6 +122,13 @@ export type RateEdition = {
   nextRefresh: string;
   /** The 40 to 70 word answer block at the top of the page. */
   directAnswer: string;
+  /**
+   * The benchmark values this edition published, frozen at publication.
+   * An archived edition renders its own snapshot, never the current one:
+   * someone may have cited /rates/2026-09, and a page whose prose says 4.94%
+   * must not grow a table that says 5.29% the moment a new edition ships.
+   */
+  benchmarks: Benchmark[];
   rows: RateRow[];
   /** "What moved since <prior month>". Empty on the first edition. */
   changelog: string[];

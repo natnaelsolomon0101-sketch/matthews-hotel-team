@@ -6,7 +6,6 @@ import { TwoToneHeadline } from "@/components/ui/TwoToneHeadline";
 import { Pill } from "@/components/ui/Pill";
 import { SITE_URL, BRAND, bioMembers } from "@/lib/entity";
 import {
-  BENCHMARKS,
   EDITIONS,
   MHDI_ABBR,
   MHDI_DEFINITION,
@@ -174,7 +173,7 @@ export function RateSheetView({
           </p>
 
           <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-10 border-t border-[color:var(--divider)] pt-10">
-            {BENCHMARKS.map((b) => (
+            {edition.benchmarks.map((b) => (
               <div key={b.key}>
                 <p className="text-[12px] uppercase tracking-[0.18em] text-[color:var(--text-secondary)]">
                   {b.label}
@@ -244,7 +243,7 @@ export function RateSheetView({
                       <span className="mt-1 block text-[12px] leading-[1.4] text-[color:var(--text-secondary)]">
                         {row.index
                           .map((k) => {
-                            const b = BENCHMARKS.find((x) => x.key === k);
+                            const b = edition.benchmarks.find((x) => x.key === k);
                             return b ? `${b.label} ${b.value.toFixed(2)}%` : k;
                           })
                           .join(" · ")}
