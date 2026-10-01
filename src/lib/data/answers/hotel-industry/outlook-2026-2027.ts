@@ -17,7 +17,7 @@ export const page: AnswerPage = {
   title: "Hotel Industry Outlook 2026 and 2027: Forecasts Compared",
   h1: "What is the outlook for hotels in 2026 and 2027?",
   description: "The public US hotel forecasts for 2026 and 2027 from CoStar and Tourism Economics, CBRE and PwC, side by side with dates. No blended number.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   targetPrompts: [
     "What is the outlook for hotels in 2026?",
@@ -80,7 +80,7 @@ export const page: AnswerPage = {
     {
       h2: "What does the outlook mean if I am refinancing or selling?",
       lead: "A stronger revenue outlook helps income, but in September 2026 it arrives together with higher borrowing costs, and both go into a price or a loan.",
-      body: "The Federal Reserve raised its target range by 25 basis points on September 16, 2026, and as of September 17 the 10-year Treasury is 4.94 percent and SOFR is 3.85 percent.[12][13] Lenders do not publish their spreads or coverage tests, so the only way to know what the outlook is worth to your hotel is a written quote on your own trailing income. Start with [How much hotel debt is maturing in 2026 and 2027?](/hotel-financing/loan-maturities-2026-2027) and [Should I refinance my hotel or sell it instead?](/hotel-financing/refinance-or-sell), or run the [refinance vs sell calculator](/tools/refinance-vs-sell). For pricing, see [What is a good cap rate for a hotel in 2026?](/hotel-valuation/hotel-cap-rates) and [What is involved in selling a hotel?](/sell-a-hotel)."
+      body: "The Federal Reserve raised its target range by 25 basis points on September 16, 2026, and as of September 30 the 10-year Treasury is 5.29 percent and SOFR is 3.90 percent.[12][13] Lenders do not publish their spreads or coverage tests, so the only way to know what the outlook is worth to your hotel is a written quote on your own trailing income. Start with [How much hotel debt is maturing in 2026 and 2027?](/hotel-financing/loan-maturities-2026-2027) and [Should I refinance my hotel or sell it instead?](/hotel-financing/refinance-or-sell), or run the [refinance vs sell calculator](/tools/refinance-vs-sell). For pricing, see [What is a good cap rate for a hotel in 2026?](/hotel-valuation/hotel-cap-rates) and [What is involved in selling a hotel?](/sell-a-hotel)."
     }
   ],
   table: {
@@ -109,7 +109,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet is the other half of the outlook: the 10-year Treasury at 4.94% on September 17, 2026 and SOFR at 3.85%, the day after the Federal Reserve raised its target range by 25 basis points.[13][12]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet is the other half of the outlook: the 10-year Treasury at 5.29% on September 30, 2026 and SOFR at 3.90%, up 54 and 22 basis points respectively over September.[13][12]"
   },
   workedExample: {
     label: "Hypothetical: what the gap between two forecasts is worth at a 100-room hotel",

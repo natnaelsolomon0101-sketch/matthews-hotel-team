@@ -16,7 +16,7 @@ export const page: AnswerPage = {
   title: "Assuming a Hotel Loan: CMBS, SBA and Bank",
   h1: "Can I assume the existing loan when I buy a hotel?",
   description: "How hotel loan assumptions work for CMBS, SBA 7(a), SBA 504, USDA and bank loans: who approves, what the rules say about fees, and when it pays.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -40,7 +40,7 @@ export const page: AnswerPage = {
     {
       h2: "What does it mean to assume a hotel loan?",
       lead: "Assuming a loan means the buyer takes over the seller's existing mortgage, with its rate, balance, remaining term and covenants, instead of paying it off and borrowing new money.",
-      body: "SBA's servicing manual defines it plainly: another person takes over the borrower's legal obligations and benefits under the loan documents.[4] Nothing about the loan resets. If the seller's loan has six years left at a fixed rate, the buyer gets six years at that rate.\n\nThat is attractive when the existing rate is below today's market. The 10-year Treasury, the index behind most fixed-rate hotel quotes, was 4.94 percent on September 17, 2026.[6] A loan written when the index was much lower carries a coupon a new lender cannot match. For the seller, an assumption can also avoid a prepayment cost. On a CMBS loan that cost is [defeasance](/glossary/defeasance) or [yield maintenance](/glossary/yield-maintenance), which can be costly. See [What is a CMBS loan and how does it work for hotels?](/hotel-financing/cmbs-loans)\n\nThe catch is that the lender has to agree, and the loan was sized to the seller's purchase, not the buyer's."
+      body: "SBA's servicing manual defines it plainly: another person takes over the borrower's legal obligations and benefits under the loan documents.[4] Nothing about the loan resets. If the seller's loan has six years left at a fixed rate, the buyer gets six years at that rate.\n\nThat is attractive when the existing rate is below today's market. The 10-year Treasury, the index behind most fixed-rate hotel quotes, was 5.29 percent on September 30, 2026.[6] A loan written when the index was much lower carries a coupon a new lender cannot match. For the seller, an assumption can also avoid a prepayment cost. On a CMBS loan that cost is [defeasance](/glossary/defeasance) or [yield maintenance](/glossary/yield-maintenance), which can be costly. See [What is a CMBS loan and how does it work for hotels?](/hotel-financing/cmbs-loans)\n\nThe catch is that the lender has to agree, and the loan was sized to the seller's purchase, not the buyer's."
     },
     {
       h2: "Why do I need the lender's permission?",
@@ -117,7 +117,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet puts the 10-year Treasury at 4.94% as of September 17, 2026 and the SBA 7(a) maximum variable rate at 10.00%. An assumable fixed-rate loan is worth the most when its coupon sits well below what that index implies for new debt.[6]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet puts the 10-year Treasury at 5.29% as of September 30, 2026 and the SBA 7(a) maximum variable rate at 10.00%. An assumable fixed-rate loan is worth the most when its coupon sits well below what that index implies for new debt.[6]"
   },
   workedExample: {
     label: "Hypothetical: assuming a $4.2M loan on a $7.5M hotel purchase",
@@ -195,7 +195,7 @@ export const page: AnswerPage = {
     },
     {
       n: 6,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

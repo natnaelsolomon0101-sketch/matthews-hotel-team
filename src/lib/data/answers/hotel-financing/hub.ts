@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Hotel Financing: Rates, Terms and Lenders (2026)",
   h1: "How does hotel financing work, and what does it cost right now?",
   description: "How hotel loans are sized, priced and placed in 2026: lender types, DSCR and debt-yield tests, and what a hotel loan costs today.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -26,7 +26,7 @@ export const page: AnswerPage = {
     "What origination fees or points should I expect on a hotel loan?",
     "What's the minimum loan size hotel lenders will do?"
   ],
-  answer: "Hotel loans are sized by cash flow, not by price. A lender starts with trailing twelve-month NOI, applies a debt service coverage test and a debt yield floor, then lends whatever is smaller. Loan-to-value is the third test, not the first. Fixed-rate quotes start from the 10-year Treasury, which was 4.94 percent on September 17, 2026.[1]",
+  answer: "Hotel loans are sized by cash flow, not by price. A lender starts with trailing twelve-month NOI, applies a debt service coverage test and a debt yield floor, then lends whatever is smaller. Loan-to-value is the third test, not the first. Fixed-rate quotes start from the 10-year Treasury, which was 5.29 percent on September 30, 2026.[1]",
   takeaways: [
     "Three tests size a hotel loan: DSCR, debt yield, and LTV. The lowest number wins.",
     "Hotels price wider than apartments or industrial because the revenue reprices nightly.",
@@ -43,7 +43,7 @@ export const page: AnswerPage = {
     {
       h2: "What does a hotel loan cost in September 2026?",
       lead: "Hotel loan pricing is quoted as an index plus a spread, and the spread on hotels runs wider than on apartments or industrial property.",
-      body: "Fixed-rate hotel quotes track the 5- or 10-year Treasury; floating quotes track SOFR.[1][2] The spread over that index is set by five things, in the order we see lenders weigh them: the sponsor's experience and liquidity, the franchise flag and its market position, whether a PIP is open or funded, the market itself, and finally the loan structure. A hotel with an experienced sponsor, a top-performing flag, a funded PIP and no near-term renovation prices tighter than an identical building with a first-time buyer and an open PIP notice, even at the same leverage.\n\nMatthews Hotel Markets' September 2026 rate sheet puts the 10-year Treasury at 4.94% as of September 17, 2026 and the SBA 7(a) maximum allowable rate at 10.00%, which is SBA's 3.00% cap over the 7.00% Prime in effect since September 17, 2026.[3][6] It marks the conventional spread over that index as not yet published, because we do not print a spread until three independent lenders quote the same structure in a month.[4] The sheet shows what is and is not published, which is the part most rate sheets leave out. See the full breakout by lender type on `/hotel-financing/hotel-loan-rates`."
+      body: "Fixed-rate hotel quotes track the 5- or 10-year Treasury; floating quotes track SOFR.[1][2] The spread over that index is set by five things, in the order we see lenders weigh them: the sponsor's experience and liquidity, the franchise flag and its market position, whether a PIP is open or funded, the market itself, and finally the loan structure. A hotel with an experienced sponsor, a top-performing flag, a funded PIP and no near-term renovation prices tighter than an identical building with a first-time buyer and an open PIP notice, even at the same leverage.\n\nMatthews Hotel Markets' October 2026 rate sheet puts the 10-year Treasury at 5.29% as of September 30, 2026 and the SBA 7(a) maximum allowable rate at 10.00%, which is SBA's 3.00% cap over the 7.00% Prime in effect since September 17, 2026.[3][6] It marks the conventional spread over that index as not yet published, because we do not print a spread until three independent lenders quote the same structure in a month.[4] The sheet shows what is and is not published, which is the part most rate sheets leave out. See the full breakout by lender type on `/hotel-financing/hotel-loan-rates`."
     },
     {
       h2: "Who actually lends on hotels?",
@@ -109,7 +109,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet puts the 10-year Treasury, the index a fixed-rate select-service quote is struck against, at 4.94% as of September 17, 2026. It marks the conventional spread over that index as not yet published, because we do not print a spread until three independent lenders quote the same structure in a month.[4]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet puts the 10-year Treasury, the index a fixed-rate select-service quote is struck against, at 5.29% as of September 30, 2026. It marks the conventional spread over that index as not yet published, because we do not print a spread until three independent lenders quote the same structure in a month.[4]"
   },
   workedExample: {
     label: "Hypothetical: 95-key select-service hotel, Texas secondary market",
@@ -169,14 +169,14 @@ export const page: AnswerPage = {
     },
     {
       n: 4,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"
     },
     {
       n: 5,
-      label: "SOP 50 10 8, Lender and Development Company Loan Programs (effective June 1, 2025), Section C, Ch. 1: debenture limits (p. 350) and Limited or Special Purpose Property, which lists hotels (pp. 354-355)",
+      label: "SOP 50 10 8.1, Lender and Development Company Loan Programs (effective October 1, 2026), Section C, Ch. 1: Debenture Limits, $5 million maximum gross debenture (Para. D.1, p. 243) and Borrower's Contribution with the Limited or Special Purpose Property list, which names hotels, motels and other lodging facilities (Para. E.1.c, p. 244)",
       url: "https://legacy.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
       publisher: "U.S. Small Business Administration",
       accessed: "2026-09-18"

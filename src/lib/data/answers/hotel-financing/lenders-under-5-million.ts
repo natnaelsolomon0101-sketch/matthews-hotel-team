@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Who Lends on Hotels Under $5 Million? (2026)",
   h1: "Who lends on hotels under $5 million?",
   description: "Small-balance hotel loans in 2026: SBA 7(a), SBA 504, community banks, credit unions and the USDA B&I guarantee, with the program limits that matter.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -123,7 +123,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet shows the two published small-balance benchmarks: a 10.00% maximum allowable rate on SBA 7(a) loans over $350,000, which is the 7.00% Prime effective September 17, 2026 plus SBA's 3.00% cap, and 6.54% on the 25-year SBA 504 debenture priced September 10, 2026. It marks conventional bank and credit union spreads as not yet published.[3]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet shows the two published small-balance benchmarks: a 10.00% maximum allowable rate on SBA 7(a) loans over $350,000, which is the 7.00% Prime effective September 17, 2026 plus SBA's 3.00% cap, and 6.54% on the 25-year SBA 504 debenture priced September 10, 2026. It marks conventional bank and credit union spreads as not yet published.[3]"
   },
   workedExample: {
     label: "Hypothetical: a $4.2M purchase of a 48-key rural hotel, four ways",
@@ -180,7 +180,7 @@ export const page: AnswerPage = {
     },
     {
       n: 3,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

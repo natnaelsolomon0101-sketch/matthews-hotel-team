@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Hotel Loan Requirements: What Lenders Ask For",
   h1: "What do lenders require for a hotel loan?",
   description: "The documents, ratios and sponsor tests behind a hotel loan approval in 2026, plus what to send a lender before the first call.",
-  lastUpdated: "2026-09-17",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -121,7 +121,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet publishes one hotel leverage ceiling that is actually written down anywhere: SBA rules cap a 504 hotel structure at 85% of project cost. For every other lender type the sheet marks maximum LTV as not yet published, because no lender type prints one. Ask your lender for its ceiling in writing.[1]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet publishes one hotel leverage ceiling that is actually written down anywhere: SBA rules cap a 504 hotel structure at 85% of project cost. For every other lender type the sheet marks maximum LTV as not yet published, because no lender type prints one. Ask your lender for its ceiling in writing.[1]"
   },
   workedExample: {
     label: "Hypothetical: what a first-time buyer brings to a $20.0M purchase",
@@ -160,7 +160,7 @@ export const page: AnswerPage = {
   sources: [
     {
       n: 1,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"
@@ -174,7 +174,7 @@ export const page: AnswerPage = {
     },
     {
       n: 3,
-      label: "SOP 50 10 8, Lender and Development Company Loan Programs (effective June 1, 2025), Section C, Ch. 1: debenture limits (p. 350) and Limited or Special Purpose Property, which lists hotels (pp. 354-355)",
+      label: "SOP 50 10 8.1, Lender and Development Company Loan Programs (effective October 1, 2026), Section C, Ch. 1: Debenture Limits, $5 million maximum gross debenture (Para. D.1, p. 243) and Borrower's Contribution with the Limited or Special Purpose Property list, which names hotels, motels and other lodging facilities (Para. E.1.c, p. 244)",
       url: "https://legacy.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
       publisher: "U.S. Small Business Administration",
       accessed: "2026-09-18"

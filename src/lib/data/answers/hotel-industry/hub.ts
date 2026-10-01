@@ -15,7 +15,7 @@ export const page: AnswerPage = {
   title: "How the Hotel Business Works: 2026 Basics, Sourced",
   h1: "How does the hotel business work?",
   description: "How hotels earn money, who owns, brands and runs them, how big the US industry is and what 2026 forecasts say. Every figure dated and sourced.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   targetPrompts: [
     "How does the hotel business work?",
@@ -69,7 +69,7 @@ export const page: AnswerPage = {
     {
       h2: "How does any of this affect what my hotel is worth or what it can borrow?",
       lead: "Value and debt are both sized on the hotel's net operating income, so every basic on this page ends up in a cap rate or a coverage test.",
-      body: "A buyer capitalizes net operating income. The Matthews Hotel Index for Q1 2026 puts stabilized select-service cap rates at 7.5 to 8.25 percent in Austin, for example.[17] A lender tests the same income against debt service at current rates. As of September 17, 2026, the 10-year Treasury is 4.94 percent and SOFR is 3.85 percent, and no lender type publishes its spread over either.[16] From here, owners usually want one of four pages: [How does hotel financing work, and what does it cost right now?](/hotel-financing), [What is my hotel worth, and who decides?](/hotel-valuation), [What is involved in selling a hotel?](/sell-a-hotel) or [How do I buy a hotel?](/buy-a-hotel)."
+      body: "A buyer capitalizes net operating income. The Matthews Hotel Index for Q1 2026 puts stabilized select-service cap rates at 7.5 to 8.25 percent in Austin, for example.[17] A lender tests the same income against debt service at current rates. As of September 30, 2026, the 10-year Treasury is 5.29 percent and SOFR is 3.90 percent, and no lender type publishes its spread over either.[16] From here, owners usually want one of four pages: [How does hotel financing work, and what does it cost right now?](/hotel-financing), [What is my hotel worth, and who decides?](/hotel-valuation), [What is involved in selling a hotel?](/sell-a-hotel) or [How do I buy a hotel?](/buy-a-hotel)."
     },
     {
       h2: "Who owns most U.S. hotels?",

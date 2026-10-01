@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Hotel Financing FAQ (September 2026)",
   h1: "Hotel financing questions, answered",
   description: "Short answers to the hotel financing questions owners ask most: minimum loan size, points, comfort letters, guarantees, and qualifying with weak occupancy.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -26,7 +26,7 @@ export const page: AnswerPage = {
     "What's the typical amortization schedule on a hotel loan?",
     "How much loan-to-value can I get on a hotel refinance today versus in 2021?"
   ],
-  answer: "This page collects the short questions that do not need their own page. SBA's 7(a) program lists no minimum loan size and caps loans at $5 million.[1] Origination is typically quoted in points on the loan amount. A franchise comfort letter is a closing condition on most branded hotel loans. The 10-year Treasury was 4.94 percent on September 17, 2026.[2]",
+  answer: "This page collects the short questions that do not need their own page. SBA's 7(a) program lists no minimum loan size and caps loans at $5 million.[1] Origination is typically quoted in points on the loan amount. A franchise comfort letter is a closing condition on most branded hotel loans. The 10-year Treasury was 5.29 percent on September 30, 2026.[2]",
   takeaways: [
     "Every answer here is 100 words or fewer, and links to the page that goes deeper.",
     "Minimum loan size is the filter most owners do not know exists.",
@@ -114,7 +114,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet marks points and working leverage as not yet published for every lender type except SBA, where SBA rules cap a hotel 504 structure at 85% of project cost. What it does publish: the 10-year Treasury at 4.94% on September 17, 2026 and the 7(a) maximum allowable rate at 10.00%, with Prime at 7.00% since September 17, 2026.[4][5]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet marks points and working leverage as not yet published for every lender type except SBA, where SBA rules cap a hotel 504 structure at 85% of project cost. What it does publish: the 10-year Treasury at 5.29% on September 30, 2026 and the 7(a) maximum allowable rate at 10.00%, with Prime at 7.00% since September 17, 2026.[4][5]"
   },
   workedExample: {
     label: "Hypothetical: why the same hotel borrows less in 2026 than in 2021",
@@ -178,7 +178,7 @@ export const page: AnswerPage = {
     },
     {
       n: 4,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

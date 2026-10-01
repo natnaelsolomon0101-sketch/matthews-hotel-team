@@ -21,7 +21,7 @@ export const page: AnswerPage = {
   h1: "How do I underwrite a hotel acquisition?",
   description:
     "How a buyer turns a hotel's trailing twelve months into a defensible pro forma: the documents, the expense lines owners leave out, what debt constrains.",
-  lastUpdated: "2026-09-22",
+  lastUpdated: "2026-10-01",
   authorSlug: "miles-cortez",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -100,7 +100,7 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' September 2026 rate sheet marks maximum loan-to-value and coverage as not yet published for every lender type except SBA, whose 504 structure caps at 85% of project cost. It puts the SBA 7(a) maximum allowable rate at 10.00% on the 7.00% Prime effective September 17, 2026.[8]"
+      "Matthews Hotel Markets' October 2026 rate sheet marks maximum loan-to-value and coverage as not yet published for every lender type except SBA, whose 504 structure caps at 85% of project cost. It puts the SBA 7(a) maximum allowable rate at 10.00% on the 7.00% Prime effective September 17, 2026.[8]"
   },
   workedExample: {
     label:

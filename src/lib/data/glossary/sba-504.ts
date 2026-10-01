@@ -11,7 +11,7 @@ export const entry: GlossaryEntry = {
   term: "SBA 504 Loan",
   shortDef: "An SBA 504 loan is a two-part financing: a bank first mortgage plus a fixed-rate second funded by an SBA-backed debenture. A hotel buyer puts in at least 15 percent. The 25-year debenture priced at 6.54 percent in September 2026.",
   fullDef: "504 loans fund buildings, land and long-life equipment, not working capital, and come only through Certified Development Companies.[1] On a hotel, the bank lends at least 50 percent of project cost,[3] the borrower contributes at least 15 percent,[2] and the CDC debenture fills the rest at a fixed rate.",
-  body: "The structure is set by regulation. Because SBA treats a hotel as a limited or single purpose property, the third-party lender must provide at least 50 percent of project cost,[3] and the borrower at least 15 percent, or 20 percent if the business is also two years old or less.[2] That leaves up to 35 percent for the CDC second lien.\n\nSBA's program page lists a $5.5 million maximum 504 loan, maturities of 10, 20 and 25 years, and rates pegged to an increment above 10-year Treasury issues.[1] Our comparison page works through the $5 million debenture cap that applies to a hotel under SOP 50 10 8.[4] The September 2026 25-year debenture priced at 6.54 percent, fees included, on September 10.[5]\n\nThe bank's first lien prices separately, and its rate and terms are set by the lender. 504 proceeds cannot fund working capital or inventory.[1] Owner-operators choose 504 for the long fixed rate on the second. See [SBA 7(a)](/glossary/sba-7a).",
+  body: "The structure is set by regulation. Because SBA treats a hotel as a limited or single purpose property, the third-party lender must provide at least 50 percent of project cost,[3] and the borrower at least 15 percent, or 20 percent if the business is also two years old or less.[2] That leaves up to 35 percent for the CDC second lien.\n\nSBA's program page lists a $5.5 million maximum 504 loan, maturities of 10, 20 and 25 years, and rates pegged to an increment above 10-year Treasury issues.[1] Our comparison page works through the $5 million debenture cap that applies to a hotel under SOP 50 10 8.1, effective October 1, 2026.[4] The September 2026 25-year debenture priced at 6.54 percent, fees included, on September 10.[5]\n\nThe bank's first lien prices separately, and its rate and terms are set by the lender. 504 proceeds cannot fund working capital or inventory.[1] Owner-operators choose 504 for the long fixed rate on the second. See [SBA 7(a)](/glossary/sba-7a).",
   example: "Hypothetical. $6,000,000 hotel project, established operator. Bank first lien at 50%: 0.50 x $6,000,000 = $3,000,000.[3] Borrower equity at 15%: 0.15 x $6,000,000 = $900,000.[2] CDC debenture at the remaining 35%: 0.35 x $6,000,000 = $2,100,000, fixed for 25 years. Check: $3,000,000 + $2,100,000 + $900,000 = $6,000,000. A start-up operator would need 20%, or $1,200,000, and the debenture would shrink to $1,800,000.",
   misconceptions: [
     "A 504 loan is not one loan. It is a bank first mortgage and a separate CDC second, with two sets of documents and two payments.",
@@ -57,12 +57,12 @@ export const entry: GlossaryEntry = {
       publisher: "Legal Information Institute, Cornell Law School"
     },
     {
-      label: "SOP 50 10 8, Lender and Development Company Loan Programs (effective June 1, 2025), Section C, Ch. 1: debenture limits (p. 350) and Limited or Special Purpose Property, which lists hotels (pp. 354-355)",
+      label: "SOP 50 10 8.1, Lender and Development Company Loan Programs (effective October 1, 2026), Section C, Ch. 1: Debenture Limits, $5 million maximum gross debenture (Para. D.1, p. 243) and Borrower's Contribution with the Limited or Special Purpose Property list, which names hotels, motels and other lodging facilities (Para. E.1.c, p. 244)",
       url: "https://legacy.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
       publisher: "U.S. Small Business Administration"
     },
     {
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)"
     }
@@ -78,7 +78,7 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/hotel-loan-rates",
     "/hotel-financing/hotel-lenders-by-type"
   ],
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson"
 };
 

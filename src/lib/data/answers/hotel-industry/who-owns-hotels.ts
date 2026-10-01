@@ -16,7 +16,7 @@ export const page: AnswerPage = {
   title: "Who Owns Hotels in the United States? (2026)",
   h1: "Who owns hotels in the United States?",
   description: "Private owners, franchisees, REITs and funds: who owns US hotels according to AAHOA, AHLA, brand 10-Ks and REIT filings, each claim attributed.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   targetPrompts: [
     "Who owns hotels in the United States?",

@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Hotel Loan Covenants and Cash Management (2026)",
   h1: "What covenants and cash management will my hotel lender require?",
   description: "Lockboxes, cash sweep triggers, DSCR tests, FF&E and seasonality reserves, and guaranties on hotel loans, with terms quoted from 2026 public loan filings.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -130,7 +130,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet puts the 10-year Treasury at 4.94% and SOFR at 3.85% as of September 17, 2026. It marks conventional DSCR and debt yield thresholds as not yet published, because no lender publishes them. The covenant levels on this page come from individual public loan filings.[5]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet puts the 10-year Treasury at 5.29% and SOFR at 3.90% as of September 30, 2026. It marks conventional DSCR and debt yield thresholds as not yet published, because no lender publishes them. The covenant levels on this page come from individual public loan filings.[5]"
   },
   workedExample: {
     label: "Hypothetical: how far NOI can fall before a 1.25x cash sweep trigger on a $10.0M hotel loan",
@@ -201,7 +201,7 @@ export const page: AnswerPage = {
     },
     {
       n: 5,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

@@ -17,7 +17,7 @@ export const page: AnswerPage = {
   title: "How to Buy a Hotel From a Receiver or at Foreclosure",
   h1: "How do I buy a hotel out of receivership or foreclosure?",
   description: "Buying a hotel from a receiver, at a foreclosure sale, from a lender or in bankruptcy: the federal sale rules, credit bids, title, and keeping the flag.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -107,7 +107,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet shows what acquisition debt is priced from: the 10-year Treasury was 4.94 percent on September 17, 2026, SOFR was 3.85 percent, and the SBA 7(a) maximum variable rate was 10.00 percent.[8] A distressed price only helps if the hotel's current income can carry debt at those levels."
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet shows what acquisition debt is priced from: the 10-year Treasury was 5.29 percent on September 30, 2026, SOFR was 3.90 percent, and the SBA 7(a) maximum variable rate was 10.00 percent.[8] A distressed price only helps if the hotel's current income can carry debt at those levels."
   },
   workedExample: {
     label: "Hypothetical: a private sale by a federal receiver, with the brand costs added",
@@ -199,7 +199,7 @@ export const page: AnswerPage = {
     },
     {
       n: 8,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)",
       accessed: "2026-09-18"

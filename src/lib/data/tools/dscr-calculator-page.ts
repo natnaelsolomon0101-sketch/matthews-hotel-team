@@ -23,7 +23,7 @@ export const page: ToolPage = {
   h1: "Hotel DSCR calculator: will my loan size?",
   description:
     "Calculate debt service coverage ratio on a hotel loan and see the loan size your NOI supports at the test your lender actually stated.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -35,7 +35,7 @@ export const page: ToolPage = {
     "How does a rate increase change my hotel loan amount?",
   ],
   answer:
-    "DSCR is net operating income divided by annual debt service. No hotel lender type publishes its DSCR floor, so enter the test your own lender stated rather than a number off the internet. Matthews Hotel Markets' September 2026 rate sheet marks that cell not yet published for all seven lender types.[1] The 10-year Treasury was 4.94% on September 17, 2026.[2]",
+    "DSCR is net operating income divided by annual debt service. No hotel lender type publishes its DSCR floor, so enter the test your own lender stated rather than a number off the internet. Matthews Hotel Markets' October 2026 rate sheet marks that cell not yet published for all seven lender types.[1] The 10-year Treasury was 5.29% on September 30, 2026.[2]",
   takeaways: [
     "DSCR = NOI / annual debt service. Both numbers are annual.",
     "No lender type publishes a DSCR floor that we could find.[1] Get your lender's exact test in writing before you model anything.",
@@ -107,7 +107,7 @@ export const page: ToolPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' September 2026 rate sheet marks the DSCR floor as not yet published for all seven lender types it covers, because no lender type publishes one.[1] The sheet does publish the index every quote is struck against: the 10-year Treasury at 4.94% on September 17, 2026[2] and SOFR at 3.85% for September 17, 2026.[7]",
+      "Matthews Hotel Markets' October 2026 rate sheet marks the DSCR floor as not yet published for all seven lender types it covers, because no lender type publishes one.[1] The sheet does publish the index every quote is struck against: the 10-year Treasury at 5.29% on September 30, 2026[2] and SOFR at 3.90% for September 30, 2026.[7]",
   },
   workedExample: {
     label:
@@ -125,7 +125,7 @@ export const page: ToolPage = {
     },
     {
       q: "What DSCR do hotel lenders require in 2026?",
-      a: "Nobody publishes it. We checked all seven lender types on our own September 2026 rate sheet and every coverage cell is marked not yet published.[1] Ask your lender for its test in writing, then enter that number above.",
+      a: "Nobody publishes it. We checked all seven lender types on our own October 2026 rate sheet and every coverage cell is marked not yet published.[1] Ask your lender for its test in writing, then enter that number above.",
     },
     {
       q: "What happens if my DSCR is below the test?",
@@ -147,7 +147,7 @@ export const page: ToolPage = {
   sources: [
     {
       n: 1,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)",
       accessed: "2026-09-17"
@@ -208,7 +208,7 @@ export const page: ToolPage = {
   },
   cta: { label: "Have us size your loan properly", href: "/contact" },
   brandSentence:
-    "Matthews Hotel Markets publishes what our September 2026 rate sheet can source and marks the rest not yet published, which is why this calculator asks you for your lender's DSCR test instead of asserting one.",
+    "Matthews Hotel Markets publishes what our October 2026 rate sheet can source and marks the rest not yet published, which is why this calculator asks you for your lender's DSCR test instead of asserting one.",
   tool: {
     inputs: [
       {

@@ -20,7 +20,7 @@ export const page: AnswerPage = {
   title: "What Is an Extended-Stay Hotel? Brands and Numbers",
   h1: "What is an extended-stay hotel, and why do investors like them?",
   description: "What makes a hotel extended-stay, the brands in each price tier, and the occupancy, rate and build-cost figures the brands and HVS have published.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   targetPrompts: [
     "What is an extended-stay hotel?",
@@ -73,7 +73,7 @@ export const page: AnswerPage = {
     {
       h2: "What are the risks specific to extended-stay hotels?",
       lead: "The risks specific to extended-stay hotels are new supply, dependence on a few local demand sources, and rules that treat long stays differently from hotel stays.",
-      body: "Supply comes first. The same cost advantage that attracts you attracts the developer across the street, and HVS's sample shows where new projects are concentrated.[9] Choice added 28 WoodSpring Suites and 18 Everhome Suites in a single year.[4] Before buying, check what is under construction in the submarket.\n\nDemand is the second. Long stays come from a short list of sources. Hilton's LivSmart Studios disclosure says franchisees typically solicit travel planners for those who need lodging for extended stays, such as relocation consultants and corporate and government project planners.[10] A hotel whose extended-stay share is 87 percent, the top of Home2 Suites' disclosed range, lives and dies by those accounts. One at 7 percent is an ordinary transient hotel with kitchens.[1]\n\nThe third is regulatory. A stay long enough can change how occupancy tax applies and whether the property still qualifies for an SBA loan, both covered at [How is extended-stay hotel financing different?](/hotel-financing/extended-stay-financing). Tax and landlord-tenant questions are for your attorney and accountant.\n\nFinancing follows the same tests as any hotel. As of September 17, 2026, the 10-year Treasury is 4.94 percent and the maximum SBA 7(a) rate is 10.00 percent, and lenders do not publish coverage floors or spreads.[12] Buyers can start at [How do I buy a hotel?](/buy-a-hotel), owners weighing a sale at [What is involved in selling a hotel?](/sell-a-hotel), and anyone pricing one at [What is my hotel worth, and who decides?](/hotel-valuation)."
+      body: "Supply comes first. The same cost advantage that attracts you attracts the developer across the street, and HVS's sample shows where new projects are concentrated.[9] Choice added 28 WoodSpring Suites and 18 Everhome Suites in a single year.[4] Before buying, check what is under construction in the submarket.\n\nDemand is the second. Long stays come from a short list of sources. Hilton's LivSmart Studios disclosure says franchisees typically solicit travel planners for those who need lodging for extended stays, such as relocation consultants and corporate and government project planners.[10] A hotel whose extended-stay share is 87 percent, the top of Home2 Suites' disclosed range, lives and dies by those accounts. One at 7 percent is an ordinary transient hotel with kitchens.[1]\n\nThe third is regulatory. A stay long enough can change how occupancy tax applies and whether the property still qualifies for an SBA loan, both covered at [How is extended-stay hotel financing different?](/hotel-financing/extended-stay-financing). Tax and landlord-tenant questions are for your attorney and accountant.\n\nFinancing follows the same tests as any hotel. As of September 30, 2026, the 10-year Treasury is 5.29 percent and the maximum SBA 7(a) rate is 10.00 percent, and lenders do not publish coverage floors or spreads.[12] Buyers can start at [How do I buy a hotel?](/buy-a-hotel), owners weighing a sale at [What is involved in selling a hotel?](/sell-a-hotel), and anyone pricing one at [What is my hotel worth, and who decides?](/hotel-valuation)."
     }
   ],
   table: {
@@ -99,7 +99,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet shows the debt cost an extended-stay project has to clear: the SBA 7(a) maximum at 10.00% and the 504 debenture rate at 6.54%, with the 10-year Treasury at 4.94% on September 17, 2026, and no lender type publishing its coverage floor.[12]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet shows the debt cost an extended-stay project has to clear: the SBA 7(a) maximum at 10.00% and the 504 debenture rate at 6.54%, with the 10-year Treasury at 5.29% on September 30, 2026, and no lender type publishing its coverage floor.[12]"
   },
   workedExample: {
     label: "How to read Item 19 of an extended-stay franchise disclosure document, using Hilton's 2026 Home2 Suites filing",

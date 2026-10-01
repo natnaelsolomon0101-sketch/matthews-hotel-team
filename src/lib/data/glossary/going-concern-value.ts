@@ -52,7 +52,7 @@ export const entry: GlossaryEntry = {
       publisher: "Legal Information Institute, Cornell Law School"
     },
     {
-      label: "SOP 50 10 8, Lender and Development Company Loan Programs (effective June 1, 2025), Section C, Ch. 1: debenture limits (p. 350) and Limited or Special Purpose Property, which lists hotels (pp. 354-355)",
+      label: "SOP 50 10 8.1, Lender and Development Company Loan Programs (effective October 1, 2026), Section C, Ch. 1: Debenture Limits, $5 million maximum gross debenture (Para. D.1, p. 243) and Borrower's Contribution with the Limited or Special Purpose Property list, which names hotels, motels and other lodging facilities (Para. E.1.c, p. 244)",
       url: "https://legacy.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
       publisher: "U.S. Small Business Administration"
     }
@@ -69,7 +69,7 @@ export const entry: GlossaryEntry = {
     "/hotel-valuation/broker-opinion-of-value",
     "/hotel-financing/loan-requirements"
   ],
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon"
 };
 

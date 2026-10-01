@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Interest Rate Caps on Floating-Rate Hotel Loans (2026)",
   h1: "Do I need an interest rate cap on a floating-rate hotel loan?",
   description: "How a rate cap works on a SOFR-based hotel loan, who requires one, what drives the price, and what one public hotel owner paid from 2023 to 2025.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -27,7 +27,7 @@ export const page: AnswerPage = {
     "Is a rate cap or a swap better for a floating-rate hotel loan?",
     "Who pays me when SOFR goes above my cap strike?"
   ],
-  answer: "If the loan is floating-rate bridge or debt fund money, expect the lender to require one. A cap pays you whenever SOFR resets above a strike rate, so your index cost stops rising there. SOFR was 3.85 percent on September 17, 2026.[1] One public hotel owner paid $5.1 million in 2025 for caps on $1.64 billion of notional, struck between 4.00 and 5.25 percent.[2]",
+  answer: "If the loan is floating-rate bridge or debt fund money, expect the lender to require one. A cap pays you whenever SOFR resets above a strike rate, so your index cost stops rising there. SOFR was 3.90 percent on September 30, 2026.[1] One public hotel owner paid $5.1 million in 2025 for caps on $1.64 billion of notional, struck between 4.00 and 5.25 percent.[2]",
   takeaways: [
     "A cap is a one-time purchase, paid at closing. It is insurance on the index, not a change to your loan.[3]",
     "The payout formula is simple: day count fraction times notional times the amount by which the index exceeds the strike.[3]",
@@ -64,7 +64,7 @@ export const page: AnswerPage = {
     {
       h2: "Is a cap better than a swap or a fixed-rate loan?",
       lead: "A cap limits your rate and lets you benefit if rates fall, a swap fixes your rate in both directions, and a fixed-rate loan removes the question but adds prepayment cost.",
-      body: "A cap costs cash up front and nothing afterward. If SOFR falls, your interest falls with it. A swap has no upfront premium, but it locks the rate, and ending it early when rates have fallen means paying a termination amount. That matters on a transitional hotel loan, where the plan is to repay early. It is why short-term hotel bridge loans are usually hedged with caps.\n\nFixed-rate permanent loans solve rate risk differently and carry their own exit cost. `/glossary/yield-maintenance` and `/glossary/defeasance` explain the two common prepayment structures, and `/hotel-financing/hotel-loan-rates` compares the indexes each loan type is priced from. The 10-year Treasury was 4.94 percent on September 17, 2026.[4]\n\nIf the hotel is stabilized and you plan to hold, the better question may be whether you need floating-rate debt at all. `/hotel-financing/refinance` covers moving from bridge to permanent debt."
+      body: "A cap costs cash up front and nothing afterward. If SOFR falls, your interest falls with it. A swap has no upfront premium, but it locks the rate, and ending it early when rates have fallen means paying a termination amount. That matters on a transitional hotel loan, where the plan is to repay early. It is why short-term hotel bridge loans are usually hedged with caps.\n\nFixed-rate permanent loans solve rate risk differently and carry their own exit cost. `/glossary/yield-maintenance` and `/glossary/defeasance` explain the two common prepayment structures, and `/hotel-financing/hotel-loan-rates` compares the indexes each loan type is priced from. The 10-year Treasury was 5.29 percent on September 30, 2026.[4]\n\nIf the hotel is stabilized and you plan to hold, the better question may be whether you need floating-rate debt at all. `/hotel-financing/refinance` covers moving from bridge to permanent debt."
     }
   ],
   table: {
@@ -103,11 +103,11 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet puts SOFR, the index a hotel bridge loan floats over, at 3.85% for September 17, 2026. It marks the bridge spread and the cap strike as not yet published, because no lender publishes either.[4]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet puts SOFR, the index a hotel bridge loan floats over, at 3.90% for September 30, 2026. It marks the bridge spread and the cap strike as not yet published, because no lender publishes either.[4]"
   },
   workedExample: {
     label: "Hypothetical: a 4.50% SOFR cap on a $12.0M hotel bridge loan",
-    body: "Hypothetical. Loan $12,000,000, interest-only, floating at SOFR plus an assumed 3.50 percent spread. The lender requires a cap with a 4.50 percent strike. The spread and the strike are assumptions for the arithmetic, not quotes. The table above is from Ashford Hospitality Trust's 2025 annual report.[2]\n\nToday. With SOFR at 3.85 percent, the loan rate is 7.35 percent and interest is $882,000 a year. SOFR is below the strike, so the cap pays nothing.\n\nSOFR at 5.00 percent. The loan rate is 8.50 percent. The cap pays 0.50 percent on $12,000,000, or $60,000 a year. For a 30-day period that is 30 divided by 360, times $12,000,000, times 0.50 percent, or $5,000.\n\nSOFR at 6.00 percent. The loan rate is 9.50 percent, and uncapped interest is $1,140,000 a year. The cap pays 1.50 percent on $12,000,000, or $180,000 a year, which is $15,000 for a 30-day period. Net interest is $960,000, an effective rate of 8.00 percent. That is the strike plus the spread, and it is the worst case for as long as the cap lasts.\n\nCoverage check. If the hotel's NOI is $1,200,000, DSCR at the capped rate is $1,200,000 divided by $960,000, or 1.25 times. Without the cap at 6.00 percent SOFR it would be 1.05 times. That difference is why the lender requires the cap."
+    body: "Hypothetical. Loan $12,000,000, interest-only, floating at SOFR plus an assumed 3.50 percent spread. The lender requires a cap with a 4.50 percent strike. The spread and the strike are assumptions for the arithmetic, not quotes. The table above is from Ashford Hospitality Trust's 2025 annual report.[2]\n\nToday. With SOFR at 3.90 percent, the loan rate is 7.35 percent and interest is $882,000 a year. SOFR is below the strike, so the cap pays nothing.\n\nSOFR at 5.00 percent. The loan rate is 8.50 percent. The cap pays 0.50 percent on $12,000,000, or $60,000 a year. For a 30-day period that is 30 divided by 360, times $12,000,000, times 0.50 percent, or $5,000.\n\nSOFR at 6.00 percent. The loan rate is 9.50 percent, and uncapped interest is $1,140,000 a year. The cap pays 1.50 percent on $12,000,000, or $180,000 a year, which is $15,000 for a 30-day period. Net interest is $960,000, an effective rate of 8.00 percent. That is the strike plus the spread, and it is the worst case for as long as the cap lasts.\n\nCoverage check. If the hotel's NOI is $1,200,000, DSCR at the capped rate is $1,200,000 divided by $960,000, or 1.25 times. Without the cap at 6.00 percent SOFR it would be 1.05 times. That difference is why the lender requires the cap."
   },
   faq: [
     {
@@ -142,7 +142,7 @@ export const page: AnswerPage = {
   sources: [
     {
       n: 1,
-      label: "Secured Overnight Financing Rate (SOFR): 3.85% for September 17, 2026",
+      label: "Secured Overnight Financing Rate (SOFR): 3.90% for September 30, 2026",
       url: "https://www.newyorkfed.org/markets/reference-rates/sofr",
       publisher: "Federal Reserve Bank of New York",
       accessed: "2026-09-18"
@@ -163,7 +163,7 @@ export const page: AnswerPage = {
     },
     {
       n: 4,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

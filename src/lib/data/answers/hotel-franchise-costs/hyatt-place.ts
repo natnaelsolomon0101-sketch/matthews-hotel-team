@@ -16,7 +16,7 @@ export const page: AnswerPage = {
   title: "Hyatt Place Franchise Cost in 2026: Fees From the FDD",
   h1: "How much does a Hyatt Place franchise cost in 2026?",
   description: "Hyatt Place franchise fees from the 2026 FDD: $75,000 application fee, 5% royalty, 3.5% commercial services fee, Item 7 range, term, transfer and Item 19.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -96,7 +96,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet records Prime at 7.00% effective September 17, 2026 and the SBA 7(a) maximum allowable rate at 10.00%, the indexes a loan for an application fee, a PIP or a conversion is priced against.[2]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet records Prime at 7.00% effective September 17, 2026 and the SBA 7(a) maximum allowable rate at 10.00%, the indexes a loan for an application fee, a PIP or a conversion is priced against.[2]"
   },
   workedExample: {
     label: "Hypothetical: a year of Hyatt Place brand fees on assumed rooms revenue",
@@ -142,7 +142,7 @@ export const page: AnswerPage = {
     },
     {
       n: 2,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

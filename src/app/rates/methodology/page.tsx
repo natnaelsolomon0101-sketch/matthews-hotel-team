@@ -173,10 +173,13 @@ export default function RatesMethodologyPage() {
               changelog says so. When the Federal Reserve&rsquo;s Prime series
               lags a move the banks have already announced, as it did after
               the September 16, 2026 FOMC decision, the sheet uses the
-              banks&rsquo; own dated announcements and names them, which is
-              why September&rsquo;s Prime reads{" "}
-              {BENCHMARKS.find((b) => b.key === "prime")?.value.toFixed(2)}% as
-              of September 17, 2026.
+              banks&rsquo; own dated announcements and names them. The Federal
+              Reserve&rsquo;s own H.15 release and FRED series DPRIME have
+              since printed the{" "}
+              {BENCHMARKS.find((b) => b.key === "prime")?.value.toFixed(2)}%
+              Prime, so this edition cites the Federal Reserve for it and the
+              bank announcements stay on the September edition that needed
+              them.
             </p>
             <ul className="mt-6 space-y-3 list-disc list-outside pl-5 marker:text-[color:var(--text-secondary)]">
               {BENCHMARKS.map((b) => (

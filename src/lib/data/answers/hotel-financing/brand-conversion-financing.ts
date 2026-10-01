@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Financing a Hotel Brand Conversion or Reflag (2026)",
   h1: "How do I finance converting my hotel to a new brand?",
   description: "How owners pay for a hotel reflag in 2026: conversion budgets from public FDDs, exit damages, key money, and the bank, bridge and SBA loans that fund it.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -49,7 +49,7 @@ export const page: AnswerPage = {
     {
       h2: "What loans pay for a conversion?",
       lead: "A bank renovation loan, a bridge loan that also refinances the existing mortgage, or an SBA loan, depending on size, the hotel's current cash flow and how much the conversion disrupts it.",
-      body: "A bank loan fits when the hotel already covers its debt and the conversion is a moderate renovation. The capital rules help here: improvements to an existing income-producing property are excluded from the high volatility commercial real estate category when the property's cash flow supports its debt service and expenses under the bank's permanent-loan criteria.[3] Banks do not publish their terms, and our rate sheet marks them not yet published.[4]\n\nA bridge loan fits when the conversion is deep enough to interrupt cash flow, or when the existing loan has to be paid off to allow it. The bridge lender underwrites the stabilized NOI under the new flag, holds back the renovation budget and funds it in draws, and expects to be refinanced once the hotel has a trailing record. Bridge debt floats over SOFR, which was 3.85 percent for September 17, 2026.[4] See `/hotel-financing/bridge-loans`.\n\nSBA works for smaller projects. A 7(a) loan caps at $5 million, and the portion that improves real property can run 25 years plus the period needed to complete the improvements.[5] A 504 project can include the renovation of existing buildings, with a fixed-rate debenture that priced at 6.54 percent for 25 years on September 10, 2026.[6][4] If the new brand meets the FTC definition of a franchise, it must be on the SBA Franchise Directory for the loan to be eligible.[7]\n\nBuying a hotel and converting it in one transaction uses the same three tools, with the purchase price and the conversion budget in one sources-and-uses table. Lenders size that loan to total cost, not to the purchase price alone."
+      body: "A bank loan fits when the hotel already covers its debt and the conversion is a moderate renovation. The capital rules help here: improvements to an existing income-producing property are excluded from the high volatility commercial real estate category when the property's cash flow supports its debt service and expenses under the bank's permanent-loan criteria.[3] Banks do not publish their terms, and our rate sheet marks them not yet published.[4]\n\nA bridge loan fits when the conversion is deep enough to interrupt cash flow, or when the existing loan has to be paid off to allow it. The bridge lender underwrites the stabilized NOI under the new flag, holds back the renovation budget and funds it in draws, and expects to be refinanced once the hotel has a trailing record. Bridge debt floats over SOFR, which was 3.90 percent for September 30, 2026.[4] See `/hotel-financing/bridge-loans`.\n\nSBA works for smaller projects. A 7(a) loan caps at $5 million, and the portion that improves real property can run 25 years plus the period needed to complete the improvements.[5] A 504 project can include the renovation of existing buildings, with a fixed-rate debenture that priced at 6.54 percent for 25 years on September 10, 2026.[6][4] If the new brand meets the FTC definition of a franchise, it must be on the SBA Franchise Directory for the loan to be eligible.[7]\n\nBuying a hotel and converting it in one transaction uses the same three tools, with the purchase price and the conversion budget in one sources-and-uses table. Lenders size that loan to total cost, not to the purchase price alone."
     },
     {
       h2: "What is key money, and does it reduce what I need to borrow?",
@@ -125,7 +125,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet indexes its Bridge and debt fund row, the row most conversions are financed from, to SOFR at 3.85% for September 17, 2026, and notes that a bridge loan almost always requires a purchased rate cap. The spread is marked not yet published.[4]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet indexes its Bridge and debt fund row, the row most conversions are financed from, to SOFR at 3.90% for September 30, 2026, and notes that a bridge loan almost always requires a purchased rate cap. The spread is marked not yet published.[4]"
   },
   workedExample: {
     label: "Hypothetical: reflagging a 100-room hotel five years before the old agreement expires",
@@ -189,7 +189,7 @@ export const page: AnswerPage = {
     },
     {
       n: 4,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

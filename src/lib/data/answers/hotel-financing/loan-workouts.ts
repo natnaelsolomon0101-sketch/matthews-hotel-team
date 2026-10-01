@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Hotel Loan Workouts and Special Servicing",
   h1: "What is a loan workout and how does it work for a distressed hotel?",
   description: "What happens when a hotel loan goes to special servicing, what a workout can and cannot fix, and what an owner should do in the first 30 days.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "miles-cortez",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -122,7 +122,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet is where a workout conversation starts, because an extension only makes sense if a takeout exists at today's index: the 10-year Treasury was 4.94% on September 17, 2026 and SOFR was 3.85% for September 17, 2026.[3] The spread over each is marked not yet published.[2]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet is where a workout conversation starts, because an extension only makes sense if a takeout exists at today's index: the 10-year Treasury was 5.29% on September 30, 2026 and SOFR was 3.90% for September 30, 2026.[3] The spread over each is marked not yet published.[2]"
   },
   workedExample: {
     label: "Hypothetical: what a two-year extension actually costs",
@@ -172,7 +172,7 @@ export const page: AnswerPage = {
     },
     {
       n: 2,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

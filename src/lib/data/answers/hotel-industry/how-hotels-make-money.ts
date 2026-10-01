@@ -16,7 +16,7 @@ export const page: AnswerPage = {
   title: "How Do Hotels Make Money? Revenue, Costs and Margins",
   h1: "How do hotels make money?",
   description: "Where hotel revenue comes from, how the USALI statement is laid out, and the hotel-level margins two public REITs reported for 2025.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   targetPrompts: [
     "How do hotels make money?",
@@ -69,7 +69,7 @@ export const page: AnswerPage = {
     {
       h2: "How does hotel income turn into value and loan proceeds?",
       lead: "Buyers divide a hotel's net operating income by a cap rate to get value, and lenders divide the same income by debt service to decide how much they will lend.",
-      body: "That is why the statement format matters so much: a missing management fee or reserve overstates income, and the buyer or lender will put it back. As of September 17, 2026, the 10-year Treasury is 4.94 percent and the maximum SBA 7(a) rate is 10.00 percent, and lenders do not publish the spreads or coverage floors they apply on top.[7] The method for turning income into a price is at [Walk me through the math on valuing a select-service hotel](/hotel-valuation/how-to-value-a-hotel). The financing side starts at [How does hotel financing work, and what does it cost right now?](/hotel-financing), and owners weighing a sale can start at [What is involved in selling a hotel?](/sell-a-hotel)."
+      body: "That is why the statement format matters so much: a missing management fee or reserve overstates income, and the buyer or lender will put it back. As of September 30, 2026, the 10-year Treasury is 5.29 percent and the maximum SBA 7(a) rate is 10.00 percent, and lenders do not publish the spreads or coverage floors they apply on top.[7] The method for turning income into a price is at [Walk me through the math on valuing a select-service hotel](/hotel-valuation/how-to-value-a-hotel). The financing side starts at [How does hotel financing work, and what does it cost right now?](/hotel-financing), and owners weighing a sale can start at [What is involved in selling a hotel?](/sell-a-hotel)."
     }
   ],
   table: {
@@ -98,7 +98,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet shows what hotel income has to cover: with the 10-year Treasury at 4.94% on September 17, 2026 and the SBA 7(a) maximum at 10.00%, debt service takes a large share of the third of revenue a select-service hotel keeps at the property level.[7]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet shows what hotel income has to cover: with the 10-year Treasury at 5.29% on September 30, 2026 and the SBA 7(a) maximum at 10.00%, debt service takes a large share of the third of revenue a select-service hotel keeps at the property level.[7]"
   },
   workedExample: {
     label: "Hypothetical: scaling a 100-room select-service hotel from one REIT's reported ratios",

@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "How to Refinance a Hotel Loan in 2026",
   h1: "How do I refinance a hotel loan before it matures?",
   description: "A step-by-step hotel refinance in 2026: when to start, how proceeds are sized, what to do when value dropped, and the options when the numbers do not work.",
-  lastUpdated: "2026-09-17",
+  lastUpdated: "2026-10-01",
   authorSlug: "miles-cortez",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -27,7 +27,7 @@ export const page: AnswerPage = {
     "How long does a hotel refinance take from application to close?",
     "Will a PIP deadline affect my ability to refinance my hotel?"
   ],
-  answer: "Start twelve months before maturity. Order a fresh valuation, get the PIP status in writing, and size the new loan against today's rate, not the old one. The 10-year Treasury, the index a fixed refinance prices from, was 4.94 percent on September 17, 2026.[1] If the new loan is smaller than the balance, the gap closes with equity, an extension, mezzanine, or a sale.",
+  answer: "Start twelve months before maturity. Order a fresh valuation, get the PIP status in writing, and size the new loan against today's rate, not the old one. The 10-year Treasury, the index a fixed refinance prices from, was 5.29 percent on September 30, 2026.[1] If the new loan is smaller than the balance, the gap closes with equity, an extension, mezzanine, or a sale.",
   takeaways: [
     "Twelve months out is the right time to start. Ninety days out, your options narrow to whatever the incumbent lender offers.",
     "A higher rate means a higher payment on every dollar borrowed, so the same NOI supports a smaller loan than it did at 2021 rates.",
@@ -116,7 +116,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet puts the 10-year Treasury, the index a permanent refinance is sized against, at 4.94% as of September 17, 2026, and marks the spread over it as not yet published. Stress-test your own refinance against the index plus your lender's quoted spread, not against a remembered coupon.[2]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet puts the 10-year Treasury, the index a permanent refinance is sized against, at 5.29% as of September 30, 2026, and marks the spread over it as not yet published. Stress-test your own refinance against the index plus your lender's quoted spread, not against a remembered coupon.[2]"
   },
   workedExample: {
     label: "Hypothetical: a 2021 loan maturing in 2027",
@@ -162,7 +162,7 @@ export const page: AnswerPage = {
     },
     {
       n: 2,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

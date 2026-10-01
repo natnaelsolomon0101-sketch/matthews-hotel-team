@@ -17,7 +17,7 @@ export const page: AnswerPage = {
   title: "Seller Financing for a Hotel Purchase: How It Works",
   h1: "Can I get seller financing to buy a hotel?",
   description: "When a hotel seller will carry a note, how SBA counts it toward your down payment, what the bank requires, and how the IRS taxes the seller. With sources.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -56,7 +56,7 @@ export const page: AnswerPage = {
     {
       h2: "What interest rate does a seller note need to carry?",
       lead: "At least the IRS applicable federal rate for its term, or the IRS will treat part of the principal as interest.",
-      body: "IRS Publication 537 says an installment sale contract generally has adequate stated interest if its rate is at least the test rate, which is built from the applicable federal rate (AFR). The AFR depends on the note's term: the short-term rate for 3 years or less, the mid-term rate for over 3 and up to 9 years, and the long-term rate for over 9 years.[4] If the contract does not provide adequate stated interest, section 1274 or section 483 recharacterizes part of the stated principal as interest.[4]\n\nFor October 2026 the annual AFRs are 4.25 percent short-term, 4.61 percent mid-term and 5.22 percent long-term.[2] Those are tax floors, not market rates. A second-position note behind a hotel mortgage is riskier than a Treasury, and the seller is entitled to price it that way. For context, Matthews Hotel Markets' rate sheet shows the 10-year Treasury at 4.94 percent on September 17, 2026 and the SBA 7(a) maximum variable rate at 10.00 percent.[9]"
+      body: "IRS Publication 537 says an installment sale contract generally has adequate stated interest if its rate is at least the test rate, which is built from the applicable federal rate (AFR). The AFR depends on the note's term: the short-term rate for 3 years or less, the mid-term rate for over 3 and up to 9 years, and the long-term rate for over 9 years.[4] If the contract does not provide adequate stated interest, section 1274 or section 483 recharacterizes part of the stated principal as interest.[4]\n\nFor October 2026 the annual AFRs are 4.25 percent short-term, 4.61 percent mid-term and 5.22 percent long-term.[2] Those are tax floors, not market rates. A second-position note behind a hotel mortgage is riskier than a Treasury, and the seller is entitled to price it that way. For context, Matthews Hotel Markets' rate sheet shows the 10-year Treasury at 5.29 percent on September 30, 2026 and the SBA 7(a) maximum variable rate at 10.00 percent.[9]"
     },
     {
       h2: "I am the seller. How is a carried note taxed?",
@@ -107,7 +107,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet puts the SBA 7(a) maximum variable rate at 10.00 percent and the 25-year SBA 504 debenture at 6.54 percent.[9] A seller note is priced between the IRS floor and what that senior debt costs, by negotiation."
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet puts the SBA 7(a) maximum variable rate at 10.00 percent and the 25-year SBA 504 debenture at 6.54 percent.[9] A seller note is priced between the IRS floor and what that senior debt costs, by negotiation."
   },
   workedExample: {
     label: "Hypothetical: a seller note inside an SBA 7(a) hotel purchase, from both sides",
@@ -206,7 +206,7 @@ export const page: AnswerPage = {
     },
     {
       n: 9,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)",
       accessed: "2026-09-18"

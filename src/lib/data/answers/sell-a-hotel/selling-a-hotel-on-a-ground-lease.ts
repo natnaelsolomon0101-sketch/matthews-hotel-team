@@ -17,7 +17,7 @@ export const page: AnswerPage = {
   title: "Selling a Hotel on a Ground Lease: What Changes",
   h1: "Can I sell a hotel that sits on a ground lease?",
   description: "Yes, you sell the leasehold. How remaining term, ground rent, landlord consent, the buyer's lender, the brand and 1031 rules shape price and buyers.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -107,7 +107,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet lists the SBA 504 debenture at 25 years, priced at 6.54 percent on September 10, 2026.[2] That 25-year term is the number a leasehold's remaining term is measured against for a 504 buyer."
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet lists the SBA 504 debenture at 25 years, priced at 6.54 percent on September 10, 2026.[2] That 25-year term is the number a leasehold's remaining term is measured against for a 504 buyer."
   },
   workedExample: {
     label: "Hypothetical: pricing the rent and testing the term",
@@ -157,7 +157,7 @@ export const page: AnswerPage = {
     },
     {
       n: 2,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)",
       accessed: "2026-09-18"

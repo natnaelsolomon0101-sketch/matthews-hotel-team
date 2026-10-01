@@ -17,7 +17,7 @@ export const page: AnswerPage = {
   title: "Cambria Hotels Franchise Cost in 2026: Fees From the FDD",
   h1: "How much does a Cambria Hotels franchise cost in 2026?",
   description: "Cambria Hotels franchise fees from Choice's 2026 FDD: $500 per room affiliation fee, 6% royalty, 3% marketing fee, $16.2M to $33.6M to build 124 rooms, Item 19.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -98,7 +98,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet records Prime at 7.00% effective September 17, 2026 and SOFR at 3.85%, the indexes a construction loan or an acquisition loan for a franchised hotel is priced against.[2]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet records Prime at 7.00% effective September 17, 2026 and SOFR at 3.90% on September 30, 2026, the indexes a construction loan or an acquisition loan for a franchised hotel is priced against.[2]"
   },
   workedExample: {
     label: "Hypothetical: a year of Cambria brand fees on assumed room revenue",
@@ -144,7 +144,7 @@ export const page: AnswerPage = {
     },
     {
       n: 2,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

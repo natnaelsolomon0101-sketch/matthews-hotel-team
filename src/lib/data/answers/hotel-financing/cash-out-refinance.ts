@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Hotel Cash-Out Refinance: How It Works (2026)",
   h1: "How do I take cash out when I refinance my hotel?",
   description: "How a hotel cash-out refinance works: sources and uses, what limits proceeds, SBA limits on cash out, seasoning, and how loan proceeds are taxed.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -120,7 +120,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet puts the 10-year Treasury at 4.94% and SOFR at 3.85% as of September 17, 2026. It marks conventional DSCR, debt yield and loan-to-value limits as not yet published, for cash-out loans as for any other, because no lender publishes them.[4]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet puts the 10-year Treasury at 5.29% and SOFR at 3.90% as of September 30, 2026. It marks conventional DSCR, debt yield and loan-to-value limits as not yet published, for cash-out loans as for any other, because no lender publishes them.[4]"
   },
   workedExample: {
     label: "Hypothetical: taking cash out of a $15.0M hotel with a $6.2M loan balance",
@@ -180,7 +180,7 @@ export const page: AnswerPage = {
     },
     {
       n: 4,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

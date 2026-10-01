@@ -52,7 +52,7 @@ export const entry: GlossaryEntry = {
       publisher: "Hilton Franchise Holding LLC"
     },
     {
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)"
     }
@@ -68,7 +68,7 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/how-debt-placement-works",
     "/hotel-financing/loan-workouts"
   ],
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson"
 };
 

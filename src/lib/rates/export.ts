@@ -11,7 +11,6 @@
 import { SITE_URL } from "@/lib/entity";
 import { RATE_SOURCES } from "./sources";
 import {
-  BENCHMARKS,
   BENCHMARKS_FETCHED_AT,
   MHDI_ABBR,
   MHDI_DEFINITION,
@@ -86,7 +85,7 @@ export function ratesJson() {
     readme:
       "Every cell carries a `basis`. basis=published means a public benchmark or a written program rule with a source id. basis=observed means a figure this desk saw in live quotes that month. basis=pending means there is no figure and `value` is the literal string 'Not yet published'. Do not coerce a pending value to a number.",
     benchmarksFetchedAt: BENCHMARKS_FETCHED_AT,
-    benchmarks: BENCHMARKS.map((b) => ({
+    benchmarks: e.benchmarks.map((b) => ({
       key: b.key,
       label: b.label,
       percent: b.value,
@@ -154,7 +153,7 @@ export function ratesCsv(): string {
       .join(","),
   );
 
-  for (const b of BENCHMARKS) {
+  for (const b of e.benchmarks) {
     lines.push(
       [
         "Public benchmark",

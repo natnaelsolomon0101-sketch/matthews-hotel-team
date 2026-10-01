@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "How to Buy a Hotel: The 2026 Buyer's Guide",
   h1: "How do I buy a hotel?",
   description: "How buying a hotel works in 2026: the cash it takes, the loan, the brand's approval, due diligence, and whether a 1031 exchange fits.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -44,12 +44,12 @@ export const page: AnswerPage = {
     {
       h2: "How much money do I need?",
       lead: "The down payment plus the brand's fees, the PIP, closing costs and reserves. Only one of those has a minimum written into federal regulation.",
-      body: "SBA 504 requires a hotel buyer to contribute at least 15 percent of project cost, or 20 percent if the business has operated two years or less.[1][2] Banks, CMBS lenders, life companies and debt funds set their own equity requirements and do not publish them, which our September 2026 rate sheet records as not yet published.[7] On top of equity, a branded purchase carries an application fee, $200,000 for a change of ownership on Hilton's 2025 Hampton schedule, and a property improvement plan.[3] The full stack, with a worked example, is at [How much money do I need to buy a hotel?](/buy-a-hotel/how-much-money-do-you-need)."
+      body: "SBA 504 requires a hotel buyer to contribute at least 15 percent of project cost, or 20 percent if the business has operated two years or less.[1][2] Banks, CMBS lenders, life companies and debt funds set their own equity requirements and do not publish them, which our October 2026 rate sheet records as not yet published.[7] On top of equity, a branded purchase carries an application fee, $200,000 for a change of ownership on Hilton's 2025 Hampton schedule, and a property improvement plan.[3] The full stack, with a worked example, is at [How much money do I need to buy a hotel?](/buy-a-hotel/how-much-money-do-you-need)."
     },
     {
       h2: "How do I finance it?",
       lead: "With an SBA loan on a smaller hotel, or a bank, CMBS, life company or debt fund loan on a larger or more stable one. Each type reads the same hotel differently.",
-      body: "As of September 17, 2026, the 10-year Treasury is 4.94 percent, SOFR is 3.85 percent and Prime is 7.00 percent. The SBA 7(a) maximum allowable rate is 10.00 percent, and the 25-year SBA 504 debenture priced at 6.54 percent on September 10.[7] Spreads over those indexes are not published by any lender type, so the only real quote is a written one. Start at [How does hotel financing work?](/hotel-financing), compare the SBA programs at [SBA 7(a) versus 504](/hotel-financing/sba-7a-vs-504), and test a purchase price against a loan with the [DSCR calculator](/tools/dscr-calculator)."
+      body: "As of September 30, 2026, the 10-year Treasury is 5.29 percent, SOFR is 3.90 percent and Prime is 7.00 percent. The SBA 7(a) maximum allowable rate is 10.00 percent, and the 25-year SBA 504 debenture priced at 6.54 percent on September 10.[7] Spreads over those indexes are not published by any lender type, so the only real quote is a written one. Start at [How does hotel financing work?](/hotel-financing), compare the SBA programs at [SBA 7(a) versus 504](/hotel-financing/sba-7a-vs-504), and test a purchase price against a loan with the [DSCR calculator](/tools/dscr-calculator)."
     },
     {
       h2: "What due diligence do I need?",
@@ -125,7 +125,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet gives a buyer the indexes every quote is struck against: the 10-year Treasury at 4.94% on September 17, 2026, SOFR at 3.85% for the same day, and Prime at 7.00%. It marks the spreads over them as not yet published.[7]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet gives a buyer the indexes every quote is struck against: the 10-year Treasury at 5.29% on September 30, 2026, SOFR at 3.90% for the same day, and Prime at 7.00%. It marks the spreads over them as not yet published.[7]"
   },
   workedExample: {
     label: "Hypothetical: when the franchise application is filed decides when you close",
@@ -171,7 +171,7 @@ export const page: AnswerPage = {
     },
     {
       n: 2,
-      label: "SOP 50 10 8, Lender and Development Company Loan Programs (effective June 1, 2025), Section C, Ch. 1: Limited or Special Purpose Property, which lists hotels (pp. 354-355)",
+      label: "SOP 50 10 8.1, Lender and Development Company Loan Programs (effective October 1, 2026), Section C, Ch. 1: Borrower's Contribution and the Limited or Special Purpose Property list, which names hotels, motels and other lodging facilities (Para. E.1.c, p. 244)",
       url: "https://legacy.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
       publisher: "U.S. Small Business Administration",
       accessed: "2026-09-18"
@@ -206,7 +206,7 @@ export const page: AnswerPage = {
     },
     {
       n: 7,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

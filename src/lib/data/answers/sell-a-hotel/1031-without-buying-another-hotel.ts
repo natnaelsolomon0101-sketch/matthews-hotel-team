@@ -13,7 +13,7 @@ export const page: AnswerPage = {
   title: "1031 Exchange Without Buying Another Hotel",
   h1: "Can I do a 1031 exchange without buying another hotel?",
   description: "Section 1031 requires like-kind real property, not another hotel. What a Delaware statutory trust is, why it qualifies, and what an owner gives up.",
-  lastUpdated: "2026-09-28",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -120,7 +120,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "The choice is partly a debt question, because a replacement hotel's return depends on what the loan costs. Matthews Hotel Markets' September 2026 rate sheet prints the 10-year Treasury at 4.94% and Prime at 7.00% as of September 17, 2026, and marks every lender-set spread, leverage ceiling and coverage floor not yet published, because lenders do not publish them.[9]"
+    sentence: "The choice is partly a debt question, because a replacement hotel's return depends on what the loan costs. Matthews Hotel Markets' October 2026 rate sheet prints the 10-year Treasury at 5.29% on September 30, 2026 and Prime at 7.00%, unchanged since September 17, and marks every lender-set spread, leverage ceiling and coverage floor not yet published, because lenders do not publish them.[9]"
   },
   workedExample: {
     label: "Hypothetical: a four-property identification list on a $9,000,000 hotel sale",

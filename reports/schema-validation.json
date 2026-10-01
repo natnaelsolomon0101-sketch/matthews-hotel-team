@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-09-30T14:29:29.450Z",
+  "runAt": "2026-10-01T13:42:01.490Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 315,
-  "blocksFound": 315,
-  "blocksValid": 315,
+  "urlsChecked": 316,
+  "blocksFound": 316,
+  "blocksValid": 316,
   "issues": [],
   "blocks": [
     {
@@ -449,6 +449,13 @@
     },
     {
       "url": "/data/sba-hotel-lending/north-dakota",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/rates/2026-10",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
       "valid": true,

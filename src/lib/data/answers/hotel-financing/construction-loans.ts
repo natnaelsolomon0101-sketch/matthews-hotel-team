@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Hotel Construction Loans: How They Work in 2026",
   h1: "How do I finance hotel construction in 2026?",
   description: "How ground-up hotel construction loans work in 2026: bank limits, equity, draws, interest reserve, guaranties, SBA options and the permanent takeout.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -120,7 +120,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet indexes its Construction row to Prime or SOFR, with Prime at 7.00% effective September 17, 2026 and SOFR at 3.85% for the same date. It marks the construction spread as not yet published, because no lender publishes one and we do not print a spread until three independent lenders quote the same structure in a month.[8]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet indexes its Construction row to Prime or SOFR, with Prime at 7.00%, unchanged since September 17, 2026, and SOFR at 3.90% for September 30, 2026. It marks the construction spread as not yet published, because no lender publishes one and we do not print a spread until three independent lenders quote the same structure in a month.[8]"
   },
   workedExample: {
     label: "Hypothetical: 89-room select-service hotel, $21.0M all-in cost",
@@ -212,7 +212,7 @@ export const page: AnswerPage = {
     },
     {
       n: 8,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

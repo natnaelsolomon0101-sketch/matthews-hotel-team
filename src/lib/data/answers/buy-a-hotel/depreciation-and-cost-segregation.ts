@@ -24,7 +24,7 @@ export const page: AnswerPage = {
   h1: "How does depreciation work when I buy a hotel?",
   description:
     "How a hotel purchase price splits into land, building, improvements and FF&E, what bonus depreciation reaches in 2026, and when you can use the deduction.",
-  lastUpdated: "2026-09-23",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -117,7 +117,7 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' September 2026 rate sheet prices the debt on a hotel and says nothing about depreciation, which is the point. As of September 17, 2026 it shows the 10-year Treasury at 4.94 percent and Prime at 7.00 percent, and it marks maximum loan-to-value and the coverage floor as not yet published for every lender type except SBA, because lenders do not publish them.[11] A lender sizes your loan on NOI, which is struck before any of this."
+      "Matthews Hotel Markets' October 2026 rate sheet prices the debt on a hotel and says nothing about depreciation, which is the point. As of September 30, 2026 it shows the 10-year Treasury at 5.29 percent and Prime at 7.00 percent, and it marks maximum loan-to-value and the coverage floor as not yet published for every lender type except SBA, because lenders do not publish them.[11] A lender sizes your loan on NOI, which is struck before any of this."
   },
   workedExample: {
     label:

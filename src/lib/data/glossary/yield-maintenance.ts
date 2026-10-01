@@ -11,7 +11,7 @@ export const entry: GlossaryEntry = {
   term: "Yield Maintenance",
   shortDef: "Yield maintenance is a prepayment charge that pays the lender the interest it loses when a fixed-rate loan is repaid early. Agency loan documents set it at the greater of 1 percent of the balance or the calculated amount.",
   fullDef: "If a borrower repays a 6.50 percent loan when the lender can only reinvest at 4.50 percent, the lender loses the difference for the remaining term. Yield maintenance charges the present value of that lost interest. The formula, the reference Treasury and any minimum are set by the lender in the note.",
-  body: "The charge rises when market rates have fallen since closing and with the time left on the loan. When Treasury yields are at or above the note rate, the calculated amount can fall to zero, and any minimum in the note takes over.\n\nNo hotel lender publishes its formula, so read the note. One public example of the structure is Fannie Mae's multifamily guide, which does not cover hotels. It says loan documents generally require a prepayment premium equal to the greater of 1 percent of the unpaid principal balance or yield maintenance.[1] Life companies and some banks and CMBS loans use similar language on hotel loans.\n\nSBA 7(a) takes a simpler, published approach on long loans: 5 percent of the prepaid amount in year one, 3 percent in year two and 1 percent in year three.[2] For reference, the 10-year Treasury was 4.94 percent on September 17, 2026.[3] Compare with [Defeasance](/glossary/defeasance).",
+  body: "The charge rises when market rates have fallen since closing and with the time left on the loan. When Treasury yields are at or above the note rate, the calculated amount can fall to zero, and any minimum in the note takes over.\n\nNo hotel lender publishes its formula, so read the note. One public example of the structure is Fannie Mae's multifamily guide, which does not cover hotels. It says loan documents generally require a prepayment premium equal to the greater of 1 percent of the unpaid principal balance or yield maintenance.[1] Life companies and some banks and CMBS loans use similar language on hotel loans.\n\nSBA 7(a) takes a simpler, published approach on long loans: 5 percent of the prepaid amount in year one, 3 percent in year two and 1 percent in year three.[2] For reference, the 10-year Treasury was 5.29 percent on September 30, 2026.[3] Compare with [Defeasance](/glossary/defeasance).",
   example: "Hypothetical, using one common simplified form. Balance $8,000,000, note rate 6.50%, reference Treasury yield 4.50%, four years left. Rate difference: 6.50% - 4.50% = 2.00%. Present value factor for four annual periods at 4.50%: (1 - 1.045^-4) / 0.045 = 3.5875. Charge: $8,000,000 x 0.02 x 3.5875 = $574,000. A 1% minimum would be $80,000, so the calculated amount applies. If the Treasury yield were 6.50% or higher, the difference is zero and the $80,000 minimum applies. Your note's formula governs.",
   misconceptions: [
     "Yield maintenance is not a fixed percentage. It moves with Treasury yields and with time remaining, and can be many times the minimum.",
@@ -52,7 +52,7 @@ export const entry: GlossaryEntry = {
       publisher: "U.S. Small Business Administration"
     },
     {
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)"
     }
@@ -67,7 +67,7 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/refinance-or-sell",
     "/hotel-financing/hotel-loan-rates"
   ],
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson"
 };
 

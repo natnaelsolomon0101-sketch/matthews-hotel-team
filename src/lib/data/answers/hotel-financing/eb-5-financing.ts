@@ -16,7 +16,7 @@ export const page: AnswerPage = {
   title: "EB-5 Financing for Hotels: Rules After 2022",
   h1: "How does EB-5 financing work for a hotel?",
   description: "EB-5 capital in a hotel deal: $800,000 and $1,050,000 minimums, targeted employment areas, the 10-job rule, regional centers, key dates and the risks.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -116,7 +116,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' September 2026 rate sheet puts SOFR at 3.85% and the 10-year Treasury at 4.94% as of September 17, 2026, and marks the construction loan spread as not yet published. EB-5 capital has no public rate index at all, which is why it is compared deal by deal against the senior loan it sits behind.[5]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet puts SOFR at 3.90% and the 10-year Treasury at 5.29% as of September 30, 2026, and marks the construction loan spread as not yet published. EB-5 capital has no public rate index at all, which is why it is compared deal by deal against the senior loan it sits behind.[5]"
   },
   workedExample: {
     label: "Hypothetical: a $12.0M EB-5 tranche in a $40.0M hotel development",
@@ -187,7 +187,7 @@ export const page: AnswerPage = {
     },
     {
       n: 5,
-      label: "Matthews Hotel Markets September 2026 rate sheet",
+      label: "Matthews Hotel Markets October 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-09-18"

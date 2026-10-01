@@ -1,10 +1,10 @@
 {
-  "urls": 315,
+  "urls": 316,
   "maxDepth": 2,
   "byDepth": {
     "0": 1,
     "1": 32,
-    "2": 282
+    "2": 283
   },
   "depth": {
     "/": 0,
@@ -134,6 +134,7 @@
     "/hotel-valuation/select-service-vs-full-service": 2,
     "/glossary/revpar": 2,
     "/glossary/adr": 2,
+    "/rates/2026-10": 2,
     "/rates/2026-09": 2,
     "/closed/4-pack-marriott-intercon-portfolio-debt": 2,
     "/closed/marriott-2-pack-del-mar-debt": 2,
