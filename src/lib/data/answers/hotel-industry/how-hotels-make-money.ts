@@ -137,7 +137,8 @@ export const page: AnswerPage = {
       "/hotel-industry/revpar-adr-occupancy",
       "/hotel-industry/owner-franchisor-management-company",
       "/hotel-industry/chain-scales-and-classes",
-      "/hotel-industry/industry-size-2026"
+      "/hotel-industry/industry-size-2026",
+      "/hotel-industry/resort-fees"
     ],
     glossary: [
       "/glossary/gop",

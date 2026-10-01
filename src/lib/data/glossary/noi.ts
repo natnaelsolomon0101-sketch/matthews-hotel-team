@@ -64,7 +64,8 @@ export const entry: GlossaryEntry = {
   relatedAnswers: [
     "/hotel-valuation/how-to-value-a-hotel",
     "/hotel-valuation/hotel-cap-rates",
-    "/hotel-financing/loan-requirements"
+    "/hotel-financing/loan-requirements",
+    "/hotel-industry/resort-fees"
   ],
   lastUpdated: "2026-09-18",
   authorSlug: "nate-solomon"

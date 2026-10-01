@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-01T13:42:10.262Z",
-  "base": "http://localhost:40259",
+  "runAt": "2026-10-01T14:24:50.159Z",
+  "base": "http://localhost:34109",
   "edges": [
     {
       "from": "/",
@@ -4421,6 +4421,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-industry/how-hotel-reits-work"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-industry/resort-fees"
     },
     {
       "from": "/sitemap",
@@ -64116,6 +64120,10 @@
     },
     {
       "from": "/hotel-industry",
+      "to": "/hotel-industry/resort-fees"
+    },
+    {
+      "from": "/hotel-industry",
       "to": "/hotel-franchise-costs"
     },
     {
@@ -64741,6 +64749,10 @@
     {
       "from": "/hotel-industry/how-hotels-make-money",
       "to": "/hotel-industry/industry-size-2026"
+    },
+    {
+      "from": "/hotel-industry/how-hotels-make-money",
+      "to": "/hotel-industry/resort-fees"
     },
     {
       "from": "/hotel-industry/how-hotels-make-money",
@@ -65568,6 +65580,10 @@
     },
     {
       "from": "/hotel-industry/revpar-adr-occupancy",
+      "to": "/hotel-industry/resort-fees"
+    },
+    {
+      "from": "/hotel-industry/revpar-adr-occupancy",
       "to": "/glossary"
     },
     {
@@ -66169,6 +66185,10 @@
     {
       "from": "/hotel-industry/hotel-operating-costs",
       "to": "/hotel-industry/how-hotel-reits-work"
+    },
+    {
+      "from": "/hotel-industry/hotel-operating-costs",
+      "to": "/hotel-industry/resort-fees"
     },
     {
       "from": "/hotel-industry/hotel-operating-costs",
@@ -67116,6 +67136,198 @@
     },
     {
       "from": "/hotel-industry/how-hotel-reits-work",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/_next/static/chunks/20f15be7d67f23fd.css"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/hotel-industry/resort-fees.md"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/hotel-industry/how-hotels-make-money"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/hotel-industry/revpar-adr-occupancy"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/hotel-industry/hotel-operating-costs"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/hotel-industry/ada-requirements"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/glossary/adr"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/glossary/revpar"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/glossary/noi"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-industry/resort-fees",
       "to": "/sitemap"
     },
     {
@@ -69844,6 +70056,7 @@
         "/hotel-industry/cost-to-build-a-hotel",
         "/hotel-industry/who-buys-hotels",
         "/hotel-industry/how-hotel-reits-work",
+        "/hotel-industry/resort-fees",
         "/tools",
         "/tools/hotel-value-estimator",
         "/tools/hotel-loan-sizing-calculator",
@@ -86417,6 +86630,7 @@
         "/hotel-industry/cost-to-build-a-hotel",
         "/hotel-industry/who-buys-hotels",
         "/hotel-industry/how-hotel-reits-work",
+        "/hotel-industry/resort-fees",
         "/hotel-franchise-costs",
         "/glossary",
         "/glossary/revpar",
@@ -86592,6 +86806,7 @@
         "/hotel-industry/revpar-adr-occupancy",
         "/hotel-industry/chain-scales-and-classes",
         "/hotel-industry/industry-size-2026",
+        "/hotel-industry/resort-fees",
         "/glossary",
         "/glossary/revpar",
         "/data/hotel-financing-statistics",
@@ -86822,6 +87037,7 @@
         "/hotel-financing/loan-requirements",
         "/hotel-industry/chain-scales-and-classes",
         "/hotel-industry/industry-size-2026",
+        "/hotel-industry/resort-fees",
         "/glossary",
         "/data/hotel-financing-statistics",
         "/buy-a-hotel",
@@ -86991,6 +87207,7 @@
         "/tools/cap-rate-calculator",
         "/hotel-industry/extended-stay-hotels",
         "/hotel-industry/how-hotel-reits-work",
+        "/hotel-industry/resort-fees",
         "/glossary",
         "/glossary/gop",
         "/glossary/noi",
@@ -87228,6 +87445,60 @@
         "/hotel-industry/who-owns-hotels",
         "/glossary",
         "/glossary/cap-rate",
+        "/glossary/revpar",
+        "/glossary/noi",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/hotel-industry/resort-fees",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/20f15be7d67f23fd.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-industry/resort-fees.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/hotel-industry",
+        "/team/miles-cortez",
+        "/team/nate-solomon",
+        "/hotel-industry/how-hotels-make-money",
+        "/hotel-industry/revpar-adr-occupancy",
+        "/hotel-industry/hotel-operating-costs",
+        "/hotel-industry/ada-requirements",
+        "/glossary",
+        "/glossary/adr",
         "/glossary/revpar",
         "/glossary/noi",
         "/buy-a-hotel",

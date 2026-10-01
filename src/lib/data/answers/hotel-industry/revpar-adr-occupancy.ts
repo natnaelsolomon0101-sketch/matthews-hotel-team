@@ -141,7 +141,8 @@ export const page: AnswerPage = {
       "/hotel-industry/how-hotels-make-money",
       "/hotel-industry/chain-scales-and-classes",
       "/hotel-industry/outlook-2026-2027",
-      "/hotel-industry/industry-size-2026"
+      "/hotel-industry/industry-size-2026",
+      "/hotel-industry/resort-fees"
     ],
     glossary: [
       "/glossary/revpar",

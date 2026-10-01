@@ -148,7 +148,8 @@ export const page: AnswerPage = {
       "/hotel-industry/how-hotels-make-money",
       "/hotel-industry/hotel-management-agreements",
       "/hotel-industry/extended-stay-hotels",
-      "/hotel-industry/how-hotel-reits-work"
+      "/hotel-industry/how-hotel-reits-work",
+      "/hotel-industry/resort-fees"
     ],
     glossary: [
       "/glossary/gop",
