@@ -1,5 +1,5 @@
-# Internal links audit — 2026-10-01T14:24:50.173Z
+# Internal links audit — 2026-10-02T14:25:19.937Z
 
-Base: `http://localhost:34109` · Pages: 318 · Edges: 17206 · Missing expected: 0
+Base: `http://localhost:34561` · Pages: 319 · Edges: 17260 · Missing expected: 0
 
 ## All expected internal cross-links present ✓

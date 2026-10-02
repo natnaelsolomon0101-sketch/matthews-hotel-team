@@ -71,9 +71,10 @@ export const entry: GlossaryEntry = {
   relatedAnswers: [
     "/hotel-financing/loan-requirements",
     "/tools/dscr-calculator",
-    "/hotel-financing/sba-7a-vs-504"
+    "/hotel-financing/sba-7a-vs-504",
+    "/hotel-financing/flood-insurance-requirements"
   ],
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-10-02",
   authorSlug: "luke-thompson"
 };
 

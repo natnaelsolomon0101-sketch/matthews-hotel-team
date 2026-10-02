@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-01T14:24:50.159Z",
-  "base": "http://localhost:34109",
+  "runAt": "2026-10-02T14:25:19.917Z",
+  "base": "http://localhost:34561",
   "edges": [
     {
       "from": "/",
@@ -4025,6 +4025,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-financing/faq"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-financing/flood-insurance-requirements"
     },
     {
       "from": "/sitemap",
@@ -43640,6 +43644,10 @@
     },
     {
       "from": "/hotel-financing",
+      "to": "/hotel-financing/flood-insurance-requirements"
+    },
+    {
+      "from": "/hotel-financing",
       "to": "/hotel-financing/how-debt-placement-works"
     },
     {
@@ -45579,6 +45587,198 @@
       "to": "/sitemap"
     },
     {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/_next/static/chunks/20f15be7d67f23fd.css"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/hotel-financing/flood-insurance-requirements.md"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/hotel-financing/closing-costs"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/hotel-financing/pip-and-renovation-loans"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/hotel-financing/sba-7a-vs-504"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/glossary/ffe-reserve"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/glossary/noi"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/glossary/ltv"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/sitemap"
+    },
+    {
       "from": "/hotel-financing/historic-tax-credits",
       "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     },
@@ -47284,6 +47484,10 @@
     },
     {
       "from": "/hotel-financing/loan-requirements",
+      "to": "/hotel-financing/flood-insurance-requirements"
+    },
+    {
+      "from": "/hotel-financing/loan-requirements",
       "to": "/glossary"
     },
     {
@@ -48096,6 +48300,10 @@
     },
     {
       "from": "/hotel-financing/pip-and-renovation-loans",
+      "to": "/hotel-financing/flood-insurance-requirements"
+    },
+    {
+      "from": "/hotel-financing/pip-and-renovation-loans",
       "to": "/glossary"
     },
     {
@@ -48673,6 +48881,10 @@
     {
       "from": "/hotel-financing/sba-7a-vs-504",
       "to": "/hotel-financing/cmbs-loans"
+    },
+    {
+      "from": "/hotel-financing/sba-7a-vs-504",
+      "to": "/hotel-financing/flood-insurance-requirements"
     },
     {
       "from": "/hotel-financing/sba-7a-vs-504",
@@ -49565,6 +49777,10 @@
     {
       "from": "/hotel-financing/closing-costs",
       "to": "/hotel-financing/sba-7a-vs-504"
+    },
+    {
+      "from": "/hotel-financing/closing-costs",
+      "to": "/hotel-financing/flood-insurance-requirements"
     },
     {
       "from": "/hotel-financing/closing-costs",
@@ -69957,6 +70173,7 @@
         "/hotel-financing/eb-5-financing",
         "/hotel-financing/extended-stay-financing",
         "/hotel-financing/faq",
+        "/hotel-financing/flood-insurance-requirements",
         "/hotel-financing/historic-tax-credits",
         "/hotel-financing/hotel-lenders-by-type",
         "/hotel-financing/hotel-loan-rates",
@@ -80934,6 +81151,7 @@
         "/hotel-financing/bridge-loans",
         "/hotel-financing/cmbs-loans",
         "/hotel-financing/faq",
+        "/hotel-financing/flood-insurance-requirements",
         "/hotel-financing/how-debt-placement-works",
         "/hotel-financing/loan-maturities-2026-2027",
         "/hotel-financing/loan-workouts",
@@ -81477,6 +81695,60 @@
       "missing": []
     },
     {
+      "url": "/hotel-financing/flood-insurance-requirements",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/20f15be7d67f23fd.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-financing/flood-insurance-requirements.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/luke-thompson",
+        "/team/nate-solomon",
+        "/hotel-financing/loan-requirements",
+        "/hotel-financing/closing-costs",
+        "/hotel-financing/pip-and-renovation-loans",
+        "/hotel-financing/sba-7a-vs-504",
+        "/glossary",
+        "/glossary/ffe-reserve",
+        "/glossary/noi",
+        "/glossary/ltv",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
       "url": "/hotel-financing/historic-tax-credits",
       "outboundInternal": [
         "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
@@ -81953,6 +82225,7 @@
         "/team/nate-solomon",
         "/hotel-financing/hotel-loan-rates",
         "/hotel-financing/sba-7a-vs-504",
+        "/hotel-financing/flood-insurance-requirements",
         "/glossary",
         "/glossary/dscr",
         "/glossary/debt-yield",
@@ -82180,6 +82453,7 @@
         "/team/nate-solomon",
         "/hotel-financing/refinance-or-sell",
         "/hotel-financing/loan-requirements",
+        "/hotel-financing/flood-insurance-requirements",
         "/glossary",
         "/glossary/noi",
         "/buy-a-hotel",
@@ -82343,6 +82617,7 @@
         "/hotel-financing/hotel-lenders-by-type",
         "/hotel-financing/hotel-loan-rates",
         "/hotel-financing/cmbs-loans",
+        "/hotel-financing/flood-insurance-requirements",
         "/glossary",
         "/glossary/dscr",
         "/glossary/noi",
@@ -82590,6 +82865,7 @@
         "/team/miles-cortez",
         "/hotel-financing/cash-out-refinance",
         "/hotel-financing/sba-7a-vs-504",
+        "/hotel-financing/flood-insurance-requirements",
         "/glossary",
         "/glossary/sba-7a",
         "/glossary/pip",

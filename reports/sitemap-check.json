@@ -1,10 +1,10 @@
 {
-  "urls": 317,
+  "urls": 318,
   "maxDepth": 2,
   "byDepth": {
     "0": 1,
     "1": 32,
-    "2": 284
+    "2": 285
   },
   "depth": {
     "/": 0,
@@ -86,6 +86,7 @@
     "/hotel-financing/bridge-loans": 2,
     "/hotel-financing/cmbs-loans": 2,
     "/hotel-financing/faq": 2,
+    "/hotel-financing/flood-insurance-requirements": 2,
     "/hotel-financing/how-debt-placement-works": 2,
     "/hotel-financing/loan-maturities-2026-2027": 2,
     "/hotel-financing/loan-workouts": 2,

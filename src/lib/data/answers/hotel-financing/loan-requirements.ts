@@ -186,7 +186,8 @@ export const page: AnswerPage = {
       "/hotel-financing/hotel-loan-rates",
       "/hotel-financing/sba-7a-vs-504",
       "/hotel-financing/refinance",
-      "/hotel-financing/pip-and-renovation-loans"
+      "/hotel-financing/pip-and-renovation-loans",
+      "/hotel-financing/flood-insurance-requirements"
     ],
     glossary: [
       "/glossary/dscr",

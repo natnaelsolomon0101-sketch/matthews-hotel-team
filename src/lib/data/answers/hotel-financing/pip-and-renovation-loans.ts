@@ -167,7 +167,8 @@ export const page: AnswerPage = {
       "/hotel-financing/bridge-loans",
       "/hotel-financing/refinance",
       "/hotel-financing/refinance-or-sell",
-      "/hotel-financing/loan-requirements"
+      "/hotel-financing/loan-requirements",
+      "/hotel-financing/flood-insurance-requirements"
     ],
     glossary: [
       "/glossary/pip",

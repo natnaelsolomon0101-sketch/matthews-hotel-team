@@ -248,7 +248,8 @@ export const page: AnswerPage = {
       "/hotel-financing/loan-requirements",
       "/hotel-financing/cash-out-refinance",
       "/hotel-financing/covenants-and-cash-management",
-      "/hotel-financing/sba-7a-vs-504"
+      "/hotel-financing/sba-7a-vs-504",
+      "/hotel-financing/flood-insurance-requirements"
     ],
     glossary: [
       "/glossary/comfort-letter",
