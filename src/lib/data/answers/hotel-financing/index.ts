@@ -8,6 +8,7 @@ import { page as a_construction_loans } from "./construction-loans";
 import { page as a_eb_5_financing } from "./eb-5-financing";
 import { page as a_extended_stay_financing } from "./extended-stay-financing";
 import { page as a_faq } from "./faq";
+import { page as a_flood_insurance_requirements } from "./flood-insurance-requirements";
 import { page as a_historic_tax_credits } from "./historic-tax-credits";
 import { page as a_hotel_lenders_by_type } from "./hotel-lenders-by-type";
 import { page as a_hotel_loan_rates } from "./hotel-loan-rates";
@@ -46,6 +47,7 @@ export const spokes: AnswerPage[] = [
   a_eb_5_financing,
   a_extended_stay_financing,
   a_faq,
+  a_flood_insurance_requirements,
   a_historic_tax_credits,
   a_hotel_lenders_by_type,
   a_hotel_loan_rates,

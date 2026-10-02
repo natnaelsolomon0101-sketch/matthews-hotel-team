@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-10-01T14:24:41.730Z",
+  "runAt": "2026-10-02T14:25:12.006Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 317,
-  "blocksFound": 317,
-  "blocksValid": 317,
+  "urlsChecked": 318,
+  "blocksFound": 318,
+  "blocksValid": 318,
   "issues": [],
   "blocks": [
     {
@@ -533,6 +533,13 @@
     },
     {
       "url": "/hotel-financing/faq",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/flood-insurance-requirements",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,

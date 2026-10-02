@@ -240,7 +240,8 @@ export const page: AnswerPage = {
       "/hotel-financing/loan-requirements",
       "/hotel-financing/hotel-lenders-by-type",
       "/hotel-financing/hotel-loan-rates",
-      "/hotel-financing/cmbs-loans"
+      "/hotel-financing/cmbs-loans",
+      "/hotel-financing/flood-insurance-requirements"
     ],
     glossary: [
       "/glossary/dscr",
