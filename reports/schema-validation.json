@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-10-05T13:45:57.412Z",
+  "runAt": "2026-10-05T14:26:09.427Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 318,
-  "blocksFound": 318,
-  "blocksValid": 318,
+  "urlsChecked": 319,
+  "blocksFound": 319,
+  "blocksValid": 319,
   "issues": [],
   "blocks": [
     {
@@ -799,6 +799,13 @@
     },
     {
       "url": "/sell-a-hotel/selling-a-hotel-on-a-ground-lease",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/sell-a-hotel/tax-clearance-and-withholding",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,

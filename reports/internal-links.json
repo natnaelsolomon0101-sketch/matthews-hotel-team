@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-05T13:46:05.069Z",
-  "base": "http://localhost:38761",
+  "runAt": "2026-10-05T14:26:16.711Z",
+  "base": "http://localhost:40307",
   "edges": [
     {
       "from": "/",
@@ -4173,6 +4173,10 @@
     {
       "from": "/sitemap",
       "to": "/sell-a-hotel/selling-a-hotel-on-a-ground-lease"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/sell-a-hotel/tax-clearance-and-withholding"
     },
     {
       "from": "/sitemap",
@@ -50640,6 +50644,10 @@
     },
     {
       "from": "/sell-a-hotel",
+      "to": "/sell-a-hotel/tax-clearance-and-withholding"
+    },
+    {
+      "from": "/sell-a-hotel",
       "to": "/sell-a-hotel/what-buyers-look-for"
     },
     {
@@ -50873,6 +50881,10 @@
     {
       "from": "/sell-a-hotel/1031-without-buying-another-hotel",
       "to": "/sell-a-hotel/what-buyers-look-for"
+    },
+    {
+      "from": "/sell-a-hotel/1031-without-buying-another-hotel",
+      "to": "/sell-a-hotel/tax-clearance-and-withholding"
     },
     {
       "from": "/sell-a-hotel/1031-without-buying-another-hotel",
@@ -51257,6 +51269,10 @@
     {
       "from": "/sell-a-hotel/documents-needed",
       "to": "/sell-a-hotel/how-to-choose-a-hotel-broker"
+    },
+    {
+      "from": "/sell-a-hotel/documents-needed",
+      "to": "/sell-a-hotel/tax-clearance-and-withholding"
     },
     {
       "from": "/sell-a-hotel/documents-needed",
@@ -52692,6 +52708,10 @@
     },
     {
       "from": "/sell-a-hotel/how-to-sell-a-hotel",
+      "to": "/sell-a-hotel/tax-clearance-and-withholding"
+    },
+    {
+      "from": "/sell-a-hotel/how-to-sell-a-hotel",
       "to": "/glossary"
     },
     {
@@ -53419,6 +53439,206 @@
       "to": "/sitemap"
     },
     {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/_next/static/chunks/20f15be7d67f23fd.css"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/sell-a-hotel/tax-clearance-and-withholding.md"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/listings"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/rates"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/about"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/team"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/contact"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/sell-a-hotel/taxes-when-selling-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/sell-a-hotel/documents-needed"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/sell-a-hotel/1031-without-buying-another-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/sell-a-hotel/how-to-sell-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/sell-a-hotel/how-long-it-takes"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/glossary"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/glossary/going-concern-value"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/glossary/ffe-reserve"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/glossary/prime-rate"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/tools"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/research"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/markets"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/closed"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/process"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/services"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/insights"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/press"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/developers"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/sitemap"
+    },
+    {
       "from": "/sell-a-hotel/taxes-when-selling-a-hotel",
       "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     },
@@ -53521,6 +53741,10 @@
     {
       "from": "/sell-a-hotel/taxes-when-selling-a-hotel",
       "to": "/sell-a-hotel/faq"
+    },
+    {
+      "from": "/sell-a-hotel/taxes-when-selling-a-hotel",
+      "to": "/sell-a-hotel/tax-clearance-and-withholding"
     },
     {
       "from": "/sell-a-hotel/taxes-when-selling-a-hotel",
@@ -70210,6 +70434,7 @@
         "/sell-a-hotel/off-market-vs-marketed",
         "/sell-a-hotel/selling-a-distressed-hotel",
         "/sell-a-hotel/selling-a-hotel-on-a-ground-lease",
+        "/sell-a-hotel/tax-clearance-and-withholding",
         "/sell-a-hotel/taxes-when-selling-a-hotel",
         "/sell-a-hotel/what-buyers-look-for",
         "/hotel-valuation/appraisal-lower-than-expected",
@@ -83104,6 +83329,7 @@
         "/sell-a-hotel/franchise-transfer",
         "/sell-a-hotel/selling-a-distressed-hotel",
         "/sell-a-hotel/selling-a-hotel-on-a-ground-lease",
+        "/sell-a-hotel/tax-clearance-and-withholding",
         "/sell-a-hotel/what-buyers-look-for",
         "/team/luke-thompson",
         "/process",
@@ -83169,6 +83395,7 @@
         "/sell-a-hotel/how-to-sell-a-hotel",
         "/sell-a-hotel/how-long-it-takes",
         "/sell-a-hotel/what-buyers-look-for",
+        "/sell-a-hotel/tax-clearance-and-withholding",
         "/glossary",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
@@ -83277,6 +83504,7 @@
         "/sell-a-hotel/how-to-sell-a-hotel",
         "/sell-a-hotel/broker-fees",
         "/sell-a-hotel/how-to-choose-a-hotel-broker",
+        "/sell-a-hotel/tax-clearance-and-withholding",
         "/glossary",
         "/glossary/iom",
         "/glossary/bov",
@@ -83677,6 +83905,7 @@
         "/process",
         "/sell-a-hotel/how-long-it-takes",
         "/sell-a-hotel/broker-fees",
+        "/sell-a-hotel/tax-clearance-and-withholding",
         "/glossary",
         "/glossary/bov",
         "/glossary/iom",
@@ -83881,6 +84110,62 @@
       "missing": []
     },
     {
+      "url": "/sell-a-hotel/tax-clearance-and-withholding",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/20f15be7d67f23fd.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/sell-a-hotel/tax-clearance-and-withholding.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/nate-solomon",
+        "/sell-a-hotel/taxes-when-selling-a-hotel",
+        "/sell-a-hotel/documents-needed",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/sell-a-hotel/1031-without-buying-another-hotel",
+        "/sell-a-hotel/how-to-sell-a-hotel",
+        "/sell-a-hotel/how-long-it-takes",
+        "/team/luke-thompson",
+        "/glossary",
+        "/glossary/going-concern-value",
+        "/glossary/ffe-reserve",
+        "/glossary/prime-rate",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
       "url": "/sell-a-hotel/taxes-when-selling-a-hotel",
       "outboundInternal": [
         "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
@@ -83909,6 +84194,7 @@
         "/sell-a-hotel/documents-needed",
         "/sell-a-hotel/franchise-agreement-expiration",
         "/sell-a-hotel/faq",
+        "/sell-a-hotel/tax-clearance-and-withholding",
         "/glossary",
         "/glossary/noi",
         "/glossary/cap-rate",

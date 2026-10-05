@@ -13,6 +13,7 @@ import { page as a_hub } from "./hub";
 import { page as a_off_market_vs_marketed } from "./off-market-vs-marketed";
 import { page as a_selling_a_distressed_hotel } from "./selling-a-distressed-hotel";
 import { page as a_selling_a_hotel_on_a_ground_lease } from "./selling-a-hotel-on-a-ground-lease";
+import { page as a_tax_clearance_and_withholding } from "./tax-clearance-and-withholding";
 import { page as a_taxes_when_selling_a_hotel } from "./taxes-when-selling-a-hotel";
 import { page as a_what_buyers_look_for } from "./what-buyers-look-for";
 import type { AnswerPage } from "../types";
@@ -33,6 +34,7 @@ export const spokes: AnswerPage[] = [
   a_off_market_vs_marketed,
   a_selling_a_distressed_hotel,
   a_selling_a_hotel_on_a_ground_lease,
+  a_tax_clearance_and_withholding,
   a_taxes_when_selling_a_hotel,
   a_what_buyers_look_for,
 ];

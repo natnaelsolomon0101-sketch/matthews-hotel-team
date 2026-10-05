@@ -67,9 +67,10 @@ export const entry: GlossaryEntry = {
     "/sell-a-hotel/1031-without-buying-another-hotel",
     "/hotel-valuation/how-to-value-a-hotel",
     "/hotel-valuation/broker-opinion-of-value",
-    "/hotel-financing/loan-requirements"
+    "/hotel-financing/loan-requirements",
+    "/sell-a-hotel/tax-clearance-and-withholding"
   ],
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-10-05",
   authorSlug: "nate-solomon"
 };
 

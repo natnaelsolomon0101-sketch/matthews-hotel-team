@@ -252,7 +252,8 @@ export const page: AnswerPage = {
       "/sell-a-hotel/how-to-sell-a-hotel",
       "/sell-a-hotel/documents-needed",
       "/sell-a-hotel/franchise-agreement-expiration",
-      "/sell-a-hotel/faq"
+      "/sell-a-hotel/faq",
+      "/sell-a-hotel/tax-clearance-and-withholding"
     ],
     glossary: [
       "/glossary/noi",
