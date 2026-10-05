@@ -139,7 +139,7 @@ export const page: AnswerPage = {
     {
       n: 1,
       label: "Quality Franchise Disclosure Document (issued April 1, 2026, as amended May 20, 2026): Item 5, pp. 25-27; Item 6, pp. 27-41; Item 7, pp. 41-45; Item 17, pp. 71-76; Item 19, pp. 76-79. Minnesota CARDS document 36789-202606-03, file number 48, Clean FDD",
-      url: "https://www.cards.commerce.state.mn.us/documents/%7B5055B19E-0000-C316-BD49-E91CD982D575%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7B5055B19E-0000-C316-BD49-E91CD982D575%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher: "Choice Hotels International, Inc., filed with the Minnesota Department of Commerce",
       accessed: "2026-09-18"
     },
@@ -153,14 +153,14 @@ export const page: AnswerPage = {
     {
       n: 3,
       label: "Sleep Inn Franchise Disclosure Document (issued April 1, 2026, as amended May 20, 2026): Item 6, pp. 28, 39; Item 7, pp. 41-43. Minnesota CARDS document 36798-202606-03, file number 1799, Clean FDD",
-      url: "https://www.cards.commerce.state.mn.us/documents/%7B0026AD9E-0000-CD15-8AE2-0AF2F83210B2%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7B0026AD9E-0000-CD15-8AE2-0AF2F83210B2%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher: "Choice Hotels International, Inc., filed with the Minnesota Department of Commerce",
       accessed: "2026-09-18"
     },
     {
       n: 4,
       label: "Econo Lodge Franchise Disclosure Document (issued April 1, 2026, as amended May 20, 2026): Item 6, pp. 26-27, 38. Minnesota CARDS document 36786-202606-03, file number 3576, Clean FDD",
-      url: "https://www.cards.commerce.state.mn.us/documents/%7B900BAE9E-0000-CB13-A3D6-D21E2A96E6CF%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7B900BAE9E-0000-CB13-A3D6-D21E2A96E6CF%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher: "Choice Hotels International, Inc., filed with the Minnesota Department of Commerce",
       accessed: "2026-09-18"
     }

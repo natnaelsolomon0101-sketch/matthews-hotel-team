@@ -139,7 +139,7 @@ export const page: AnswerPage = {
     {
       n: 1,
       label: "Red Roof Inn Franchise Disclosure Document (issued April 9, 2026): Item 5, pp. 8-10; Item 6, pp. 10-19; Item 7, pp. 19-37; Item 17, pp. 55-58; Item 19, pp. 58-64. Minnesota CARDS document 35927-202604-09, file number 5824, Clean FDD",
-      url: "https://www.cards.commerce.state.mn.us/documents/%7BF0B2419E-0000-C118-A550-C31DCB422DD0%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7BF0B2419E-0000-C118-A550-C31DCB422DD0%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher: "Red Roof Franchising, LLC, filed with the Minnesota Department of Commerce",
       accessed: "2026-09-18"
     },

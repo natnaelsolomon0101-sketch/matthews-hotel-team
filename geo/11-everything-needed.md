@@ -350,6 +350,13 @@ numbers.
    never opens an issue.*
 3. **Freshness report.** List pages whose `lastUpdated` is older than 90 days and stats on
    `/data/hotel-financing-statistics` whose `verified` date is older than 90 days. Open one issue.
+   *Shipped 2026-10-05: `scripts/freshness-report.ts` and the **Freshness report** Action
+   (`.github/workflows/freshness-report.yml`), 01:30 UTC every Monday, half an hour after the
+   Source-link check and twelve hours before the Site Maintainer. It opens, comments on and closes
+   one `stale-content` issue. It reads dates out of the typed data modules and sends no requests, so
+   nothing is fetched. It reports and never edits: a stale date means a source needs re-reading, and
+   bumping the stamp without re-reading the source is what the stamp exists to prevent. On the day it
+   shipped, 148 pages and 55 statistics were all inside the 90-day window, so it opens no issue yet.*
 4. **Build checks on a local build only:** `tsc`, lint, `schema-validate.ts --build`,
    `internal-links-audit.ts --local`, the 300-word extractability check, and an em-dash check on
    user-facing strings.

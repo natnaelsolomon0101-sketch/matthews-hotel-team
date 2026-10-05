@@ -61,7 +61,7 @@ export const entry: GlossaryEntry = {
     },
     {
       label: "CBRE Hotels Research",
-      url: "https://www.cbre.com/insights/sectors/hotels",
+      url: "https://www.cbre.com/services/property-types/hotels",
       publisher: "CBRE Research",
     },
     {

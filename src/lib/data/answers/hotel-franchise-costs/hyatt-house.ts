@@ -139,7 +139,7 @@ export const page: AnswerPage = {
     {
       n: 1,
       label: "Hyatt House Franchise Disclosure Document (issued March 27, 2026, as amended August 5, 2026; Minnesota-specific filing): Item 5, pp. 9-13; Item 6, pp. 13-30; Item 7, pp. 31-35; Item 17, pp. 70-76; Item 19, pp. 76-84. Minnesota CARDS document 37110-202608-04, file number 5629, Clean FDD",
-      url: "https://www.cards.commerce.state.mn.us/documents/%7B1023FB9F-0000-C81F-BD9C-6AD05228A886%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7B1023FB9F-0000-C81F-BD9C-6AD05228A886%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher: "Hyatt House Franchising, L.L.C., filed with the Minnesota Department of Commerce",
       accessed: "2026-09-18"
     },

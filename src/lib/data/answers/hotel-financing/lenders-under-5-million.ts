@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Who Lends on Hotels Under $5 Million? (2026)",
   h1: "Who lends on hotels under $5 million?",
   description: "Small-balance hotel loans in 2026: SBA 7(a), SBA 504, community banks, credit unions and the USDA B&I guarantee, with the program limits that matter.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-10-05",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -27,7 +27,7 @@ export const page: AnswerPage = {
     "My bank says my hotel loan is too big for them. What does that mean?",
     "What's the minimum down payment for an SBA loan on a hotel?"
   ],
-  answer: "Four groups make most hotel loans under $5 million: SBA 7(a) lenders, banks paired with an SBA 504 debenture, community banks and credit unions lending conventionally, and rural lenders using the USDA Business and Industry guarantee. A 7(a) loan caps at $5 million.[1] For fiscal 2026 USDA guarantees 85 percent of a B&I loan under $5 million.[2] Prime has been 7.00 percent since September 17, 2026.[3]",
+  answer: "Four groups make most hotel loans under $5 million: SBA 7(a) lenders, banks paired with an SBA 504 debenture, community banks and credit unions lending conventionally, and rural lenders using the USDA Business and Industry guarantee. A 7(a) loan caps at $5 million.[1] USDA's most recent published notice, which set fiscal 2026 rates, guarantees 85 percent of a B&I loan under $5 million.[2] Prime has been 7.00 percent since September 17, 2026.[3]",
   takeaways: [
     "Small hotel loans are relationship and program loans. CMBS conduits and life companies mostly work above this size, so expect recourse.",
     "SBA 7(a): one loan up to $5 million, guaranteed up to 75 percent above $150,000, up to 25 years on real estate, no balloon.[1][4]",
@@ -54,7 +54,7 @@ export const page: AnswerPage = {
     {
       h2: "Can I get a USDA loan for a hotel?",
       lead: "Yes, if the hotel is in an eligible rural area. The Business and Industry program guarantees a bank's loan, and its regulation names hotels and motels as eligible projects.",
-      body: "The OneRD guaranteed loan regulation lists tourist and recreation facilities, including hotels, motels and bed and breakfast establishments, among eligible B&I projects.[6] Rural means an area outside a city or town of more than 50,000 inhabitants and outside the urbanized area next to one, based on the latest decennial census.[7] USDA maintains an eligibility map, and your lender will check the address.\n\nThe program limit is $25 million per borrower, far above this page's range.[13] For fiscal 2026, a B&I loan under $5 million receives an 85 percent guarantee, with an initial guarantee fee of 3.0 percent and a periodic retention fee of 0.55 percent; loans from $5 million to $25 million receive 80 percent. Those rates took effect October 1, 2025.[2] Terms can run up to 40 years, limited to the useful life of the assets, balloon maturities are not allowed, and any interest-only period ends within three years of the note date.[8]\n\nNot every bank is a B&I lender, and the guarantee adds a federal agency review. It is worth the effort for a rural hotel that is too large or too real-estate-heavy for 7(a), or where a longer amortization makes the coverage test work. The program's equity, appraisal and refinancing rules are on `/hotel-financing/usda-b-and-i-loans`."
+      body: "The OneRD guaranteed loan regulation lists tourist and recreation facilities, including hotels, motels and bed and breakfast establishments, among eligible B&I projects.[6] Rural means an area outside a city or town of more than 50,000 inhabitants and outside the urbanized area next to one, based on the latest decennial census.[7] USDA maintains an eligibility map, and your lender will check the address.\n\nThe program limit is $25 million per borrower, far above this page's range.[13] Under the fiscal 2026 notice, a B&I loan under $5 million receives an 85 percent guarantee, with an initial guarantee fee of 3.0 percent and a periodic retention fee of 0.55 percent; loans from $5 million to $25 million receive 80 percent. Those rates took effect October 1, 2025, and that notice is still the most recent one USDA has published: fiscal 2026 ended September 30, 2026 and no fiscal 2027 notice had published as of October 5, 2026.[2] Terms can run up to 40 years, limited to the useful life of the assets, balloon maturities are not allowed, and any interest-only period ends within three years of the note date.[8]\n\nNot every bank is a B&I lender, and the guarantee adds a federal agency review. It is worth the effort for a rural hotel that is too large or too real-estate-heavy for 7(a), or where a longer amortization makes the coverage test work. The program's equity, appraisal and refinancing rules are on `/hotel-financing/usda-b-and-i-loans`."
     },
     {
       h2: "Do community banks and credit unions make hotel loans?",
@@ -97,7 +97,7 @@ export const page: AnswerPage = {
       [
         "USDA B&I guarantee",
         "$25 million per borrower[13]",
-        "85% under $5 million for fiscal 2026[2]",
+        "85% under $5 million under the fiscal 2026 notice, the most recent published[2]",
         "Up to 40 years, no balloon[8]",
         "Rate set by the lender; 3.0% guarantee fee and 0.55% retention fee[2]",
         "Rural area: outside cities of more than 50,000[7]"
@@ -140,7 +140,7 @@ export const page: AnswerPage = {
     },
     {
       q: "Can I get a USDA loan for a hotel in a small town?",
-      a: "Yes. The USDA Business and Industry regulation names hotels and motels as eligible projects in rural areas. A bank makes the loan and USDA guarantees 85 percent of it for fiscal 2026 if the loan is under $5 million."
+      a: "Yes. The USDA Business and Industry regulation names hotels and motels as eligible projects in rural areas. A bank makes the loan and, under USDA's most recent published notice, which set fiscal 2026 rates, USDA guarantees 85 percent of it if the loan is under $5 million."
     },
     {
       q: "Do credit unions make hotel loans?",

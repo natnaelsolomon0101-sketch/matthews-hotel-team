@@ -56,7 +56,7 @@ export const entry: GlossaryEntry = {
     },
     {
       label: "CBRE Hotels Capital Markets",
-      url: "https://www.cbre.com/services/sectors/hotels/capital-markets",
+      url: "https://www.cbre.com/services/property-types/hotels/capital-markets",
       publisher: "CBRE Research",
     },
     {

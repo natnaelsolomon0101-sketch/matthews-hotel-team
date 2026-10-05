@@ -133,7 +133,7 @@ export const page: AnswerPage = {
     {
       n: 1,
       label: "Comfort Inn, Comfort Inn and Suites and Comfort Suites Franchise Disclosure Document (issued April 1, 2026): Item 5, pp. 22-25; Item 6, pp. 25-39; Item 7, pp. 39-50; Item 17, pp. 77-80; Item 19, pp. 82-87. Minnesota CARDS document 35771-202604-09, file number 3577, Clean FDD",
-      url: "https://www.cards.commerce.state.mn.us/documents/%7BB0A9219E-0000-C61B-8F69-FDCF9E1C6035%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7BB0A9219E-0000-C61B-8F69-FDCF9E1C6035%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher: "Choice Hotels International, Inc., filed with the Minnesota Department of Commerce",
       accessed: "2026-09-18"
     },

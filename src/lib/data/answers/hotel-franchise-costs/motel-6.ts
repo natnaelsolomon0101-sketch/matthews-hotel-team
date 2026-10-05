@@ -139,7 +139,7 @@ export const page: AnswerPage = {
     {
       n: 1,
       label: "Motel 6 Franchise Disclosure Document (issued March 5, 2026, as amended August 1, 2026): Item 5, pp. 9-11; Item 6, pp. 11-22; Item 7, pp. 22-26; Item 17, pp. 44-49; Item 19, pp. 49-50; Item 20, p. 51. Minnesota CARDS document 37091-202608-03, file number 5053, Clean FDD",
-      url: "https://www.cards.commerce.state.mn.us/documents/%7B2024F19F-0000-C017-AE72-5946EB5949AC%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7B2024F19F-0000-C017-AE72-5946EB5949AC%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher: "G6 Hospitality Franchising LLC, filed with the Minnesota Department of Commerce",
       accessed: "2026-09-18"
     },
