@@ -231,7 +231,8 @@ export const page: AnswerPage = {
       "/sell-a-hotel/taxes-when-selling-a-hotel",
       "/sell-a-hotel/how-to-sell-a-hotel",
       "/sell-a-hotel/how-long-it-takes",
-      "/sell-a-hotel/what-buyers-look-for"
+      "/sell-a-hotel/what-buyers-look-for",
+      "/sell-a-hotel/tax-clearance-and-withholding"
     ],
     glossary: [
       "/glossary/going-concern-value",

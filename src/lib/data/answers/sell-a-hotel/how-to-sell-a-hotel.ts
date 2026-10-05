@@ -194,7 +194,8 @@ export const page: AnswerPage = {
       "/sell-a-hotel/how-long-it-takes",
       "/sell-a-hotel/documents-needed",
       "/sell-a-hotel/broker-fees",
-      "/sell-a-hotel/how-to-choose-a-hotel-broker"
+      "/sell-a-hotel/how-to-choose-a-hotel-broker",
+      "/sell-a-hotel/tax-clearance-and-withholding"
     ],
     glossary: [
       "/glossary/bov",

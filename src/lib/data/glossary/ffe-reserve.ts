@@ -68,9 +68,10 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/pip-and-renovation-loans",
     "/sell-a-hotel/documents-needed",
     "/hotel-industry/ada-requirements",
-    "/hotel-financing/flood-insurance-requirements"
+    "/hotel-financing/flood-insurance-requirements",
+    "/sell-a-hotel/tax-clearance-and-withholding"
   ],
-  lastUpdated: "2026-10-02",
+  lastUpdated: "2026-10-05",
   authorSlug: "nate-solomon"
 };
 

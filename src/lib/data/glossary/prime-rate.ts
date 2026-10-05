@@ -81,9 +81,10 @@ export const entry: GlossaryEntry = {
   relatedAnswers: [
     "/hotel-financing/hotel-loan-rates",
     "/hotel-financing/sba-7a-vs-504",
-    "/hotel-financing/refinance"
+    "/hotel-financing/refinance",
+    "/sell-a-hotel/tax-clearance-and-withholding"
   ],
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-10-05",
   authorSlug: "luke-thompson"
 };
 
