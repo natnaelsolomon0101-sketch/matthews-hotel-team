@@ -139,7 +139,7 @@ export const page: AnswerPage = {
     {
       n: 1,
       label: "Econo Lodge Franchise Disclosure Document (issued April 1, 2026, as amended May 20, 2026): Item 5, pp. 24-26; Item 6, pp. 26-39; Item 7, pp. 40-42; Item 17, pp. 68-72; Item 19, pp. 72-75; Item 20, p. 75. Minnesota CARDS document 36786-202606-03, file number 3576, Clean FDD",
-      url: "https://www.cards.commerce.state.mn.us/documents/%7B900BAE9E-0000-CB13-A3D6-D21E2A96E6CF%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7B900BAE9E-0000-CB13-A3D6-D21E2A96E6CF%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher: "Choice Hotels International, Inc., filed with the Minnesota Department of Commerce",
       accessed: "2026-09-18"
     },
@@ -153,7 +153,7 @@ export const page: AnswerPage = {
     {
       n: 3,
       label: "Quality Franchise Disclosure Document (issued April 1, 2026, as amended May 20, 2026): Item 6, pp. 27-33, 37, 40. Minnesota CARDS document 36789-202606-03, file number 48, Clean FDD",
-      url: "https://www.cards.commerce.state.mn.us/documents/%7B5055B19E-0000-C316-BD49-E91CD982D575%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7B5055B19E-0000-C316-BD49-E91CD982D575%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher: "Choice Hotels International, Inc., filed with the Minnesota Department of Commerce",
       accessed: "2026-09-18"
     }

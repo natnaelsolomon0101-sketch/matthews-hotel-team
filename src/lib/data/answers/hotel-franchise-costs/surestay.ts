@@ -138,7 +138,7 @@ export const page: AnswerPage = {
     {
       n: 1,
       label: "SureStay by Best Western and SureStay Studio by Best Western Franchise Disclosure Document (issued February 27, 2026): Item 1, pp. 1-2; Item 5, pp. 15-17; Item 6, pp. 18-28; Item 7, pp. 29-38; Item 17, pp. 56-65; Item 19, p. 65; Item 20, p. 66. Minnesota CARDS document 35444-202602-05, file number 9264, Clean FDD",
-      url: "https://www.cards.commerce.state.mn.us/documents/%7BA012C39C-0000-CD12-A923-AFFA64F628E5%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7BA012C39C-0000-CD12-A923-AFFA64F628E5%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher: "SureStay, Inc., filed with the Minnesota Department of Commerce",
       accessed: "2026-09-18"
     },

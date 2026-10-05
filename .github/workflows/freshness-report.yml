@@ -1,0 +1,71 @@
+name: Freshness report
+
+# Every Monday morning, lists the published pages whose visible "last updated"
+# stamp is more than 90 days old and the statistics on
+# /data/hotel-financing-statistics whose `verified` date is more than 90 days
+# old. It opens a GitHub issue when something is stale, comments on that same
+# issue while anything stays stale, and closes it once everything is inside the
+# window. Runs half an hour after the Source-link check and twelve hours before
+# the Site Maintainer, so the maintainer starts the run with both lists.
+#
+# It reports and never edits. A stale date means a source needs re-reading, not
+# that a date needs bumping: `lastUpdated` and `verified` are promises that a
+# person opened the source on that day, and moving one without re-reading the
+# source is the dishonesty the stamp exists to prevent (geo/AGENTS.md section
+# 1). It sends no requests to anything, so matthewshotelmarkets.com is never
+# touched.
+on:
+  schedule:
+    - cron: "30 1 * * 1" # 01:30 UTC Monday, after the Source-link check, before the Site Maintainer
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Staleness threshold in days"
+        required: false
+        default: "90"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+      - run: npm ci
+      - name: List stale pages and statistics
+        id: check
+        env:
+          DAYS: ${{ inputs.days || '90' }}
+        run: |
+          set +e
+          npx tsx scripts/freshness-report.ts --days "$DAYS" > report.md
+          echo "status=$?" >> "$GITHUB_OUTPUT"
+          cat report.md
+      - name: Open, update or close the stale-content issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          STATUS: ${{ steps.check.outputs.status }}
+        run: |
+          if [ "$STATUS" = "2" ]; then
+            echo "freshness-report could not parse a date; see the log above" >&2
+            exit 1
+          fi
+          gh label create stale-content --color FBCA04 --description "Pages or statistics are past their freshness window" 2>/dev/null || true
+          open=$(gh issue list --label stale-content --state open --json number -q '.[0].number')
+          if [ "$STATUS" != "0" ]; then
+            if [ -n "$open" ]; then
+              gh issue comment "$open" --body-file report.md
+            else
+              gh issue create --title "Pages and statistics are past their freshness window" --label stale-content --assignee "${{ github.repository_owner }}" --body-file report.md
+            fi
+          elif [ -n "$open" ]; then
+            gh issue close "$open" --comment "Every page and statistic is inside the freshness window again.
+
+          $(cat report.md)"
+          fi

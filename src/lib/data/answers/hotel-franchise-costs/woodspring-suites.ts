@@ -139,7 +139,7 @@ export const page: AnswerPage = {
     {
       n: 1,
       label: "WoodSpring Suites Franchise Disclosure Document (issued April 1, 2026, as amended May 20, 2026): Item 5, pp. 24-27; Item 6, pp. 27-38; Item 7, pp. 38-42; Item 17, pp. 69-75; Item 19, pp. 75-80. Minnesota CARDS document 35788-202604-11, file number 8459, Clean FDD",
-      url: "https://www.cards.commerce.state.mn.us/documents/%7B503B8D9E-0000-C31C-804D-870B9402993E%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7B503B8D9E-0000-C31C-804D-870B9402993E%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher: "Choice Hotels International, Inc., filed with the Minnesota Department of Commerce",
       accessed: "2026-09-18"
     },
@@ -153,7 +153,7 @@ export const page: AnswerPage = {
     {
       n: 3,
       label: "Quality Franchise Disclosure Document (issued April 1, 2026, as amended May 20, 2026): Item 5, p. 25; Item 6, pp. 28, 40; Item 17, p. 72. Minnesota CARDS document 36789-202606-03, file number 48, Clean FDD",
-      url: "https://www.cards.commerce.state.mn.us/documents/%7B5055B19E-0000-C316-BD49-E91CD982D575%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7B5055B19E-0000-C316-BD49-E91CD982D575%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher: "Choice Hotels International, Inc., filed with the Minnesota Department of Commerce",
       accessed: "2026-09-18"
     }

@@ -139,7 +139,7 @@ export const page: AnswerPage = {
     {
       n: 1,
       label: "Sleep Inn Franchise Disclosure Document (issued April 1, 2026, as amended May 20, 2026): Item 5, pp. 25-28; Item 6, pp. 28-41; Item 7, pp. 41-45; Item 17, pp. 70-74; Item 19, pp. 74-78. Minnesota CARDS document 36798-202606-03, file number 1799, Clean FDD",
-      url: "https://www.cards.commerce.state.mn.us/documents/%7B0026AD9E-0000-CD15-8AE2-0AF2F83210B2%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7B0026AD9E-0000-CD15-8AE2-0AF2F83210B2%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher: "Choice Hotels International, Inc., filed with the Minnesota Department of Commerce",
       accessed: "2026-09-18"
     },
@@ -153,7 +153,7 @@ export const page: AnswerPage = {
     {
       n: 3,
       label: "Quality Franchise Disclosure Document (issued April 1, 2026, as amended May 20, 2026): Item 5, p. 25; Item 6, pp. 27, 40. Minnesota CARDS document 36789-202606-03, file number 48, Clean FDD",
-      url: "https://www.cards.commerce.state.mn.us/documents/%7B5055B19E-0000-C316-BD49-E91CD982D575%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7B5055B19E-0000-C316-BD49-E91CD982D575%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher: "Choice Hotels International, Inc., filed with the Minnesota Department of Commerce",
       accessed: "2026-09-18"
     }

@@ -187,7 +187,7 @@ export const page: AnswerPage = {
       n: 2,
       label:
         "2026 Quality Franchise Disclosure Document (April 1, 2026, as amended May 20, 2026), Items 6 and 17 and Franchise Agreement section 9",
-      url: "https://www.cards.commerce.state.mn.us/documents/%7B5055B19E-0000-C316-BD49-E91CD982D575%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7B5055B19E-0000-C316-BD49-E91CD982D575%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher:
         "Choice Hotels International, via Minnesota Department of Commerce CARDS",
       accessed: "2026-09-21"
@@ -196,7 +196,7 @@ export const page: AnswerPage = {
       n: 3,
       label:
         "2026 Hyatt House Franchise Disclosure Document (March 27, 2026, as amended August 5, 2026), Items 5, 6 and 17 and Franchise Agreement section 12.4 and Exhibit C",
-      url: "https://www.cards.commerce.state.mn.us/documents/%7B1023FB9F-0000-C81F-BD9C-6AD05228A886%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7B1023FB9F-0000-C81F-BD9C-6AD05228A886%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher:
         "Hyatt Franchising, L.L.C., via Minnesota Department of Commerce CARDS",
       accessed: "2026-09-21"
@@ -213,7 +213,7 @@ export const page: AnswerPage = {
       n: 5,
       label:
         "2026 WoodSpring Suites Franchise Disclosure Document (April 1, 2026, as amended May 20, 2026), Items 6 and 17 and Franchise Agreement section 9",
-      url: "https://www.cards.commerce.state.mn.us/documents/%7B503B8D9E-0000-C31C-804D-870B9402993E%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7B503B8D9E-0000-C31C-804D-870B9402993E%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher:
         "Choice Hotels International, via Minnesota Department of Commerce CARDS",
       accessed: "2026-09-21"
@@ -229,7 +229,7 @@ export const page: AnswerPage = {
       n: 7,
       label:
         "SOP 50 10, Lender and Development Company Loan Programs (version 8 effective June 1, 2025; version 8.1 effective October 1, 2026)",
-      url: "https://www.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
+      url: "https://legacy.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
       publisher: "U.S. Small Business Administration",
       accessed: "2026-09-21"
     },

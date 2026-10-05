@@ -138,7 +138,7 @@ export const page: AnswerPage = {
     {
       n: 1,
       label: "Cambria Franchise Disclosure Document (issued April 1, 2026): Item 5, pp. 26-29; Item 6, pp. 29-43; Item 7, pp. 44-48; Item 17, pp. 77-81; Item 19, pp. 81-85. Minnesota CARDS document 35798-202604-03, file number 11647, Clean FDD",
-      url: "https://www.cards.commerce.state.mn.us/documents/%7B40668C9D-0000-C710-B30A-B1F9EB74F462%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7B40668C9D-0000-C710-B30A-B1F9EB74F462%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher: "Choice Hotels International, Inc., filed with the Minnesota Department of Commerce",
       accessed: "2026-09-18"
     },
@@ -152,7 +152,7 @@ export const page: AnswerPage = {
     {
       n: 3,
       label: "Quality Franchise Disclosure Document (issued April 1, 2026, as amended May 20, 2026): Item 6, pp. 27-28, 40; Item 17, p. 72. Minnesota CARDS document 36789-202606-03, file number 48, Clean FDD",
-      url: "https://www.cards.commerce.state.mn.us/documents/%7B5055B19E-0000-C316-BD49-E91CD982D575%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7B5055B19E-0000-C316-BD49-E91CD982D575%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher: "Choice Hotels International, Inc., filed with the Minnesota Department of Commerce",
       accessed: "2026-09-18"
     }

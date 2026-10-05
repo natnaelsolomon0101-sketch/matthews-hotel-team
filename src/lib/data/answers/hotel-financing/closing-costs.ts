@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Hotel Loan Closing Costs and Process (2026)",
   h1: "What happens at a hotel loan closing, and what does it cost?",
   description: "What happens at a hotel loan closing and what it costs: title, legal, third-party reports, lender fees, taxes and reserves, with 2026 figures.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-10-05",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -32,7 +32,7 @@ export const page: AnswerPage = {
     "Closing costs are separate from reserves. One 2026 hotel loan had $811,172 of closing costs and $5,507,309 of upfront reserves. Budget for both.[1]",
     "A few line items have public prices: title premiums in states that set them, mortgage recording taxes, and SBA guaranty fees.[3][4][5]",
     "Most line items do not: origination, lender legal, borrower legal, survey and third-party reports are quoted deal by deal, and our rate sheet does not print them.[6]",
-    "The SBA 7(a) upfront fee on a $5,000,000 loan approved by September 30, 2026 is $138,125, which is 2.76 percent of the loan.[5]",
+    "The SBA 7(a) upfront fee on a $5,000,000 loan approved between October 1, 2026 and September 30, 2027 is $138,125, which is 2.76 percent of the loan.[5]",
     "What a term sheet calls closing costs can include a rate buydown. One 2026 loan's closing costs included a $780,000 interest rate buydown.[2]"
   ],
   sections: [
@@ -49,7 +49,7 @@ export const page: AnswerPage = {
     {
       h2: "Which hotel closing costs have published prices?",
       lead: "Title insurance premiums in states that set them, state mortgage recording taxes, and SBA guaranty fees are published, and nearly everything else is quoted.",
-      body: "Texas sets title premiums by rule. Under the Texas Department of Insurance schedule effective March 1, 2026, the basic premium on a policy between $5,000,001 and $15,000,000 is $21,466 plus 0.335 percent of the amount over $5,000,000. On a $10,000,000 policy that is $38,216, before any credits or endorsements.[3] Outside Texas, rules differ by state, so ask the title company for a quote early.\n\nSome states tax the mortgage itself. Florida charges documentary stamp tax of 35 cents per $100 on the full amount of indebtedness secured by a recorded mortgage, with no cap, payable when the mortgage is recorded. On a $10,000,000 mortgage that is $35,000. Florida also lists a separate nonrecurring intangible tax.[4] Mortgage taxes vary widely by state, so check your own before you build a budget.\n\nSBA publishes its fees each fiscal year. For 7(a) loans approved from October 1, 2025 through September 30, 2026 with a maturity over 12 months, the upfront fee on loans of $700,001 to $5,000,000 is 3.5 percent of the guaranteed portion up to $1,000,000, plus 3.75 percent of the guaranteed portion over $1,000,000.[5] SBA's maximum guarantee on a 7(a) loan above $150,000 is 75 percent.[8] The lender's 0.55 percent annual service fee may not be passed on to the borrower.[5] A new notice will set fiscal 2027 fees."
+      body: "Texas sets title premiums by rule. Under the Texas Department of Insurance schedule effective March 1, 2026, the basic premium on a policy between $5,000,001 and $15,000,000 is $21,466 plus 0.335 percent of the amount over $5,000,000. On a $10,000,000 policy that is $38,216, before any credits or endorsements.[3] Outside Texas, rules differ by state, so ask the title company for a quote early.\n\nSome states tax the mortgage itself. Florida charges documentary stamp tax of 35 cents per $100 on the full amount of indebtedness secured by a recorded mortgage, with no cap, payable when the mortgage is recorded. On a $10,000,000 mortgage that is $35,000. Florida also lists a separate nonrecurring intangible tax.[4] Mortgage taxes vary widely by state, so check your own before you build a budget.\n\nSBA publishes its fees each fiscal year. For 7(a) loans approved from October 1, 2026 through September 30, 2027 with a maturity over 12 months, the upfront fee on loans of $700,001 to $5,000,000 is 3.5 percent of the guaranteed portion up to $1,000,000, plus 3.75 percent of the guaranteed portion over $1,000,000.[5] SBA's maximum guarantee on a 7(a) loan above $150,000 is 75 percent.[8] The lender's 0.55 percent annual service fee may not be passed on to the borrower.[5] The fiscal 2027 notice, published September 3, 2026 and effective October 1, 2026, sets the same tiers and the same service fee as fiscal 2026, so none of these figures changed at the fiscal year end.[5]"
     },
     {
       h2: "What third-party reports will the lender order, and who pays?",
@@ -91,7 +91,7 @@ export const page: AnswerPage = {
       [
         "SBA 7(a) upfront fee",
         "SBA, through the lender",
-        "3.5% of the guaranteed portion up to $1,000,000 plus 3.75% above it, for loans of $700,001 to $5,000,000 approved by September 30, 2026[5]",
+        "3.5% of the guaranteed portion up to $1,000,000 plus 3.75% above it, for loans of $700,001 to $5,000,000 approved by September 30, 2027[5]",
         "Charged on the guaranteed portion, not the whole loan"
       ],
       [
@@ -133,7 +133,7 @@ export const page: AnswerPage = {
   },
   workedExample: {
     label: "Hypothetical: closing budget for a $10.0M hotel refinance in Texas",
-    body: "Hypothetical. Loan $10,000,000 on a Texas hotel. The 1.5 percent total is an assumption that sits between the two public 2026 examples of 1.2 and 1.7 percent. It is not a quote, and a smaller loan should expect a higher percentage.\n\nTotal budget. $10,000,000 times 1.5 percent is $150,000.\n\nThe published piece. The Texas basic title premium on a $10,000,000 policy is $21,466 plus 0.335 percent of $5,000,000, which is $16,750, for a total of $38,216 before credits and endorsements. That is about 25 percent of the budget.\n\nThe quoted pieces. The remaining $111,784 has to cover origination, lender's counsel, borrower's counsel, the appraisal, the environmental and property condition reports, the survey and zoning report, and recording fees. None of those has a public price, so get each one in writing.\n\nThe same loan in Florida. Documentary stamp tax on the mortgage is $10,000,000 divided by $100, times $0.35, or $35,000, before the state's intangible tax.\n\nSBA contrast. A $5,000,000 7(a) loan approved by September 30, 2026 has a guaranteed portion of 75 percent, or $3,750,000. The upfront fee is 3.5 percent of $1,000,000, or $35,000, plus 3.75 percent of $2,750,000, or $103,125. The total is $138,125, which is 2.76 percent of the loan, before any other closing cost."
+    body: "Hypothetical. Loan $10,000,000 on a Texas hotel. The 1.5 percent total is an assumption that sits between the two public 2026 examples of 1.2 and 1.7 percent. It is not a quote, and a smaller loan should expect a higher percentage.\n\nTotal budget. $10,000,000 times 1.5 percent is $150,000.\n\nThe published piece. The Texas basic title premium on a $10,000,000 policy is $21,466 plus 0.335 percent of $5,000,000, which is $16,750, for a total of $38,216 before credits and endorsements. That is about 25 percent of the budget.\n\nThe quoted pieces. The remaining $111,784 has to cover origination, lender's counsel, borrower's counsel, the appraisal, the environmental and property condition reports, the survey and zoning report, and recording fees. None of those has a public price, so get each one in writing.\n\nThe same loan in Florida. Documentary stamp tax on the mortgage is $10,000,000 divided by $100, times $0.35, or $35,000, before the state's intangible tax.\n\nSBA contrast. A $5,000,000 7(a) loan approved by September 30, 2027 has a guaranteed portion of 75 percent, or $3,750,000. The upfront fee is 3.5 percent of $1,000,000, or $35,000, plus 3.75 percent of $2,750,000, or $103,125. The total is $138,125, which is 2.76 percent of the loan, before any other closing cost."
   },
   faq: [
     {
@@ -154,7 +154,7 @@ export const page: AnswerPage = {
     },
     {
       q: "What is the SBA guaranty fee on a $5 million hotel loan?",
-      a: "For a 7(a) loan approved by September 30, 2026, the upfront fee is 3.5 percent of the first $1,000,000 of the guaranteed portion plus 3.75 percent of the rest. On a $5,000,000 loan with a 75 percent guaranty, that is $138,125."
+      a: "For a 7(a) loan approved by September 30, 2027, the upfront fee is 3.5 percent of the first $1,000,000 of the guaranteed portion plus 3.75 percent of the rest. On a $5,000,000 loan with a 75 percent guaranty, that is $138,125."
     },
     {
       q: "How much cash do I need to bring to a hotel loan closing?",
@@ -200,10 +200,10 @@ export const page: AnswerPage = {
     },
     {
       n: 5,
-      label: "SBA Information Notice 5000-872051, 7(a) Fees Effective October 1, 2025 for Fiscal Year 2026 (effective August 28, 2025; expires October 1, 2026)",
-      url: "https://legacy.sba.gov/document/information-notice-5000-872051-7a-fees-effective-october-1-2025-fiscal-year-2026",
+      label: "SBA Information Notice 5000-881797, 7(a) Fees Effective October 1, 2026 for Fiscal Year 2027 and 90-Day Rule Clarification (published September 3, 2026; effective October 1, 2026; expires October 1, 2027)",
+      url: "https://legacy.sba.gov/document/information-notice-5000-881797-fy-2027-7a-program-fees",
       publisher: "U.S. Small Business Administration",
-      accessed: "2026-09-18"
+      accessed: "2026-10-05"
     },
     {
       n: 6,

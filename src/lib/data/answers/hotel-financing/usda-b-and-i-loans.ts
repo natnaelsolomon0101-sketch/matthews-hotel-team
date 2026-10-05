@@ -17,7 +17,7 @@ export const page: AnswerPage = {
   title: "USDA B&I Loans for Hotels: Rules and Fees",
   h1: "Can I get a USDA B&I loan for a hotel?",
   description: "USDA B&I guaranteed loans for rural hotels: eligibility, the $25 million limit, equity rules, fiscal 2026 fees, appraisal and refinance tests.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-10-05",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -50,8 +50,8 @@ export const page: AnswerPage = {
     },
     {
       h2: "How much can I borrow, and how much does USDA guarantee?",
-      lead: "One borrower can have up to $25 million of B&I guaranteed loans outstanding, and for fiscal 2026 USDA guarantees 85 percent of a loan under $5 million or 80 percent of a loan from $5 million to $25 million.",
-      body: "The $25 million figure counts the guaranteed and unguaranteed portions of every B&I loan to the borrower, existing balances included. There is also a $100 million limit per guarantor.[2] The regulation caps any guarantee at 90 percent of eligible loss and tells the agency to set the percentage each year by Federal Register notice.[7]\n\nThe fiscal 2026 notice was published March 9, 2026, with fees effective October 1, 2025. It sets an 85 percent guarantee for B&I loans under $5 million and 80 percent for B&I loans of $5 million to $25 million.[3] That is where B&I earns its place for hotels: a $12 million loan on a rural hotel is too large for SBA 7(a), but well inside B&I. See [What is the difference between an SBA 7(a) loan and an SBA 504 loan for a hotel?](/hotel-financing/sba-7a-vs-504) for those limits.\n\nThe notice applies to loans obligated in fiscal 2026, which ends September 30, 2026.[3] USDA publishes a new notice for each fiscal year. If your loan will be obligated after that date, ask the lender for the fiscal 2027 figures."
+      lead: "One borrower can have up to $25 million of B&I guaranteed loans outstanding, and under the most recent published notice USDA guarantees 85 percent of a loan under $5 million or 80 percent of a loan from $5 million to $25 million.",
+      body: "The $25 million figure counts the guaranteed and unguaranteed portions of every B&I loan to the borrower, existing balances included. There is also a $100 million limit per guarantor.[2] The regulation caps any guarantee at 90 percent of eligible loss and tells the agency to set the percentage each year by Federal Register notice.[7]\n\nThe fiscal 2026 notice was published March 9, 2026, with fees effective October 1, 2025. It sets an 85 percent guarantee for B&I loans under $5 million and 80 percent for B&I loans of $5 million to $25 million.[3] That is where B&I earns its place for hotels: a $12 million loan on a rural hotel is too large for SBA 7(a), but well inside B&I. See [What is the difference between an SBA 7(a) loan and an SBA 504 loan for a hotel?](/hotel-financing/sba-7a-vs-504) for those limits.\n\nThe notice set these rates for fiscal 2026, which ended September 30, 2026, and says USDA will publish a subsequent notice in the Federal Register should the fees need to be adjusted.[3] Checked against the Federal Register on October 5, 2026: the March 9, 2026 notice is still the most recent OneRD annual notice, and no fiscal 2027 notice has published. USDA has published these notices mid-year before, so ask the lender to confirm the rates in force on the day your loan is obligated."
     },
     {
       h2: "What fees does USDA charge on a B&I loan?",
@@ -149,7 +149,7 @@ export const page: AnswerPage = {
     },
     {
       q: "What are the USDA B&I fees for 2026?",
-      a: "For loans obligated in fiscal 2026: a 3.0 percent one-time guarantee fee and a 0.55 percent annual retention fee, both on the guaranteed portion, plus 0.50 percent if the guarantee is issued before construction completion. Fiscal 2026 ends September 30, 2026."
+      a: "Under the most recent published notice, which set fiscal 2026 rates: a 3.0 percent one-time guarantee fee and a 0.55 percent annual retention fee, both on the guaranteed portion, plus 0.50 percent if the guarantee is issued before construction completion. Fiscal 2026 ended September 30, 2026 and USDA had not published a fiscal 2027 notice as of October 5, 2026."
     },
     {
       q: "Does USDA lend the money directly?",
