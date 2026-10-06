@@ -10,6 +10,7 @@ import { page as a_how_long_it_takes } from "./how-long-it-takes";
 import { page as a_how_to_choose_a_hotel_broker } from "./how-to-choose-a-hotel-broker";
 import { page as a_how_to_sell_a_hotel } from "./how-to-sell-a-hotel";
 import { page as a_hub } from "./hub";
+import { page as a_liquor_license_transfer } from "./liquor-license-transfer";
 import { page as a_off_market_vs_marketed } from "./off-market-vs-marketed";
 import { page as a_selling_a_distressed_hotel } from "./selling-a-distressed-hotel";
 import { page as a_selling_a_hotel_on_a_ground_lease } from "./selling-a-hotel-on-a-ground-lease";
@@ -31,6 +32,7 @@ export const spokes: AnswerPage[] = [
   a_how_long_it_takes,
   a_how_to_choose_a_hotel_broker,
   a_how_to_sell_a_hotel,
+  a_liquor_license_transfer,
   a_off_market_vs_marketed,
   a_selling_a_distressed_hotel,
   a_selling_a_hotel_on_a_ground_lease,

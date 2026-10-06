@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-10-05T14:26:09.427Z",
+  "runAt": "2026-10-06T14:28:53.424Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 319,
-  "blocksFound": 319,
-  "blocksValid": 319,
+  "urlsChecked": 320,
+  "blocksFound": 320,
+  "blocksValid": 320,
   "issues": [],
   "blocks": [
     {
@@ -778,6 +778,13 @@
     },
     {
       "url": "/sell-a-hotel/how-to-sell-a-hotel",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/sell-a-hotel/liquor-license-transfer",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,

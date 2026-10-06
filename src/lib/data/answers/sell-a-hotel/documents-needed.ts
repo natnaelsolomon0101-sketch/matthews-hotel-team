@@ -215,7 +215,8 @@ export const page: AnswerPage = {
       "/sell-a-hotel/how-long-it-takes",
       "/sell-a-hotel/broker-fees",
       "/sell-a-hotel/how-to-choose-a-hotel-broker",
-      "/sell-a-hotel/tax-clearance-and-withholding"
+      "/sell-a-hotel/tax-clearance-and-withholding",
+      "/sell-a-hotel/liquor-license-transfer"
     ],
     glossary: [
       "/glossary/iom",
