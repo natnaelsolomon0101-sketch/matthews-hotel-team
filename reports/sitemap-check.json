@@ -1,10 +1,10 @@
 {
-  "urls": 319,
+  "urls": 320,
   "maxDepth": 2,
   "byDepth": {
     "0": 1,
     "1": 32,
-    "2": 286
+    "2": 287
   },
   "depth": {
     "/": 0,
@@ -113,6 +113,7 @@
     "/sell-a-hotel/faq": 2,
     "/sell-a-hotel/franchise-agreement-expiration": 2,
     "/sell-a-hotel/franchise-transfer": 2,
+    "/sell-a-hotel/liquor-license-transfer": 2,
     "/sell-a-hotel/selling-a-distressed-hotel": 2,
     "/sell-a-hotel/selling-a-hotel-on-a-ground-lease": 2,
     "/sell-a-hotel/tax-clearance-and-withholding": 2,

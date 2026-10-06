@@ -66,7 +66,8 @@ export const entry: GlossaryEntry = {
     "/hotel-valuation/hotel-cap-rates",
     "/hotel-financing/loan-requirements",
     "/hotel-industry/resort-fees",
-    "/hotel-financing/flood-insurance-requirements"
+    "/hotel-financing/flood-insurance-requirements",
+    "/sell-a-hotel/liquor-license-transfer"
   ],
   lastUpdated: "2026-10-02",
   authorSlug: "nate-solomon"

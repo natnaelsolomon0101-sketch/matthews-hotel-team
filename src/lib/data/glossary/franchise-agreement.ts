@@ -65,7 +65,8 @@ export const entry: GlossaryEntry = {
     "/sell-a-hotel/documents-needed",
     "/buy-a-hotel/how-to-make-an-offer",
     "/sell-a-hotel/employees-when-you-sell",
-    "/hotel-industry/ada-requirements"
+    "/hotel-industry/ada-requirements",
+    "/sell-a-hotel/liquor-license-transfer"
   ],
   lastUpdated: "2026-09-18",
   authorSlug: "nate-solomon"

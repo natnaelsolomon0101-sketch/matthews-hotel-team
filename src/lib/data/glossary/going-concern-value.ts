@@ -68,7 +68,8 @@ export const entry: GlossaryEntry = {
     "/hotel-valuation/how-to-value-a-hotel",
     "/hotel-valuation/broker-opinion-of-value",
     "/hotel-financing/loan-requirements",
-    "/sell-a-hotel/tax-clearance-and-withholding"
+    "/sell-a-hotel/tax-clearance-and-withholding",
+    "/sell-a-hotel/liquor-license-transfer"
   ],
   lastUpdated: "2026-10-05",
   authorSlug: "nate-solomon"

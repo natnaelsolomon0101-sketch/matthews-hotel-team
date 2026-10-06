@@ -268,7 +268,8 @@ export const page: AnswerPage = {
       "/sell-a-hotel/franchise-agreement-expiration",
       "/sell-a-hotel/how-long-it-takes",
       "/sell-a-hotel/documents-needed",
-      "/sell-a-hotel/how-to-sell-a-hotel"
+      "/sell-a-hotel/how-to-sell-a-hotel",
+      "/sell-a-hotel/liquor-license-transfer"
     ],
     glossary: [
       "/glossary/franchise-agreement",
