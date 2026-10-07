@@ -18,7 +18,7 @@ export const page: AnswerPage = {
   title: "What Hotel Buyers Look For Before They Make an Offer",
   h1: "What do buyers look for when buying a hotel?",
   description: "What a hotel buyer and its lender check first: provable NOI, RevPAR index, PIP and transfer costs, franchise term, and whether the deal can be financed.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-10-07",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -67,7 +67,7 @@ export const page: AnswerPage = {
     {
       h2: "What can I do in the year before I sell?",
       lead: "Make the income provable, learn the PIP number, fix what is cheap to fix, and do not start capital projects a buyer will not pay for.",
-      body: "Twelve months out: move the books to the standard format if they are not there, stop running personal expenses through the hotel, and keep monthly STR reports. A full year of clean numbers is what the buyer's lender will underwrite.\n\nSix months out: ask the brand for a PIP, get a contractor's price for it, and have your own roof, mechanical and environmental checks done. Decide with your broker which items to fix and which to disclose and price.\n\nAt listing: have the documents in a data room before the first call. Our published listing process runs about 24 weeks from engagement to closing, and the diligence period is where unprepared sellers lose time and price.[6]\n\nFor a starting estimate of what the income supports, use `/tools/hotel-value-estimator`. For a written opinion from a broker, see `/hotel-valuation/broker-opinion-of-value`."
+      body: "Twelve months out: move the books to the standard format if they are not there, stop running personal expenses through the hotel, and keep monthly STR reports. A full year of clean numbers is what the buyer's lender will underwrite.\n\nSix months out: ask the brand for a PIP, get a contractor's price for it, and have your own roof, mechanical and environmental checks done. Decide with your broker which items to fix and which to disclose and price.\n\nAt listing: have the documents in a data room before the first call. Our published listing process runs about 24 weeks from engagement to closing, and the diligence period is where unprepared sellers lose time and price.[6]\n\nFor a starting estimate of what the income supports, use `/tools/hotel-value-estimator`. For a written opinion from a broker, see `/hotel-valuation/broker-opinion-of-value`. If the hotel sits in a city with a hotel-only minimum wage, have the published schedule and what it does to income ready as well: [What is the hotel worker minimum wage, and what does it do to my hotel's value?](/hotel-industry/hotel-worker-minimum-wage)."
     }
   ],
   table: {

@@ -18,7 +18,7 @@ export const page: AnswerPage = {
   title: "What Does It Cost to Operate a Hotel? Sourced Figures",
   h1: "What does it cost to operate a hotel?",
   description: "Hotel operating costs by USALI department, labor with BLS wage data, brand fees, property tax and insurance, using 2025 figures two public REITs reported.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-10-07",
   authorSlug: "nate-solomon",
   targetPrompts: [
     "What does it cost to operate a hotel?",
@@ -56,7 +56,7 @@ export const page: AnswerPage = {
     {
       h2: "What do hotel employees earn, according to the Bureau of Labor Statistics?",
       lead: "The Bureau of Labor Statistics reports average hourly earnings of $24.74 for all employees in accommodation, NAICS 721, for July 2026, a preliminary figure, and $21.94 for production and nonsupervisory employees.[3]",
-      body: "The same page reports average weekly hours of 31.1 for all accommodation employees in July 2026, also preliminary. Accommodation covers hotels and motels plus RV parks, camps and rooming houses.[3]\n\nBy occupation, the 2025 Occupational Employment and Wage Statistics figures for the industry are in the table below. Maids and housekeeping cleaners are the largest occupation, with 420,800 jobs at a median of $16.78 an hour. Hotel, motel and resort desk clerks number 247,700 at a median of $16.82. Lodging managers number 38,100 at a median of $32.27 an hour, or $67,110 a year.[3]\n\nThese are wages, not the cost of an employee. Payroll taxes, workers' compensation, health coverage and paid time off sit on top, and the Bureau's industry page does not state that load for accommodation. National medians also hide the local market: a housekeeper's wage in a resort town and in a small interstate market are different numbers, and a buyer should underwrite the local one."
+      body: "The same page reports average weekly hours of 31.1 for all accommodation employees in July 2026, also preliminary. Accommodation covers hotels and motels plus RV parks, camps and rooming houses.[3]\n\nBy occupation, the 2025 Occupational Employment and Wage Statistics figures for the industry are in the table below. Maids and housekeeping cleaners are the largest occupation, with 420,800 jobs at a median of $16.78 an hour. Hotel, motel and resort desk clerks number 247,700 at a median of $16.82. Lodging managers number 38,100 at a median of $32.27 an hour, or $67,110 a year.[3]\n\nThese are wages, not the cost of an employee. Payroll taxes, workers' compensation, health coverage and paid time off sit on top, and the Bureau's industry page does not state that load for accommodation. National medians also hide the local market: a housekeeper's wage in a resort town and in a small interstate market are different numbers, and a buyer should underwrite the local one. In a few California cities the floor is not a market question at all, because the city sets a hotel-only minimum wage by ordinance. Those rates and what each step does to value are at [What is the hotel worker minimum wage, and what does it do to my hotel's value?](/hotel-industry/hotel-worker-minimum-wage)."
     },
     {
       h2: "How much do franchise and management fees add to operating costs?",

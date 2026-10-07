@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-06T14:29:01.565Z",
-  "base": "http://localhost:39199",
+  "runAt": "2026-10-07T14:29:16.930Z",
+  "base": "http://localhost:38629",
   "edges": [
     {
       "from": "/",
@@ -4437,6 +4437,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-industry/resort-fees"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-industry/hotel-worker-minimum-wage"
     },
     {
       "from": "/sitemap",
@@ -51464,6 +51468,10 @@
     },
     {
       "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/hotel-industry/hotel-worker-minimum-wage"
+    },
+    {
+      "from": "/sell-a-hotel/employees-when-you-sell",
       "to": "/team/miles-cortez"
     },
     {
@@ -54189,6 +54197,10 @@
     {
       "from": "/sell-a-hotel/what-buyers-look-for",
       "to": "/hotel-valuation/broker-opinion-of-value"
+    },
+    {
+      "from": "/sell-a-hotel/what-buyers-look-for",
+      "to": "/hotel-industry/hotel-worker-minimum-wage"
     },
     {
       "from": "/sell-a-hotel/what-buyers-look-for",
@@ -64776,6 +64788,10 @@
     },
     {
       "from": "/hotel-industry",
+      "to": "/hotel-industry/hotel-worker-minimum-wage"
+    },
+    {
+      "from": "/hotel-industry",
       "to": "/hotel-franchise-costs"
     },
     {
@@ -66812,6 +66828,10 @@
     },
     {
       "from": "/hotel-industry/hotel-operating-costs",
+      "to": "/hotel-industry/hotel-worker-minimum-wage"
+    },
+    {
+      "from": "/hotel-industry/hotel-operating-costs",
       "to": "/hotel-franchise-costs"
     },
     {
@@ -67980,6 +68000,214 @@
     },
     {
       "from": "/hotel-industry/resort-fees",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/_next/static/chunks/e7051121e5f1db32.css"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/hotel-industry/hotel-worker-minimum-wage.md"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/tools/dscr-calculator"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/tools/cap-rate-calculator"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/sell-a-hotel/what-buyers-look-for"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/sell-a-hotel/employees-when-you-sell"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/hotel-industry/hotel-operating-costs"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/hotel-industry/how-hotels-make-money"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/hotel-industry/extended-stay-hotels"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/hotel-industry/ada-requirements"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/glossary/noi"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/glossary/gop"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/glossary/cap-rate"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
       "to": "/sitemap"
     },
     {
@@ -70712,6 +70940,7 @@
         "/hotel-industry/who-buys-hotels",
         "/hotel-industry/how-hotel-reits-work",
         "/hotel-industry/resort-fees",
+        "/hotel-industry/hotel-worker-minimum-wage",
         "/tools",
         "/tools/hotel-value-estimator",
         "/tools/hotel-loan-sizing-calculator",
@@ -83770,6 +83999,7 @@
         "/contact",
         "/team/nate-solomon",
         "/research/mhi/q1-2026",
+        "/hotel-industry/hotel-worker-minimum-wage",
         "/team/miles-cortez",
         "/sell-a-hotel/documents-needed",
         "/sell-a-hotel/franchise-transfer",
@@ -84530,6 +84760,7 @@
         "/sell-a-hotel/selling-a-hotel-on-a-ground-lease",
         "/tools/hotel-value-estimator",
         "/hotel-valuation/broker-opinion-of-value",
+        "/hotel-industry/hotel-worker-minimum-wage",
         "/team/luke-thompson",
         "/process",
         "/sell-a-hotel/how-to-sell-a-hotel",
@@ -87464,6 +87695,7 @@
         "/hotel-industry/who-buys-hotels",
         "/hotel-industry/how-hotel-reits-work",
         "/hotel-industry/resort-fees",
+        "/hotel-industry/hotel-worker-minimum-wage",
         "/hotel-franchise-costs",
         "/glossary",
         "/glossary/revpar",
@@ -88033,6 +88265,7 @@
         "/team/nate-solomon",
         "/hotel-industry/how-hotels-make-money",
         "/tools/dscr-calculator",
+        "/hotel-industry/hotel-worker-minimum-wage",
         "/hotel-franchise-costs",
         "/hotel-industry/hotel-management-agreements",
         "/hotel-valuation/property-tax-appeal",
@@ -88334,6 +88567,64 @@
         "/glossary/adr",
         "/glossary/revpar",
         "/glossary/noi",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/hotel-industry/hotel-worker-minimum-wage",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/e7051121e5f1db32.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-industry/hotel-worker-minimum-wage.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/hotel-industry",
+        "/team/luke-thompson",
+        "/tools/dscr-calculator",
+        "/tools/cap-rate-calculator",
+        "/sell-a-hotel/what-buyers-look-for",
+        "/sell-a-hotel/employees-when-you-sell",
+        "/team/nate-solomon",
+        "/hotel-industry/hotel-operating-costs",
+        "/hotel-industry/how-hotels-make-money",
+        "/hotel-industry/extended-stay-hotels",
+        "/hotel-industry/ada-requirements",
+        "/glossary",
+        "/glossary/noi",
+        "/glossary/gop",
+        "/glossary/cap-rate",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/tools",

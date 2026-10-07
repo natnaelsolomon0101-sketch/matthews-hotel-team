@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-10-06T14:28:53.424Z",
+  "runAt": "2026-10-07T14:29:04.462Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 320,
-  "blocksFound": 320,
-  "blocksValid": 320,
+  "urlsChecked": 321,
+  "blocksFound": 321,
+  "blocksValid": 321,
   "issues": [],
   "blocks": [
     {
@@ -1268,6 +1268,13 @@
     },
     {
       "url": "/hotel-industry/resort-fees",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-industry/hotel-worker-minimum-wage",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,
