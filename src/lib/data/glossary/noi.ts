@@ -67,9 +67,10 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/loan-requirements",
     "/hotel-industry/resort-fees",
     "/hotel-financing/flood-insurance-requirements",
-    "/sell-a-hotel/liquor-license-transfer"
+    "/sell-a-hotel/liquor-license-transfer",
+    "/hotel-industry/hotel-worker-minimum-wage"
   ],
-  lastUpdated: "2026-10-02",
+  lastUpdated: "2026-10-07",
   authorSlug: "nate-solomon"
 };
 

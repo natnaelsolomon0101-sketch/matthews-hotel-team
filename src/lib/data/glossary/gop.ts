@@ -62,9 +62,10 @@ export const entry: GlossaryEntry = {
     "/hotel-valuation/how-to-value-a-hotel",
     "/hotel-valuation/select-service-vs-full-service",
     "/sell-a-hotel/documents-needed",
-    "/sell-a-hotel/employees-when-you-sell"
+    "/sell-a-hotel/employees-when-you-sell",
+    "/hotel-industry/hotel-worker-minimum-wage"
   ],
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-10-07",
   authorSlug: "nate-solomon"
 };
 
