@@ -1,5 +1,45 @@
-# HUMAN_QUEUE — Items Needing Nate
+# HUMAN_QUEUE: items needing Nate
 
+## Open now (each re-verified 2026-10-08)
+
+Ranked by impact. Everything below the next divider is the May 2026 queue, kept for history.
+
+### 1. Verify Google Search Console. About 15 minutes plus DNS wait.
+**Evidence:** the domain has no TXT verification record (`dig TXT matthewshotelmarkets.com` returns nothing), and Vercel has no `NEXT_PUBLIC_GSC_VERIFICATION` variable, which `src/app/layout.tsx` already reads. Google can crawl the site but you cannot see or speed up indexing.
+1. search.google.com/search-console → Add property → **Domain** → `matthewshotelmarkets.com` → copy the TXT value.
+2. GoDaddy → `matthewshotelmarkets.com` → DNS → Add record: Type `TXT`, Name `@`, Value = the string → Save.
+3. Search Console → Verify → Sitemaps → `sitemap.xml` → Submit.
+4. URL Inspection → Request indexing for `/`, `/rates`, `/sell-a-hotel`, `/hotel-valuation`, `/hotel-financing`.
+
+### 2. Verify Bing Webmaster Tools. 5 minutes, after item 1.
+Bing feeds Copilot and ChatGPT search. bing.com/webmasters → **Import from Google Search Console** → pick the site → Import. Check that `sitemap.xml` is listed.
+
+### 3. Redirect `www` to the apex. 2 minutes.
+**Evidence:** the Vercel project serves `www.matthewshotelmarkets.com` with no redirect configured, so every page exists twice. Vercel → matthews-hotel-team → Settings → Domains → `www.matthewshotelmarkets.com` → Edit → Redirect to `matthewshotelmarkets.com`, 308 → Save.
+
+### 4. Add the tracking API keys as GitHub secrets. 10 minutes.
+**Evidence:** the repo has zero Actions secrets. The monthly LLM citation check has skipped every engine since it was built, and the weekly rank check falls back to DuckDuckGo. GitHub → repo → Settings → Secrets and variables → Actions → New repository secret, one per key:
+- `PERPLEXITY_API_KEY`, `OPENAI_API_KEY`, `ANTHROPIC_API_KEY` (the citation check; each is optional, and any key you add turns that engine on)
+- `SERPAPI_KEY` (Google results for the rank check, which uses about 360 searches a month at 90 queries a week; check that against SerpAPI's current plan before adding it, or leave it on DuckDuckGo)
+
+### 5. HubSpot AEO access. 5 minutes for a super admin.
+**Evidence:** `get_aeo_metrics` still answers "You need access to additional permissions" (2026-10-08). Ask the portal super admin to give your user the AEO tool. Once that's done, the priority prompts in `geo/04-queries.md` can be loaded.
+
+### 6. Close GitHub issue #52.
+Production is deploying again: `bad9ed7` (PR #65) has been live since 2026-10-07 14:36 UTC. The evidence is in the issue comment of 2026-10-08.
+
+### 7. Facts only you can confirm, each of which unblocks a page
+- **Denver office street address** (ask Miles). `/offices/denver` publishes no address until then.
+- **License numbers and broker-of-record relationship** for a `/trust` page.
+- **Does the internal transaction database cited in older insights exist?** If yes, it feeds `/data/transaction-volume`.
+- **Named deals per broker** in `team.ts` are marked `TODO: confirm`. Once confirmed, team pages can list notable deals.
+
+### 8. LinkedIn company page (as found 2026-09-18, not re-checked)
+It is titled "Matthews Hospitality", with no website field and an unsourced "1.8M+ relationships" tagline. Rename it to Matthews Hotel Markets, set the website to `https://matthewshotelmarkets.com`, and use the boilerplate from `/press`.
+
+---
+
+## Archive: May 2026 queue
 Compiled from the 5-hour sprint + the fix-all sprint (2026-05-10). Each item is paste-ready or has the URL/contact you need. Grouped by urgency.
 
 ---

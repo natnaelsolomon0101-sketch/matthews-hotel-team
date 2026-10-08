@@ -10,6 +10,15 @@ export type BrandFlag = {
   underwritingNotes: string[];
   buyerPool: string;
   ourActivity: string;
+  /**
+   * Franchise-cost answer pages for this brand family, chosen by hand as
+   * absolute paths: the family's own guides under /hotel-franchise-costs, or
+   * the cluster hub when no guide for the family is written yet. Never derive
+   * this by matching the first word of a flag name ("Hilton Garden Inn" is not
+   * "Hilton"; geo/content-queue.md section G). When a new brand guide ships,
+   * add it to its family here. Rendered by src/lib/hub-links.ts.
+   */
+  franchiseCostPages: string[];
 };
 
 export const brands: BrandFlag[] = [
@@ -33,6 +42,7 @@ export const brands: BrandFlag[] = [
       "Family offices, HNW first-time hotel buyers, PE roll-ups, and select-service REITs (Apple Hospitality, Summit, Chatham, Service Properties Trust).",
     ourActivity:
       "Matthews Hotel Markets sells and arranges financing for Hampton hotels. Published Hampton transactions at /closed include sales and financings in Texas, Georgia, Iowa and Oklahoma.",
+    franchiseCostPages: ["/hotel-franchise-costs/hampton-inn"],
   },
   {
     slug: "holiday-inn-express",
@@ -57,6 +67,7 @@ export const brands: BrandFlag[] = [
       "PE select-service roll-ups, family offices, owner-operators, and franchise-experienced HNW investors. IHG-affiliated operating groups and Apple Hospitality / Summit / Chatham buyers when the asset fits portfolio strategy.",
     ourActivity:
       "Matthews Hotel Markets sells and arranges financing for Holiday Inn Express hotels. Published Holiday Inn Express transactions in Georgia and Texas are listed at /closed.",
+    franchiseCostPages: ["/hotel-franchise-costs"],
   },
   {
     slug: "marriott",
@@ -85,6 +96,7 @@ export const brands: BrandFlag[] = [
       "Select-service Marriott: REITs (Apple, Summit, Chatham, Diamondrock), family offices, PE roll-ups. Full-service Marriott: Host Hotels, Pebblebrook, sovereign wealth funds, large family offices, Bonvoy-strategic operators.",
     ourActivity:
       "Published Marriott-family transactions at /closed include Courtyard, Residence Inn and full-service Marriott hotels.",
+    franchiseCostPages: ["/hotel-franchise-costs"],
   },
   {
     slug: "hilton",
@@ -114,6 +126,16 @@ export const brands: BrandFlag[] = [
       "Spans the full institutional capital stack: Apple Hospitality (select-service Hilton REIT focus), Park Hotels (full-service spin-off), family offices, PE roll-ups, and luxury-focused buyers for Conrad / Waldorf.",
     ourActivity:
       "Hampton Inn family is documented separately. Published Hilton transactions at /closed include Hilton Garden Inn and Home2 Suites hotels.",
+    franchiseCostPages: [
+      "/hotel-franchise-costs/hampton-inn",
+      "/hotel-franchise-costs/hilton-garden-inn",
+      "/hotel-franchise-costs/home2-suites",
+      "/hotel-franchise-costs/homewood-suites",
+      "/hotel-franchise-costs/tru-by-hilton",
+      "/hotel-franchise-costs/spark-by-hilton",
+      "/hotel-franchise-costs/doubletree",
+      "/hotel-franchise-costs/tapestry-collection",
+    ],
   },
   {
     slug: "ihg",
@@ -144,6 +166,7 @@ export const brands: BrandFlag[] = [
       "Holiday Inn Express + Staybridge + Candlewood: select-service REITs (Apple, Summit, Chatham, Service Properties Trust), family offices, PE. Full-service IHG (InterContinental, Crowne Plaza): Host, Pebblebrook, sovereign / international capital.",
     ourActivity:
       "Published IHG transactions at /closed include Holiday Inn Express, Holiday Inn, Staybridge Suites and Crowne Plaza hotels.",
+    franchiseCostPages: ["/hotel-franchise-costs"],
   },
   {
     slug: "best-western",
@@ -169,6 +192,10 @@ export const brands: BrandFlag[] = [
       "Owner-operators, family offices, AAHOA membership-network buyers, smaller PE select-service funds.",
     ourActivity:
       "Matthews Hotel Markets sells and arranges financing for Best Western family hotels nationwide. Every transaction the team publishes is listed at /closed.",
+    franchiseCostPages: [
+      "/hotel-franchise-costs/best-western",
+      "/hotel-franchise-costs/surestay",
+    ],
   },
   {
     slug: "hyatt",
@@ -198,6 +225,10 @@ export const brands: BrandFlag[] = [
       "Select-service Hyatt: Apple Hospitality, Summit, Chatham, family offices. Full-service: Pebblebrook, Sunstone, Host (selectively). Lifestyle (Andaz / Centric): boutique-focused PE funds, family offices, branded-experience operators.",
     ourActivity:
       "Matthews Hotel Markets sells and arranges financing for Hyatt family hotels nationwide. Every transaction the team publishes is listed at /closed.",
+    franchiseCostPages: [
+      "/hotel-franchise-costs/hyatt-place",
+      "/hotel-franchise-costs/hyatt-house",
+    ],
   },
   {
     slug: "choice",
@@ -229,6 +260,14 @@ export const brands: BrandFlag[] = [
       "Comfort / Quality / Sleep Inn: owner-operators, family offices, AAHOA buyers. WoodSpring Suites: extended-stay-focused REITs and PE. Cambria: upscale-focused buyers, including larger family offices and PE.",
     ourActivity:
       "Published Choice-family transactions at /closed include Quality Inn, Country Inn & Suites and Radisson hotels.",
+    franchiseCostPages: [
+      "/hotel-franchise-costs/comfort-inn",
+      "/hotel-franchise-costs/quality-inn",
+      "/hotel-franchise-costs/sleep-inn",
+      "/hotel-franchise-costs/econo-lodge",
+      "/hotel-franchise-costs/woodspring-suites",
+      "/hotel-franchise-costs/cambria",
+    ],
   },
   {
     slug: "wyndham",
@@ -263,6 +302,12 @@ export const brands: BrandFlag[] = [
       "La Quinta / Wingate / Microtel: family offices, owner-operators, smaller PE roll-ups. Days Inn / Super 8 / Travelodge: economy-focused investor pool, often franchise-experienced AAHOA-network buyers.",
     ourActivity:
       "Published Wyndham transactions at /closed include La Quinta and Ramada hotels in Texas.",
+    franchiseCostPages: [
+      "/hotel-franchise-costs/la-quinta",
+      "/hotel-franchise-costs/microtel",
+      "/hotel-franchise-costs/days-inn",
+      "/hotel-franchise-costs/super-8",
+    ],
   },
 ];
 

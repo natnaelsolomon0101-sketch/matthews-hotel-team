@@ -1,3 +1,4 @@
+import { CONTENT_SIGNAL, DISALLOW } from "@/lib/content-signals";
 import { SITE_URL } from "@/lib/entity";
 
 // A route handler, not Next's `robots.ts` metadata file, for one reason: the
@@ -70,30 +71,18 @@ const TRAINING_CRAWLERS = [
   "Meta-ExternalAgent",
 ];
 
-// Genuinely private paths only. `/_next/` is deliberately NOT disallowed:
-// Google's own guidance says blocking the JS/CSS/static assets a page needs
-// "directly harms how well our algorithms render and index your content"
-// (developers.google.com/search/docs/crawling-indexing/googlebot, "why
-// Google might not index your page"; also the 2015 Google Webmaster Central
-// post on rendering). Next.js serves hashed bundles under `/_next/static/`
-// that every rendered page depends on — disallowing it blocks nothing a
-// scraper wants (there's no sensitive data in a JS bundle path) but can
-// degrade rendering for any bot that does render. The old rule blocked it;
-// this rewrite removes that Disallow line.
-const DISALLOW = ["/api/"];
-
-// Content Signals (contentsignals.org; announced by Cloudflare on 2025-09-24,
-// https://blog.cloudflare.com/content-signals-policy/, released under CC0;
-// both read 2026-09-18). Three signals, each `yes` or `no`, written inside a
-// User-agent group between the User-agent and Allow lines:
-//   search    building a search index and returning links and excerpts
-//   ai-input  feeding the content to a model at answer time (RAG, grounding)
-//   ai-train  training or fine-tuning a model
-// All three are `yes`: this file already allows every search, fetch and
-// training crawler by name, and the signal says the same thing in the one
-// vocabulary written for it. A parser that does not know the line ignores it
-// (RFC 9309 section 2.2.4), so it cannot change any bot's access.
-const CONTENT_SIGNAL = "Content-Signal: search=yes, ai-input=yes, ai-train=yes";
+// `/_next/` is deliberately NOT disallowed (DISALLOW lives in
+// src/lib/content-signals.ts): Google's own guidance says blocking the
+// JS/CSS/static assets a page needs "directly harms how well our algorithms
+// render and index your content" (developers.google.com/search/docs/
+// crawling-indexing/googlebot, "why Google might not index your page"; also
+// the 2015 Google Webmaster Central post on rendering). Next.js serves hashed
+// bundles under `/_next/static/` that every rendered page depends on, so
+// disallowing it blocks nothing a scraper wants but can degrade rendering for
+// any bot that does render. The old rule blocked it; this rewrite removed it.
+//
+// CONTENT_SIGNAL (the Content Signals line, contentsignals.org) is defined in
+// the same file, so /ai.txt states the identical policy.
 
 function group(userAgents: string[]): string {
   return [

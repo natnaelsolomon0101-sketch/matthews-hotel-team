@@ -7,6 +7,7 @@ import SiteFooter from "@/components/layout/SiteFooter";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Pill } from "@/components/ui/Pill";
 import JsonLd from "@/components/seo/JsonLd";
+import { DEFAULT_OG_IMAGES } from "@/lib/seo-meta";
 import { ID, BRAND, breadcrumb, webPage } from "@/lib/entity";
 import { SBA_JSON_URL, SBA_CSV_URL, SBA_LICENSE, SBA_PATH, SBA_UPDATED, SBA_URL, SOURCES, T3, T5, fyRange, longDate, meta } from "@/lib/sba";
 import type { SbaTable } from "@/lib/sba/tables";
@@ -56,7 +57,7 @@ export async function generateMetadata(props: { params: Promise<Params> }): Prom
     title: `${stateTitle(p)} | Matthews Hotel`,
     description: stateDescription(p),
     alternates: { canonical: p.url, types: { "text/markdown": `${p.url}.md` } },
-    openGraph: { type: "article", title: stateTitle(p), description: stateDescription(p), url: p.url },
+    openGraph: { type: "article", title: stateTitle(p), description: stateDescription(p), url: p.url, images: DEFAULT_OG_IMAGES },
     twitter: { card: "summary_large_image", title: stateTitle(p) },
   };
 }
