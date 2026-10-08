@@ -13,6 +13,7 @@ import { team } from "@/lib/data/team";
 import { closedFaqs, faqJsonLdNode } from "@/lib/seo/faq";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/entity";
+import { closedRelated } from "@/lib/related-links";
 
 import { seoTitleFrom } from "@/lib/seo-meta";
 type Params = { slug: string };
@@ -78,6 +79,9 @@ export default async function ClosedDealPage(props: {
 
   const url = `${SITE_URL}/closed/${deal.slug}`;
   const faqs = closedFaqs(deal);
+  // Market, brand, franchise-cost, SBA and transaction-question links, each
+  // resolved against its own data module (src/lib/related-links.ts).
+  const related = closedRelated(deal);
 
   // @graph: Article (the close announcement) + RealEstateListing-as-Product
   // (with Sold availability) + BreadcrumbList. Brokers credited as authors of
@@ -327,6 +331,40 @@ export default async function ClosedDealPage(props: {
             </dl>
           </div>
         </section>
+
+        {related.length > 0 && (
+          <section className="bg-white py-16 lg:py-20" aria-labelledby="related-heading">
+            <div className="mx-auto max-w-[1024px] px-6">
+              <h2
+                id="related-heading"
+                className="text-[12px] uppercase tracking-[0.18em] font-medium text-[color:var(--text-secondary)]"
+              >
+                Related
+              </h2>
+              <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                {related.map((g) => (
+                  <div key={g.heading}>
+                    <h3 className="text-[13px] tracking-[-0.014em] text-[color:var(--text-secondary)]">
+                      {g.heading}
+                    </h3>
+                    <ul className="mt-3 space-y-2">
+                      {g.links.map((l) => (
+                        <li key={l.href}>
+                          <Link
+                            href={l.href}
+                            className="text-[15px] leading-[1.45] tracking-[-0.014em] text-[#1a3a6b] hover:underline underline-offset-[3px]"
+                          >
+                            {l.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
       </main>
       <SiteFooter />
     </>

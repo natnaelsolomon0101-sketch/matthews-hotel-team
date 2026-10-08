@@ -1,5 +1,6 @@
 import * as React from "react";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
@@ -8,6 +9,7 @@ import { insights, getInsight } from "@/lib/data/insights";
 import { team } from "@/lib/data/team";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/entity";
+import { insightAnswerLinks, relatedInsightSlugs } from "@/lib/related-links";
 
 import { seoTitle } from "@/lib/seo-meta";
 // Unknown slugs get the server-rendered 404 page (src/app/not-found.tsx).
@@ -74,6 +76,11 @@ export default async function InsightDetailPage(props: {
     .filter((m): m is NonNullable<typeof m> => Boolean(m));
 
   const url = `${SITE_URL}/insights/${insight.slug}`;
+  // Articles without their own relatedInsights get three by shared tag, so
+  // the layout's existing Related module renders for them too. Answer-page
+  // links come from an explicit per-article map (src/lib/related-links.ts).
+  const withRelated = { ...insight, relatedInsights: relatedInsightSlugs(insight) };
+  const relatedAnswers = insightAnswerLinks(insight);
 
   const articleNode: Record<string, unknown> = {
     "@type": "Article",
@@ -144,7 +151,33 @@ export default async function InsightDetailPage(props: {
       <SiteHeader />
       <main>
         <JsonLd graph={graph} />
-        <InsightLayout insight={insight} />
+        <InsightLayout insight={withRelated} />
+        {relatedAnswers.length > 0 && (
+          <section className="bg-white pb-24" aria-labelledby="related-questions-heading">
+            <div className="mx-auto max-w-[692px] px-6">
+              <div className="pt-10 border-t border-[color:var(--divider)]">
+                <h2
+                  id="related-questions-heading"
+                  className="text-[12px] uppercase tracking-[0.18em] font-medium text-[#86868b]"
+                >
+                  Related questions
+                </h2>
+                <ul className="mt-6 space-y-3">
+                  {relatedAnswers.map((l) => (
+                    <li key={l.href}>
+                      <Link
+                        href={l.href}
+                        className="text-[15px] leading-[1.45] tracking-[-0.014em] text-[#1a3a6b] hover:underline underline-offset-[3px]"
+                      >
+                        {l.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
+        )}
       </main>
       <SiteFooter />
     </>
