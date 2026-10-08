@@ -78,7 +78,7 @@ for p in / /hotel-financing /rates; do
 done
 
 step "discovery files"
-for p in /robots.txt /sitemap.xml /llms.txt /llms-full.txt /feed.xml /rates.json /rates.csv /openapi.json /agent-index.json /developers; do
+for p in /robots.txt /ai.txt /humans.txt /sitemap.xml /llms.txt /llms-full.txt /feed.xml /rates.json /rates.csv /openapi.json /agent-index.json /developers; do
   code=$(curl -s -o /dev/null -w '%{http_code}' "${BASE}${p}")
   [ "$code" = "200" ] || { echo "FAIL ${p}: HTTP ${code}" >&2; exit 1; }
 done
