@@ -332,6 +332,8 @@ Pick from `geo/04-queries.csv` prompts with no dedicated page, phrased the way p
 
 | [x] | `/hotel-industry/hotel-worker-minimum-wage` | No CSV row targets it directly, and "wage" appears in `geo/04-queries.csv` only inside the operating-cost prompts. It answers the labor half of the "Valuation & cap rates" and "Selling a hotel" clusters for California owners, and the repo had nothing: "minimum wage", "living wage", "wage ordinance", "panic button" and "room attendant" each appeared in zero files under `src/lib/data/`, and `/hotel-industry/hotel-operating-costs` carried only national BLS medians | Shipped 2026-10-07 in PR #65. Covers the four California cities whose current hotel rate we read at the city itself (Los Angeles $25.00 cash plus $4.25 toward health care, or $29.25 all in, from July 1, 2026; Long Beach $26.50 under Measure RW; Santa Monica matched to Los Angeles by SMMC 4.63.015(b)(2); Oakland $18.85 with health benefits or $25.14 without), the room-count coverage tests (60 in Los Angeles, 50 in the Airport Hospitality Enhancement Zone, 100 in Long Beach, 50 in Oakland), the May 26, 2026 amendment that killed the $30.00 figure for July 2028, the time-off, service-charge and no-tip-credit duties, Oakland's 4,000 square foot workload cap, the collective bargaining waiver as a diligence document, the fact that the duty binds whoever owns or operates the hotel so a buyer takes the scheduled steps, and the capitalization arithmetic. Prints no staffing count, no labor cost per occupied room and no figure for West Hollywood, Glendale or Emeryville: the first two are published nowhere and those three city websites answered no reader available in this run. Kept clear of `/hotel-industry/hotel-operating-costs` (the national cost structure) and `/sell-a-hotel/employees-when-you-sell` (WARN and successorship); both now link to it. |
 
+| [x] | `/hotel-industry/energy-benchmarking-and-emissions-limits` | No CSV row targets it directly. It answers the compliance-capex half of the "Valuation & cap rates" and "Brand/PIP/conversion" clusters, and the repo had nothing: "Local Law 97", "building performance", "benchmarking" as an energy duty, "carbon", "greenhouse" and "Energy Star" each appeared in zero files under `src/lib/data/` ("benchmarking" appeared in eight, always meaning a comp set or an FDD Item 19 benchmark) | Shipped 2026-10-08 in PR #67. Covers the split between benchmarking and a performance standard, the New York City covered-building test of 25,000 gross square feet, the four emissions factors the Department of Buildings rule assigns to the Portfolio Manager property type Hotel (0.00987, then 0.003850668, 0.002640017 and 0.001465772 tCO2e/sf), the trap that the rule is 27 percent stricter than the statutory occupancy group R-1 figure for 2030-2034, the halving of the grid electricity coefficient in 2030 that makes gas the binding constraint, both penalties with the finding that the $0.50/sf/month late-filing penalty dwarfs the $268 a ton exceedance penalty, the Local Law 33 letter grade posted at the hotel's front door, Washington's statute naming hotels in its tier definitions with the June 2026, 2027 and 2028 dates by size, and Boston and California reporting. Prints no retrofit cost per key, no Boston alternative compliance payment rate and no California threshold: none was read at its publisher this run. Kept clear of `/hotel-industry/hotel-operating-costs` (the cost structure) and `/hotel-financing/c-pace-financing` (paying for the work); both now link to it. |
+
 Remaining candidates: hotel loan assumption, seller financing for a hotel, preferred equity (needs a
 citable source), what buyers look for in a hotel, selling a hotel with a ground lease, hotel property
 tax appeals, receivership from the owner's side. Most of these now have pages; check the H1 list in
@@ -425,3 +427,33 @@ July 2026 where `/hotel-industry/hotel-operating-costs` carries
 **31.1** (the only file in `src/lib/data/` that does). The source changed by one preliminary decimal. This run did not touch it, because the figure feeds
 a committed arithmetic check (40,430 paid hours) on the operating-costs worked example and the cascade is
 Maintainer work, not a content run.
+
+**2026-10-08, Content Writer.** Shipped `/hotel-industry/energy-benchmarking-and-emissions-limits`. Sections A to E are
+complete, F is SKIPPED, G is blocked, and H and J were fully ticked, so the pick came from a coverage scan of
+`src/lib/data/`: "Local Law 97", "building performance", "carbon", "greenhouse", "Energy Star", "condotel",
+"sale-leaseback", "SNDA" and "probable maximum loss" each appeared in zero files. Of those, the energy and emissions
+duties are the only one that is published, dated, locally knowable and already enforceable, and they put a number on a
+hotel's gas bill that no appraisal picks up.
+
+Five sourcing notes for the next run. **`www.nyc.gov` answers 403 to curl with no User-Agent and 200 with a browser
+one**, which is how Local Law 97 of 2019 and the Department of Buildings rule 1 RCNY 103-14 were read as the city's own
+PDFs under `nyc.gov/assets/buildings/local_laws/` and `nyc.gov/assets/buildings/rules/`; `nyc.gov/site/buildings/codes/`
+pages serve clean HTML the same way, but `codelibrary.amlegal.com` still answers 403, so the Administrative Code itself
+is unreadable and Article 320 was read from the enacted local law. **`app.leg.wa.gov` serves both RCW and WAC sections
+to a script** at `default.aspx?cite=<section>`; strip the navigation, the statute text is the last block on the page.
+`www.eia.gov` serves the CBECS tables as PDFs and the `dnav` series pages as HTML tables. `leg.colorado.gov` answers
+406 even with `--compressed`, and `denvergov.org` and `mde.maryland.gov` serve JavaScript shells for their BEPS pages,
+so Colorado, Denver and Maryland are not on the page. `www.energy.ca.gov` serves the benchmarking program page but
+renders every document link in JavaScript, so California's square-footage threshold was not read and is not printed.
+
+**A trap worth repeating.** `1 RCNY 103-14(c)(3)(iii)` sets the 2030-2034 emissions factor for the Portfolio Manager
+property type Hotel at **0.003850668 tCO2e/sf**, where Administrative Code 28-320.3.2 item 8 sets occupancy group R-1
+at **0.00526**. The rule is about 27 percent stricter and it governs. Any future edit to this page must read the rule,
+not the statute, for every year after 2029. The statutory 2030 figure is on the page only as the contrast.
+
+Two figures the run deliberately did not publish: a retrofit cost per key (no public source gives one) and any lender
+policy on compliance capital (never published, per rule 1). Every figure in the worked example was recomputed by
+`scripts/check-bps-math.mjs`, committed alongside the page, 32 assertions covering both coefficient sets, all four
+limits, the two break-even gas intensities, both penalties and the capitalized value effect. The page runs about 2,769
+words after four trimming passes from 3,345, against the brief's 2,500 ceiling; the site's other evidence-heavy pages
+sit at 2,515 to 2,987 by the same count, and no paragraph is left without a citation or an internal link.

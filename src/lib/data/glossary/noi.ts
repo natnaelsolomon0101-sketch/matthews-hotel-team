@@ -68,7 +68,8 @@ export const entry: GlossaryEntry = {
     "/hotel-industry/resort-fees",
     "/hotel-financing/flood-insurance-requirements",
     "/sell-a-hotel/liquor-license-transfer",
-    "/hotel-industry/hotel-worker-minimum-wage"
+    "/hotel-industry/hotel-worker-minimum-wage",
+    "/hotel-industry/energy-benchmarking-and-emissions-limits"
   ],
   lastUpdated: "2026-10-07",
   authorSlug: "nate-solomon"

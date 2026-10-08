@@ -69,7 +69,7 @@ export const page: AnswerPage = {
     {
       h2: "What should I start gathering today?",
       lead: "Twelve months of bank statements to reconcile against the P&L, the current STAR report, and a written PIP scope letter, regardless of when you plan to list.",
-      body: "None of these require a broker engagement to begin, and starting early is one of the biggest things an owner can do to shorten the process, covered at [How long does it take to sell a hotel?](/sell-a-hotel/how-long-it-takes)"
+      body: "None of these require a broker engagement to begin, and starting early is one of the biggest things an owner can do to shorten the process, covered at [How long does it take to sell a hotel?](/sell-a-hotel/how-long-it-takes). If the hotel sits in a city that requires energy benchmarking, add the Portfolio Manager account and the last three filings to the pile: [Does my hotel have to report energy use or cut its carbon emissions?](/hotel-industry/energy-benchmarking-and-emissions-limits)"
     }
   ],
   table: {

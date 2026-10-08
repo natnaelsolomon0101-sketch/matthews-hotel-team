@@ -16,6 +16,7 @@ import { page as a_who_buys_hotels } from "./who-buys-hotels";
 import { page as a_how_hotel_reits_work } from "./how-hotel-reits-work";
 import { page as a_resort_fees } from "./resort-fees";
 import { page as a_hotel_worker_minimum_wage } from "./hotel-worker-minimum-wage";
+import { page as a_energy_benchmarking_and_emissions_limits } from "./energy-benchmarking-and-emissions-limits";
 import type { AnswerPage } from "../types";
 
 export const hub: AnswerPage = a_hub;
@@ -37,6 +38,7 @@ export const spokes: AnswerPage[] = [
   a_how_hotel_reits_work,
   a_resort_fees,
   a_hotel_worker_minimum_wage,
+  a_energy_benchmarking_and_emissions_limits,
 ];
 
 export const pages: AnswerPage[] = [hub, ...spokes];

@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-07T14:29:16.930Z",
-  "base": "http://localhost:38629",
+  "runAt": "2026-10-08T14:32:16.570Z",
+  "base": "http://localhost:39361",
   "edges": [
     {
       "from": "/",
@@ -4441,6 +4441,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-industry/hotel-worker-minimum-wage"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-industry/energy-benchmarking-and-emissions-limits"
     },
     {
       "from": "/sitemap",
@@ -44460,6 +44464,10 @@
     },
     {
       "from": "/hotel-financing/c-pace-financing",
+      "to": "/hotel-industry/energy-benchmarking-and-emissions-limits"
+    },
+    {
+      "from": "/hotel-financing/c-pace-financing",
       "to": "/glossary/mezzanine-debt"
     },
     {
@@ -51261,6 +51269,10 @@
     {
       "from": "/sell-a-hotel/documents-needed",
       "to": "/sell-a-hotel/how-long-it-takes"
+    },
+    {
+      "from": "/sell-a-hotel/documents-needed",
+      "to": "/hotel-industry/energy-benchmarking-and-emissions-limits"
     },
     {
       "from": "/sell-a-hotel/documents-needed",
@@ -64792,6 +64804,10 @@
     },
     {
       "from": "/hotel-industry",
+      "to": "/hotel-industry/energy-benchmarking-and-emissions-limits"
+    },
+    {
+      "from": "/hotel-industry",
       "to": "/hotel-franchise-costs"
     },
     {
@@ -64977,6 +64993,10 @@
     {
       "from": "/hotel-industry/ada-requirements",
       "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/hotel-industry/energy-benchmarking-and-emissions-limits"
     },
     {
       "from": "/hotel-industry/ada-requirements",
@@ -66828,6 +66848,10 @@
     },
     {
       "from": "/hotel-industry/hotel-operating-costs",
+      "to": "/hotel-industry/energy-benchmarking-and-emissions-limits"
+    },
+    {
+      "from": "/hotel-industry/hotel-operating-costs",
       "to": "/hotel-industry/hotel-worker-minimum-wage"
     },
     {
@@ -68208,6 +68232,214 @@
     },
     {
       "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/_next/static/chunks/e7051121e5f1db32.css"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/hotel-industry/energy-benchmarking-and-emissions-limits.md"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/hotel-financing/c-pace-financing"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/hotel-financing/pip-and-renovation-loans"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/hotel-valuation/pip-and-hotel-value"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/sell-a-hotel/documents-needed"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/hotel-industry/hotel-operating-costs"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/hotel-industry/ada-requirements"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/hotel-industry/hotel-worker-minimum-wage"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/hotel-industry/cost-to-build-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/glossary/noi"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/glossary/cap-rate"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/glossary/pip"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-industry/energy-benchmarking-and-emissions-limits",
       "to": "/sitemap"
     },
     {
@@ -70941,6 +71173,7 @@
         "/hotel-industry/how-hotel-reits-work",
         "/hotel-industry/resort-fees",
         "/hotel-industry/hotel-worker-minimum-wage",
+        "/hotel-industry/energy-benchmarking-and-emissions-limits",
         "/tools",
         "/tools/hotel-value-estimator",
         "/tools/hotel-loan-sizing-calculator",
@@ -82043,6 +82276,7 @@
         "/contact",
         "/team/luke-thompson",
         "/hotel-financing/pip-and-renovation-loans",
+        "/hotel-industry/energy-benchmarking-and-emissions-limits",
         "/glossary/mezzanine-debt",
         "/tools/dscr-calculator",
         "/hotel-financing/bridge-loans",
@@ -83942,6 +84176,7 @@
         "/research/mhi/q1-2026",
         "/sell-a-hotel/employees-when-you-sell",
         "/sell-a-hotel/how-long-it-takes",
+        "/hotel-industry/energy-benchmarking-and-emissions-limits",
         "/team/luke-thompson",
         "/process",
         "/sell-a-hotel/how-to-sell-a-hotel",
@@ -87696,6 +87931,7 @@
         "/hotel-industry/how-hotel-reits-work",
         "/hotel-industry/resort-fees",
         "/hotel-industry/hotel-worker-minimum-wage",
+        "/hotel-industry/energy-benchmarking-and-emissions-limits",
         "/hotel-franchise-costs",
         "/glossary",
         "/glossary/revpar",
@@ -87749,6 +87985,7 @@
         "/glossary/pip",
         "/hotel-financing/pip-and-renovation-loans",
         "/buy-a-hotel/due-diligence-checklist",
+        "/hotel-industry/energy-benchmarking-and-emissions-limits",
         "/team/nate-solomon",
         "/hotel-industry/hotel-operating-costs",
         "/hotel-industry/cost-to-build-a-hotel",
@@ -88265,6 +88502,7 @@
         "/team/nate-solomon",
         "/hotel-industry/how-hotels-make-money",
         "/tools/dscr-calculator",
+        "/hotel-industry/energy-benchmarking-and-emissions-limits",
         "/hotel-industry/hotel-worker-minimum-wage",
         "/hotel-franchise-costs",
         "/hotel-industry/hotel-management-agreements",
@@ -88625,6 +88863,64 @@
         "/glossary/noi",
         "/glossary/gop",
         "/glossary/cap-rate",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/e7051121e5f1db32.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-industry/energy-benchmarking-and-emissions-limits.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/hotel-industry",
+        "/team/miles-cortez",
+        "/hotel-financing/c-pace-financing",
+        "/hotel-financing/pip-and-renovation-loans",
+        "/hotel-valuation/pip-and-hotel-value",
+        "/sell-a-hotel/documents-needed",
+        "/team/nate-solomon",
+        "/hotel-industry/hotel-operating-costs",
+        "/hotel-industry/ada-requirements",
+        "/hotel-industry/hotel-worker-minimum-wage",
+        "/hotel-industry/cost-to-build-a-hotel",
+        "/glossary",
+        "/glossary/noi",
+        "/glossary/cap-rate",
+        "/glossary/pip",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/tools",
