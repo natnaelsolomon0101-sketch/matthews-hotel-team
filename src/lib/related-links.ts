@@ -344,6 +344,15 @@ export function listingRelated(l: Listing): RelatedGroup[] {
   );
 }
 
+// Closed records whose state field does not describe one hotel in one state:
+// two multi-state portfolios and a multifamily deal. A state SBA hotel-lending
+// page says nothing useful about them.
+const NO_SBA_LINK = new Set([
+  "26-hotel-portfolio-acquisition-debt",
+  "4-pack-marriott-intercon-portfolio-debt",
+  "tampa-boutique-multifamily-pref-equity",
+]);
+
 export function closedRelated(d: ClosedDeal): RelatedGroup[] {
   const flags = CLOSED_FLAGS[d.slug] ?? [];
   const byLabel = d.transactionTypeLabel ? CLOSED_ANSWERS[d.transactionTypeLabel] : undefined;
@@ -355,7 +364,7 @@ export function closedRelated(d: ClosedDeal): RelatedGroup[] {
   return groups(
     [marketLink(d.city, d.state), ...brandLinks(flags)],
     [...franchiseLinks(flags), ...resolveAnswers(answers)],
-    [sbaLink(d.state)],
+    [NO_SBA_LINK.has(d.slug) ? undefined : sbaLink(d.state)],
   );
 }
 
