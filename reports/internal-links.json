@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-08T13:25:11.948Z",
-  "base": "http://localhost:49835",
+  "runAt": "2026-10-08T13:38:00.794Z",
+  "base": "http://localhost:50330",
   "edges": [
     {
       "from": "/",
@@ -20320,6 +20320,30 @@
     },
     {
       "from": "/listings/hampton-inn-shelbyville",
+      "to": "/hotels-for-sale/hampton-inn"
+    },
+    {
+      "from": "/listings/hampton-inn-shelbyville",
+      "to": "/hotel-franchise-costs/hampton-inn"
+    },
+    {
+      "from": "/listings/hampton-inn-shelbyville",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/listings/hampton-inn-shelbyville",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/listings/hampton-inn-shelbyville",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/listings/hampton-inn-shelbyville",
+      "to": "/data/sba-hotel-lending/indiana"
+    },
+    {
+      "from": "/listings/hampton-inn-shelbyville",
       "to": "/buy-a-hotel"
     },
     {
@@ -20480,6 +20504,30 @@
     },
     {
       "from": "/listings/comfort-suites-daytona-beach",
+      "to": "/hotels-for-sale/choice"
+    },
+    {
+      "from": "/listings/comfort-suites-daytona-beach",
+      "to": "/hotel-franchise-costs/comfort-inn"
+    },
+    {
+      "from": "/listings/comfort-suites-daytona-beach",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/listings/comfort-suites-daytona-beach",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/listings/comfort-suites-daytona-beach",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/listings/comfort-suites-daytona-beach",
+      "to": "/data/sba-hotel-lending/florida"
+    },
+    {
+      "from": "/listings/comfort-suites-daytona-beach",
       "to": "/buy-a-hotel"
     },
     {
@@ -20640,6 +20688,30 @@
     },
     {
       "from": "/listings/super-8-wyndham-kinder",
+      "to": "/hotels-for-sale/wyndham"
+    },
+    {
+      "from": "/listings/super-8-wyndham-kinder",
+      "to": "/hotel-franchise-costs/super-8"
+    },
+    {
+      "from": "/listings/super-8-wyndham-kinder",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/listings/super-8-wyndham-kinder",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/listings/super-8-wyndham-kinder",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/listings/super-8-wyndham-kinder",
+      "to": "/data/sba-hotel-lending/louisiana"
+    },
+    {
+      "from": "/listings/super-8-wyndham-kinder",
       "to": "/buy-a-hotel"
     },
     {
@@ -20800,6 +20872,30 @@
     },
     {
       "from": "/listings/microtel-wyndham-sidney",
+      "to": "/hotels-for-sale/wyndham"
+    },
+    {
+      "from": "/listings/microtel-wyndham-sidney",
+      "to": "/hotel-franchise-costs/microtel"
+    },
+    {
+      "from": "/listings/microtel-wyndham-sidney",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/listings/microtel-wyndham-sidney",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/listings/microtel-wyndham-sidney",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/listings/microtel-wyndham-sidney",
+      "to": "/data/sba-hotel-lending/montana"
+    },
+    {
+      "from": "/listings/microtel-wyndham-sidney",
       "to": "/buy-a-hotel"
     },
     {
@@ -20960,6 +21056,30 @@
     },
     {
       "from": "/listings/quality-inn-blytheville",
+      "to": "/hotels-for-sale/choice"
+    },
+    {
+      "from": "/listings/quality-inn-blytheville",
+      "to": "/hotel-franchise-costs/quality-inn"
+    },
+    {
+      "from": "/listings/quality-inn-blytheville",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/listings/quality-inn-blytheville",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/listings/quality-inn-blytheville",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/listings/quality-inn-blytheville",
+      "to": "/data/sba-hotel-lending/arkansas"
+    },
+    {
+      "from": "/listings/quality-inn-blytheville",
       "to": "/buy-a-hotel"
     },
     {
@@ -21120,6 +21240,22 @@
     },
     {
       "from": "/listings/americas-best-value-inn-caldwell",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/listings/americas-best-value-inn-caldwell",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/listings/americas-best-value-inn-caldwell",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/listings/americas-best-value-inn-caldwell",
+      "to": "/data/sba-hotel-lending/texas"
+    },
+    {
+      "from": "/listings/americas-best-value-inn-caldwell",
       "to": "/buy-a-hotel"
     },
     {
@@ -21280,6 +21416,30 @@
     },
     {
       "from": "/listings/hampton-by-hilton-akron",
+      "to": "/hotels-for-sale/hampton-inn"
+    },
+    {
+      "from": "/listings/hampton-by-hilton-akron",
+      "to": "/hotel-franchise-costs/hampton-inn"
+    },
+    {
+      "from": "/listings/hampton-by-hilton-akron",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/listings/hampton-by-hilton-akron",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/listings/hampton-by-hilton-akron",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/listings/hampton-by-hilton-akron",
+      "to": "/data/sba-hotel-lending/ohio"
+    },
+    {
+      "from": "/listings/hampton-by-hilton-akron",
       "to": "/buy-a-hotel"
     },
     {
@@ -21440,6 +21600,26 @@
     },
     {
       "from": "/listings/springhill-suites-pittsburgh-washington",
+      "to": "/hotels-for-sale/marriott"
+    },
+    {
+      "from": "/listings/springhill-suites-pittsburgh-washington",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/listings/springhill-suites-pittsburgh-washington",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/listings/springhill-suites-pittsburgh-washington",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/listings/springhill-suites-pittsburgh-washington",
+      "to": "/data/sba-hotel-lending/pennsylvania"
+    },
+    {
+      "from": "/listings/springhill-suites-pittsburgh-washington",
       "to": "/buy-a-hotel"
     },
     {
@@ -21600,6 +21780,30 @@
     },
     {
       "from": "/listings/la-quinta-wyndham-lumberton",
+      "to": "/hotels-for-sale/wyndham"
+    },
+    {
+      "from": "/listings/la-quinta-wyndham-lumberton",
+      "to": "/hotel-franchise-costs/la-quinta"
+    },
+    {
+      "from": "/listings/la-quinta-wyndham-lumberton",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/listings/la-quinta-wyndham-lumberton",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/listings/la-quinta-wyndham-lumberton",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/listings/la-quinta-wyndham-lumberton",
+      "to": "/data/sba-hotel-lending/texas"
+    },
+    {
+      "from": "/listings/la-quinta-wyndham-lumberton",
       "to": "/buy-a-hotel"
     },
     {
@@ -21760,6 +21964,22 @@
     },
     {
       "from": "/listings/fox-river-resort-sheridan",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/listings/fox-river-resort-sheridan",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/listings/fox-river-resort-sheridan",
+      "to": "/buy-a-hotel/branded-vs-independent"
+    },
+    {
+      "from": "/listings/fox-river-resort-sheridan",
+      "to": "/data/sba-hotel-lending/illinois"
+    },
+    {
+      "from": "/listings/fox-river-resort-sheridan",
       "to": "/buy-a-hotel"
     },
     {
@@ -21920,6 +22140,18 @@
     },
     {
       "from": "/listings/hotel-pad-site-morrisville",
+      "to": "/hotel-industry/cost-to-build-a-hotel"
+    },
+    {
+      "from": "/listings/hotel-pad-site-morrisville",
+      "to": "/hotel-financing/construction-loans"
+    },
+    {
+      "from": "/listings/hotel-pad-site-morrisville",
+      "to": "/data/sba-hotel-lending/north-carolina"
+    },
+    {
+      "from": "/listings/hotel-pad-site-morrisville",
       "to": "/buy-a-hotel"
     },
     {
@@ -22080,6 +22312,30 @@
     },
     {
       "from": "/listings/quality-inn-johnson-city",
+      "to": "/hotels-for-sale/choice"
+    },
+    {
+      "from": "/listings/quality-inn-johnson-city",
+      "to": "/hotel-franchise-costs/quality-inn"
+    },
+    {
+      "from": "/listings/quality-inn-johnson-city",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/listings/quality-inn-johnson-city",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/listings/quality-inn-johnson-city",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/listings/quality-inn-johnson-city",
+      "to": "/data/sba-hotel-lending/tennessee"
+    },
+    {
+      "from": "/listings/quality-inn-johnson-city",
       "to": "/buy-a-hotel"
     },
     {
@@ -22240,6 +22496,30 @@
     },
     {
       "from": "/listings/days-inn-wyndham-del-rio",
+      "to": "/hotels-for-sale/wyndham"
+    },
+    {
+      "from": "/listings/days-inn-wyndham-del-rio",
+      "to": "/hotel-franchise-costs/days-inn"
+    },
+    {
+      "from": "/listings/days-inn-wyndham-del-rio",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/listings/days-inn-wyndham-del-rio",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/listings/days-inn-wyndham-del-rio",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/listings/days-inn-wyndham-del-rio",
+      "to": "/data/sba-hotel-lending/texas"
+    },
+    {
+      "from": "/listings/days-inn-wyndham-del-rio",
       "to": "/buy-a-hotel"
     },
     {
@@ -22400,6 +22680,26 @@
     },
     {
       "from": "/listings/fairfield-inn-suites-monaca",
+      "to": "/hotels-for-sale/marriott"
+    },
+    {
+      "from": "/listings/fairfield-inn-suites-monaca",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/listings/fairfield-inn-suites-monaca",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/listings/fairfield-inn-suites-monaca",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/listings/fairfield-inn-suites-monaca",
+      "to": "/data/sba-hotel-lending/pennsylvania"
+    },
+    {
+      "from": "/listings/fairfield-inn-suites-monaca",
       "to": "/buy-a-hotel"
     },
     {
@@ -22560,6 +22860,22 @@
     },
     {
       "from": "/listings/sinclair-gas-hotel-bluff",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/listings/sinclair-gas-hotel-bluff",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/listings/sinclair-gas-hotel-bluff",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/listings/sinclair-gas-hotel-bluff",
+      "to": "/data/sba-hotel-lending/utah"
+    },
+    {
+      "from": "/listings/sinclair-gas-hotel-bluff",
       "to": "/buy-a-hotel"
     },
     {
@@ -22720,6 +23036,26 @@
     },
     {
       "from": "/listings/econo-lodge-suburban-studios-daytona",
+      "to": "/hotel-franchise-costs/econo-lodge"
+    },
+    {
+      "from": "/listings/econo-lodge-suburban-studios-daytona",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/listings/econo-lodge-suburban-studios-daytona",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/listings/econo-lodge-suburban-studios-daytona",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/listings/econo-lodge-suburban-studios-daytona",
+      "to": "/data/sba-hotel-lending/florida"
+    },
+    {
+      "from": "/listings/econo-lodge-suburban-studios-daytona",
       "to": "/buy-a-hotel"
     },
     {
@@ -22880,6 +23216,22 @@
     },
     {
       "from": "/listings/place-in-the-sun-palm-springs",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/listings/place-in-the-sun-palm-springs",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/listings/place-in-the-sun-palm-springs",
+      "to": "/buy-a-hotel/branded-vs-independent"
+    },
+    {
+      "from": "/listings/place-in-the-sun-palm-springs",
+      "to": "/data/sba-hotel-lending/california"
+    },
+    {
+      "from": "/listings/place-in-the-sun-palm-springs",
       "to": "/buy-a-hotel"
     },
     {
@@ -23037,6 +23389,26 @@
     {
       "from": "/listings/red-roof-inn-somerset",
       "to": "/listings/comfort-suites-daytona-beach"
+    },
+    {
+      "from": "/listings/red-roof-inn-somerset",
+      "to": "/hotel-franchise-costs/red-roof-inn"
+    },
+    {
+      "from": "/listings/red-roof-inn-somerset",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/listings/red-roof-inn-somerset",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/listings/red-roof-inn-somerset",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/listings/red-roof-inn-somerset",
+      "to": "/data/sba-hotel-lending/pennsylvania"
     },
     {
       "from": "/listings/red-roof-inn-somerset",
@@ -23197,6 +23569,22 @@
     {
       "from": "/listings/apple-mountain-resort-clarkesville",
       "to": "/listings/comfort-suites-daytona-beach"
+    },
+    {
+      "from": "/listings/apple-mountain-resort-clarkesville",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/listings/apple-mountain-resort-clarkesville",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/listings/apple-mountain-resort-clarkesville",
+      "to": "/buy-a-hotel/branded-vs-independent"
+    },
+    {
+      "from": "/listings/apple-mountain-resort-clarkesville",
+      "to": "/data/sba-hotel-lending/georgia"
     },
     {
       "from": "/listings/apple-mountain-resort-clarkesville",
@@ -23357,6 +23745,30 @@
     {
       "from": "/listings/best-western-plus-fresno",
       "to": "/listings/comfort-suites-daytona-beach"
+    },
+    {
+      "from": "/listings/best-western-plus-fresno",
+      "to": "/hotels-for-sale/best-western"
+    },
+    {
+      "from": "/listings/best-western-plus-fresno",
+      "to": "/hotel-franchise-costs/best-western"
+    },
+    {
+      "from": "/listings/best-western-plus-fresno",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/listings/best-western-plus-fresno",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/listings/best-western-plus-fresno",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/listings/best-western-plus-fresno",
+      "to": "/data/sba-hotel-lending/california"
     },
     {
       "from": "/listings/best-western-plus-fresno",
@@ -23521,6 +23933,14 @@
     {
       "from": "/closed/26-hotel-portfolio-acquisition-debt",
       "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/closed/26-hotel-portfolio-acquisition-debt",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/26-hotel-portfolio-acquisition-debt",
+      "to": "/hotel-financing/mezzanine-debt-and-preferred-equity"
     },
     {
       "from": "/closed/26-hotel-portfolio-acquisition-debt",
@@ -23688,6 +24108,22 @@
     },
     {
       "from": "/closed/courtyard-lake-charles-debt",
+      "to": "/hotels-for-sale/marriott"
+    },
+    {
+      "from": "/closed/courtyard-lake-charles-debt",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/courtyard-lake-charles-debt",
+      "to": "/hotel-financing/cmbs-loans"
+    },
+    {
+      "from": "/closed/courtyard-lake-charles-debt",
+      "to": "/data/sba-hotel-lending/louisiana"
+    },
+    {
+      "from": "/closed/courtyard-lake-charles-debt",
       "to": "/buy-a-hotel"
     },
     {
@@ -23848,6 +24284,22 @@
     },
     {
       "from": "/closed/marriott-2-pack-del-mar-debt",
+      "to": "/hotels-for-sale/marriott"
+    },
+    {
+      "from": "/closed/marriott-2-pack-del-mar-debt",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/marriott-2-pack-del-mar-debt",
+      "to": "/hotel-financing/hotel-lenders-by-type"
+    },
+    {
+      "from": "/closed/marriott-2-pack-del-mar-debt",
+      "to": "/data/sba-hotel-lending/california"
+    },
+    {
+      "from": "/closed/marriott-2-pack-del-mar-debt",
       "to": "/buy-a-hotel"
     },
     {
@@ -24008,6 +24460,22 @@
     },
     {
       "from": "/closed/full-service-marriott-fort-collins-debt",
+      "to": "/hotels-for-sale/marriott"
+    },
+    {
+      "from": "/closed/full-service-marriott-fort-collins-debt",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/full-service-marriott-fort-collins-debt",
+      "to": "/hotel-financing/cmbs-loans"
+    },
+    {
+      "from": "/closed/full-service-marriott-fort-collins-debt",
+      "to": "/data/sba-hotel-lending/colorado"
+    },
+    {
+      "from": "/closed/full-service-marriott-fort-collins-debt",
       "to": "/buy-a-hotel"
     },
     {
@@ -24165,6 +24633,22 @@
     {
       "from": "/closed/4-pack-marriott-intercon-portfolio-debt",
       "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/closed/4-pack-marriott-intercon-portfolio-debt",
+      "to": "/hotels-for-sale/marriott"
+    },
+    {
+      "from": "/closed/4-pack-marriott-intercon-portfolio-debt",
+      "to": "/hotels-for-sale/ihg"
+    },
+    {
+      "from": "/closed/4-pack-marriott-intercon-portfolio-debt",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/4-pack-marriott-intercon-portfolio-debt",
+      "to": "/hotel-financing/hotel-lenders-by-type"
     },
     {
       "from": "/closed/4-pack-marriott-intercon-portfolio-debt",
@@ -24332,6 +24816,26 @@
     },
     {
       "from": "/closed/residence-inn-san-marcos-construction",
+      "to": "/hotels-for-sale/marriott"
+    },
+    {
+      "from": "/closed/residence-inn-san-marcos-construction",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/residence-inn-san-marcos-construction",
+      "to": "/hotel-financing/construction-loans"
+    },
+    {
+      "from": "/closed/residence-inn-san-marcos-construction",
+      "to": "/hotel-financing/extended-stay-financing"
+    },
+    {
+      "from": "/closed/residence-inn-san-marcos-construction",
+      "to": "/data/sba-hotel-lending/texas"
+    },
+    {
+      "from": "/closed/residence-inn-san-marcos-construction",
       "to": "/buy-a-hotel"
     },
     {
@@ -24493,6 +24997,30 @@
     {
       "from": "/closed/staybridge-suites-austin-permanent",
       "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/closed/staybridge-suites-austin-permanent",
+      "to": "/markets/austin-tx"
+    },
+    {
+      "from": "/closed/staybridge-suites-austin-permanent",
+      "to": "/hotels-for-sale/ihg"
+    },
+    {
+      "from": "/closed/staybridge-suites-austin-permanent",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/staybridge-suites-austin-permanent",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/closed/staybridge-suites-austin-permanent",
+      "to": "/hotel-financing/extended-stay-financing"
+    },
+    {
+      "from": "/closed/staybridge-suites-austin-permanent",
+      "to": "/data/sba-hotel-lending/texas"
     },
     {
       "from": "/closed/staybridge-suites-austin-permanent",
@@ -24660,6 +25188,26 @@
     },
     {
       "from": "/closed/country-inn-suites-augusta-cmbs",
+      "to": "/hotels-for-sale/choice"
+    },
+    {
+      "from": "/closed/country-inn-suites-augusta-cmbs",
+      "to": "/sell-a-hotel/how-to-sell-a-hotel"
+    },
+    {
+      "from": "/closed/country-inn-suites-augusta-cmbs",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/closed/country-inn-suites-augusta-cmbs",
+      "to": "/hotel-financing/loan-assumption"
+    },
+    {
+      "from": "/closed/country-inn-suites-augusta-cmbs",
+      "to": "/data/sba-hotel-lending/georgia"
+    },
+    {
+      "from": "/closed/country-inn-suites-augusta-cmbs",
       "to": "/buy-a-hotel"
     },
     {
@@ -24821,6 +25369,34 @@
     {
       "from": "/closed/hampton-inn-portfolio-atlanta-sale-bridge",
       "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/closed/hampton-inn-portfolio-atlanta-sale-bridge",
+      "to": "/markets/atlanta-ga"
+    },
+    {
+      "from": "/closed/hampton-inn-portfolio-atlanta-sale-bridge",
+      "to": "/hotels-for-sale/hampton-inn"
+    },
+    {
+      "from": "/closed/hampton-inn-portfolio-atlanta-sale-bridge",
+      "to": "/hotel-franchise-costs/hampton-inn"
+    },
+    {
+      "from": "/closed/hampton-inn-portfolio-atlanta-sale-bridge",
+      "to": "/sell-a-hotel/how-to-sell-a-hotel"
+    },
+    {
+      "from": "/closed/hampton-inn-portfolio-atlanta-sale-bridge",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/closed/hampton-inn-portfolio-atlanta-sale-bridge",
+      "to": "/hotel-financing/bridge-loans"
+    },
+    {
+      "from": "/closed/hampton-inn-portfolio-atlanta-sale-bridge",
+      "to": "/data/sba-hotel-lending/georgia"
     },
     {
       "from": "/closed/hampton-inn-portfolio-atlanta-sale-bridge",
@@ -24988,6 +25564,26 @@
     },
     {
       "from": "/closed/crown-plaza-downtown-dallas-permanent",
+      "to": "/markets/dallas-tx"
+    },
+    {
+      "from": "/closed/crown-plaza-downtown-dallas-permanent",
+      "to": "/hotels-for-sale/ihg"
+    },
+    {
+      "from": "/closed/crown-plaza-downtown-dallas-permanent",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/crown-plaza-downtown-dallas-permanent",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/closed/crown-plaza-downtown-dallas-permanent",
+      "to": "/data/sba-hotel-lending/texas"
+    },
+    {
+      "from": "/closed/crown-plaza-downtown-dallas-permanent",
       "to": "/buy-a-hotel"
     },
     {
@@ -25148,6 +25744,22 @@
     },
     {
       "from": "/closed/radisson-hotel-corning-sale",
+      "to": "/hotels-for-sale/choice"
+    },
+    {
+      "from": "/closed/radisson-hotel-corning-sale",
+      "to": "/sell-a-hotel/how-to-sell-a-hotel"
+    },
+    {
+      "from": "/closed/radisson-hotel-corning-sale",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/closed/radisson-hotel-corning-sale",
+      "to": "/data/sba-hotel-lending/new-york"
+    },
+    {
+      "from": "/closed/radisson-hotel-corning-sale",
       "to": "/buy-a-hotel"
     },
     {
@@ -25305,6 +25917,26 @@
     {
       "from": "/closed/hilton-garden-inn-bozeman-permanent",
       "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/closed/hilton-garden-inn-bozeman-permanent",
+      "to": "/hotels-for-sale/hilton"
+    },
+    {
+      "from": "/closed/hilton-garden-inn-bozeman-permanent",
+      "to": "/hotel-franchise-costs/hilton-garden-inn"
+    },
+    {
+      "from": "/closed/hilton-garden-inn-bozeman-permanent",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/hilton-garden-inn-bozeman-permanent",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/closed/hilton-garden-inn-bozeman-permanent",
+      "to": "/data/sba-hotel-lending/montana"
     },
     {
       "from": "/closed/hilton-garden-inn-bozeman-permanent",
@@ -25472,6 +26104,30 @@
     },
     {
       "from": "/closed/hampton-inn-suites-beaumont-sale-bridge",
+      "to": "/hotels-for-sale/hampton-inn"
+    },
+    {
+      "from": "/closed/hampton-inn-suites-beaumont-sale-bridge",
+      "to": "/hotel-franchise-costs/hampton-inn"
+    },
+    {
+      "from": "/closed/hampton-inn-suites-beaumont-sale-bridge",
+      "to": "/sell-a-hotel/how-to-sell-a-hotel"
+    },
+    {
+      "from": "/closed/hampton-inn-suites-beaumont-sale-bridge",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/closed/hampton-inn-suites-beaumont-sale-bridge",
+      "to": "/hotel-financing/bridge-loans"
+    },
+    {
+      "from": "/closed/hampton-inn-suites-beaumont-sale-bridge",
+      "to": "/data/sba-hotel-lending/texas"
+    },
+    {
+      "from": "/closed/hampton-inn-suites-beaumont-sale-bridge",
       "to": "/buy-a-hotel"
     },
     {
@@ -25629,6 +26285,22 @@
     {
       "from": "/closed/stone-mountain-lodge-lyons-sale-bridge",
       "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/closed/stone-mountain-lodge-lyons-sale-bridge",
+      "to": "/sell-a-hotel/how-to-sell-a-hotel"
+    },
+    {
+      "from": "/closed/stone-mountain-lodge-lyons-sale-bridge",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/closed/stone-mountain-lodge-lyons-sale-bridge",
+      "to": "/hotel-financing/bridge-loans"
+    },
+    {
+      "from": "/closed/stone-mountain-lodge-lyons-sale-bridge",
+      "to": "/data/sba-hotel-lending/colorado"
     },
     {
       "from": "/closed/stone-mountain-lodge-lyons-sale-bridge",
@@ -25796,6 +26468,26 @@
     },
     {
       "from": "/closed/holiday-inn-express-augusta-sale-bridge",
+      "to": "/hotels-for-sale/holiday-inn-express"
+    },
+    {
+      "from": "/closed/holiday-inn-express-augusta-sale-bridge",
+      "to": "/sell-a-hotel/how-to-sell-a-hotel"
+    },
+    {
+      "from": "/closed/holiday-inn-express-augusta-sale-bridge",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/closed/holiday-inn-express-augusta-sale-bridge",
+      "to": "/hotel-financing/bridge-loans"
+    },
+    {
+      "from": "/closed/holiday-inn-express-augusta-sale-bridge",
+      "to": "/data/sba-hotel-lending/georgia"
+    },
+    {
+      "from": "/closed/holiday-inn-express-augusta-sale-bridge",
       "to": "/buy-a-hotel"
     },
     {
@@ -25953,6 +26645,26 @@
     {
       "from": "/closed/ramada-houston-permanent",
       "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/closed/ramada-houston-permanent",
+      "to": "/markets/houston-tx"
+    },
+    {
+      "from": "/closed/ramada-houston-permanent",
+      "to": "/hotels-for-sale/wyndham"
+    },
+    {
+      "from": "/closed/ramada-houston-permanent",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/ramada-houston-permanent",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/closed/ramada-houston-permanent",
+      "to": "/data/sba-hotel-lending/texas"
     },
     {
       "from": "/closed/ramada-houston-permanent",
@@ -26120,6 +26832,30 @@
     },
     {
       "from": "/closed/staybridge-suites-houston-permanent",
+      "to": "/markets/houston-tx"
+    },
+    {
+      "from": "/closed/staybridge-suites-houston-permanent",
+      "to": "/hotels-for-sale/ihg"
+    },
+    {
+      "from": "/closed/staybridge-suites-houston-permanent",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/staybridge-suites-houston-permanent",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/closed/staybridge-suites-houston-permanent",
+      "to": "/hotel-financing/extended-stay-financing"
+    },
+    {
+      "from": "/closed/staybridge-suites-houston-permanent",
+      "to": "/data/sba-hotel-lending/texas"
+    },
+    {
+      "from": "/closed/staybridge-suites-houston-permanent",
       "to": "/buy-a-hotel"
     },
     {
@@ -26281,6 +27017,26 @@
     {
       "from": "/closed/country-inn-suites-san-antonio-permanent",
       "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/closed/country-inn-suites-san-antonio-permanent",
+      "to": "/markets/san-antonio-tx"
+    },
+    {
+      "from": "/closed/country-inn-suites-san-antonio-permanent",
+      "to": "/hotels-for-sale/choice"
+    },
+    {
+      "from": "/closed/country-inn-suites-san-antonio-permanent",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/country-inn-suites-san-antonio-permanent",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/closed/country-inn-suites-san-antonio-permanent",
+      "to": "/data/sba-hotel-lending/texas"
     },
     {
       "from": "/closed/country-inn-suites-san-antonio-permanent",
@@ -26448,6 +27204,18 @@
     },
     {
       "from": "/closed/resort-at-paws-up-missoula-permanent",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/resort-at-paws-up-missoula-permanent",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/closed/resort-at-paws-up-missoula-permanent",
+      "to": "/data/sba-hotel-lending/montana"
+    },
+    {
+      "from": "/closed/resort-at-paws-up-missoula-permanent",
       "to": "/buy-a-hotel"
     },
     {
@@ -26612,6 +27380,22 @@
     },
     {
       "from": "/closed/mansion-at-judges-hill-austin-sale",
+      "to": "/markets/austin-tx"
+    },
+    {
+      "from": "/closed/mansion-at-judges-hill-austin-sale",
+      "to": "/sell-a-hotel/how-to-sell-a-hotel"
+    },
+    {
+      "from": "/closed/mansion-at-judges-hill-austin-sale",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/closed/mansion-at-judges-hill-austin-sale",
+      "to": "/data/sba-hotel-lending/texas"
+    },
+    {
+      "from": "/closed/mansion-at-judges-hill-austin-sale",
       "to": "/buy-a-hotel"
     },
     {
@@ -26772,6 +27556,38 @@
     },
     {
       "from": "/closed/hampton-home2-suites-austin-pref-equity",
+      "to": "/markets/austin-tx"
+    },
+    {
+      "from": "/closed/hampton-home2-suites-austin-pref-equity",
+      "to": "/hotels-for-sale/hampton-inn"
+    },
+    {
+      "from": "/closed/hampton-home2-suites-austin-pref-equity",
+      "to": "/hotels-for-sale/hilton"
+    },
+    {
+      "from": "/closed/hampton-home2-suites-austin-pref-equity",
+      "to": "/hotel-franchise-costs/hampton-inn"
+    },
+    {
+      "from": "/closed/hampton-home2-suites-austin-pref-equity",
+      "to": "/hotel-franchise-costs/home2-suites"
+    },
+    {
+      "from": "/closed/hampton-home2-suites-austin-pref-equity",
+      "to": "/hotel-financing/mezzanine-debt-and-preferred-equity"
+    },
+    {
+      "from": "/closed/hampton-home2-suites-austin-pref-equity",
+      "to": "/hotel-financing/capital-stack"
+    },
+    {
+      "from": "/closed/hampton-home2-suites-austin-pref-equity",
+      "to": "/data/sba-hotel-lending/texas"
+    },
+    {
+      "from": "/closed/hampton-home2-suites-austin-pref-equity",
       "to": "/buy-a-hotel"
     },
     {
@@ -26932,6 +27748,18 @@
     },
     {
       "from": "/closed/tampa-boutique-multifamily-pref-equity",
+      "to": "/markets/tampa-fl"
+    },
+    {
+      "from": "/closed/tampa-boutique-multifamily-pref-equity",
+      "to": "/hotel-financing/mezzanine-debt-and-preferred-equity"
+    },
+    {
+      "from": "/closed/tampa-boutique-multifamily-pref-equity",
+      "to": "/hotel-financing/capital-stack"
+    },
+    {
+      "from": "/closed/tampa-boutique-multifamily-pref-equity",
       "to": "/buy-a-hotel"
     },
     {
@@ -27092,6 +27920,30 @@
     },
     {
       "from": "/closed/home2-suites-del-rio-construction",
+      "to": "/hotels-for-sale/hilton"
+    },
+    {
+      "from": "/closed/home2-suites-del-rio-construction",
+      "to": "/hotel-franchise-costs/home2-suites"
+    },
+    {
+      "from": "/closed/home2-suites-del-rio-construction",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/home2-suites-del-rio-construction",
+      "to": "/hotel-financing/construction-loans"
+    },
+    {
+      "from": "/closed/home2-suites-del-rio-construction",
+      "to": "/hotel-financing/extended-stay-financing"
+    },
+    {
+      "from": "/closed/home2-suites-del-rio-construction",
+      "to": "/data/sba-hotel-lending/texas"
+    },
+    {
+      "from": "/closed/home2-suites-del-rio-construction",
       "to": "/buy-a-hotel"
     },
     {
@@ -27252,6 +28104,38 @@
     },
     {
       "from": "/closed/dual-brand-hampton-home2-austin-construction",
+      "to": "/markets/austin-tx"
+    },
+    {
+      "from": "/closed/dual-brand-hampton-home2-austin-construction",
+      "to": "/hotels-for-sale/hampton-inn"
+    },
+    {
+      "from": "/closed/dual-brand-hampton-home2-austin-construction",
+      "to": "/hotels-for-sale/hilton"
+    },
+    {
+      "from": "/closed/dual-brand-hampton-home2-austin-construction",
+      "to": "/hotel-franchise-costs/hampton-inn"
+    },
+    {
+      "from": "/closed/dual-brand-hampton-home2-austin-construction",
+      "to": "/hotel-franchise-costs/home2-suites"
+    },
+    {
+      "from": "/closed/dual-brand-hampton-home2-austin-construction",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/dual-brand-hampton-home2-austin-construction",
+      "to": "/hotel-financing/construction-loans"
+    },
+    {
+      "from": "/closed/dual-brand-hampton-home2-austin-construction",
+      "to": "/data/sba-hotel-lending/texas"
+    },
+    {
+      "from": "/closed/dual-brand-hampton-home2-austin-construction",
       "to": "/buy-a-hotel"
     },
     {
@@ -27412,6 +28296,26 @@
     },
     {
       "from": "/closed/hampton-inn-beaumont-permanent",
+      "to": "/hotels-for-sale/hampton-inn"
+    },
+    {
+      "from": "/closed/hampton-inn-beaumont-permanent",
+      "to": "/hotel-franchise-costs/hampton-inn"
+    },
+    {
+      "from": "/closed/hampton-inn-beaumont-permanent",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/hampton-inn-beaumont-permanent",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/closed/hampton-inn-beaumont-permanent",
+      "to": "/data/sba-hotel-lending/texas"
+    },
+    {
+      "from": "/closed/hampton-inn-beaumont-permanent",
       "to": "/buy-a-hotel"
     },
     {
@@ -27572,6 +28476,30 @@
     },
     {
       "from": "/closed/home2-suites-columbus-permanent",
+      "to": "/hotels-for-sale/hilton"
+    },
+    {
+      "from": "/closed/home2-suites-columbus-permanent",
+      "to": "/hotel-franchise-costs/home2-suites"
+    },
+    {
+      "from": "/closed/home2-suites-columbus-permanent",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/home2-suites-columbus-permanent",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/closed/home2-suites-columbus-permanent",
+      "to": "/hotel-financing/extended-stay-financing"
+    },
+    {
+      "from": "/closed/home2-suites-columbus-permanent",
+      "to": "/data/sba-hotel-lending/ohio"
+    },
+    {
+      "from": "/closed/home2-suites-columbus-permanent",
       "to": "/buy-a-hotel"
     },
     {
@@ -27732,6 +28660,26 @@
     },
     {
       "from": "/closed/hampton-inn-suites-altoona-permanent",
+      "to": "/hotels-for-sale/hampton-inn"
+    },
+    {
+      "from": "/closed/hampton-inn-suites-altoona-permanent",
+      "to": "/hotel-franchise-costs/hampton-inn"
+    },
+    {
+      "from": "/closed/hampton-inn-suites-altoona-permanent",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/hampton-inn-suites-altoona-permanent",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/closed/hampton-inn-suites-altoona-permanent",
+      "to": "/data/sba-hotel-lending/iowa"
+    },
+    {
+      "from": "/closed/hampton-inn-suites-altoona-permanent",
       "to": "/buy-a-hotel"
     },
     {
@@ -27892,6 +28840,26 @@
     },
     {
       "from": "/closed/la-quinta-inn-suites-waco-permanent",
+      "to": "/hotels-for-sale/wyndham"
+    },
+    {
+      "from": "/closed/la-quinta-inn-suites-waco-permanent",
+      "to": "/hotel-franchise-costs/la-quinta"
+    },
+    {
+      "from": "/closed/la-quinta-inn-suites-waco-permanent",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/la-quinta-inn-suites-waco-permanent",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/closed/la-quinta-inn-suites-waco-permanent",
+      "to": "/data/sba-hotel-lending/texas"
+    },
+    {
+      "from": "/closed/la-quinta-inn-suites-waco-permanent",
       "to": "/buy-a-hotel"
     },
     {
@@ -28052,6 +29020,22 @@
     },
     {
       "from": "/closed/holiday-inn-express-early-permanent",
+      "to": "/hotels-for-sale/holiday-inn-express"
+    },
+    {
+      "from": "/closed/holiday-inn-express-early-permanent",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/holiday-inn-express-early-permanent",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/closed/holiday-inn-express-early-permanent",
+      "to": "/data/sba-hotel-lending/texas"
+    },
+    {
+      "from": "/closed/holiday-inn-express-early-permanent",
       "to": "/buy-a-hotel"
     },
     {
@@ -28209,6 +29193,18 @@
     {
       "from": "/closed/firebrand-hotel-whitefish-permanent",
       "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/closed/firebrand-hotel-whitefish-permanent",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/firebrand-hotel-whitefish-permanent",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/closed/firebrand-hotel-whitefish-permanent",
+      "to": "/data/sba-hotel-lending/montana"
     },
     {
       "from": "/closed/firebrand-hotel-whitefish-permanent",
@@ -28376,6 +29372,30 @@
     },
     {
       "from": "/closed/home2-suites-hanford-permanent",
+      "to": "/hotels-for-sale/hilton"
+    },
+    {
+      "from": "/closed/home2-suites-hanford-permanent",
+      "to": "/hotel-franchise-costs/home2-suites"
+    },
+    {
+      "from": "/closed/home2-suites-hanford-permanent",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/home2-suites-hanford-permanent",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/closed/home2-suites-hanford-permanent",
+      "to": "/hotel-financing/extended-stay-financing"
+    },
+    {
+      "from": "/closed/home2-suites-hanford-permanent",
+      "to": "/data/sba-hotel-lending/california"
+    },
+    {
+      "from": "/closed/home2-suites-hanford-permanent",
       "to": "/buy-a-hotel"
     },
     {
@@ -28540,6 +29560,34 @@
     },
     {
       "from": "/closed/hampton-inn-home2-suites-tulsa-permanent",
+      "to": "/hotels-for-sale/hampton-inn"
+    },
+    {
+      "from": "/closed/hampton-inn-home2-suites-tulsa-permanent",
+      "to": "/hotels-for-sale/hilton"
+    },
+    {
+      "from": "/closed/hampton-inn-home2-suites-tulsa-permanent",
+      "to": "/hotel-franchise-costs/hampton-inn"
+    },
+    {
+      "from": "/closed/hampton-inn-home2-suites-tulsa-permanent",
+      "to": "/hotel-franchise-costs/home2-suites"
+    },
+    {
+      "from": "/closed/hampton-inn-home2-suites-tulsa-permanent",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/hampton-inn-home2-suites-tulsa-permanent",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/closed/hampton-inn-home2-suites-tulsa-permanent",
+      "to": "/data/sba-hotel-lending/oklahoma"
+    },
+    {
+      "from": "/closed/hampton-inn-home2-suites-tulsa-permanent",
       "to": "/buy-a-hotel"
     },
     {
@@ -28700,6 +29748,18 @@
     },
     {
       "from": "/closed/marble-falls-hotel-land-purchase",
+      "to": "/hotel-industry/cost-to-build-a-hotel"
+    },
+    {
+      "from": "/closed/marble-falls-hotel-land-purchase",
+      "to": "/hotel-financing/construction-loans"
+    },
+    {
+      "from": "/closed/marble-falls-hotel-land-purchase",
+      "to": "/data/sba-hotel-lending/texas"
+    },
+    {
+      "from": "/closed/marble-falls-hotel-land-purchase",
       "to": "/buy-a-hotel"
     },
     {
@@ -28857,6 +29917,26 @@
     {
       "from": "/closed/quality-inn-carthage-permanent",
       "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/closed/quality-inn-carthage-permanent",
+      "to": "/hotels-for-sale/choice"
+    },
+    {
+      "from": "/closed/quality-inn-carthage-permanent",
+      "to": "/hotel-franchise-costs/quality-inn"
+    },
+    {
+      "from": "/closed/quality-inn-carthage-permanent",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/quality-inn-carthage-permanent",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/closed/quality-inn-carthage-permanent",
+      "to": "/data/sba-hotel-lending/texas"
     },
     {
       "from": "/closed/quality-inn-carthage-permanent",
@@ -29024,6 +30104,30 @@
     },
     {
       "from": "/closed/home2-suites-merrillville-permanent",
+      "to": "/hotels-for-sale/hilton"
+    },
+    {
+      "from": "/closed/home2-suites-merrillville-permanent",
+      "to": "/hotel-franchise-costs/home2-suites"
+    },
+    {
+      "from": "/closed/home2-suites-merrillville-permanent",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/home2-suites-merrillville-permanent",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/closed/home2-suites-merrillville-permanent",
+      "to": "/hotel-financing/extended-stay-financing"
+    },
+    {
+      "from": "/closed/home2-suites-merrillville-permanent",
+      "to": "/data/sba-hotel-lending/indiana"
+    },
+    {
+      "from": "/closed/home2-suites-merrillville-permanent",
       "to": "/buy-a-hotel"
     },
     {
@@ -29188,6 +30292,34 @@
     },
     {
       "from": "/closed/home2-suites-austin-permanent",
+      "to": "/markets/austin-tx"
+    },
+    {
+      "from": "/closed/home2-suites-austin-permanent",
+      "to": "/hotels-for-sale/hilton"
+    },
+    {
+      "from": "/closed/home2-suites-austin-permanent",
+      "to": "/hotel-franchise-costs/home2-suites"
+    },
+    {
+      "from": "/closed/home2-suites-austin-permanent",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/home2-suites-austin-permanent",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/closed/home2-suites-austin-permanent",
+      "to": "/hotel-financing/extended-stay-financing"
+    },
+    {
+      "from": "/closed/home2-suites-austin-permanent",
+      "to": "/data/sba-hotel-lending/texas"
+    },
+    {
+      "from": "/closed/home2-suites-austin-permanent",
       "to": "/buy-a-hotel"
     },
     {
@@ -29345,6 +30477,22 @@
     {
       "from": "/closed/holiday-inn-vidor-permanent",
       "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/closed/holiday-inn-vidor-permanent",
+      "to": "/hotels-for-sale/ihg"
+    },
+    {
+      "from": "/closed/holiday-inn-vidor-permanent",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/closed/holiday-inn-vidor-permanent",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/closed/holiday-inn-vidor-permanent",
+      "to": "/data/sba-hotel-lending/texas"
     },
     {
       "from": "/closed/holiday-inn-vidor-permanent",
@@ -30320,6 +31468,18 @@
     },
     {
       "from": "/insights/texas-hotel-cap-rates-q2-2026",
+      "to": "/hotel-valuation/hotel-cap-rates"
+    },
+    {
+      "from": "/insights/texas-hotel-cap-rates-q2-2026",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/insights/texas-hotel-cap-rates-q2-2026",
+      "to": "/hotel-valuation/interest-rates-and-hotel-value"
+    },
+    {
+      "from": "/insights/texas-hotel-cap-rates-q2-2026",
       "to": "/buy-a-hotel"
     },
     {
@@ -30525,6 +31685,18 @@
     {
       "from": "/insights/select-service-vs-full-service-2026",
       "to": "/hotels-for-sale/hilton"
+    },
+    {
+      "from": "/insights/select-service-vs-full-service-2026",
+      "to": "/hotel-valuation/select-service-vs-full-service"
+    },
+    {
+      "from": "/insights/select-service-vs-full-service-2026",
+      "to": "/hotel-industry/chain-scales-and-classes"
+    },
+    {
+      "from": "/insights/select-service-vs-full-service-2026",
+      "to": "/hotel-valuation/pip-and-hotel-value"
     },
     {
       "from": "/insights/select-service-vs-full-service-2026",
@@ -30740,6 +31912,18 @@
     },
     {
       "from": "/insights/hotel-refinancing-wave-2026",
+      "to": "/hotel-financing/refinance"
+    },
+    {
+      "from": "/insights/hotel-refinancing-wave-2026",
+      "to": "/hotel-financing/refinance-or-sell"
+    },
+    {
+      "from": "/insights/hotel-refinancing-wave-2026",
+      "to": "/hotel-financing/loan-maturities-2026-2027"
+    },
+    {
+      "from": "/insights/hotel-refinancing-wave-2026",
       "to": "/buy-a-hotel"
     },
     {
@@ -30952,6 +32136,18 @@
     },
     {
       "from": "/insights/sun-belt-hospitality-investment-2026",
+      "to": "/hotel-industry/who-buys-hotels"
+    },
+    {
+      "from": "/insights/sun-belt-hospitality-investment-2026",
+      "to": "/hotel-valuation/hotel-cap-rates"
+    },
+    {
+      "from": "/insights/sun-belt-hospitality-investment-2026",
+      "to": "/hotel-industry/outlook-2026-2027"
+    },
+    {
+      "from": "/insights/sun-belt-hospitality-investment-2026",
       "to": "/buy-a-hotel"
     },
     {
@@ -31168,11 +32364,19 @@
     },
     {
       "from": "/insights/brand-flag-cap-rate-guide-2026",
-      "to": "/buy-a-hotel"
+      "to": "/hotel-valuation/branded-select-service-hotel-value"
+    },
+    {
+      "from": "/insights/brand-flag-cap-rate-guide-2026",
+      "to": "/hotel-valuation/pip-and-hotel-value"
     },
     {
       "from": "/insights/brand-flag-cap-rate-guide-2026",
       "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/insights/brand-flag-cap-rate-guide-2026",
+      "to": "/buy-a-hotel"
     },
     {
       "from": "/insights/brand-flag-cap-rate-guide-2026",
@@ -31384,6 +32588,18 @@
     },
     {
       "from": "/insights/how-to-sell-a-hotel-2026",
+      "to": "/sell-a-hotel/how-to-sell-a-hotel"
+    },
+    {
+      "from": "/insights/how-to-sell-a-hotel-2026",
+      "to": "/sell-a-hotel/how-long-it-takes"
+    },
+    {
+      "from": "/insights/how-to-sell-a-hotel-2026",
+      "to": "/sell-a-hotel/broker-fees"
+    },
+    {
+      "from": "/insights/how-to-sell-a-hotel-2026",
       "to": "/buy-a-hotel"
     },
     {
@@ -31581,6 +32797,18 @@
     {
       "from": "/insights/hotel-cmbs-distress-trepp-2026",
       "to": "/hotels-for-sale/holiday-inn-express"
+    },
+    {
+      "from": "/insights/hotel-cmbs-distress-trepp-2026",
+      "to": "/hotel-financing/cmbs-loans"
+    },
+    {
+      "from": "/insights/hotel-cmbs-distress-trepp-2026",
+      "to": "/hotel-financing/loan-workouts"
+    },
+    {
+      "from": "/insights/hotel-cmbs-distress-trepp-2026",
+      "to": "/buy-a-hotel/buying-a-hotel-from-receivership-or-foreclosure"
     },
     {
       "from": "/insights/hotel-cmbs-distress-trepp-2026",
@@ -31784,6 +33012,18 @@
     },
     {
       "from": "/insights/hotel-adr-revpar-recovery-2026",
+      "to": "/hotel-industry/revpar-adr-occupancy"
+    },
+    {
+      "from": "/insights/hotel-adr-revpar-recovery-2026",
+      "to": "/hotel-industry/outlook-2026-2027"
+    },
+    {
+      "from": "/insights/hotel-adr-revpar-recovery-2026",
+      "to": "/hotel-valuation/revpar-multiples-and-per-key"
+    },
+    {
+      "from": "/insights/hotel-adr-revpar-recovery-2026",
       "to": "/buy-a-hotel"
     },
     {
@@ -31940,6 +33180,30 @@
     },
     {
       "from": "/insights/q1-2026-outlook",
+      "to": "/insights/adr-recovery-texas-secondary"
+    },
+    {
+      "from": "/insights/q1-2026-outlook",
+      "to": "/insights/texas-hotel-cap-rates-q2-2026"
+    },
+    {
+      "from": "/insights/q1-2026-outlook",
+      "to": "/insights/select-service-vs-full-service-2026"
+    },
+    {
+      "from": "/insights/q1-2026-outlook",
+      "to": "/hotel-valuation/hotel-cap-rates"
+    },
+    {
+      "from": "/insights/q1-2026-outlook",
+      "to": "/hotel-valuation/select-service-vs-full-service"
+    },
+    {
+      "from": "/insights/q1-2026-outlook",
+      "to": "/hotel-industry/outlook-2026-2027"
+    },
+    {
+      "from": "/insights/q1-2026-outlook",
       "to": "/buy-a-hotel"
     },
     {
@@ -32089,6 +33353,26 @@
     {
       "from": "/insights/adr-recovery-texas-secondary",
       "to": "/contact"
+    },
+    {
+      "from": "/insights/adr-recovery-texas-secondary",
+      "to": "/insights/q1-2026-outlook"
+    },
+    {
+      "from": "/insights/adr-recovery-texas-secondary",
+      "to": "/insights/hotel-adr-revpar-recovery-2026"
+    },
+    {
+      "from": "/insights/adr-recovery-texas-secondary",
+      "to": "/insights/texas-hotel-cap-rates-q2-2026"
+    },
+    {
+      "from": "/insights/adr-recovery-texas-secondary",
+      "to": "/hotel-industry/revpar-adr-occupancy"
+    },
+    {
+      "from": "/insights/adr-recovery-texas-secondary",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
     },
     {
       "from": "/insights/adr-recovery-texas-secondary",
@@ -32252,6 +33536,26 @@
     },
     {
       "from": "/insights/glamping-investment-thesis",
+      "to": "/insights/q1-2026-outlook"
+    },
+    {
+      "from": "/insights/glamping-investment-thesis",
+      "to": "/insights/sun-belt-hospitality-investment-2026"
+    },
+    {
+      "from": "/insights/glamping-investment-thesis",
+      "to": "/insights/texas-hotel-cap-rates-q2-2026"
+    },
+    {
+      "from": "/insights/glamping-investment-thesis",
+      "to": "/buy-a-hotel/branded-vs-independent"
+    },
+    {
+      "from": "/insights/glamping-investment-thesis",
+      "to": "/hotel-industry/how-hotels-make-money"
+    },
+    {
+      "from": "/insights/glamping-investment-thesis",
       "to": "/buy-a-hotel"
     },
     {
@@ -32405,6 +33709,30 @@
     {
       "from": "/insights/select-service-vs-full-service-capital-markets-2026",
       "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/insights/select-service-vs-full-service-capital-markets-2026",
+      "to": "/insights/select-service-vs-full-service-2026"
+    },
+    {
+      "from": "/insights/select-service-vs-full-service-capital-markets-2026",
+      "to": "/insights/brand-flag-cap-rate-guide-2026"
+    },
+    {
+      "from": "/insights/select-service-vs-full-service-capital-markets-2026",
+      "to": "/insights/texas-hotel-cap-rates-q2-2026"
+    },
+    {
+      "from": "/insights/select-service-vs-full-service-capital-markets-2026",
+      "to": "/hotel-valuation/select-service-vs-full-service"
+    },
+    {
+      "from": "/insights/select-service-vs-full-service-capital-markets-2026",
+      "to": "/hotel-financing/brand-conversion-financing"
+    },
+    {
+      "from": "/insights/select-service-vs-full-service-capital-markets-2026",
+      "to": "/hotel-valuation/hotel-cap-rates"
     },
     {
       "from": "/insights/select-service-vs-full-service-capital-markets-2026",
@@ -32568,6 +33896,30 @@
     },
     {
       "from": "/insights/hotel-owners-refinancing-wave-2026",
+      "to": "/insights/hotel-refinancing-wave-2026"
+    },
+    {
+      "from": "/insights/hotel-owners-refinancing-wave-2026",
+      "to": "/insights/how-to-sell-a-hotel-2026"
+    },
+    {
+      "from": "/insights/hotel-owners-refinancing-wave-2026",
+      "to": "/insights/hotel-cmbs-distress-trepp-2026"
+    },
+    {
+      "from": "/insights/hotel-owners-refinancing-wave-2026",
+      "to": "/hotel-financing/refinance-or-sell"
+    },
+    {
+      "from": "/insights/hotel-owners-refinancing-wave-2026",
+      "to": "/hotel-financing/loan-workouts"
+    },
+    {
+      "from": "/insights/hotel-owners-refinancing-wave-2026",
+      "to": "/hotel-valuation/broker-opinion-of-value"
+    },
+    {
+      "from": "/insights/hotel-owners-refinancing-wave-2026",
       "to": "/buy-a-hotel"
     },
     {
@@ -32725,6 +34077,26 @@
     {
       "from": "/insights/sun-belt-hospitality-2026-investor-sentiment-preview",
       "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/insights/sun-belt-hospitality-2026-investor-sentiment-preview",
+      "to": "/insights/texas-hotel-cap-rates-q2-2026"
+    },
+    {
+      "from": "/insights/sun-belt-hospitality-2026-investor-sentiment-preview",
+      "to": "/insights/sun-belt-hospitality-investment-2026"
+    },
+    {
+      "from": "/insights/sun-belt-hospitality-2026-investor-sentiment-preview",
+      "to": "/insights/hotel-adr-revpar-recovery-2026"
+    },
+    {
+      "from": "/insights/sun-belt-hospitality-2026-investor-sentiment-preview",
+      "to": "/hotel-industry/who-buys-hotels"
+    },
+    {
+      "from": "/insights/sun-belt-hospitality-2026-investor-sentiment-preview",
+      "to": "/hotel-valuation/hotel-cap-rates"
     },
     {
       "from": "/insights/sun-belt-hospitality-2026-investor-sentiment-preview",
@@ -75696,6 +77068,12 @@
         "/contact",
         "/listings/comfort-suites-daytona-beach",
         "/listings/super-8-wyndham-kinder",
+        "/hotels-for-sale/hampton-inn",
+        "/hotel-franchise-costs/hampton-inn",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/data/sba-hotel-lending/indiana",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -75742,6 +77120,12 @@
         "/contact",
         "/listings/hampton-inn-shelbyville",
         "/listings/super-8-wyndham-kinder",
+        "/hotels-for-sale/choice",
+        "/hotel-franchise-costs/comfort-inn",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/data/sba-hotel-lending/florida",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -75788,6 +77172,12 @@
         "/contact",
         "/listings/hampton-inn-shelbyville",
         "/listings/comfort-suites-daytona-beach",
+        "/hotels-for-sale/wyndham",
+        "/hotel-franchise-costs/super-8",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/data/sba-hotel-lending/louisiana",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -75834,6 +77224,12 @@
         "/contact",
         "/listings/hampton-inn-shelbyville",
         "/listings/comfort-suites-daytona-beach",
+        "/hotels-for-sale/wyndham",
+        "/hotel-franchise-costs/microtel",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/data/sba-hotel-lending/montana",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -75880,6 +77276,12 @@
         "/contact",
         "/listings/hampton-inn-shelbyville",
         "/listings/comfort-suites-daytona-beach",
+        "/hotels-for-sale/choice",
+        "/hotel-franchise-costs/quality-inn",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/data/sba-hotel-lending/arkansas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -75926,6 +77328,10 @@
         "/contact",
         "/listings/hampton-inn-shelbyville",
         "/listings/comfort-suites-daytona-beach",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/data/sba-hotel-lending/texas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -75972,6 +77378,12 @@
         "/contact",
         "/listings/hampton-inn-shelbyville",
         "/listings/comfort-suites-daytona-beach",
+        "/hotels-for-sale/hampton-inn",
+        "/hotel-franchise-costs/hampton-inn",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/data/sba-hotel-lending/ohio",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76018,6 +77430,11 @@
         "/contact",
         "/listings/hampton-inn-shelbyville",
         "/listings/comfort-suites-daytona-beach",
+        "/hotels-for-sale/marriott",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/data/sba-hotel-lending/pennsylvania",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76064,6 +77481,12 @@
         "/contact",
         "/listings/hampton-inn-shelbyville",
         "/listings/comfort-suites-daytona-beach",
+        "/hotels-for-sale/wyndham",
+        "/hotel-franchise-costs/la-quinta",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/data/sba-hotel-lending/texas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76110,6 +77533,10 @@
         "/contact",
         "/listings/hampton-inn-shelbyville",
         "/listings/comfort-suites-daytona-beach",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/buy-a-hotel/branded-vs-independent",
+        "/data/sba-hotel-lending/illinois",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76156,6 +77583,9 @@
         "/contact",
         "/listings/hampton-inn-shelbyville",
         "/listings/comfort-suites-daytona-beach",
+        "/hotel-industry/cost-to-build-a-hotel",
+        "/hotel-financing/construction-loans",
+        "/data/sba-hotel-lending/north-carolina",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76202,6 +77632,12 @@
         "/contact",
         "/listings/hampton-inn-shelbyville",
         "/listings/comfort-suites-daytona-beach",
+        "/hotels-for-sale/choice",
+        "/hotel-franchise-costs/quality-inn",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/data/sba-hotel-lending/tennessee",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76248,6 +77684,12 @@
         "/contact",
         "/listings/hampton-inn-shelbyville",
         "/listings/comfort-suites-daytona-beach",
+        "/hotels-for-sale/wyndham",
+        "/hotel-franchise-costs/days-inn",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/data/sba-hotel-lending/texas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76294,6 +77736,11 @@
         "/contact",
         "/listings/hampton-inn-shelbyville",
         "/listings/comfort-suites-daytona-beach",
+        "/hotels-for-sale/marriott",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/data/sba-hotel-lending/pennsylvania",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76340,6 +77787,10 @@
         "/contact",
         "/listings/hampton-inn-shelbyville",
         "/listings/comfort-suites-daytona-beach",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/data/sba-hotel-lending/utah",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76386,6 +77837,11 @@
         "/contact",
         "/listings/hampton-inn-shelbyville",
         "/listings/comfort-suites-daytona-beach",
+        "/hotel-franchise-costs/econo-lodge",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/data/sba-hotel-lending/florida",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76432,6 +77888,10 @@
         "/contact",
         "/listings/hampton-inn-shelbyville",
         "/listings/comfort-suites-daytona-beach",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/buy-a-hotel/branded-vs-independent",
+        "/data/sba-hotel-lending/california",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76478,6 +77938,11 @@
         "/contact",
         "/listings/hampton-inn-shelbyville",
         "/listings/comfort-suites-daytona-beach",
+        "/hotel-franchise-costs/red-roof-inn",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/data/sba-hotel-lending/pennsylvania",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76524,6 +77989,10 @@
         "/contact",
         "/listings/hampton-inn-shelbyville",
         "/listings/comfort-suites-daytona-beach",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/buy-a-hotel/branded-vs-independent",
+        "/data/sba-hotel-lending/georgia",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76570,6 +78039,12 @@
         "/contact",
         "/listings/hampton-inn-shelbyville",
         "/listings/comfort-suites-daytona-beach",
+        "/hotels-for-sale/best-western",
+        "/hotel-franchise-costs/best-western",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/data/sba-hotel-lending/california",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76617,6 +78092,8 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/mezzanine-debt-and-preferred-equity",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76664,6 +78141,10 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotels-for-sale/marriott",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/cmbs-loans",
+        "/data/sba-hotel-lending/louisiana",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76710,6 +78191,10 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotels-for-sale/marriott",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/hotel-lenders-by-type",
+        "/data/sba-hotel-lending/california",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76756,6 +78241,10 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotels-for-sale/marriott",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/cmbs-loans",
+        "/data/sba-hotel-lending/colorado",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76802,6 +78291,10 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotels-for-sale/marriott",
+        "/hotels-for-sale/ihg",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/hotel-lenders-by-type",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76849,6 +78342,11 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotels-for-sale/marriott",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/construction-loans",
+        "/hotel-financing/extended-stay-financing",
+        "/data/sba-hotel-lending/texas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76896,6 +78394,12 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/markets/austin-tx",
+        "/hotels-for-sale/ihg",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/loan-requirements",
+        "/hotel-financing/extended-stay-financing",
+        "/data/sba-hotel-lending/texas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76943,6 +78447,11 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotels-for-sale/choice",
+        "/sell-a-hotel/how-to-sell-a-hotel",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/hotel-financing/loan-assumption",
+        "/data/sba-hotel-lending/georgia",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -76990,6 +78499,13 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/markets/atlanta-ga",
+        "/hotels-for-sale/hampton-inn",
+        "/hotel-franchise-costs/hampton-inn",
+        "/sell-a-hotel/how-to-sell-a-hotel",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/hotel-financing/bridge-loans",
+        "/data/sba-hotel-lending/georgia",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -77037,6 +78553,11 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/markets/dallas-tx",
+        "/hotels-for-sale/ihg",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/loan-requirements",
+        "/data/sba-hotel-lending/texas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -77083,6 +78604,10 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotels-for-sale/choice",
+        "/sell-a-hotel/how-to-sell-a-hotel",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/data/sba-hotel-lending/new-york",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -77129,6 +78654,11 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotels-for-sale/hilton",
+        "/hotel-franchise-costs/hilton-garden-inn",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/loan-requirements",
+        "/data/sba-hotel-lending/montana",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -77176,6 +78706,12 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotels-for-sale/hampton-inn",
+        "/hotel-franchise-costs/hampton-inn",
+        "/sell-a-hotel/how-to-sell-a-hotel",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/hotel-financing/bridge-loans",
+        "/data/sba-hotel-lending/texas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -77222,6 +78758,10 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/sell-a-hotel/how-to-sell-a-hotel",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/hotel-financing/bridge-loans",
+        "/data/sba-hotel-lending/colorado",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -77269,6 +78809,11 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotels-for-sale/holiday-inn-express",
+        "/sell-a-hotel/how-to-sell-a-hotel",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/hotel-financing/bridge-loans",
+        "/data/sba-hotel-lending/georgia",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -77315,6 +78860,11 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/markets/houston-tx",
+        "/hotels-for-sale/wyndham",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/loan-requirements",
+        "/data/sba-hotel-lending/texas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -77362,6 +78912,12 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/markets/houston-tx",
+        "/hotels-for-sale/ihg",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/loan-requirements",
+        "/hotel-financing/extended-stay-financing",
+        "/data/sba-hotel-lending/texas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -77409,6 +78965,11 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/markets/san-antonio-tx",
+        "/hotels-for-sale/choice",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/loan-requirements",
+        "/data/sba-hotel-lending/texas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -77456,6 +79017,9 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/loan-requirements",
+        "/data/sba-hotel-lending/montana",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -77503,6 +79067,10 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/markets/austin-tx",
+        "/sell-a-hotel/how-to-sell-a-hotel",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/data/sba-hotel-lending/texas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -77549,6 +79117,14 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/markets/austin-tx",
+        "/hotels-for-sale/hampton-inn",
+        "/hotels-for-sale/hilton",
+        "/hotel-franchise-costs/hampton-inn",
+        "/hotel-franchise-costs/home2-suites",
+        "/hotel-financing/mezzanine-debt-and-preferred-equity",
+        "/hotel-financing/capital-stack",
+        "/data/sba-hotel-lending/texas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -77595,6 +79171,9 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/markets/tampa-fl",
+        "/hotel-financing/mezzanine-debt-and-preferred-equity",
+        "/hotel-financing/capital-stack",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -77641,6 +79220,12 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotels-for-sale/hilton",
+        "/hotel-franchise-costs/home2-suites",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/construction-loans",
+        "/hotel-financing/extended-stay-financing",
+        "/data/sba-hotel-lending/texas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -77687,6 +79272,14 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/markets/austin-tx",
+        "/hotels-for-sale/hampton-inn",
+        "/hotels-for-sale/hilton",
+        "/hotel-franchise-costs/hampton-inn",
+        "/hotel-franchise-costs/home2-suites",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/construction-loans",
+        "/data/sba-hotel-lending/texas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -77733,6 +79326,11 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotels-for-sale/hampton-inn",
+        "/hotel-franchise-costs/hampton-inn",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/loan-requirements",
+        "/data/sba-hotel-lending/texas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -77779,6 +79377,12 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotels-for-sale/hilton",
+        "/hotel-franchise-costs/home2-suites",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/loan-requirements",
+        "/hotel-financing/extended-stay-financing",
+        "/data/sba-hotel-lending/ohio",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -77825,6 +79429,11 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotels-for-sale/hampton-inn",
+        "/hotel-franchise-costs/hampton-inn",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/loan-requirements",
+        "/data/sba-hotel-lending/iowa",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -77871,6 +79480,11 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotels-for-sale/wyndham",
+        "/hotel-franchise-costs/la-quinta",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/loan-requirements",
+        "/data/sba-hotel-lending/texas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -77917,6 +79531,10 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotels-for-sale/holiday-inn-express",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/loan-requirements",
+        "/data/sba-hotel-lending/texas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -77963,6 +79581,9 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/loan-requirements",
+        "/data/sba-hotel-lending/montana",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -78010,6 +79631,12 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotels-for-sale/hilton",
+        "/hotel-franchise-costs/home2-suites",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/loan-requirements",
+        "/hotel-financing/extended-stay-financing",
+        "/data/sba-hotel-lending/california",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -78057,6 +79684,13 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotels-for-sale/hampton-inn",
+        "/hotels-for-sale/hilton",
+        "/hotel-franchise-costs/hampton-inn",
+        "/hotel-franchise-costs/home2-suites",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/loan-requirements",
+        "/data/sba-hotel-lending/oklahoma",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -78103,6 +79737,9 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotel-industry/cost-to-build-a-hotel",
+        "/hotel-financing/construction-loans",
+        "/data/sba-hotel-lending/texas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -78149,6 +79786,11 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotels-for-sale/choice",
+        "/hotel-franchise-costs/quality-inn",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/loan-requirements",
+        "/data/sba-hotel-lending/texas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -78196,6 +79838,12 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotels-for-sale/hilton",
+        "/hotel-franchise-costs/home2-suites",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/loan-requirements",
+        "/hotel-financing/extended-stay-financing",
+        "/data/sba-hotel-lending/indiana",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -78243,6 +79891,13 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/markets/austin-tx",
+        "/hotels-for-sale/hilton",
+        "/hotel-franchise-costs/home2-suites",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/loan-requirements",
+        "/hotel-financing/extended-stay-financing",
+        "/data/sba-hotel-lending/texas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -78289,6 +79944,10 @@
         "/closed",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/hotels-for-sale/ihg",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/loan-requirements",
+        "/data/sba-hotel-lending/texas",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -78556,6 +80215,9 @@
         "/hotels-for-sale/holiday-inn-express",
         "/hotels-for-sale/marriott",
         "/hotels-for-sale/hilton",
+        "/hotel-valuation/hotel-cap-rates",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/hotel-valuation/interest-rates-and-hotel-value",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -78614,6 +80276,9 @@
         "/hotels-for-sale/holiday-inn-express",
         "/hotels-for-sale/marriott",
         "/hotels-for-sale/hilton",
+        "/hotel-valuation/select-service-vs-full-service",
+        "/hotel-industry/chain-scales-and-classes",
+        "/hotel-valuation/pip-and-hotel-value",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -78673,6 +80338,9 @@
         "/hotels-for-sale/holiday-inn-express",
         "/hotels-for-sale/marriott",
         "/hotels-for-sale/hilton",
+        "/hotel-financing/refinance",
+        "/hotel-financing/refinance-or-sell",
+        "/hotel-financing/loan-maturities-2026-2027",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -78732,6 +80400,9 @@
         "/hotels-for-sale/holiday-inn-express",
         "/hotels-for-sale/marriott",
         "/hotels-for-sale/hilton",
+        "/hotel-industry/who-buys-hotels",
+        "/hotel-valuation/hotel-cap-rates",
+        "/hotel-industry/outlook-2026-2027",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -78792,8 +80463,10 @@
         "/hotels-for-sale/marriott",
         "/hotels-for-sale/hilton",
         "/hotels-for-sale/ihg",
-        "/buy-a-hotel",
+        "/hotel-valuation/branded-select-service-hotel-value",
+        "/hotel-valuation/pip-and-hotel-value",
         "/hotel-franchise-costs",
+        "/buy-a-hotel",
         "/hotel-industry",
         "/glossary",
         "/tools",
@@ -78852,6 +80525,9 @@
         "/hotels-for-sale/marriott",
         "/hotels-for-sale/hilton",
         "/hotels-for-sale/ihg",
+        "/sell-a-hotel/how-to-sell-a-hotel",
+        "/sell-a-hotel/how-long-it-takes",
+        "/sell-a-hotel/broker-fees",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -78908,6 +80584,9 @@
         "/markets/miami-fl",
         "/hotels-for-sale/hampton-inn",
         "/hotels-for-sale/holiday-inn-express",
+        "/hotel-financing/cmbs-loans",
+        "/hotel-financing/loan-workouts",
+        "/buy-a-hotel/buying-a-hotel-from-receivership-or-foreclosure",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -78964,6 +80643,9 @@
         "/markets/atlanta-ga",
         "/hotels-for-sale/hampton-inn",
         "/hotels-for-sale/marriott",
+        "/hotel-industry/revpar-adr-occupancy",
+        "/hotel-industry/outlook-2026-2027",
+        "/hotel-valuation/revpar-multiples-and-per-key",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -79009,6 +80691,12 @@
         "/team",
         "/contact",
         "/team/luke-thompson",
+        "/insights/adr-recovery-texas-secondary",
+        "/insights/texas-hotel-cap-rates-q2-2026",
+        "/insights/select-service-vs-full-service-2026",
+        "/hotel-valuation/hotel-cap-rates",
+        "/hotel-valuation/select-service-vs-full-service",
+        "/hotel-industry/outlook-2026-2027",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -79053,6 +80741,11 @@
         "/about",
         "/team",
         "/contact",
+        "/insights/q1-2026-outlook",
+        "/insights/hotel-adr-revpar-recovery-2026",
+        "/insights/texas-hotel-cap-rates-q2-2026",
+        "/hotel-industry/revpar-adr-occupancy",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -79099,6 +80792,11 @@
         "/contact",
         "/team/luke-thompson",
         "/team/nate-solomon",
+        "/insights/q1-2026-outlook",
+        "/insights/sun-belt-hospitality-investment-2026",
+        "/insights/texas-hotel-cap-rates-q2-2026",
+        "/buy-a-hotel/branded-vs-independent",
+        "/hotel-industry/how-hotels-make-money",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -79144,6 +80842,12 @@
         "/team",
         "/contact",
         "/team/luke-thompson",
+        "/insights/select-service-vs-full-service-2026",
+        "/insights/brand-flag-cap-rate-guide-2026",
+        "/insights/texas-hotel-cap-rates-q2-2026",
+        "/hotel-valuation/select-service-vs-full-service",
+        "/hotel-financing/brand-conversion-financing",
+        "/hotel-valuation/hotel-cap-rates",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -79190,6 +80894,12 @@
         "/contact",
         "/team/luke-thompson",
         "/team/miles-cortez",
+        "/insights/hotel-refinancing-wave-2026",
+        "/insights/how-to-sell-a-hotel-2026",
+        "/insights/hotel-cmbs-distress-trepp-2026",
+        "/hotel-financing/refinance-or-sell",
+        "/hotel-financing/loan-workouts",
+        "/hotel-valuation/broker-opinion-of-value",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -79236,6 +80946,11 @@
         "/contact",
         "/team/luke-thompson",
         "/team/nate-solomon",
+        "/insights/texas-hotel-cap-rates-q2-2026",
+        "/insights/sun-belt-hospitality-investment-2026",
+        "/insights/hotel-adr-revpar-recovery-2026",
+        "/hotel-industry/who-buys-hotels",
+        "/hotel-valuation/hotel-cap-rates",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
