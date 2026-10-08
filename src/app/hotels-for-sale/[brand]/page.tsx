@@ -15,6 +15,7 @@ import { markets } from "@/lib/data/markets";
 import { brandFaqs, faqJsonLdNode } from "@/lib/seo/faq";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/entity";
+import { brandRelatedLinks } from "@/lib/hub-links";
 
 import { seoTitle } from "@/lib/seo-meta";
 type Params = { brand: string };
@@ -85,6 +86,9 @@ export default async function BrandPage(props: { params: Promise<Params> }) {
   // Top-tier markets where this brand trades — surface as cross-links for
   // topical-authority signal.
   const topMarkets = markets.slice(0, 6);
+  // This family's franchise-cost pages plus the answer pages every brand page
+  // links (geo/05-architecture.md 5.3).
+  const relatedAnswers = brandRelatedLinks(b);
 
   const graph = [
       {
@@ -318,6 +322,31 @@ export default async function BrandPage(props: { params: Promise<Params> }) {
                     <p className="mt-2 inline-flex items-center gap-1 text-[12px] tracking-[-0.014em] text-[#1a3a6b] group-hover:underline underline-offset-[3px]">
                       View market
                       <ChevronRight className="h-3 w-3" strokeWidth={1.75} aria-hidden="true" />
+                    </p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* Related answers: this family's franchise-cost pages, then the
+            valuation, PIP and sale questions every brand page links. Anchored
+            on each page's own H1. */}
+        <section className="bg-white pb-16 lg:pb-20">
+          <div className="mx-auto max-w-[1024px] px-6">
+            <h2 className="text-[12px] uppercase tracking-[0.18em] font-medium text-[color:var(--text-secondary)]">
+              Related questions
+            </h2>
+            <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {relatedAnswers.map((a) => (
+                <li key={a.href}>
+                  <Link
+                    href={a.href}
+                    className="group block h-full rounded-[18px] bg-[#f5f5f7] p-5 transition-colors duration-200 hover:bg-[#ececef]"
+                  >
+                    <p className="text-[15px] font-semibold leading-[1.4] tracking-[-0.014em] text-[#1a3a6b] group-hover:underline underline-offset-[3px]">
+                      {a.label}
                     </p>
                   </Link>
                 </li>

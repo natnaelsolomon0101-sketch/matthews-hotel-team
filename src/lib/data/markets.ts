@@ -12,6 +12,14 @@ export type Market = {
   demandDrivers: string[];
   brokerSlugs: string[];
   primaryRegionLabel: string;
+  /**
+   * Answer pages this market links to (geo/05-architecture.md 5.2 item 3),
+   * chosen per market, as absolute paths. Each path must be a registered
+   * answer page; the anchor text is that page's own H1. The state's SBA
+   * lending page is added automatically when one exists (src/lib/hub-links.ts),
+   * so it is not listed here.
+   */
+  relatedAnswers: string[];
 };
 
 // 14 metros prioritized by Matthews's actual coverage density and Sun Belt
@@ -43,6 +51,12 @@ export const markets: Market[] = [
     ],
     brokerSlugs: ["luke-thompson", "nate-solomon"],
     primaryRegionLabel: "Texas Triangle",
+    relatedAnswers: [
+      "/hotel-valuation/hotel-cap-rates",
+      "/sell-a-hotel/how-to-sell-a-hotel",
+      "/hotel-financing/hotel-loan-rates",
+      "/hotel-valuation/property-tax-appeal",
+    ],
   },
   {
     slug: "dallas-tx",
@@ -68,6 +82,12 @@ export const markets: Market[] = [
     ],
     brokerSlugs: ["luke-thompson", "nate-solomon"],
     primaryRegionLabel: "Texas Triangle",
+    relatedAnswers: [
+      "/hotel-valuation/hotel-cap-rates",
+      "/hotel-valuation/branded-select-service-hotel-value",
+      "/hotel-financing/refinance-or-sell",
+      "/hotel-valuation/property-tax-appeal",
+    ],
   },
   {
     slug: "houston-tx",
@@ -93,6 +113,12 @@ export const markets: Market[] = [
     ],
     brokerSlugs: ["luke-thompson", "nate-solomon"],
     primaryRegionLabel: "Texas Triangle",
+    relatedAnswers: [
+      "/hotel-valuation/hotel-cap-rates",
+      "/hotel-financing/hotel-loan-rates",
+      "/hotel-financing/refinance-or-sell",
+      "/hotel-valuation/property-tax-appeal",
+    ],
   },
   {
     slug: "san-antonio-tx",
@@ -118,6 +144,12 @@ export const markets: Market[] = [
     ],
     brokerSlugs: ["luke-thompson", "nate-solomon"],
     primaryRegionLabel: "Texas Triangle",
+    relatedAnswers: [
+      "/hotel-valuation/hotel-cap-rates",
+      "/hotel-valuation/select-service-vs-full-service",
+      "/sell-a-hotel/how-to-sell-a-hotel",
+      "/hotel-valuation/property-tax-appeal",
+    ],
   },
   {
     slug: "nashville-tn",
@@ -143,6 +175,12 @@ export const markets: Market[] = [
     ],
     brokerSlugs: ["luke-thompson", "nate-solomon"],
     primaryRegionLabel: "Sun Belt",
+    relatedAnswers: [
+      "/hotel-valuation/hotel-cap-rates",
+      "/hotel-industry/outlook-2026-2027",
+      "/sell-a-hotel/how-to-sell-a-hotel",
+      "/hotel-financing/hotel-loan-rates",
+    ],
   },
   {
     slug: "atlanta-ga",
@@ -168,6 +206,12 @@ export const markets: Market[] = [
     ],
     brokerSlugs: ["luke-thompson", "miles-cortez"],
     primaryRegionLabel: "Sun Belt",
+    relatedAnswers: [
+      "/hotel-valuation/hotel-cap-rates",
+      "/hotel-industry/who-buys-hotels",
+      "/hotel-valuation/branded-select-service-hotel-value",
+      "/sell-a-hotel/how-to-sell-a-hotel",
+    ],
   },
   {
     slug: "charleston-sc",
@@ -193,6 +237,12 @@ export const markets: Market[] = [
     ],
     brokerSlugs: ["luke-thompson"],
     primaryRegionLabel: "Sun Belt",
+    relatedAnswers: [
+      "/hotel-valuation/hotel-cap-rates",
+      "/hotel-valuation/revpar-multiples-and-per-key",
+      "/hotel-financing/historic-tax-credits",
+      "/hotel-financing/hotel-loan-rates",
+    ],
   },
   {
     slug: "savannah-ga",
@@ -218,6 +268,12 @@ export const markets: Market[] = [
     ],
     brokerSlugs: ["luke-thompson"],
     primaryRegionLabel: "Sun Belt",
+    relatedAnswers: [
+      "/hotel-valuation/hotel-cap-rates",
+      "/hotel-financing/historic-tax-credits",
+      "/sell-a-hotel/how-to-sell-a-hotel",
+      "/hotel-financing/refinance-or-sell",
+    ],
   },
   {
     slug: "charlotte-nc",
@@ -243,6 +299,12 @@ export const markets: Market[] = [
     ],
     brokerSlugs: ["luke-thompson"],
     primaryRegionLabel: "Sun Belt",
+    relatedAnswers: [
+      "/hotel-valuation/hotel-cap-rates",
+      "/hotel-valuation/branded-select-service-hotel-value",
+      "/hotel-financing/hotel-loan-rates",
+      "/hotel-financing/refinance-or-sell",
+    ],
   },
   {
     slug: "phoenix-az",
@@ -268,6 +330,12 @@ export const markets: Market[] = [
     ],
     brokerSlugs: ["miles-cortez"],
     primaryRegionLabel: "Mountain West",
+    relatedAnswers: [
+      "/hotel-valuation/hotel-cap-rates",
+      "/hotel-valuation/select-service-vs-full-service",
+      "/hotel-financing/hotel-loan-rates",
+      "/sell-a-hotel/how-to-sell-a-hotel",
+    ],
   },
   {
     slug: "denver-co",
@@ -293,6 +361,12 @@ export const markets: Market[] = [
     ],
     brokerSlugs: ["miles-cortez"],
     primaryRegionLabel: "Mountain West",
+    relatedAnswers: [
+      "/hotel-valuation/hotel-cap-rates",
+      "/sell-a-hotel/how-to-sell-a-hotel",
+      "/hotel-financing/refinance-or-sell",
+      "/hotel-financing/hotel-loan-rates",
+    ],
   },
   {
     slug: "miami-fl",
@@ -318,6 +392,12 @@ export const markets: Market[] = [
     ],
     brokerSlugs: ["luke-thompson"],
     primaryRegionLabel: "Sun Belt",
+    relatedAnswers: [
+      "/hotel-valuation/hotel-cap-rates",
+      "/hotel-valuation/interest-rates-and-hotel-value",
+      "/sell-a-hotel/how-to-sell-a-hotel",
+      "/hotel-valuation/property-tax-appeal",
+    ],
   },
   {
     slug: "tampa-fl",
@@ -343,6 +423,12 @@ export const markets: Market[] = [
     ],
     brokerSlugs: ["luke-thompson"],
     primaryRegionLabel: "Sun Belt",
+    relatedAnswers: [
+      "/hotel-valuation/hotel-cap-rates",
+      "/hotel-financing/refinance-or-sell",
+      "/hotel-financing/hotel-loan-rates",
+      "/hotel-valuation/property-tax-appeal",
+    ],
   },
   {
     slug: "orlando-fl",
@@ -368,6 +454,12 @@ export const markets: Market[] = [
     ],
     brokerSlugs: ["luke-thompson"],
     primaryRegionLabel: "Sun Belt",
+    relatedAnswers: [
+      "/hotel-valuation/hotel-cap-rates",
+      "/hotel-industry/who-buys-hotels",
+      "/sell-a-hotel/how-to-sell-a-hotel",
+      "/hotel-valuation/property-tax-appeal",
+    ],
   },
 ];
 
