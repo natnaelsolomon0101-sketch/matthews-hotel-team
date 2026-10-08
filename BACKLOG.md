@@ -15,7 +15,7 @@ Status key: **Live** = on production now. **This PR** = in the 2026-10-08 integr
 | # | Item | Status |
 |---|---|---|
 | 1 | Technical audit | Live as scripts in the gate: `schema-validate.ts`, `metadata-audit.mjs`, `sitemap-check.mjs`, `internal-links-audit.ts`. This file is the audit of the prompt itself. |
-| 2 | opengraph-image per dynamic route | Live on 10 route families (home, listings, closed, insights, team, markets, hotels-for-sale, services, offices, rates). |
+| 2 | opengraph-image per dynamic route | Live on 10 route families (home, listings, closed, insights, team, markets, hotels-for-sale, services, offices, rates). **This PR:** the 44 SBA state pages had no og:image (the metadata audit flagged 45); they now use the site default, like their hub. |
 | 3 | JSON-LD `@graph` | Live: one writer, `src/components/seo/JsonLd.tsx`, facts from `src/lib/entity.ts`. |
 | 4 | Listing schema | Live: `RealEstateListing` with `businessFunction`. |
 | 5 | `additionalType: FinancialService` | Live. |
