@@ -1,5 +1,6 @@
 import * as React from "react";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
@@ -16,6 +17,7 @@ import { getBroker } from "@/lib/data/team";
 import { listingFaqs, faqJsonLdNode } from "@/lib/seo/faq";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/entity";
+import { listingRelated } from "@/lib/related-links";
 
 import { seoTitle } from "@/lib/seo-meta";
 type Params = { slug: string };
@@ -98,6 +100,9 @@ export default async function ListingDetailPage(
     ? `${SITE_URL}${listing.photo}`
     : `${SITE_URL}/images/hero-landscape.jpg`;
   const faqs = listingFaqs(listing);
+  // Market, brand, franchise-cost, SBA and buying-question links, each
+  // resolved against its own data module (src/lib/related-links.ts).
+  const related = listingRelated(listing);
 
   // Single @graph: MTE Product+Hotel + Offer (sell) + Place + BreadcrumbList
   // + WebPage. AI Overview retrievers consume @graph more reliably than
@@ -277,6 +282,40 @@ export default async function ListingDetailPage(
             </dl>
           </div>
         </section>
+
+        {related.length > 0 && (
+          <section className="bg-white py-16 lg:py-20" aria-labelledby="related-heading">
+            <div className="mx-auto max-w-[1024px] px-6">
+              <h2
+                id="related-heading"
+                className="text-[12px] uppercase tracking-[0.18em] font-medium text-[color:var(--text-secondary)]"
+              >
+                Related
+              </h2>
+              <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                {related.map((g) => (
+                  <div key={g.heading}>
+                    <h3 className="text-[13px] tracking-[-0.014em] text-[color:var(--text-secondary)]">
+                      {g.heading}
+                    </h3>
+                    <ul className="mt-3 space-y-2">
+                      {g.links.map((l) => (
+                        <li key={l.href}>
+                          <Link
+                            href={l.href}
+                            className="text-[15px] leading-[1.45] tracking-[-0.014em] text-[#1a3a6b] hover:underline underline-offset-[3px]"
+                          >
+                            {l.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
       </main>
       <SiteFooter />
       {/* Mobile broker rail spacer so the fixed bar doesn't overlap the footer text */}
