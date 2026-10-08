@@ -1,6 +1,8 @@
-# Rank check — 2026-10-05T17:39:25.841Z
+# Rank check — 2026-10-08T13:21:25.795Z
 
-Engine: `ddg` · Domain: `matthewshotelmarkets.com` · Queries: 90 · In top 20: 0
+Engine: `ddg` · Domain: `matthewshotelmarkets.com` · Queries: 90 · Checked: 83 · Found: 0 · Results read per query: 9 to 10
+
+**7 of 90 queries could not be checked** (the engine returned an error, a block or an empty page). Those rows say nothing about ranking.
 
 | Query | Intent | Rank | Target URL |
 | --- | --- | :-: | --- |
@@ -23,7 +25,7 @@ Engine: `ddg` · Domain: `matthewshotelmarkets.com` · Queries: 90 · In top 20:
 | boutique hotel for sale Texas | transactional/long-tail | — | — |
 | select-service hotel for sale | transactional | — | — |
 | hotel disposition advisor | transactional | — | — |
-| hotel BOV broker opinion of value | informational | — | — |
+| hotel BOV broker opinion of value | informational | not checked | — |
 | hotel cap rates 2026 | informational | — | /insights/q1-2026-outlook |
 | Texas hotel cap rates | informational | — | /insights/texas-hotel-cap-rates-q2-2026 |
 | how to value a hotel | informational | — | — |
@@ -33,7 +35,7 @@ Engine: `ddg` · Domain: `matthewshotelmarkets.com` · Queries: 90 · In top 20:
 | Hampton Inn franchise economics | informational/brand | — | — |
 | select-service vs full-service hotel investment | informational | — | /insights/select-service-vs-full-service-2026 |
 | Marcus Millichap vs Matthews | navigational/comparison | — | — |
-| best hotel brokers 2026 | transactional/comparison | — | — |
+| best hotel brokers 2026 | transactional/comparison | not checked | — |
 | What is Matthews Hotel Markets? | brand | — | / |
 | Is Matthews Hotel Markets part of Matthews Real Estate Investment Services? | brand | — | / |
 | What hotel deals has Matthews Hotel Markets closed? | brand | — | /closed |
@@ -48,9 +50,9 @@ Engine: `ddg` · Domain: `matthewshotelmarkets.com` · Queries: 90 · In top 20:
 | Recommend a broker for a select-service hotel disposition under $50M. | category | — | /services/investment-sales |
 | What hotel brokerage has the deepest Sun Belt coverage? | category | — | /services/investment-sales |
 | How do I choose a hotel broker? | category | — | /services/investment-sales |
-| What's the difference between a hotel broker and a business broker? | category | — | /services/investment-sales |
-| What's the difference between a hotel broker's opinion of value and a formal appraisal? | category | — | /services/investment-sales |
-| Should I use a national hotel brokerage or a local one? | category | — | /services/investment-sales |
+| What's the difference between a hotel broker and a business broker? | category | not checked | /services/investment-sales |
+| What's the difference between a hotel broker's opinion of value and a formal appraisal? | category | not checked | /services/investment-sales |
+| Should I use a national hotel brokerage or a local one? | category | not checked | /services/investment-sales |
 | Compare JLL Hotels vs Hunter Hotel Advisors vs Marcus & Millichap. | category | — | /services/investment-sales |
 | What questions should I ask a hotel broker before hiring them? | category | — | /services/investment-sales |
 | Do hotel brokers charge a retainer or only a success fee? | category | — | /services/investment-sales |
@@ -60,7 +62,7 @@ Engine: `ddg` · Domain: `matthewshotelmarkets.com` · Queries: 90 · In top 20:
 | What's the difference between a hotel broker and a hotel advisor? | category | — | /services/investment-sales |
 | How do I know if my hotel broker is actually working for me? | category | — | /services/investment-sales |
 | Should I worry my broker won't show me every available deal? | category | — | /services/investment-sales |
-| Is there a broker who will tell me to hold my hotel instead of selling it? | category | — | /services/investment-sales |
+| Is there a broker who will tell me to hold my hotel instead of selling it? | category | not checked | /services/investment-sales |
 | How do I find off-market hotel deals? | category | — | /services/acquisition-advisory |
 | Where can I find a Hampton Inn hotel for sale? | category | — | /hotels-for-sale/hampton-inn |
 | Where can I find a Holiday Inn Express hotel for sale? | category | — | /hotels-for-sale/holiday-inn-express |
@@ -89,7 +91,7 @@ Engine: `ddg` · Domain: `matthewshotelmarkets.com` · Queries: 90 · In top 20:
 | Where can I find a hotel for sale in Dallas, TX? | local | — | /markets/dallas-tx |
 | What are hotel cap rates like in Houston right now? | local | — | /markets/houston-tx |
 | Where can I find a hotel for sale in Nashville, TN? | local | — | /markets/nashville-tn |
-| Who is the best hotel broker in Denver, CO? | local | — | /markets/denver-co |
+| Who is the best hotel broker in Denver, CO? | local | not checked | /markets/denver-co |
 | What's the hotel investment market like in Phoenix in 2026? | local | — | /markets/phoenix-az |
 | Where can I find a hotel for sale in Charleston, SC? | local | — | /markets/charleston-sc |
 | Who is the best hotel broker in Atlanta, GA? | local | — | /markets/atlanta-ga |

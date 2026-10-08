@@ -104,23 +104,28 @@ function loadCsvQueries(): { q: string; intent: string; targetUrl?: string }[] {
     .filter((x): x is { q: string; intent: string; targetUrl?: string } => x !== null);
 }
 
-type Result = { q: string; intent: string; runAt: string; rank: number | null; cited: boolean; engine: "serpapi" | "ddg"; targetUrl?: string };
+// `checked` is false when the engine answered with an error, a block or an
+// empty page. Such a row says nothing about ranking, so it must never be read
+// as "not in the results". `depth` is how many organic results were parsed.
+type Check = { rank: number | null; cited: boolean; checked: boolean; depth: number };
+type Result = { q: string; intent: string; runAt: string; rank: number | null; cited: boolean; checked: boolean; depth: number; engine: "serpapi" | "ddg"; targetUrl?: string };
 
-async function checkSerpApi(query: string): Promise<{ rank: number | null; cited: boolean }> {
+async function checkSerpApi(query: string): Promise<Check> {
   const key = process.env.SERPAPI_KEY!;
   const url = `https://serpapi.com/search.json?engine=google&q=${encodeURIComponent(query)}&hl=en&gl=us&num=20&api_key=${key}`;
   const res = await fetch(url);
-  if (!res.ok) return { rank: null, cited: false };
+  if (!res.ok) return { rank: null, cited: false, checked: false, depth: 0 };
   const json: { organic_results?: { position: number; link: string }[] } = await res.json();
   const hits = json.organic_results ?? [];
+  if (hits.length === 0) return { rank: null, cited: false, checked: false, depth: 0 };
   const idx = hits.findIndex((h) => h.link.includes(TARGET_DOMAIN));
-  return { rank: idx >= 0 ? hits[idx].position : null, cited: idx >= 0 };
+  return { rank: idx >= 0 ? hits[idx].position : null, cited: idx >= 0, checked: true, depth: hits.length };
 }
 
-async function checkDuckDuckGo(query: string): Promise<{ rank: number | null; cited: boolean }> {
+async function checkDuckDuckGo(query: string): Promise<Check> {
   const url = `https://html.duckduckgo.com/html/?q=${encodeURIComponent(query)}`;
   const res = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0 (rank-check.ts; matthewshotelmarkets.com)" } });
-  if (!res.ok) return { rank: null, cited: false };
+  if (!res.ok) return { rank: null, cited: false, checked: false, depth: 0 };
   const html = await res.text();
   const linkRegex = /<a[^>]+class="[^"]*result__a[^"]*"[^>]+href="([^"]+)"/g;
   const links: string[] = [];
@@ -128,8 +133,11 @@ async function checkDuckDuckGo(query: string): Promise<{ rank: number | null; ci
   while ((match = linkRegex.exec(html)) !== null && links.length < 30) {
     links.push(match[1]);
   }
+  // DuckDuckGo answers some datacenter IPs (GitHub Actions included) with a
+  // 200 challenge page that has no results. Zero parsed links means blocked.
+  if (links.length === 0) return { rank: null, cited: false, checked: false, depth: 0 };
   const idx = links.findIndex((l) => l.includes(TARGET_DOMAIN));
-  return { rank: idx >= 0 ? idx + 1 : null, cited: idx >= 0 };
+  return { rank: idx >= 0 ? idx + 1 : null, cited: idx >= 0, checked: true, depth: links.length };
 }
 
 async function main() {
@@ -146,12 +154,12 @@ async function main() {
     process.stdout.write(`[${q.q}] `);
     try {
       const r = await checker(q.q);
-      const row: Result = { q: q.q, intent: q.intent, runAt, rank: r.rank, cited: r.cited, engine, targetUrl: q.targetUrl };
+      const row: Result = { q: q.q, intent: q.intent, runAt, rank: r.rank, cited: r.cited, checked: r.checked, depth: r.depth, engine, targetUrl: q.targetUrl };
       rows.push(row);
       if (r.cited) cited++;
-      console.log(r.rank == null ? "—" : `#${r.rank}`);
+      console.log(!r.checked ? "not checked" : r.rank == null ? "—" : `#${r.rank}`);
     } catch (e) {
-      const row: Result = { q: q.q, intent: q.intent, runAt, rank: null, cited: false, engine, targetUrl: q.targetUrl };
+      const row: Result = { q: q.q, intent: q.intent, runAt, rank: null, cited: false, checked: false, depth: 0, engine, targetUrl: q.targetUrl };
       rows.push(row);
       console.log(`ERR ${(e as Error).message}`);
     }
@@ -160,17 +168,24 @@ async function main() {
 
   fs.appendFileSync(outFile, rows.map((r) => JSON.stringify(r)).join("\n") + "\n");
 
+  const checkedRows = rows.filter((r) => r.checked);
+  const depths = checkedRows.map((r) => r.depth);
+  const depthLabel = depths.length ? `${Math.min(...depths)} to ${Math.max(...depths)}` : "none";
+
   const md = [
     `# Rank check — ${runAt}`,
     ``,
-    `Engine: \`${engine}\` · Domain: \`${TARGET_DOMAIN}\` · Queries: ${QUERIES.length} · In top 20: ${cited}`,
+    `Engine: \`${engine}\` · Domain: \`${TARGET_DOMAIN}\` · Queries: ${QUERIES.length} · Checked: ${checkedRows.length} · Found: ${cited} · Results read per query: ${depthLabel}`,
     ``,
+    ...(checkedRows.length < rows.length
+      ? [`**${rows.length - checkedRows.length} of ${rows.length} queries could not be checked** (the engine returned an error, a block or an empty page). Those rows say nothing about ranking.`, ``]
+      : []),
     `| Query | Intent | Rank | Target URL |`,
     `| --- | --- | :-: | --- |`,
-    ...rows.map((r) => `| ${r.q} | ${r.intent} | ${r.rank == null ? "—" : "#" + r.rank} | ${r.targetUrl ?? "—"} |`),
+    ...rows.map((r) => `| ${r.q} | ${r.intent} | ${!r.checked ? "not checked" : r.rank == null ? "—" : "#" + r.rank} | ${r.targetUrl ?? "—"} |`),
   ].join("\n");
   fs.writeFileSync(summaryFile, md);
-  console.log(`\n→ ${outFile}\n→ ${summaryFile}\n→ Visible: ${cited}/${QUERIES.length}`);
+  console.log(`\n→ ${outFile}\n→ ${summaryFile}\n→ Found: ${cited} · Checked: ${checkedRows.length}/${QUERIES.length}`);
 }
 
 main().catch((e) => {
