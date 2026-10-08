@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-10-07T14:29:04.462Z",
+  "runAt": "2026-10-08T14:32:07.224Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 321,
-  "blocksFound": 321,
-  "blocksValid": 321,
+  "urlsChecked": 322,
+  "blocksFound": 322,
+  "blocksValid": 322,
   "issues": [],
   "blocks": [
     {
@@ -1275,6 +1275,13 @@
     },
     {
       "url": "/hotel-industry/hotel-worker-minimum-wage",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-industry/energy-benchmarking-and-emissions-limits",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,
