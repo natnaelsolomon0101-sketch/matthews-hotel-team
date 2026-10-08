@@ -18,6 +18,7 @@ import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/entity";
 import { mhiQuarters } from "@/lib/data/mhi";
 import { formatDate } from "@/lib/format-date";
+import { marketRelatedLinks } from "@/lib/hub-links";
 
 import { seoTitle } from "@/lib/seo-meta";
 type Params = { city: string };
@@ -94,6 +95,9 @@ export default async function MarketPage(props: { params: Promise<Params> }) {
   // Brand-flag pages relevant to this market (surface as cross-links for
   // topical-authority signal).
   const relatedBrands = brands.slice(0, 4);
+
+  // Answer pages chosen for this market (geo/05-architecture.md 5.2 item 3).
+  const related = marketRelatedLinks(m);
 
   // @graph: WebPage with mainEntity Place + Place node + ItemList of active
   // listings + BreadcrumbList + FAQPage. Place schema gives this market page
@@ -362,6 +366,51 @@ export default async function MarketPage(props: { params: Promise<Params> }) {
                 </li>
               ))}
             </ul>
+          </div>
+        </section>
+
+        {/* Related answers (template C13): questions chosen for this market,
+            anchored on each page's own H1, plus the state's SBA lending data. */}
+        <section className="bg-white pb-16 lg:pb-20">
+          <div className="mx-auto max-w-[1024px] px-6">
+            <h2 className="text-[12px] uppercase tracking-[0.18em] font-medium text-[color:var(--text-secondary)]">
+              Related questions
+            </h2>
+            <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {related.answers.map((a) => (
+                <li key={a.href}>
+                  <Link
+                    href={a.href}
+                    className="group block h-full rounded-[18px] bg-[#f5f5f7] p-5 transition-colors duration-200 hover:bg-[#ececef]"
+                  >
+                    <p className="text-[15px] font-semibold leading-[1.4] tracking-[-0.014em] text-[#1a3a6b] group-hover:underline underline-offset-[3px]">
+                      {a.label}
+                    </p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            {related.data.length > 0 && (
+              <>
+                <h3 className="mt-10 text-[12px] uppercase tracking-[0.18em] font-medium text-[color:var(--text-secondary)]">
+                  Our own data
+                </h3>
+                <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {related.data.map((d) => (
+                    <li key={d.href}>
+                      <Link
+                        href={d.href}
+                        className="group block h-full rounded-[18px] bg-[#f5f5f7] p-5 transition-colors duration-200 hover:bg-[#ececef]"
+                      >
+                        <p className="text-[15px] font-semibold leading-[1.4] tracking-[-0.014em] text-[#1a3a6b] group-hover:underline underline-offset-[3px]">
+                          {d.label}
+                        </p>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
           </div>
         </section>
 
