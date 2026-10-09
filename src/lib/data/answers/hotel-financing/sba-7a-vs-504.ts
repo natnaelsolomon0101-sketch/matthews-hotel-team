@@ -68,7 +68,7 @@ export const page: AnswerPage = {
     {
       h2: "Which one fits my deal?",
       lead: "7(a) fits a smaller purchase that needs working capital and speed; 504 fits a larger, real-estate-heavy purchase where a long-term fixed rate on part of the stack is worth the extra closing complexity.",
-      body: "The worked example below runs the same $6.0 million hotel purchase through both programs side by side. Neither program is categorically better; the right choice depends on deal size, how much of the purchase is real estate versus working capital and FF&E, and how much the borrower values a fixed rate on part of the stack against the speed and simplicity of a single closing."
+      body: "The worked example below runs the same $6.0 million hotel purchase through both programs side by side. Neither program is categorically better; the right choice depends on deal size, how much of the purchase is real estate versus working capital and FF&E, and how much the borrower values a fixed rate on part of the stack against the speed and simplicity of a single closing. Both programs run the same environmental investigation, and which report it starts with is at [Am I liable for contamination on a hotel I buy?](/buy-a-hotel/environmental-liability)."
     }
   ],
   table: {

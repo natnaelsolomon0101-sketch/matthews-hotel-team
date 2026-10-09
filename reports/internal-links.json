@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-08T14:32:16.570Z",
-  "base": "http://localhost:39361",
+  "runAt": "2026-10-09T14:52:24.923Z",
+  "base": "http://localhost:41385",
   "edges": [
     {
       "from": "/",
@@ -4253,6 +4253,10 @@
     {
       "from": "/sitemap",
       "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/buy-a-hotel/environmental-liability"
     },
     {
       "from": "/sitemap",
@@ -48884,6 +48888,10 @@
     },
     {
       "from": "/hotel-financing/sba-7a-vs-504",
+      "to": "/buy-a-hotel/environmental-liability"
+    },
+    {
+      "from": "/hotel-financing/sba-7a-vs-504",
       "to": "/team/miles-cortez"
     },
     {
@@ -49761,6 +49769,10 @@
     {
       "from": "/hotel-financing/closing-costs",
       "to": "/hotel-financing/hotel-loan-rates"
+    },
+    {
+      "from": "/hotel-financing/closing-costs",
+      "to": "/buy-a-hotel/environmental-liability"
     },
     {
       "from": "/hotel-financing/closing-costs",
@@ -56940,6 +56952,10 @@
     },
     {
       "from": "/buy-a-hotel",
+      "to": "/buy-a-hotel/environmental-liability"
+    },
+    {
+      "from": "/buy-a-hotel",
       "to": "/buy-a-hotel/how-to-make-an-offer"
     },
     {
@@ -57337,6 +57353,10 @@
     {
       "from": "/buy-a-hotel/buying-a-hotel-from-receivership-or-foreclosure",
       "to": "/buy-a-hotel/branded-vs-independent"
+    },
+    {
+      "from": "/buy-a-hotel/buying-a-hotel-from-receivership-or-foreclosure",
+      "to": "/buy-a-hotel/environmental-liability"
     },
     {
       "from": "/buy-a-hotel/buying-a-hotel-from-receivership-or-foreclosure",
@@ -57756,6 +57776,10 @@
     },
     {
       "from": "/buy-a-hotel/due-diligence-checklist",
+      "to": "/buy-a-hotel/environmental-liability"
+    },
+    {
+      "from": "/buy-a-hotel/due-diligence-checklist",
       "to": "/glossary/pip"
     },
     {
@@ -57884,6 +57908,202 @@
     },
     {
       "from": "/buy-a-hotel/due-diligence-checklist",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/_next/static/chunks/e7051121e5f1db32.css"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/buy-a-hotel/environmental-liability.md"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/listings"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/rates"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/about"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/team"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/contact"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/sell-a-hotel/documents-needed"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/hotel-financing/hotel-lenders-by-type"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/buy-a-hotel/buying-a-hotel-from-receivership-or-foreclosure"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/glossary"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/glossary/sba-7a"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/glossary/sba-504"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/tools"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/research"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/markets"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/closed"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/process"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/services"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/insights"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/press"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
+      "to": "/developers"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
       "to": "/sitemap"
     },
     {
@@ -58361,6 +58581,10 @@
     {
       "from": "/buy-a-hotel/how-to-make-an-offer",
       "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-make-an-offer",
+      "to": "/buy-a-hotel/environmental-liability"
     },
     {
       "from": "/buy-a-hotel/how-to-make-an-offer",
@@ -71126,6 +71350,7 @@
         "/buy-a-hotel/buying-a-hotel-from-receivership-or-foreclosure",
         "/buy-a-hotel/depreciation-and-cost-segregation",
         "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/environmental-liability",
         "/buy-a-hotel/first-hotel-no-experience",
         "/buy-a-hotel/how-much-money-do-you-need",
         "/buy-a-hotel/how-to-make-an-offer",
@@ -83513,6 +83738,7 @@
         "/team",
         "/contact",
         "/team/luke-thompson",
+        "/buy-a-hotel/environmental-liability",
         "/team/miles-cortez",
         "/hotel-financing/loan-requirements",
         "/hotel-financing/hotel-lenders-by-type",
@@ -83757,6 +83983,7 @@
         "/hotel-financing/how-debt-placement-works",
         "/hotel-financing/loan-requirements",
         "/hotel-financing/hotel-loan-rates",
+        "/buy-a-hotel/environmental-liability",
         "/hotel-financing/mezzanine-debt-and-preferred-equity",
         "/hotel-financing/interest-rate-caps",
         "/hotel-financing/bridge-loans",
@@ -85755,6 +85982,7 @@
         "/glossary/noi",
         "/buy-a-hotel/buying-a-hotel-from-receivership-or-foreclosure",
         "/buy-a-hotel/depreciation-and-cost-segregation",
+        "/buy-a-hotel/environmental-liability",
         "/buy-a-hotel/how-to-make-an-offer",
         "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
         "/buy-a-hotel/seller-financing",
@@ -85867,6 +86095,7 @@
         "/buy-a-hotel/due-diligence-checklist",
         "/glossary/comfort-letter",
         "/buy-a-hotel/branded-vs-independent",
+        "/buy-a-hotel/environmental-liability",
         "/tools/hotel-loan-sizing-calculator",
         "/tools/hotel-value-estimator",
         "/hotel-financing/bridge-loans",
@@ -85983,6 +86212,7 @@
         "/glossary/revpar",
         "/glossary/adr",
         "/hotel-industry/ada-requirements",
+        "/buy-a-hotel/environmental-liability",
         "/glossary/pip",
         "/buy-a-hotel/how-to-make-an-offer",
         "/sell-a-hotel/how-long-it-takes",
@@ -86006,6 +86236,61 @@
         "/hotels-for-sale",
         "/markets",
         "/closed",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/buy-a-hotel/environmental-liability",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/e7051121e5f1db32.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/buy-a-hotel/environmental-liability.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/buy-a-hotel",
+        "/team/luke-thompson",
+        "/sell-a-hotel/documents-needed",
+        "/hotel-financing/hotel-lenders-by-type",
+        "/team/nate-solomon",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/buy-a-hotel/buying-a-hotel-from-receivership-or-foreclosure",
+        "/glossary",
+        "/glossary/sba-7a",
+        "/glossary/sba-504",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
         "/services",
         "/services/investment-sales",
         "/services/capital-markets",
@@ -86153,6 +86438,7 @@
         "/buy-a-hotel",
         "/team/nate-solomon",
         "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/buy-a-hotel/environmental-liability",
         "/buy-a-hotel/due-diligence-checklist",
         "/sell-a-hotel/franchise-transfer",
         "/glossary/franchise-agreement",
