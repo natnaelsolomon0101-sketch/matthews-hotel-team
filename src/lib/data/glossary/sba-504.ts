@@ -76,7 +76,8 @@ export const entry: GlossaryEntry = {
   relatedAnswers: [
     "/hotel-financing/sba-7a-vs-504",
     "/hotel-financing/hotel-loan-rates",
-    "/hotel-financing/hotel-lenders-by-type"
+    "/hotel-financing/hotel-lenders-by-type",
+    "/buy-a-hotel/environmental-liability"
   ],
   lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson"
