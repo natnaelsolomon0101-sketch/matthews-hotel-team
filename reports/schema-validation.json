@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-10-12T13:56:25.712Z",
+  "runAt": "2026-10-12T14:38:50.051Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 323,
-  "blocksFound": 323,
-  "blocksValid": 323,
+  "urlsChecked": 324,
+  "blocksFound": 324,
+  "blocksValid": 324,
   "issues": [],
   "blocks": [
     {
@@ -617,6 +617,13 @@
     },
     {
       "url": "/hotel-financing/non-recourse-loans",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/prepayment-penalties",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,

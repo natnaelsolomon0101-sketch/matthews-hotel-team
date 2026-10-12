@@ -63,6 +63,7 @@ export const entry: GlossaryEntry = {
     "sba-7a"
   ],
   relatedAnswers: [
+    "/hotel-financing/prepayment-penalties",
     "/hotel-financing/refinance",
     "/hotel-financing/refinance-or-sell",
     "/hotel-financing/hotel-loan-rates"

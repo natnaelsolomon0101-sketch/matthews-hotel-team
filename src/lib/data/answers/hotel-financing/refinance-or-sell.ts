@@ -183,6 +183,7 @@ export const page: AnswerPage = {
   related: {
     hub: "/hotel-financing",
     siblings: [
+      "/hotel-financing/prepayment-penalties",
       "/hotel-financing/refinance",
       "/hotel-financing/loan-maturities-2026-2027",
       "/hotel-financing/1031-exchange-hotels",

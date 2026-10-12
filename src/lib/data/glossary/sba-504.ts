@@ -74,6 +74,7 @@ export const entry: GlossaryEntry = {
     "dscr"
   ],
   relatedAnswers: [
+    "/hotel-financing/prepayment-penalties",
     "/hotel-financing/sba-7a-vs-504",
     "/hotel-financing/hotel-loan-rates",
     "/hotel-financing/hotel-lenders-by-type",

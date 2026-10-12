@@ -58,6 +58,7 @@ export const entry: GlossaryEntry = {
     "debt-yield"
   ],
   relatedAnswers: [
+    "/hotel-financing/prepayment-penalties",
     "/hotel-financing/cmbs-loans",
     "/hotel-financing/refinance-or-sell",
     "/hotel-financing/refinance"

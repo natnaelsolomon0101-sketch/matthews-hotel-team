@@ -21,6 +21,7 @@ import { page as a_loan_maturities_2026_2027 } from "./loan-maturities-2026-2027
 import { page as a_loan_requirements } from "./loan-requirements";
 import { page as a_loan_workouts } from "./loan-workouts";
 import { page as a_non_recourse_loans } from "./non-recourse-loans";
+import { page as a_prepayment_penalties } from "./prepayment-penalties";
 import { page as a_opportunity_zones } from "./opportunity-zones";
 import { page as a_pip_and_renovation_loans } from "./pip-and-renovation-loans";
 import { page as a_refinance_or_sell } from "./refinance-or-sell";
@@ -59,6 +60,7 @@ export const spokes: AnswerPage[] = [
   a_loan_requirements,
   a_loan_workouts,
   a_non_recourse_loans,
+  a_prepayment_penalties,
   a_opportunity_zones,
   a_pip_and_renovation_loans,
   a_refinance_or_sell,
