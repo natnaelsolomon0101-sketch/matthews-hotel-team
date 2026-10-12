@@ -20,6 +20,13 @@
  *     403 to anything that is not a real browser. Those land in a separate
  *     "could not check" table and never set the exit code. A human confirms
  *     them before anything is edited.
+ *   - Neither is a 404 from a host that 404s its own home page. Some WAFs
+ *     turn a block into a 404 instead of a 403: on 2026-10-12 every path on
+ *     www.ftc.gov answered 404 to this runner, home page included, while the
+ *     cited page was intact in a browser. So before any URL is called dead,
+ *     the host's own root is fetched once. If the root is dead too, the host
+ *     is blocking the runner, not missing the document, and every dead URL
+ *     on it moves to "could not be checked".
  *   - It never touches matthewshotelmarkets.com. Our own URLs are skipped,
  *     and one request per URL means no loops at anyone.
  *   - It never edits a page. It reports, and a person decides.
@@ -80,6 +87,8 @@ type Result = Citation & {
   status: number | "error";
   finalUrl: string;
   detail?: string;
+  /** Set when a dead status was reclassified as a host-level block. */
+  blockedHost?: string;
 };
 
 async function check(c: Citation, timeoutMs: number): Promise<Result> {
@@ -107,6 +116,17 @@ async function check(c: Citation, timeoutMs: number): Promise<Result> {
   } finally {
     clearTimeout(timer);
   }
+}
+
+/**
+ * Fetch one host's own root. A host that answers 404 or 410 to `https://host/`
+ * is blocking this runner, whatever status it gave the cited path: no site
+ * serves its home page as missing. One request per host, and only for hosts
+ * that produced a dead status in the first place.
+ */
+async function rootIsDeadToo(host: string, timeoutMs: number): Promise<number | undefined> {
+  const r = await check({ url: `https://${host}/`, where: [] }, timeoutMs);
+  return typeof r.status === "number" && DEAD.has(r.status) ? r.status : undefined;
 }
 
 /** A redirect worth a human's attention: the path changed, not just the host casing or a trailing slash. */
@@ -145,10 +165,43 @@ async function main() {
     if (i < citations.length - 1) await new Promise((r) => setTimeout(r, delay));
   }
 
-  const dead = results.filter((r) => typeof r.status === "number" && DEAD.has(r.status));
+  // A dead status is only dead if the host still serves its own home page.
+  const deadHosts = new Set(
+    results
+      .filter((r) => typeof r.status === "number" && DEAD.has(r.status))
+      .map((r) => {
+        try {
+          return new URL(r.url).host;
+        } catch {
+          return "";
+        }
+      })
+      .filter(Boolean),
+  );
+  for (const host of deadHosts) {
+    await new Promise((r) => setTimeout(r, delay));
+    const status = await rootIsDeadToo(host, timeout);
+    if (status === undefined) continue;
+    for (const r of results) {
+      if (typeof r.status !== "number" || !DEAD.has(r.status)) continue;
+      try {
+        if (new URL(r.url).host !== host) continue;
+      } catch {
+        continue;
+      }
+      r.blockedHost = `${host} answers ${status} to its own home page, so this is a block, not a missing document`;
+    }
+  }
+
+  const dead = results.filter(
+    (r) => typeof r.status === "number" && DEAD.has(r.status) && !r.blockedHost,
+  );
   const redirected = results.filter(moved);
   const blocked = results.filter(
-    (r) => r.status === "error" || (typeof r.status === "number" && r.status !== 200 && !DEAD.has(r.status)),
+    (r) =>
+      r.status === "error" ||
+      Boolean(r.blockedHost) ||
+      (typeof r.status === "number" && r.status !== 200 && !DEAD.has(r.status)),
   );
   const ok = results.length - dead.length - blocked.length;
 
@@ -182,7 +235,7 @@ async function main() {
       "",
       "## Could not be checked",
       "",
-      "Not findings. These hosts answer 403, 429 or nothing at all to a scripted reader. Open each in a browser before changing any citation.",
+      "Not findings. These hosts answer 403, 429, a block dressed up as a 404, or nothing at all to a scripted reader. Open each in a browser before changing any citation.",
       "",
     );
     out.push(
@@ -190,9 +243,10 @@ async function main() {
         blocked.map((r) => [
           r.status === "error" ? `error: ${(r.detail ?? "").slice(0, 60)}` : String(r.status),
           r.url,
+          r.blockedHost ?? "",
           r.where.join("<br>"),
         ]),
-        ["Result", "URL", "Cited on"],
+        ["Result", "URL", "Why not a finding", "Cited on"],
       ),
     );
   }

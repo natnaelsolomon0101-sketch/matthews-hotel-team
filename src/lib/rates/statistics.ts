@@ -305,13 +305,13 @@ export const STATS: Stat[] = [
   {
     id: "sba-504-vs-ust",
     group: "sba",
-    text: "At 6.54%, the 25-year 504 debenture priced 125 basis points above the 10-year Treasury of 5.29% on September 30, 2026, narrowing from 160 basis points in September because the Treasury rose and the debenture has not repriced since September 10.",
+    text: "At 6.54%, the 25-year 504 debenture priced 125 basis points above the 10-year Treasury of 5.29% on September 30, 2026, narrowing from 160 basis points in September because the Treasury rose and the debenture had not repriced since September 10.",
     sourceName: "September 2026 SBA 504 debenture pricing",
     publisher: "SomerCor (Certified Development Company), republishing NADCO pricing",
     url: "https://somercor.com/september-2026-sba-504-interest-rates/",
     asOf: "2026-09-10",
     verified: V4,
-    note: "Arithmetic on two published figures, the 6.54% debenture priced September 10 and the 5.29% 10-year Treasury of September 30, 2026. Corrected October 1, 2026: this entry previously said the debenture priced inside the 10-year Treasury, which inverted the comparison. It is above it, and always was.",
+    note: "Arithmetic on two published figures, the 6.54% debenture priced September 10 and the 5.29% 10-year Treasury of September 30, 2026. This is the September 30 comparison and it is fixed at that date: the 504 debenture repriced in the October 8, 2026 sale, which the next rate sheet edition carries. Corrected October 1, 2026: this entry previously said the debenture priced inside the 10-year Treasury, which inverted the comparison. It is above it, and always was.",
   },
   {
     id: "sba-504-hotel-equity",

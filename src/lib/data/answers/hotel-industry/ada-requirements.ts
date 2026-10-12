@@ -33,7 +33,7 @@ export const page: AnswerPage = {
   h1: "Do I have to bring my hotel up to ADA standards when I renovate it?",
   description:
     "Which hotel work counts as an ADA alteration, how many accessible rooms the 2010 Standards require, and the 20 percent cap on path-of-travel spending.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-10-12",
   authorSlug: "luke-thompson",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -258,7 +258,7 @@ export const page: AnswerPage = {
     },
     {
       n: 13,
-      label: "Hotel financing rate sheet, September 2026 edition",
+      label: "Hotel financing rate sheet, October 2026 edition",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)",
       accessed: "2026-09-30"

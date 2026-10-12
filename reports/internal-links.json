@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-12T14:34:57.101Z",
-  "base": "http://localhost:36103",
+  "runAt": "2026-10-12T13:56:34.982Z",
+  "base": "http://localhost:36209",
   "edges": [
     {
       "from": "/",
@@ -4073,10 +4073,6 @@
     {
       "from": "/sitemap",
       "to": "/hotel-financing/non-recourse-loans"
-    },
-    {
-      "from": "/sitemap",
-      "to": "/hotel-financing/prepayment-penalties"
     },
     {
       "from": "/sitemap",
@@ -43684,10 +43680,6 @@
     },
     {
       "from": "/hotel-financing",
-      "to": "/hotel-financing/prepayment-penalties"
-    },
-    {
-      "from": "/hotel-financing",
       "to": "/hotel-financing/pip-and-renovation-loans"
     },
     {
@@ -44709,10 +44701,6 @@
     {
       "from": "/hotel-financing/cmbs-loans",
       "to": "/team/miles-cortez"
-    },
-    {
-      "from": "/hotel-financing/cmbs-loans",
-      "to": "/hotel-financing/prepayment-penalties"
     },
     {
       "from": "/hotel-financing/cmbs-loans",
@@ -47132,10 +47120,6 @@
     },
     {
       "from": "/hotel-financing/loan-assumption",
-      "to": "/hotel-financing/prepayment-penalties"
-    },
-    {
-      "from": "/hotel-financing/loan-assumption",
       "to": "/glossary"
     },
     {
@@ -48027,206 +48011,6 @@
       "to": "/sitemap"
     },
     {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/images/matthews-logo.jpg"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/_next/static/chunks/e7051121e5f1db32.css"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/_next/static/chunks/e424f29603c31593.js"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/hotel-financing/prepayment-penalties.md"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/favicon.ico"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/listings"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/hotel-financing"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/sell-a-hotel"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/hotel-valuation"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/rates"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/about"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/team"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/contact"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/team/luke-thompson"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/team/miles-cortez"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/hotel-financing/cmbs-loans"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/hotel-financing/refinance-or-sell"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/hotel-financing/sba-7a-vs-504"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/hotel-financing/loan-assumption"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/hotel-financing/refinance"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/glossary"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/glossary/defeasance"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/glossary/yield-maintenance"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/glossary/sba-7a"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/glossary/sba-504"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/buy-a-hotel"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/hotel-franchise-costs"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/hotel-industry"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/tools"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/rates/methodology"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/data/hotel-financing-statistics"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/data/sba-hotel-lending"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/research/mhi"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/research"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/hotels-for-sale"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/markets"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/closed"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/process"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/services"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/services/investment-sales"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/services/capital-markets"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/services/acquisition-advisory"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/offices/austin"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/offices/denver"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/insights"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/press"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/developers"
-    },
-    {
-      "from": "/hotel-financing/prepayment-penalties",
-      "to": "/sitemap"
-    },
-    {
       "from": "/hotel-financing/opportunity-zones",
       "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     },
@@ -48724,10 +48508,6 @@
     },
     {
       "from": "/hotel-financing/refinance-or-sell",
-      "to": "/hotel-financing/prepayment-penalties"
-    },
-    {
-      "from": "/hotel-financing/refinance-or-sell",
       "to": "/hotel-financing/loan-maturities-2026-2027"
     },
     {
@@ -48924,10 +48704,6 @@
     },
     {
       "from": "/hotel-financing/refinance",
-      "to": "/hotel-financing/prepayment-penalties"
-    },
-    {
-      "from": "/hotel-financing/refinance",
       "to": "/hotel-financing/loan-maturities-2026-2027"
     },
     {
@@ -49117,10 +48893,6 @@
     {
       "from": "/hotel-financing/sba-7a-vs-504",
       "to": "/team/miles-cortez"
-    },
-    {
-      "from": "/hotel-financing/sba-7a-vs-504",
-      "to": "/hotel-financing/prepayment-penalties"
     },
     {
       "from": "/hotel-financing/sba-7a-vs-504",
@@ -71533,7 +71305,6 @@
         "/hotel-financing/loan-requirements",
         "/hotel-financing/loan-workouts",
         "/hotel-financing/non-recourse-loans",
-        "/hotel-financing/prepayment-penalties",
         "/hotel-financing/opportunity-zones",
         "/hotel-financing/pip-and-renovation-loans",
         "/hotel-financing/refinance-or-sell",
@@ -82509,7 +82280,6 @@
         "/hotel-financing/how-debt-placement-works",
         "/hotel-financing/loan-maturities-2026-2027",
         "/hotel-financing/loan-workouts",
-        "/hotel-financing/prepayment-penalties",
         "/hotel-financing/pip-and-renovation-loans",
         "/hotel-financing/refinance-or-sell",
         "/hotel-financing/refinance",
@@ -82796,7 +82566,6 @@
         "/hotel-financing/hotel-lenders-by-type",
         "/hotel-financing/bridge-loans",
         "/team/miles-cortez",
-        "/hotel-financing/prepayment-penalties",
         "/hotel-financing/loan-maturities-2026-2027",
         "/hotel-financing/hotel-loan-rates",
         "/glossary",
@@ -83473,7 +83242,6 @@
         "/hotel-financing/loan-maturities-2026-2027",
         "/tools/dscr-calculator",
         "/team/miles-cortez",
-        "/hotel-financing/prepayment-penalties",
         "/glossary",
         "/glossary/ltv",
         "/tools/hotel-loan-sizing-calculator",
@@ -83725,62 +83493,6 @@
       "missing": []
     },
     {
-      "url": "/hotel-financing/prepayment-penalties",
-      "outboundInternal": [
-        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
-        "/images/matthews-logo.jpg",
-        "/_next/static/chunks/e7051121e5f1db32.css",
-        "/_next/static/chunks/e424f29603c31593.js",
-        "/",
-        "/hotel-financing/prepayment-penalties.md",
-        "/favicon.ico",
-        "/listings",
-        "/hotel-financing",
-        "/sell-a-hotel",
-        "/hotel-valuation",
-        "/rates",
-        "/about",
-        "/team",
-        "/contact",
-        "/team/luke-thompson",
-        "/team/miles-cortez",
-        "/hotel-financing/cmbs-loans",
-        "/hotel-financing/refinance-or-sell",
-        "/hotel-financing/sba-7a-vs-504",
-        "/hotel-financing/loan-assumption",
-        "/hotel-financing/refinance",
-        "/glossary",
-        "/glossary/defeasance",
-        "/glossary/yield-maintenance",
-        "/glossary/sba-7a",
-        "/glossary/sba-504",
-        "/buy-a-hotel",
-        "/hotel-franchise-costs",
-        "/hotel-industry",
-        "/tools",
-        "/rates/methodology",
-        "/data/hotel-financing-statistics",
-        "/data/sba-hotel-lending",
-        "/research/mhi",
-        "/research",
-        "/hotels-for-sale",
-        "/markets",
-        "/closed",
-        "/process",
-        "/services",
-        "/services/investment-sales",
-        "/services/capital-markets",
-        "/services/acquisition-advisory",
-        "/offices/austin",
-        "/offices/denver",
-        "/insights",
-        "/press",
-        "/developers",
-        "/sitemap"
-      ],
-      "missing": []
-    },
-    {
       "url": "/hotel-financing/opportunity-zones",
       "outboundInternal": [
         "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
@@ -83919,7 +83631,6 @@
         "/hotel-financing/refinance",
         "/hotel-financing/1031-exchange-hotels",
         "/team/nate-solomon",
-        "/hotel-financing/prepayment-penalties",
         "/hotel-financing/loan-maturities-2026-2027",
         "/hotel-financing/pip-and-renovation-loans",
         "/glossary",
@@ -83975,7 +83686,6 @@
         "/hotel-financing/loan-requirements",
         "/hotel-financing/refinance-or-sell",
         "/team/luke-thompson",
-        "/hotel-financing/prepayment-penalties",
         "/hotel-financing/loan-maturities-2026-2027",
         "/hotel-financing/bridge-loans",
         "/glossary",
@@ -84030,7 +83740,6 @@
         "/team/luke-thompson",
         "/buy-a-hotel/environmental-liability",
         "/team/miles-cortez",
-        "/hotel-financing/prepayment-penalties",
         "/hotel-financing/loan-requirements",
         "/hotel-financing/hotel-lenders-by-type",
         "/hotel-financing/hotel-loan-rates",
