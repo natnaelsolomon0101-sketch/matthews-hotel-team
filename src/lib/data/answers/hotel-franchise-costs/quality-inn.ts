@@ -18,7 +18,7 @@ export const page: AnswerPage = {
   title: "Quality Inn Franchise Cost in 2026: Fees From the FDD",
   h1: "How much does a Quality Inn franchise cost in 2026?",
   description: "Quality Inn franchise fees from Choice's 2026 FDD: $500 per room affiliation fee, 5.25% royalty, 3.5% marketing fee, Item 7 conversion estimate, term, Item 19.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-10-12",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -160,9 +160,9 @@ export const page: AnswerPage = {
     {
       n: 4,
       label: "Econo Lodge Franchise Disclosure Document (issued April 1, 2026, as amended May 20, 2026): Item 6, pp. 26-27, 38. Minnesota CARDS document 36786-202606-03, file number 3576, Clean FDD",
-      url: "https://cards.web.commerce.state.mn.us/documents/%7B900BAE9E-0000-CB13-A3D6-D21E2A96E6CF%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7BC00AAE9E-0000-C21E-AD4F-7B5548EBBC6A%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher: "Choice Hotels International, Inc., filed with the Minnesota Department of Commerce",
-      accessed: "2026-09-18"
+      accessed: "2026-10-12"
     }
   ],
   related: {

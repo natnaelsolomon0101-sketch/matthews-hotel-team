@@ -28,7 +28,7 @@ export const page: AnswerPage = {
   h1: "How do I make an offer on a hotel?",
   description:
     "What an offer on a hotel consists of, how much earnest money three SEC-filed hotel agreements took, and why the franchisor decides whether it can close.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-10-12",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -249,7 +249,7 @@ export const page: AnswerPage = {
     },
     {
       n: 8,
-      label: "Hotel financing rate sheet, September 2026 edition",
+      label: "Hotel financing rate sheet, October 2026 edition",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)",
       accessed: "2026-09-24"

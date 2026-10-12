@@ -18,7 +18,7 @@ export const page: AnswerPage = {
   title: "Econo Lodge Franchise Cost in 2026: Fees From the FDD",
   h1: "How much does an Econo Lodge franchise cost in 2026?",
   description: "Econo Lodge franchise fees from Choice's 2026 FDD: $350 per room affiliation fee, 5% royalty, 3.5% marketing fee, $194,595 to $1,106,595 to convert 68 rooms.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-10-12",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -139,9 +139,9 @@ export const page: AnswerPage = {
     {
       n: 1,
       label: "Econo Lodge Franchise Disclosure Document (issued April 1, 2026, as amended May 20, 2026): Item 5, pp. 24-26; Item 6, pp. 26-39; Item 7, pp. 40-42; Item 17, pp. 68-72; Item 19, pp. 72-75; Item 20, p. 75. Minnesota CARDS document 36786-202606-03, file number 3576, Clean FDD",
-      url: "https://cards.web.commerce.state.mn.us/documents/%7B900BAE9E-0000-CB13-A3D6-D21E2A96E6CF%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7BC00AAE9E-0000-C21E-AD4F-7B5548EBBC6A%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher: "Choice Hotels International, Inc., filed with the Minnesota Department of Commerce",
-      accessed: "2026-09-18"
+      accessed: "2026-10-12"
     },
     {
       n: 2,

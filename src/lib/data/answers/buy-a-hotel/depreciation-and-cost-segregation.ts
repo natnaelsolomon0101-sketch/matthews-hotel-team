@@ -24,7 +24,7 @@ export const page: AnswerPage = {
   h1: "How does depreciation work when I buy a hotel?",
   description:
     "How a hotel purchase price splits into land, building, improvements and FF&E, what bonus depreciation reaches in 2026, and when you can use the deduction.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-10-12",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -242,7 +242,7 @@ export const page: AnswerPage = {
     },
     {
       n: 11,
-      label: "Hotel financing rate sheet, September 2026 edition",
+      label: "Hotel financing rate sheet, October 2026 edition",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)",
       accessed: "2026-09-23"

@@ -16,7 +16,7 @@ export const page: AnswerPage = {
   h1: "What happens to my franchise agreement when I sell my hotel?",
   description:
     "Your hotel franchise agreement does not transfer. What the brand charges, how long consent takes and what it can require, from 2026 disclosure documents.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-10-12",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -74,7 +74,7 @@ export const page: AnswerPage = {
     {
       h2: "What does the buyer's lender need from the brand?",
       lead: "A comfort letter. Hilton charges $3,500 to issue one and $1,500 to assign an existing one.[1]",
-      body: "A comfort letter is the agreement between the franchisor and the lender about what happens to the flag if the lender ends up with the hotel. The Hampton agreement lets you mortgage the hotel or an equity interest without Hilton's consent when you are the sole borrower and the loan is not secured by other collateral. Anything else, including a collateral assignment of the franchise agreement, needs Hilton's consent, which it may issue as a lender comfort letter agreement that can include an estoppel and a general release of claims.[1]\n\nThe brand documents anticipate SBA debt. The Hampton agreement requires you and the buyer to escrow Hilton's estimated fees for disbursement at closing if the buyer has SBA financing, and points at SBA's Standard Operating Procedure 50 10 for the lender paperwork.[1] The current origination SOP is version 8, effective June 1, 2025; version 8.1 takes effect October 1, 2026, so a deal closing this autumn may be underwritten under one and funded under the other.[7] Budget the comfort letter into the closing timeline as well as the closing statement."
+      body: "A comfort letter is the agreement between the franchisor and the lender about what happens to the flag if the lender ends up with the hotel. The Hampton agreement lets you mortgage the hotel or an equity interest without Hilton's consent when you are the sole borrower and the loan is not secured by other collateral. Anything else, including a collateral assignment of the franchise agreement, needs Hilton's consent, which it may issue as a lender comfort letter agreement that can include an estoppel and a general release of claims.[1]\n\nThe brand documents anticipate SBA debt. The Hampton agreement requires you and the buyer to escrow Hilton's estimated fees for disbursement at closing if the buyer has SBA financing, and points at SBA's Standard Operating Procedure 50 10 for the lender paperwork.[1] The current origination SOP is version 8.1, effective October 1, 2026; version 8 ran from June 1, 2025 until then, so a deal that started over the summer may have been underwritten under one and funded under the other.[7] Budget the comfort letter into the closing timeline as well as the closing statement."
     },
     {
       h2: "What happens to my staff?",
@@ -235,7 +235,7 @@ export const page: AnswerPage = {
     },
     {
       n: 8,
-      label: "Hotel financing rate sheet, September 2026 edition",
+      label: "Hotel financing rate sheet, October 2026 edition",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)",
       accessed: "2026-09-21"
