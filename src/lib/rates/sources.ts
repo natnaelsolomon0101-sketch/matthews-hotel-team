@@ -114,7 +114,7 @@ export const RATE_SOURCES: RateSource[] = [
     publisher: "SomerCor (Certified Development Company), republishing NADCO pricing",
     url: "https://somercor.com/september-2026-sba-504-interest-rates/",
     asOf: "2026-09-10",
-    verified: "2026-10-01",
+    verified: "2026-10-12",
   },
   {
     id: "cdcloans-504-debenture",
@@ -122,7 +122,7 @@ export const RATE_SOURCES: RateSource[] = [
     publisher: "CDC Small Business Finance",
     url: "https://cdcloans.com/sba-504-rates/",
     asOf: "2026-09-10",
-    verified: "2026-10-01",
+    verified: "2026-10-12",
   },
   {
     id: "sba-sop-50-10",

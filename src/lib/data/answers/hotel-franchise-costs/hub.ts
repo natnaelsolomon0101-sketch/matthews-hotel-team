@@ -20,7 +20,7 @@ export const page: AnswerPage = {
   h1: "How much does a hotel franchise cost?",
   description:
     "What a hotel franchise costs in 2026, read from the brands' public Franchise Disclosure Documents: application fees, royalties, program fees and Item 7.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-10-12",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -466,9 +466,9 @@ export const page: AnswerPage = {
     {
       n: 19,
       label: "Econo Lodge Franchise Disclosure Document, issued April 1, 2026, as amended May 20, 2026",
-      url: "https://cards.web.commerce.state.mn.us/documents/%7B900BAE9E-0000-CB13-A3D6-D21E2A96E6CF%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
+      url: "https://cards.web.commerce.state.mn.us/documents/%7BC00AAE9E-0000-C21E-AD4F-7B5548EBBC6A%7D/download?documentClass=FRANCHISE_REGISTRATIONS&contentSequence=0",
       publisher: "Choice Hotels International, via Minnesota Commerce CARDS (document 36786-202606-03)",
-      accessed: "2026-09-18",
+      accessed: "2026-10-12",
     },
     {
       n: 20,

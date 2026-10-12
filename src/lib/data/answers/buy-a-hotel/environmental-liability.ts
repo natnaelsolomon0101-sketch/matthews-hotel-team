@@ -57,7 +57,7 @@ export const page: AnswerPage = {
   description:
     "Who pays to clean up contamination at a hotel, the eight bona fide prospective purchaser criteria, and when an SBA lender orders a Phase I.",
   h1: "Am I liable for contamination on a hotel I buy?",
-  lastUpdated: "2026-10-09",
+  lastUpdated: "2026-10-12",
   authorSlug: "luke-thompson",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -238,9 +238,9 @@ export const page: AnswerPage = {
       n: 5,
       label:
         "Brownfields All Appropriate Inquiries: EPA's statement that strict liability under CERCLA means liability may be assigned based solely on property ownership, that ASTM E1527-21 and E2247-23 are consistent with the all appropriate inquiries final rule, and that the three landowner protections are the innocent landowner, the contiguous property owner and the bona fide prospective purchaser, who may buy with knowledge of the contamination",
-      url: "https://www.epa.gov/brownfields/all-appropriate-inquiries",
+      url: "https://www.epa.gov/brownfields/brownfields-all-appropriate-inquiries",
       publisher: "U.S. Environmental Protection Agency",
-      accessed: "2026-10-09",
+      accessed: "2026-10-12",
     },
     {
       n: 6,

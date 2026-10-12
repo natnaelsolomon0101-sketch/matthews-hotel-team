@@ -46,7 +46,7 @@ export const page: AnswerPage = {
   description:
     "Which hotels must report energy use or meet a carbon limit, what New York City requires of a hotel through 2049, and what each penalty costs.",
   h1: "Does my hotel have to report energy use or cut its carbon emissions?",
-  lastUpdated: "2026-10-08",
+  lastUpdated: "2026-10-12",
   authorSlug: "miles-cortez",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -250,9 +250,9 @@ export const page: AnswerPage = {
       n: 7,
       label:
         "Building Emissions Reduction and Disclosure, page last updated October 5, 2026: coverage of residential buildings with 15 or more units, non-residential buildings of 20,000 square feet or larger and any tax parcel whose buildings sum to that; the duty to report total energy and water use for the prior calendar year by May 15 each year; third-party verification in the first reporting year and each verification year after; annual emissions standards by building use type beginning in either 2025 or 2030 and reaching net zero by 2050; the covered buildings list; and compliance through emissions reduction, renewable energy or alternative compliance payments",
-      url: "https://www.boston.gov/departments/environment/building-energy-reporting-and-disclosure-ordinance",
+      url: "https://www.boston.gov/departments/environment/berdo",
       publisher: "City of Boston",
-      accessed: "2026-10-08"
+      accessed: "2026-10-12"
     },
     {
       n: 8,

@@ -21,7 +21,7 @@ export const page: AnswerPage = {
   h1: "How do I underwrite a hotel acquisition?",
   description:
     "How a buyer turns a hotel's trailing twelve months into a defensible pro forma: the documents, the expense lines owners leave out, what debt constrains.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-10-12",
   authorSlug: "miles-cortez",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -198,7 +198,7 @@ export const page: AnswerPage = {
     },
     {
       n: 8,
-      label: "Hotel financing rate sheet, September 2026 edition",
+      label: "Hotel financing rate sheet, October 2026 edition",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)",
       accessed: "2026-09-22"
