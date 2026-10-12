@@ -1,10 +1,10 @@
 {
-  "urls": 323,
+  "urls": 324,
   "maxDepth": 2,
   "byDepth": {
     "0": 1,
     "1": 32,
-    "2": 290
+    "2": 291
   },
   "depth": {
     "/": 0,
@@ -90,6 +90,7 @@
     "/hotel-financing/how-debt-placement-works": 2,
     "/hotel-financing/loan-maturities-2026-2027": 2,
     "/hotel-financing/loan-workouts": 2,
+    "/hotel-financing/prepayment-penalties": 2,
     "/hotel-financing/pip-and-renovation-loans": 2,
     "/hotel-financing/refinance-or-sell": 2,
     "/hotel-financing/refinance": 2,

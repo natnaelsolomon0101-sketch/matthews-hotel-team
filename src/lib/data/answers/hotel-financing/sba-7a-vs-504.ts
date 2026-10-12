@@ -237,6 +237,7 @@ export const page: AnswerPage = {
   related: {
     hub: "/hotel-financing",
     siblings: [
+      "/hotel-financing/prepayment-penalties",
       "/hotel-financing/loan-requirements",
       "/hotel-financing/hotel-lenders-by-type",
       "/hotel-financing/hotel-loan-rates",
