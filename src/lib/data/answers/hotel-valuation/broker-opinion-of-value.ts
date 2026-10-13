@@ -63,7 +63,7 @@ export const page: AnswerPage = {
     {
       h2: "Can I use a BOV for financing?",
       lead: "No. Lenders order their own USPAP-compliant appraisal and will not accept a broker's opinion in its place.",
-      body: "Federal banking rules generally require an appraisal by a state certified appraiser on commercial real estate loans above $500,000,[2] and the interagency guidelines say a broker price opinion is not acceptable even as the lighter evaluation used below that threshold.[3] A lender's collateral decision rests on that document, not on a document produced for the seller's own decision-making. An owner should never present a BOV to a lender expecting it to substitute for the required appraisal."
+      body: "Federal banking rules generally require an appraisal by a state certified appraiser on commercial real estate loans above $500,000,[2] and the interagency guidelines say a broker price opinion is not acceptable even as the lighter evaluation used below that threshold.[3] A lender's collateral decision rests on that document, not on a document produced for the seller's own decision-making. An owner should never present a BOV to a lender expecting it to substitute for the required appraisal. What the lender does need, and who must order it, is set out at `/hotel-financing/appraisal-requirements`."
     },
     {
       h2: "BOV, appraisal or CIM: which do I need?",

@@ -124,7 +124,7 @@ export const page: AnswerPage = {
   faq: [
     {
       q: "Can I order my own appraisal for the bank to use?",
-      a: "No. The interagency guidelines say an institution's use of a borrower-ordered or borrower-provided appraisal violates the agencies' appraisal regulations.[3] The lender engages the appraiser."
+      a: "No. The interagency guidelines say an institution's use of a borrower-ordered or borrower-provided appraisal violates the agencies' appraisal regulations.[3] The lender engages the appraiser. See `/hotel-financing/appraisal-requirements` for the one lawful workaround."
     },
     {
       q: "Is an appraisal the same as market price?",

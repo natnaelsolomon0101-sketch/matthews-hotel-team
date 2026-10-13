@@ -231,6 +231,7 @@ export const page: AnswerPage = {
   related: {
     hub: "/hotel-financing",
     siblings: [
+      "/hotel-financing/appraisal-requirements",
       "/hotel-financing/refinance",
       "/hotel-financing/refinance-or-sell",
       "/hotel-financing/loan-requirements",

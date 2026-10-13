@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-12T14:39:01.129Z",
-  "base": "http://localhost:37993",
+  "runAt": "2026-10-13T14:34:42.277Z",
+  "base": "http://localhost:35841",
   "edges": [
     {
       "from": "/",
@@ -3993,6 +3993,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-financing/1031-exchange-hotels"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-financing/appraisal-requirements"
     },
     {
       "from": "/sitemap",
@@ -43656,6 +43660,10 @@
     },
     {
       "from": "/hotel-financing",
+      "to": "/hotel-financing/appraisal-requirements"
+    },
+    {
+      "from": "/hotel-financing",
       "to": "/hotel-financing/bridge-loans"
     },
     {
@@ -44012,6 +44020,218 @@
     },
     {
       "from": "/hotel-financing/1031-exchange-hotels",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/_next/static/chunks/e7051121e5f1db32.css"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/hotel-financing/appraisal-requirements.md"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/hotel-valuation/broker-opinion-of-value"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/hotel-financing/pip-and-renovation-loans"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/glossary/going-concern-value"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/hotel-valuation/appraisal-lower-than-expected"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/hotel-financing/sba-7a-vs-504"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/hotel-financing/cash-out-refinance"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/hotel-financing/closing-costs"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/hotel-financing/refinance"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/glossary/bov"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/glossary/ltv"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/glossary/per-key"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-financing/appraisal-requirements",
       "to": "/sitemap"
     },
     {
@@ -47516,6 +47736,10 @@
     },
     {
       "from": "/hotel-financing/loan-requirements",
+      "to": "/hotel-financing/appraisal-requirements"
+    },
+    {
+      "from": "/hotel-financing/loan-requirements",
       "to": "/hotel-financing/hotel-loan-rates"
     },
     {
@@ -48924,6 +49148,10 @@
     },
     {
       "from": "/hotel-financing/refinance",
+      "to": "/hotel-financing/appraisal-requirements"
+    },
+    {
+      "from": "/hotel-financing/refinance",
       "to": "/hotel-financing/prepayment-penalties"
     },
     {
@@ -49117,6 +49345,10 @@
     {
       "from": "/hotel-financing/sba-7a-vs-504",
       "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/hotel-financing/sba-7a-vs-504",
+      "to": "/hotel-financing/appraisal-requirements"
     },
     {
       "from": "/hotel-financing/sba-7a-vs-504",
@@ -49804,6 +50036,10 @@
     },
     {
       "from": "/hotel-financing/cash-out-refinance",
+      "to": "/hotel-financing/appraisal-requirements"
+    },
+    {
+      "from": "/hotel-financing/cash-out-refinance",
       "to": "/hotel-financing/refinance"
     },
     {
@@ -50029,6 +50265,10 @@
     {
       "from": "/hotel-financing/closing-costs",
       "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/hotel-financing/closing-costs",
+      "to": "/hotel-financing/appraisal-requirements"
     },
     {
       "from": "/hotel-financing/closing-costs",
@@ -54880,6 +55120,10 @@
     },
     {
       "from": "/hotel-valuation/appraisal-lower-than-expected",
+      "to": "/hotel-financing/appraisal-requirements"
+    },
+    {
+      "from": "/hotel-valuation/appraisal-lower-than-expected",
       "to": "/team/luke-thompson"
     },
     {
@@ -55277,6 +55521,10 @@
     {
       "from": "/hotel-valuation/broker-opinion-of-value",
       "to": "/research/mhi/q1-2026"
+    },
+    {
+      "from": "/hotel-valuation/broker-opinion-of-value",
+      "to": "/hotel-financing/appraisal-requirements"
     },
     {
       "from": "/hotel-valuation/broker-opinion-of-value",
@@ -71513,6 +71761,7 @@
         "/contact",
         "/sitemap.xml",
         "/hotel-financing/1031-exchange-hotels",
+        "/hotel-financing/appraisal-requirements",
         "/hotel-financing/brand-conversion-financing",
         "/hotel-financing/bridge-loans",
         "/hotel-financing/c-pace-financing",
@@ -82502,6 +82751,7 @@
         "/hotel-financing/loan-requirements",
         "/hotel-financing/lenders-under-5-million",
         "/hotel-financing/1031-exchange-hotels",
+        "/hotel-financing/appraisal-requirements",
         "/hotel-financing/bridge-loans",
         "/hotel-financing/cmbs-loans",
         "/hotel-financing/faq",
@@ -82592,6 +82842,65 @@
         "/services",
         "/services/investment-sales",
         "/services/capital-markets",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/hotel-financing/appraisal-requirements",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/e7051121e5f1db32.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-financing/appraisal-requirements.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/luke-thompson",
+        "/hotel-valuation/broker-opinion-of-value",
+        "/hotel-financing/pip-and-renovation-loans",
+        "/glossary/going-concern-value",
+        "/hotel-valuation/appraisal-lower-than-expected",
+        "/hotel-financing/sba-7a-vs-504",
+        "/hotel-financing/cash-out-refinance",
+        "/team/miles-cortez",
+        "/hotel-financing/loan-requirements",
+        "/hotel-financing/closing-costs",
+        "/hotel-financing/refinance",
+        "/glossary",
+        "/glossary/bov",
+        "/glossary/ltv",
+        "/glossary/per-key",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
         "/offices/austin",
         "/offices/denver",
         "/insights",
@@ -83581,6 +83890,7 @@
         "/hotel-financing/pip-and-renovation-loans",
         "/hotel-financing/refinance",
         "/team/nate-solomon",
+        "/hotel-financing/appraisal-requirements",
         "/hotel-financing/hotel-loan-rates",
         "/hotel-financing/sba-7a-vs-504",
         "/hotel-financing/flood-insurance-requirements",
@@ -83975,6 +84285,7 @@
         "/hotel-financing/loan-requirements",
         "/hotel-financing/refinance-or-sell",
         "/team/luke-thompson",
+        "/hotel-financing/appraisal-requirements",
         "/hotel-financing/prepayment-penalties",
         "/hotel-financing/loan-maturities-2026-2027",
         "/hotel-financing/bridge-loans",
@@ -84030,6 +84341,7 @@
         "/team/luke-thompson",
         "/buy-a-hotel/environmental-liability",
         "/team/miles-cortez",
+        "/hotel-financing/appraisal-requirements",
         "/hotel-financing/prepayment-penalties",
         "/hotel-financing/loan-requirements",
         "/hotel-financing/hotel-lenders-by-type",
@@ -84219,6 +84531,7 @@
         "/tools/refinance-vs-sell",
         "/hotel-financing/refinance-or-sell",
         "/team/miles-cortez",
+        "/hotel-financing/appraisal-requirements",
         "/hotel-financing/refinance",
         "/hotel-financing/closing-costs",
         "/glossary",
@@ -84282,6 +84595,7 @@
         "/hotel-financing/covenants-and-cash-management",
         "/buy-a-hotel/how-much-money-do-you-need",
         "/team/miles-cortez",
+        "/hotel-financing/appraisal-requirements",
         "/hotel-financing/cash-out-refinance",
         "/hotel-financing/sba-7a-vs-504",
         "/hotel-financing/flood-insurance-requirements",
@@ -85632,6 +85946,7 @@
         "/hotel-valuation/pip-and-hotel-value",
         "/hotel-valuation/broker-opinion-of-value",
         "/hotel-financing/refinance-or-sell",
+        "/hotel-financing/appraisal-requirements",
         "/team/luke-thompson",
         "/hotel-valuation/hotel-cap-rates",
         "/hotel-valuation/interest-rates-and-hotel-value",
@@ -85744,6 +86059,7 @@
         "/contact",
         "/team/luke-thompson",
         "/research/mhi/q1-2026",
+        "/hotel-financing/appraisal-requirements",
         "/team/nate-solomon",
         "/process",
         "/hotel-valuation/how-to-value-a-hotel",

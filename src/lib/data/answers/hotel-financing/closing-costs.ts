@@ -244,6 +244,7 @@ export const page: AnswerPage = {
   related: {
     hub: "/hotel-financing",
     siblings: [
+      "/hotel-financing/appraisal-requirements",
       "/hotel-financing/how-debt-placement-works",
       "/hotel-financing/loan-requirements",
       "/hotel-financing/cash-out-refinance",

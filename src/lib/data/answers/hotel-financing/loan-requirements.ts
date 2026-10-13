@@ -183,6 +183,7 @@ export const page: AnswerPage = {
   related: {
     hub: "/hotel-financing",
     siblings: [
+      "/hotel-financing/appraisal-requirements",
       "/hotel-financing/hotel-loan-rates",
       "/hotel-financing/sba-7a-vs-504",
       "/hotel-financing/refinance",

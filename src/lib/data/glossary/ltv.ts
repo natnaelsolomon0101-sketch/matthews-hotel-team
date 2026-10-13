@@ -69,6 +69,7 @@ export const entry: GlossaryEntry = {
     "cap-rate"
   ],
   relatedAnswers: [
+    "/hotel-financing/appraisal-requirements",
     "/hotel-financing/loan-requirements",
     "/tools/dscr-calculator",
     "/hotel-financing/sba-7a-vs-504",

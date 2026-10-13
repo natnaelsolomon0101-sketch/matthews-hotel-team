@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-10-12T14:38:50.051Z",
+  "runAt": "2026-10-13T14:34:33.504Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 324,
-  "blocksFound": 324,
-  "blocksValid": 324,
+  "urlsChecked": 325,
+  "blocksFound": 325,
+  "blocksValid": 325,
   "issues": [],
   "blocks": [
     {
@@ -477,6 +477,13 @@
     },
     {
       "url": "/hotel-financing/1031-exchange-hotels",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/appraisal-requirements",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,

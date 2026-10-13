@@ -64,6 +64,7 @@ export const entry: GlossaryEntry = {
     "cap-rate"
   ],
   relatedAnswers: [
+    "/hotel-financing/appraisal-requirements",
     "/sell-a-hotel/1031-without-buying-another-hotel",
     "/hotel-valuation/how-to-value-a-hotel",
     "/hotel-valuation/broker-opinion-of-value",
