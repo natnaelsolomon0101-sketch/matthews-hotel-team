@@ -1,5 +1,6 @@
 /** Barrel for the hotel-financing cluster. Hub first, then spokes in URL order. */
 import { page as a_1031_exchange_hotels } from "./1031-exchange-hotels";
+import { page as a_appraisal_requirements } from "./appraisal-requirements";
 import { page as a_brand_conversion_financing } from "./brand-conversion-financing";
 import { page as a_bridge_loans } from "./bridge-loans";
 import { page as a_c_pace_financing } from "./c-pace-financing";
@@ -40,6 +41,7 @@ export const hub: AnswerPage = a_hub;
 
 export const spokes: AnswerPage[] = [
   a_1031_exchange_hotels,
+  a_appraisal_requirements,
   a_brand_conversion_financing,
   a_bridge_loans,
   a_c_pace_financing,

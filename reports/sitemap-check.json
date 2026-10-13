@@ -1,10 +1,10 @@
 {
-  "urls": 324,
+  "urls": 325,
   "maxDepth": 2,
   "byDepth": {
     "0": 1,
     "1": 32,
-    "2": 291
+    "2": 292
   },
   "depth": {
     "/": 0,
@@ -83,6 +83,7 @@
     "/hotel-financing/loan-requirements": 2,
     "/hotel-financing/lenders-under-5-million": 2,
     "/hotel-financing/1031-exchange-hotels": 2,
+    "/hotel-financing/appraisal-requirements": 2,
     "/hotel-financing/bridge-loans": 2,
     "/hotel-financing/cmbs-loans": 2,
     "/hotel-financing/faq": 2,

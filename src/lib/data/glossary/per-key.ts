@@ -59,6 +59,7 @@ export const entry: GlossaryEntry = {
     "revpar"
   ],
   relatedAnswers: [
+    "/hotel-financing/appraisal-requirements",
     "/hotel-valuation/how-to-value-a-hotel",
     "/hotel-valuation/select-service-vs-full-service",
     "/hotel-valuation/broker-opinion-of-value"
