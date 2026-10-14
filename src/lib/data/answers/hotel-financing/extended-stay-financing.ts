@@ -224,6 +224,7 @@ export const page: AnswerPage = {
   related: {
     hub: "/hotel-financing",
     siblings: [
+      "/hotel-financing/sba-franchise-directory",
       "/hotel-financing/sba-7a-vs-504",
       "/hotel-financing/loan-requirements",
       "/hotel-financing/hotel-lenders-by-type",

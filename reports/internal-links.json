@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-13T14:34:42.277Z",
-  "base": "http://localhost:35841",
+  "runAt": "2026-10-14T14:29:31.701Z",
+  "base": "http://localhost:37401",
   "edges": [
     {
       "from": "/",
@@ -4101,6 +4101,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-financing/sba-7a-vs-504"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-financing/sba-franchise-directory"
     },
     {
       "from": "/sitemap",
@@ -43712,6 +43716,10 @@
     },
     {
       "from": "/hotel-financing",
+      "to": "/hotel-financing/sba-franchise-directory"
+    },
+    {
+      "from": "/hotel-financing",
       "to": "/team/miles-cortez"
     },
     {
@@ -44325,6 +44333,10 @@
     {
       "from": "/hotel-financing/brand-conversion-financing",
       "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/hotel-financing/brand-conversion-financing",
+      "to": "/hotel-financing/sba-franchise-directory"
     },
     {
       "from": "/hotel-financing/brand-conversion-financing",
@@ -45537,6 +45549,10 @@
     {
       "from": "/hotel-financing/extended-stay-financing",
       "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/hotel-financing/extended-stay-financing",
+      "to": "/hotel-financing/sba-franchise-directory"
     },
     {
       "from": "/hotel-financing/extended-stay-financing",
@@ -47128,6 +47144,10 @@
     },
     {
       "from": "/hotel-financing/lenders-under-5-million",
+      "to": "/hotel-financing/sba-franchise-directory"
+    },
+    {
+      "from": "/hotel-financing/lenders-under-5-million",
       "to": "/hotel-financing/hotel-lenders-by-type"
     },
     {
@@ -47733,6 +47753,10 @@
     {
       "from": "/hotel-financing/loan-requirements",
       "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/hotel-financing/loan-requirements",
+      "to": "/hotel-financing/sba-franchise-directory"
     },
     {
       "from": "/hotel-financing/loan-requirements",
@@ -48756,6 +48780,10 @@
     },
     {
       "from": "/hotel-financing/pip-and-renovation-loans",
+      "to": "/hotel-financing/sba-franchise-directory"
+    },
+    {
+      "from": "/hotel-financing/pip-and-renovation-loans",
       "to": "/hotel-financing/refinance-or-sell"
     },
     {
@@ -49348,6 +49376,10 @@
     },
     {
       "from": "/hotel-financing/sba-7a-vs-504",
+      "to": "/hotel-financing/sba-franchise-directory"
+    },
+    {
+      "from": "/hotel-financing/sba-7a-vs-504",
       "to": "/hotel-financing/appraisal-requirements"
     },
     {
@@ -49480,6 +49512,214 @@
     },
     {
       "from": "/hotel-financing/sba-7a-vs-504",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/_next/static/chunks/e7051121e5f1db32.css"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/hotel-financing/sba-franchise-directory.md"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/hotel-financing/extended-stay-financing"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/glossary/comfort-letter"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/hotel-financing/sba-7a-vs-504"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/hotel-financing/brand-conversion-financing"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/hotel-financing/lenders-under-5-million"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/hotel-financing/pip-and-renovation-loans"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/glossary/franchise-agreement"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/glossary/franchise-fdd"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/glossary/sba-7a"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/glossary/sba-504"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
       "to": "/sitemap"
     },
     {
@@ -71788,6 +72028,7 @@
         "/hotel-financing/refinance-or-sell",
         "/hotel-financing/refinance",
         "/hotel-financing/sba-7a-vs-504",
+        "/hotel-financing/sba-franchise-directory",
         "/hotel-financing/usda-b-and-i-loans",
         "/hotel-financing/capital-stack",
         "/hotel-financing/cash-out-refinance",
@@ -82764,6 +83005,7 @@
         "/hotel-financing/refinance-or-sell",
         "/hotel-financing/refinance",
         "/hotel-financing/sba-7a-vs-504",
+        "/hotel-financing/sba-franchise-directory",
         "/team/miles-cortez",
         "/buy-a-hotel",
         "/glossary",
@@ -82936,6 +83178,7 @@
         "/hotel-financing/cmbs-loans",
         "/hotel-financing/refinance-or-sell",
         "/team/miles-cortez",
+        "/hotel-financing/sba-franchise-directory",
         "/hotel-financing/sba-7a-vs-504",
         "/glossary",
         "/glossary/noi",
@@ -83275,6 +83518,7 @@
         "/hotel-financing/hotel-lenders-by-type",
         "/hotel-financing/construction-loans",
         "/team/miles-cortez",
+        "/hotel-financing/sba-franchise-directory",
         "/hotel-financing/hotel-loan-rates",
         "/glossary",
         "/glossary/revpar",
@@ -83720,6 +83964,7 @@
         "/hotel-financing/loan-requirements",
         "/hotel-financing/pip-and-renovation-loans",
         "/team/miles-cortez",
+        "/hotel-financing/sba-franchise-directory",
         "/hotel-financing/hotel-lenders-by-type",
         "/glossary",
         "/glossary/dscr",
@@ -83890,6 +84135,7 @@
         "/hotel-financing/pip-and-renovation-loans",
         "/hotel-financing/refinance",
         "/team/nate-solomon",
+        "/hotel-financing/sba-franchise-directory",
         "/hotel-financing/appraisal-requirements",
         "/hotel-financing/hotel-loan-rates",
         "/hotel-financing/sba-7a-vs-504",
@@ -84175,6 +84421,7 @@
         "/hotel-financing/bridge-loans",
         "/hotel-financing/refinance",
         "/team/nate-solomon",
+        "/hotel-financing/sba-franchise-directory",
         "/hotel-financing/refinance-or-sell",
         "/hotel-financing/loan-requirements",
         "/hotel-financing/flood-insurance-requirements",
@@ -84341,6 +84588,7 @@
         "/team/luke-thompson",
         "/buy-a-hotel/environmental-liability",
         "/team/miles-cortez",
+        "/hotel-financing/sba-franchise-directory",
         "/hotel-financing/appraisal-requirements",
         "/hotel-financing/prepayment-penalties",
         "/hotel-financing/loan-requirements",
@@ -84352,6 +84600,64 @@
         "/glossary/dscr",
         "/glossary/noi",
         "/tools/hotel-loan-sizing-calculator",
+        "/data/sba-hotel-lending",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/hotel-financing/sba-franchise-directory",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/e7051121e5f1db32.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-financing/sba-franchise-directory.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/luke-thompson",
+        "/hotel-financing/extended-stay-financing",
+        "/glossary/comfort-letter",
+        "/hotel-financing/loan-requirements",
+        "/hotel-financing/sba-7a-vs-504",
+        "/team/miles-cortez",
+        "/hotel-financing/brand-conversion-financing",
+        "/hotel-financing/lenders-under-5-million",
+        "/hotel-financing/pip-and-renovation-loans",
+        "/glossary",
+        "/glossary/franchise-agreement",
+        "/glossary/franchise-fdd",
+        "/glossary/sba-7a",
+        "/glossary/sba-504",
         "/data/sba-hotel-lending",
         "/buy-a-hotel",
         "/hotel-franchise-costs",

@@ -164,6 +164,7 @@ export const page: AnswerPage = {
   related: {
     hub: "/hotel-financing",
     siblings: [
+      "/hotel-financing/sba-franchise-directory",
       "/hotel-financing/bridge-loans",
       "/hotel-financing/refinance",
       "/hotel-financing/refinance-or-sell",
