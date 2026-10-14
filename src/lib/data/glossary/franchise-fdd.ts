@@ -64,6 +64,7 @@ export const entry: GlossaryEntry = {
     "pip"
   ],
   relatedAnswers: [
+    "/hotel-financing/sba-franchise-directory",
     "/sell-a-hotel/documents-needed",
     "/sell-a-hotel/franchise-transfer",
     "/hotel-financing/pip-and-renovation-loans",

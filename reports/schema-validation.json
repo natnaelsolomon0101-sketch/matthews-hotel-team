@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-10-13T14:34:33.504Z",
+  "runAt": "2026-10-14T14:29:22.913Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 325,
-  "blocksFound": 325,
-  "blocksValid": 325,
+  "urlsChecked": 326,
+  "blocksFound": 326,
+  "blocksValid": 326,
   "issues": [],
   "blocks": [
     {
@@ -666,6 +666,13 @@
     },
     {
       "url": "/hotel-financing/sba-7a-vs-504",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/sba-franchise-directory",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,

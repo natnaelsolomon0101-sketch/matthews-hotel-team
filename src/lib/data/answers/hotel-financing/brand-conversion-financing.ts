@@ -219,6 +219,7 @@ export const page: AnswerPage = {
   related: {
     hub: "/hotel-financing",
     siblings: [
+      "/hotel-financing/sba-franchise-directory",
       "/hotel-financing/pip-and-renovation-loans",
       "/hotel-financing/bridge-loans",
       "/hotel-financing/sba-7a-vs-504",
