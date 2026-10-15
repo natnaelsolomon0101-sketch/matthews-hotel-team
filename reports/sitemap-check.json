@@ -1,10 +1,10 @@
 {
-  "urls": 326,
+  "urls": 327,
   "maxDepth": 2,
   "byDepth": {
     "0": 1,
     "1": 32,
-    "2": 293
+    "2": 294
   },
   "depth": {
     "/": 0,
@@ -237,6 +237,7 @@
     "/hotel-industry/resort-fees": 2,
     "/hotel-industry/hotel-worker-minimum-wage": 2,
     "/hotel-industry/energy-benchmarking-and-emissions-limits": 2,
+    "/hotel-industry/fire-safety-and-federal-travel": 2,
     "/glossary/gop": 2,
     "/glossary/comp-set": 2,
     "/glossary/defeasance": 2,

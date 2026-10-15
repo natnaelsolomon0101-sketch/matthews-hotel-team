@@ -75,6 +75,7 @@ export const entry: GlossaryEntry = {
     "/hotel-valuation/how-to-value-a-hotel",
     "/hotel-valuation/select-service-vs-full-service",
     "/hotel-industry/resort-fees",
+    "/hotel-industry/fire-safety-and-federal-travel"
   ],
   relatedTerms: ["revpar", "cap-rate", "bov"],
   relatedMarkets: ["austin-tx", "san-antonio-tx", "charleston-sc"],

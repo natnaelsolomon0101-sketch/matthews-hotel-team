@@ -69,7 +69,8 @@ export const entry: GlossaryEntry = {
     "/sell-a-hotel/documents-needed",
     "/hotel-industry/ada-requirements",
     "/hotel-financing/flood-insurance-requirements",
-    "/sell-a-hotel/tax-clearance-and-withholding"
+    "/sell-a-hotel/tax-clearance-and-withholding",
+    "/hotel-industry/fire-safety-and-federal-travel"
   ],
   lastUpdated: "2026-10-05",
   authorSlug: "nate-solomon"

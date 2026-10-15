@@ -76,7 +76,8 @@ export const entry: GlossaryEntry = {
     "/sell-a-hotel/documents-needed",
     "/sell-a-hotel/franchise-transfer",
     "/hotel-industry/ada-requirements",
-    "/hotel-industry/energy-benchmarking-and-emissions-limits"
+    "/hotel-industry/energy-benchmarking-and-emissions-limits",
+    "/hotel-industry/fire-safety-and-federal-travel"
   ],
   relatedTerms: ["bov", "cap-rate", "iom"],
   relatedMarkets: ["dallas-tx", "atlanta-ga", "phoenix-az"],
