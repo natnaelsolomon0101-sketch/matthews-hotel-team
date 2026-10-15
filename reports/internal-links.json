@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-14T14:29:31.701Z",
-  "base": "http://localhost:37401",
+  "runAt": "2026-10-15T14:28:53.430Z",
+  "base": "http://localhost:45895",
   "edges": [
     {
       "from": "/",
@@ -4461,6 +4461,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-industry/energy-benchmarking-and-emissions-limits"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-industry/fire-safety-and-federal-travel"
     },
     {
       "from": "/sitemap",
@@ -65748,6 +65752,10 @@
     },
     {
       "from": "/hotel-industry",
+      "to": "/hotel-industry/fire-safety-and-federal-travel"
+    },
+    {
+      "from": "/hotel-industry",
       "to": "/hotel-franchise-costs"
     },
     {
@@ -69383,6 +69391,218 @@
       "to": "/sitemap"
     },
     {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/_next/static/chunks/e7051121e5f1db32.css"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/hotel-industry/fire-safety-and-federal-travel.md"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/sell-a-hotel/what-buyers-look-for"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/hotel-industry/industry-size-2026"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/sell-a-hotel/documents-needed"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/hotel-financing/pip-and-renovation-loans"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/hotel-industry/ada-requirements"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/hotel-industry/hotel-operating-costs"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/hotel-industry/cost-to-build-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/hotel-industry/energy-benchmarking-and-emissions-limits"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/glossary/pip"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/glossary/adr"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/glossary/ffe-reserve"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/sitemap"
+    },
+    {
       "from": "/tools",
       "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     },
@@ -72118,6 +72338,7 @@
         "/hotel-industry/resort-fees",
         "/hotel-industry/hotel-worker-minimum-wage",
         "/hotel-industry/energy-benchmarking-and-emissions-limits",
+        "/hotel-industry/fire-safety-and-federal-travel",
         "/tools",
         "/tools/hotel-value-estimator",
         "/tools/hotel-loan-sizing-calculator",
@@ -89131,6 +89352,7 @@
         "/hotel-industry/resort-fees",
         "/hotel-industry/hotel-worker-minimum-wage",
         "/hotel-industry/energy-benchmarking-and-emissions-limits",
+        "/hotel-industry/fire-safety-and-federal-travel",
         "/hotel-franchise-costs",
         "/glossary",
         "/glossary/revpar",
@@ -90120,6 +90342,65 @@
         "/glossary/noi",
         "/glossary/cap-rate",
         "/glossary/pip",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/hotel-industry/fire-safety-and-federal-travel",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/e7051121e5f1db32.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-industry/fire-safety-and-federal-travel.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/hotel-industry",
+        "/team/miles-cortez",
+        "/sell-a-hotel/what-buyers-look-for",
+        "/hotel-industry/industry-size-2026",
+        "/sell-a-hotel/documents-needed",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/hotel-financing/pip-and-renovation-loans",
+        "/team/nate-solomon",
+        "/hotel-industry/ada-requirements",
+        "/hotel-industry/hotel-operating-costs",
+        "/hotel-industry/cost-to-build-a-hotel",
+        "/hotel-industry/energy-benchmarking-and-emissions-limits",
+        "/glossary",
+        "/glossary/pip",
+        "/glossary/adr",
+        "/glossary/ffe-reserve",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/tools",

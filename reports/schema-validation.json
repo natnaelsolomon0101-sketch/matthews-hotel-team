@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-10-14T14:29:22.913Z",
+  "runAt": "2026-10-15T14:28:44.579Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 326,
-  "blocksFound": 326,
-  "blocksValid": 326,
+  "urlsChecked": 327,
+  "blocksFound": 327,
+  "blocksValid": 327,
   "issues": [],
   "blocks": [
     {
@@ -1310,6 +1310,13 @@
     },
     {
       "url": "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-industry/fire-safety-and-federal-travel",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,
