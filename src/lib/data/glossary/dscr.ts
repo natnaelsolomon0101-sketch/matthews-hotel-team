@@ -70,7 +70,8 @@ export const entry: GlossaryEntry = {
   relatedAnswers: [
     "/hotel-financing/loan-requirements",
     "/hotel-financing/hotel-loan-rates",
-    "/tools/dscr-calculator"
+    "/tools/dscr-calculator",
+    "/hotel-financing/chapter-11-bankruptcy"
   ],
   lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson"

@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-15T14:28:53.430Z",
-  "base": "http://localhost:45895",
+  "runAt": "2026-10-16T14:20:44.485Z",
+  "base": "http://localhost:38741",
   "edges": [
     {
       "from": "/",
@@ -4009,6 +4009,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-financing/c-pace-financing"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-financing/chapter-11-bankruptcy"
     },
     {
       "from": "/sitemap",
@@ -43676,6 +43680,10 @@
     },
     {
       "from": "/hotel-financing",
+      "to": "/hotel-financing/chapter-11-bankruptcy"
+    },
+    {
+      "from": "/hotel-financing",
       "to": "/hotel-financing/cmbs-loans"
     },
     {
@@ -44864,6 +44872,198 @@
     },
     {
       "from": "/hotel-financing/c-pace-financing",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/_next/static/chunks/e7051121e5f1db32.css"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/hotel-financing/chapter-11-bankruptcy.md"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/hotel-financing/loan-workouts"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/hotel-financing/non-recourse-loans"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/hotel-financing/covenants-and-cash-management"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/hotel-financing/refinance-or-sell"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/glossary/non-recourse-carve-outs"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/glossary/franchise-agreement"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/glossary/dscr"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-financing/chapter-11-bankruptcy",
       "to": "/sitemap"
     },
     {
@@ -72225,6 +72425,7 @@
         "/hotel-financing/brand-conversion-financing",
         "/hotel-financing/bridge-loans",
         "/hotel-financing/c-pace-financing",
+        "/hotel-financing/chapter-11-bankruptcy",
         "/hotel-financing/cmbs-loans",
         "/hotel-financing/construction-loans",
         "/hotel-financing/eb-5-financing",
@@ -83215,6 +83416,7 @@
         "/hotel-financing/1031-exchange-hotels",
         "/hotel-financing/appraisal-requirements",
         "/hotel-financing/bridge-loans",
+        "/hotel-financing/chapter-11-bankruptcy",
         "/hotel-financing/cmbs-loans",
         "/hotel-financing/faq",
         "/hotel-financing/flood-insurance-requirements",
@@ -83520,6 +83722,60 @@
         "/glossary/dscr",
         "/glossary/ltv",
         "/tools/hotel-loan-sizing-calculator",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/hotel-financing/chapter-11-bankruptcy",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/e7051121e5f1db32.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-financing/chapter-11-bankruptcy.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/luke-thompson",
+        "/team/nate-solomon",
+        "/hotel-financing/loan-workouts",
+        "/hotel-financing/non-recourse-loans",
+        "/hotel-financing/covenants-and-cash-management",
+        "/hotel-financing/refinance-or-sell",
+        "/glossary",
+        "/glossary/non-recourse-carve-outs",
+        "/glossary/franchise-agreement",
+        "/glossary/dscr",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
