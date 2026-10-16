@@ -67,7 +67,8 @@ export const entry: GlossaryEntry = {
     "/buy-a-hotel/how-to-make-an-offer",
     "/sell-a-hotel/employees-when-you-sell",
     "/hotel-industry/ada-requirements",
-    "/sell-a-hotel/liquor-license-transfer"
+    "/sell-a-hotel/liquor-license-transfer",
+    "/hotel-financing/chapter-11-bankruptcy"
   ],
   lastUpdated: "2026-09-18",
   authorSlug: "nate-solomon"

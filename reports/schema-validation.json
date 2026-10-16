@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-10-15T14:28:44.579Z",
+  "runAt": "2026-10-16T14:20:36.021Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 327,
-  "blocksFound": 327,
-  "blocksValid": 327,
+  "urlsChecked": 328,
+  "blocksFound": 328,
+  "blocksValid": 328,
   "issues": [],
   "blocks": [
     {
@@ -505,6 +505,13 @@
     },
     {
       "url": "/hotel-financing/c-pace-financing",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/chapter-11-bankruptcy",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,

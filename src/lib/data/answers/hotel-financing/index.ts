@@ -4,6 +4,7 @@ import { page as a_appraisal_requirements } from "./appraisal-requirements";
 import { page as a_brand_conversion_financing } from "./brand-conversion-financing";
 import { page as a_bridge_loans } from "./bridge-loans";
 import { page as a_c_pace_financing } from "./c-pace-financing";
+import { page as a_chapter_11_bankruptcy } from "./chapter-11-bankruptcy";
 import { page as a_cmbs_loans } from "./cmbs-loans";
 import { page as a_construction_loans } from "./construction-loans";
 import { page as a_eb_5_financing } from "./eb-5-financing";
@@ -46,6 +47,7 @@ export const spokes: AnswerPage[] = [
   a_brand_conversion_financing,
   a_bridge_loans,
   a_c_pace_financing,
+  a_chapter_11_bankruptcy,
   a_cmbs_loans,
   a_construction_loans,
   a_eb_5_financing,
