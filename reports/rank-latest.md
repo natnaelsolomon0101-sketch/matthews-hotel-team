@@ -1,4 +1,4 @@
-# Rank check — 2026-10-12T18:26:29.053Z
+# Rank check — 2026-10-19T16:04:22.449Z
 
 Engine: `ddg` · Domain: `matthewshotelmarkets.com` · Queries: 90 · In top 20: 0
 
