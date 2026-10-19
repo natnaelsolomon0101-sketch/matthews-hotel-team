@@ -17,7 +17,7 @@ export const page: AnswerPage = {
   title: "How to Appeal a Hotel Property Tax Assessment",
   h1: "How do I appeal my hotel's property tax assessment?",
   description: "Hotel property tax appeals in Texas, Florida and California: deadlines, where to file, and how to separate the taxable real estate from the business.",
-  lastUpdated: "2026-09-28",
+  lastUpdated: "2026-10-19",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -185,9 +185,9 @@ export const page: AnswerPage = {
     {
       n: 5,
       label: "Olympic and Georgia Partners, LLC v. County of Los Angeles, S280000 (Cal. Aug. 28, 2025)",
-      url: "https://www.courts.ca.gov/opinions/archive/S280000.PDF",
+      url: "https://www4.courts.ca.gov/opinions/archive/S280000.PDF",
       publisher: "Supreme Court of California",
-      accessed: "2026-09-18"
+      accessed: "2026-10-19"
     },
     {
       n: 6,

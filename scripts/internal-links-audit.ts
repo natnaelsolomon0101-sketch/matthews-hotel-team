@@ -9,8 +9,13 @@
  *   reports/internal-links.json   — full link graph
  *   reports/internal-links.md     — coverage summary + missing edges
  *
- * Run: pnpm tsx scripts/internal-links-audit.ts            # against prod
- *      pnpm tsx scripts/internal-links-audit.ts --local    # localhost:3000
+ * Run: npx tsx scripts/internal-links-audit.ts            # localhost:3000
+ *      npx tsx scripts/internal-links-audit.ts --prod      # production
+ *
+ * The default is the local server. A full run is about 160 requests, and
+ * repeated scripted traffic trips Vercel's bot challenge, which blocks every
+ * AI crawler (geo/AGENTS.md rule 5), so production needs an explicit --prod.
+ * `--local` is still accepted and is what the gate passes.
  */
 import fs from "node:fs";
 import path from "node:path";
