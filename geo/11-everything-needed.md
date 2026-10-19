@@ -255,7 +255,7 @@ Status key: **Done**, **Partly**, **Not done**, **Broken**. Impact: 3 = high, 1 
 | A7 | Per-bot robots.txt, sitemap with real dates, llms.txt, feed | All (llms.txt: not used by Google) | **Done.** Live robots.txt has the 3 groups; sitemap 158 URLs, real dates | none | Keep | 0 | 2 |
 | A8 | Rate-sheet domain consolidated | Removes a disagreeing duplicate | **Not done.** `matthewsratesheet.info` 200 | Nate | Top-10 item 9 | 5 min | 2 |
 | A9 | Request indexing for 10 core URLs | Google | **Not done** (needs A2) | Nate | Top-10 item 2, step 5 | 10 min | 2 |
-| A10 | Stop scripted traffic tripping Vercel's challenge | Everything; a challenge blocks every AI crawler | **Risk.** `bot-check.yml` runs 18 requests weekly; `internal-links-audit.ts` defaults to production (160 requests) | agent | Make the audit default `--local`; keep bot-check weekly at most, never in a loop | 15 min | 2 |
+| A10 | Stop scripted traffic tripping Vercel's challenge | Everything; a challenge blocks every AI crawler | **Done.** `internal-links-audit.ts` defaults to `localhost:3000` and needs an explicit `--prod`; `bot-check.yml` is weekly and not in a loop. Checked 2026-10-19 | none | Keep. Never loop a user agent at production, and one request per URL per run | 0 | 2 |
 | A11 | Field speed data | Google page experience | **Unknown.** Lab only | Nate | Vercel → Speed Insights → Enable; after a month, check CrUX in Search Console | 5 min | 1 |
 
 ### B. Entity and knowledge graph
@@ -348,6 +348,15 @@ numbers.
    and its status only, not the page text, so the "no longer contains the cited figure" half is still
    the Maintainer's to do by hand. A 403, a 429 or a timeout is listed as "could not be checked" and
    never opens an issue.*
+   *Extended 2026-10-19: the script follows redirects one hop at a time and reads each hop's status,
+   so only a 301 or a 308 is reported as a move. A 302, 303 or 307 goes in a separate "Redirected on
+   the fly" table that never sets the exit code, because the publisher is still serving the cited URL.
+   All 17 "moved" rows of the 2026-10-19 report were then typed by hand, one request each: 15 are
+   302s and need no edit (all 14 eCFR short paths, each landing on its own `/chapter-I/...` hierarchy
+   path, several of which carry a generated `subject-group-ECFR...` hash that would be the more
+   brittle citation; plus `www.sba.gov/document/sop-50-10-...`, which answers 302 to `legacy.sba.gov`
+   while SBA migrates its SOP library). Two were real 301 moves and are fixed in the same PR: GSA's
+   per-diem path and `www.courts.ca.gov`, which answers 301 twice to `www4`.*
 3. **Freshness report.** List pages whose `lastUpdated` is older than 90 days and stats on
    `/data/hotel-financing-statistics` whose `verified` date is older than 90 days. Open one issue.
    *Shipped 2026-10-05: `scripts/freshness-report.ts` and the **Freshness report** Action
