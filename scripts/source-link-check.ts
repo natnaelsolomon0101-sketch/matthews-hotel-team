@@ -10,11 +10,26 @@
  *   npx tsx scripts/source-link-check.ts            # check everything
  *   npx tsx scripts/source-link-check.ts --limit 20 # first 20 URLs
  *   npx tsx scripts/source-link-check.ts --delay 2000
+ *   npx tsx scripts/source-link-check.ts --only sba.gov   # re-check one host
  *
  * Exit code 0 = nothing dead, 1 = at least one dead or moved link.
  *
- * Three rules this script exists to hold, from geo/AGENTS.md:
+ * Four rules this script exists to hold, from geo/AGENTS.md:
  *
+ *   - A redirect is only a move when the publisher says so. A 301 or a 308
+ *     means the document lives at the new URL and the citation should be
+ *     updated. A 302, 303 or 307 means the publisher is still serving the
+ *     cited URL and redirecting on the fly, so the citation resolves for a
+ *     reader and editing it can make things worse. Every eCFR short path this
+ *     site cites, such as /current/title-44/section-60.3, answered 302 on
+ *     2026-10-19 to a /chapter-I/... path, and some of those carry a generated
+ *     subject-group hash that would be the more brittle citation of the two.
+ *     www.sba.gov/document/sop-50-10-... answered 302 to legacy.sba.gov while
+ *     SBA migrates its SOP library, and a firewall bouncing this runner to a
+ *     block page looks the same. Those are listed separately and never set the
+ *     exit code. In the same report www.gsa.gov/travel/plan-book/... answered
+ *     301 to /travel/plan-a-trip/..., a real move, and that citation was
+ *     changed.
  *   - A 403, a 429 or a timeout is NOT a dead link. Plenty of publishers
  *     (CBRE, STR, hospitalitynet, several state franchise registries) answer
  *     403 to anything that is not a real browser. Those land in a separate
@@ -83,35 +98,73 @@ function collect(): Citation[] {
     .sort((a, b) => a.url.localeCompare(b.url));
 }
 
+type Hop = { status: number; to: string };
+
 type Result = Citation & {
   status: number | "error";
   finalUrl: string;
   detail?: string;
   /** Set when a dead status was reclassified as a host-level block. */
   blockedHost?: string;
+  /** Every redirect followed, in order, with the status that sent us there. */
+  hops: Hop[];
 };
 
+/** 301 and 308 mean the document lives somewhere else now. The rest do not. */
+const PERMANENT = new Set([301, 308]);
+const REDIRECT = new Set([301, 302, 303, 307, 308]);
+const MAX_HOPS = 6;
+
+/**
+ * Fetch one citation, following redirects one at a time so that each hop's
+ * status is recorded. `redirect: "follow"` hides that: it reports the final
+ * URL and nothing about how we got there, which is why every eCFR short path
+ * read as "moved" in the weekly report for five weeks running without anyone
+ * being able to tell whether eCFR had moved those sections or was just
+ * serving its own short links.
+ */
 async function check(c: Citation, timeoutMs: number): Promise<Result> {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
+  const hops: Hop[] = [];
+  let url = c.url;
   try {
-    const res = await fetch(c.url, {
-      redirect: "follow",
-      signal: controller.signal,
-      headers: {
-        "user-agent": UA,
-        accept:
-          "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "accept-language": "en-US,en;q=0.9",
-      },
-    });
-    return { ...c, status: res.status, finalUrl: res.url || c.url };
+    for (let i = 0; i < MAX_HOPS; i++) {
+      const res = await fetch(url, {
+        redirect: "manual",
+        signal: controller.signal,
+        headers: {
+          "user-agent": UA,
+          accept:
+            "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+          "accept-language": "en-US,en;q=0.9",
+        },
+      });
+      const location = res.headers.get("location");
+      if (!REDIRECT.has(res.status) || !location) {
+        return { ...c, status: res.status, finalUrl: url, hops };
+      }
+      const next = new URL(location, url).toString();
+      hops.push({ status: res.status, to: next });
+      if (hops.some((h, j) => j < hops.length - 1 && h.to === next)) {
+        return { ...c, status: res.status, finalUrl: next, hops };
+      }
+      url = next;
+    }
+    return {
+      ...c,
+      status: "error",
+      finalUrl: url,
+      detail: `more than ${MAX_HOPS} redirects`,
+      hops,
+    };
   } catch (err) {
     return {
       ...c,
       status: "error",
-      finalUrl: c.url,
+      finalUrl: url,
       detail: err instanceof Error ? err.message : String(err),
+      hops,
     };
   } finally {
     clearTimeout(timer);
@@ -129,18 +182,41 @@ async function rootIsDeadToo(host: string, timeoutMs: number): Promise<number | 
   return typeof r.status === "number" && DEAD.has(r.status) ? r.status : undefined;
 }
 
-/** A redirect worth a human's attention: the path changed, not just the host casing or a trailing slash. */
-function moved(r: Result): boolean {
-  if (r.status !== 200) return false;
-  const norm = (u: string) => {
-    try {
-      const x = new URL(u);
-      return `${x.host.toLowerCase().replace(/^www\./, "")}${x.pathname.replace(/\/$/, "")}`;
-    } catch {
-      return u;
-    }
-  };
-  return norm(r.url) !== norm(r.finalUrl);
+function norm(u: string): string {
+  try {
+    const x = new URL(u);
+    return `${x.host.toLowerCase().replace(/^www\./, "")}${x.pathname.replace(/\/$/, "")}`;
+  } catch {
+    return u;
+  }
+}
+
+/** The URL changed, not just the host casing or a trailing slash. */
+function landedElsewhere(r: Result): boolean {
+  return r.status === 200 && norm(r.url) !== norm(r.finalUrl);
+}
+
+/**
+ * The publisher says the document moved: at least one hop was a 301 or a 308.
+ * Only these are findings, because only these mean the cited URL is wrong.
+ */
+function movedPermanently(r: Result): boolean {
+  return landedElsewhere(r) && r.hops.some((h) => PERMANENT.has(h.status));
+}
+
+/**
+ * The cited URL still resolves and the publisher redirects on the fly: eCFR
+ * short paths, SBA's move of its SOP library to legacy.sba.gov, and a WAF
+ * bouncing a scripted reader to a block page all land here. Reported so a
+ * person can see them, never as a finding, and never in the exit code.
+ */
+function redirectedTemporarily(r: Result): boolean {
+  return landedElsewhere(r) && !r.hops.some((h) => PERMANENT.has(h.status));
+}
+
+/** "302, 301" for the report, so a reader can see what the publisher said. */
+function hopStatuses(r: Result): string {
+  return r.hops.map((h) => h.status).join(", ");
 }
 
 function table(rows: string[][], header: string[]): string {
@@ -158,7 +234,12 @@ async function main() {
   const timeout = num("--timeout", 30000);
   const limit = num("--limit", Infinity);
 
-  const citations = collect().slice(0, limit);
+  // Re-check one citation or one host without sending 426 requests.
+  const onlyAt = args.indexOf("--only");
+  const only = onlyAt >= 0 ? args[onlyAt + 1] : undefined;
+  const citations = collect()
+    .filter((c) => (only ? c.url.includes(only) : true))
+    .slice(0, limit);
   const results: Result[] = [];
   for (const [i, c] of citations.entries()) {
     results.push(await check(c, timeout));
@@ -196,7 +277,8 @@ async function main() {
   const dead = results.filter(
     (r) => typeof r.status === "number" && DEAD.has(r.status) && !r.blockedHost,
   );
-  const redirected = results.filter(moved);
+  const redirected = results.filter(movedPermanently);
+  const temporary = results.filter(redirectedTemporarily);
   const blocked = results.filter(
     (r) =>
       r.status === "error" ||
@@ -209,7 +291,7 @@ async function main() {
   out.push(`# Source-link check, ${new Date().toISOString().slice(0, 10)}`);
   out.push("");
   out.push(
-    `${results.length} external source URLs cited on answer pages, glossary terms, tool pages, /rates and /data/hotel-financing-statistics. ${ok} answered 200. ${dead.length} dead. ${redirected.length} moved. ${blocked.length} could not be checked from a script.`,
+    `${results.length} external source URLs cited on answer pages, glossary terms, tool pages, /rates and /data/hotel-financing-statistics. ${ok} answered 200. ${dead.length} dead. ${redirected.length} moved. ${temporary.length} redirected on the fly. ${blocked.length} could not be checked from a script.`,
   );
 
   if (dead.length) {
@@ -222,11 +304,42 @@ async function main() {
     );
   }
   if (redirected.length) {
-    out.push("", "## Moved: the citation should point at the new URL", "");
+    out.push(
+      "",
+      "## Moved: the citation should point at the new URL",
+      "",
+      "The publisher answered 301 or 308, which means the document lives at the new URL now.",
+      "",
+    );
     out.push(
       table(
-        redirected.map((r) => [r.url, r.finalUrl, r.where.join("<br>")]),
-        ["Cited URL", "Redirects to", "Cited on"],
+        redirected.map((r) => [
+          r.url,
+          r.finalUrl,
+          hopStatuses(r),
+          r.where.join("<br>"),
+        ]),
+        ["Cited URL", "Moved to", "Redirect", "Cited on"],
+      ),
+    );
+  }
+  if (temporary.length) {
+    out.push(
+      "",
+      "## Redirected on the fly",
+      "",
+      "Not findings. Every hop was a 302, 303 or 307, so the publisher is still serving the cited URL and the citation resolves for a reader. A publisher serving its own short links reads this way, and so does a firewall bouncing a scripted reader to a block page: check the URL in the \"Lands on\" column. Change a citation here only if you open it and find a different document.",
+      "",
+    );
+    out.push(
+      table(
+        temporary.map((r) => [
+          r.url,
+          r.finalUrl,
+          hopStatuses(r),
+          r.where.join("<br>"),
+        ]),
+        ["Cited URL", "Lands on", "Redirect", "Cited on"],
       ),
     );
   }
