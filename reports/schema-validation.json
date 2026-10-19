@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-10-16T14:20:36.021Z",
+  "runAt": "2026-10-19T14:29:57.947Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 328,
-  "blocksFound": 328,
-  "blocksValid": 328,
+  "urlsChecked": 329,
+  "blocksFound": 329,
+  "blocksValid": 329,
   "issues": [],
   "blocks": [
     {
@@ -1324,6 +1324,13 @@
     },
     {
       "url": "/hotel-industry/fire-safety-and-federal-travel",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-industry/asbestos-renovation-rules",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,
