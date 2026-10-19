@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-19T13:53:46.212Z",
-  "base": "http://localhost:44527",
+  "runAt": "2026-10-19T14:36:07.706Z",
+  "base": "http://localhost:43809",
   "edges": [
     {
       "from": "/",
@@ -4469,6 +4469,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-industry/fire-safety-and-federal-travel"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-industry/asbestos-renovation-rules"
     },
     {
       "from": "/sitemap",
@@ -48972,6 +48976,10 @@
     },
     {
       "from": "/hotel-financing/pip-and-renovation-loans",
+      "to": "/hotel-industry/asbestos-renovation-rules"
+    },
+    {
+      "from": "/hotel-financing/pip-and-renovation-loans",
       "to": "/hotel-financing/bridge-loans"
     },
     {
@@ -58900,6 +58908,10 @@
     },
     {
       "from": "/buy-a-hotel/environmental-liability",
+      "to": "/hotel-industry/asbestos-renovation-rules"
+    },
+    {
+      "from": "/buy-a-hotel/environmental-liability",
       "to": "/sell-a-hotel/documents-needed"
     },
     {
@@ -65956,6 +65968,10 @@
     },
     {
       "from": "/hotel-industry",
+      "to": "/hotel-industry/asbestos-renovation-rules"
+    },
+    {
+      "from": "/hotel-industry",
       "to": "/hotel-franchise-costs"
     },
     {
@@ -66133,6 +66149,10 @@
     {
       "from": "/hotel-industry/ada-requirements",
       "to": "/glossary/pip"
+    },
+    {
+      "from": "/hotel-industry/ada-requirements",
+      "to": "/hotel-industry/asbestos-renovation-rules"
     },
     {
       "from": "/hotel-industry/ada-requirements",
@@ -69803,6 +69823,214 @@
       "to": "/sitemap"
     },
     {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/_next/static/chunks/e7051121e5f1db32.css"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/hotel-industry/asbestos-renovation-rules.md"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/hotel-financing/pip-and-renovation-loans"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/buy-a-hotel/environmental-liability"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/hotel-industry/ada-requirements"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/hotel-industry/energy-benchmarking-and-emissions-limits"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/hotel-industry/fire-safety-and-federal-travel"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/hotel-industry/hotel-operating-costs"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/hotel-industry/owner-franchisor-management-company"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/glossary/pip"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/glossary/ffe-reserve"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/glossary/noi"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/sitemap"
+    },
+    {
       "from": "/tools",
       "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     },
@@ -72540,6 +72768,7 @@
         "/hotel-industry/hotel-worker-minimum-wage",
         "/hotel-industry/energy-benchmarking-and-emissions-limits",
         "/hotel-industry/fire-safety-and-federal-travel",
+        "/hotel-industry/asbestos-renovation-rules",
         "/tools",
         "/tools/hotel-value-estimator",
         "/tools/hotel-loan-sizing-calculator",
@@ -84895,6 +85124,7 @@
         "/team/luke-thompson",
         "/glossary/pip",
         "/hotel-industry/ada-requirements",
+        "/hotel-industry/asbestos-renovation-rules",
         "/hotel-financing/bridge-loans",
         "/hotel-financing/refinance",
         "/team/nate-solomon",
@@ -87659,6 +87889,7 @@
         "/contact",
         "/buy-a-hotel",
         "/team/luke-thompson",
+        "/hotel-industry/asbestos-renovation-rules",
         "/sell-a-hotel/documents-needed",
         "/hotel-financing/hotel-lenders-by-type",
         "/team/nate-solomon",
@@ -89609,6 +89840,7 @@
         "/hotel-industry/hotel-worker-minimum-wage",
         "/hotel-industry/energy-benchmarking-and-emissions-limits",
         "/hotel-industry/fire-safety-and-federal-travel",
+        "/hotel-industry/asbestos-renovation-rules",
         "/hotel-franchise-costs",
         "/glossary",
         "/glossary/revpar",
@@ -89660,6 +89892,7 @@
         "/hotel-industry",
         "/team/luke-thompson",
         "/glossary/pip",
+        "/hotel-industry/asbestos-renovation-rules",
         "/hotel-financing/pip-and-renovation-loans",
         "/buy-a-hotel/due-diligence-checklist",
         "/hotel-industry/energy-benchmarking-and-emissions-limits",
@@ -90657,6 +90890,64 @@
         "/glossary/pip",
         "/glossary/adr",
         "/glossary/ffe-reserve",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/hotel-industry/asbestos-renovation-rules",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/e7051121e5f1db32.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-industry/asbestos-renovation-rules.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/hotel-industry",
+        "/team/miles-cortez",
+        "/hotel-financing/pip-and-renovation-loans",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/environmental-liability",
+        "/team/nate-solomon",
+        "/hotel-industry/ada-requirements",
+        "/hotel-industry/energy-benchmarking-and-emissions-limits",
+        "/hotel-industry/fire-safety-and-federal-travel",
+        "/hotel-industry/hotel-operating-costs",
+        "/hotel-industry/owner-franchisor-management-company",
+        "/glossary",
+        "/glossary/pip",
+        "/glossary/ffe-reserve",
+        "/glossary/noi",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/tools",
