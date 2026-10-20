@@ -1,10 +1,10 @@
 {
-  "urls": 329,
+  "urls": 330,
   "maxDepth": 2,
   "byDepth": {
     "0": 1,
     "1": 32,
-    "2": 296
+    "2": 297
   },
   "depth": {
     "/": 0,
@@ -240,6 +240,7 @@
     "/hotel-industry/energy-benchmarking-and-emissions-limits": 2,
     "/hotel-industry/fire-safety-and-federal-travel": 2,
     "/hotel-industry/asbestos-renovation-rules": 2,
+    "/hotel-industry/karis-law-911-requirements": 2,
     "/glossary/gop": 2,
     "/glossary/comp-set": 2,
     "/glossary/defeasance": 2,

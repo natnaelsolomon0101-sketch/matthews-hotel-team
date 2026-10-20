@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-19T14:36:07.706Z",
-  "base": "http://localhost:43809",
+  "runAt": "2026-10-20T14:27:47.366Z",
+  "base": "http://localhost:45697",
   "edges": [
     {
       "from": "/",
@@ -4473,6 +4473,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-industry/asbestos-renovation-rules"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-industry/karis-law-911-requirements"
     },
     {
       "from": "/sitemap",
@@ -48980,6 +48984,10 @@
     },
     {
       "from": "/hotel-financing/pip-and-renovation-loans",
+      "to": "/hotel-industry/karis-law-911-requirements"
+    },
+    {
+      "from": "/hotel-financing/pip-and-renovation-loans",
       "to": "/hotel-financing/bridge-loans"
     },
     {
@@ -65972,6 +65980,10 @@
     },
     {
       "from": "/hotel-industry",
+      "to": "/hotel-industry/karis-law-911-requirements"
+    },
+    {
+      "from": "/hotel-industry",
       "to": "/hotel-franchise-costs"
     },
     {
@@ -69720,6 +69732,10 @@
     },
     {
       "from": "/hotel-industry/fire-safety-and-federal-travel",
+      "to": "/hotel-industry/karis-law-911-requirements"
+    },
+    {
+      "from": "/hotel-industry/fire-safety-and-federal-travel",
       "to": "/glossary"
     },
     {
@@ -70028,6 +70044,210 @@
     },
     {
       "from": "/hotel-industry/asbestos-renovation-rules",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/_next/static/chunks/e7051121e5f1db32.css"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/hotel-industry/karis-law-911-requirements.md"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/hotel-financing/pip-and-renovation-loans"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/hotel-industry/hotel-management-agreements"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/sell-a-hotel/documents-needed"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/hotel-industry/fire-safety-and-federal-travel"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/hotel-industry/ada-requirements"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/hotel-industry/hotel-operating-costs"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/glossary/pip"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/glossary/ffe-reserve"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/glossary/franchise-agreement"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-industry/karis-law-911-requirements",
       "to": "/sitemap"
     },
     {
@@ -72769,6 +72989,7 @@
         "/hotel-industry/energy-benchmarking-and-emissions-limits",
         "/hotel-industry/fire-safety-and-federal-travel",
         "/hotel-industry/asbestos-renovation-rules",
+        "/hotel-industry/karis-law-911-requirements",
         "/tools",
         "/tools/hotel-value-estimator",
         "/tools/hotel-loan-sizing-calculator",
@@ -85125,6 +85346,7 @@
         "/glossary/pip",
         "/hotel-industry/ada-requirements",
         "/hotel-industry/asbestos-renovation-rules",
+        "/hotel-industry/karis-law-911-requirements",
         "/hotel-financing/bridge-loans",
         "/hotel-financing/refinance",
         "/team/nate-solomon",
@@ -89841,6 +90063,7 @@
         "/hotel-industry/energy-benchmarking-and-emissions-limits",
         "/hotel-industry/fire-safety-and-federal-travel",
         "/hotel-industry/asbestos-renovation-rules",
+        "/hotel-industry/karis-law-911-requirements",
         "/hotel-franchise-costs",
         "/glossary",
         "/glossary/revpar",
@@ -90886,6 +91109,7 @@
         "/hotel-industry/hotel-operating-costs",
         "/hotel-industry/cost-to-build-a-hotel",
         "/hotel-industry/energy-benchmarking-and-emissions-limits",
+        "/hotel-industry/karis-law-911-requirements",
         "/glossary",
         "/glossary/pip",
         "/glossary/adr",
@@ -90948,6 +91172,63 @@
         "/glossary/pip",
         "/glossary/ffe-reserve",
         "/glossary/noi",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/hotel-industry/karis-law-911-requirements",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/e7051121e5f1db32.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-industry/karis-law-911-requirements.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/hotel-industry",
+        "/team/luke-thompson",
+        "/hotel-financing/pip-and-renovation-loans",
+        "/hotel-industry/hotel-management-agreements",
+        "/sell-a-hotel/documents-needed",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/team/nate-solomon",
+        "/hotel-industry/fire-safety-and-federal-travel",
+        "/hotel-industry/ada-requirements",
+        "/hotel-industry/hotel-operating-costs",
+        "/glossary",
+        "/glossary/pip",
+        "/glossary/ffe-reserve",
+        "/glossary/franchise-agreement",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/tools",
