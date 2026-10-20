@@ -248,6 +248,7 @@ export const page: AnswerPage = {
       "/hotel-industry/hotel-operating-costs",
       "/hotel-industry/cost-to-build-a-hotel",
       "/hotel-industry/energy-benchmarking-and-emissions-limits",
+      "/hotel-industry/karis-law-911-requirements",
       "/hotel-industry/industry-size-2026"
     ],
     glossary: ["/glossary/pip", "/glossary/adr", "/glossary/ffe-reserve"],

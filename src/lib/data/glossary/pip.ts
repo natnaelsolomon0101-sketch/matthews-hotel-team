@@ -78,7 +78,8 @@ export const entry: GlossaryEntry = {
     "/hotel-industry/ada-requirements",
     "/hotel-industry/energy-benchmarking-and-emissions-limits",
     "/hotel-industry/fire-safety-and-federal-travel",
-    "/hotel-industry/asbestos-renovation-rules"
+    "/hotel-industry/asbestos-renovation-rules",
+    "/hotel-industry/karis-law-911-requirements"
   ],
   relatedTerms: ["bov", "cap-rate", "iom"],
   relatedMarkets: ["dallas-tx", "atlanta-ga", "phoenix-az"],

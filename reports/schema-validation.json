@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-10-19T14:35:57.695Z",
+  "runAt": "2026-10-20T14:27:37.648Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 329,
-  "blocksFound": 329,
-  "blocksValid": 329,
+  "urlsChecked": 330,
+  "blocksFound": 330,
+  "blocksValid": 330,
   "issues": [],
   "blocks": [
     {
@@ -1331,6 +1331,13 @@
     },
     {
       "url": "/hotel-industry/asbestos-renovation-rules",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-industry/karis-law-911-requirements",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,

@@ -19,6 +19,7 @@ import { page as a_hotel_worker_minimum_wage } from "./hotel-worker-minimum-wage
 import { page as a_energy_benchmarking_and_emissions_limits } from "./energy-benchmarking-and-emissions-limits";
 import { page as a_fire_safety_and_federal_travel } from "./fire-safety-and-federal-travel";
 import { page as a_asbestos_renovation_rules } from "./asbestos-renovation-rules";
+import { page as a_karis_law_911_requirements } from "./karis-law-911-requirements";
 import type { AnswerPage } from "../types";
 
 export const hub: AnswerPage = a_hub;
@@ -43,6 +44,7 @@ export const spokes: AnswerPage[] = [
   a_energy_benchmarking_and_emissions_limits,
   a_fire_safety_and_federal_travel,
   a_asbestos_renovation_rules,
+  a_karis_law_911_requirements,
 ];
 
 export const pages: AnswerPage[] = [hub, ...spokes];
