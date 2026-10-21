@@ -247,7 +247,7 @@ export const page: AnswerPage = {
     {
       n: 1,
       label:
-        "Concentrations in Commercial Real Estate Lending, Sound Risk Management Practices, 71 FR 74580 (December 12, 2006), at 74582 to 74583 for the scope and the comments on hotels and motels, and at 74587 for the two supervisory criteria and footnotes 4, 5 and 6 naming the Call Report lines",
+        "Concentrations in Commercial Real Estate Lending, Sound Risk Management Practices, 71 FR 74580 (December 12, 2006), at 74582 to 74583 for the comments on loans secured by motels and hotels, at 74585 for the scope and the definition of a commercial real estate loan, and at 74587 for the two supervisory criteria and footnotes 4, 5 and 6 naming the Call Report lines",
       url: "https://www.govinfo.gov/content/pkg/FR-2006-12-12/html/06-9630.htm",
       publisher:
         "Office of the Comptroller of the Currency, Federal Reserve Board and FDIC, via govinfo",
