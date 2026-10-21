@@ -59,7 +59,8 @@ export const entry: GlossaryEntry = {
   relatedAnswers: [
     "/hotel-financing/loan-requirements",
     "/hotel-financing/cmbs-loans",
-    "/hotel-financing/hotel-lenders-by-type"
+    "/hotel-financing/hotel-lenders-by-type",
+    "/hotel-financing/bank-cre-concentration-limits"
   ],
   lastUpdated: "2026-09-18",
   authorSlug: "luke-thompson"

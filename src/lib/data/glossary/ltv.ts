@@ -73,7 +73,8 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/loan-requirements",
     "/tools/dscr-calculator",
     "/hotel-financing/sba-7a-vs-504",
-    "/hotel-financing/flood-insurance-requirements"
+    "/hotel-financing/flood-insurance-requirements",
+    "/hotel-financing/bank-cre-concentration-limits"
   ],
   lastUpdated: "2026-10-02",
   authorSlug: "luke-thompson"
