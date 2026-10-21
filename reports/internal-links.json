@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-20T14:27:47.366Z",
-  "base": "http://localhost:45697",
+  "runAt": "2026-10-21T14:35:47.349Z",
+  "base": "http://localhost:44339",
   "edges": [
     {
       "from": "/",
@@ -3997,6 +3997,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-financing/appraisal-requirements"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-financing/bank-cre-concentration-limits"
     },
     {
       "from": "/sitemap",
@@ -43684,6 +43688,10 @@
     },
     {
       "from": "/hotel-financing",
+      "to": "/hotel-financing/bank-cre-concentration-limits"
+    },
+    {
+      "from": "/hotel-financing",
       "to": "/hotel-financing/bridge-loans"
     },
     {
@@ -44260,6 +44268,210 @@
     },
     {
       "from": "/hotel-financing/appraisal-requirements",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/_next/static/chunks/e7051121e5f1db32.css"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/hotel-financing/bank-cre-concentration-limits.md"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/glossary/dscr"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/hotel-financing/hotel-lenders-by-type"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/hotel-financing/sba-7a-vs-504"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/hotel-financing/cmbs-loans"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/hotel-financing/lenders-under-5-million"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/glossary/ltv"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/glossary/debt-yield"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/glossary/sba-504"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-financing/bank-cre-concentration-limits",
       "to": "/sitemap"
     },
     {
@@ -46540,6 +46752,10 @@
     },
     {
       "from": "/hotel-financing/hotel-lenders-by-type",
+      "to": "/hotel-financing/bank-cre-concentration-limits"
+    },
+    {
+      "from": "/hotel-financing/hotel-lenders-by-type",
       "to": "/team/miles-cortez"
     },
     {
@@ -47341,6 +47557,10 @@
     {
       "from": "/hotel-financing/lenders-under-5-million",
       "to": "/hotel-financing/usda-b-and-i-loans"
+    },
+    {
+      "from": "/hotel-financing/lenders-under-5-million",
+      "to": "/hotel-financing/bank-cre-concentration-limits"
     },
     {
       "from": "/hotel-financing/lenders-under-5-million",
@@ -72870,6 +73090,7 @@
         "/sitemap.xml",
         "/hotel-financing/1031-exchange-hotels",
         "/hotel-financing/appraisal-requirements",
+        "/hotel-financing/bank-cre-concentration-limits",
         "/hotel-financing/brand-conversion-financing",
         "/hotel-financing/bridge-loans",
         "/hotel-financing/c-pace-financing",
@@ -83865,6 +84086,7 @@
         "/hotel-financing/lenders-under-5-million",
         "/hotel-financing/1031-exchange-hotels",
         "/hotel-financing/appraisal-requirements",
+        "/hotel-financing/bank-cre-concentration-limits",
         "/hotel-financing/bridge-loans",
         "/hotel-financing/chapter-11-bankruptcy",
         "/hotel-financing/cmbs-loans",
@@ -83999,6 +84221,63 @@
         "/glossary/bov",
         "/glossary/ltv",
         "/glossary/per-key",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/hotel-financing/bank-cre-concentration-limits",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/e7051121e5f1db32.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-financing/bank-cre-concentration-limits.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/luke-thompson",
+        "/glossary/dscr",
+        "/hotel-financing/hotel-lenders-by-type",
+        "/hotel-financing/sba-7a-vs-504",
+        "/hotel-financing/cmbs-loans",
+        "/team/miles-cortez",
+        "/hotel-financing/lenders-under-5-million",
+        "/hotel-financing/loan-requirements",
+        "/hotel-financing/how-debt-placement-works",
+        "/glossary",
+        "/glossary/ltv",
+        "/glossary/debt-yield",
+        "/glossary/sba-504",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -84663,6 +84942,7 @@
         "/team",
         "/contact",
         "/team/luke-thompson",
+        "/hotel-financing/bank-cre-concentration-limits",
         "/team/miles-cortez",
         "/hotel-financing/cmbs-loans",
         "/hotel-financing/sba-7a-vs-504",
@@ -84888,6 +85168,7 @@
         "/hotel-financing/extended-stay-financing",
         "/hotel-financing/sba-7a-vs-504",
         "/hotel-financing/usda-b-and-i-loans",
+        "/hotel-financing/bank-cre-concentration-limits",
         "/hotel-financing/loan-requirements",
         "/hotel-financing/pip-and-renovation-loans",
         "/team/miles-cortez",

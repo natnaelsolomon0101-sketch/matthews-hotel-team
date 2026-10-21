@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-10-20T14:27:37.648Z",
+  "runAt": "2026-10-21T14:35:39.130Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 330,
-  "blocksFound": 330,
-  "blocksValid": 330,
+  "urlsChecked": 331,
+  "blocksFound": 331,
+  "blocksValid": 331,
   "issues": [],
   "blocks": [
     {
@@ -484,6 +484,13 @@
     },
     {
       "url": "/hotel-financing/appraisal-requirements",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/bank-cre-concentration-limits",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,
