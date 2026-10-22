@@ -31,6 +31,7 @@ import { page as a_refinance_or_sell } from "./refinance-or-sell";
 import { page as a_refinance } from "./refinance";
 import { page as a_sba_7a_vs_504 } from "./sba-7a-vs-504";
 import { page as a_sba_franchise_directory } from "./sba-franchise-directory";
+import { page as a_sba_size_standards } from "./sba-size-standards";
 import { page as a_usda_b_and_i_loans } from "./usda-b-and-i-loans";
 import { page as a_capital_stack } from "./capital-stack";
 import { page as a_cash_out_refinance } from "./cash-out-refinance";
@@ -74,6 +75,7 @@ export const spokes: AnswerPage[] = [
   a_refinance,
   a_sba_7a_vs_504,
   a_sba_franchise_directory,
+  a_sba_size_standards,
   a_usda_b_and_i_loans,
   a_capital_stack,
   a_cash_out_refinance,

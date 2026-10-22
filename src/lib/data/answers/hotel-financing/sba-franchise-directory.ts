@@ -259,6 +259,7 @@ export const page: AnswerPage = {
   related: {
     hub: "/hotel-financing",
     siblings: [
+      "/hotel-financing/sba-size-standards",
       "/hotel-financing/sba-7a-vs-504",
       "/hotel-financing/extended-stay-financing",
       "/hotel-financing/brand-conversion-financing",

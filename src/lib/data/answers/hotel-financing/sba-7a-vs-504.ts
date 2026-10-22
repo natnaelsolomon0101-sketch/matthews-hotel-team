@@ -237,6 +237,7 @@ export const page: AnswerPage = {
   related: {
     hub: "/hotel-financing",
     siblings: [
+      "/hotel-financing/sba-size-standards",
       "/hotel-financing/sba-franchise-directory",
       "/hotel-financing/appraisal-requirements",
       "/hotel-financing/prepayment-penalties",
