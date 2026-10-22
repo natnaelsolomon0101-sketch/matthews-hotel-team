@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-21T14:35:47.349Z",
-  "base": "http://localhost:44339",
+  "runAt": "2026-10-22T14:36:16.429Z",
+  "base": "http://localhost:34029",
   "edges": [
     {
       "from": "/",
@@ -4113,6 +4113,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-financing/sba-franchise-directory"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-financing/sba-size-standards"
     },
     {
       "from": "/sitemap",
@@ -43748,6 +43752,10 @@
     },
     {
       "from": "/hotel-financing",
+      "to": "/hotel-financing/sba-size-standards"
+    },
+    {
+      "from": "/hotel-financing",
       "to": "/team/miles-cortez"
     },
     {
@@ -47576,6 +47584,10 @@
     },
     {
       "from": "/hotel-financing/lenders-under-5-million",
+      "to": "/hotel-financing/sba-size-standards"
+    },
+    {
+      "from": "/hotel-financing/lenders-under-5-million",
       "to": "/hotel-financing/sba-franchise-directory"
     },
     {
@@ -49816,6 +49828,10 @@
     },
     {
       "from": "/hotel-financing/sba-7a-vs-504",
+      "to": "/hotel-financing/sba-size-standards"
+    },
+    {
+      "from": "/hotel-financing/sba-7a-vs-504",
       "to": "/hotel-financing/sba-franchise-directory"
     },
     {
@@ -50040,6 +50056,10 @@
     },
     {
       "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/hotel-financing/sba-size-standards"
+    },
+    {
+      "from": "/hotel-financing/sba-franchise-directory",
       "to": "/hotel-financing/brand-conversion-financing"
     },
     {
@@ -50160,6 +50180,210 @@
     },
     {
       "from": "/hotel-financing/sba-franchise-directory",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/_next/static/chunks/e7051121e5f1db32.css"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/hotel-financing/sba-size-standards.md"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/hotel-financing/hotel-lenders-by-type"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/hotel-financing/sba-7a-vs-504"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/hotel-financing/sba-franchise-directory"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/hotel-financing/lenders-under-5-million"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/hotel-financing/bank-cre-concentration-limits"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/hotel-financing/usda-b-and-i-loans"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/buy-a-hotel/how-much-money-do-you-need"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/glossary/sba-7a"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/glossary/sba-504"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-financing/sba-size-standards",
       "to": "/sitemap"
     },
     {
@@ -73119,6 +73343,7 @@
         "/hotel-financing/refinance",
         "/hotel-financing/sba-7a-vs-504",
         "/hotel-financing/sba-franchise-directory",
+        "/hotel-financing/sba-size-standards",
         "/hotel-financing/usda-b-and-i-loans",
         "/hotel-financing/capital-stack",
         "/hotel-financing/cash-out-refinance",
@@ -84101,6 +84326,7 @@
         "/hotel-financing/refinance",
         "/hotel-financing/sba-7a-vs-504",
         "/hotel-financing/sba-franchise-directory",
+        "/hotel-financing/sba-size-standards",
         "/team/miles-cortez",
         "/buy-a-hotel",
         "/glossary",
@@ -85172,6 +85398,7 @@
         "/hotel-financing/loan-requirements",
         "/hotel-financing/pip-and-renovation-loans",
         "/team/miles-cortez",
+        "/hotel-financing/sba-size-standards",
         "/hotel-financing/sba-franchise-directory",
         "/hotel-financing/hotel-lenders-by-type",
         "/glossary",
@@ -85798,6 +86025,7 @@
         "/team/luke-thompson",
         "/buy-a-hotel/environmental-liability",
         "/team/miles-cortez",
+        "/hotel-financing/sba-size-standards",
         "/hotel-financing/sba-franchise-directory",
         "/hotel-financing/appraisal-requirements",
         "/hotel-financing/prepayment-penalties",
@@ -85860,6 +86088,7 @@
         "/hotel-financing/loan-requirements",
         "/hotel-financing/sba-7a-vs-504",
         "/team/miles-cortez",
+        "/hotel-financing/sba-size-standards",
         "/hotel-financing/brand-conversion-financing",
         "/hotel-financing/lenders-under-5-million",
         "/hotel-financing/pip-and-renovation-loans",
@@ -85875,6 +86104,63 @@
         "/tools",
         "/rates/methodology",
         "/data/hotel-financing-statistics",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/hotel-financing/sba-size-standards",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/e7051121e5f1db32.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-financing/sba-size-standards.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/luke-thompson",
+        "/hotel-financing/hotel-lenders-by-type",
+        "/team/miles-cortez",
+        "/data/sba-hotel-lending",
+        "/hotel-financing/sba-7a-vs-504",
+        "/hotel-financing/sba-franchise-directory",
+        "/hotel-financing/lenders-under-5-million",
+        "/hotel-financing/loan-requirements",
+        "/hotel-financing/bank-cre-concentration-limits",
+        "/hotel-financing/usda-b-and-i-loans",
+        "/buy-a-hotel/how-much-money-do-you-need",
+        "/glossary",
+        "/glossary/sba-7a",
+        "/glossary/sba-504",
+        "/data/hotel-financing-statistics",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
         "/research/mhi",
         "/research",
         "/hotels-for-sale",
