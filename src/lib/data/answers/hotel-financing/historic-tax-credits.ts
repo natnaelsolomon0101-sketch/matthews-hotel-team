@@ -257,6 +257,7 @@ export const page: AnswerPage = {
       "/hotel-financing/pip-and-renovation-loans",
       "/hotel-financing/c-pace-financing",
       "/hotel-financing/opportunity-zones",
+      "/hotel-financing/new-markets-tax-credits",
       "/hotel-financing/construction-loans",
       "/hotel-financing/brand-conversion-financing"
     ],
