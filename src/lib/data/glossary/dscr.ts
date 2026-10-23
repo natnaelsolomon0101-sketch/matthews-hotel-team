@@ -69,6 +69,7 @@ export const entry: GlossaryEntry = {
   ],
   relatedAnswers: [
     "/hotel-financing/loan-requirements",
+    "/hotel-financing/new-markets-tax-credits",
     "/hotel-financing/hotel-loan-rates",
     "/tools/dscr-calculator",
     "/hotel-financing/chapter-11-bankruptcy"

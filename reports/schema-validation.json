@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-10-22T14:36:06.933Z",
+  "runAt": "2026-10-23T14:29:26.255Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 332,
-  "blocksFound": 332,
-  "blocksValid": 332,
+  "urlsChecked": 333,
+  "blocksFound": 333,
+  "blocksValid": 333,
   "issues": [],
   "blocks": [
     {
@@ -631,6 +631,13 @@
     },
     {
       "url": "/hotel-financing/loan-workouts",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/new-markets-tax-credits",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,

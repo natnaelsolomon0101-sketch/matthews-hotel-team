@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-22T14:36:16.429Z",
-  "base": "http://localhost:34029",
+  "runAt": "2026-10-23T14:29:34.990Z",
+  "base": "http://localhost:44521",
   "edges": [
     {
       "from": "/",
@@ -4081,6 +4081,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-financing/loan-workouts"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-financing/new-markets-tax-credits"
     },
     {
       "from": "/sitemap",
@@ -43728,6 +43732,10 @@
     },
     {
       "from": "/hotel-financing",
+      "to": "/hotel-financing/new-markets-tax-credits"
+    },
+    {
+      "from": "/hotel-financing",
       "to": "/hotel-financing/prepayment-penalties"
     },
     {
@@ -46576,6 +46584,10 @@
     },
     {
       "from": "/hotel-financing/historic-tax-credits",
+      "to": "/hotel-financing/new-markets-tax-credits"
+    },
+    {
+      "from": "/hotel-financing/historic-tax-credits",
       "to": "/hotel-financing/brand-conversion-financing"
     },
     {
@@ -48523,6 +48535,214 @@
       "to": "/sitemap"
     },
     {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/_next/static/chunks/e7051121e5f1db32.css"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/hotel-financing/new-markets-tax-credits.md"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/glossary/noi"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/glossary/dscr"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/hotel-financing/historic-tax-credits"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/hotel-financing/opportunity-zones"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/hotel-financing/c-pace-financing"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/hotel-financing/brand-conversion-financing"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/hotel-financing/capital-stack"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/hotel-financing/usda-b-and-i-loans"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/hotel-financing/sba-7a-vs-504"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/hotel-financing/refinance-or-sell"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/tools/hotel-loan-sizing-calculator"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-financing/new-markets-tax-credits",
+      "to": "/sitemap"
+    },
+    {
       "from": "/hotel-financing/non-recourse-loans",
       "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     },
@@ -49013,6 +49233,10 @@
     {
       "from": "/hotel-financing/opportunity-zones",
       "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-financing/opportunity-zones",
+      "to": "/hotel-financing/new-markets-tax-credits"
     },
     {
       "from": "/hotel-financing/opportunity-zones",
@@ -73335,6 +73559,7 @@
         "/hotel-financing/loan-maturities-2026-2027",
         "/hotel-financing/loan-requirements",
         "/hotel-financing/loan-workouts",
+        "/hotel-financing/new-markets-tax-credits",
         "/hotel-financing/non-recourse-loans",
         "/hotel-financing/prepayment-penalties",
         "/hotel-financing/opportunity-zones",
@@ -84320,6 +84545,7 @@
         "/hotel-financing/how-debt-placement-works",
         "/hotel-financing/loan-maturities-2026-2027",
         "/hotel-financing/loan-workouts",
+        "/hotel-financing/new-markets-tax-credits",
         "/hotel-financing/prepayment-penalties",
         "/hotel-financing/pip-and-renovation-loans",
         "/hotel-financing/refinance-or-sell",
@@ -85116,6 +85342,7 @@
         "/hotel-financing/c-pace-financing",
         "/team/nate-solomon",
         "/hotel-financing/opportunity-zones",
+        "/hotel-financing/new-markets-tax-credits",
         "/hotel-financing/brand-conversion-financing",
         "/glossary",
         "/glossary/pip",
@@ -85661,6 +85888,64 @@
       "missing": []
     },
     {
+      "url": "/hotel-financing/new-markets-tax-credits",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/e7051121e5f1db32.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-financing/new-markets-tax-credits.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/luke-thompson",
+        "/glossary/noi",
+        "/glossary/dscr",
+        "/team/nate-solomon",
+        "/hotel-financing/historic-tax-credits",
+        "/hotel-financing/opportunity-zones",
+        "/hotel-financing/c-pace-financing",
+        "/hotel-financing/brand-conversion-financing",
+        "/hotel-financing/capital-stack",
+        "/hotel-financing/usda-b-and-i-loans",
+        "/hotel-financing/sba-7a-vs-504",
+        "/hotel-financing/refinance-or-sell",
+        "/glossary",
+        "/tools/hotel-loan-sizing-calculator",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
       "url": "/hotel-financing/non-recourse-loans",
       "outboundInternal": [
         "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
@@ -85798,6 +86083,7 @@
         "/hotel-financing/bridge-loans",
         "/hotel-financing/historic-tax-credits",
         "/team/luke-thompson",
+        "/hotel-financing/new-markets-tax-credits",
         "/hotel-financing/eb-5-financing",
         "/hotel-financing/refinance-or-sell",
         "/glossary",
