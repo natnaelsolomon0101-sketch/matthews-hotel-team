@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-26T13:31:56.307Z",
-  "base": "http://localhost:42305",
+  "runAt": "2026-10-26T14:44:25.993Z",
+  "base": "http://localhost:40175",
   "edges": [
     {
       "from": "/",
@@ -4205,6 +4205,10 @@
     {
       "from": "/sitemap",
       "to": "/sell-a-hotel/selling-a-hotel-on-a-ground-lease"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/sell-a-hotel/selling-to-a-foreign-buyer"
     },
     {
       "from": "/sitemap",
@@ -40624,6 +40628,10 @@
     },
     {
       "from": "/glossary/going-concern-value",
+      "to": "/sell-a-hotel/selling-to-a-foreign-buyer"
+    },
+    {
+      "from": "/glossary/going-concern-value",
       "to": "/sell-a-hotel/liquor-license-transfer"
     },
     {
@@ -43249,6 +43257,10 @@
     {
       "from": "/glossary/ground-lease",
       "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/glossary/ground-lease",
+      "to": "/sell-a-hotel/selling-to-a-foreign-buyer"
     },
     {
       "from": "/glossary/ground-lease",
@@ -52840,6 +52852,10 @@
     },
     {
       "from": "/sell-a-hotel",
+      "to": "/sell-a-hotel/selling-to-a-foreign-buyer"
+    },
+    {
+      "from": "/sell-a-hotel",
       "to": "/sell-a-hotel/tax-clearance-and-withholding"
     },
     {
@@ -55847,6 +55863,198 @@
       "to": "/sitemap"
     },
     {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/_next/static/chunks/e7051121e5f1db32.css"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/sell-a-hotel/selling-to-a-foreign-buyer.md"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/listings"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/rates"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/about"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/team"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/contact"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/sell-a-hotel/how-long-it-takes"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/sell-a-hotel/franchise-transfer"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/sell-a-hotel/liquor-license-transfer"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/sell-a-hotel/tax-clearance-and-withholding"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/sell-a-hotel/what-buyers-look-for"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/glossary"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/glossary/going-concern-value"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/glossary/ground-lease"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/tools"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/research"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/markets"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/closed"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/process"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/services"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/insights"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/press"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/developers"
+    },
+    {
+      "from": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "to": "/sitemap"
+    },
+    {
       "from": "/sell-a-hotel/tax-clearance-and-withholding",
       "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     },
@@ -55921,6 +56129,10 @@
     {
       "from": "/sell-a-hotel/tax-clearance-and-withholding",
       "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/sell-a-hotel/tax-clearance-and-withholding",
+      "to": "/sell-a-hotel/selling-to-a-foreign-buyer"
     },
     {
       "from": "/sell-a-hotel/tax-clearance-and-withholding",
@@ -56377,6 +56589,10 @@
     {
       "from": "/sell-a-hotel/what-buyers-look-for",
       "to": "/sell-a-hotel/selling-a-hotel-on-a-ground-lease"
+    },
+    {
+      "from": "/sell-a-hotel/what-buyers-look-for",
+      "to": "/sell-a-hotel/selling-to-a-foreign-buyer"
     },
     {
       "from": "/sell-a-hotel/what-buyers-look-for",
@@ -74158,6 +74374,7 @@
         "/sell-a-hotel/off-market-vs-marketed",
         "/sell-a-hotel/selling-a-distressed-hotel",
         "/sell-a-hotel/selling-a-hotel-on-a-ground-lease",
+        "/sell-a-hotel/selling-to-a-foreign-buyer",
         "/sell-a-hotel/tax-clearance-and-withholding",
         "/sell-a-hotel/taxes-when-selling-a-hotel",
         "/sell-a-hotel/what-buyers-look-for",
@@ -84222,6 +84439,7 @@
         "/hotel-valuation/broker-opinion-of-value",
         "/hotel-financing/loan-requirements",
         "/sell-a-hotel/tax-clearance-and-withholding",
+        "/sell-a-hotel/selling-to-a-foreign-buyer",
         "/sell-a-hotel/liquor-license-transfer",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
@@ -84963,6 +85181,7 @@
         "/hotel-valuation/how-to-value-a-hotel",
         "/sell-a-hotel/documents-needed",
         "/hotel-financing/loan-requirements",
+        "/sell-a-hotel/selling-to-a-foreign-buyer",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -87636,6 +87855,7 @@
         "/sell-a-hotel/liquor-license-transfer",
         "/sell-a-hotel/selling-a-distressed-hotel",
         "/sell-a-hotel/selling-a-hotel-on-a-ground-lease",
+        "/sell-a-hotel/selling-to-a-foreign-buyer",
         "/sell-a-hotel/tax-clearance-and-withholding",
         "/sell-a-hotel/what-buyers-look-for",
         "/team/luke-thompson",
@@ -88476,6 +88696,60 @@
       "missing": []
     },
     {
+      "url": "/sell-a-hotel/selling-to-a-foreign-buyer",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/e7051121e5f1db32.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/sell-a-hotel/selling-to-a-foreign-buyer.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/nate-solomon",
+        "/sell-a-hotel/how-long-it-takes",
+        "/sell-a-hotel/franchise-transfer",
+        "/sell-a-hotel/liquor-license-transfer",
+        "/sell-a-hotel/tax-clearance-and-withholding",
+        "/team/luke-thompson",
+        "/sell-a-hotel/what-buyers-look-for",
+        "/glossary",
+        "/glossary/going-concern-value",
+        "/glossary/ground-lease",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
       "url": "/sell-a-hotel/tax-clearance-and-withholding",
       "outboundInternal": [
         "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
@@ -88497,6 +88771,7 @@
         "/sell-a-hotel/taxes-when-selling-a-hotel",
         "/sell-a-hotel/documents-needed",
         "/buy-a-hotel/how-to-make-an-offer",
+        "/sell-a-hotel/selling-to-a-foreign-buyer",
         "/sell-a-hotel/1031-without-buying-another-hotel",
         "/sell-a-hotel/how-to-sell-a-hotel",
         "/sell-a-hotel/how-long-it-takes",
@@ -88623,6 +88898,7 @@
         "/buy-a-hotel/seller-financing",
         "/buy-a-hotel/due-diligence-checklist",
         "/sell-a-hotel/selling-a-hotel-on-a-ground-lease",
+        "/sell-a-hotel/selling-to-a-foreign-buyer",
         "/tools/hotel-value-estimator",
         "/hotel-valuation/broker-opinion-of-value",
         "/hotel-industry/hotel-worker-minimum-wage",

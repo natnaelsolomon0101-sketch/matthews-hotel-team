@@ -62,7 +62,7 @@ export const page: AnswerPage = {
     {
       h2: "What physical and legal issues do buyers check?",
       lead: "The building's condition, environmental status, title and survey, licenses, contracts and staffing, each through a third-party report or a document review.",
-      body: "The buyer's workstreams are listed in order at `/buy-a-hotel/due-diligence-checklist`: property condition assessment, Phase I environmental report, ALTA survey and title, the franchise application, the liquor license and the staffing plan. The seller's version of that list is simple. Anything those reports will find, you want to know first.\n\nRoofs, elevators, HVAC, the parking lot and life-safety systems are the items that turn into credits at the closing table. Open permits, unrecorded easements and a liquor license that cannot transfer on the buyer's timeline are the items that delay closings. If the hotel is on leased land, the ground lease is its own review, covered at `/sell-a-hotel/selling-a-hotel-on-a-ground-lease`.\n\nContracts matter too. Buyers ask which agreements they must assume: the management agreement, equipment leases, service contracts and union agreements. A management agreement that cannot be terminated on sale narrows the buyer pool."
+      body: "The buyer's workstreams are listed in order at `/buy-a-hotel/due-diligence-checklist`: property condition assessment, Phase I environmental report, ALTA survey and title, the franchise application, the liquor license and the staffing plan. The seller's version of that list is simple. Anything those reports will find, you want to know first.\n\nRoofs, elevators, HVAC, the parking lot and life-safety systems are the items that turn into credits at the closing table. Open permits, unrecorded easements and a liquor license that cannot transfer on the buyer's timeline are the items that delay closings. If the hotel is on leased land, the ground lease is its own review, covered at `/sell-a-hotel/selling-a-hotel-on-a-ground-lease`.\n\nContracts matter too. Buyers ask which agreements they must assume: the management agreement, equipment leases, service contracts and union agreements. A management agreement that cannot be terminated on sale narrows the buyer pool.\n\nOne buyer attribute sits outside all of those reports: where the buyer's capital is from. It changes the schedule rather than the price, and only for a hotel in a covered port or near a listed military installation. That test is at [can I sell my hotel to a foreign buyer?](/sell-a-hotel/selling-to-a-foreign-buyer)."
     },
     {
       h2: "What can I do in the year before I sell?",
@@ -211,7 +211,8 @@ export const page: AnswerPage = {
       "/sell-a-hotel/how-to-sell-a-hotel",
       "/sell-a-hotel/franchise-agreement-expiration",
       "/sell-a-hotel/selling-a-hotel-on-a-ground-lease",
-      "/sell-a-hotel/how-long-it-takes"
+      "/sell-a-hotel/how-long-it-takes",
+      "/sell-a-hotel/selling-to-a-foreign-buyer"
     ],
     glossary: [
       "/glossary/noi",

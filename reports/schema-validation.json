@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-10-26T13:31:46.259Z",
+  "runAt": "2026-10-26T14:44:16.112Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 333,
-  "blocksFound": 333,
-  "blocksValid": 333,
+  "urlsChecked": 334,
+  "blocksFound": 334,
+  "blocksValid": 334,
   "issues": [],
   "blocks": [
     {
@@ -855,6 +855,13 @@
     },
     {
       "url": "/sell-a-hotel/selling-a-hotel-on-a-ground-lease",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/sell-a-hotel/selling-to-a-foreign-buyer",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,
