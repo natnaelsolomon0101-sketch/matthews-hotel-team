@@ -70,6 +70,7 @@ export const entry: GlossaryEntry = {
     "/hotel-valuation/broker-opinion-of-value",
     "/hotel-financing/loan-requirements",
     "/sell-a-hotel/tax-clearance-and-withholding",
+    "/sell-a-hotel/selling-to-a-foreign-buyer",
     "/sell-a-hotel/liquor-license-transfer"
   ],
   lastUpdated: "2026-10-05",
