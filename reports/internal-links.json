@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-23T14:49:43.099Z",
-  "base": "http://localhost:39525",
+  "runAt": "2026-10-26T13:31:56.307Z",
+  "base": "http://localhost:42305",
   "edges": [
     {
       "from": "/",
@@ -37944,6 +37944,22 @@
     },
     {
       "from": "/glossary/cap-rate",
+      "to": "/sell-a-hotel/1031-without-buying-another-hotel"
+    },
+    {
+      "from": "/glossary/cap-rate",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/glossary/cap-rate",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/glossary/cap-rate",
+      "to": "/hotel-industry/energy-benchmarking-and-emissions-limits"
+    },
+    {
+      "from": "/glossary/cap-rate",
       "to": "/markets/austin-tx"
     },
     {
@@ -38141,6 +38157,18 @@
     {
       "from": "/glossary/revpar",
       "to": "/glossary/bov"
+    },
+    {
+      "from": "/glossary/revpar",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/glossary/revpar",
+      "to": "/hotel-valuation/hotel-cap-rates"
+    },
+    {
+      "from": "/glossary/revpar",
+      "to": "/hotel-industry/resort-fees"
     },
     {
       "from": "/glossary/revpar",
@@ -38344,6 +38372,22 @@
     },
     {
       "from": "/glossary/adr",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/glossary/adr",
+      "to": "/hotel-valuation/select-service-vs-full-service"
+    },
+    {
+      "from": "/glossary/adr",
+      "to": "/hotel-industry/resort-fees"
+    },
+    {
+      "from": "/glossary/adr",
+      "to": "/hotel-industry/fire-safety-and-federal-travel"
+    },
+    {
+      "from": "/glossary/adr",
       "to": "/markets/austin-tx"
     },
     {
@@ -38541,6 +38585,38 @@
     {
       "from": "/glossary/pip",
       "to": "/glossary/iom"
+    },
+    {
+      "from": "/glossary/pip",
+      "to": "/hotel-financing/pip-and-renovation-loans"
+    },
+    {
+      "from": "/glossary/pip",
+      "to": "/sell-a-hotel/documents-needed"
+    },
+    {
+      "from": "/glossary/pip",
+      "to": "/sell-a-hotel/franchise-transfer"
+    },
+    {
+      "from": "/glossary/pip",
+      "to": "/hotel-industry/ada-requirements"
+    },
+    {
+      "from": "/glossary/pip",
+      "to": "/hotel-industry/energy-benchmarking-and-emissions-limits"
+    },
+    {
+      "from": "/glossary/pip",
+      "to": "/hotel-industry/fire-safety-and-federal-travel"
+    },
+    {
+      "from": "/glossary/pip",
+      "to": "/hotel-industry/asbestos-renovation-rules"
+    },
+    {
+      "from": "/glossary/pip",
+      "to": "/hotel-industry/karis-law-911-requirements"
     },
     {
       "from": "/glossary/pip",
@@ -38744,6 +38820,18 @@
     },
     {
       "from": "/glossary/bov",
+      "to": "/hotel-financing/appraisal-requirements"
+    },
+    {
+      "from": "/glossary/bov",
+      "to": "/sell-a-hotel/1031-without-buying-another-hotel"
+    },
+    {
+      "from": "/glossary/bov",
+      "to": "/hotel-valuation/broker-opinion-of-value"
+    },
+    {
+      "from": "/glossary/bov",
       "to": "/markets/austin-tx"
     },
     {
@@ -38941,6 +39029,22 @@
     {
       "from": "/glossary/iom",
       "to": "/glossary/pip"
+    },
+    {
+      "from": "/glossary/iom",
+      "to": "/sell-a-hotel/documents-needed"
+    },
+    {
+      "from": "/glossary/iom",
+      "to": "/sell-a-hotel/how-to-sell-a-hotel"
+    },
+    {
+      "from": "/glossary/iom",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/glossary/iom",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
     },
     {
       "from": "/glossary/iom",
@@ -39148,6 +39252,26 @@
     },
     {
       "from": "/glossary/dscr",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/glossary/dscr",
+      "to": "/hotel-financing/new-markets-tax-credits"
+    },
+    {
+      "from": "/glossary/dscr",
+      "to": "/hotel-financing/hotel-loan-rates"
+    },
+    {
+      "from": "/glossary/dscr",
+      "to": "/tools/dscr-calculator"
+    },
+    {
+      "from": "/glossary/dscr",
+      "to": "/hotel-financing/chapter-11-bankruptcy"
+    },
+    {
+      "from": "/glossary/dscr",
       "to": "/buy-a-hotel"
     },
     {
@@ -39316,6 +39440,22 @@
     },
     {
       "from": "/glossary/debt-yield",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/glossary/debt-yield",
+      "to": "/hotel-financing/cmbs-loans"
+    },
+    {
+      "from": "/glossary/debt-yield",
+      "to": "/hotel-financing/hotel-lenders-by-type"
+    },
+    {
+      "from": "/glossary/debt-yield",
+      "to": "/hotel-financing/bank-cre-concentration-limits"
+    },
+    {
+      "from": "/glossary/debt-yield",
       "to": "/buy-a-hotel"
     },
     {
@@ -39481,6 +39621,42 @@
     {
       "from": "/glossary/noi",
       "to": "/glossary/adr"
+    },
+    {
+      "from": "/glossary/noi",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/glossary/noi",
+      "to": "/hotel-valuation/hotel-cap-rates"
+    },
+    {
+      "from": "/glossary/noi",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/glossary/noi",
+      "to": "/hotel-financing/new-markets-tax-credits"
+    },
+    {
+      "from": "/glossary/noi",
+      "to": "/hotel-industry/resort-fees"
+    },
+    {
+      "from": "/glossary/noi",
+      "to": "/hotel-financing/flood-insurance-requirements"
+    },
+    {
+      "from": "/glossary/noi",
+      "to": "/sell-a-hotel/liquor-license-transfer"
+    },
+    {
+      "from": "/glossary/noi",
+      "to": "/hotel-industry/hotel-worker-minimum-wage"
+    },
+    {
+      "from": "/glossary/noi",
+      "to": "/hotel-industry/energy-benchmarking-and-emissions-limits"
     },
     {
       "from": "/glossary/noi",
@@ -39656,6 +39832,30 @@
     },
     {
       "from": "/glossary/ltv",
+      "to": "/hotel-financing/appraisal-requirements"
+    },
+    {
+      "from": "/glossary/ltv",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/glossary/ltv",
+      "to": "/tools/dscr-calculator"
+    },
+    {
+      "from": "/glossary/ltv",
+      "to": "/hotel-financing/sba-7a-vs-504"
+    },
+    {
+      "from": "/glossary/ltv",
+      "to": "/hotel-financing/flood-insurance-requirements"
+    },
+    {
+      "from": "/glossary/ltv",
+      "to": "/hotel-financing/bank-cre-concentration-limits"
+    },
+    {
+      "from": "/glossary/ltv",
       "to": "/buy-a-hotel"
     },
     {
@@ -39828,6 +40028,38 @@
     },
     {
       "from": "/glossary/ffe-reserve",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/glossary/ffe-reserve",
+      "to": "/hotel-financing/pip-and-renovation-loans"
+    },
+    {
+      "from": "/glossary/ffe-reserve",
+      "to": "/sell-a-hotel/documents-needed"
+    },
+    {
+      "from": "/glossary/ffe-reserve",
+      "to": "/hotel-industry/ada-requirements"
+    },
+    {
+      "from": "/glossary/ffe-reserve",
+      "to": "/hotel-financing/flood-insurance-requirements"
+    },
+    {
+      "from": "/glossary/ffe-reserve",
+      "to": "/sell-a-hotel/tax-clearance-and-withholding"
+    },
+    {
+      "from": "/glossary/ffe-reserve",
+      "to": "/hotel-industry/fire-safety-and-federal-travel"
+    },
+    {
+      "from": "/glossary/ffe-reserve",
+      "to": "/hotel-industry/karis-law-911-requirements"
+    },
+    {
+      "from": "/glossary/ffe-reserve",
       "to": "/buy-a-hotel"
     },
     {
@@ -39993,6 +40225,18 @@
     {
       "from": "/glossary/mpi-ari-rgi",
       "to": "/glossary/adr"
+    },
+    {
+      "from": "/glossary/mpi-ari-rgi",
+      "to": "/sell-a-hotel/documents-needed"
+    },
+    {
+      "from": "/glossary/mpi-ari-rgi",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/glossary/mpi-ari-rgi",
+      "to": "/hotel-valuation/broker-opinion-of-value"
     },
     {
       "from": "/glossary/mpi-ari-rgi",
@@ -40165,6 +40409,22 @@
     {
       "from": "/glossary/per-key",
       "to": "/glossary/revpar"
+    },
+    {
+      "from": "/glossary/per-key",
+      "to": "/hotel-financing/appraisal-requirements"
+    },
+    {
+      "from": "/glossary/per-key",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/glossary/per-key",
+      "to": "/hotel-valuation/select-service-vs-full-service"
+    },
+    {
+      "from": "/glossary/per-key",
+      "to": "/hotel-valuation/broker-opinion-of-value"
     },
     {
       "from": "/glossary/per-key",
@@ -40340,6 +40600,34 @@
     },
     {
       "from": "/glossary/going-concern-value",
+      "to": "/hotel-financing/appraisal-requirements"
+    },
+    {
+      "from": "/glossary/going-concern-value",
+      "to": "/sell-a-hotel/1031-without-buying-another-hotel"
+    },
+    {
+      "from": "/glossary/going-concern-value",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/glossary/going-concern-value",
+      "to": "/hotel-valuation/broker-opinion-of-value"
+    },
+    {
+      "from": "/glossary/going-concern-value",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/glossary/going-concern-value",
+      "to": "/sell-a-hotel/tax-clearance-and-withholding"
+    },
+    {
+      "from": "/glossary/going-concern-value",
+      "to": "/sell-a-hotel/liquor-license-transfer"
+    },
+    {
+      "from": "/glossary/going-concern-value",
       "to": "/buy-a-hotel"
     },
     {
@@ -40509,6 +40797,26 @@
     {
       "from": "/glossary/comfort-letter",
       "to": "/glossary/pip"
+    },
+    {
+      "from": "/glossary/comfort-letter",
+      "to": "/hotel-financing/sba-franchise-directory"
+    },
+    {
+      "from": "/glossary/comfort-letter",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/glossary/comfort-letter",
+      "to": "/sell-a-hotel/franchise-transfer"
+    },
+    {
+      "from": "/glossary/comfort-letter",
+      "to": "/hotel-financing/faq"
+    },
+    {
+      "from": "/glossary/comfort-letter",
+      "to": "/hotel-financing/how-debt-placement-works"
     },
     {
       "from": "/glossary/comfort-letter",
@@ -40684,6 +40992,26 @@
     },
     {
       "from": "/glossary/franchise-fdd",
+      "to": "/hotel-financing/sba-franchise-directory"
+    },
+    {
+      "from": "/glossary/franchise-fdd",
+      "to": "/sell-a-hotel/documents-needed"
+    },
+    {
+      "from": "/glossary/franchise-fdd",
+      "to": "/sell-a-hotel/franchise-transfer"
+    },
+    {
+      "from": "/glossary/franchise-fdd",
+      "to": "/hotel-financing/pip-and-renovation-loans"
+    },
+    {
+      "from": "/glossary/franchise-fdd",
+      "to": "/sell-a-hotel/how-to-sell-a-hotel"
+    },
+    {
+      "from": "/glossary/franchise-fdd",
       "to": "/buy-a-hotel"
     },
     {
@@ -40849,6 +41177,18 @@
     {
       "from": "/glossary/key-money",
       "to": "/glossary/pip"
+    },
+    {
+      "from": "/glossary/key-money",
+      "to": "/hotel-financing/pip-and-renovation-loans"
+    },
+    {
+      "from": "/glossary/key-money",
+      "to": "/sell-a-hotel/how-to-sell-a-hotel"
+    },
+    {
+      "from": "/glossary/key-money",
+      "to": "/sell-a-hotel/documents-needed"
     },
     {
       "from": "/glossary/key-money",
@@ -41020,6 +41360,18 @@
     },
     {
       "from": "/glossary/sofr",
+      "to": "/hotel-financing/hotel-loan-rates"
+    },
+    {
+      "from": "/glossary/sofr",
+      "to": "/hotel-financing/bridge-loans"
+    },
+    {
+      "from": "/glossary/sofr",
+      "to": "/hotel-financing/refinance"
+    },
+    {
+      "from": "/glossary/sofr",
       "to": "/buy-a-hotel"
     },
     {
@@ -41185,6 +41537,22 @@
     {
       "from": "/glossary/prime-rate",
       "to": "/glossary/dscr"
+    },
+    {
+      "from": "/glossary/prime-rate",
+      "to": "/hotel-financing/hotel-loan-rates"
+    },
+    {
+      "from": "/glossary/prime-rate",
+      "to": "/hotel-financing/sba-7a-vs-504"
+    },
+    {
+      "from": "/glossary/prime-rate",
+      "to": "/hotel-financing/refinance"
+    },
+    {
+      "from": "/glossary/prime-rate",
+      "to": "/sell-a-hotel/tax-clearance-and-withholding"
     },
     {
       "from": "/glossary/prime-rate",
@@ -41357,6 +41725,34 @@
     {
       "from": "/glossary/sba-7a",
       "to": "/glossary/dscr"
+    },
+    {
+      "from": "/glossary/sba-7a",
+      "to": "/hotel-financing/sba-franchise-directory"
+    },
+    {
+      "from": "/glossary/sba-7a",
+      "to": "/hotel-financing/prepayment-penalties"
+    },
+    {
+      "from": "/glossary/sba-7a",
+      "to": "/hotel-financing/sba-7a-vs-504"
+    },
+    {
+      "from": "/glossary/sba-7a",
+      "to": "/hotel-financing/sba-size-standards"
+    },
+    {
+      "from": "/glossary/sba-7a",
+      "to": "/hotel-financing/hotel-lenders-by-type"
+    },
+    {
+      "from": "/glossary/sba-7a",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/glossary/sba-7a",
+      "to": "/buy-a-hotel/environmental-liability"
     },
     {
       "from": "/glossary/sba-7a",
@@ -41532,6 +41928,34 @@
     },
     {
       "from": "/glossary/sba-504",
+      "to": "/hotel-financing/sba-franchise-directory"
+    },
+    {
+      "from": "/glossary/sba-504",
+      "to": "/hotel-financing/prepayment-penalties"
+    },
+    {
+      "from": "/glossary/sba-504",
+      "to": "/hotel-financing/sba-7a-vs-504"
+    },
+    {
+      "from": "/glossary/sba-504",
+      "to": "/hotel-financing/sba-size-standards"
+    },
+    {
+      "from": "/glossary/sba-504",
+      "to": "/hotel-financing/hotel-loan-rates"
+    },
+    {
+      "from": "/glossary/sba-504",
+      "to": "/hotel-financing/hotel-lenders-by-type"
+    },
+    {
+      "from": "/glossary/sba-504",
+      "to": "/buy-a-hotel/environmental-liability"
+    },
+    {
+      "from": "/glossary/sba-504",
       "to": "/buy-a-hotel"
     },
     {
@@ -41700,6 +42124,22 @@
     },
     {
       "from": "/glossary/defeasance",
+      "to": "/hotel-financing/prepayment-penalties"
+    },
+    {
+      "from": "/glossary/defeasance",
+      "to": "/hotel-financing/cmbs-loans"
+    },
+    {
+      "from": "/glossary/defeasance",
+      "to": "/hotel-financing/refinance-or-sell"
+    },
+    {
+      "from": "/glossary/defeasance",
+      "to": "/hotel-financing/refinance"
+    },
+    {
+      "from": "/glossary/defeasance",
       "to": "/buy-a-hotel"
     },
     {
@@ -41865,6 +42305,22 @@
     {
       "from": "/glossary/yield-maintenance",
       "to": "/glossary/sba-7a"
+    },
+    {
+      "from": "/glossary/yield-maintenance",
+      "to": "/hotel-financing/prepayment-penalties"
+    },
+    {
+      "from": "/glossary/yield-maintenance",
+      "to": "/hotel-financing/refinance"
+    },
+    {
+      "from": "/glossary/yield-maintenance",
+      "to": "/hotel-financing/refinance-or-sell"
+    },
+    {
+      "from": "/glossary/yield-maintenance",
+      "to": "/hotel-financing/hotel-loan-rates"
     },
     {
       "from": "/glossary/yield-maintenance",
@@ -42040,6 +42496,22 @@
     },
     {
       "from": "/glossary/non-recourse-carve-outs",
+      "to": "/hotel-financing/cmbs-loans"
+    },
+    {
+      "from": "/glossary/non-recourse-carve-outs",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/glossary/non-recourse-carve-outs",
+      "to": "/hotel-financing/loan-workouts"
+    },
+    {
+      "from": "/glossary/non-recourse-carve-outs",
+      "to": "/hotel-financing/chapter-11-bankruptcy"
+    },
+    {
+      "from": "/glossary/non-recourse-carve-outs",
       "to": "/buy-a-hotel"
     },
     {
@@ -42212,6 +42684,18 @@
     },
     {
       "from": "/glossary/mezzanine-debt",
+      "to": "/hotel-financing/hotel-lenders-by-type"
+    },
+    {
+      "from": "/glossary/mezzanine-debt",
+      "to": "/hotel-financing/how-debt-placement-works"
+    },
+    {
+      "from": "/glossary/mezzanine-debt",
+      "to": "/hotel-financing/loan-workouts"
+    },
+    {
+      "from": "/glossary/mezzanine-debt",
       "to": "/buy-a-hotel"
     },
     {
@@ -42377,6 +42861,18 @@
     {
       "from": "/glossary/comp-set",
       "to": "/glossary/adr"
+    },
+    {
+      "from": "/glossary/comp-set",
+      "to": "/sell-a-hotel/documents-needed"
+    },
+    {
+      "from": "/glossary/comp-set",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/glossary/comp-set",
+      "to": "/sell-a-hotel/how-to-sell-a-hotel"
     },
     {
       "from": "/glossary/comp-set",
@@ -42552,6 +43048,26 @@
     },
     {
       "from": "/glossary/gop",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/glossary/gop",
+      "to": "/hotel-valuation/select-service-vs-full-service"
+    },
+    {
+      "from": "/glossary/gop",
+      "to": "/sell-a-hotel/documents-needed"
+    },
+    {
+      "from": "/glossary/gop",
+      "to": "/sell-a-hotel/employees-when-you-sell"
+    },
+    {
+      "from": "/glossary/gop",
+      "to": "/hotel-industry/hotel-worker-minimum-wage"
+    },
+    {
+      "from": "/glossary/gop",
       "to": "/buy-a-hotel"
     },
     {
@@ -42724,6 +43240,18 @@
     },
     {
       "from": "/glossary/ground-lease",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/glossary/ground-lease",
+      "to": "/sell-a-hotel/documents-needed"
+    },
+    {
+      "from": "/glossary/ground-lease",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/glossary/ground-lease",
       "to": "/buy-a-hotel"
     },
     {
@@ -42893,6 +43421,46 @@
     {
       "from": "/glossary/franchise-agreement",
       "to": "/glossary/key-money"
+    },
+    {
+      "from": "/glossary/franchise-agreement",
+      "to": "/hotel-financing/sba-franchise-directory"
+    },
+    {
+      "from": "/glossary/franchise-agreement",
+      "to": "/sell-a-hotel/how-to-sell-a-hotel"
+    },
+    {
+      "from": "/glossary/franchise-agreement",
+      "to": "/sell-a-hotel/franchise-transfer"
+    },
+    {
+      "from": "/glossary/franchise-agreement",
+      "to": "/hotel-financing/pip-and-renovation-loans"
+    },
+    {
+      "from": "/glossary/franchise-agreement",
+      "to": "/sell-a-hotel/documents-needed"
+    },
+    {
+      "from": "/glossary/franchise-agreement",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/glossary/franchise-agreement",
+      "to": "/sell-a-hotel/employees-when-you-sell"
+    },
+    {
+      "from": "/glossary/franchise-agreement",
+      "to": "/hotel-industry/ada-requirements"
+    },
+    {
+      "from": "/glossary/franchise-agreement",
+      "to": "/sell-a-hotel/liquor-license-transfer"
+    },
+    {
+      "from": "/glossary/franchise-agreement",
+      "to": "/hotel-financing/chapter-11-bankruptcy"
     },
     {
       "from": "/glossary/franchise-agreement",
@@ -82906,6 +83474,10 @@
         "/glossary/revpar",
         "/glossary/adr",
         "/glossary/bov",
+        "/sell-a-hotel/1031-without-buying-another-hotel",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/hotel-industry/energy-benchmarking-and-emissions-limits",
         "/markets/austin-tx",
         "/markets/nashville-tn",
         "/markets/atlanta-ga",
@@ -82962,6 +83534,9 @@
         "/glossary/adr",
         "/glossary/cap-rate",
         "/glossary/bov",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/hotel-valuation/hotel-cap-rates",
+        "/hotel-industry/resort-fees",
         "/markets/nashville-tn",
         "/markets/miami-fl",
         "/markets/tampa-fl",
@@ -83018,6 +83593,10 @@
         "/glossary/revpar",
         "/glossary/cap-rate",
         "/glossary/bov",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/hotel-valuation/select-service-vs-full-service",
+        "/hotel-industry/resort-fees",
+        "/hotel-industry/fire-safety-and-federal-travel",
         "/markets/austin-tx",
         "/markets/san-antonio-tx",
         "/markets/charleston-sc",
@@ -83074,6 +83653,14 @@
         "/glossary/bov",
         "/glossary/cap-rate",
         "/glossary/iom",
+        "/hotel-financing/pip-and-renovation-loans",
+        "/sell-a-hotel/documents-needed",
+        "/sell-a-hotel/franchise-transfer",
+        "/hotel-industry/ada-requirements",
+        "/hotel-industry/energy-benchmarking-and-emissions-limits",
+        "/hotel-industry/fire-safety-and-federal-travel",
+        "/hotel-industry/asbestos-renovation-rules",
+        "/hotel-industry/karis-law-911-requirements",
         "/markets/dallas-tx",
         "/markets/atlanta-ga",
         "/markets/phoenix-az",
@@ -83130,6 +83717,9 @@
         "/glossary/iom",
         "/glossary/cap-rate",
         "/glossary/pip",
+        "/hotel-financing/appraisal-requirements",
+        "/sell-a-hotel/1031-without-buying-another-hotel",
+        "/hotel-valuation/broker-opinion-of-value",
         "/markets/austin-tx",
         "/markets/dallas-tx",
         "/markets/nashville-tn",
@@ -83186,6 +83776,10 @@
         "/glossary/bov",
         "/glossary/cap-rate",
         "/glossary/pip",
+        "/sell-a-hotel/documents-needed",
+        "/sell-a-hotel/how-to-sell-a-hotel",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/buy-a-hotel/how-to-make-an-offer",
         "/markets/austin-tx",
         "/markets/atlanta-ga",
         "/markets/miami-fl",
@@ -83243,6 +83837,11 @@
         "/glossary/debt-yield",
         "/glossary/cap-rate",
         "/glossary/revpar",
+        "/hotel-financing/loan-requirements",
+        "/hotel-financing/new-markets-tax-credits",
+        "/hotel-financing/hotel-loan-rates",
+        "/tools/dscr-calculator",
+        "/hotel-financing/chapter-11-bankruptcy",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -83291,6 +83890,10 @@
         "/glossary/cap-rate",
         "/glossary/dscr",
         "/glossary/noi",
+        "/hotel-financing/loan-requirements",
+        "/hotel-financing/cmbs-loans",
+        "/hotel-financing/hotel-lenders-by-type",
+        "/hotel-financing/bank-cre-concentration-limits",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -83339,6 +83942,15 @@
         "/glossary/cap-rate",
         "/glossary/revpar",
         "/glossary/adr",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/hotel-valuation/hotel-cap-rates",
+        "/hotel-financing/loan-requirements",
+        "/hotel-financing/new-markets-tax-credits",
+        "/hotel-industry/resort-fees",
+        "/hotel-financing/flood-insurance-requirements",
+        "/sell-a-hotel/liquor-license-transfer",
+        "/hotel-industry/hotel-worker-minimum-wage",
+        "/hotel-industry/energy-benchmarking-and-emissions-limits",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -83388,6 +84000,12 @@
         "/glossary/debt-yield",
         "/glossary/going-concern-value",
         "/glossary/cap-rate",
+        "/hotel-financing/appraisal-requirements",
+        "/hotel-financing/loan-requirements",
+        "/tools/dscr-calculator",
+        "/hotel-financing/sba-7a-vs-504",
+        "/hotel-financing/flood-insurance-requirements",
+        "/hotel-financing/bank-cre-concentration-limits",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -83437,6 +84055,14 @@
         "/glossary/noi",
         "/glossary/gop",
         "/glossary/cap-rate",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/hotel-financing/pip-and-renovation-loans",
+        "/sell-a-hotel/documents-needed",
+        "/hotel-industry/ada-requirements",
+        "/hotel-financing/flood-insurance-requirements",
+        "/sell-a-hotel/tax-clearance-and-withholding",
+        "/hotel-industry/fire-safety-and-federal-travel",
+        "/hotel-industry/karis-law-911-requirements",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -83485,6 +84111,9 @@
         "/glossary/comp-set",
         "/glossary/revpar",
         "/glossary/adr",
+        "/sell-a-hotel/documents-needed",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/hotel-valuation/broker-opinion-of-value",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -83534,6 +84163,10 @@
         "/glossary/cap-rate",
         "/glossary/noi",
         "/glossary/revpar",
+        "/hotel-financing/appraisal-requirements",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/hotel-valuation/select-service-vs-full-service",
+        "/hotel-valuation/broker-opinion-of-value",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -83583,6 +84216,13 @@
         "/glossary/bov",
         "/glossary/noi",
         "/glossary/cap-rate",
+        "/hotel-financing/appraisal-requirements",
+        "/sell-a-hotel/1031-without-buying-another-hotel",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/hotel-valuation/broker-opinion-of-value",
+        "/hotel-financing/loan-requirements",
+        "/sell-a-hotel/tax-clearance-and-withholding",
+        "/sell-a-hotel/liquor-license-transfer",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -83632,6 +84272,11 @@
         "/glossary/franchise-fdd",
         "/glossary/mezzanine-debt",
         "/glossary/pip",
+        "/hotel-financing/sba-franchise-directory",
+        "/hotel-financing/loan-requirements",
+        "/sell-a-hotel/franchise-transfer",
+        "/hotel-financing/faq",
+        "/hotel-financing/how-debt-placement-works",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -83681,6 +84326,11 @@
         "/glossary/key-money",
         "/glossary/comfort-letter",
         "/glossary/pip",
+        "/hotel-financing/sba-franchise-directory",
+        "/sell-a-hotel/documents-needed",
+        "/sell-a-hotel/franchise-transfer",
+        "/hotel-financing/pip-and-renovation-loans",
+        "/sell-a-hotel/how-to-sell-a-hotel",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -83729,6 +84379,9 @@
         "/glossary/franchise-agreement",
         "/glossary/franchise-fdd",
         "/glossary/pip",
+        "/hotel-financing/pip-and-renovation-loans",
+        "/sell-a-hotel/how-to-sell-a-hotel",
+        "/sell-a-hotel/documents-needed",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -83777,6 +84430,9 @@
         "/glossary/prime-rate",
         "/glossary/dscr",
         "/glossary/yield-maintenance",
+        "/hotel-financing/hotel-loan-rates",
+        "/hotel-financing/bridge-loans",
+        "/hotel-financing/refinance",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -83825,6 +84481,10 @@
         "/glossary/sofr",
         "/glossary/sba-7a",
         "/glossary/dscr",
+        "/hotel-financing/hotel-loan-rates",
+        "/hotel-financing/sba-7a-vs-504",
+        "/hotel-financing/refinance",
+        "/sell-a-hotel/tax-clearance-and-withholding",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -83874,6 +84534,13 @@
         "/glossary/prime-rate",
         "/glossary/ltv",
         "/glossary/dscr",
+        "/hotel-financing/sba-franchise-directory",
+        "/hotel-financing/prepayment-penalties",
+        "/hotel-financing/sba-7a-vs-504",
+        "/hotel-financing/sba-size-standards",
+        "/hotel-financing/hotel-lenders-by-type",
+        "/hotel-financing/loan-requirements",
+        "/buy-a-hotel/environmental-liability",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -83923,6 +84590,13 @@
         "/glossary/ltv",
         "/glossary/ground-lease",
         "/glossary/dscr",
+        "/hotel-financing/sba-franchise-directory",
+        "/hotel-financing/prepayment-penalties",
+        "/hotel-financing/sba-7a-vs-504",
+        "/hotel-financing/sba-size-standards",
+        "/hotel-financing/hotel-loan-rates",
+        "/hotel-financing/hotel-lenders-by-type",
+        "/buy-a-hotel/environmental-liability",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -83971,6 +84645,10 @@
         "/glossary/yield-maintenance",
         "/glossary/non-recourse-carve-outs",
         "/glossary/debt-yield",
+        "/hotel-financing/prepayment-penalties",
+        "/hotel-financing/cmbs-loans",
+        "/hotel-financing/refinance-or-sell",
+        "/hotel-financing/refinance",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -84019,6 +84697,10 @@
         "/glossary/defeasance",
         "/glossary/sofr",
         "/glossary/sba-7a",
+        "/hotel-financing/prepayment-penalties",
+        "/hotel-financing/refinance",
+        "/hotel-financing/refinance-or-sell",
+        "/hotel-financing/hotel-loan-rates",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -84068,6 +84750,10 @@
         "/glossary/mezzanine-debt",
         "/glossary/dscr",
         "/glossary/ltv",
+        "/hotel-financing/cmbs-loans",
+        "/hotel-financing/loan-requirements",
+        "/hotel-financing/loan-workouts",
+        "/hotel-financing/chapter-11-bankruptcy",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -84117,6 +84803,9 @@
         "/glossary/comfort-letter",
         "/glossary/ltv",
         "/glossary/non-recourse-carve-outs",
+        "/hotel-financing/hotel-lenders-by-type",
+        "/hotel-financing/how-debt-placement-works",
+        "/hotel-financing/loan-workouts",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -84165,6 +84854,9 @@
         "/glossary/mpi-ari-rgi",
         "/glossary/revpar",
         "/glossary/adr",
+        "/sell-a-hotel/documents-needed",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/sell-a-hotel/how-to-sell-a-hotel",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -84214,6 +84906,11 @@
         "/glossary/ffe-reserve",
         "/glossary/revpar",
         "/glossary/cap-rate",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/hotel-valuation/select-service-vs-full-service",
+        "/sell-a-hotel/documents-needed",
+        "/sell-a-hotel/employees-when-you-sell",
+        "/hotel-industry/hotel-worker-minimum-wage",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -84263,6 +84960,9 @@
         "/glossary/cap-rate",
         "/glossary/sba-504",
         "/glossary/franchise-agreement",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/sell-a-hotel/documents-needed",
+        "/hotel-financing/loan-requirements",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -84312,6 +85012,16 @@
         "/glossary/pip",
         "/glossary/franchise-fdd",
         "/glossary/key-money",
+        "/hotel-financing/sba-franchise-directory",
+        "/sell-a-hotel/how-to-sell-a-hotel",
+        "/sell-a-hotel/franchise-transfer",
+        "/hotel-financing/pip-and-renovation-loans",
+        "/sell-a-hotel/documents-needed",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/sell-a-hotel/employees-when-you-sell",
+        "/hotel-industry/ada-requirements",
+        "/sell-a-hotel/liquor-license-transfer",
+        "/hotel-financing/chapter-11-bankruptcy",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",

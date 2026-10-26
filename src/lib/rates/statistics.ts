@@ -83,6 +83,8 @@ const V = "2026-09-17";
 const V3 = "2026-09-21";
 /** Re-verified 2026-10-01 for the October 2026 edition. */
 const V4 = "2026-10-01";
+/** Re-verified 2026-10-26: the Trepp distress readings against their newest public coverage. */
+const V5 = "2026-10-26";
 
 const TREASURY = {
   sourceName: "Daily Treasury Par Yield Curve Rates",
@@ -424,36 +426,35 @@ export const STATS: Stat[] = [
   {
     id: "trepp-overall-delinquency",
     group: "maturities-and-distress",
-    text: "The overall CMBS delinquency rate was 7.85% in August 2026, down 1 basis point from July.",
-    sourceName:
-      "Multifamily CMBS servicing rate declined, delinquencies stayed flat in August: Trepp",
+    text: "The overall CMBS delinquency rate was 8.02% in September 2026, up 17 basis points from August.",
+    sourceName: "Multifamily CMBS delinquency and servicing rates rose yet again",
     publisher: "Multifamily Dive, citing Trepp",
-    url: "https://www.multifamilydive.com/news/bank-reo-cmbs-servicing-multifamily-deliquency/830531/",
-    asOf: "2026-09-16",
-    verified: V,
+    url: "https://www.multifamilydive.com/news/cmbs-servicing-federal-reserve-apartment-deliquency/833363/",
+    asOf: "2026-10-19",
+    verified: V5,
+    note: "The August reading of 7.85%, 1 basis point below July, stood here until October 26, 2026.",
   },
   {
     id: "trepp-special-servicing",
     group: "maturities-and-distress",
-    text: "The overall CMBS special servicing rate rose 33 basis points in August 2026 to 11.42%, its highest level since February 2013.",
-    sourceName:
-      "Multifamily CMBS servicing rate declined, delinquencies stayed flat in August: Trepp",
-    publisher: "Multifamily Dive, citing Trepp",
-    url: "https://www.multifamilydive.com/news/bank-reo-cmbs-servicing-multifamily-deliquency/830531/",
-    asOf: "2026-09-16",
-    verified: V,
-    note: "Special servicing leads delinquency. A loan moves to special servicing before it misses a payment, so this is the forward-looking of the two rates.",
+    text: "The overall CMBS special servicing rate rose 7 basis points in September 2026 to 11.49%, its highest level since February 2013.",
+    sourceName: "CMBS Special Servicing Rate Climbs to New Post-2013 High",
+    publisher: "Connect CRE, citing Trepp",
+    url: "https://www.connectcre.com/stories/cmbs-special-servicing-rate-climbs-to-new-post-2013-high/",
+    asOf: "2026-10-14",
+    verified: V5,
+    note: "Special servicing leads delinquency. A loan moves to special servicing before it misses a payment, so this is the forward-looking of the two rates. The 7 basis point rise in September followed a 33 basis point rise in August, which took the rate to 11.42%. The same release puts lodging special servicing at 8.95% in September, up 21 basis points.",
   },
   {
     id: "trepp-lodging-delinquency",
     group: "maturities-and-distress",
-    text: "The lodging CMBS delinquency rate was 5.35% in July 2026, up 13 basis points on the month, and Trepp reported a further increase in August.",
-    sourceName: "Trepp: CMBS Delinquency Rate Up 51 Basis Points in July",
+    text: "The lodging CMBS delinquency rate was 5.84% in August 2026, up 49 basis points on the month.",
+    sourceName: "Trepp: CMBS Delinquency Rate Falls One Basis Point in August",
     publisher: "MBA Newslink, citing Trepp",
-    url: "https://newslink.mba.org/mba-newslinks/2026/august/mba-newslink-thursday-august-6-2026/trepp-cmbs-delinquency-rate-up-51-basis-points-in-july/",
-    asOf: "2026-08-06",
-    verified: V,
-    note: "The August lodging rate itself was not stated in any public release we could open on 2026-09-17, only the direction. We publish July's number and the direction rather than an August number we cannot source.",
+    url: "https://newslink.mba.org/mba-newslinks/2026/september/mba-commercial-multifamily-newslink-april-2/trepp-cmbs-delinquency-rate-falls-one-basis-point-in-august/",
+    asOf: "2026-09-08",
+    verified: V5,
+    note: "This entry carried the July reading of 5.35% and the direction of travel until October 26, 2026, because no release we could open in September stated the August level. Connect CRE, citing the same Trepp report, prints the same 5.84% and the same 49 basis points. The September lodging delinquency rate is still not in any public release we could open on October 26, 2026.",
   },
   {
     id: "cmbs-late-balance",
