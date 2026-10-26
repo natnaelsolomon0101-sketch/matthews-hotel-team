@@ -238,10 +238,16 @@ function expectedFor(url: string, found: string[]): string[] {
     }
   }
 
-  // R11 — a glossary term links the answer page that uses it.
+  // R11 — a glossary term links the answer page that uses it. The rule used
+  // to assert ">=1 cluster hub link", which the site nav satisfies on every
+  // page, so it could never fail: all 29 terms populated `relatedAnswers`
+  // and the served HTML contained none of those links (issue #82). It now
+  // asserts the edge the rule was written for, one line per missing target.
   if (url.startsWith("/glossary/")) {
-    if (!CLUSTER_HUBS.some((h) => has(h)))
-      missing.push("R11: >=1 cluster answer link");
+    const term = glossary.find((g) => `/glossary/${g.slug}` === url);
+    for (const target of term?.relatedAnswers ?? []) {
+      if (!found.includes(target)) missing.push(`R11: relatedAnswers ${target}`);
+    }
   }
 
   // Tool pages follow the same rules as a spoke.

@@ -269,7 +269,7 @@ const Q1_2026: MhiQuarter = {
   publishedAt: "2026-04-15",
   nextRefresh: "2026-07-15",
   refreshNote:
-    "Q1 2026 is the most recent published quarter. The Q2 2026 edition was due July 15, 2026 and has not published yet, so every figure on this page is a Q1 2026 reading.",
+    "Q1 2026 is the most recent published quarter. The Q2 2026 edition was due July 15, 2026 and has not published, and Q3 2026 has since closed without an edition either, so every figure on this page is a Q1 2026 reading.",
   headline: "Cap rates compressed 25-50bps off the 2024 peak across Sun Belt select-service.",
   summary:
     "Q1 2026 marked the first full quarter of compressed bid-ask in two years. Sun Belt secondary markets continued to outperform primary metros on RevPAR recovery while pricing more aggressively on cap rate. Select-service is the most actively bid category by transaction count; resort and lifestyle is the tightest cap rate band by spread. Construction-loan freeze that lasted from late 2022 to early 2025 is now fully thawed for sponsors with track records, but supply pipeline remains constrained.",

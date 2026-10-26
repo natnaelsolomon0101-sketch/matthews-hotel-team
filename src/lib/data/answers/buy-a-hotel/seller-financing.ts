@@ -17,7 +17,7 @@ export const page: AnswerPage = {
   title: "Seller Financing for a Hotel Purchase: How It Works",
   h1: "Can I get seller financing to buy a hotel?",
   description: "When a hotel seller will carry a note, how SBA counts it toward your down payment, what the bank requires, and how the IRS taxes the seller. With sources.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-10-26",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -51,7 +51,7 @@ export const page: AnswerPage = {
     {
       h2: "Can a seller note count as my down payment on an SBA loan?",
       lead: "Partly. SOP 50 10 8 lets seller debt count toward the required equity injection only if it is on full standby for the life of the SBA loan and is no more than half of that injection.[1]",
-      body: "The SOP's words, for a complete change of ownership: SBA requires an equity injection of at least 10 percent of the total project costs, and seller debt may not be considered part of the equity injection unless it is on full standby for the life of the SBA loan and it does not exceed half of the SBA-required equity injection.[1] Full standby is defined as no payments of principal or interest for the term of the 7(a) loan. The standby debt may accrue interest, and it may be amortized after the 7(a) loan is paid in full.[1]\n\nThat is a long wait for the seller. A 7(a) real estate loan can run up to 25 years.[6] In practice the seller is paid when the buyer refinances or sells. Under SOP 50 10 8, a seller note must have been in place and current, not on standby, for at least 24 months before a 7(a) loan can refinance it.[7]\n\nThe rules change on October 1, 2026. SBA has posted SOP 50 10 8.1 with that effective date. It keeps the 10 percent minimum for an initial acquisition, says that injection cannot be reduced or eliminated, keeps seller debt among the sources limited to half of the required injection, and lengthens the seasoning period before seller debt can be refinanced to 36 months.[8] It raises the required debt service coverage on an initial acquisition from 1.15 to 1.25, measured on historical or adjusted results, and it adds a rule that acquisition debt which is not on full standby and is interest-only must be underwritten on an amortization of no more than 10 years.[8] If your loan will be approved after that date, ask your lender which version applies.\n\nThe two SBA programs are compared at `/hotel-financing/sba-7a-vs-504`."
+      body: "The SOP's words, for a complete change of ownership: SBA requires an equity injection of at least 10 percent of the total project costs, and seller debt may not be considered part of the equity injection unless it is on full standby for the life of the SBA loan and it does not exceed half of the SBA-required equity injection.[1] Full standby is defined as no payments of principal or interest for the term of the 7(a) loan. The standby debt may accrue interest, and it may be amortized after the 7(a) loan is paid in full.[1]\n\nThat is a long wait for the seller. A 7(a) real estate loan can run up to 25 years.[6] In practice the seller is paid when the buyer refinances or sells. Under SOP 50 10 8, a seller note must have been in place and current, not on standby, for at least 24 months before a 7(a) loan can refinance it.[7]\n\nThe rules changed on October 1, 2026, when SOP 50 10 8.1 took effect. It keeps the 10 percent minimum for an initial acquisition, says that injection cannot be reduced or eliminated, keeps seller debt among the sources limited to half of the required injection, and lengthens the seasoning period before seller debt can be refinanced to 36 months.[8] It raises the required debt service coverage on an initial acquisition from 1.15 to 1.25, measured on historical or adjusted results, and it adds a rule that acquisition debt which is not on full standby and is interest-only must be underwritten on an amortization of no more than 10 years.[8] If your loan was approved before that date, ask your lender which version applies.\n\nThe two SBA programs are compared at `/hotel-financing/sba-7a-vs-504`."
     },
     {
       h2: "What interest rate does a seller note need to carry?",
@@ -136,7 +136,7 @@ export const page: AnswerPage = {
     },
     {
       q: "Are the SBA seller note rules changing?",
-      a: "Yes. SOP 50 10 8.1 takes effect October 1, 2026. It keeps the 10 percent minimum and the half limit, raises required coverage on an initial acquisition to 1.25, and lengthens the wait to refinance seller debt from 24 to 36 months.[7][8]"
+      a: "Yes. SOP 50 10 8.1 took effect October 1, 2026. It keeps the 10 percent minimum and the half limit, raises required coverage on an initial acquisition to 1.25, and lengthens the wait to refinance seller debt from 24 to 36 months.[7][8]"
     },
     {
       q: "What happens to the seller note if I default on the bank loan?",

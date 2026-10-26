@@ -461,7 +461,7 @@ export const EDITIONS: RateEdition[] = [
     publishedAt: "2026-10-01",
     nextRefresh: "2026-11-02",
     directAnswer:
-      "As of September 30, 2026, the 10-year Treasury is 5.29%, the 7-year is 5.19%, the 5-year is 5.09%, and SOFR is 3.90%. Prime is 7.00%, unchanged since September 17. SBA caps a variable-rate 7(a) loan over $350,000 at Prime plus 3.00%, which is 10.00% today. The 25-year SBA 504 debenture priced at 6.54% on September 10 and next prices October 8. Rows that depend on what lenders are actually quoting are marked not yet published.",
+      "As of September 30, 2026, the 10-year Treasury is 5.29%, the 7-year is 5.19%, the 5-year is 5.09%, and SOFR is 3.90%. Prime is 7.00%, unchanged since September 17. SBA caps a variable-rate 7(a) loan over $350,000 at Prime plus 3.00%, which is 10.00% today. The 25-year SBA 504 debenture priced at 6.54% on September 10, the latest pricing inside this edition's September 30 cut-off. Rows that depend on what lenders are actually quoting are marked not yet published.",
     benchmarks: BENCHMARKS,
     rows: OCTOBER_2026_ROWS,
     changelog: [

@@ -11,6 +11,8 @@ import { team } from "@/lib/data/team";
 import { markets } from "@/lib/data/markets";
 import { brands } from "@/lib/data/brands";
 import { insights as allInsights } from "@/lib/data/insights";
+import { answerPages, answerPath } from "@/lib/data/answers";
+import { tools } from "@/lib/data/tools";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/entity";
 
@@ -65,6 +67,20 @@ export default async function GlossaryEntryPage(props: { params: Promise<Params>
   const relatedInsights = (entry.relatedInsights ?? [])
     .map((s) => allInsights.find((i) => i.slug === s))
     .filter((i): i is NonNullable<typeof i> => Boolean(i));
+  // The answer and tool pages this term is used on. Anchor text is the
+  // target page's own H1, which is the question a reader would ask, per
+  // .claude/skills/geo-improve/SKILL.md section 5. Rendering this slot is
+  // what makes rule R11 in scripts/internal-links-audit.ts enforceable:
+  // the field was populated on all 29 terms and served on none (issue #82).
+  const relatedAnswers = (entry.relatedAnswers ?? [])
+    .map((path) => {
+      const answer = answerPages.find((a) => answerPath(a) === path);
+      if (answer) return { path, h1: answer.h1 };
+      const tool = tools.find((t) => `/tools/${t.slug}` === path);
+      if (tool) return { path, h1: tool.h1 };
+      return undefined;
+    })
+    .filter((a): a is { path: string; h1: string } => Boolean(a));
 
   const graph = [
       {
@@ -300,6 +316,26 @@ export default async function GlossaryEntryPage(props: { params: Promise<Params>
                           className="inline-block rounded-full bg-[#f5f5f7] hover:bg-[#ececef] transition-colors px-3 py-1.5 text-[13px] tracking-[-0.014em] text-[#1d1d1f]"
                         >
                           {t.term}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {relatedAnswers.length > 0 && (
+                <div className="mt-6">
+                  <h3 className="text-[13px] tracking-[-0.014em] text-[#86868b]">
+                    Where this term is used
+                  </h3>
+                  <ul className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {relatedAnswers.map((a) => (
+                      <li key={a.path}>
+                        <Link
+                          href={a.path}
+                          className="block rounded-[14px] bg-[#f5f5f7] p-4 hover:bg-[#ececef] transition-colors text-[15px] font-semibold tracking-[-0.014em] text-[#1d1d1f]"
+                        >
+                          {a.h1}
                         </Link>
                       </li>
                     ))}
