@@ -124,6 +124,59 @@ CSV still points at rather than genuine content gaps.
 
 ## Run notes
 
+**2026-10-27, Content Writer.** Shipped `/sell-a-hotel/estate-tax-and-basis-step-up`. Sections A to E are complete, F is
+SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage scan of `src/lib/data/`: "step-up",
+"1014", "6166", "2032A", "succession" and "generation-skipping" each appeared in **zero** files, and "estate tax" in five,
+every one of them inside the phrase "real estate tax". The site answered how a hotel sale is taxed and said nothing about
+the alternative an owner over 70 is actually weighing, which is not selling at all.
+
+**The find of this run.** Whether a hotel qualifies for the 14-year estate tax deferral in section 6166 turns on who runs
+it. Section 6166(b)(9) strips out the value attributable to passive assets, and Rev. Rul. 2006-34 applies that to real
+property with a six-factor test and says in terms that using "an unrelated property management company to perform most of
+the activities associated with the real estate interests" suggests no active trade or business exists; it held exactly that
+way on an office park in Situation 2, and came out the other way in Situation 3 on identical facts where the decedent owned
+20 percent of the manager. So two otherwise identical hotels can get different answers on a 14-year deferral depending on
+who signs the management agreement and who owns the manager. That is a hotel-specific consequence of a management
+structure the site already describes on two pages and had never connected to a tax outcome.
+
+Three sourcing notes for the next run. **Cornell LII served eleven title-26 sections in one run with no block** (1014,
+1015, 2001, 2010, 2031, 2032, 2032A, 2033, 6075, 6166, 6601), and remains the first place to read the Code. **The IRS
+serves revenue procedures as clean PDFs at `www.irs.gov/pub/irs-drop/rp-<yy>-<nn>.pdf`**, which `pdftotext -layout` reads
+without trouble; `www.irs.gov/irb/<year>-<issue>_IRB` gives the bulletin's own date and page, which is how Rev. Proc.
+2025-32 was cited to I.R.B. 2025-45 of November 3, 2025, and how Rev. Rul. 2006-34 was read in full from I.R.B. 2006-26.
+**The quarterly interest rate is on the newsroom, not in the Code**: section 6601(j)(1)(B) charges 45 percent of the
+underpayment rate and the rate itself comes from IR-2026-98 of August 21, 2026, which puts it at 7 percent for the quarter
+beginning October 1, 2026, so the second leg is 3.15 percent. Re-read that release each quarter before touching the figure.
+
+**One number to read twice before changing it.** The 2026 basic exclusion amount is exactly $15,000,000 and is *not*
+indexed. Section 70106(a)(1) of Pub. L. 119-21, July 4, 2025, substituted $15,000,000 for $5,000,000 in section
+2010(c)(3)(A) and struck the $10,000,000 subparagraph, section 70106(b) applies it to deaths and gifts after December 31,
+2025, and section 2010(c)(3)(B) starts the inflation adjustment only for decedents dying in a calendar year after 2026.
+Rev. Proc. 2025-32 section 3.14 says the same and adds that the adjustment begins for 2027. So this figure moves once, in
+the 2027 revenue procedure, and a search result quoting an indexed 2026 number is wrong.
+
+Three things the run deliberately did not publish. A discount for lack of marketability or control on a hotel-owning LLC
+interest: the magnitudes are negotiated with appraisers and litigated, and no public source prices them. What a hotel
+estate pays in appraisal, legal and accounting fees: not published anywhere, and the page tells the owner to get the
+estimate in writing instead. And any statement that section 2032A is or is not worth electing on a hotel: the page prints
+the three published limits (the $1,460,000 cap, the multi-factor method in 2032A(e)(8) rather than the farm formula, the
+10-year clawback, and the lower basis that follows under 1014(a)(3)) and leaves the judgement to counsel, because whether
+a hotel's use value sits below its market value at all is an appraisal question nobody publishes.
+
+**For the Maintainer.** `geo/17-claims-audit.csv` has not been regenerated since 2026-09-18 and is a month stale: running
+`scripts/claims-audit.mjs` in this run produced a 686-insertion, 375-deletion diff covering roughly 30 pages shipped since,
+which is a Maintainer cascade and not a content change, so the file was left alone. The new page's own seven rows were
+checked in that run and every one came back OK. Totals across 372 files: 1,388 OK, 125 CHECK, 60 OVERREACH.
+
+The page runs about 2,690 words by the body-plus-worked-example count, against 2,642 for
+`/sell-a-hotel/selling-to-a-foreign-buyer` and 2,523 for `/sell-a-hotel/tax-clearance-and-withholding` measured the same
+way, after four trimming passes from 2,965. Nothing cut was a citation, a figure or an internal link; one cut dropped the
+second link to `/hotel-industry/hotel-management-agreements`, which the same paragraph still reaches through
+`/hotel-industry/owner-franchisor-management-company`. Every figure in the worked example and every published threshold is
+recomputed by `scripts/check-estate-tax-math.mjs`, committed alongside the page, 40 assertions covering the applicable
+credit amount, the 2-percent portion by both routes, the depreciation schedule, all three tax layers, both routes end to
+end, the heir's restarted depreciation, the 35 percent test, the installment arithmetic and the comparison against Prime.
+
 **2026-10-26, Site Maintainer.** The `relatedAnswers` warning in the 2026-10-23 note below is resolved and a glossary term can be counted as an inbound link again. `src/app/glossary/[term]/page.tsx` now renders the slot on all 29 terms, under the heading "Where this term is used", with each target page's own H1 as the anchor text. R11 in `scripts/internal-links-audit.ts` now asserts that a glossary page serves a link to every path in its own `relatedAnswers`, instead of asserting a link to some cluster hub, which the site navigation satisfied on every page. The audit counts 142 edges it could not see before and reports 0 missing; `/glossary/dscr` serves all four of the targets listed in `dscr.ts`. Issue #82.
 
 **2026-10-26, Content Writer.** Shipped `/sell-a-hotel/selling-to-a-foreign-buyer`. Sections A to E are complete, F is
@@ -486,6 +539,7 @@ Pick from `geo/04-queries.csv` prompts with no dedicated page, phrased the way p
 | [x] | `/hotel-financing/sba-size-standards` | No CSV row targets it directly, and the SBA prompts in `geo/04-queries.csv` all point at program mechanics rather than eligibility. The gap was total: "size standard", "121.201", "annual receipts" and "tangible net worth" each appeared in **zero** files under `src/lib/data/`, and "121.301" once, in a source label. Forty financing pages assumed the reader was eligible for SBA and none covered the first test SBA applies. | Shipped 2026-10-22 in PR #80. Covers the $40.0 million receipts standard for NAICS 721110 and the rest of subsector 721 from 13 CFR 121.201, read twice and in agreement; how receipts are counted under 121.104, with the occupancy-tax and capital-gain exclusions and the three-year election the Business Loan Programs get; the ownership-only affiliation regime of 121.301(f) since 88 FR 21074, including the asymmetry between (f)(1)(i), which has no subsector limit, and (f)(1)(ii) to (v), which reach only subsector 721; the alternative standard of $20 million tangible net worth and $6.5 million average net income and where those figures came from (89 FR 11703, 34.46 percent on the Jobs Act's $15 million and $5 million, effective March 18, 2024); the 25 percent labor surplus area uplift to $50.0 million with the FY2027 list dates; and the constraint that actually binds, the $3,750,000 aggregate guaranty across a borrower and its affiliates under 13 CFR 120.151, evidenced by 499 of 3,879 7(a) hotel loans written at exactly the $5,000,000 cap in `/data/sba-hotel-lending`. Prints no lender appetite figure, no sponsor-count limit and no coverage threshold tied to portfolio size: none is published. Kept clear of `/hotel-financing/sba-7a-vs-504` (program choice) and `/hotel-financing/sba-franchise-directory` (brand listing); both now link to it, as do `/hotel-financing/lenders-under-5-million`, `/glossary/sba-7a` and `/glossary/sba-504`. |
 | [x] | `/hotel-financing/new-markets-tax-credits` | No CSV row targets it directly, and the incentive prompts in `geo/04-queries.csv` all point at historic credits, opportunity zones or C-PACE. The gap was total: "New Markets", "NMTC", "45D", "QALICB", "QLICI" and "CDFI Fund" each appeared in **zero** files under `src/lib/data/`. The site carried four pages on incentive capital and nothing on the one federal program whose tract test decides the answer before any underwriting starts. | Shipped 2026-10-23 in PR #81. Covers the 39 percent credit over 7 allowance dates (5 percent on the first 3, 6 percent on the remaining 4) from 26 U.S.C. 45D(a); the census tract test in 45D(e) that disqualifies most hotels; the hotel-specific exclusion analysis, where a hotel is not an excluded business but a private or commercial golf course, a gambling facility and an off-premises liquor store are, with the portions-of-business route in 1.45D-1(d)(4)(iii) and the lessee rule in (d)(5)(ii) that reaches a hotel's ground-floor retail; the five QALICB tests and the 85 percent substantially-all requirement; the CY 2026 round ($5 billion, up to $100 million per allocatee, applications due November 10, 2026) from 91 FR 58526; permanence under P.L. 119-21; and the recapture analysis an owner who may sell needs, where a sale is not itself a recapture event but repayment starts the CDE's 12-month reinvestment clock. Prints no credit price per dollar, no net subsidy figure and no count of hotel projects: the first two are privately negotiated and the third is not in the public data, which carries no industry field at all. Kept clear of `/hotel-financing/historic-tax-credits` and `/hotel-financing/opportunity-zones`; both now link to it, verified rendered on production. `/glossary/noi` and `/glossary/dscr` carry it in `relatedAnswers`, which is data only: that field is rendered nowhere, so it is not a served link. See issue #82. |
 | [x] | `/sell-a-hotel/selling-to-a-foreign-buyer` | No CSV row targets it directly, and "CFIUS", "foreign buyer" and "national security" are absent from `geo/04-queries.csv`. The gap was total on the buyer side: "CFIUS", "national security" and "Treasury review" each appeared in **zero** files under `src/lib/data/`, and "foreign buyer" in one, as an H2 about who buys hotels. FIRPTA on `/sell-a-hotel/tax-clearance-and-withholding` covers the foreign *seller*; nothing covered the foreign *buyer*, which is the question an owner actually asks when a cross-border bid arrives. | Shipped 2026-10-26 in PR #85. Covers the two doors (part 800 for the business, part 802 for the real estate, mutually exclusive under 31 CFR 802.216(b)); the location-only definition of covered real estate with close proximity at one mile and extended range at 99; the covered-port test that is the one that catches hotels, including large hub airports; the urbanized-area exception and the hole in it, which is that the exception does not reach the covered port leg or the one-mile leg; the three-of-four property rights test; that part 802 has **no mandatory declaration** at all, so filing is voluntary both ways; the six fee bands; the statutory ceilings (30, 45, 45, one 15-day extension, 15 for the President) against the CY 2025 published averages (6.87 days to accept a declaration, 30.1 to assess, 45.4 closing in review, 82.8 closing in investigation, 114 of 207 notices investigated); the three-year agency-notice look-back that is the real cost of not filing; and the two state bans that go further than the federal rule, Florida's 10-mile rule and Texas SB 17's flat prohibition on commercial real property. Prints no count of hotel CFIUS filings and no per-deal legal cost: CFIUS publishes no industry breakdown for part 802 and no source gives the second. Says plainly that the team does not file CFIUS declarations or advise on them. Kept clear of `/sell-a-hotel/tax-clearance-and-withholding` (the foreign seller) and `/sell-a-hotel/what-buyers-look-for` (the buyer pool); both now link to it, as do `/glossary/ground-lease` and `/glossary/going-concern-value`. Runs 2,919 words after five trimming passes from 4,174, above the brief's 2,500 and inside the 2,515 to 2,987 band the site's other evidence-heavy pages occupy. |
+| [x] | `/sell-a-hotel/estate-tax-and-basis-step-up` | No CSV row targets it directly, and "estate tax", "step-up", "basis step" and "6166" are absent from `geo/04-queries.csv`. It answers the hold-or-sell half of the "Selling a hotel" cluster's tax questions, which `/sell-a-hotel/taxes-when-selling-a-hotel` answers only for a sale. The gap was total: "step-up", "1014", "6166", "2032A", "succession" and "generation-skipping" each appeared in **zero** files under `src/lib/data/`, and "estate tax" in five, every one of them the phrase "real estate tax". | Shipped 2026-10-27 in PR #86. |
 
 Remaining candidates: hotel loan assumption, seller financing for a hotel, preferred equity (needs a
 citable source), what buyers look for in a hotel, selling a hotel with a ground lease, hotel property

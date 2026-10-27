@@ -3,6 +3,7 @@ import { page as a_1031_without_buying_another_hotel } from "./1031-without-buyi
 import { page as a_broker_fees } from "./broker-fees";
 import { page as a_documents_needed } from "./documents-needed";
 import { page as a_employees_when_you_sell } from "./employees-when-you-sell";
+import { page as a_estate_tax_and_basis_step_up } from "./estate-tax-and-basis-step-up";
 import { page as a_faq } from "./faq";
 import { page as a_franchise_agreement_expiration } from "./franchise-agreement-expiration";
 import { page as a_franchise_transfer } from "./franchise-transfer";
@@ -27,6 +28,7 @@ export const spokes: AnswerPage[] = [
   a_broker_fees,
   a_documents_needed,
   a_employees_when_you_sell,
+  a_estate_tax_and_basis_step_up,
   a_faq,
   a_franchise_agreement_expiration,
   a_franchise_transfer,

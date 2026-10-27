@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-10-26T14:44:16.112Z",
+  "runAt": "2026-10-27T14:34:23.727Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 334,
-  "blocksFound": 334,
-  "blocksValid": 334,
+  "urlsChecked": 335,
+  "blocksFound": 335,
+  "blocksValid": 335,
   "issues": [],
   "blocks": [
     {
@@ -785,6 +785,13 @@
     },
     {
       "url": "/sell-a-hotel/employees-when-you-sell",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/sell-a-hotel/estate-tax-and-basis-step-up",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,

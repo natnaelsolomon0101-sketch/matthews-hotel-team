@@ -62,7 +62,8 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/appraisal-requirements",
     "/hotel-valuation/how-to-value-a-hotel",
     "/hotel-valuation/select-service-vs-full-service",
-    "/hotel-valuation/broker-opinion-of-value"
+    "/hotel-valuation/broker-opinion-of-value",
+    "/sell-a-hotel/estate-tax-and-basis-step-up"
   ],
   lastUpdated: "2026-09-18",
   authorSlug: "nate-solomon"
