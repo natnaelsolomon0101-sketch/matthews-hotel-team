@@ -30,7 +30,7 @@ export const page: AnswerPage = {
   ],
   answer: "Hold and your heirs take the hotel at its fair market value on the date of death, under section 1014, so the deferred gain and all the depreciation you took disappear.[1] Sell and you pay that tax now. For 2026 the estate tax exclusion is $15,000,000 per person at a 40 percent top rate, so most single-hotel estates owe no estate tax at all.[3][4][5]",
   takeaways: [
-    "The step-up is worth the entire income tax you would have paid on a sale. In the example below, $2,874,358.98 on a $18,000,000 hotel bought for $11,000,000 in 2001.[1][6]",
+    "The step-up is worth the entire income tax you would have paid on a sale. In the example below, $2,874,358.98 on an $18,000,000 hotel bought for $11,000,000 in 2001.[1][6]",
     "The 2026 basic exclusion amount is $15,000,000, set by section 70106 of the July 4, 2025 reconciliation act, and it is not indexed until 2027.[3][4]",
     "Above the exclusion the rate is a flat 40 percent at the margin, so the estate tax question is a question about the size of the whole estate, not about the hotel.[5]",
     "If the hotel is more than 35 percent of the adjusted gross estate, section 6166 can stretch the tax over 14 years, with 2 percent interest on the first $776,000 of it in 2026.[9][11]",
@@ -39,7 +39,7 @@ export const page: AnswerPage = {
   sections: [
     {
       h2: "What happens to the tax on my hotel if I hold it until I die?",
-      lead: "Your heirs take the hotel at its fair market value on the date of death, and the gain you had built up is never taxed to anyone.[1]",
+      lead: "Your heirs take the hotel at its fair market value on the date of death, and the gain you had built up is never taxed as income to anyone.[1]",
       body: "Section 1014(a)(1) sets the basis of property acquired from a decedent at the fair market value of the property at the date of death. IRS Publication 551 says the same thing in plain English, and lists the three alternatives: the date-of-death value, the value on the alternate valuation date if the executor elects it, and the special-use value under section 2032A.[1][2]\n\nTwo things vanish at once, and owners usually only count the first. The appreciation goes, which is the part everyone expects. The depreciation goes too. Every dollar of the 39-year straight-line deduction you have taken against the building since you bought the hotel would have come back as unrecaptured section 1250 gain at a maximum 25 percent rate on a sale.[6][8] On a death it does not come back at all.\n\nA third effect keeps paying after the estate closes: the heir's depreciation runs on the new basis, so a building written down to a stub restarts at its stepped-up value over a fresh 39 years.[2][8]\n\nOne trap. Section 1014(e) turns the rule off for appreciated property you or your spouse gave the decedent within one year before death, which is the obvious gambit and the statute closes it.[1]"
     },
     {
@@ -121,7 +121,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' October 2026 rate sheet puts Prime at 7.00% as of September 30, 2026, which is the number to hold the section 6166 deferral against: 2 percent on the first $776,000 of deferred estate tax and 3.15 percent above it are both cheaper than any borrowing an estate could arrange.[17]"
+    sentence: "Matthews Hotel Markets' October 2026 rate sheet puts Prime at 7.00% as of September 30, 2026, which is the number to hold the section 6166 deferral against: 2 percent on the first $776,000 of deferred estate tax and 3.15 percent above it both sit below the Prime rate on the same sheet.[17]"
   },
   workedExample: {
     label: "Worked example (hypothetical): 112-key select-service hotel, $18,000,000, owner dies in 2026",
