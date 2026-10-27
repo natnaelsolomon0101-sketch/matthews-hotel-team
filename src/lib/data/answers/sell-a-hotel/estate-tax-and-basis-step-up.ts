@@ -79,7 +79,7 @@ export const page: AnswerPage = {
     }
   ],
   table: {
-    caption: "Three routes for a hotel owner, under the 2026 federal rules",
+    caption: "What happens to the tax under each route, 2026 federal rules",
     columns: [
       "Route",
       "Basis to the next owner",
