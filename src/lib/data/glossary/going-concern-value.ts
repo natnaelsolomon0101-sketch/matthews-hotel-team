@@ -66,6 +66,7 @@ export const entry: GlossaryEntry = {
   relatedAnswers: [
     "/hotel-financing/appraisal-requirements",
     "/sell-a-hotel/1031-without-buying-another-hotel",
+    "/sell-a-hotel/estate-tax-and-basis-step-up",
     "/hotel-valuation/how-to-value-a-hotel",
     "/hotel-valuation/broker-opinion-of-value",
     "/hotel-financing/loan-requirements",

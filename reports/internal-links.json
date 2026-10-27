@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-26T14:44:25.993Z",
-  "base": "http://localhost:40175",
+  "runAt": "2026-10-27T14:44:54.548Z",
+  "base": "http://localhost:36585",
   "edges": [
     {
       "from": "/",
@@ -4165,6 +4165,10 @@
     {
       "from": "/sitemap",
       "to": "/sell-a-hotel/employees-when-you-sell"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/sell-a-hotel/estate-tax-and-basis-step-up"
     },
     {
       "from": "/sitemap",
@@ -38836,6 +38840,10 @@
     },
     {
       "from": "/glossary/bov",
+      "to": "/sell-a-hotel/estate-tax-and-basis-step-up"
+    },
+    {
+      "from": "/glossary/bov",
       "to": "/markets/austin-tx"
     },
     {
@@ -40432,6 +40440,10 @@
     },
     {
       "from": "/glossary/per-key",
+      "to": "/sell-a-hotel/estate-tax-and-basis-step-up"
+    },
+    {
+      "from": "/glossary/per-key",
       "to": "/buy-a-hotel"
     },
     {
@@ -40609,6 +40621,10 @@
     {
       "from": "/glossary/going-concern-value",
       "to": "/sell-a-hotel/1031-without-buying-another-hotel"
+    },
+    {
+      "from": "/glossary/going-concern-value",
+      "to": "/sell-a-hotel/estate-tax-and-basis-step-up"
     },
     {
       "from": "/glossary/going-concern-value",
@@ -52828,6 +52844,10 @@
     },
     {
       "from": "/sell-a-hotel",
+      "to": "/sell-a-hotel/estate-tax-and-basis-step-up"
+    },
+    {
+      "from": "/sell-a-hotel",
       "to": "/sell-a-hotel/faq"
     },
     {
@@ -53804,6 +53824,206 @@
     },
     {
       "from": "/sell-a-hotel/employees-when-you-sell",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/_next/static/chunks/e7051121e5f1db32.css"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/sell-a-hotel/estate-tax-and-basis-step-up.md"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/listings"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/rates"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/about"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/team"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/contact"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/sell-a-hotel/taxes-when-selling-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/hotel-financing/1031-exchange-hotels"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/sell-a-hotel/1031-without-buying-another-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/hotel-industry/owner-franchisor-management-company"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/sell-a-hotel/tax-clearance-and-withholding"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/sell-a-hotel/how-to-sell-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/glossary"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/glossary/going-concern-value"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/glossary/bov"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/glossary/per-key"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/tools"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/research"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/markets"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/closed"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/process"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/services"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/insights"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/press"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/developers"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
       "to": "/sitemap"
     },
     {
@@ -56341,6 +56561,10 @@
     {
       "from": "/sell-a-hotel/taxes-when-selling-a-hotel",
       "to": "/sell-a-hotel/1031-without-buying-another-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/taxes-when-selling-a-hotel",
+      "to": "/sell-a-hotel/estate-tax-and-basis-step-up"
     },
     {
       "from": "/sell-a-hotel/taxes-when-selling-a-hotel",
@@ -74364,6 +74588,7 @@
         "/sell-a-hotel/broker-fees",
         "/sell-a-hotel/documents-needed",
         "/sell-a-hotel/employees-when-you-sell",
+        "/sell-a-hotel/estate-tax-and-basis-step-up",
         "/sell-a-hotel/faq",
         "/sell-a-hotel/franchise-agreement-expiration",
         "/sell-a-hotel/franchise-transfer",
@@ -83937,6 +84162,7 @@
         "/hotel-financing/appraisal-requirements",
         "/sell-a-hotel/1031-without-buying-another-hotel",
         "/hotel-valuation/broker-opinion-of-value",
+        "/sell-a-hotel/estate-tax-and-basis-step-up",
         "/markets/austin-tx",
         "/markets/dallas-tx",
         "/markets/nashville-tn",
@@ -84384,6 +84610,7 @@
         "/hotel-valuation/how-to-value-a-hotel",
         "/hotel-valuation/select-service-vs-full-service",
         "/hotel-valuation/broker-opinion-of-value",
+        "/sell-a-hotel/estate-tax-and-basis-step-up",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -84435,6 +84662,7 @@
         "/glossary/cap-rate",
         "/hotel-financing/appraisal-requirements",
         "/sell-a-hotel/1031-without-buying-another-hotel",
+        "/sell-a-hotel/estate-tax-and-basis-step-up",
         "/hotel-valuation/how-to-value-a-hotel",
         "/hotel-valuation/broker-opinion-of-value",
         "/hotel-financing/loan-requirements",
@@ -87849,6 +88077,7 @@
         "/sell-a-hotel/how-to-choose-a-hotel-broker",
         "/sell-a-hotel/1031-without-buying-another-hotel",
         "/sell-a-hotel/employees-when-you-sell",
+        "/sell-a-hotel/estate-tax-and-basis-step-up",
         "/sell-a-hotel/faq",
         "/sell-a-hotel/franchise-agreement-expiration",
         "/sell-a-hotel/franchise-transfer",
@@ -88095,6 +88324,62 @@
         "/glossary/gop",
         "/glossary/franchise-agreement",
         "/glossary/noi",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/e7051121e5f1db32.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/sell-a-hotel/estate-tax-and-basis-step-up.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/nate-solomon",
+        "/sell-a-hotel/taxes-when-selling-a-hotel",
+        "/hotel-financing/1031-exchange-hotels",
+        "/sell-a-hotel/1031-without-buying-another-hotel",
+        "/hotel-industry/owner-franchisor-management-company",
+        "/team/luke-thompson",
+        "/sell-a-hotel/tax-clearance-and-withholding",
+        "/sell-a-hotel/how-to-sell-a-hotel",
+        "/glossary",
+        "/glossary/going-concern-value",
+        "/glossary/bov",
+        "/glossary/per-key",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -88830,6 +89115,7 @@
         "/sell-a-hotel/broker-fees",
         "/hotel-financing/1031-exchange-hotels",
         "/sell-a-hotel/1031-without-buying-another-hotel",
+        "/sell-a-hotel/estate-tax-and-basis-step-up",
         "/team/luke-thompson",
         "/sell-a-hotel/how-to-sell-a-hotel",
         "/sell-a-hotel/documents-needed",

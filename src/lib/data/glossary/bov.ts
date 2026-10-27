@@ -75,6 +75,7 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/appraisal-requirements",
     "/sell-a-hotel/1031-without-buying-another-hotel",
     "/hotel-valuation/broker-opinion-of-value",
+    "/sell-a-hotel/estate-tax-and-basis-step-up",
     "/sell-a-hotel",
   ],
   relatedTerms: ["iom", "cap-rate", "pip"],
