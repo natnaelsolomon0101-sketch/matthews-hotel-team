@@ -250,6 +250,7 @@ export const page: AnswerPage = {
     hub: "/hotel-financing",
     siblings: [
       "/hotel-financing/sba-7a-vs-504",
+      "/hotel-financing/interest-deduction-limits",
       "/hotel-financing/bridge-loans",
       "/hotel-financing/hotel-lenders-by-type",
       "/hotel-financing/loan-requirements",

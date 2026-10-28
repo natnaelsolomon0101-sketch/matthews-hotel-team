@@ -214,6 +214,7 @@ export const page: AnswerPage = {
     hub: "/hotel-financing",
     siblings: [
       "/hotel-financing/mezzanine-debt-and-preferred-equity",
+      "/hotel-financing/interest-deduction-limits",
       "/hotel-financing/c-pace-financing",
       "/hotel-financing/loan-requirements",
       "/hotel-financing/sba-7a-vs-504",

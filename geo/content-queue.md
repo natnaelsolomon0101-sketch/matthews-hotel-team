@@ -124,6 +124,50 @@ CSV still points at rather than genuine content gaps.
 
 ## Run notes
 
+**2026-10-28, Content Writer.** Shipped `/hotel-financing/interest-deduction-limits`. Sections A to E are
+complete, F is SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage scan of
+`src/lib/data/`: "163(j)", "business interest", "net operating loss", "self-rental" and "Item 12" each
+appeared in **zero** files, and "business interest" only inside the section 6166 phrase "closely held business
+interest" on the estate tax page. The site explained every loan product and said nothing about whether the
+interest on them is deductible, which is the first question a CPA asks about a hotel's capital stack.
+
+**The find of this run.** Whether a hotel can elect out of the section 163(j) limitation is not a judgement
+call: 26 CFR 1.469-9(b)(2)(iii)(E), Example 5, describes a limited partnership that owns and operates a luxury
+hotel with in-room food and beverage, maid and linen service, valet parking, concierge, front desk and bellhop
+service and dry cleaning, and holds that even though those personal services are significant, the principal
+purpose of the operations is providing the use of the rooms, so the partnership **is** engaged in a real
+property trade or business. 26 CFR 1.163(j)-1(b)(14)(i) routes the election straight at section 469(c)(7)(C)
+and that regulation, so the example settles it. The same example holds the outside maid-service contractor is
+not in a real property trade or business, which matters where operations sit in a separate entity.
+
+**The trap that catches small hotel deals.** The $32,000,000 exemption is lost entirely by a syndicate, and
+a syndicate under section 1256(e)(3)(B) is any partnership with more than 35 percent of its losses allocable
+to limited partners or limited entrepreneurs. A two-partner hotel LLC with one passive money partner is the
+textbook case, and 26 CFR 1.1256(e)-2(c) works that exact fact pattern. Two details the page states and the
+next run should preserve: 26 CFR 1.1256(e)-2(b) computes the loss **without regard to section 163(j)**, and
+the test is a loss test run year by year, so it turns on whether the entity has a loss at all.
+
+**Three dates to re-verify.** The $32,000,000 figure is Rev. Proc. 2025-32 section 4.30 and is for tax years
+beginning in 2026 only; the 2027 revenue procedure will move it, and the excess business loss figures in
+section 4.31 ($256,000 and $512,000) move with it. The section 163(j)(10) interest-capitalization rule and the
+section 163(j)(5) amendment apply to tax years beginning after December 31, 2025, so they are live for the
+first time this filing season. Section 461(l) still reads "before January 1, 2027" in the codified text on
+Cornell LII as of 2026-10-28, which is worth re-reading rather than assuming it was made permanent; the page
+does not print that figure, but `/buy-a-hotel/depreciation-and-cost-segregation` does.
+
+**Four sourcing notes.** `pdftotext` is now installed in this environment, which the 2026-09-23 run recorded
+as missing, so IRS PDFs are readable again: `curl` plus `pdftotext -layout` read Rev. Proc. 2025-32 cleanly
+(260 KB, 67,652 characters of text). Cornell LII serves 26 U.S.C. and 26 CFR to `curl --compressed` at 200 on
+every section tried, but the **163 page is 182,459 characters and WebFetch reads only the first 100,000**, so
+the amendment notes that date Pub. L. 119-21 are invisible to a summarising read: download and grep instead.
+A summarising read of 163(j)(8) also came back without the effective-date detail that makes the depreciation
+add-back current law. `www.irs.gov/forms-pubs/about-form-8990` serves at 200 and its "Recent developments"
+note is **stale**, still printing the $29,000,000 threshold for 2023; the page says so rather than repeating it.
+
+**One length note.** The page runs about 2,537 words against the brief's 2,500 ceiling, after six trimming
+passes. Two FAQs and one takeaway were cut as duplicates of the answer block, and the section 461(l) paragraph
+was dropped because `/buy-a-hotel/depreciation-and-cost-segregation` already carries it.
+
 **2026-10-27, Content Writer.** Shipped `/sell-a-hotel/estate-tax-and-basis-step-up`. Sections A to E are complete, F is
 SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage scan of `src/lib/data/`: "step-up",
 "1014", "6166", "2032A", "succession" and "generation-skipping" each appeared in **zero** files, and "estate tax" in five,
@@ -540,6 +584,7 @@ Pick from `geo/04-queries.csv` prompts with no dedicated page, phrased the way p
 | [x] | `/hotel-financing/new-markets-tax-credits` | No CSV row targets it directly, and the incentive prompts in `geo/04-queries.csv` all point at historic credits, opportunity zones or C-PACE. The gap was total: "New Markets", "NMTC", "45D", "QALICB", "QLICI" and "CDFI Fund" each appeared in **zero** files under `src/lib/data/`. The site carried four pages on incentive capital and nothing on the one federal program whose tract test decides the answer before any underwriting starts. | Shipped 2026-10-23 in PR #81. Covers the 39 percent credit over 7 allowance dates (5 percent on the first 3, 6 percent on the remaining 4) from 26 U.S.C. 45D(a); the census tract test in 45D(e) that disqualifies most hotels; the hotel-specific exclusion analysis, where a hotel is not an excluded business but a private or commercial golf course, a gambling facility and an off-premises liquor store are, with the portions-of-business route in 1.45D-1(d)(4)(iii) and the lessee rule in (d)(5)(ii) that reaches a hotel's ground-floor retail; the five QALICB tests and the 85 percent substantially-all requirement; the CY 2026 round ($5 billion, up to $100 million per allocatee, applications due November 10, 2026) from 91 FR 58526; permanence under P.L. 119-21; and the recapture analysis an owner who may sell needs, where a sale is not itself a recapture event but repayment starts the CDE's 12-month reinvestment clock. Prints no credit price per dollar, no net subsidy figure and no count of hotel projects: the first two are privately negotiated and the third is not in the public data, which carries no industry field at all. Kept clear of `/hotel-financing/historic-tax-credits` and `/hotel-financing/opportunity-zones`; both now link to it, verified rendered on production. `/glossary/noi` and `/glossary/dscr` carry it in `relatedAnswers`, which is data only: that field is rendered nowhere, so it is not a served link. See issue #82. |
 | [x] | `/sell-a-hotel/selling-to-a-foreign-buyer` | No CSV row targets it directly, and "CFIUS", "foreign buyer" and "national security" are absent from `geo/04-queries.csv`. The gap was total on the buyer side: "CFIUS", "national security" and "Treasury review" each appeared in **zero** files under `src/lib/data/`, and "foreign buyer" in one, as an H2 about who buys hotels. FIRPTA on `/sell-a-hotel/tax-clearance-and-withholding` covers the foreign *seller*; nothing covered the foreign *buyer*, which is the question an owner actually asks when a cross-border bid arrives. | Shipped 2026-10-26 in PR #85. Covers the two doors (part 800 for the business, part 802 for the real estate, mutually exclusive under 31 CFR 802.216(b)); the location-only definition of covered real estate with close proximity at one mile and extended range at 99; the covered-port test that is the one that catches hotels, including large hub airports; the urbanized-area exception and the hole in it, which is that the exception does not reach the covered port leg or the one-mile leg; the three-of-four property rights test; that part 802 has **no mandatory declaration** at all, so filing is voluntary both ways; the six fee bands; the statutory ceilings (30, 45, 45, one 15-day extension, 15 for the President) against the CY 2025 published averages (6.87 days to accept a declaration, 30.1 to assess, 45.4 closing in review, 82.8 closing in investigation, 114 of 207 notices investigated); the three-year agency-notice look-back that is the real cost of not filing; and the two state bans that go further than the federal rule, Florida's 10-mile rule and Texas SB 17's flat prohibition on commercial real property. Prints no count of hotel CFIUS filings and no per-deal legal cost: CFIUS publishes no industry breakdown for part 802 and no source gives the second. Says plainly that the team does not file CFIUS declarations or advise on them. Kept clear of `/sell-a-hotel/tax-clearance-and-withholding` (the foreign seller) and `/sell-a-hotel/what-buyers-look-for` (the buyer pool); both now link to it, as do `/glossary/ground-lease` and `/glossary/going-concern-value`. Runs 2,919 words after five trimming passes from 4,174, above the brief's 2,500 and inside the 2,515 to 2,987 band the site's other evidence-heavy pages occupy. |
 | [x] | `/sell-a-hotel/estate-tax-and-basis-step-up` | No CSV row targets it directly, and "estate tax", "step-up", "basis step" and "6166" are absent from `geo/04-queries.csv`. It answers the hold-or-sell half of the "Selling a hotel" cluster's tax questions, which `/sell-a-hotel/taxes-when-selling-a-hotel` answers only for a sale. The gap was total: "step-up", "1014", "6166", "2032A", "succession" and "generation-skipping" each appeared in **zero** files under `src/lib/data/`, and "estate tax" in five, every one of them the phrase "real estate tax". | Shipped 2026-10-27 in PR #86. |
+| [x] | `/hotel-financing/interest-deduction-limits` | No CSV row targets it directly, and "163(j)", "business interest", "interest deduction", "net operating loss" and "self-rental" are absent from `geo/04-queries.csv`. It answers the deductibility half of the "Loan types" and "Deal docs & underwriting" clusters, which between them ask what every loan product costs and never ask what of that cost is deductible. The gap was total: "163(j)" appeared in **zero** files under `src/lib/data/`, and "business interest" only inside the section 6166 phrase "closely held business interest". | Shipped 2026-10-28 in PR #87. |
 
 Remaining candidates: hotel loan assumption, seller financing for a hotel, preferred equity (needs a
 citable source), what buyers look for in a hotel, selling a hotel with a ground lease, hotel property

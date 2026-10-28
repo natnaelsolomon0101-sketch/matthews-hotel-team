@@ -66,6 +66,7 @@ export const entry: GlossaryEntry = {
     "/hotel-valuation/hotel-cap-rates",
     "/hotel-financing/loan-requirements",
     "/hotel-financing/new-markets-tax-credits",
+    "/hotel-financing/interest-deduction-limits",
     "/hotel-industry/resort-fees",
     "/hotel-financing/flood-insurance-requirements",
     "/sell-a-hotel/liquor-license-transfer",
