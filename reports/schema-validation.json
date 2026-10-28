@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-10-27T14:44:46.164Z",
+  "runAt": "2026-10-28T14:40:37.574Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 335,
-  "blocksFound": 335,
-  "blocksValid": 335,
+  "urlsChecked": 336,
+  "blocksFound": 336,
+  "blocksValid": 336,
   "issues": [],
   "blocks": [
     {
@@ -589,6 +589,13 @@
     },
     {
       "url": "/hotel-financing/how-debt-placement-works",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/interest-deduction-limits",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,

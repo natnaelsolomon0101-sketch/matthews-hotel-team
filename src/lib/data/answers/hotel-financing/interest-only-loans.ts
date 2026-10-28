@@ -218,6 +218,7 @@ export const page: AnswerPage = {
     hub: "/hotel-financing",
     siblings: [
       "/hotel-financing/cmbs-loans",
+      "/hotel-financing/interest-deduction-limits",
       "/hotel-financing/bridge-loans",
       "/hotel-financing/loan-requirements",
       "/hotel-financing/hotel-loan-rates",

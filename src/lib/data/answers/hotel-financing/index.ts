@@ -17,6 +17,7 @@ import { page as a_hotel_lenders_by_type } from "./hotel-lenders-by-type";
 import { page as a_hotel_loan_rates } from "./hotel-loan-rates";
 import { page as a_how_debt_placement_works } from "./how-debt-placement-works";
 import { page as a_hub } from "./hub";
+import { page as a_interest_deduction_limits } from "./interest-deduction-limits";
 import { page as a_interest_only_loans } from "./interest-only-loans";
 import { page as a_lenders_under_5_million } from "./lenders-under-5-million";
 import { page as a_loan_assumption } from "./loan-assumption";
@@ -62,6 +63,7 @@ export const spokes: AnswerPage[] = [
   a_hotel_lenders_by_type,
   a_hotel_loan_rates,
   a_how_debt_placement_works,
+  a_interest_deduction_limits,
   a_interest_only_loans,
   a_lenders_under_5_million,
   a_loan_assumption,
