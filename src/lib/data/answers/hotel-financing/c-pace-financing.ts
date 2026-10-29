@@ -239,6 +239,7 @@ export const page: AnswerPage = {
   related: {
     hub: "/hotel-financing",
     siblings: [
+      "/hotel-financing/public-incentives-and-tif",
       "/hotel-financing/pip-and-renovation-loans",
       "/hotel-financing/historic-tax-credits",
       "/hotel-financing/loan-assumption",

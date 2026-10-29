@@ -124,6 +124,58 @@ CSV still points at rather than genuine content gaps.
 
 ## Run notes
 
+**2026-10-29, Content Writer.** Shipped `/hotel-financing/public-incentives-and-tif`. Sections A to E are complete, F
+is SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage scan of `src/lib/data/`:
+"tax increment", "private activity", "tax-exempt bond", "municipal bond", "2017-13" and "publicly owned hotel" each
+appeared in **zero** files, and "incentive" in 25, every one of them about a management incentive fee or a federal
+credit. The site carried five federal incentive pages (historic credits, opportunity zones, C-PACE, New Markets,
+EB-5) and nothing at all on the state and local layer, which is where a downtown conversion or a convention hotel
+actually gets its public money.
+
+**The find of this run.** The IRS wrote its own hotel example into the tax-exempt bond rules. Rev. Proc. 2017-13
+section 5.04 requires a government to approve the rates charged at a bond-financed facility, and illustrates an
+acceptable approval as "a method that establishes hotel room rates using specified revenue goals based on comparable
+properties". So revenue management at a city-owned hotel runs inside an approved pricing method set against a comp
+set. The other half of the same section is harder: 5.02(2) says no element of the fee may take into account net
+profits or *both* revenues and expenses, which leaves a base fee on gross revenues safe and makes a standard brand
+incentive fee measured on gross operating profit a share of net profits unless it is rebuilt as performance-standard
+incentive compensation. That is a direct collision between a bond document and the market-standard hotel management
+agreement, and it is in the revenue procedure's own text.
+
+**The second find, and do not let a later run smooth it over.** RSMo 99.805(4) and 99.845.3 both exclude "taxes
+imposed on sales or charges for sleeping rooms paid by transient guests of hotels and motels" from economic activity
+taxes. A Missouri hotel in a TIF district therefore contributes 100 percent of its real property tax increment and
+nothing from the tax on rooms, which is the thing it mostly sells. The worked example sizes the gap at 6.7 times. The
+Sikeston Holiday Inn Express plan, the only one of the eight named for a limited-service brand, reports $0.00 of
+economic activity taxes since inception against $425,879.83 of payments in lieu of taxes; the page says the report
+explains no single figure and that a plan can also simply not capture those taxes, which is the honest reading.
+
+**The dataset, and its one-project hole.** The Missouri Department of Revenue's 2025 report (January 30, 2026) is the
+best public hotel-TIF evidence found so far. Its summary says 355 projects from 84 municipalities and $3,694,284,956
+of payments in lieu of taxes and economic activity taxes since inception. Its project pages carry **354** blocks, and
+four independent markers agree on 354: "TIF Revenues", "Current Amount of Revenue", "Anticipated TOTAL Project Costs"
+and "Original estimated number of years to retirement". The page states the disagreement rather than picking a side.
+Eight of the 354 plan names carry a hotel or lodging brand, the TIF-reimbursable share of total project cost runs
+6.2 to 79.8 percent with a 26.7 percent median, and six of the eight are pay as you go. The file has no use or
+industry field, so a hotel inside a mixed-use plan is invisible and eight is a floor, not a total.
+
+**What the run could not source, for the next writer.** The Texas qualified hotel project rebate in Tax Code 351.102,
+which rebates state hotel occupancy and sales tax to a convention centre hotel, is the most hotel-specific state
+incentive in the country and is still unreadable: `statutes.capitol.texas.gov/Docs/TX/htm/TX.351.htm` answers 200 with
+188,000 characters that are fonts and script and no statute text, so the 2026-10-26 note about that host being a
+JavaScript shell holds for the `/Docs/` path too. The enrolled-bill route works but needs the right bill number.
+`www.ilga.gov` fails TLS verification from this environment even with the proxy CA bundle, so Illinois 65 ILCS
+5/11-74.4 went unread. `www.gasb.org` and `www.nyc.gov` both answer 403, so GASB 77 and the NYC ICAP hotel exclusion
+are out. What does work, cleanly, to a plain curl: `revisor.mo.gov/main/OneSection.aspx?section=<n>` and
+`www.revisor.mn.gov/statutes/cite/<n>` for statute text with amendment history, and
+`dor.mo.gov/taxation/business/tax-types/sales-use/local-increment-financing/documents/<year>-Local-Tax-Increment-Financing.pdf`
+for the annual report, 2.5 MB that `pdftotext -layout` turns into 884,817 readable characters.
+
+**One length note.** The page landed at 2,497 words against the 2,500 ceiling after six trimming passes from 3,103.
+It covers four legal regimes (federal governmental bonds, the qualified redevelopment bond, the management contract
+safe harbor and state TIF), which is one more than fits comfortably. A future run wanting to add a third state or the
+Texas rebate should split the city-owned-hotel section into its own page rather than compress this one further.
+
 **2026-10-28, Content Writer.** Shipped `/hotel-financing/interest-deduction-limits`. Sections A to E are
 complete, F is SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage scan of
 `src/lib/data/`: "163(j)", "business interest", "net operating loss", "self-rental" and "Item 12" each
@@ -585,6 +637,7 @@ Pick from `geo/04-queries.csv` prompts with no dedicated page, phrased the way p
 | [x] | `/sell-a-hotel/selling-to-a-foreign-buyer` | No CSV row targets it directly, and "CFIUS", "foreign buyer" and "national security" are absent from `geo/04-queries.csv`. The gap was total on the buyer side: "CFIUS", "national security" and "Treasury review" each appeared in **zero** files under `src/lib/data/`, and "foreign buyer" in one, as an H2 about who buys hotels. FIRPTA on `/sell-a-hotel/tax-clearance-and-withholding` covers the foreign *seller*; nothing covered the foreign *buyer*, which is the question an owner actually asks when a cross-border bid arrives. | Shipped 2026-10-26 in PR #85. Covers the two doors (part 800 for the business, part 802 for the real estate, mutually exclusive under 31 CFR 802.216(b)); the location-only definition of covered real estate with close proximity at one mile and extended range at 99; the covered-port test that is the one that catches hotels, including large hub airports; the urbanized-area exception and the hole in it, which is that the exception does not reach the covered port leg or the one-mile leg; the three-of-four property rights test; that part 802 has **no mandatory declaration** at all, so filing is voluntary both ways; the six fee bands; the statutory ceilings (30, 45, 45, one 15-day extension, 15 for the President) against the CY 2025 published averages (6.87 days to accept a declaration, 30.1 to assess, 45.4 closing in review, 82.8 closing in investigation, 114 of 207 notices investigated); the three-year agency-notice look-back that is the real cost of not filing; and the two state bans that go further than the federal rule, Florida's 10-mile rule and Texas SB 17's flat prohibition on commercial real property. Prints no count of hotel CFIUS filings and no per-deal legal cost: CFIUS publishes no industry breakdown for part 802 and no source gives the second. Says plainly that the team does not file CFIUS declarations or advise on them. Kept clear of `/sell-a-hotel/tax-clearance-and-withholding` (the foreign seller) and `/sell-a-hotel/what-buyers-look-for` (the buyer pool); both now link to it, as do `/glossary/ground-lease` and `/glossary/going-concern-value`. Runs 2,919 words after five trimming passes from 4,174, above the brief's 2,500 and inside the 2,515 to 2,987 band the site's other evidence-heavy pages occupy. |
 | [x] | `/sell-a-hotel/estate-tax-and-basis-step-up` | No CSV row targets it directly, and "estate tax", "step-up", "basis step" and "6166" are absent from `geo/04-queries.csv`. It answers the hold-or-sell half of the "Selling a hotel" cluster's tax questions, which `/sell-a-hotel/taxes-when-selling-a-hotel` answers only for a sale. The gap was total: "step-up", "1014", "6166", "2032A", "succession" and "generation-skipping" each appeared in **zero** files under `src/lib/data/`, and "estate tax" in five, every one of them the phrase "real estate tax". | Shipped 2026-10-27 in PR #86. |
 | [x] | `/hotel-financing/interest-deduction-limits` | No CSV row targets it directly, and "163(j)", "business interest", "interest deduction", "net operating loss" and "self-rental" are absent from `geo/04-queries.csv`. It answers the deductibility half of the "Loan types" and "Deal docs & underwriting" clusters, which between them ask what every loan product costs and never ask what of that cost is deductible. The gap was total: "163(j)" appeared in **zero** files under `src/lib/data/`, and "business interest" only inside the section 6166 phrase "closely held business interest". | Shipped 2026-10-28 in PR #87. |
+| [x] | `/hotel-financing/public-incentives-and-tif` | No CSV row targets it directly, and "tax increment", "private activity", "tax-exempt bond", "municipal bond", "2017-13" and "publicly owned hotel" each appeared in zero files under `src/lib/data/`, while "incentive" appeared in 25 files and never once about a state or local program. The site had five federal incentive pages and nothing on the layer a city controls | Shipped 2026-10-29. Covers why a private hotel's municipal debt is taxable (26 U.S.C. 141 and the 17-category 142(a) list), the one tax-exempt route that can reach a hotel rehab (the 144(c) qualified redevelopment bond, which cannot fund new construction), what Rev. Proc. 2017-13 does to a brand management agreement at a city-owned hotel, and two state TIF statutes that reach opposite answers. Carries the first hotel-level TIF figures on the site, recomputed from Missouri's own 2025 annual report: 8 hotel-named plans of 354, a 6.2 to 79.8 percent TIF share of total project cost. Prints no award size and no national hotel-TIF count, because neither is published. Texas Tax Code 351.102 left out: `statutes.capitol.texas.gov` is still a JavaScript shell |
 
 Remaining candidates: hotel loan assumption, seller financing for a hotel, preferred equity (needs a
 citable source), what buyers look for in a hotel, selling a hotel with a ground lease, hotel property

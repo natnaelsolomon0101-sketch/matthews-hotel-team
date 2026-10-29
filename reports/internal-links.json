@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-28T14:40:46.115Z",
-  "base": "http://localhost:44709",
+  "runAt": "2026-10-29T14:53:34.228Z",
+  "base": "http://localhost:33683",
   "edges": [
     {
       "from": "/",
@@ -4097,6 +4097,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-financing/prepayment-penalties"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-financing/public-incentives-and-tif"
     },
     {
       "from": "/sitemap",
@@ -39640,6 +39644,10 @@
     },
     {
       "from": "/glossary/noi",
+      "to": "/hotel-financing/public-incentives-and-tif"
+    },
+    {
+      "from": "/glossary/noi",
       "to": "/hotel-valuation/how-to-value-a-hotel"
     },
     {
@@ -42900,6 +42908,10 @@
     },
     {
       "from": "/glossary/comp-set",
+      "to": "/hotel-financing/public-incentives-and-tif"
+    },
+    {
+      "from": "/glossary/comp-set",
       "to": "/sell-a-hotel/documents-needed"
     },
     {
@@ -43081,6 +43093,10 @@
     {
       "from": "/glossary/gop",
       "to": "/glossary/cap-rate"
+    },
+    {
+      "from": "/glossary/gop",
+      "to": "/hotel-financing/public-incentives-and-tif"
     },
     {
       "from": "/glossary/gop",
@@ -44352,6 +44368,10 @@
     },
     {
       "from": "/hotel-financing",
+      "to": "/hotel-financing/public-incentives-and-tif"
+    },
+    {
+      "from": "/hotel-financing",
       "to": "/hotel-financing/pip-and-renovation-loans"
     },
     {
@@ -45597,6 +45617,10 @@
     {
       "from": "/hotel-financing/c-pace-financing",
       "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/hotel-financing/c-pace-financing",
+      "to": "/hotel-financing/public-incentives-and-tif"
     },
     {
       "from": "/hotel-financing/c-pace-financing",
@@ -47201,6 +47225,10 @@
     {
       "from": "/hotel-financing/historic-tax-credits",
       "to": "/hotel-financing/new-markets-tax-credits"
+    },
+    {
+      "from": "/hotel-financing/historic-tax-credits",
+      "to": "/hotel-financing/public-incentives-and-tif"
     },
     {
       "from": "/hotel-financing/historic-tax-credits",
@@ -49975,6 +50003,214 @@
       "to": "/sitemap"
     },
     {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/_next/static/chunks/971af7bd7354d30d.css"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/hotel-financing/public-incentives-and-tif.md"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/glossary/gop"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/hotel-industry/hotel-management-agreements"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/glossary/comp-set"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/hotel-financing/historic-tax-credits"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/hotel-financing/new-markets-tax-credits"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/hotel-financing/opportunity-zones"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/hotel-financing/c-pace-financing"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/hotel-financing/construction-loans"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/hotel-financing/capital-stack"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/hotel-financing/brand-conversion-financing"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/glossary/noi"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-financing/public-incentives-and-tif",
+      "to": "/sitemap"
+    },
+    {
       "from": "/hotel-financing/opportunity-zones",
       "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     },
@@ -50073,6 +50309,10 @@
     {
       "from": "/hotel-financing/opportunity-zones",
       "to": "/hotel-financing/new-markets-tax-credits"
+    },
+    {
+      "from": "/hotel-financing/opportunity-zones",
+      "to": "/hotel-financing/public-incentives-and-tif"
     },
     {
       "from": "/hotel-financing/opportunity-zones",
@@ -51769,6 +52009,10 @@
     {
       "from": "/hotel-financing/capital-stack",
       "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/hotel-financing/capital-stack",
+      "to": "/hotel-financing/public-incentives-and-tif"
     },
     {
       "from": "/hotel-financing/capital-stack",
@@ -74815,6 +75059,7 @@
         "/hotel-financing/new-markets-tax-credits",
         "/hotel-financing/non-recourse-loans",
         "/hotel-financing/prepayment-penalties",
+        "/hotel-financing/public-incentives-and-tif",
         "/hotel-financing/opportunity-zones",
         "/hotel-financing/pip-and-renovation-loans",
         "/hotel-financing/refinance-or-sell",
@@ -84630,6 +84875,7 @@
         "/glossary/cap-rate",
         "/glossary/revpar",
         "/glossary/adr",
+        "/hotel-financing/public-incentives-and-tif",
         "/hotel-valuation/how-to-value-a-hotel",
         "/hotel-valuation/hotel-cap-rates",
         "/hotel-financing/loan-requirements",
@@ -85547,6 +85793,7 @@
         "/glossary/mpi-ari-rgi",
         "/glossary/revpar",
         "/glossary/adr",
+        "/hotel-financing/public-incentives-and-tif",
         "/sell-a-hotel/documents-needed",
         "/hotel-valuation/how-to-value-a-hotel",
         "/sell-a-hotel/how-to-sell-a-hotel",
@@ -85599,6 +85846,7 @@
         "/glossary/ffe-reserve",
         "/glossary/revpar",
         "/glossary/cap-rate",
+        "/hotel-financing/public-incentives-and-tif",
         "/hotel-valuation/how-to-value-a-hotel",
         "/hotel-valuation/select-service-vs-full-service",
         "/sell-a-hotel/documents-needed",
@@ -85952,6 +86200,7 @@
         "/hotel-financing/loan-workouts",
         "/hotel-financing/new-markets-tax-credits",
         "/hotel-financing/prepayment-penalties",
+        "/hotel-financing/public-incentives-and-tif",
         "/hotel-financing/pip-and-renovation-loans",
         "/hotel-financing/refinance-or-sell",
         "/hotel-financing/refinance",
@@ -86300,6 +86549,7 @@
         "/hotel-financing/refinance-or-sell",
         "/hotel-financing/sba-7a-vs-504",
         "/team/nate-solomon",
+        "/hotel-financing/public-incentives-and-tif",
         "/hotel-financing/historic-tax-credits",
         "/hotel-financing/loan-assumption",
         "/hotel-financing/construction-loans",
@@ -86749,6 +86999,7 @@
         "/team/nate-solomon",
         "/hotel-financing/opportunity-zones",
         "/hotel-financing/new-markets-tax-credits",
+        "/hotel-financing/public-incentives-and-tif",
         "/hotel-financing/brand-conversion-financing",
         "/glossary",
         "/glossary/pip",
@@ -87524,6 +87775,64 @@
       "missing": []
     },
     {
+      "url": "/hotel-financing/public-incentives-and-tif",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/971af7bd7354d30d.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-financing/public-incentives-and-tif.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/luke-thompson",
+        "/glossary/gop",
+        "/hotel-industry/hotel-management-agreements",
+        "/glossary/comp-set",
+        "/team/nate-solomon",
+        "/hotel-financing/historic-tax-credits",
+        "/hotel-financing/new-markets-tax-credits",
+        "/hotel-financing/opportunity-zones",
+        "/hotel-financing/c-pace-financing",
+        "/hotel-financing/construction-loans",
+        "/hotel-financing/capital-stack",
+        "/hotel-financing/brand-conversion-financing",
+        "/glossary",
+        "/glossary/noi",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
       "url": "/hotel-financing/opportunity-zones",
       "outboundInternal": [
         "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
@@ -87551,6 +87860,7 @@
         "/hotel-financing/historic-tax-credits",
         "/team/luke-thompson",
         "/hotel-financing/new-markets-tax-credits",
+        "/hotel-financing/public-incentives-and-tif",
         "/hotel-financing/eb-5-financing",
         "/hotel-financing/refinance-or-sell",
         "/glossary",
@@ -88023,6 +88333,7 @@
         "/hotel-financing/covenants-and-cash-management",
         "/hotel-financing/how-debt-placement-works",
         "/team/miles-cortez",
+        "/hotel-financing/public-incentives-and-tif",
         "/hotel-financing/interest-deduction-limits",
         "/glossary",
         "/glossary/mezzanine-debt",

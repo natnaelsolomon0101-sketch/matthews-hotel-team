@@ -53,6 +53,7 @@ export const entry: GlossaryEntry = {
     "adr"
   ],
   relatedAnswers: [
+    "/hotel-financing/public-incentives-and-tif",
     "/sell-a-hotel/documents-needed",
     "/hotel-valuation/how-to-value-a-hotel",
     "/sell-a-hotel/how-to-sell-a-hotel"
