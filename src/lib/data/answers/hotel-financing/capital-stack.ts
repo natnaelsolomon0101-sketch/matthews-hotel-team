@@ -213,6 +213,7 @@ export const page: AnswerPage = {
   related: {
     hub: "/hotel-financing",
     siblings: [
+      "/hotel-financing/public-incentives-and-tif",
       "/hotel-financing/mezzanine-debt-and-preferred-equity",
       "/hotel-financing/interest-deduction-limits",
       "/hotel-financing/c-pace-financing",

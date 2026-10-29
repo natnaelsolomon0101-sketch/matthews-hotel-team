@@ -215,6 +215,7 @@ export const page: AnswerPage = {
       "/hotel-financing/1031-exchange-hotels",
       "/hotel-financing/historic-tax-credits",
       "/hotel-financing/new-markets-tax-credits",
+      "/hotel-financing/public-incentives-and-tif",
       "/hotel-financing/eb-5-financing",
       "/hotel-financing/construction-loans",
       "/hotel-financing/refinance-or-sell"

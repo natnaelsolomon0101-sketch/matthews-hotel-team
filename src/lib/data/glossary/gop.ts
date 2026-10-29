@@ -59,6 +59,7 @@ export const entry: GlossaryEntry = {
     "cap-rate"
   ],
   relatedAnswers: [
+    "/hotel-financing/public-incentives-and-tif",
     "/hotel-valuation/how-to-value-a-hotel",
     "/hotel-valuation/select-service-vs-full-service",
     "/sell-a-hotel/documents-needed",
