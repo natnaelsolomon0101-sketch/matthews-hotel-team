@@ -170,6 +170,18 @@ conversion guidebook was not cited because the whitehouse.gov path for it was no
 2,500 ceiling. It carries seven H2s across five legal regimes; a future run wanting to add state or local conversion
 incentives should give them their own page rather than compress this one further.
 
+**For the Maintainer: "the table above" is wrong on 14 pages.** Slot A7 in `geo/05-templates.md` puts the
+comparison table *after* the body sections, and `AnswerPageView` renders it there, so a section that says "the table
+above" points at nothing. Confirmed by reading the prerendered HTML for this page: the H2 offsets run from the first
+section at 30381 to the last at 46073 and the table sits in the gap before "Worked example" at 54753. `grep -rl "table
+above" src/lib/data/answers/` returns **14** files: `hotel-industry/fire-safety-and-federal-travel`,
+`hotel-financing/hotel-loan-rates`, `hotel-financing/interest-rate-caps`, `sell-a-hotel/broker-fees`,
+`sell-a-hotel/how-long-it-takes`, `sell-a-hotel/how-to-sell-a-hotel`, `sell-a-hotel/documents-needed`,
+`sell-a-hotel/selling-to-a-foreign-buyer`, `hotel-valuation/hub` and five more. This run wrote "below" on the new page
+and deliberately did **not** touch the other 13: it is a one-word copy fix across four clusters, which is a Maintainer
+sweep rather than a content run, and one topic per PR. Either change the word on all 13 or move slot A7 above the
+sections, but do not leave the two disagreeing.
+
 **Production was down for the whole of this run.** See the ship note in `geo/agent-log.md`.
 
 **2026-10-29, Content Writer.** Shipped `/hotel-financing/public-incentives-and-tif`. Sections A to E are complete, F
