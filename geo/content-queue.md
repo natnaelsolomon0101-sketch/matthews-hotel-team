@@ -124,6 +124,54 @@ CSV still points at rather than genuine content gaps.
 
 ## Run notes
 
+**2026-10-30, Content Writer.** Shipped `/hotel-valuation/hotel-to-apartment-conversion`. Sections A to E are
+complete, F is SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage scan of
+`src/lib/data/`: "multifamily conversion" and "sale-leaseback" each appeared in **zero** files, "adaptive reuse" in
+one and "apartment" in 20, every one of the 20 an incidental comparison rather than a page. The site explained every
+way to finance, value and sell a hotel and said nothing about the one exit that is neither a sale nor a refinance.
+"ADA", "Phase I", "E1527" and "property condition assessment" were also scanned and are already covered, so they are
+not gaps.
+
+**The find of this run, and do not let a later run flatten it.** Four separate rulebooks decide whether a building is
+a hotel or apartments and **not one of them uses the same test**, so the same building can be apartments under one and
+a hotel under another in the same year. 26 U.S.C. 168(e)(2)(A) runs a two-part money-and-unit-count test **for the
+taxable year**: 80 percent or more of gross rental income from dwelling units under clause (i), and clause (ii)(I)
+excludes from "dwelling unit" any unit in a hotel, motel or other establishment more than one-half of the units in
+which are used on a transient basis. Read together those two clauses mean a half-converted hotel has **no** dwelling
+units at all, so the 80 percent test cannot be met and the building is nonresidential real property again that year.
+The classification does not stick, and nothing in the statute makes it stick. 26 CFR 1.168(i)-4(d)(2)(i) confirms the
+annual design by comparing primary use this taxable year against the immediately preceding year. Meanwhile 13 CFR
+120.110(c) tests the **borrower** rather than the building (a landlord who does not occupy the financed asset is an
+ineligible passive business, so SBA 7(a) and 504 leave the table entirely), New Jersey DCA Bulletin 15-3 on the 2015
+IBC tests **length of stay** (R-1 transient at not more than 30 days, R-2 permanent), and 24 CFR 100.205 read with
+the 100.201 definition of first occupancy as "a building that has never before been used for any purpose" tests a
+**single historical fact** a standing hotel has already satisfied, so the federal adaptable-design requirements do not
+attach on conversion. The page states the 100.202 prohibitions and the reasonable-modification duties still apply and
+that local accessibility law at a change of occupancy is wide open, which is the honest reading.
+
+**The counterintuitive arithmetic, verified both ways.** The 39-year to 27.5-year switch is usually described as free
+money. It is not. Under 26 CFR 1.168(i)-4(d)(3)(i) you restart a full 27.5-year life on the **adjusted** basis, with
+no convention in the year of change, so the benefit depends entirely on how far into the 39-year schedule you already
+are. On the page's $8,400,000 building the switch is worth **$68,205.13 a year more** at a January 2018 change of use
+and **$2,284.38 a year less** at a January 2027 one, because by 2027 the remaining 39-year life is 27.21 years, already
+shorter than the 27.5 the switch hands back. The sign genuinely flips. `scripts/check-conversion-math.mjs` holds 64
+assertions covering both dates, both deltas, the 31.7 percent figure, the remaining-life crossover, and the page-shape
+contracts (answer word count, FAQ lengths, title and description limits).
+
+**Two sourcing notes for the next run.** The **eCFR `full` endpoint needs `--compressed`**, confirming the 2026-10-06
+note, and its `/current/...` HTML section URLs do resolve 200 to a browser user agent and are the right thing to cite
+even though the API is the right thing to read. `codes.iccsafe.org` answers **403**, so the IBC itself is unreadable
+from here; the 30-day transient boundary is therefore cited to New Jersey's own code bulletin, which restates it for
+New Jersey's adoption of the 2015 IBC, and the page says so rather than presenting it as the national rule.
+`www.mass.gov/doc/.../download` also answers 403, and the October 2023 White House commercial-to-residential
+conversion guidebook was not cited because the whitehouse.gov path for it was not verified this run.
+
+**One length note.** The page landed at **2,535 words** after four trimming passes from 2,832, against the brief's
+2,500 ceiling. It carries seven H2s across five legal regimes; a future run wanting to add state or local conversion
+incentives should give them their own page rather than compress this one further.
+
+**Production was down for the whole of this run.** See the ship note in `geo/agent-log.md`.
+
 **2026-10-29, Content Writer.** Shipped `/hotel-financing/public-incentives-and-tif`. Sections A to E are complete, F
 is SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage scan of `src/lib/data/`:
 "tax increment", "private activity", "tax-exempt bond", "municipal bond", "2017-13" and "publicly owned hotel" each

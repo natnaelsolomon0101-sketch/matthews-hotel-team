@@ -3,6 +3,7 @@ import { page as a_appraisal_lower_than_expected } from "./appraisal-lower-than-
 import { page as a_branded_select_service_hotel_value } from "./branded-select-service-hotel-value";
 import { page as a_broker_opinion_of_value } from "./broker-opinion-of-value";
 import { page as a_hotel_cap_rates } from "./hotel-cap-rates";
+import { page as a_hotel_to_apartment_conversion } from "./hotel-to-apartment-conversion";
 import { page as a_how_to_value_a_hotel } from "./how-to-value-a-hotel";
 import { page as a_hub } from "./hub";
 import { page as a_interest_rates_and_hotel_value } from "./interest-rates-and-hotel-value";
@@ -20,6 +21,7 @@ export const spokes: AnswerPage[] = [
   a_branded_select_service_hotel_value,
   a_broker_opinion_of_value,
   a_hotel_cap_rates,
+  a_hotel_to_apartment_conversion,
   a_how_to_value_a_hotel,
   a_interest_rates_and_hotel_value,
   a_partner_buyout_valuation,
