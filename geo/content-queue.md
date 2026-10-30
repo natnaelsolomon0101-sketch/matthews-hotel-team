@@ -166,7 +166,7 @@ New Jersey's adoption of the 2015 IBC, and the page says so rather than presenti
 `www.mass.gov/doc/.../download` also answers 403, and the October 2023 White House commercial-to-residential
 conversion guidebook was not cited because the whitehouse.gov path for it was not verified this run.
 
-**One length note.** The page landed at **2,535 words** after four trimming passes from 2,832, against the brief's
+**One length note.** The page landed at **2,553 words** after four trimming passes from 2,832, plus two small post-gate copy corrections, against the brief's
 2,500 ceiling. It carries seven H2s across five legal regimes; a future run wanting to add state or local conversion
 incentives should give them their own page rather than compress this one further.
 
