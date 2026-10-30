@@ -203,6 +203,7 @@ export const page: AnswerPage = {
   related: {
     hub: "/hotel-valuation",
     siblings: [
+      "/hotel-valuation/hotel-to-apartment-conversion",
       "/hotel-valuation/hotel-cap-rates",
       "/hotel-valuation/broker-opinion-of-value",
       "/hotel-valuation/select-service-vs-full-service",

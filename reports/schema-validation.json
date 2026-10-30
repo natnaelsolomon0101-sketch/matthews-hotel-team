@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-10-29T14:53:24.848Z",
+  "runAt": "2026-10-30T14:37:30.374Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 337,
-  "blocksFound": 337,
-  "blocksValid": 337,
+  "urlsChecked": 338,
+  "blocksFound": 338,
+  "blocksValid": 338,
   "issues": [],
   "blocks": [
     {
@@ -939,6 +939,13 @@
     },
     {
       "url": "/hotel-valuation/hotel-cap-rates",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-valuation/hotel-to-apartment-conversion",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,

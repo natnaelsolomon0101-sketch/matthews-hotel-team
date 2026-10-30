@@ -1,10 +1,10 @@
 {
-  "urls": 337,
+  "urls": 338,
   "maxDepth": 2,
   "byDepth": {
     "0": 1,
     "1": 32,
-    "2": 304
+    "2": 305
   },
   "depth": {
     "/": 0,
@@ -140,6 +140,7 @@
     "/hotel-valuation/broker-opinion-of-value": 2,
     "/hotel-valuation/appraisal-lower-than-expected": 2,
     "/hotel-valuation/branded-select-service-hotel-value": 2,
+    "/hotel-valuation/hotel-to-apartment-conversion": 2,
     "/hotel-valuation/interest-rates-and-hotel-value": 2,
     "/hotel-valuation/partner-buyout-valuation": 2,
     "/hotel-valuation/pip-and-hotel-value": 2,

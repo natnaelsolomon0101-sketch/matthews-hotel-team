@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-29T14:53:34.228Z",
-  "base": "http://localhost:33683",
+  "runAt": "2026-10-30T14:37:39.500Z",
+  "base": "http://localhost:39923",
   "edges": [
     {
       "from": "/",
@@ -4249,6 +4249,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-valuation/hotel-cap-rates"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-valuation/hotel-to-apartment-conversion"
     },
     {
       "from": "/sitemap",
@@ -40440,6 +40444,10 @@
     },
     {
       "from": "/glossary/per-key",
+      "to": "/hotel-valuation/hotel-to-apartment-conversion"
+    },
+    {
+      "from": "/glossary/per-key",
       "to": "/hotel-financing/appraisal-requirements"
     },
     {
@@ -40629,6 +40637,10 @@
     {
       "from": "/glossary/going-concern-value",
       "to": "/glossary/cap-rate"
+    },
+    {
+      "from": "/glossary/going-concern-value",
+      "to": "/hotel-valuation/hotel-to-apartment-conversion"
     },
     {
       "from": "/glossary/going-concern-value",
@@ -57512,6 +57524,10 @@
     },
     {
       "from": "/hotel-valuation",
+      "to": "/hotel-valuation/hotel-to-apartment-conversion"
+    },
+    {
+      "from": "/hotel-valuation",
       "to": "/hotel-valuation/interest-rates-and-hotel-value"
     },
     {
@@ -58160,6 +58176,10 @@
     },
     {
       "from": "/hotel-valuation/broker-opinion-of-value",
+      "to": "/hotel-valuation/hotel-to-apartment-conversion"
+    },
+    {
+      "from": "/hotel-valuation/broker-opinion-of-value",
       "to": "/hotel-valuation/how-to-value-a-hotel"
     },
     {
@@ -58479,6 +58499,206 @@
       "to": "/sitemap"
     },
     {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/_next/static/chunks/971af7bd7354d30d.css"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/hotel-valuation/hotel-to-apartment-conversion.md"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/hotel-valuation/broker-opinion-of-value"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/hotel-valuation/select-service-vs-full-service"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/hotel-valuation/pip-and-hotel-value"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/hotel-financing/1031-exchange-hotels"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/glossary/going-concern-value"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/glossary/cap-rate"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/glossary/noi"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/glossary/per-key"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-valuation/hotel-to-apartment-conversion",
+      "to": "/sitemap"
+    },
+    {
       "from": "/hotel-valuation/how-to-value-a-hotel",
       "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     },
@@ -58557,6 +58777,10 @@
     {
       "from": "/hotel-valuation/how-to-value-a-hotel",
       "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-valuation/how-to-value-a-hotel",
+      "to": "/hotel-valuation/hotel-to-apartment-conversion"
     },
     {
       "from": "/hotel-valuation/how-to-value-a-hotel",
@@ -59196,6 +59420,10 @@
     },
     {
       "from": "/hotel-valuation/pip-and-hotel-value",
+      "to": "/hotel-valuation/hotel-to-apartment-conversion"
+    },
+    {
+      "from": "/hotel-valuation/pip-and-hotel-value",
       "to": "/hotel-valuation/branded-select-service-hotel-value"
     },
     {
@@ -59817,6 +60045,10 @@
     {
       "from": "/hotel-valuation/select-service-vs-full-service",
       "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-valuation/select-service-vs-full-service",
+      "to": "/hotel-valuation/hotel-to-apartment-conversion"
     },
     {
       "from": "/hotel-valuation/select-service-vs-full-service",
@@ -75097,6 +75329,7 @@
         "/hotel-valuation/branded-select-service-hotel-value",
         "/hotel-valuation/broker-opinion-of-value",
         "/hotel-valuation/hotel-cap-rates",
+        "/hotel-valuation/hotel-to-apartment-conversion",
         "/hotel-valuation/how-to-value-a-hotel",
         "/hotel-valuation/interest-rates-and-hotel-value",
         "/hotel-valuation/partner-buyout-valuation",
@@ -85098,6 +85331,7 @@
         "/glossary/cap-rate",
         "/glossary/noi",
         "/glossary/revpar",
+        "/hotel-valuation/hotel-to-apartment-conversion",
         "/hotel-financing/appraisal-requirements",
         "/hotel-valuation/how-to-value-a-hotel",
         "/hotel-valuation/select-service-vs-full-service",
@@ -85152,6 +85386,7 @@
         "/glossary/bov",
         "/glossary/noi",
         "/glossary/cap-rate",
+        "/hotel-valuation/hotel-to-apartment-conversion",
         "/hotel-financing/appraisal-requirements",
         "/sell-a-hotel/1031-without-buying-another-hotel",
         "/sell-a-hotel/estate-tax-and-basis-step-up",
@@ -89864,6 +90099,7 @@
         "/hotel-valuation/broker-opinion-of-value",
         "/hotel-valuation/appraisal-lower-than-expected",
         "/hotel-valuation/branded-select-service-hotel-value",
+        "/hotel-valuation/hotel-to-apartment-conversion",
         "/hotel-valuation/interest-rates-and-hotel-value",
         "/hotel-valuation/partner-buyout-valuation",
         "/hotel-valuation/pip-and-hotel-value",
@@ -90044,6 +90280,7 @@
         "/hotel-financing/appraisal-requirements",
         "/team/nate-solomon",
         "/process",
+        "/hotel-valuation/hotel-to-apartment-conversion",
         "/hotel-valuation/how-to-value-a-hotel",
         "/hotel-valuation/hotel-cap-rates",
         "/hotel-valuation/select-service-vs-full-service",
@@ -90134,6 +90371,62 @@
       "missing": []
     },
     {
+      "url": "/hotel-valuation/hotel-to-apartment-conversion",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/971af7bd7354d30d.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-valuation/hotel-to-apartment-conversion.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/miles-cortez",
+        "/team/nate-solomon",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/hotel-valuation/broker-opinion-of-value",
+        "/hotel-valuation/select-service-vs-full-service",
+        "/hotel-valuation/pip-and-hotel-value",
+        "/hotel-financing/1031-exchange-hotels",
+        "/glossary",
+        "/glossary/going-concern-value",
+        "/glossary/cap-rate",
+        "/glossary/noi",
+        "/glossary/per-key",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
       "url": "/hotel-valuation/how-to-value-a-hotel",
       "outboundInternal": [
         "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
@@ -90156,6 +90449,7 @@
         "/sell-a-hotel/documents-needed",
         "/hotel-valuation/hotel-cap-rates",
         "/team/luke-thompson",
+        "/hotel-valuation/hotel-to-apartment-conversion",
         "/hotel-valuation/broker-opinion-of-value",
         "/hotel-valuation/select-service-vs-full-service",
         "/glossary",
@@ -90333,6 +90627,7 @@
         "/hotel-valuation/appraisal-lower-than-expected",
         "/hotel-financing/pip-and-renovation-loans",
         "/team/luke-thompson",
+        "/hotel-valuation/hotel-to-apartment-conversion",
         "/hotel-valuation/branded-select-service-hotel-value",
         "/hotel-valuation/hotel-cap-rates",
         "/hotel-valuation/how-to-value-a-hotel",
@@ -90507,6 +90802,7 @@
         "/hotel-valuation/hotel-cap-rates",
         "/sell-a-hotel/how-long-it-takes",
         "/team/luke-thompson",
+        "/hotel-valuation/hotel-to-apartment-conversion",
         "/hotel-valuation/how-to-value-a-hotel",
         "/hotel-valuation/broker-opinion-of-value",
         "/glossary",
