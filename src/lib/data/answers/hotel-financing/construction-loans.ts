@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Hotel Construction Loans: How They Work in 2026",
   h1: "How do I finance hotel construction in 2026?",
   description: "How ground-up hotel construction loans work in 2026: bank limits, equity, draws, interest reserve, guaranties, SBA options and the permanent takeout.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-11-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -54,7 +54,7 @@ export const page: AnswerPage = {
     {
       h2: "Can I use an SBA loan to build a hotel?",
       lead: "Yes. SBA 7(a) can finance construction directly, and SBA 504 can take out a bank's construction loan with a fixed-rate debenture after the hotel is finished.",
-      body: "A 7(a) loan caps at $5 million. The portion used to build or improve real estate can run 25 years plus the additional period needed to complete construction.[5] With Prime at 7.00 percent since September 17, 2026, the maximum variable rate on a 7(a) loan over $350,000 is 10.00 percent.[8][9] SBA's regulation requires a 100 percent payment and performance bond and builder's risk insurance on 7(a) construction unless SBA waives it.[10] The current SOP applies that to construction components over $350,000 and waives the bonds when the lender hires a third-party construction management firm that controls disbursements.[6] SBA does not allow balloon payments on 7(a) loans.[6]\n\nThe 504 program is permanent or take-out financing. An interim lender, usually the same bank that holds the first lien, funds construction, and the debenture sale repays the interim loan after the project is complete.[6] For a hotel the debenture is capped at $5 million and at 35 percent of project cost, and the borrower puts in at least 15 percent.[6] On a larger project the $5 million cap binds first, as the worked example shows. The 25-year debenture priced at 6.54 percent on September 10, 2026.[8] See `/hotel-financing/sba-7a-vs-504` for the full comparison."
+      body: "A 7(a) loan caps at $5 million. The portion used to build or improve real estate can run 25 years plus the additional period needed to complete construction.[5] With Prime at 7.00 percent since September 17, 2026, the maximum variable rate on a 7(a) loan over $350,000 is 10.00 percent.[8][9] SBA's regulation requires a 100 percent payment and performance bond and builder's risk insurance on 7(a) construction unless SBA waives it.[10] The current SOP applies that to construction components over $350,000 and waives the bonds when the lender hires a third-party construction management firm that controls disbursements.[6] SBA does not allow balloon payments on 7(a) loans.[6]\n\nThe 504 program is permanent or take-out financing. An interim lender, usually the same bank that holds the first lien, funds construction, and the debenture sale repays the interim loan after the project is complete.[6] For a hotel the debenture is capped at $5 million and at 35 percent of project cost, and the borrower puts in at least 15 percent.[6] On a larger project the $5 million cap binds first, as the worked example shows. The 25-year debenture priced at 6.97 percent on October 8, 2026.[8] See `/hotel-financing/sba-7a-vs-504` for the full comparison."
     },
     {
       h2: "What does it cost to build a branded select-service hotel?",
@@ -120,7 +120,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' October 2026 rate sheet indexes its Construction row to Prime or SOFR, with Prime at 7.00%, unchanged since September 17, 2026, and SOFR at 3.90% for September 30, 2026. It marks the construction spread as not yet published, because no lender publishes one and we do not print a spread until three independent lenders quote the same structure in a month.[8]"
+    sentence: "Matthews Hotel Markets' November 2026 rate sheet indexes its Construction row to Prime or SOFR, with Prime at 7.00%, unchanged since September 17, 2026, and SOFR at 3.94% for October 29, 2026. It marks the construction spread as not yet published, because no lender publishes one and we do not print a spread until three independent lenders quote the same structure in a month.[8]"
   },
   workedExample: {
     label: "Hypothetical: 89-room select-service hotel, $21.0M all-in cost",
@@ -212,10 +212,10 @@ export const page: AnswerPage = {
     },
     {
       n: 8,
-      label: "Matthews Hotel Markets October 2026 rate sheet",
+      label: "Matthews Hotel Markets November 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
-      accessed: "2026-09-18"
+      accessed: "2026-11-01"
     },
     {
       n: 9,

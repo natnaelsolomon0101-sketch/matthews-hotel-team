@@ -82,7 +82,7 @@ export const page: AnswerPage = {
   description:
     "Kari's Law reaches a hotel phone system installed after February 16, 2020. Direct 911 dialing, a notification someone sees, and the room number.",
   h1: "Does Kari's Law apply to my hotel's phone system?",
-  lastUpdated: "2026-10-20",
+  lastUpdated: "2026-11-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -212,7 +212,7 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' October 2026 rate sheet prices the debt a renovation runs on: as of September 30, 2026 the 10-year Treasury is 5.29 percent and Prime is 7.00 percent, and every spread, coverage floor and loan-to-value cell is marked not yet published, because no lender publishes them. No lender publishes a telephone condition either, so ask yours whether a 911 configuration test is a draw condition."
+      "Matthews Hotel Markets' November 2026 rate sheet prices the debt a renovation runs on: as of October 30, 2026 the 10-year Treasury is 4.94 percent, with Prime at 7.00 percent, unchanged since September 17, and every spread, coverage floor and loan-to-value cell is marked not yet published, because no lender publishes them. No lender publishes a telephone condition either, so ask yours whether a 911 configuration test is a draw condition."
   },
   workedExample: {
     label: "Hypothetical: a 120-key select-service hotel replacing a 2016 phone system in a renovation",

@@ -24,7 +24,7 @@ export const page: AnswerPage = {
   h1: "Can a hotel project get a TIF or another public subsidy?",
   description:
     "Why tax-exempt bonds shut lodging out, the one bond that can reach a hotel, what two state TIF statutes say, and 8 Missouri hotel TIFs with real numbers.",
-  lastUpdated: "2026-10-29",
+  lastUpdated: "2026-11-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -115,7 +115,7 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' October 2026 rate sheet puts the 10-year Treasury at 5.29% and Prime at 7.00% as of September 30, 2026, and carries no public-incentive row, because what a city will contribute to a hotel project is negotiated against a redevelopment plan and is not published anywhere before it is approved.[15]"
+      "Matthews Hotel Markets' November 2026 rate sheet puts the 10-year Treasury at 4.94% on October 30, 2026 and Prime at 7.00%, unchanged since September 17, and carries no public-incentive row, because what a city will contribute to a hotel project is negotiated against a redevelopment plan and is not published anywhere before it is approved.[15]"
   },
   workedExample: {
     label:
@@ -264,10 +264,10 @@ export const page: AnswerPage = {
     },
     {
       n: 15,
-      label: "Matthews Hotel Markets October 2026 rate sheet",
+      label: "Matthews Hotel Markets November 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
-      accessed: "2026-10-29"
+      accessed: "2026-11-01"
     },
     {
       n: 16,

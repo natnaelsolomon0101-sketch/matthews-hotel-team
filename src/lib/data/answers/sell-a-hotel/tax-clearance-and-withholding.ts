@@ -42,7 +42,7 @@ export const page: AnswerPage = {
   description:
     "Why a hotel buyer holds back part of your price for unpaid sales and occupancy tax, what a state clearance takes, and the 15 percent FIRPTA rule.",
   h1: "Do I need a tax clearance certificate to sell my hotel?",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-11-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -147,12 +147,12 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' October 2026 rate sheet shows Prime at 7.00 percent and the 10-year Treasury at 5.29 percent as of September 30, 2026.[19] Those are the rates a delay is priced at. Proceeds parked in escrow for a 90-day clearance earn the seller nothing while every other cost keeps running.",
+      "Matthews Hotel Markets' November 2026 rate sheet shows Prime at 7.00 percent and the 10-year Treasury at 4.94 percent as of October 30, 2026.[19] Those are the rates a delay is priced at. Proceeds parked in escrow for a 90-day clearance earn the seller nothing while every other cost keeps running.",
   },
   workedExample: {
     label:
       "Hypothetical: a 118-key Florida hotel at $15,400,000, and what the state can reach",
-    body: "Hypothetical, not a transaction. Price $15,400,000, allocated $14,700,000 to the real property and $700,000 to furniture, fixtures and equipment, of which $120,000 is restaurant and bar equipment. The seller fell five months behind on the state transient rentals tax, on $1,540,000 of room revenue in those months.\n\nThe arrears. Florida's rate is 6 percent of the total rental charged, so $1,540,000 times 0.06 is $92,400 of state tax, before penalty and interest.[5]\n\nThe exposure. Florida caps the transferee's maximum liability at the greater of fair market value or the total purchase price.[3] Assume those are the same here, $15,400,000. That ceiling is about 167 times the $92,400 actually owed, which is why a buyer's counsel sizes escrow off the statute rather than off the seller's estimate. A holdback negotiated at 125 percent of the estimate is $115,500, and the buyer has to pay what it withholds to the state within 30 days of the transfer.[3]\n\nThe withholding, if the seller is a foreign person. Section 1445 takes 15 percent of the amount realized on the real property interest: $14,700,000 times 0.15 is $2,205,000.[11] On an adjusted basis of $11,900,000 the gain is $2,800,000, so the withholding is 78.75 percent of the whole gain. A Form 8288-B certificate can cut it to the maximum tax liability, and the IRS generally acts within 90 days.[13] Ninety days of waiting on $2,205,000, costed at the 7.00 percent Prime rate on the October 2026 rate sheet, is $2,205,000 times 0.07 times 90 divided by 365, or $38,059.[19]\n\nThe same hotel in California. Withholding would be 3 1/3 percent of $14,700,000, or $490,000, unless the seller certifies a gain-based amount.[15] Sales tax on the personal property would reach the $120,000 of restaurant and bar equipment, not the $580,000 of guest room furniture used in the lodging service.[10]\n\nEvery figure above was recomputed by scripts/check-tax-clearance-math.mjs.",
+    body: "Hypothetical, not a transaction. Price $15,400,000, allocated $14,700,000 to the real property and $700,000 to furniture, fixtures and equipment, of which $120,000 is restaurant and bar equipment. The seller fell five months behind on the state transient rentals tax, on $1,540,000 of room revenue in those months.\n\nThe arrears. Florida's rate is 6 percent of the total rental charged, so $1,540,000 times 0.06 is $92,400 of state tax, before penalty and interest.[5]\n\nThe exposure. Florida caps the transferee's maximum liability at the greater of fair market value or the total purchase price.[3] Assume those are the same here, $15,400,000. That ceiling is about 167 times the $92,400 actually owed, which is why a buyer's counsel sizes escrow off the statute rather than off the seller's estimate. A holdback negotiated at 125 percent of the estimate is $115,500, and the buyer has to pay what it withholds to the state within 30 days of the transfer.[3]\n\nThe withholding, if the seller is a foreign person. Section 1445 takes 15 percent of the amount realized on the real property interest: $14,700,000 times 0.15 is $2,205,000.[11] On an adjusted basis of $11,900,000 the gain is $2,800,000, so the withholding is 78.75 percent of the whole gain. A Form 8288-B certificate can cut it to the maximum tax liability, and the IRS generally acts within 90 days.[13] Ninety days of waiting on $2,205,000, costed at the 7.00 percent Prime rate on the November 2026 rate sheet, is $2,205,000 times 0.07 times 90 divided by 365, or $38,059.[19]\n\nThe same hotel in California. Withholding would be 3 1/3 percent of $14,700,000, or $490,000, unless the seller certifies a gain-based amount.[15] Sales tax on the personal property would reach the $120,000 of restaurant and bar equipment, not the $580,000 of guest room furniture used in the lodging service.[10]\n\nEvery figure above was recomputed by scripts/check-tax-clearance-math.mjs.",
   },
   faq: [
     {
@@ -317,10 +317,10 @@ export const page: AnswerPage = {
     },
     {
       n: 19,
-      label: "Hotel debt rate sheet, October 2026 edition",
+      label: "Hotel debt rate sheet, November 2026 edition",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)",
-      accessed: "2026-10-05",
+      accessed: "2026-11-01",
     },
   ],
   related: {

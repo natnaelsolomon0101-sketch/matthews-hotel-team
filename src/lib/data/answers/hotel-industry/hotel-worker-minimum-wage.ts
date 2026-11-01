@@ -46,7 +46,7 @@ export const page: AnswerPage = {
   description:
     "Which cities set a separate minimum wage for hotel workers, what Los Angeles requires in 2026, and what each step does to NOI and value.",
   h1: "What is the hotel worker minimum wage, and what does it do to my hotel's value?",
-  lastUpdated: "2026-10-07",
+  lastUpdated: "2026-11-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -170,7 +170,7 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' October 2026 rate sheet is where lost income becomes lost borrowing capacity. As of September 30, 2026 it shows the 10-year Treasury at 5.29 percent and Prime at 7.00 percent, and marks the coverage and loan-to-value cells as not yet published, because lenders do not publish them.[12] Whatever the floor is, a payroll increase shrinks the loan it supports."
+      "Matthews Hotel Markets' November 2026 rate sheet is where lost income becomes lost borrowing capacity. As of October 30, 2026 it shows the 10-year Treasury at 4.94 percent, with Prime at 7.00 percent, unchanged since September 17, and marks the coverage and loan-to-value cells as not yet published, because lenders do not publish them.[12] Whatever the floor is, a payroll increase shrinks the loan it supports."
   },
   workedExample: {
     label:
@@ -309,7 +309,7 @@ export const page: AnswerPage = {
     {
       n: 12,
       label:
-        "Matthews Hotel Markets hotel debt rate sheet, October 2026 edition: the 10-year Treasury at 5.29% and Prime at 7.00% as of September 30, 2026, with the debt service coverage and loan-to-value cells marked not yet published",
+        "Matthews Hotel Markets hotel debt rate sheet, November 2026 edition: the 10-year Treasury at 4.94% on October 30, 2026 and Prime at 7.00%, unchanged since September 17, with the debt service coverage and loan-to-value cells marked not yet published",
       url: "https://matthewshotelmarkets.com/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-10-07"

@@ -40,7 +40,7 @@ export const page: AnswerPage = {
   description:
     "When federal law forces flood insurance on a hotel loan, why the $500,000 NFIP cap leaves a gap, what the policy excludes, and the authorization date.",
   h1: "Does my hotel need flood insurance to close a loan?",
-  lastUpdated: "2026-10-02",
+  lastUpdated: "2026-11-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -184,7 +184,7 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' October 2026 rate sheet is the other half of this question. As of September 30, 2026 it shows the 10-year Treasury at 5.29 percent and Prime at 7.00 percent, and marks the debt service coverage and loan-to-value cells as not yet published, because lenders do not publish them.[12] An insurance certificate a lender will not accept stops a closing at any of those rates.",
+      "Matthews Hotel Markets' November 2026 rate sheet is the other half of this question. As of October 30, 2026 it shows the 10-year Treasury at 4.94 percent, with Prime at 7.00 percent, unchanged since September 17, and marks the debt service coverage and loan-to-value cells as not yet published, because lenders do not publish them.[12] An insurance certificate a lender will not accept stops a closing at any of those rates.",
   },
   workedExample: {
     label: "Hypothetical: a 120-key select-service hotel in an AE zone",
@@ -320,10 +320,10 @@ export const page: AnswerPage = {
     },
     {
       n: 12,
-      label: "Hotel financing rate sheet, October 2026 edition",
+      label: "Hotel financing rate sheet, November 2026 edition",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)",
-      accessed: "2026-10-02",
+      accessed: "2026-11-01",
     },
   ],
   related: {

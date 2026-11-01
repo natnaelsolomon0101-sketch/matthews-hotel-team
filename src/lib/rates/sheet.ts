@@ -29,6 +29,7 @@
  */
 
 import benchmarksJson from "../../../content/rates/benchmarks.json";
+import { RATE_SOURCES } from "./sources";
 import type {
   Benchmark,
   BenchmarkKey,
@@ -94,6 +95,45 @@ const SEPTEMBER_2026_BENCHMARKS: Benchmark[] = [
   { key: "ust5", label: "5-year Treasury", value: 4.78, asOf: "2026-09-17", seriesId: "DGS5", ...TREASURY_SRC },
   { key: "ust7", label: "7-year Treasury", value: 4.86, asOf: "2026-09-17", seriesId: "DGS7", ...TREASURY_SRC },
   { key: "ust10", label: "10-year Treasury", value: 4.94, asOf: "2026-09-17", seriesId: "DGS10", ...TREASURY_SRC },
+  {
+    key: "sba504",
+    label: "SBA 504 debenture, 25-year",
+    value: 6.54,
+    asOf: "2026-09-10",
+    sourceName:
+      "SBA 504 debenture pricing published by NADCO and republished by CDC lenders (SomerCor, CDC Small Business Finance)",
+    sourceUrl: "https://somercor.com/september-2026-sba-504-interest-rates/",
+  },
+];
+
+/**
+ * What the October 2026 edition published, frozen for the same reason the
+ * September snapshot above exists. Never edit the numbers below.
+ */
+const OCTOBER_2026_BENCHMARKS: Benchmark[] = [
+  {
+    key: "prime",
+    label: "Prime rate",
+    value: 7.0,
+    asOf: "2026-09-29",
+    seriesId: "DPRIME",
+    sourceName:
+      "Board of Governors of the Federal Reserve System, H.15 Selected Interest Rates, bank prime loan rate, confirmed in FRED series DPRIME",
+    sourceUrl: "https://www.federalreserve.gov/releases/h15/",
+  },
+  {
+    key: "sofr",
+    label: "SOFR",
+    value: 3.9,
+    asOf: "2026-09-30",
+    seriesId: "SOFR",
+    sourceName:
+      "Federal Reserve Bank of New York, Secured Overnight Financing Rate",
+    sourceUrl: "https://www.newyorkfed.org/markets/reference-rates/sofr",
+  },
+  { key: "ust5", label: "5-year Treasury", value: 5.09, asOf: "2026-09-30", seriesId: "DGS5", ...TREASURY_SRC },
+  { key: "ust7", label: "7-year Treasury", value: 5.19, asOf: "2026-09-30", seriesId: "DGS7", ...TREASURY_SRC },
+  { key: "ust10", label: "10-year Treasury", value: 5.29, asOf: "2026-09-30", seriesId: "DGS10", ...TREASURY_SRC },
   {
     key: "sba504",
     label: "SBA 504 debenture, 25-year",
@@ -436,6 +476,146 @@ const OCTOBER_2026_ROWS: RateRow[] = [
   }),
 ];
 
+/**
+ * November 2026. SOP 50 10 8.1 is still the governing edition: the SBA
+ * document page was re-read on November 1, 2026 and lists no edition newer
+ * than 8.1, so the page citations below are the same ones the October edition
+ * carried, re-checked in the 8.1 text this run. The one program figure that
+ * moved is the 504 debenture, which repriced in the October 8, 2026 sale.
+ */
+const NOVEMBER_2026_ROWS: RateRow[] = [
+  {
+    key: "sba-7a",
+    lenderType: "SBA 7(a)",
+    summary:
+      "Government-guaranteed bank loan for an owner-operator. Prime-indexed, fully amortizing.",
+    index: ["prime"],
+    indexLabel: "Prime",
+    spread: published(
+      "Prime + 3.00% maximum",
+      ["sba-7a-terms", "sba-sop-50-10"],
+      "SBA's maximum allowable spread on a variable-rate 7(a) loan over $350,000. SOP 50 10 8.1, Appendix 18, page 397, sets four tiers: Prime plus 6.5% at $50,000 and under, plus 6.0% to $250,000, plus 4.5% to $350,000, and plus 3.0% above that. Re-read in the 8.1 text on November 1, 2026; unchanged. It is a ceiling set by the agency, not a quote, and a good lender prices inside it.",
+    ),
+    allIn: published(
+      "10.00% maximum allowable",
+      ["sba-7a-terms", "sba-sop-50-10", "fed-h15", "fred-dprime", "fomc-2026-10"],
+      "Prime 7.00% plus the 3.00% cap. The FOMC met October 27 and 28, 2026 and voted 10 to 2 to maintain the target range at 3-3/4 to 4 percent, with Lisa D. Cook and Beth M. Hammack preferring a quarter-point increase. Because the target range did not move, Prime did not move: the Federal Reserve's H.15 release prints a 7.00% bank prime loan rate for October 23, 26, 27, 28 and 29, 2026, which covers the day of the decision and the day after it, and FRED series DPRIME prints 7.00% through October 27. Prime has been 7.00% since September 17, 2026. SOP 50 10 8.1, Appendix 18, page 397, sets the base rate for a variable-rate loan as the one in effect on the first business day of the month in which SBA assigns the loan number, so 7.00% is the base rate for applications numbered in November 2026.",
+    ),
+    maxLtv: pending(
+      "SBA publishes no LTV cap for 7(a). The working ceiling is the lender's, and only live quotes show it.",
+    ),
+    dscrFloor: pending(
+      "SBA publishes no 7(a) coverage floor. Lender-set, and only live quotes show it.",
+    ),
+    termAmort: published(
+      "Up to 25 years, fully amortizing",
+      ["sba-7a-terms", "sba-sop-50-10"],
+      "SOP 50 10 8.1, Appendix 17, page 392: a real estate loan must not exceed 25 years, plus any additional period reasonably necessary for construction or renovation. SBA does not allow balloon payments.",
+    ),
+    recourse: published(
+      "Recourse",
+      ["sba-sop-50-10", "cfr-120-160"],
+      "SOP 50 10 8.1, Section A, Chapter 5, Paragraph A, page 93: every loan must be guaranteed by at least one individual or entity, and any owner of 20% or more, direct or indirect, must provide an unlimited full guaranty. A spouse owning less than 20% must guarantee in full when the couple's combined interest reaches 20%.",
+    ),
+    minLoan: pending(
+      "Lender-set. SOP 50 10 8.1, Section B, Chapter 1, page 117, sets a $5 million program maximum for a Standard 7(a) loan, not a minimum.",
+    ),
+    notes:
+      "Best fit for an owner-operator buying a single hotel. The $5 million cap is the binding constraint on most hotel deals.",
+  },
+  {
+    key: "sba-504",
+    lenderType: "SBA 504",
+    summary:
+      "Bank first lien plus a fixed-rate CDC second lien funded by a monthly debenture sale.",
+    index: ["sba504"],
+    indexLabel: "SBA 504 debenture",
+    spread: published(
+      "Not spread-priced",
+      ["nadco-504-debenture-2026-10"],
+      "The CDC second lien is priced by the monthly debenture sale, not as a spread over an index. The bank first lien prices separately and is not published anywhere.",
+    ),
+    allIn: published(
+      "6.97% on the 25-year debenture",
+      ["nadco-504-debenture-2026-10", "cdcloans-504-debenture-2026-10"],
+      "Priced October 8, 2026, which is the latest published pricing: the November debenture had not priced as of this edition's publication date, and SomerCor's November page does not exist yet. Includes the CDC, SBA and central servicing agent fees, so it is the all-in effective rate on the CDC portion for the life of the loan. Up 43 basis points from the 6.54% that priced September 10. The 20-year debenture also priced at 6.97%. We are not publishing a 10-year figure this month: the two CDCs we read disagree by a basis point, SomerCor showing 6.59% and CDC Small Business Finance 6.600%, and the 10-year debenture does not price every month. The 25-year debenture now sits 203 basis points above the 10-year Treasury, up from 125 basis points last month, because the debenture rose 43 basis points while the Treasury fell 35. This is still the only fully published all-in coupon on the sheet.",
+    ),
+    maxLtv: published(
+      "85% of project cost",
+      ["cfr-120-910", "sba-sop-50-10"],
+      "SOP 50 10 8.1, Section C, Chapter 1, Paragraph E.1.c, page 244, lists hotels, motels and other lodging facilities as a Limited or Special Purpose Property, so 13 CFR 120.910 requires a borrower contribution of at least 15% and the debenture funds no more than 35% of the project. If the operating business is also under two years old the contribution rises to 20%, the debenture funds no more than 30%, and the ceiling falls to 80%. Re-read in the 8.1 text on November 1, 2026; unchanged.",
+    ),
+    dscrFloor: pending(
+      "Set by the CDC and the first-lien bank, not by regulation. Only live quotes show it.",
+    ),
+    termAmort: published(
+      "10, 20 or 25 year debenture, fully amortizing",
+      ["sba-504-program", "sba-sop-50-10"],
+      "SOP 50 10 8.1, Section C, Chapter 1, Paragraph D.2, page 243: 10, 20 or 25 years on the remaining useful life of the property, with 25 years the maximum for real estate. The bank first lien runs on its own term, which is usually shorter, and must be at least 10 years when the 504 loan runs 20 or 25.",
+    ),
+    recourse: published(
+      "Recourse",
+      ["sba-sop-50-10", "cfr-120-160"],
+      "Same guaranty requirement as 7(a), from the same paragraph: Section A, Chapter 5, Paragraph A, page 93, covers core requirements for both programs.",
+    ),
+    minLoan: pending(
+      "CDC-set. SOP 50 10 8.1, Section C, Chapter 1, Paragraph D.1, page 243, sets a $25,000 minimum debenture and a $5 million maximum gross debenture per small business concern and its affiliates. The $5.5 million figure applies only to eligible energy public policy projects and to small manufacturers in NAICS 31 to 33, and a hotel is neither. Re-read in the 8.1 text on November 1, 2026; unchanged.",
+    ),
+    notes:
+      "The fixed-rate second lien is the reason to look at 504 instead of 7(a): it locks up to 35% of a hotel's capital stack (40% on an ordinary property) for 25 years at a published rate.",
+  },
+  pendingPricedRow({
+    key: "bank-conventional",
+    lenderType: "Bank and credit union, conventional",
+    summary:
+      "Balance-sheet lender, usually local or regional, usually with a deposit relationship attached.",
+    index: ["prime", "ust5"],
+    indexLabel: "Prime or 5-year Treasury",
+    notes:
+      "The most common source of hotel debt under $15 million and the structure the Matthews Hotel Debt Index measures.",
+  }),
+  pendingPricedRow({
+    key: "cmbs",
+    lenderType: "CMBS",
+    summary:
+      "Fixed-rate, non-recourse, securitized. Priced as a spread over the matched-term Treasury.",
+    index: ["ust5", "ust10"],
+    indexLabel: "5- and 10-year Treasury",
+    notes:
+      "Defeasance or yield maintenance on prepayment. The 10-year Treasury on this sheet is the index a CMBS quote is struck against, and it fell 35 basis points between the October and November editions.",
+  }),
+  pendingPricedRow({
+    key: "life-company",
+    lenderType: "Life company",
+    summary:
+      "Insurance company balance sheet. Lowest coupons, lowest leverage, the most selective on asset quality.",
+    index: ["ust5", "ust7", "ust10"],
+    indexLabel: "5-, 7- and 10-year Treasury",
+    notes:
+      "Rarely competitive on select-service under $10 million. Worth a call on a full-service or resort asset in a market a life company already knows.",
+  }),
+  pendingPricedRow({
+    key: "bridge",
+    lenderType: "Bridge and debt fund",
+    summary:
+      "Floating-rate, short-term, for a hotel that is not stabilized: a PIP, a repositioning, a lease-up.",
+    index: ["sofr"],
+    indexLabel: "SOFR",
+    notes:
+      "Almost always requires a purchased rate cap. The cap strike and its cost are part of the real cost of the loan and belong in any honest comparison, so this row will carry them once the team publishes. SOFR barely moved this month, up 4 basis points, because the FOMC held the target range on October 28.",
+  }),
+  pendingPricedRow({
+    key: "construction",
+    lenderType: "Construction",
+    summary:
+      "Ground-up or substantial renovation, funded on draws, sized to cost rather than to value.",
+    index: ["prime", "sofr"],
+    indexLabel: "Prime or SOFR",
+    notes:
+      "Sized on loan to cost with a completion guaranty. Recourse burns off at stabilization on the better structures.",
+  }),
+];
+
 /* --------------------------------------------------------------- editions */
 
 const SEPTEMBER_2026_MHDI: MhdiReading = {
@@ -454,7 +634,38 @@ const OCTOBER_2026_MHDI: MhdiReading = {
   note: "No reading. The index publishes only from quotes this team typed in, and none have been supplied for October. A month without three independent quotes on the exact structure in the definition publishes as no reading rather than as a thinner number, and the series is never backfilled, so this month will stay blank even after the quote log starts.",
 };
 
+const NOVEMBER_2026_MHDI: MhdiReading = {
+  period: "2026-11",
+  label: "November 2026",
+  value: null,
+  quoteCount: null,
+  note: "No reading. The index publishes only from quotes this team typed in, and none have been supplied for November. A month without three independent quotes on the exact structure in the definition publishes as no reading rather than as a thinner number, and the series is never backfilled, so this month will stay blank even after the quote log starts.",
+};
+
 export const EDITIONS: RateEdition[] = [
+  {
+    slug: "2026-11",
+    label: "November 2026",
+    publishedAt: "2026-11-01",
+    nextRefresh: "2026-12-01",
+    directAnswer:
+      "As of October 30, 2026, the 10-year Treasury is 4.94%, the 7-year is 4.80%, and the 5-year is 4.71%, all lower than a month ago. SOFR is 3.94% for October 29. Prime is 7.00%, unchanged since September 17, because the FOMC held the target range on October 28. SBA caps a variable-rate 7(a) loan over $350,000 at Prime plus 3.00%, which is 10.00% today. The 25-year SBA 504 debenture priced at 6.97% on October 8, up 43 basis points. Rows that depend on what lenders are actually quoting are marked not yet published.",
+    benchmarks: BENCHMARKS,
+    rows: NOVEMBER_2026_ROWS,
+    changelog: [
+      "The 10-year Treasury fell 35 basis points, from 5.29% on September 30 to 4.94% on October 30, 2026. That puts it back exactly where it was on September 17, 2026, the day after the last Fed increase: the whole September move has unwound.",
+      "The 7-year Treasury fell 39 basis points, from 5.19% to 4.80%, and the 5-year fell 38 basis points, from 5.09% to 4.71%, over the same September 30 to October 30 stretch. The 2-year fell 32 basis points, from 4.88% to 4.56%.",
+      "The 5s10s curve steepened 3 basis points, from 20 to 23 basis points, so the cost of choosing a 10-year fixed term over a 5-year went up slightly even though both yields fell.",
+      "SOFR rose 4 basis points, from 3.90% for September 30 to 3.94% for October 29, 2026. The October 30 reading publishes on the next business day, after this edition's cut-off, so October 29 is the latest SOFR print here.",
+      "Prime did not move. The FOMC met October 27 and 28, 2026 and voted 10 to 2 to maintain the target range at 3-3/4 to 4 percent, with Lisa D. Cook and Beth M. Hammack preferring a quarter-point increase. The Federal Reserve's H.15 release prints a 7.00% bank prime loan rate for October 28 and 29, the day of the decision and the day after, so this edition does not have to wait on a lagging series the way the September edition did. The SBA 7(a) maximum allowable rate on a variable-rate loan over $350,000 therefore stays at 10.00%.",
+      "The 25-year SBA 504 debenture rose 43 basis points, from 6.54% priced September 10 to 6.97% priced October 8, 2026. The 20-year debenture also priced at 6.97%. Combined with the Treasury's 35 basis point fall, the gap between the debenture and the 10-year Treasury widened from 125 to 203 basis points, so the 504 second lien is a good deal less cheap against the alternatives than it was last month. The November debenture had not priced when this edition shipped.",
+      "No 10-year debenture figure is published this month. The two CDCs we read disagree by a basis point on it, SomerCor showing 6.59% and CDC Small Business Finance 6.600%, and the 10-year debenture does not price in every monthly sale. Rather than pick one, we are leaving it out and saying so.",
+      "SBA's SOP 50 10 8.1 is still the governing edition. The SBA document page was re-read on November 1, 2026 and lists nothing newer than 8.1, and the three 504 facts this sheet depends on were re-read in the 8.1 text: hotels, motels and other lodging facilities are still in the Limited or Special Purpose Property list (Section C, Chapter 1, Paragraph E.1.c, page 244), the borrower contribution is still at least 15% and 20% when the business is also new (same paragraph, applying 13 CFR 120.910), and the maximum gross debenture for a hotel is still $5 million, with $5.5 million reserved for eligible energy public policy projects and small manufacturers in NAICS 31 to 33 (Paragraph D.1, page 243). The 7(a) rate tiers in Appendix 18, page 397, are unchanged.",
+      "No observed cell moved, because none has been published yet. The Matthews Hotel Debt Index has no November reading for the same reason: fewer than three independent quotes on the index structure.",
+    ],
+    mhdi: NOVEMBER_2026_MHDI,
+  },
+
   {
     slug: "2026-10",
     label: "October 2026",
@@ -462,7 +673,7 @@ export const EDITIONS: RateEdition[] = [
     nextRefresh: "2026-11-02",
     directAnswer:
       "As of September 30, 2026, the 10-year Treasury is 5.29%, the 7-year is 5.19%, the 5-year is 5.09%, and SOFR is 3.90%. Prime is 7.00%, unchanged since September 17. SBA caps a variable-rate 7(a) loan over $350,000 at Prime plus 3.00%, which is 10.00% today. The 25-year SBA 504 debenture priced at 6.54% on September 10, the latest pricing inside this edition's September 30 cut-off. Rows that depend on what lenders are actually quoting are marked not yet published.",
-    benchmarks: BENCHMARKS,
+    benchmarks: OCTOBER_2026_BENCHMARKS,
     rows: OCTOBER_2026_ROWS,
     changelog: [
       "The 10-year Treasury rose 35 basis points, from 4.94% on September 17 to 5.29% on September 30, 2026. Over the full calendar month it rose 54 basis points, from 4.75% on August 31.",
@@ -564,10 +775,14 @@ export function cellCounts(edition: RateEdition) {
 /** Source ids actually cited by an edition, so the page lists only real ones. */
 export function citedSourceIds(edition: RateEdition): string[] {
   const ids = new Set<string>();
+  // Resolve each benchmark to the source entry that carries its own URL, so an
+  // archived edition lists the source it actually published. The 504 debenture
+  // reprices monthly and each sale has its own dated entry: hardcoding one id
+  // here would have made /rates/2026-09 link October pricing for a September
+  // number the moment the debenture moved.
   for (const b of edition.benchmarks) {
-    if (b.key === "sba504") {
-      ids.add("nadco-504-debenture");
-      ids.add("cdcloans-504-debenture");
+    for (const src of RATE_SOURCES) {
+      if (src.url === b.sourceUrl) ids.add(src.id);
     }
   }
   ids.add("treasury-yield-curve");

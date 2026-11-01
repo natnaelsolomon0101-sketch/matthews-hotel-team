@@ -53,7 +53,7 @@ export const page: AnswerPage = {
   description:
     "What it costs to pay off a hotel loan early: SBA's 5, 3 and 1 percent fee, the 504 formula, CMBS lockout, defeasance and yield maintenance.",
   h1: "What will it cost to pay off my hotel loan early?",
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-11-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -186,7 +186,7 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' October 2026 rate sheet is the other half of this question. It shows the 10-year Treasury at 5.29 percent as of September 30, 2026, Prime at 7.00 percent, and the 25-year SBA 504 debenture at 6.54 percent all in from the September 10, 2026 sale; the CMBS row carries the note that defeasance or yield maintenance applies on prepayment, and the debt service coverage and loan-to-value cells are marked not yet published, because lenders do not publish them.[8] A payoff cost only makes sense next to the rate you would be refinancing into.",
+      "Matthews Hotel Markets' November 2026 rate sheet is the other half of this question. It shows the 10-year Treasury at 4.94 percent as of October 30, 2026, Prime at 7.00 percent, and the 25-year SBA 504 debenture at 6.97 percent all in from the October 8, 2026 sale; the CMBS row carries the note that defeasance or yield maintenance applies on prepayment, and the debt service coverage and loan-to-value cells are marked not yet published, because lenders do not publish them.[8] A payoff cost only makes sense next to the rate you would be refinancing into.",
   },
   workedExample: {
     label: "Hypothetical: one 118-key hotel, three payoff bills",

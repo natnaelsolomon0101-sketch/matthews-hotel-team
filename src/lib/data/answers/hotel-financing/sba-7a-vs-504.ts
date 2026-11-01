@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "SBA 7(a) vs 504 for Hotels: Which One?",
   h1: "What is the difference between an SBA 7(a) loan and an SBA 504 loan for a hotel?",
   description: "SBA 7(a) versus 504 for a hotel purchase: eligibility, down payment, rate structure, loan caps and which one fits which deal.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-11-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -26,7 +26,7 @@ export const page: AnswerPage = {
     "Can I get 100% financing on a hotel purchase?",
     "What credit score do I need to get a hotel loan?"
   ],
-  answer: "Both programs finance hotels. 7(a) is one loan from one lender, capped at $5 million, and it can cover working capital.[1] 504 is two loans: a bank first lien plus a fixed-rate CDC debenture capped at $5 million for a hotel.[3][9] The 25-year debenture rate for September 2026 funding was 6.54 percent.[4] 7(a) is simpler. 504 fixes part of the cost for up to 25 years.",
+  answer: "Both programs finance hotels. 7(a) is one loan from one lender, capped at $5 million, and it can cover working capital.[1] 504 is two loans: a bank first lien plus a fixed-rate CDC debenture capped at $5 million for a hotel.[3][9] The 25-year debenture rate for October 2026 funding was 6.97 percent.[4] 7(a) is simpler. 504 fixes part of the cost for up to 25 years.",
   takeaways: [
     "Hotels are eligible for both programs. SBA bars passive landlords, not operators, and a hotel owner runs an active business.[5]",
     "A 7(a) loan caps at $5 million.[1] A 504 debenture on a hotel caps at $5 million, and the bank's first lien sits alongside it.[9]",
@@ -53,7 +53,7 @@ export const page: AnswerPage = {
     {
       h2: "Are the rates fixed or variable?",
       lead: "504's debenture piece is fixed for the life of that portion of the loan; 7(a) is usually variable off Prime, though a fixed-rate 7(a) option exists.",
-      body: "The 504 debenture is fixed for 10, 20 or 25 years and is pegged to an increment above the 10-year Treasury.[2] The 25-year rate for September 2026 funding was 6.54 percent, fees included.[4] The bank's first lien in a 504 structure is priced by the bank and can be fixed or variable depending on the lender. A standard 7(a) loan is usually variable, pegged to Prime or an optional peg rate, with a maximum spread SBA sets by loan size: Prime plus 3.00 percent above $350,000.[1] With Prime at 7.00 percent since September 17, 2026,[10][11] that caps the rate at 10.00 percent.[7] SBA also publishes maximum fixed rates for 7(a).[1]"
+      body: "The 504 debenture is fixed for 10, 20 or 25 years and is pegged to an increment above the 10-year Treasury.[2] The 25-year rate for October 2026 funding was 6.97 percent, fees included.[4] The bank's first lien in a 504 structure is priced by the bank and can be fixed or variable depending on the lender. A standard 7(a) loan is usually variable, pegged to Prime or an optional peg rate, with a maximum spread SBA sets by loan size: Prime plus 3.00 percent above $350,000.[1] With Prime at 7.00 percent since September 17, 2026,[10][11] that caps the rate at 10.00 percent.[7] SBA also publishes maximum fixed rates for 7(a).[1]"
     },
     {
       h2: "How big a hotel can each program finance?",
@@ -119,7 +119,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' October 2026 rate sheet puts the SBA 7(a) maximum allowable rate at 10.00%, which is the 7.00% Prime in effect since September 17, 2026 plus the 3.00% cap SBA sets on loans over $350,000, and the 25-year 504 debenture at 6.54% as of September 10, 2026.[7]"
+    sentence: "Matthews Hotel Markets' November 2026 rate sheet puts the SBA 7(a) maximum allowable rate at 10.00%, which is the 7.00% Prime in effect since September 17, 2026 plus the 3.00% cap SBA sets on loans over $350,000, and the 25-year 504 debenture at 6.97% as of October 8, 2026.[7]"
   },
   workedExample: {
     label: "Hypothetical: $6.0M hotel purchase under each program",
@@ -200,10 +200,10 @@ export const page: AnswerPage = {
     },
     {
       n: 7,
-      label: "Matthews Hotel Markets October 2026 rate sheet",
+      label: "Matthews Hotel Markets November 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
-      accessed: "2026-09-18"
+      accessed: "2026-11-01"
     },
     {
       n: 8,

@@ -35,7 +35,7 @@ export const page: AnswerPage = {
   h1: "What happens to my hotel if I file Chapter 11?",
   description:
     "What Chapter 11 does for a hotel owner and what it does not: the automatic stay, the 90-day single-asset clock, room revenue as cash collateral.",
-  lastUpdated: "2026-10-16",
+  lastUpdated: "2026-11-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -174,7 +174,7 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' October 2026 rate sheet puts the 10-year Treasury at 5.29 percent as of September 30, 2026 and Prime at 7.00 percent, unchanged since September 17.[14] Those are the published benchmarks a replacement loan prices off. The discount rate a court uses to test present value under section 1129(b)(2)(A)(i)(II) is a finding in the case, not a published number, and nobody should treat a benchmark as a substitute for it.[13]"
+      "Matthews Hotel Markets' November 2026 rate sheet puts the 10-year Treasury at 4.94 percent as of October 30, 2026 and Prime at 7.00 percent, unchanged since September 17.[14] Those are the published benchmarks a replacement loan prices off. The discount rate a court uses to test present value under section 1129(b)(2)(A)(i)(II) is a finding in the case, not a published number, and nobody should treat a benchmark as a substitute for it.[13]"
   },
   workedExample: {
     label: "Hypothetical: a 110-key hotel and the 90-day choice under section 362(d)(3)",
@@ -309,10 +309,10 @@ export const page: AnswerPage = {
     },
     {
       n: 14,
-      label: "Hotel debt rate sheet, October 2026 edition",
+      label: "Hotel debt rate sheet, November 2026 edition",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)",
-      accessed: "2026-10-16"
+      accessed: "2026-11-01"
     }
   ],
   related: {

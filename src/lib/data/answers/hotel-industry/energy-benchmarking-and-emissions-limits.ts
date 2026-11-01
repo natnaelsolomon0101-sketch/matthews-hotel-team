@@ -46,7 +46,7 @@ export const page: AnswerPage = {
   description:
     "Which hotels must report energy use or meet a carbon limit, what New York City requires of a hotel through 2049, and what each penalty costs.",
   h1: "Does my hotel have to report energy use or cut its carbon emissions?",
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-11-01",
   authorSlug: "miles-cortez",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -163,7 +163,7 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' October 2026 rate sheet is where a compliance retrofit becomes a financing question. As of September 30, 2026 it shows the 10-year Treasury at 5.29 percent and Prime at 7.00 percent, and marks every coverage and loan-to-value cell as not yet published, because lenders do not publish them.[13] No lender publishes a policy on emissions-compliance capital either."
+      "Matthews Hotel Markets' November 2026 rate sheet is where a compliance retrofit becomes a financing question. As of October 30, 2026 it shows the 10-year Treasury at 4.94 percent, with Prime at 7.00 percent, unchanged since September 17, and marks every coverage and loan-to-value cell as not yet published, because lenders do not publish them.[13] No lender publishes a policy on emissions-compliance capital either."
   },
   workedExample: {
     label:
@@ -300,7 +300,7 @@ export const page: AnswerPage = {
     {
       n: 13,
       label:
-        "Matthews Hotel Markets hotel debt rate sheet, October 2026 edition: the 10-year Treasury at 5.29% and Prime at 7.00% as of September 30, 2026, with the debt service coverage and loan-to-value cells marked not yet published",
+        "Matthews Hotel Markets hotel debt rate sheet, November 2026 edition: the 10-year Treasury at 4.94% on October 30, 2026 and Prime at 7.00%, unchanged since September 17, with the debt service coverage and loan-to-value cells marked not yet published",
       url: "https://matthewshotelmarkets.com/rates",
       publisher: "Matthews Hotel Markets",
       accessed: "2026-10-08"

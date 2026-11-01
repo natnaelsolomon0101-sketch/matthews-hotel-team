@@ -84,7 +84,7 @@ check("temporary permit plus one extension", CA_TEMP_PERMIT + CA_TEMP_EXTENSION,
 check("outer bound of the temporary permit, months", 4 + 4, 8);
 
 /* ---------------------------------------- the cost of the wait */
-const PRIME = 0.07;      // October 2026 rate sheet, as of September 30, 2026
+const PRIME = 0.07;      // November 2026 rate sheet, Prime 7.00% as of October 29, 2026
 const DAYS = 122;        // four calendar months
 const carry = LICENSE_CONSIDERATION * PRIME * (DAYS / 365);
 check("carry on $250,000 at Prime for four months", carry, 5_849, 0.5);

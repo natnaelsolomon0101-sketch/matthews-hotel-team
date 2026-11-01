@@ -18,6 +18,14 @@ import type { RateSource } from "./types";
  * page numbers. The BNY and PNC announcements are left as they were: they are
  * what the September edition published, and an archived edition's sources do
  * not get re-dated.
+ *
+ * For the November 2026 edition, the Treasury, SOFR, FRED, H.15, SBA program,
+ * CFR, SOP and FOMC-calendar entries were re-opened on 2026-11-01, and the
+ * October 28, 2026 FOMC statement was added. The 504 debenture repriced in the
+ * October 8 sale, so the two September debenture entries are frozen as the
+ * archived editions published them and two new dated entries carry the October
+ * pricing. A debenture source is never repointed to a later sale: /rates/2026-09
+ * says 6.54% and its source link has to show 6.54%.
  */
 export const RATE_SOURCES: RateSource[] = [
   {
@@ -25,32 +33,32 @@ export const RATE_SOURCES: RateSource[] = [
     name: "Daily Treasury Par Yield Curve Rates",
     publisher: "U.S. Department of the Treasury",
     url: "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve",
-    asOf: "2026-09-30",
-    verified: "2026-10-01",
+    asOf: "2026-10-30",
+    verified: "2026-11-01",
   },
   {
     id: "nyfed-sofr",
     name: "Secured Overnight Financing Rate (SOFR)",
     publisher: "Federal Reserve Bank of New York",
     url: "https://www.newyorkfed.org/markets/reference-rates/sofr",
-    asOf: "2026-09-30",
-    verified: "2026-10-01",
+    asOf: "2026-10-29",
+    verified: "2026-11-01",
   },
   {
     id: "fred-dprime",
     name: "Bank Prime Loan Rate (DPRIME)",
     publisher: "Federal Reserve Bank of St. Louis (FRED)",
     url: "https://fred.stlouisfed.org/series/DPRIME",
-    asOf: "2026-09-28",
-    verified: "2026-10-01",
+    asOf: "2026-10-27",
+    verified: "2026-11-01",
   },
   {
     id: "fed-h15",
     name: "Selected Interest Rates (Daily), H.15, bank prime loan rate",
     publisher: "Board of Governors of the Federal Reserve System",
     url: "https://www.federalreserve.gov/releases/h15/",
-    asOf: "2026-09-29",
-    verified: "2026-10-01",
+    asOf: "2026-10-29",
+    verified: "2026-11-01",
   },
   {
     id: "bny-prime-2026-09",
@@ -89,24 +97,24 @@ export const RATE_SOURCES: RateSource[] = [
     name: "7(a) loan program: terms, conditions, and eligibility",
     publisher: "U.S. Small Business Administration",
     url: "https://www.sba.gov/sba-lenders/#7a-terms",
-    asOf: "2026-10-01",
-    verified: "2026-10-01",
+    asOf: "2026-11-01",
+    verified: "2026-11-01",
   },
   {
     id: "sba-504-program",
     name: "504 loans",
     publisher: "U.S. Small Business Administration",
     url: "https://www.sba.gov/loans/504-loans/",
-    asOf: "2026-10-01",
-    verified: "2026-10-01",
+    asOf: "2026-11-01",
+    verified: "2026-11-01",
   },
   {
     id: "cfr-120-910",
     name: "13 CFR 120.910, How much must the Borrower contribute?",
     publisher: "Code of Federal Regulations",
     url: "https://www.law.cornell.edu/cfr/text/13/120.910",
-    asOf: "2026-10-01",
-    verified: "2026-10-01",
+    asOf: "2026-11-01",
+    verified: "2026-11-01",
   },
   {
     id: "nadco-504-debenture",
@@ -118,11 +126,35 @@ export const RATE_SOURCES: RateSource[] = [
   },
   {
     id: "cdcloans-504-debenture",
-    name: "SBA 504 rates and rate history, September 2026 funding",
+    name: "SBA 504 rates and rate history, September 2026 funding, read from the page's rate-history table",
     publisher: "CDC Small Business Finance",
     url: "https://cdcloans.com/sba-504-rates/",
     asOf: "2026-09-10",
     verified: "2026-10-12",
+  },
+  {
+    id: "nadco-504-debenture-2026-10",
+    name: "October 2026 SBA 504 debenture pricing, priced October 8, 2026",
+    publisher: "SomerCor (Certified Development Company), republishing NADCO pricing",
+    url: "https://somercor.com/october-2026-sba-504-interest-rates/",
+    asOf: "2026-10-08",
+    verified: "2026-11-01",
+  },
+  {
+    id: "cdcloans-504-debenture-2026-10",
+    name: "SBA 504 rates and rate history, October 2026 funding",
+    publisher: "CDC Small Business Finance",
+    url: "https://cdcloans.com/sba-504-rates/",
+    asOf: "2026-10-08",
+    verified: "2026-11-01",
+  },
+  {
+    id: "fomc-2026-10",
+    name: "FOMC statement, October 28, 2026 (target range maintained at 3-3/4 to 4 percent on a 10 to 2 vote)",
+    publisher: "Board of Governors of the Federal Reserve System",
+    url: "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+    asOf: "2026-10-28",
+    verified: "2026-11-01",
   },
   {
     id: "sba-sop-50-10",
@@ -130,23 +162,23 @@ export const RATE_SOURCES: RateSource[] = [
     publisher: "U.S. Small Business Administration, Office of Capital Access",
     url: "https://legacy.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
     asOf: "2026-10-01",
-    verified: "2026-10-01",
+    verified: "2026-11-01",
   },
   {
     id: "cfr-120-160",
     name: "13 CFR 120.160, What are the requirements for a guaranty?",
     publisher: "Code of Federal Regulations",
     url: "https://www.law.cornell.edu/cfr/text/13/120.160",
-    asOf: "2026-10-01",
-    verified: "2026-10-01",
+    asOf: "2026-11-01",
+    verified: "2026-11-01",
   },
   {
     id: "fomc-calendar-2026",
-    name: "FOMC meeting calendar, 2026 (next meeting October 27 and 28, 2026)",
+    name: "FOMC meeting calendar, 2026 (the October 27 and 28 meeting has been held; next meeting December 8 and 9, 2026)",
     publisher: "Board of Governors of the Federal Reserve System",
     url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
-    asOf: "2026-10-01",
-    verified: "2026-10-01",
+    asOf: "2026-11-01",
+    verified: "2026-11-01",
   },
 ];
 

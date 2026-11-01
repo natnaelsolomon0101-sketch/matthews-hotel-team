@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Buying Your First Hotel With No Experience",
   h1: "How do I buy my first hotel with no hotel experience?",
   description: "What franchisors and SBA rules actually say about first-time hotel buyers, and how an approved management company fills the experience gap.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-11-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -51,7 +51,7 @@ export const page: AnswerPage = {
     {
       h2: "Will a lender finance a first-time hotel buyer?",
       lead: "Some will. No lender publishes an experience requirement, and SBA's rule does not set one.",
-      body: "SBA's regulation on lending criteria says the applicant must be creditworthy and the loan must be so sound as to reasonably assure repayment. It tells lenders to use the same prudent commercial credit analysis they use on similar non-SBA loans, and it names the criteria they may consider: credit score or credit history, earnings or cash flow, and equity or collateral.[2] Hotel experience is not on that list, which means it comes in through each lender's own credit policy. One lender may accept a first-time owner with an approved management company and strong liquidity. Another may not. The only way to know is to ask, early, and in writing.\n\nBanks, CMBS lenders, life companies and debt funds do not publish sponsor requirements either. Our October 2026 rate sheet marks their leverage and pricing terms as not yet published for the same reason: nobody prints them.[5] The lender types are compared at [Which lenders finance hotels?](/hotel-financing/hotel-lenders-by-type)."
+      body: "SBA's regulation on lending criteria says the applicant must be creditworthy and the loan must be so sound as to reasonably assure repayment. It tells lenders to use the same prudent commercial credit analysis they use on similar non-SBA loans, and it names the criteria they may consider: credit score or credit history, earnings or cash flow, and equity or collateral.[2] Hotel experience is not on that list, which means it comes in through each lender's own credit policy. One lender may accept a first-time owner with an approved management company and strong liquidity. Another may not. The only way to know is to ask, early, and in writing.\n\nBanks, CMBS lenders, life companies and debt funds do not publish sponsor requirements either. Our November 2026 rate sheet marks their leverage and pricing terms as not yet published for the same reason: nobody prints them.[5] The lender types are compared at [Which lenders finance hotels?](/hotel-financing/hotel-lenders-by-type)."
     },
     {
       h2: "Does being new change how much I need to put down?",
@@ -112,7 +112,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' October 2026 rate sheet shows what a first-time buyer's most likely loan costs today: the SBA 7(a) maximum allowable rate is 10.00%, with Prime at 7.00% since September 17, 2026, and the 25-year SBA 504 debenture priced at 6.54% on September 10, 2026.[5]"
+    sentence: "Matthews Hotel Markets' November 2026 rate sheet shows what a first-time buyer's most likely loan costs today: the SBA 7(a) maximum allowable rate is 10.00%, with Prime at 7.00% since September 17, 2026, and the 25-year SBA 504 debenture priced at 6.97% on October 8, 2026.[5]"
   },
   workedExample: {
     label: "Hypothetical: what a management fee does to loan coverage",
@@ -179,10 +179,10 @@ export const page: AnswerPage = {
     },
     {
       n: 5,
-      label: "Matthews Hotel Markets October 2026 rate sheet",
+      label: "Matthews Hotel Markets November 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
-      accessed: "2026-09-18"
+      accessed: "2026-11-01"
     },
     {
       n: 6,

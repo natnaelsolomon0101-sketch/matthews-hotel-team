@@ -97,7 +97,7 @@ export const page: AnswerPage = {
   description:
     "The $40.0 million receipts standard for NAICS 721110, the $20 million alternative, which of your other hotels count, and the $3.75 million guaranty cap.",
   h1: "Is my hotel company too big for an SBA loan?",
-  lastUpdated: "2026-10-22",
+  lastUpdated: "2026-11-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -209,7 +209,7 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' October 2026 rate sheet prints the two SBA numbers a size-eligible hotel borrower actually prices against: the 7(a) maximum allowable rate of 10.00%, which is the 7.00% Prime plus the 3.00% spread cap SBA sets above $350,000, and the 25-year 504 debenture at 6.54% as of September 10, 2026.[18] Our own extract of SBA's loan-level data, at /data/sba-hotel-lending, shows why the size test is rarely the binding one: 499 of the 3,879 7(a) hotel loans approved in fiscal years 2021 through 2025 were written at exactly the $5,000,000 program maximum.[16]"
+      "Matthews Hotel Markets' November 2026 rate sheet prints the two SBA numbers a size-eligible hotel borrower actually prices against: the 7(a) maximum allowable rate of 10.00%, which is the 7.00% Prime plus the 3.00% spread cap SBA sets above $350,000, and the 25-year 504 debenture at 6.97% as of October 8, 2026.[18] Our own extract of SBA's loan-level data, at /data/sba-hotel-lending, shows why the size test is rarely the binding one: 499 of the 3,879 7(a) hotel loans approved in fiscal years 2021 through 2025 were written at exactly the $5,000,000 program maximum.[16]"
   },
   workedExample: {
     label: "Hypothetical: eleven hotels in three companies, buying a twelfth",
@@ -381,10 +381,10 @@ export const page: AnswerPage = {
     },
     {
       n: 18,
-      label: "Matthews Hotel Markets October 2026 rate sheet, the SBA rows",
+      label: "Matthews Hotel Markets November 2026 rate sheet, the SBA rows",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
-      accessed: "2026-10-22"
+      accessed: "2026-11-01"
     }
   ],
   related: {

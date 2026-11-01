@@ -16,7 +16,7 @@ export const page: AnswerPage = {
   title: "Hotel Loan Interest Deduction Limits",
   h1: "Can I deduct all the interest on my hotel loan?",
   description: "Section 163(j) and a hotel loan: the 30 percent cap, the $32,000,000 exemption for 2026, the syndicate trap, and what electing out costs.",
-  lastUpdated: "2026-10-28",
+  lastUpdated: "2026-11-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -110,7 +110,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' October 2026 rate sheet puts the 10-year Treasury at 5.29% on September 30, 2026, up 54 basis points over that calendar month, which is why the interest side of this calculation is larger than it was two years ago; the sheet's observed spread and coupon cells are marked not yet published, so the 7.25% coupon in the example below is an assumption and not a quote.[14]"
+    sentence: "Matthews Hotel Markets' November 2026 rate sheet puts the 10-year Treasury at 4.94% on October 30, 2026, down 35 basis points over that calendar month but still well above where it sat two years ago, which is why the interest side of this calculation is larger than it was two years ago; the sheet's observed spread and coupon cells are marked not yet published, so the 7.25% coupon in the example below is an assumption and not a quote.[14]"
   },
   workedExample: {
     label: "Hypothetical: 120-key select-service hotel in a syndicated partnership, tax year beginning January 1, 2026",
@@ -240,10 +240,10 @@ export const page: AnswerPage = {
     },
     {
       n: 14,
-      label: "Matthews Hotel Markets hotel financing rate sheet, October 2026 edition",
+      label: "Matthews Hotel Markets hotel financing rate sheet, November 2026 edition",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
-      accessed: "2026-10-28"
+      accessed: "2026-11-01"
     }
   ],
   related: {

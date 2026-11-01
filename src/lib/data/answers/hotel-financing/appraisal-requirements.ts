@@ -66,7 +66,7 @@ export const page: AnswerPage = {
   description:
     "When a hotel loan needs an appraisal, why you cannot order it yourself, what the report must contain, and the extra rules SBA adds on a 504 deal.",
   h1: "Do I need an appraisal to get a hotel loan?",
-  lastUpdated: "2026-10-13",
+  lastUpdated: "2026-11-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -183,7 +183,7 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "The appraised value is the denominator of your loan-to-value ratio, and the ceiling above it is a number nobody publishes: the Matthews Hotel Markets October 2026 rate sheet marks maximum LTV as not yet published for every lender type except the SBA 504 structure.[11] The appraisal rules are the half of the test you can read in advance."
+      "The appraised value is the denominator of your loan-to-value ratio, and the ceiling above it is a number nobody publishes: the Matthews Hotel Markets November 2026 rate sheet marks maximum LTV as not yet published for every lender type except the SBA 504 structure.[11] The appraisal rules are the half of the test you can read in advance."
   },
   workedExample: {
     label: "Hypothetical: a 78-key limited-service hotel bought on a 504, appraised 12.3 percent below contract",
@@ -296,10 +296,10 @@ export const page: AnswerPage = {
     },
     {
       n: 11,
-      label: "Matthews Hotel Markets October 2026 rate sheet",
+      label: "Matthews Hotel Markets November 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
-      accessed: "2026-10-13"
+      accessed: "2026-11-01"
     }
   ],
   related: {

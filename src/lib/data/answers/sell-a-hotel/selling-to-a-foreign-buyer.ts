@@ -29,7 +29,7 @@ export const page: AnswerPage = {
   h1: "Can I sell my hotel to a foreign buyer?",
   description:
     "No federal law bars it. CFIUS can review a hotel sale if the hotel sits in a covered port or within one mile of a listed military installation.",
-  lastUpdated: "2026-10-26",
+  lastUpdated: "2026-11-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -142,12 +142,12 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' October 2026 rate sheet puts Prime at 7.00% and the 10-year Treasury at 5.29% as of September 30, 2026, and carries no row for a national security review, because the cost of one is the cost of the days it takes rather than a rate anybody quotes.[25]"
+      "Matthews Hotel Markets' November 2026 rate sheet puts Prime at 7.00% and the 10-year Treasury at 4.94% on October 30, 2026, and carries no row for a national security review, because the cost of one is the cost of the days it takes rather than a rate anybody quotes.[25]"
   },
   workedExample: {
     label:
       "Worked example (hypothetical): 118-key airport hotel, $24,000,000, buyer outside the four excepted states",
-    body: "Hypothetical, not a transaction, and every input is labeled as an assumption rather than a market rate. A 118-key select-service hotel sits on ground inside the boundary of a large hub airport. Price $24,000,000, or $203,390 a key. The buyer is a foreign person whose home state is not one of the four excepted ones.[17] The hotel is sold as real estate, with the operating company retained by the seller, so this is a part 802 question.[4]\n\nCoverage. The hotel is located within a covered port, paragraph (a) of the covered real estate definition.[2][11] The urbanized-area exception does not reach it, because that exception carves out paragraph (a).[4] A fee purchase affords all four property rights where the test is three.[15] So this is a covered real estate transaction under section 802.212(a), in a major metro.[16]\n\nThe fee. $24,000,000 is at or above $5,000,000 and below $50,000,000, so a notice costs $7,500.[7] As a share of price, 7,500 divided by 24,000,000 is 0.0003125, or 0.03 percent. A declaration is free.[5]\n\nThe days. On the 2025 averages, the declaration route runs 6.87 days to acceptance plus 30.1 days of assessment, or 36.97 days. A notice closing in review averaged 45.4 days, and one going to investigation averaged 82.8 days.[1] The gap between the slowest average path and the declaration path is 82.8 minus 36.97, or 45.83 days.\n\nWhat those days cost. Carried on the whole $24,000,000 at the 7.00 percent Prime rate on the October 2026 rate sheet: 24,000,000 times 0.07 is $1,680,000 a year, divided by 365 is $4,602.74 a day, times 45.83 days is $210,944.[25] That is 28 times the $7,500 notice fee. The filing fee is not the cost of CFIUS. The calendar is.\n\nEvery figure above was recomputed by scripts/check-foreign-buyer-math.mjs."
+    body: "Hypothetical, not a transaction, and every input is labeled as an assumption rather than a market rate. A 118-key select-service hotel sits on ground inside the boundary of a large hub airport. Price $24,000,000, or $203,390 a key. The buyer is a foreign person whose home state is not one of the four excepted ones.[17] The hotel is sold as real estate, with the operating company retained by the seller, so this is a part 802 question.[4]\n\nCoverage. The hotel is located within a covered port, paragraph (a) of the covered real estate definition.[2][11] The urbanized-area exception does not reach it, because that exception carves out paragraph (a).[4] A fee purchase affords all four property rights where the test is three.[15] So this is a covered real estate transaction under section 802.212(a), in a major metro.[16]\n\nThe fee. $24,000,000 is at or above $5,000,000 and below $50,000,000, so a notice costs $7,500.[7] As a share of price, 7,500 divided by 24,000,000 is 0.0003125, or 0.03 percent. A declaration is free.[5]\n\nThe days. On the 2025 averages, the declaration route runs 6.87 days to acceptance plus 30.1 days of assessment, or 36.97 days. A notice closing in review averaged 45.4 days, and one going to investigation averaged 82.8 days.[1] The gap between the slowest average path and the declaration path is 82.8 minus 36.97, or 45.83 days.\n\nWhat those days cost. Carried on the whole $24,000,000 at the 7.00 percent Prime rate on the November 2026 rate sheet: 24,000,000 times 0.07 is $1,680,000 a year, divided by 365 is $4,602.74 a day, times 45.83 days is $210,944.[25] That is 28 times the $7,500 notice fee. The filing fee is not the cost of CFIUS. The calendar is.\n\nEvery figure above was recomputed by scripts/check-foreign-buyer-math.mjs."
   },
   faq: [
     {
@@ -375,10 +375,10 @@ export const page: AnswerPage = {
     },
     {
       n: 25,
-      label: "Matthews Hotel Markets October 2026 rate sheet",
+      label: "Matthews Hotel Markets November 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
-      accessed: "2026-10-26"
+      accessed: "2026-11-01"
     }
   ],
   related: {
