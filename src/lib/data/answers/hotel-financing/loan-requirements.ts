@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Hotel Loan Requirements: What Lenders Ask For",
   h1: "What do lenders require for a hotel loan?",
   description: "The documents, ratios and sponsor tests behind a hotel loan approval in 2026, plus what to send a lender before the first call.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-11-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -121,7 +121,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' October 2026 rate sheet publishes one hotel leverage ceiling that is actually written down anywhere: SBA rules cap a 504 hotel structure at 85% of project cost. For every other lender type the sheet marks maximum LTV as not yet published, because no lender type prints one. Ask your lender for its ceiling in writing.[1]"
+    sentence: "Matthews Hotel Markets' November 2026 rate sheet publishes one hotel leverage ceiling that is actually written down anywhere: SBA rules cap a 504 hotel structure at 85% of project cost. For every other lender type the sheet marks maximum LTV as not yet published, because no lender type prints one. Ask your lender for its ceiling in writing.[1]"
   },
   workedExample: {
     label: "Hypothetical: what a first-time buyer brings to a $20.0M purchase",
@@ -160,10 +160,10 @@ export const page: AnswerPage = {
   sources: [
     {
       n: 1,
-      label: "Matthews Hotel Markets October 2026 rate sheet",
+      label: "Matthews Hotel Markets November 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
-      accessed: "2026-09-18"
+      accessed: "2026-11-01"
     },
     {
       n: 2,

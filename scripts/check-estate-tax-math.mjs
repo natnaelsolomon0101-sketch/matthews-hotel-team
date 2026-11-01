@@ -34,7 +34,7 @@ const TOP_RATE = 0.4;                // 26 U.S.C. 2001(c)
 const S2032A_CAP = 1_460_000;        // Rev. Proc. 2025-32 s 3.41
 const S6601J_DOLLARS = 1_940_000;    // Rev. Proc. 2025-32 s 3.51
 const UNDERPAYMENT = 0.07;           // IRS, quarter beginning October 1, 2026
-const PRIME = 0.07;                  // /rates, October 2026 edition
+const PRIME = 0.07;                  // /rates, November 2026 edition, Prime 7.00% as of 2026-10-29
 const RECOVERY = 39;                 // IRS Pub 946, nonresidential real property
 
 // 26 U.S.C. 2001(c): tentative tax on an amount over $1,000,000

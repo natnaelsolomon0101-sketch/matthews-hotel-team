@@ -16,7 +16,7 @@ export const page: AnswerPage = {
   h1: "What happens to my franchise agreement when I sell my hotel?",
   description:
     "Your hotel franchise agreement does not transfer. What the brand charges, how long consent takes and what it can require, from 2026 disclosure documents.",
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-11-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -134,7 +134,7 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' October 2026 rate sheet puts the SBA 7(a) maximum variable rate at 10.00% as of September 17, 2026. That is the rate the worked example below uses to price the brand fees a buyer finances.[8]"
+      "Matthews Hotel Markets' November 2026 rate sheet puts the SBA 7(a) maximum variable rate at 10.00% as of September 17, 2026. That is the rate the worked example below uses to price the brand fees a buyer finances.[8]"
   },
   workedExample: {
     label: "Hypothetical: 110-key Hampton Inn selling for $14.5 million",
@@ -235,10 +235,10 @@ export const page: AnswerPage = {
     },
     {
       n: 8,
-      label: "Hotel financing rate sheet, October 2026 edition",
+      label: "Hotel financing rate sheet, November 2026 edition",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)",
-      accessed: "2026-09-21"
+      accessed: "2026-11-01"
     },
     {
       n: 9,

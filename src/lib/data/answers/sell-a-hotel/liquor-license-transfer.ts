@@ -21,7 +21,7 @@ export const page: AnswerPage = {
   description:
     "The liquor license does not pass with the deed. What the buyer has to apply for, who gets the money for the license, and the entity-sale trap.",
   h1: "What happens to the liquor license when I sell my hotel?",
-  lastUpdated: "2026-10-06",
+  lastUpdated: "2026-11-01",
   authorSlug: "miles-cortez",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -145,13 +145,13 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' October 2026 rate sheet shows Prime at 7.00 percent and the 10-year Treasury at 5.29 percent as of September 30, 2026.[15] That is the rate a license delay is priced at. Money allocated to the license and parked in a statutory escrow earns the seller nothing while the loan, the franchise fee and the payroll keep running.",
+      "Matthews Hotel Markets' November 2026 rate sheet shows Prime at 7.00 percent and the 10-year Treasury at 4.94 percent as of October 30, 2026.[15] That is the rate a license delay is priced at. Money allocated to the license and parked in a statutory escrow earns the seller nothing while the loan, the franchise fee and the payroll keep running.",
   },
   workedExample: {
     label:
       "Hypothetical: a 112-key California hotel at $19,800,000, and where the license money goes",
     body:
-      "Hypothetical, not a transaction. Price $19,800,000, of which the parties allocate $250,000 to the on-sale general license. The buyer deposits the full $250,000 with the escrow holder, as Bus. & Prof. Code 24074 requires.[1]\n\nThe claims. Creditors file $291,000 of claims before the department notifies the escrow holder of approval: $38,000 of federal income and withholding taxes, $96,000 of wages and fringe benefits accrued before the sale, no secured claim paid out of this escrow, a $41,000 mechanics' lien from the lobby work, $52,000 of escrow, brokerage and attorney's fees, $34,000 owed to the beverage distributor and the landlord, no court-ordered judgments, and $30,000 of other claims. The sum is $38,000 plus $96,000 plus $41,000 plus $52,000 plus $34,000 plus $30,000, or $291,000.\n\nThe waterfall. The statute pays in order. Tier one takes $38,000, leaving $212,000. Tier two takes $96,000, leaving $116,000. Tier four takes $41,000, leaving $75,000. Tier five takes $52,000, leaving $23,000. Tier six claims $34,000 and reaches only the $23,000 left, a shortfall of $11,000. Tiers seven and eight receive nothing, so $30,000 of other claims goes unpaid. Unpaid claims total $291,000 less $250,000, or $41,000.\n\nWhat the seller receives from this escrow. Nothing. The $250,000 went to the seller's own creditors in the order the statute sets, and the brokerage fee was paid ahead of the distributor and the landlord.[1]\n\nThe fees and the wait. The transfer application on an on-sale general license is $1,250.[1] A temporary permit is $100 for four calendar months, and $100 more for the one extension, so $200 buys at most eight calendar months of trading.[1] Costing the $250,000 held through a single four-month permit at the 7.00 percent Prime rate on the October 2026 rate sheet: $250,000 times 0.07 times 122 divided by 365 is $5,849.[15]\n\nThe same hotel in Florida. On a quota license with three-year average alcoholic beverage sales of $1,400,000, the transfer fee is 4 mills on that average, so $1,400,000 times 0.004 is $5,600, which exceeds the statutory ceiling and is therefore capped at $5,000.[4]\n\nEvery figure above was recomputed by scripts/check-liquor-license-math.mjs.",
+      "Hypothetical, not a transaction. Price $19,800,000, of which the parties allocate $250,000 to the on-sale general license. The buyer deposits the full $250,000 with the escrow holder, as Bus. & Prof. Code 24074 requires.[1]\n\nThe claims. Creditors file $291,000 of claims before the department notifies the escrow holder of approval: $38,000 of federal income and withholding taxes, $96,000 of wages and fringe benefits accrued before the sale, no secured claim paid out of this escrow, a $41,000 mechanics' lien from the lobby work, $52,000 of escrow, brokerage and attorney's fees, $34,000 owed to the beverage distributor and the landlord, no court-ordered judgments, and $30,000 of other claims. The sum is $38,000 plus $96,000 plus $41,000 plus $52,000 plus $34,000 plus $30,000, or $291,000.\n\nThe waterfall. The statute pays in order. Tier one takes $38,000, leaving $212,000. Tier two takes $96,000, leaving $116,000. Tier four takes $41,000, leaving $75,000. Tier five takes $52,000, leaving $23,000. Tier six claims $34,000 and reaches only the $23,000 left, a shortfall of $11,000. Tiers seven and eight receive nothing, so $30,000 of other claims goes unpaid. Unpaid claims total $291,000 less $250,000, or $41,000.\n\nWhat the seller receives from this escrow. Nothing. The $250,000 went to the seller's own creditors in the order the statute sets, and the brokerage fee was paid ahead of the distributor and the landlord.[1]\n\nThe fees and the wait. The transfer application on an on-sale general license is $1,250.[1] A temporary permit is $100 for four calendar months, and $100 more for the one extension, so $200 buys at most eight calendar months of trading.[1] Costing the $250,000 held through a single four-month permit at the 7.00 percent Prime rate on the November 2026 rate sheet: $250,000 times 0.07 times 122 divided by 365 is $5,849.[15]\n\nThe same hotel in Florida. On a quota license with three-year average alcoholic beverage sales of $1,400,000, the transfer fee is 4 mills on that average, so $1,400,000 times 0.004 is $5,600, which exceeds the statutory ceiling and is therefore capped at $5,000.[4]\n\nEvery figure above was recomputed by scripts/check-liquor-license-math.mjs.",
   },
   faq: [
     {
@@ -289,10 +289,10 @@ export const page: AnswerPage = {
     },
     {
       n: 15,
-      label: "Hotel debt rate sheet, October 2026 edition",
+      label: "Hotel debt rate sheet, November 2026 edition",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)",
-      accessed: "2026-10-06",
+      accessed: "2026-11-01",
     },
   ],
   related: {

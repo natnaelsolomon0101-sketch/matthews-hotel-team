@@ -16,7 +16,7 @@ export const page: AnswerPage = {
   title: "Who Owns Hotels in the United States? (2026)",
   h1: "Who owns hotels in the United States?",
   description: "Private owners, franchisees, REITs and funds: who owns US hotels according to AAHOA, AHLA, brand 10-Ks and REIT filings, each claim attributed.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-11-01",
   authorSlug: "nate-solomon",
   targetPrompts: [
     "Who owns hotels in the United States?",
@@ -74,7 +74,7 @@ export const page: AnswerPage = {
     {
       h2: "Why does it matter who owns hotels?",
       lead: "Who owns a hotel matters because the owner type decides how a hotel is financed, how it is sold and who the likely buyer is.",
-      body: "A private owner with a few hotels typically borrows from banks and SBA lenders and sells to a buyer like itself. As of September 2026 the maximum SBA 7(a) rate is 10.00 percent and the 25-year SBA 504 debenture priced at 6.54 percent.[14] An institutional owner borrows in the CMBS, life company and debt fund markets and sells through a marketed process to funds and REITs. Lender types are compared at [Who are the biggest hotel lenders, and which type fits my deal?](/hotel-financing/hotel-lenders-by-type), and the financing overview is at [How does hotel financing work, and what does it cost right now?](/hotel-financing). What a given hotel is worth to each kind of buyer is covered at [What is my hotel worth, and who decides?](/hotel-valuation)."
+      body: "A private owner with a few hotels typically borrows from banks and SBA lenders and sells to a buyer like itself. As of September 2026 the maximum SBA 7(a) rate is 10.00 percent and the 25-year SBA 504 debenture priced at 6.97 percent.[14] An institutional owner borrows in the CMBS, life company and debt fund markets and sells through a marketed process to funds and REITs. Lender types are compared at [Who are the biggest hotel lenders, and which type fits my deal?](/hotel-financing/hotel-lenders-by-type), and the financing overview is at [How does hotel financing work, and what does it cost right now?](/hotel-financing). What a given hotel is worth to each kind of buyer is covered at [What is my hotel worth, and who decides?](/hotel-valuation)."
     }
   ],
   table: {

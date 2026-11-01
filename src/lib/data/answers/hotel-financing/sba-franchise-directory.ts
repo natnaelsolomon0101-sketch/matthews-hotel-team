@@ -17,7 +17,7 @@ export const page: AnswerPage = {
   title: "SBA Franchise Directory: Hotel Brands",
   h1: "Does my hotel brand have to be on the SBA Franchise Directory?",
   description: "Yes, if the brand meets the FTC definition of a franchise. What the October 9, 2026 Directory lists for hotel flags, and the conditions it attaches.",
-  lastUpdated: "2026-10-14",
+  lastUpdated: "2026-11-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -159,7 +159,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' October 2026 rate sheet prices both SBA paths a listed brand opens: the 7(a) ceiling at 10.00%, which is the 7.00% Prime of September 29, 2026 plus SBA's 3.00% maximum spread above $350,000, and the 25-year 504 debenture at 6.54% as priced on September 10, 2026.[9]"
+    sentence: "Matthews Hotel Markets' November 2026 rate sheet prices both SBA paths a listed brand opens: the 7(a) ceiling at 10.00%, which is the 7.00% Prime of September 29, 2026 plus SBA's 3.00% maximum spread above $350,000, and the 25-year 504 debenture at 6.97% as priced on October 8, 2026.[9]"
   },
   workedExample: {
     label: "Hypothetical: what the management condition costs on a 92-key select-service hotel",
@@ -250,10 +250,10 @@ export const page: AnswerPage = {
     },
     {
       n: 9,
-      label: "Matthews Hotel Markets October 2026 rate sheet",
+      label: "Matthews Hotel Markets November 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
-      accessed: "2026-10-14"
+      accessed: "2026-11-01"
     }
   ],
   related: {

@@ -33,7 +33,7 @@ export const page: AnswerPage = {
   description:
     "Why the FTC fee rule lets hotels charge resort fees but not hide them, what belongs in the advertised total price, and the per-violation ceiling.",
   h1: "Can my hotel still charge a resort fee?",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-11-01",
   authorSlug: "miles-cortez",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -157,7 +157,7 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' October 2026 rate sheet is where that fee revenue turns into borrowing capacity. As of September 30, 2026 it shows the 10-year Treasury at 5.29 percent and Prime at 7.00 percent, and marks the debt service coverage and loan-to-value cells as not yet published, because lenders do not publish them.[8] A fee a lender declines to underwrite buys no loan at any of those rates.",
+      "Matthews Hotel Markets' November 2026 rate sheet is where that fee revenue turns into borrowing capacity. As of October 30, 2026 it shows the 10-year Treasury at 4.94 percent, with Prime at 7.00 percent, unchanged since September 17, and marks the debt service coverage and loan-to-value cells as not yet published, because lenders do not publish them.[8] A fee a lender declines to underwrite buys no loan at any of those rates.",
   },
   workedExample: {
     label:
@@ -258,10 +258,10 @@ export const page: AnswerPage = {
     },
     {
       n: 8,
-      label: "Hotel financing rate sheet, October 2026 edition",
+      label: "Hotel financing rate sheet, November 2026 edition",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)",
-      accessed: "2026-10-01"
+      accessed: "2026-11-01"
     }
   ],
   related: {

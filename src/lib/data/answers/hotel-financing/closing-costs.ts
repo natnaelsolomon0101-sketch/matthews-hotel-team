@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Hotel Loan Closing Costs and Process (2026)",
   h1: "What happens at a hotel loan closing, and what does it cost?",
   description: "What happens at a hotel loan closing and what it costs: title, legal, third-party reports, lender fees, taxes and reserves, with 2026 figures.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-11-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -129,7 +129,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' October 2026 rate sheet puts the 10-year Treasury at 5.29% and the SBA 7(a) maximum rate at 10.00% as of September 30, 2026. It prints published program fees and marks origination points and lender legal fees as not published, because no lender publishes them.[6]"
+    sentence: "Matthews Hotel Markets' November 2026 rate sheet puts the 10-year Treasury at 4.94% on October 30, 2026 and the SBA 7(a) maximum rate at 10.00%. It prints published program fees and marks origination points and lender legal fees as not published, because no lender publishes them.[6]"
   },
   workedExample: {
     label: "Hypothetical: closing budget for a $10.0M hotel refinance in Texas",
@@ -207,10 +207,10 @@ export const page: AnswerPage = {
     },
     {
       n: 6,
-      label: "Matthews Hotel Markets October 2026 rate sheet",
+      label: "Matthews Hotel Markets November 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
-      accessed: "2026-09-18"
+      accessed: "2026-11-01"
     },
     {
       n: 7,

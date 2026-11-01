@@ -33,7 +33,7 @@ export const page: AnswerPage = {
   h1: "Do I have to bring my hotel up to ADA standards when I renovate it?",
   description:
     "Which hotel work counts as an ADA alteration, how many accessible rooms the 2010 Standards require, and the 20 percent cap on path-of-travel spending.",
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-11-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -125,7 +125,7 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' October 2026 rate sheet prices the money that pays for this work. As of September 30, 2026 it shows the 10-year Treasury at 5.29 percent and Prime at 7.00 percent, and marks the spread and maximum loan-to-value on the bridge and construction rows as not yet published, because lenders do not publish them.[13] An accessibility scope is renovation capital, competing with the rest of a PIP budget at those rates.",
+      "Matthews Hotel Markets' November 2026 rate sheet prices the money that pays for this work. As of October 30, 2026 it shows the 10-year Treasury at 4.94 percent, with Prime at 7.00 percent, unchanged since September 17, and marks the spread and maximum loan-to-value on the bridge and construction rows as not yet published, because lenders do not publish them.[13] An accessibility scope is renovation capital, competing with the rest of a PIP budget at those rates.",
   },
   workedExample: {
     label:
@@ -258,10 +258,10 @@ export const page: AnswerPage = {
     },
     {
       n: 13,
-      label: "Hotel financing rate sheet, October 2026 edition",
+      label: "Hotel financing rate sheet, November 2026 edition",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)",
-      accessed: "2026-09-30"
+      accessed: "2026-11-01"
     }
   ],
   related: {

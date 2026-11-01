@@ -28,7 +28,7 @@ export const page: AnswerPage = {
   h1: "How do I make an offer on a hotel?",
   description:
     "What an offer on a hotel consists of, how much earnest money three SEC-filed hotel agreements took, and why the franchisor decides whether it can close.",
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-11-01",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -149,7 +149,7 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' October 2026 rate sheet is the reason to be careful with a financing contingency in a letter of intent. It shows the 10-year Treasury at 5.29% on September 30, 2026 and Prime at 7.00%, unchanged since September 17, and it marks maximum loan-to-value and the coverage floor as not yet published for every lender type except SBA, because no lender publishes them.[8] You can date the index in your letter. You cannot date proceeds nobody has quoted you yet.",
+      "Matthews Hotel Markets' November 2026 rate sheet is the reason to be careful with a financing contingency in a letter of intent. It shows the 10-year Treasury at 4.94% on October 30, 2026 and Prime at 7.00%, unchanged since September 17, and it marks maximum loan-to-value and the coverage floor as not yet published for every lender type except SBA, because no lender publishes them.[8] You can date the index in your letter. You cannot date proceeds nobody has quoted you yet.",
   },
   workedExample: {
     label:
@@ -249,10 +249,10 @@ export const page: AnswerPage = {
     },
     {
       n: 8,
-      label: "Hotel financing rate sheet, October 2026 edition",
+      label: "Hotel financing rate sheet, November 2026 edition",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)",
-      accessed: "2026-09-24"
+      accessed: "2026-11-01"
     }
   ],
   related: {

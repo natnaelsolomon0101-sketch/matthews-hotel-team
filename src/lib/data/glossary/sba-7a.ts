@@ -52,7 +52,7 @@ export const entry: GlossaryEntry = {
       publisher: "Legal Information Institute, Cornell Law School"
     },
     {
-      label: "Matthews Hotel Markets October 2026 rate sheet",
+      label: "Matthews Hotel Markets November 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)"
     }
@@ -72,7 +72,7 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/loan-requirements",
     "/buy-a-hotel/environmental-liability"
   ],
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-11-01",
   authorSlug: "luke-thompson"
 };
 

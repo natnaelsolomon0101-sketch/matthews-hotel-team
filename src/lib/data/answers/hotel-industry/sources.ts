@@ -159,7 +159,7 @@ const CATALOG = {
     publisher: "Hotel Dive, citing JLL",
   },
   rates: {
-    label: "Matthews Hotel Markets October 2026 rate sheet",
+    label: "Matthews Hotel Markets November 2026 rate sheet",
     url: "/rates",
     publisher: "Matthews Hotel Markets",
   },

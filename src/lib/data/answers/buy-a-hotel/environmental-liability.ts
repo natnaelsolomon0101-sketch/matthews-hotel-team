@@ -58,7 +58,7 @@ export const page: AnswerPage = {
   description:
     "Who pays to clean up contamination at a hotel, the eight bona fide prospective purchaser criteria, and when an SBA lender orders a Phase I.",
   h1: "Am I liable for contamination on a hotel I buy?",
-  lastUpdated: "2026-10-12",
+  lastUpdated: "2026-11-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -161,7 +161,7 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' October 2026 rate sheet records the rulebook this page runs on: SBA's SOP 50 10 8.1 took effect October 1, 2026. As of September 30, 2026 the sheet shows the 10-year Treasury at 5.29 percent and Prime at 7.00 percent, capping a variable-rate 7(a) loan above $350,000 at 10.00 percent.[13] None of that moves while an escrow holds the file.",
+      "Matthews Hotel Markets' November 2026 rate sheet records the rulebook this page runs on: SBA's SOP 50 10 8.1 took effect October 1, 2026. As of October 30, 2026 the sheet shows the 10-year Treasury at 4.94 percent, with Prime at 7.00 percent, unchanged since September 17, capping a variable-rate 7(a) loan above $350,000 at 10.00 percent.[13] None of that moves while an escrow holds the file.",
   },
   workedExample: {
     label:
@@ -302,10 +302,10 @@ export const page: AnswerPage = {
     {
       n: 13,
       label:
-        "Matthews Hotel Markets hotel debt rate sheet, October 2026 edition: the 10-year Treasury at 5.29% and Prime at 7.00% as of September 30, 2026, the 10.00% SBA 7(a) maximum on a variable-rate loan above $350,000, and the changelog note that SOP 50 10 8.1 took effect October 1, 2026",
+        "Matthews Hotel Markets hotel debt rate sheet, November 2026 edition: the 10-year Treasury at 4.94% on October 30, 2026 and Prime at 7.00%, unchanged since September 17, the 10.00% SBA 7(a) maximum on a variable-rate loan above $350,000, and the changelog note that SOP 50 10 8.1 took effect October 1, 2026",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
-      accessed: "2026-10-09",
+      accessed: "2026-11-01",
     },
   ],
   related: {

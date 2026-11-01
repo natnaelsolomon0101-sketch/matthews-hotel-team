@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Hotel Capital Stack: Layers, Order and Example (2026)",
   h1: "What is a hotel capital stack, and how do I build one?",
   description: "The layers that pay for a hotel, in order: senior debt, C-PACE, mezzanine, preferred equity, key money and common equity, with a worked $20M example.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-11-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -123,7 +123,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' October 2026 rate sheet puts the 10-year Treasury at 5.29%, SOFR at 3.90% and the 25-year SBA 504 debenture at 6.54% as of September 30, 2026. It prints no mezzanine, preferred equity or C-PACE pricing, because none is published.[6]"
+    sentence: "Matthews Hotel Markets' November 2026 rate sheet puts the 10-year Treasury at 4.94% on October 30, 2026, SOFR at 3.94% for October 29 and the 25-year SBA 504 debenture at 6.97% priced October 8. It prints no mezzanine, preferred equity or C-PACE pricing, because none is published.[6]"
   },
   workedExample: {
     label: "Hypothetical: a $20.0M hotel acquisition and PIP, built two ways",
@@ -197,10 +197,10 @@ export const page: AnswerPage = {
     },
     {
       n: 6,
-      label: "Matthews Hotel Markets October 2026 rate sheet",
+      label: "Matthews Hotel Markets November 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
-      accessed: "2026-09-18"
+      accessed: "2026-11-01"
     },
     {
       n: 7,

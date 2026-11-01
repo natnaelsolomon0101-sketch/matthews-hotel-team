@@ -35,7 +35,7 @@ export const page: AnswerPage = {
   description:
     "What the Hotel and Motel Fire Safety Act requires, what being off FEMA's national master list costs a hotel, and what the published list shows.",
   h1: "Does my hotel need sprinklers to take federal government business?",
-  lastUpdated: "2026-10-19",
+  lastUpdated: "2026-11-01",
   authorSlug: "miles-cortez",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -123,7 +123,7 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' October 2026 rate sheet is where a sprinkler scope becomes a financing question. As of September 30, 2026 it shows the 10-year Treasury at 5.29 percent and Prime at 7.00 percent, and marks every coverage and loan-to-value cell as not yet published, because lenders do not publish them.[10]"
+      "Matthews Hotel Markets' November 2026 rate sheet is where a sprinkler scope becomes a financing question. As of October 30, 2026 it shows the 10-year Treasury at 4.94 percent, with Prime at 7.00 percent, unchanged since September 17, and marks every coverage and loan-to-value cell as not yet published, because lenders do not publish them.[10]"
   },
   workedExample: {
     label: "Hypothetical: what the listing is worth on a 120-key, 5-story hotel",
@@ -235,10 +235,10 @@ export const page: AnswerPage = {
     },
     {
       n: 10,
-      label: "Matthews Hotel Markets rate sheet, October 2026 edition",
+      label: "Matthews Hotel Markets rate sheet, November 2026 edition",
       url: "/rates",
       publisher: "Matthews Hotel Markets (first-party)",
-      accessed: "2026-10-15"
+      accessed: "2026-11-01"
     }
   ],
   related: {

@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Who Lends on Hotels Under $5 Million? (2026)",
   h1: "Who lends on hotels under $5 million?",
   description: "Small-balance hotel loans in 2026: SBA 7(a), SBA 504, community banks, credit unions and the USDA B&I guarantee, with the program limits that matter.",
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-11-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -31,7 +31,7 @@ export const page: AnswerPage = {
   takeaways: [
     "Small hotel loans are relationship and program loans. CMBS conduits and life companies mostly work above this size, so expect recourse.",
     "SBA 7(a): one loan up to $5 million, guaranteed up to 75 percent above $150,000, up to 25 years on real estate, no balloon.[1][4]",
-    "SBA 504: a bank first lien, a fixed-rate debenture up to $5 million on a hotel, and at least 15 percent from the borrower.[5][4] The 25-year debenture priced at 6.54 percent on September 10, 2026.[3]",
+    "SBA 504: a bank first lien, a fixed-rate debenture up to $5 million on a hotel, and at least 15 percent from the borrower.[5][4] The 25-year debenture priced at 6.97 percent on October 8, 2026.[3]",
     "USDA B&I: hotels and motels are named as eligible in the regulation, in areas outside cities of more than 50,000 people, with terms up to 40 years and no balloon.[6][7][8]",
     "A bank's legal lending limit is 15 percent of its capital and surplus per borrower.[9] A small bank can run out of room on one hotel."
   ],
@@ -49,7 +49,7 @@ export const page: AnswerPage = {
     {
       h2: "When is SBA 504 the better small-hotel loan?",
       lead: "When the purchase is mostly real estate and you want part of the debt fixed for up to 25 years.",
-      body: "A 504 project has three pieces: a bank first lien, a debenture-funded second lien from a Certified Development Company, and the borrower's contribution. SBA's SOP lists hotels, motels and other lodging as Limited or Special Purpose Property, so the borrower contributes at least 15 percent, or 20 percent if the business is also two years old or less.[5][4] The debenture on a hotel caps at $5 million.[4] It cannot fund working capital.[12]\n\nThe debenture rate is published monthly. The 25-year debenture priced at 6.54 percent on September 10, 2026, fees included.[3] The bank prices its first lien separately. `/hotel-financing/sba-7a-vs-504` runs the two programs side by side on the same purchase."
+      body: "A 504 project has three pieces: a bank first lien, a debenture-funded second lien from a Certified Development Company, and the borrower's contribution. SBA's SOP lists hotels, motels and other lodging as Limited or Special Purpose Property, so the borrower contributes at least 15 percent, or 20 percent if the business is also two years old or less.[5][4] The debenture on a hotel caps at $5 million.[4] It cannot fund working capital.[12]\n\nThe debenture rate is published monthly. The 25-year debenture priced at 6.97 percent on October 8, 2026, fees included.[3] The bank prices its first lien separately. `/hotel-financing/sba-7a-vs-504` runs the two programs side by side on the same purchase."
     },
     {
       h2: "Can I get a USDA loan for a hotel?",
@@ -91,7 +91,7 @@ export const page: AnswerPage = {
         "$5 million debenture on a hotel; bank first lien sized by the bank[4]",
         "SBA backs the debenture that funds the second lien",
         "10, 20 or 25 year debenture[12]",
-        "25-year debenture 6.54%, priced September 10, 2026[3]",
+        "25-year debenture 6.97%, priced October 8, 2026[3]",
         "Borrower contributes at least 15% on a hotel; no working capital[5][12]"
       ],
       [
@@ -123,7 +123,7 @@ export const page: AnswerPage = {
   originalDataPoint: {
     source: "rates",
     ref: "/rates",
-    sentence: "Matthews Hotel Markets' October 2026 rate sheet shows the two published small-balance benchmarks: a 10.00% maximum allowable rate on SBA 7(a) loans over $350,000, which is the 7.00% Prime effective September 17, 2026 plus SBA's 3.00% cap, and 6.54% on the 25-year SBA 504 debenture priced September 10, 2026. It marks conventional bank and credit union spreads as not yet published.[3]"
+    sentence: "Matthews Hotel Markets' November 2026 rate sheet shows the two published small-balance benchmarks: a 10.00% maximum allowable rate on SBA 7(a) loans over $350,000, which is the 7.00% Prime effective September 17, 2026 plus SBA's 3.00% cap, and 6.97% on the 25-year SBA 504 debenture priced October 8, 2026. It marks conventional bank and credit union spreads as not yet published.[3]"
   },
   workedExample: {
     label: "Hypothetical: a $4.2M purchase of a 48-key rural hotel, four ways",
@@ -180,10 +180,10 @@ export const page: AnswerPage = {
     },
     {
       n: 3,
-      label: "Matthews Hotel Markets October 2026 rate sheet",
+      label: "Matthews Hotel Markets November 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
-      accessed: "2026-09-18"
+      accessed: "2026-11-01"
     },
     {
       n: 4,

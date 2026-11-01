@@ -38,7 +38,7 @@ const FORFEIT_PER_DAY = 25132;        // 47 CFR 1.80(b)(10), 503(b)(2)(D)
 const FORFEIT_SINGLE_ACT = 188491;    // same
 const CITATION_DAYS = 30;             // 47 CFR 1.80(d)(2), "usually 30 days"
 const LIMITATION_YEARS = 1;           // 47 CFR 1.80(c)(5)
-const UST10 = 5.29;                   // /rates, October 2026 edition, as of 2026-09-30
+const UST10 = 4.94;                   // /rates, November 2026 edition, as of 2026-10-30
 const PRIME = 7.0;                    // same
 
 /* every statutory or regulatory figure must actually appear on the page */
@@ -47,7 +47,7 @@ has("page prints the per-day forfeiture ceiling", `$${FORFEIT_PER_DAY.toLocaleSt
 has("page prints the single-act ceiling", `$${FORFEIT_SINGLE_ACT.toLocaleString("en-US")}`);
 has("page prints the usual citation interview window", `usually ${CITATION_DAYS} days`);
 has("page prints the one-year limitation", `more than ${LIMITATION_YEARS === 1 ? "one" : LIMITATION_YEARS} year`);
-has("page prints the October 2026 10-year Treasury", UST10.toFixed(2));
+has("page prints the November 2026 10-year Treasury", UST10.toFixed(2));
 has("page prints Prime", PRIME.toFixed(2));
 
 /* the five dates the rule turns on */

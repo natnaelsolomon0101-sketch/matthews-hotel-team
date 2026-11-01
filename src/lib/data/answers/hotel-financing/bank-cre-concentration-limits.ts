@@ -77,7 +77,7 @@ export const page: AnswerPage = {
   description:
     "What a bank means when it says it is full on hotel loans: the 100 and 300 percent supervisory screens, why a hotel loan always counts, and what to do.",
   h1: "Why does my bank say it is full on hotel loans?",
-  lastUpdated: "2026-10-21",
+  lastUpdated: "2026-11-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -206,7 +206,7 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Our October 2026 rate sheet marks every cell on the bank and credit union row as not yet published, because no balance sheet lender publishes its spread, its maximum loan-to-value or its coverage floor.[11] Its concentration ratio is the one number in that row you can read for yourself, in a public quarterly filing, before you apply."
+      "Our November 2026 rate sheet marks every cell on the bank and credit union row as not yet published, because no balance sheet lender publishes its spread, its maximum loan-to-value or its coverage floor.[11] Its concentration ratio is the one number in that row you can read for yourself, in a public quarterly filing, before you apply."
   },
   workedExample: {
     label: "Hypothetical: a $900 million community bank, and a $7,000,000 hotel loan",
@@ -326,10 +326,10 @@ export const page: AnswerPage = {
     },
     {
       n: 11,
-      label: "Matthews Hotel Markets October 2026 rate sheet",
+      label: "Matthews Hotel Markets November 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
-      accessed: "2026-10-21"
+      accessed: "2026-11-01"
     }
   ],
   related: {

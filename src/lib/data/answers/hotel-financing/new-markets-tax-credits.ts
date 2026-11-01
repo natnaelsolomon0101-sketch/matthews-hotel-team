@@ -23,7 +23,7 @@ export const page: AnswerPage = {
   h1: "Can I use New Markets Tax Credits on a hotel?",
   description:
     "Whether a hotel qualifies for the New Markets Tax Credit: the census tract test, the 39 percent credit over 7 years, the exclusions, the 7-year hold.",
-  lastUpdated: "2026-10-23",
+  lastUpdated: "2026-11-01",
   authorSlug: "luke-thompson",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -114,7 +114,7 @@ export const page: AnswerPage = {
     source: "rates",
     ref: "/rates",
     sentence:
-      "Matthews Hotel Markets' October 2026 rate sheet puts the 10-year Treasury at 5.29% and Prime at 7.00% as of September 30, 2026, and carries no New Markets row, because what a community development entity charges on a qualified investment is negotiated deal by deal and is not published anywhere.[11]"
+      "Matthews Hotel Markets' November 2026 rate sheet puts the 10-year Treasury at 4.94% on October 30, 2026 and Prime at 7.00%, unchanged since September 17, and carries no New Markets row, because what a community development entity charges on a qualified investment is negotiated deal by deal and is not published anywhere.[11]"
   },
   workedExample: {
     label: "Hypothetical: a 110-key conversion in a qualifying tract, $10,000,000 of New Markets investment",
@@ -234,10 +234,10 @@ export const page: AnswerPage = {
     },
     {
       n: 11,
-      label: "Matthews Hotel Markets October 2026 rate sheet",
+      label: "Matthews Hotel Markets November 2026 rate sheet",
       url: "/rates",
       publisher: "Matthews Hotel Markets",
-      accessed: "2026-10-23"
+      accessed: "2026-11-01"
     }
   ],
   related: {

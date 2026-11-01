@@ -55,7 +55,7 @@ const OSHA_WILLFUL_MIN = 11823;
 const OSHA_WILLFUL_MAX = 165514;
 const CA_TRIGGER_SF = 100;        // 8 CCR 341.6(a)
 const FED_ACM_PCT = 1;            // 40 CFR 61.141
-const UST10 = 5.29;               // /rates, October 2026 edition, as of 2026-09-30
+const UST10 = 4.94;               // /rates, November 2026 edition, as of 2026-10-30
 const PRIME = 7.0;                // same
 
 /* each statutory figure must actually appear on the page */
@@ -76,7 +76,7 @@ for (const [label, n] of [
 }
 has("page prints the 0.1 f/cc TWA", String(PEL_TWA));
 has("page prints the 1.0 f/cc excursion limit", PEL_EXCURSION.toFixed(1));
-has("page prints the October 2026 10-year Treasury", UST10.toFixed(2));
+has("page prints the November 2026 10-year Treasury", UST10.toFixed(2));
 has("page prints Prime", PRIME.toFixed(2));
 has("page prints the 1/10th of 1 percent California definition", "1/10th of 1 percent");
 has("page dates the EPA adjustment", "90 FR 1377");
@@ -137,22 +137,22 @@ const displaced = roomNights * OCC * ADR;
 eq("displaced rooms revenue", money(displaced), "$41,135");
 
 const carry = budget * (UST10 / 100) * (calendarDays / 365);
-eq("carry on the budget for 17 days at 5.29 percent", money(carry), "$7,047");
+eq("carry on the budget for 17 days at 4.94 percent", money(carry), "$6,580");
 
 const delayCost = Math.round(displaced) + Math.round(carry);
-eq("total cost of the unplanned delay", money(delayCost), "$48,182");
-eq("cost per key", money(delayCost / KEYS), "$438");
+eq("total cost of the unplanned delay", money(delayCost), "$47,715");
+eq("cost per key", money(delayCost / KEYS), "$434");
 
 const STRIP_DAYS = 6;
 const exposure = CAA_113B * STRIP_DAYS;
 eq("six days of maximum Clean Air Act exposure", money(exposure), "$746,556");
 eq("exposure as a percent of the budget", +((exposure / budget) * 100).toFixed(1), 26.1);
-eq("exposure as a multiple of the delay cost", +(exposure / delayCost).toFixed(1), 15.5);
+eq("exposure as a multiple of the delay cost", +(exposure / delayCost).toFixed(1), 15.6);
 
 /* every computed figure must appear on the page */
 for (const s of ["4,950", "30.9", "290", "24.1", "360", "17 calendar days", "14",
-                 "$2,860,000", "408", "71 percent", "$142", "$41,135", "$7,047",
-                 "$48,182", "$438", "$746,556", "26.1", "15.5",
+                 "$2,860,000", "408", "71 percent", "$142", "$41,135", "$6,580",
+                 "$47,715", "$434", "$746,556", "26.1", "15.6",
                  "October 16, 2026", "November 2, 2026"]) {
   has(`page prints "${s}"`, s);
 }
