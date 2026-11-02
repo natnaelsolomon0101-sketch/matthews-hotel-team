@@ -138,7 +138,8 @@ export const page: AnswerPage = {
       "/hotel-industry/owner-franchisor-management-company",
       "/hotel-industry/chain-scales-and-classes",
       "/hotel-industry/industry-size-2026",
-      "/hotel-industry/resort-fees"
+      "/hotel-industry/resort-fees",
+      "/hotel-industry/h2b-seasonal-workers"
     ],
     glossary: [
       "/glossary/gop",

@@ -321,7 +321,8 @@ export const page: AnswerPage = {
       "/hotel-industry/hotel-operating-costs",
       "/hotel-industry/how-hotels-make-money",
       "/hotel-industry/extended-stay-hotels",
-      "/hotel-industry/ada-requirements"
+      "/hotel-industry/ada-requirements",
+      "/hotel-industry/h2b-seasonal-workers"
     ],
     glossary: ["/glossary/noi", "/glossary/gop", "/glossary/cap-rate"],
     data: ["/rates"]

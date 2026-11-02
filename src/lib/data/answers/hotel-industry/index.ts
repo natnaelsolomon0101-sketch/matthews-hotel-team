@@ -20,6 +20,7 @@ import { page as a_energy_benchmarking_and_emissions_limits } from "./energy-ben
 import { page as a_fire_safety_and_federal_travel } from "./fire-safety-and-federal-travel";
 import { page as a_asbestos_renovation_rules } from "./asbestos-renovation-rules";
 import { page as a_karis_law_911_requirements } from "./karis-law-911-requirements";
+import { page as a_h2b_seasonal_workers } from "./h2b-seasonal-workers";
 import type { AnswerPage } from "../types";
 
 export const hub: AnswerPage = a_hub;
@@ -45,6 +46,7 @@ export const spokes: AnswerPage[] = [
   a_fire_safety_and_federal_travel,
   a_asbestos_renovation_rules,
   a_karis_law_911_requirements,
+  a_h2b_seasonal_workers,
 ];
 
 export const pages: AnswerPage[] = [hub, ...spokes];

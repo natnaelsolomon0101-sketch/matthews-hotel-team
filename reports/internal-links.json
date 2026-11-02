@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-10-29T14:53:34.228Z",
-  "base": "http://localhost:33683",
+  "runAt": "2026-11-02T14:53:09.038Z",
+  "base": "http://localhost:34533",
   "edges": [
     {
       "from": "/",
@@ -4505,6 +4505,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-industry/karis-law-911-requirements"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-industry/h2b-seasonal-workers"
     },
     {
       "from": "/sitemap",
@@ -37976,6 +37980,10 @@
     },
     {
       "from": "/glossary/cap-rate",
+      "to": "/hotel-industry/h2b-seasonal-workers"
+    },
+    {
+      "from": "/glossary/cap-rate",
       "to": "/markets/austin-tx"
     },
     {
@@ -39685,6 +39693,10 @@
     {
       "from": "/glossary/noi",
       "to": "/hotel-industry/energy-benchmarking-and-emissions-limits"
+    },
+    {
+      "from": "/glossary/noi",
+      "to": "/hotel-industry/h2b-seasonal-workers"
     },
     {
       "from": "/glossary/noi",
@@ -43117,6 +43129,10 @@
     {
       "from": "/glossary/gop",
       "to": "/hotel-industry/hotel-worker-minimum-wage"
+    },
+    {
+      "from": "/glossary/gop",
+      "to": "/hotel-industry/h2b-seasonal-workers"
     },
     {
       "from": "/glossary/gop",
@@ -68148,6 +68164,10 @@
     },
     {
       "from": "/hotel-industry",
+      "to": "/hotel-industry/h2b-seasonal-workers"
+    },
+    {
+      "from": "/hotel-industry",
       "to": "/hotel-franchise-costs"
     },
     {
@@ -68785,6 +68805,10 @@
     {
       "from": "/hotel-industry/how-hotels-make-money",
       "to": "/hotel-industry/resort-fees"
+    },
+    {
+      "from": "/hotel-industry/how-hotels-make-money",
+      "to": "/hotel-industry/h2b-seasonal-workers"
     },
     {
       "from": "/hotel-industry/how-hotels-make-money",
@@ -70232,6 +70256,10 @@
     },
     {
       "from": "/hotel-industry/hotel-operating-costs",
+      "to": "/hotel-industry/h2b-seasonal-workers"
+    },
+    {
+      "from": "/hotel-industry/hotel-operating-costs",
       "to": "/glossary"
     },
     {
@@ -70429,6 +70457,10 @@
     {
       "from": "/hotel-industry/extended-stay-hotels",
       "to": "/hotel-industry/chain-scales-and-classes"
+    },
+    {
+      "from": "/hotel-industry/extended-stay-hotels",
+      "to": "/hotel-industry/h2b-seasonal-workers"
     },
     {
       "from": "/hotel-industry/extended-stay-hotels",
@@ -71476,6 +71508,10 @@
     },
     {
       "from": "/hotel-industry/hotel-worker-minimum-wage",
+      "to": "/hotel-industry/h2b-seasonal-workers"
+    },
+    {
+      "from": "/hotel-industry/hotel-worker-minimum-wage",
       "to": "/glossary"
     },
     {
@@ -72412,6 +72448,198 @@
     },
     {
       "from": "/hotel-industry/karis-law-911-requirements",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/_next/static/chunks/971af7bd7354d30d.css"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/hotel-industry/h2b-seasonal-workers.md"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/hotel-industry/hotel-operating-costs"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/hotel-industry/hotel-worker-minimum-wage"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/hotel-industry/how-hotels-make-money"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/hotel-industry/extended-stay-hotels"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/glossary/noi"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/glossary/gop"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/glossary/cap-rate"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-industry/h2b-seasonal-workers",
       "to": "/sitemap"
     },
     {
@@ -75161,6 +75389,7 @@
         "/hotel-industry/fire-safety-and-federal-travel",
         "/hotel-industry/asbestos-renovation-rules",
         "/hotel-industry/karis-law-911-requirements",
+        "/hotel-industry/h2b-seasonal-workers",
         "/tools",
         "/tools/hotel-value-estimator",
         "/tools/hotel-loan-sizing-calculator",
@@ -84410,6 +84639,7 @@
         "/hotel-valuation/how-to-value-a-hotel",
         "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
         "/hotel-industry/energy-benchmarking-and-emissions-limits",
+        "/hotel-industry/h2b-seasonal-workers",
         "/markets/austin-tx",
         "/markets/nashville-tn",
         "/markets/atlanta-ga",
@@ -84886,6 +85116,7 @@
         "/sell-a-hotel/liquor-license-transfer",
         "/hotel-industry/hotel-worker-minimum-wage",
         "/hotel-industry/energy-benchmarking-and-emissions-limits",
+        "/hotel-industry/h2b-seasonal-workers",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -85852,6 +86083,7 @@
         "/sell-a-hotel/documents-needed",
         "/sell-a-hotel/employees-when-you-sell",
         "/hotel-industry/hotel-worker-minimum-wage",
+        "/hotel-industry/h2b-seasonal-workers",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -92811,6 +93043,7 @@
         "/hotel-industry/fire-safety-and-federal-travel",
         "/hotel-industry/asbestos-renovation-rules",
         "/hotel-industry/karis-law-911-requirements",
+        "/hotel-industry/h2b-seasonal-workers",
         "/hotel-franchise-costs",
         "/glossary",
         "/glossary/revpar",
@@ -92989,6 +93222,7 @@
         "/hotel-industry/chain-scales-and-classes",
         "/hotel-industry/industry-size-2026",
         "/hotel-industry/resort-fees",
+        "/hotel-industry/h2b-seasonal-workers",
         "/glossary",
         "/glossary/revpar",
         "/data/hotel-financing-statistics",
@@ -93392,6 +93626,7 @@
         "/hotel-industry/extended-stay-hotels",
         "/hotel-industry/how-hotel-reits-work",
         "/hotel-industry/resort-fees",
+        "/hotel-industry/h2b-seasonal-workers",
         "/glossary",
         "/glossary/gop",
         "/glossary/noi",
@@ -93448,6 +93683,7 @@
         "/hotel-franchise-costs/homewood-suites",
         "/buy-a-hotel",
         "/hotel-industry/chain-scales-and-classes",
+        "/hotel-industry/h2b-seasonal-workers",
         "/glossary",
         "/glossary/revpar",
         "/glossary/adr",
@@ -93739,6 +93975,7 @@
         "/hotel-industry/how-hotels-make-money",
         "/hotel-industry/extended-stay-hotels",
         "/hotel-industry/ada-requirements",
+        "/hotel-industry/h2b-seasonal-workers",
         "/glossary",
         "/glossary/noi",
         "/glossary/gop",
@@ -93976,6 +94213,60 @@
         "/glossary/pip",
         "/glossary/ffe-reserve",
         "/glossary/franchise-agreement",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/hotel-industry/h2b-seasonal-workers",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/971af7bd7354d30d.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-industry/h2b-seasonal-workers.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/hotel-industry",
+        "/team/luke-thompson",
+        "/team/nate-solomon",
+        "/hotel-industry/hotel-operating-costs",
+        "/hotel-industry/hotel-worker-minimum-wage",
+        "/hotel-industry/how-hotels-make-money",
+        "/hotel-industry/extended-stay-hotels",
+        "/glossary",
+        "/glossary/noi",
+        "/glossary/gop",
+        "/glossary/cap-rate",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/tools",
