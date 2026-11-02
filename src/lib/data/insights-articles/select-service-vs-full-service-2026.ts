@@ -8,7 +8,7 @@ export const draft: Insight = {
   subtitle:
     "Why select-service is the most-bid hospitality category in 2026, what full-service has to do to compete, and how owners should read the gap.",
   date: "May 2026",
-  lastUpdated: "2026-05-10",
+  lastUpdated: "2026-11-02",
   authorSlugs: ["luke-thompson"],
   cover: "from-[#1a3a6b] via-[#0066cc] to-[#1a56db]",
   excerpt:
@@ -34,7 +34,7 @@ export const draft: Insight = {
 
     "## What does the operating-economics comparison actually look like",
 
-    "On stabilized GOP margin, the leading select-service brands run 38 to 44 percent at the property level. Full-service urban hotels run 28 to 34 percent, with food-and-beverage typically contributing positively but not enough to offset the operating expense load (industry estimate, verify with Q2 2026 release). On labor as a percentage of revenue, select-service runs roughly 22 to 26 percent; full-service runs 32 to 38 percent [Source: STR HOST Almanac 2025]. On capital expenditure per key over a typical 7-year hold, select-service averages $8,000 to $14,000; full-service averages $22,000 to $40,000 depending on F&B repositioning needs.",
+    "On stabilized GOP margin, select-service runs higher at the property level than urban full-service, because full-service food-and-beverage contributes positively but not enough to offset the operating expense load it carries. No public source publishes a stabilized property-level GOP margin band for either segment, so this page does not print one. On labor as a percentage of revenue, select-service runs roughly 22 to 26 percent; full-service runs 32 to 38 percent [Source: STR HOST Almanac 2025]. On capital expenditure per key over a typical 7-year hold, select-service averages $8,000 to $14,000; full-service averages $22,000 to $40,000 depending on F&B repositioning needs.",
 
     "The translation to capital markets: a 100-basis-point cap rate spread on the headline number frequently reflects a 50-basis-point spread on a fully-loaded yield basis after adjusting for forward capex reserves and operating volatility. Sophisticated buyers underwrite to the fully-loaded yield. The headline cap rate gap is partly a presentation convention; the economic gap is real but smaller.",
 
@@ -43,11 +43,9 @@ export const draft: Insight = {
     "1. 7.50–8.50 percent: Sun Belt secondary stabilized select-service cap range, Q2 2026 [Source: Matthews internal transaction database].",
     "2. 7.00–8.00 percent: primary-metro stabilized full-service cap range, Q2 2026.",
     "3. 9.00–10.50 percent: tertiary-CBD stabilized full-service cap range, Q2 2026 [Source: HVS U.S. Market Pulse, April 2026].",
-    "4. 38–44 percent: leading select-service brand stabilized property-level GOP margin.",
-    "5. 28–34 percent: urban full-service stabilized property-level GOP margin (industry estimate).",
-    "6. $18.7 billion: U.S. hotel CMBS maturing in 2026, nearly 70 percent floating rate [Source: Trepp, via Hotel Dive, August 3, 2026].",
-    "7. 220+: Apple Hospitality REIT hotel count, concentrated in upscale select-service [Source: Apple Hospitality 2025 Annual Report].",
-    "8. Under 60 days: typical institutional underwriting timeline for stabilized select-service; full-service runs 2–3 quarters longer.",
+    "4. $18.7 billion: U.S. hotel CMBS maturing in 2026, nearly 70 percent floating rate [Source: Trepp, via Hotel Dive, August 3, 2026].",
+    "5. 220+: Apple Hospitality REIT hotel count, concentrated in upscale select-service [Source: Apple Hospitality 2025 Annual Report].",
+    "6. Under 60 days: typical institutional underwriting timeline for stabilized select-service; full-service runs 2–3 quarters longer.",
 
     "## Pull quote",
 
@@ -62,7 +60,7 @@ export const draft: Insight = {
 
     "## Which segment has the stronger demand recovery",
 
-    "Both segments have recovered above the 2019 RevPAR baseline through Q1 2026, but the recovery profile differs. Select-service RevPAR nationally runs roughly 8 to 12 percent above 2019, supported by stable transient business demand, the maturation of leisure mid-week travel patterns, and brand loyalty programs that drive direct bookings (industry estimate, verify with Q2 2026 release) [Source: STR U.S. Hotel Performance, Q1 2026]. Full-service has bifurcated. Trophy full-service in primary metros runs roughly 6 to 10 percent above 2019, supported by group demand that has rebuilt across 2024 and 2025. Mid-tier full-service in tertiary CBDs remains below 2019 RevPAR in many markets, with the gap concentrated in food-and-beverage and banquet revenue lines that have not recovered [Source: AHLA 2026 State of the Hotel Industry, January 2026].",
+    "Both segments have recovered above the 2019 RevPAR baseline through Q1 2026, but the recovery profile differs. Select-service RevPAR nationally is above 2019, supported by stable transient business demand, the maturation of leisure mid-week travel patterns, and brand loyalty programs that drive direct bookings [Source: STR U.S. Hotel Performance, Q1 2026]. The size of that gap is not in the cited release, so this page does not state one. Full-service has bifurcated. Trophy full-service in primary metros runs roughly 6 to 10 percent above 2019, supported by group demand that has rebuilt across 2024 and 2025. Mid-tier full-service in tertiary CBDs remains below 2019 RevPAR in many markets, with the gap concentrated in food-and-beverage and banquet revenue lines that have not recovered [Source: AHLA 2026 State of the Hotel Industry, January 2026].",
 
     "## How does PIP exposure differ between segments",
 
@@ -94,7 +92,6 @@ export const draft: Insight = {
   tldr: [
     "Sun Belt secondary stabilized select-service prices 7.50 to 8.50 percent in Q2 2026.",
     "Primary-metro stabilized full-service prices 7.00 to 8.00 percent; tertiary-CBD full-service prices 9.00 to 10.50 percent.",
-    "Select-service GOP margins run 38 to 44 percent versus 28 to 34 percent for urban full-service.",
     "Apple Hospitality REIT alone owns 220-plus upscale select-service hotels, anchoring the public REIT bid.",
     "Trepp counts $18.7 billion of U.S. hotel CMBS maturing in 2026, and the proceeds gap is wider for full-service than for select-service.",
     "Mid-tier full-service in tertiary CBDs most often clears at the cap rate it deserves only after a brand-conversion underwriting.",

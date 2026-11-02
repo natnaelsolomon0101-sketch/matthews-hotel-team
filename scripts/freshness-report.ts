@@ -7,6 +7,14 @@
  * date (the day a person here last opened the link) has gone stale. Prints a
  * markdown report; a human or the Site Maintainer decides what to re-read.
  *
+ * Covers answer pages, glossary terms, tools, /insights articles and the
+ * statistics file. /insights was added on 2026-11-02 because it had been
+ * outside this report since the report shipped, and the gap was not harmless:
+ * eight insights articles sat at a 2026-05-10 stamp for 176 days carrying
+ * "(industry estimate, verify with Q2 2026 release)" notes that were visible
+ * on the live page and four months past their own date. Nothing flagged them,
+ * because nothing was looking.
+ *
  *   npx tsx scripts/freshness-report.ts              # 90-day threshold
  *   npx tsx scripts/freshness-report.ts --days 180
  *   npx tsx scripts/freshness-report.ts --today 2026-10-05
@@ -29,6 +37,7 @@
 import { answerPages, answerPath } from "../src/lib/data/answers";
 import { glossary } from "../src/lib/data/glossary";
 import { tools } from "../src/lib/data/tools";
+import { insights } from "../src/lib/data/insights";
 import { STATS } from "../src/lib/rates/statistics";
 
 type Row = { path: string; date: string; age: number; label: string };
@@ -64,8 +73,12 @@ function main() {
   const today = str(args, "--today", new Date().toISOString().slice(0, 10));
 
   const pages: Row[] = [];
+  const undated: string[] = [];
   const collect = (path: string, date: string | undefined) => {
-    if (!date) return;
+    if (!date) {
+      undated.push(path);
+      return;
+    }
     const age = daysBetween(date, today);
     if (Number.isNaN(age)) {
       console.error(`unparseable date on ${path}: ${date}`);
@@ -77,6 +90,7 @@ function main() {
   for (const page of answerPages) collect(answerPath(page), page.lastUpdated);
   for (const entry of glossary) collect(`/glossary/${entry.slug}`, entry.lastUpdated);
   for (const tool of tools) collect(`/tools/${tool.slug}`, tool.lastUpdated);
+  for (const article of insights) collect(`/insights/${article.slug}`, article.lastUpdated);
 
   const stats: Row[] = STATS.map((s) => ({
     path: s.id,
@@ -93,7 +107,8 @@ function main() {
   out.push("");
   out.push(
     `${pages.length} published pages carry a visible "last updated" stamp and ${stats.length} statistics carry a \`verified\` date. ` +
-      `${stalePages.length} pages and ${staleStats.length} statistics are more than ${days} days old.`,
+      `${stalePages.length} pages and ${staleStats.length} statistics are more than ${days} days old. ` +
+      `${undated.length} pages carry no stamp at all.`,
   );
   out.push("");
   out.push(
@@ -115,12 +130,22 @@ function main() {
         "that is a number change and it needs the old value, the new value and the URL in the PR description.",
     );
   }
-  if (!stalePages.length && !staleStats.length) {
-    out.push("", `Nothing is older than ${days} days.`);
+  if (undated.length) {
+    out.push("", "## Pages with no `lastUpdated` stamp", "");
+    out.push(...undated.sort().map((path) => `- ${path}`));
+    out.push(
+      "",
+      "These cannot go stale, because they never claimed a date. That is the problem: a reader " +
+        "and an assistant both have to guess how old the page is, and this report cannot age it. " +
+        "Add the stamp on the next run that re-reads the sources behind the page, not before.",
+    );
+  }
+  if (!stalePages.length && !staleStats.length && !undated.length) {
+    out.push("", `Nothing is older than ${days} days, and every page carries a stamp.`);
   }
 
   console.log(out.join("\n"));
-  process.exit(stalePages.length || staleStats.length ? 1 : 0);
+  process.exit(stalePages.length || staleStats.length || undated.length ? 1 : 0);
 }
 
 main();
