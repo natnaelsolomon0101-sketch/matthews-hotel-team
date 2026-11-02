@@ -7,7 +7,7 @@ export const draft: Insight = {
   subtitle:
     "Where cap rates sit across Austin, Dallas-Fort Worth, Houston, and San Antonio, and how the second half of 2026 is likely to price.",
   date: "May 2026",
-  lastUpdated: "2026-05-10",
+  lastUpdated: "2026-11-02",
   authorSlugs: ["luke-thompson", "nate-solomon"],
   cover: "from-[#0a1226] via-[#1a3a6b] to-[#0066cc]",
   excerpt:
@@ -23,7 +23,7 @@ export const draft: Insight = {
 
     "## Where cap rates sit in each Texas metro right now",
 
-    "Austin sits at the tightest end of the Texas band. Stabilized PIP-current select-service trades in the 7.50 to 8.25 percent cap range. Full-service downtown and Domain-area assets price in the 7.00 to 8.00 percent range. Hill Country resort assets, where the supply pipeline is structurally constrained by entitlement and land cost, trade in the 6.50 to 7.75 percent range. Austin's combination of state-government and university-driven weekday demand, ACL and SXSW seasonal compression, and the F1 USGP weekend supports the bid even as new construction works through delivery (industry estimate, verify with Q2 2026 release).",
+    "Austin sits at the tightest end of the Texas band. Stabilized PIP-current select-service trades in the 7.50 to 8.25 percent cap range. Full-service downtown and Domain-area assets price in the 7.00 to 8.00 percent range. Hill Country resort assets, where the supply pipeline is structurally constrained by entitlement and land cost, trade in the 6.50 to 7.75 percent range. Austin's combination of state-government and university-driven weekday demand, ACL and SXSW seasonal compression, and the F1 USGP weekend supports the bid even as new construction works through delivery.",
 
     "Dallas-Fort Worth is wider, reflecting the metro's scale and sub-market diversity. Stabilized select-service in the DFW Metroplex prices in a 7.75 to 8.50 percent cap range. Convention-adjacent full-service near downtown Dallas and Fort Worth prices tighter, in the 7.00 to 7.75 percent range, on the back of recurring group demand. Plano, Frisco, and Las Colinas have been the most actively traded sub-markets; the airport hospitality cluster has seen increased private-equity bid in 2026 [Source: Matthews Hotel Markets internal transaction database, Q2 2026].",
 
@@ -63,7 +63,7 @@ export const draft: Insight = {
 
     "## How does the Texas Triangle compare on RevPAR recovery",
 
-    "RevPAR underwrites the cap rate. Across the Texas Triangle, RevPAR has recovered above the 2019 baseline in every primary metro through Q1 2026, but the recovery pace differs sharply by sub-market. Austin metro RevPAR sits roughly 12 to 14 percent above 2019, the strongest in the state, supported by tech-sector employment that has stabilized and by the maturation of ACL, SXSW, and F1 USGP as recurring compression weeks (industry estimate, verify with Q2 2026 release) [Source: STR U.S. Hotel Performance, Q1 2026]. Dallas-Fort Worth runs roughly 8 to 10 percent above 2019, with Plano and Frisco outperforming the metro average on the back of corporate relocations through 2024 and 2025. Houston runs roughly 4 percent above 2019, with the Texas Medical Center sub-market materially outpacing the metro average [Source: STR, Q1 2026]. San Antonio Riverwalk runs in line with the metro average around 6 to 8 percent above 2019, supported by leisure compression that has held through the cycle [Source: AHLA 2026 State of the Hotel Industry, January 2026].",
+    "RevPAR underwrites the cap rate. Across the Texas Triangle, RevPAR has recovered above the 2019 baseline in every primary metro through Q1 2026, but the recovery pace differs sharply by sub-market. Austin metro RevPAR is the strongest in the state, supported by tech-sector employment that has stabilized and by the maturation of ACL, SXSW, and F1 USGP as recurring compression weeks [Source: STR U.S. Hotel Performance, Q1 2026]. The cited release does not carry a metro gap against 2019, so this page does not state one. Dallas-Fort Worth runs roughly 8 to 10 percent above 2019, with Plano and Frisco outperforming the metro average on the back of corporate relocations through 2024 and 2025. Houston runs roughly 4 percent above 2019, with the Texas Medical Center sub-market materially outpacing the metro average [Source: STR, Q1 2026]. San Antonio Riverwalk runs in line with the metro average around 6 to 8 percent above 2019, supported by leisure compression that has held through the cycle [Source: AHLA 2026 State of the Hotel Industry, January 2026].",
 
     "## What is the Texas hotel construction pipeline through 2027",
 
