@@ -149,7 +149,8 @@ export const page: AnswerPage = {
       "/hotel-industry/hotel-management-agreements",
       "/hotel-industry/extended-stay-hotels",
       "/hotel-industry/how-hotel-reits-work",
-      "/hotel-industry/resort-fees"
+      "/hotel-industry/resort-fees",
+      "/hotel-industry/h2b-seasonal-workers"
     ],
     glossary: [
       "/glossary/gop",

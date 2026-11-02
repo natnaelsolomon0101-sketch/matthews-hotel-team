@@ -1,10 +1,10 @@
 {
-  "urls": 337,
+  "urls": 338,
   "maxDepth": 2,
   "byDepth": {
     "0": 1,
     "1": 32,
-    "2": 304
+    "2": 305
   },
   "depth": {
     "/": 0,
@@ -248,6 +248,7 @@
     "/hotel-industry/fire-safety-and-federal-travel": 2,
     "/hotel-industry/asbestos-renovation-rules": 2,
     "/hotel-industry/karis-law-911-requirements": 2,
+    "/hotel-industry/h2b-seasonal-workers": 2,
     "/glossary/gop": 2,
     "/glossary/comp-set": 2,
     "/glossary/defeasance": 2,

@@ -72,7 +72,8 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/flood-insurance-requirements",
     "/sell-a-hotel/liquor-license-transfer",
     "/hotel-industry/hotel-worker-minimum-wage",
-    "/hotel-industry/energy-benchmarking-and-emissions-limits"
+    "/hotel-industry/energy-benchmarking-and-emissions-limits",
+    "/hotel-industry/h2b-seasonal-workers"
   ],
   lastUpdated: "2026-10-07",
   authorSlug: "nate-solomon"

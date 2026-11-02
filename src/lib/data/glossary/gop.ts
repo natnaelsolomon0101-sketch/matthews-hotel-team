@@ -64,7 +64,8 @@ export const entry: GlossaryEntry = {
     "/hotel-valuation/select-service-vs-full-service",
     "/sell-a-hotel/documents-needed",
     "/sell-a-hotel/employees-when-you-sell",
-    "/hotel-industry/hotel-worker-minimum-wage"
+    "/hotel-industry/hotel-worker-minimum-wage",
+    "/hotel-industry/h2b-seasonal-workers"
   ],
   lastUpdated: "2026-10-07",
   authorSlug: "nate-solomon"

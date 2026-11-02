@@ -124,6 +124,60 @@ CSV still points at rather than genuine content gaps.
 
 ## Run notes
 
+**2026-11-02, Content Writer.** Shipped `/hotel-industry/h2b-seasonal-workers`. Sections A to E are complete, F is
+SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage scan of `src/lib/data/`:
+"H-2B", "H-2A", "prevailing wage", "temporary need", "three-fourths guarantee" and "655.20" each appeared in **zero**
+files. The site explained every operating cost line and never said how a seasonal resort hotel gets staffed, which is
+the question a Montana or Maine buyer asks first.
+
+**Production was paused for this entire run.** `https://matthewshotelmarkets.com/` answered `HTTP 503` with
+`x-vercel-error: DEPLOYMENT_PAUSED` at 14:21 UTC, the one request this run made to production. That is the same state
+issue #89 has reported since 2026-10-29 and it is a Vercel dashboard fix, not a PR. The PR is open with a green gate
+and unmerged, for the same reason PR #90 is: `geo/AGENTS.md` §3 step 6 cannot be satisfied. Nate was notified by push.
+
+**The find of this run.** The cap closes before the fiscal year it governs. USCIS reached the 33,000 first-half
+FY2027 cap on **September 4, 2026**, four weeks before FY2027 began on October 1, and every cap-subject petition
+received after that date asking for a start before April 1, 2027 is rejected. Pair that with 20 CFR 655.15(b), which
+requires filing no more than 90 and no fewer than 75 calendar days before the date of need, and the planning window
+for an April 1, 2027 start is **January 1 to January 16, 2027**, sixteen days wide. A hotel that starts thinking about
+next summer in spring has already lost the season. The FY2026 supplemental of 64,716 visas (91 FR 5040) expired
+September 30, 2026 and no FY2027 equivalent exists, so do not let a later run write one in without a published rule.
+
+**The cost trap, and keep it.** 20 CFR 655.10(a) requires the employer to "offer and pay this wage (or higher) to both
+its H-2B workers and its workers in corresponding employment". Hiring H-2B housekeepers raises the floor for the
+domestic housekeepers doing the same job, so the H-2B headcount is the smaller half of the cost. The other half is
+655.20(f): the three-fourths guarantee is a duty to **offer** hours, not to need them, so a soft season is paid for.
+The worked example sizes that at $13,502.70 on ten workers, 8.57 percent of the guarantee payroll.
+
+**The dataset, and its two honest holes.** The DOL OFLC H-2B disclosure file for FY2025 Q4 (70 MB xlsx) is the best
+public evidence of what hotels actually get certified. Counts computed this run: 2,299 of the 17,552 rows carrying a
+NAICS code begin 7211, 2,121 were certified or partly certified, and 24,269 workers were certified, 10.4 percent of
+the 232,326 certified across all industries. Maids and housekeeping cleaners are 10,556 of those 24,269, 43.5 percent,
+at a $16.67 median offered wage against a BLS May 2025 median of $16.79 for the same occupation in traveler
+accommodation. Two things the page states rather than smooths: (1) the NAICS field is entered inconsistently, 1,328
+rows as six-digit 721110 and 867 as five-digit 72111 plus six other variants, so a count that filters on 721110 alone
+silently drops a third of the hotels, and a hotel inside a mixed-use entity is invisible, making 2,299 a floor; and
+(2) **260 of the 2,121 certified cases carry an employment end date later than nine calendar months after the begin
+date**, 238 of them peakload claims, against 20 CFR 655.6(b)'s denial of need lasting more than 9 months. The file
+records the dates and explains nothing, so the page reports the count and no reason. Do not let a later run resolve
+that by picking a side.
+
+**The counter-intuitive one.** Hotels justify H-2B need as **peakload** far more than seasonal: 1,449 against 671 of
+the certified cases. Peakload means a permanent year-round staff plus help at the peak, which is not the
+closed-in-winter story the word "seasonal" suggests.
+
+**Fetch notes for the next writer.** `www.ecfr.gov/api/versioner/v1/full/<date>/title-<n>.xml?part=X&section=Y`
+answers **406** unless the request permits compression: add `curl --compressed` and it returns clean XML. Without it
+the body is `{"message":"This endpoint requires response compression"}`, which looks like a dead host and is not.
+`www.federalregister.gov` full_text `.txt` URLs are behind a reCAPTCHA wall ("programmatic access ... is limited to
+our developer APIs"), but the **JSON API works** and `www.govinfo.gov/content/pkg/FR-<YYYY-MM-DD>/html/<docnum>.htm`
+returns the whole rule as readable HTML, which is how 91 FR 5040 was read. `www.uscis.gov` and `www.bls.gov` both
+answer **403** to curl; the USCIS cap count page came through WebFetch, and the BLS wage came from the OES bulk zip at
+`www.bls.gov/oes/special-requests/oesm25in4.zip`, which curl fetches fine with a browser user agent. `pip install`
+targets Python 3.13 in this environment while `python3` is 3.11, so run `python3.13` for anything needing `openpyxl`.
+One rule-text trap: footnote 1 of 91 FR 5040 calls the semiannual cap "33,300". The statute, 8 U.S.C. 1184(g)(10),
+says **33,000**, and the USCIS cap count page says 33,000. The page uses the statute. Do not copy the footnote.
+
 **2026-10-29, Content Writer.** Shipped `/hotel-financing/public-incentives-and-tif`. Sections A to E are complete, F
 is SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage scan of `src/lib/data/`:
 "tax increment", "private activity", "tax-exempt bond", "municipal bond", "2017-13" and "publicly owned hotel" each
@@ -638,6 +692,7 @@ Pick from `geo/04-queries.csv` prompts with no dedicated page, phrased the way p
 | [x] | `/sell-a-hotel/estate-tax-and-basis-step-up` | No CSV row targets it directly, and "estate tax", "step-up", "basis step" and "6166" are absent from `geo/04-queries.csv`. It answers the hold-or-sell half of the "Selling a hotel" cluster's tax questions, which `/sell-a-hotel/taxes-when-selling-a-hotel` answers only for a sale. The gap was total: "step-up", "1014", "6166", "2032A", "succession" and "generation-skipping" each appeared in **zero** files under `src/lib/data/`, and "estate tax" in five, every one of them the phrase "real estate tax". | Shipped 2026-10-27 in PR #86. |
 | [x] | `/hotel-financing/interest-deduction-limits` | No CSV row targets it directly, and "163(j)", "business interest", "interest deduction", "net operating loss" and "self-rental" are absent from `geo/04-queries.csv`. It answers the deductibility half of the "Loan types" and "Deal docs & underwriting" clusters, which between them ask what every loan product costs and never ask what of that cost is deductible. The gap was total: "163(j)" appeared in **zero** files under `src/lib/data/`, and "business interest" only inside the section 6166 phrase "closely held business interest". | Shipped 2026-10-28 in PR #87. |
 | [x] | `/hotel-financing/public-incentives-and-tif` | No CSV row targets it directly, and "tax increment", "private activity", "tax-exempt bond", "municipal bond", "2017-13" and "publicly owned hotel" each appeared in zero files under `src/lib/data/`, while "incentive" appeared in 25 files and never once about a state or local program. The site had five federal incentive pages and nothing on the layer a city controls | Shipped 2026-10-29. Covers why a private hotel's municipal debt is taxable (26 U.S.C. 141 and the 17-category 142(a) list), the one tax-exempt route that can reach a hotel rehab (the 144(c) qualified redevelopment bond, which cannot fund new construction), what Rev. Proc. 2017-13 does to a brand management agreement at a city-owned hotel, and two state TIF statutes that reach opposite answers. Carries the first hotel-level TIF figures on the site, recomputed from Missouri's own 2025 annual report: 8 hotel-named plans of 354, a 6.2 to 79.8 percent TIF share of total project cost. Prints no award size and no national hotel-TIF count, because neither is published. Texas Tax Code 351.102 left out: `statutes.capitol.texas.gov` is still a JavaScript shell |
+| [~] | `/hotel-industry/h2b-seasonal-workers` | No CSV row targets it directly, and "H-2B", "H-2A", "visa", "seasonal worker" and "prevailing wage" are absent from `geo/04-queries.csv`. It answers the seasonal-labor half of the "Valuation & cap rates" and "Selling a hotel" clusters' operating-cost questions, and the gap was total: "H-2B", "H-2A", "prevailing wage", "temporary need", "three-fourths guarantee" and "655.20" each appeared in **zero** files under `src/lib/data/`. The site carried one labor page (California wage ordinances) and nothing on how a seasonal resort hotel is actually staffed. | **Written 2026-11-02, gate green, PR #96 open and unmerged** because production has answered HTTP 503 `DEPLOYMENT_PAUSED` since 2026-10-29 (issue #89), so `geo/AGENTS.md` §3 step 6 cannot be satisfied. Tick this to `[x]` only after the page is confirmed 200 on production. Covers the 66,000 / 33,000 cap at 8 U.S.C. 1184(g), the first-half FY2027 cap reached September 4, 2026 before the fiscal year began, the 9-month temporary-need test at 20 CFR 655.6, the prevailing wage and corresponding-employment rule at 655.10, the three-fourths guarantee and 50 percent transportation test at 655.20, the 75 to 90 day filing window at 655.15, the expired FY2026 supplemental of 64,716 visas at 91 FR 5040, and an original count of hotel H-2B certifications from the DOL OFLC FY2025 file. Prints no all-in cost per worker: no public source publishes one. |
 
 Remaining candidates: hotel loan assumption, seller financing for a hotel, preferred equity (needs a
 citable source), what buyers look for in a hotel, selling a hotel with a ground lease, hotel property

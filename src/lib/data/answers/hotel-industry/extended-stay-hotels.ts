@@ -146,7 +146,8 @@ export const page: AnswerPage = {
       "/hotel-industry/chain-scales-and-classes",
       "/hotel-industry/cost-to-build-a-hotel",
       "/hotel-industry/hotel-operating-costs",
-      "/hotel-industry/revpar-adr-occupancy"
+      "/hotel-industry/revpar-adr-occupancy",
+      "/hotel-industry/h2b-seasonal-workers"
     ],
     glossary: [
       "/glossary/revpar",
