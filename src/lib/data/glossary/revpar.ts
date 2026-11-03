@@ -75,6 +75,7 @@ export const entry: GlossaryEntry = {
     "/hotel-valuation/how-to-value-a-hotel",
     "/hotel-valuation/hotel-cap-rates",
     "/hotel-industry/resort-fees",
+    "/hotel-industry/franchise-territory-and-encroachment"
   ],
   relatedTerms: ["adr", "cap-rate", "bov"],
   relatedMarkets: ["nashville-tn", "miami-fl", "tampa-fl"],
