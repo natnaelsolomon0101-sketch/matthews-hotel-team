@@ -56,7 +56,8 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/public-incentives-and-tif",
     "/sell-a-hotel/documents-needed",
     "/hotel-valuation/how-to-value-a-hotel",
-    "/sell-a-hotel/how-to-sell-a-hotel"
+    "/sell-a-hotel/how-to-sell-a-hotel",
+    "/hotel-industry/franchise-territory-and-encroachment"
   ],
   lastUpdated: "2026-09-18",
   authorSlug: "nate-solomon"

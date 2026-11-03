@@ -762,3 +762,48 @@ policy on compliance capital (never published, per rule 1). Every figure in the 
 limits, the two break-even gas intensities, both penalties and the capitalized value effect. The page runs about 2,769
 words after four trimming passes from 3,345, against the brief's 2,500 ceiling; the site's other evidence-heavy pages
 sit at 2,515 to 2,987 by the same count, and no paragraph is left without a citation or an internal link.
+
+**2026-11-03, Content Writer.** Shipped `/hotel-industry/franchise-territory-and-encroachment`. Sections A to E are
+complete, F is SKIPPED, G is blocked, and H and J were fully ticked, so the pick came from a coverage scan of
+`src/lib/data/`: "Restricted Area", "exclusive territory", "protected area", "territorial", "area of protection" and
+"Item 12" each appeared in **zero** files, and "impact study" in two, both times as an aside. The site had 26 brand
+pages on what a franchise costs and nothing on the one franchise term that decides whether a second hotel of the same
+badge can open across the street. A re-scan of `geo/04-queries.csv` first: every priority-1 and priority-2 target with
+no answer module is either a live route outside `src/lib/data/answers/` (`/services/*`, `/markets/*`, `/rates`,
+`/team/*`, `/closed`, `/offices/*`, `/research/*`, `/hotels-for-sale/*`, `/insights/*`) or a slug alias already live
+under another name. The one that looked like a gap, `/hotel-financing/life-company-loans` (priority 2), is covered in
+depth by `/hotel-financing/hotel-lenders-by-type`, which carries the CSV prompt verbatim in its `targetPrompts`; a
+dedicated page would be the noun-swapped pattern rule 4 forbids. That CSV row should be retargeted, not built.
+
+Five sourcing notes for the next run. **`hmd-wp.go-vip.net` still serves every current Hilton brand FDD to a script at
+200**, under `/wp-content/uploads/2026/03/2026-US-FDD-<Brand>.pdf`, and the 2026 filenames are `Hampton`, `HGI`,
+`Home2`, `Homewood`, `DoubleTree`, `Spark`, `Tapestry` and `Tru`. There is no `HPT` or `H2S` spelling: those 404.
+**`cards.web.commerce.state.mn.us` is the working franchise registry** and served the 10.3 MB Comfort FDD (issuance
+date April 1, 2026) at 200 with a browser user agent; the Choice exhibits, including Exhibit L, are inside that one
+PDF. `apps.dfi.wi.gov` still answers **403** to curl and to WebFetch, so the Wisconsin registry is unusable and every
+Wyndham brand FDD it hosts is unreadable; this is the same blocker recorded on 2026-10-01 for queue L.
+`capitol.hawaii.gov` is now behind Cloudflare and answers **403** to a scripted reader, so HRS 482E-6, the other state
+proximity provision worth reading, was not read and Hawaii is not on the page. **`www.legis.iowa.gov/docs/code/<chapter>.pdf`
+serves clean chapter PDFs** and `pdftotext` without `-layout` reads them well; use `-layout` for FDD tables, which are
+otherwise scrambled. The **eCFR versioner API needs `--compressed`**: without an Accept-Encoding header that permits
+compression it answers 406, which is why the 2026-10-01 title 16 cross-check of 16 CFR 436.5 failed on the first try.
+
+**A trap worth repeating.** Iowa's encroachment statute is in two places and the wrong one is the one search engines
+surface. Iowa Code 523H.6 does **not** apply to any franchise agreement entered on or after July 1, 2000: section
+523H.2A sends those to Iowa Code 537A.10, whose subsection 6 adds an "unreasonable proximity" element the older
+chapter lacks and raises the screen from five percent to six. Every live hotel franchise agreement is post-2000, so
+537A.10(6) governs and 523H.6 is history. Any future edit must read 537A.10 for a rate or a test.
+
+**For the Rate Sheet agent.** The live `/rates` edition is still October 2026, published 2026-10-01, whose own
+`nextRefresh` field reads `2026-11-02`. No November 2026 edition exists in `src/lib/rates/sheet.ts` as of this run.
+This page therefore sources its first-party data block to the Matthews Hotel Index Q1 2026 rather than to the rate
+sheet, and says so. Not a content-run fix.
+
+Two figures the run deliberately did not publish: a typical protected radius for a Hilton brand (the documents say the
+boundaries follow no standard formula, so there is no published figure) and any market-level estimate of what an
+encroaching same-brand hotel does to RevPAR (STR and CoStar hold that behind a subscription and rule 4 forbids
+republishing it). Every figure in the worked example was recomputed by `scripts/check-franchise-territory-math.mjs`,
+committed alongside the page, 57 assertions. Reciprocal links added from `/hotel-industry/owner-franchisor-management-company`,
+`/hotel-franchise-costs` (the hub), `/sell-a-hotel/franchise-transfer`, `/glossary/franchise-agreement`,
+`/glossary/franchise-fdd`, `/glossary/comp-set` and `/glossary/revpar`. No existing number changed. The page runs
+2,498 words against the brief's 2,500 ceiling, after four trimming passes from 3,718.

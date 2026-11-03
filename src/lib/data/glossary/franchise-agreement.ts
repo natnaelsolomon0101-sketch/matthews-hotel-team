@@ -68,7 +68,8 @@ export const entry: GlossaryEntry = {
     "/sell-a-hotel/employees-when-you-sell",
     "/hotel-industry/ada-requirements",
     "/sell-a-hotel/liquor-license-transfer",
-    "/hotel-financing/chapter-11-bankruptcy"
+    "/hotel-financing/chapter-11-bankruptcy",
+    "/hotel-industry/franchise-territory-and-encroachment"
   ],
   lastUpdated: "2026-09-18",
   authorSlug: "nate-solomon"

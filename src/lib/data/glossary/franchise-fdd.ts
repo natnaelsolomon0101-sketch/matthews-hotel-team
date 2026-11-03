@@ -68,7 +68,8 @@ export const entry: GlossaryEntry = {
     "/sell-a-hotel/documents-needed",
     "/sell-a-hotel/franchise-transfer",
     "/hotel-financing/pip-and-renovation-loans",
-    "/sell-a-hotel/how-to-sell-a-hotel"
+    "/sell-a-hotel/how-to-sell-a-hotel",
+    "/hotel-industry/franchise-territory-and-encroachment"
   ],
   lastUpdated: "2026-09-18",
   authorSlug: "nate-solomon"
