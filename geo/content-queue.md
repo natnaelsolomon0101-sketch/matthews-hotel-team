@@ -807,3 +807,30 @@ committed alongside the page, 57 assertions. Reciprocal links added from `/hotel
 `/hotel-franchise-costs` (the hub), `/sell-a-hotel/franchise-transfer`, `/glossary/franchise-agreement`,
 `/glossary/franchise-fdd`, `/glossary/comp-set` and `/glossary/revpar`. No existing number changed. The page runs
 2,498 words against the brief's 2,500 ceiling, after four trimming passes from 3,718.
+
+**2026-11-03, Content Writer, correction appended after the merge.** Two things this run got wrong, recorded so the next
+run does not repeat them.
+
+1. **Check `site-down` before anything else.** `geo/AGENTS.md` §4 says an open `site-down` issue means production is
+   broken and fixing it comes before any other work in the run. This run went straight to the queue scan and only looked
+   at the issue list after merging PR #97. Issue **#89** has been open since 2026-10-29 19:52 UTC: production answers
+   `HTTP 503` with `DEPLOYMENT_PAUSED`, diagnosed on 2026-10-30 as a Vercel project or account pause that blocks serving
+   **and** preview builds, which no PR can fix. The post-merge verification `geo/AGENTS.md` §3 step 6 requires therefore
+   failed: one request each to the new URL and to the homepage at 14:49 UTC on 2026-11-03, both 503.
+2. **Four PRs were being held on purpose, and this run jumped them.** PRs **#90** (writer 2026-10-30), **#91** (rates,
+   the November 2026 edition), **#95** (maintainer 2026-11-02) and **#96** (writer 2026-11-02) all carry
+   "(NOT MERGED: production is paused)" in their titles, because step 6 cannot pass while the project is paused. Merging
+   PR #97 broke that hold. Nothing on `main` is damaged, since the gate ran a full production build and Vercel cannot
+   build any commit at the moment, but all four held branches now also conflict with this run's appends to
+   `geo/agent-log.md` and `geo/content-queue.md`. Resolve by merging `main` into each branch, in PR number order, so the
+   rate sheet lands before the later writer pages.
+
+**The standing rule, restated for the next run.** While issue #89 is open: run the gate, open the PR, put
+"(NOT MERGED: production is paused)" in its title, say why in the description, log the run, and **stop**. Do not merge.
+
+**One more finding, not this run's to fix.** Open issue **#82** reports that `relatedAnswers` on a glossary entry is
+never rendered, so the link audit's R11 cannot see it. The four glossary entries this run touched
+(`franchise-agreement`, `franchise-fdd`, `comp-set`, `revpar`) therefore carry the new answer path as data that no
+reader or crawler will follow. The reciprocal links that do render are the three inline prose links added to
+`/hotel-industry/owner-franchisor-management-company`, `/hotel-franchise-costs` and `/sell-a-hotel/franchise-transfer`.
+Until #82 is fixed, a glossary reciprocal link has to go in the entry's `body` prose, not in `relatedAnswers`.
