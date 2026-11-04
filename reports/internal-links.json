@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-11-03T14:36:08.458Z",
-  "base": "http://localhost:44419",
+  "runAt": "2026-11-04T14:31:02.983Z",
+  "base": "http://localhost:37717",
   "edges": [
     {
       "from": "/",
@@ -4509,6 +4509,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-industry/franchise-territory-and-encroachment"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-industry/ota-commissions"
     },
     {
       "from": "/sitemap",
@@ -38384,6 +38388,10 @@
     },
     {
       "from": "/glossary/adr",
+      "to": "/hotel-industry/ota-commissions"
+    },
+    {
+      "from": "/glossary/adr",
       "to": "/glossary/revpar"
     },
     {
@@ -60280,6 +60288,10 @@
     },
     {
       "from": "/buy-a-hotel/branded-vs-independent",
+      "to": "/hotel-industry/ota-commissions"
+    },
+    {
+      "from": "/buy-a-hotel/branded-vs-independent",
       "to": "/hotel-financing/hotel-lenders-by-type"
     },
     {
@@ -68180,6 +68192,10 @@
     },
     {
       "from": "/hotel-industry",
+      "to": "/hotel-industry/ota-commissions"
+    },
+    {
+      "from": "/hotel-industry",
       "to": "/hotel-franchise-costs"
     },
     {
@@ -68793,6 +68809,10 @@
     {
       "from": "/hotel-industry/how-hotels-make-money",
       "to": "/hotel-industry/owner-franchisor-management-company"
+    },
+    {
+      "from": "/hotel-industry/how-hotels-make-money",
+      "to": "/hotel-industry/ota-commissions"
     },
     {
       "from": "/hotel-industry/how-hotels-make-money",
@@ -70241,6 +70261,10 @@
     {
       "from": "/hotel-industry/hotel-operating-costs",
       "to": "/hotel-industry/hotel-management-agreements"
+    },
+    {
+      "from": "/hotel-industry/hotel-operating-costs",
+      "to": "/hotel-industry/ota-commissions"
     },
     {
       "from": "/hotel-industry/hotel-operating-costs",
@@ -72668,6 +72692,230 @@
     },
     {
       "from": "/hotel-industry/franchise-territory-and-encroachment",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/_next/static/chunks/971af7bd7354d30d.css"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/hotel-industry/ota-commissions.md"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/research/mhi/q1-2026"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/hotel-valuation/revpar-multiples-and-per-key"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/hotel-industry/revpar-adr-occupancy"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/glossary/revpar"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/hotel-franchise-costs/hilton-garden-inn"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/buy-a-hotel/branded-vs-independent"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/glossary/noi"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/glossary/cap-rate"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/hotel-industry/hotel-operating-costs"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/hotel-industry/how-hotels-make-money"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/hotel-industry/resort-fees"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/hotel-industry/owner-franchisor-management-company"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/hotel-industry/hotel-management-agreements"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/glossary/adr"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-industry/ota-commissions",
       "to": "/sitemap"
     },
     {
@@ -75418,6 +75666,7 @@
         "/hotel-industry/asbestos-renovation-rules",
         "/hotel-industry/karis-law-911-requirements",
         "/hotel-industry/franchise-territory-and-encroachment",
+        "/hotel-industry/ota-commissions",
         "/tools",
         "/tools/hotel-value-estimator",
         "/tools/hotel-loan-sizing-calculator",
@@ -84780,6 +85029,7 @@
         "/contact",
         "/glossary",
         "/team/luke-thompson",
+        "/hotel-industry/ota-commissions",
         "/glossary/revpar",
         "/glossary/cap-rate",
         "/glossary/bov",
@@ -90890,6 +91140,7 @@
         "/glossary/revpar",
         "/glossary/pip",
         "/hotel-financing/pip-and-renovation-loans",
+        "/hotel-industry/ota-commissions",
         "/hotel-financing/hotel-lenders-by-type",
         "/team/luke-thompson",
         "/buy-a-hotel/how-much-money-do-you-need",
@@ -93075,6 +93326,7 @@
         "/hotel-industry/asbestos-renovation-rules",
         "/hotel-industry/karis-law-911-requirements",
         "/hotel-industry/franchise-territory-and-encroachment",
+        "/hotel-industry/ota-commissions",
         "/hotel-franchise-costs",
         "/glossary",
         "/glossary/revpar",
@@ -93247,6 +93499,7 @@
         "/glossary/noi",
         "/glossary/ffe-reserve",
         "/hotel-industry/owner-franchisor-management-company",
+        "/hotel-industry/ota-commissions",
         "/tools/dscr-calculator",
         "/hotel-valuation/how-to-value-a-hotel",
         "/hotel-industry/revpar-adr-occupancy",
@@ -93651,6 +93904,7 @@
         "/hotel-industry/hotel-worker-minimum-wage",
         "/hotel-franchise-costs",
         "/hotel-industry/hotel-management-agreements",
+        "/hotel-industry/ota-commissions",
         "/hotel-valuation/property-tax-appeal",
         "/glossary/ffe-reserve",
         "/tools/cap-rate-calculator",
@@ -94304,6 +94558,68 @@
         "/glossary",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/hotel-industry/ota-commissions",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/971af7bd7354d30d.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-industry/ota-commissions.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/hotel-industry",
+        "/team/nate-solomon",
+        "/research/mhi/q1-2026",
+        "/hotel-valuation/revpar-multiples-and-per-key",
+        "/hotel-industry/revpar-adr-occupancy",
+        "/glossary/revpar",
+        "/hotel-franchise-costs",
+        "/hotel-franchise-costs/hilton-garden-inn",
+        "/buy-a-hotel/branded-vs-independent",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/glossary/noi",
+        "/glossary/cap-rate",
+        "/hotel-industry/hotel-operating-costs",
+        "/team/miles-cortez",
+        "/hotel-industry/how-hotels-make-money",
+        "/hotel-industry/resort-fees",
+        "/hotel-industry/owner-franchisor-management-company",
+        "/hotel-industry/hotel-management-agreements",
+        "/glossary",
+        "/glossary/adr",
+        "/buy-a-hotel",
         "/tools",
         "/rates/methodology",
         "/data/hotel-financing-statistics",

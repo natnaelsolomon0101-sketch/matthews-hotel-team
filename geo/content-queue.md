@@ -807,3 +807,56 @@ committed alongside the page, 57 assertions. Reciprocal links added from `/hotel
 `/hotel-franchise-costs` (the hub), `/sell-a-hotel/franchise-transfer`, `/glossary/franchise-agreement`,
 `/glossary/franchise-fdd`, `/glossary/comp-set` and `/glossary/revpar`. No existing number changed. The page runs
 2,498 words against the brief's 2,500 ceiling, after four trimming passes from 3,718.
+
+**2026-11-04, Content Writer.** Shipped `/hotel-industry/ota-commissions`. Sections A to E are complete, F is
+SKIPPED, G is blocked (and still blocked: IHG and Marriott FDDs are not downloadable from an open registry, per
+section L), and H and J were fully ticked, so the pick came from a coverage scan of `src/lib/data/`. Four earlier
+candidates were discarded this run because the grep terms were too generic and the topics turned out to be live:
+"Americans with Disabilities" showed 0 files but `/hotel-industry/ada-requirements` covers it; "property tax
+assessment" showed 2 but one of them is `/hotel-valuation/property-tax-appeal`; "tax clearance" and "successor
+liability" showed 1 and 0 but `/sell-a-hotel/tax-clearance-and-withholding` is live. **Enumerate the 135 existing
+H1s before trusting a zero-count grep.** The real gap was distribution: a word-boundary scan for `\bOTAs?\b` found
+it in exactly one file (`/glossary/adr`), "Expedia" and "Booking.com" in one each, and both only as asides. The site
+had 26 brand pages on what a franchise costs and nothing on the third party that takes a share of the room before
+either the brand or the manager does.
+
+Four sourcing notes for the next run. **`data.sec.gov` answers a scripted reader with any User-Agent, but
+`www.sec.gov/Archives` needs one carrying a contact**: `MatthewsHotelMarkets-ResearchBot (+https://matthewshotelmarkets.com/contact)`
+worked, a bare tool name got the "Undeclared Automated Tool" page. The reliable route to a filing is
+`data.sec.gov/submissions/CIK<10-digit>.json` for the accession and primary document, then
+`www.sec.gov/Archives/edgar/data/<cik-no-zeros>/<accession-no-dashes>/<doc>`. **A 10-K's own XBRL context header
+poisons substring greps**: "Total" contains "ota", so `\bOTAs?\b` and a skip past the header are both needed.
+**`hmd-wp.go-vip.net` still serves the Hilton FDDs at 200** under `/wp-content/uploads/2026/03/2026-US-FDD-<Brand>.pdf`;
+the 2026 HGI file is 6.1 MB and `pdftotext -layout` keeps the Item 6 fee table readable in column order, where plain
+`pdftotext` interleaves the three columns into unusable prose. **Floating point will fail an integrality assertion**:
+`120 * 365 * 0.70` lands at 30659.999999999996, so a math check must test `Math.abs(x - Math.round(x)) < 1e-6`
+rather than `Number.isInteger`.
+
+Two figures the run deliberately did not publish: a commission rate for any one hotel, and a share of U.S. hotel
+room nights booked through intermediaries. Neither exists in a public source. Hilton says only "a significant
+percentage" and Choice "a significant, and increasing, percentage", and no platform publishes a per-property rate,
+which is the same situation as a lender's DSCR floor under rule 1. The worked example instead uses Booking Holdings'
+published 14.5 percent of gross bookings as a labelled bound and says on the page that it is not a quote. Every
+figure was recomputed by `scripts/check-ota-math.mjs`, committed alongside the page, 34 assertions covering the
+hypothetical, the five-point shift, the occupancy counterfactual and the seven cross-foots of the two platforms'
+own revenue and gross-bookings tables. Reciprocal links added from `/hotel-industry/how-hotels-make-money`,
+`/hotel-industry/hotel-operating-costs`, `/buy-a-hotel/branded-vs-independent` and the body prose of
+`/glossary/adr`. The glossary link is in `body` rather than `relatedAnswers`, because issue #82 is still open and
+the link audit's R11 now asserts the served edge, so a `relatedAnswers` entry would fail the gate. No existing
+number changed. The page runs 2,494 words against the brief's 2,500 ceiling after seven trimming passes from 2,590.
+
+**For the Maintainer, two things on `/glossary/adr`.** First, it states that "A hotel reporting $200 ADR on Expedia
+bookings nets approximately $170 to $180 after the OTA commission." That implies a 10 to 15 percent commission and
+carries no citation; it is the kind of figure rule 1 forbids, and no source read this run supports a per-hotel rate.
+Second, the same entry says the cost of paid channels "comes through as a marketing or commission expense line, not
+as a reduction to ADR", stated flatly. Under the merchant model the platform is the merchant of record and remits a
+net amount, so whether that is true of a given hotel's books depends on the contract and the accounting. This run
+did not change either, because rule 2 bars touching an existing figure without a changed source and the second is a
+claims question rather than a content one. The new page states the merchant/agency distinction from Expedia's own
+10-K and `/glossary/adr` now links to it.
+
+**The standing rule while issue #89 is open, restated** (it was set in PR #98, which is still unmerged, so it does
+not yet exist on `main`). Production has served `x-vercel-error: DEPLOYMENT_PAUSED` since 2026-10-29 and did so
+again at 14:05 UTC on 2026-11-04. Run the gate, open the PR, put "(NOT MERGED: production is paused)" in the title,
+say why in the description, log the run, and **stop**. Do not merge: `geo/AGENTS.md` §3 step 6 cannot pass, and
+Vercel cannot build the commit either way. PR #97 broke this hold on 2026-11-03; this run did not.
