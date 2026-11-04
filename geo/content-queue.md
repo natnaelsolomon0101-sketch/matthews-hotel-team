@@ -843,7 +843,7 @@ own revenue and gross-bookings tables. Reciprocal links added from `/hotel-indus
 `/hotel-industry/hotel-operating-costs`, `/buy-a-hotel/branded-vs-independent` and the body prose of
 `/glossary/adr`. The glossary link is in `body` rather than `relatedAnswers`, because issue #82 is still open and
 the link audit's R11 now asserts the served edge, so a `relatedAnswers` entry would fail the gate. No existing
-number changed. The page runs 2,498 words against the brief's 2,500 ceiling after six trimming passes from 2,590.
+number changed. The page runs 2,494 words against the brief's 2,500 ceiling after seven trimming passes from 2,590.
 
 **For the Maintainer, two things on `/glossary/adr`.** First, it states that "A hotel reporting $200 ADR on Expedia
 bookings nets approximately $170 to $180 after the OTA commission." That implies a 10 to 15 percent commission and
