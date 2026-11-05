@@ -1,617 +1,617 @@
 {
-  "asOf": "2026-06-30",
+  "asOf": "2026-09-30",
   "fiscalYears": [
-    2023,
     2024,
-    2025
+    2025,
+    2026
   ],
   "national": {
     "lenders7aByCount": [
       {
         "rank": 1,
         "name": "GBank",
-        "count": 303,
-        "grossApproval": 1036035700
+        "count": 368,
+        "grossApproval": 1348715700
       },
       {
         "rank": 2,
-        "name": "Shoreham Bank",
-        "count": 107,
-        "grossApproval": 322491000
+        "name": "US Metro Bank",
+        "count": 147,
+        "grossApproval": 388300500
       },
       {
         "rank": 3,
-        "name": "Readycap Lending, LLC",
-        "count": 95,
-        "grossApproval": 239893700
+        "name": "Shoreham Bank",
+        "count": 105,
+        "grossApproval": 314090500
       },
       {
         "rank": 4,
-        "name": "US Metro Bank",
-        "count": 86,
-        "grossApproval": 236577000
+        "name": "Bank of Hope",
+        "count": 100,
+        "grossApproval": 308678100
       },
       {
         "rank": 5,
-        "name": "Bank of Hope",
-        "count": 62,
-        "grossApproval": 171702400
+        "name": "Port 51 Lending LLC",
+        "count": 85,
+        "grossApproval": 238604300
       },
       {
         "rank": 6,
-        "name": "Open Bank",
-        "count": 60,
-        "grossApproval": 202534000
+        "name": "Readycap Lending, LLC",
+        "count": 77,
+        "grossApproval": 185153700
       },
       {
         "rank": 7,
-        "name": "Peoples Bank",
-        "count": 60,
-        "grossApproval": 162328200
+        "name": "Open Bank",
+        "count": 64,
+        "grossApproval": 215494000
       },
       {
         "rank": 8,
-        "name": "Millennium Bank",
+        "name": "Commonwealth Business Bank",
         "count": 55,
-        "grossApproval": 193237100
+        "grossApproval": 149550000
       },
       {
         "rank": 9,
-        "name": "First Western SBLC, LLC",
-        "count": 54,
-        "grossApproval": 111327000
+        "name": "Peoples Bank",
+        "count": 52,
+        "grossApproval": 154347400
       },
       {
         "rank": 10,
-        "name": "Enterprise Bank & Trust",
-        "count": 51,
-        "grossApproval": 161889700
+        "name": "First Western SBLC, LLC d/b/a Peachtree Group",
+        "count": 49,
+        "grossApproval": 105084000
       },
       {
         "rank": 11,
-        "name": "Celtic Bank Corporation",
-        "count": 40,
-        "grossApproval": 103567300
+        "name": "Centerstone SBA Lending, Inc.",
+        "count": 47,
+        "grossApproval": 109491000
       },
       {
         "rank": 12,
-        "name": "Centerstone SBA Lending, Inc.",
-        "count": 39,
-        "grossApproval": 94647800
+        "name": "Harvest Small Business Finance, LLC",
+        "count": 47,
+        "grossApproval": 85991600
       },
       {
         "rank": 13,
-        "name": "Hanover Community Bank",
-        "count": 35,
-        "grossApproval": 98496700
+        "name": "Enterprise Bank & Trust",
+        "count": 46,
+        "grossApproval": 145373700
       },
       {
         "rank": 14,
-        "name": "Wallis Bank",
-        "count": 30,
-        "grossApproval": 84286700
+        "name": "Millennium Bank",
+        "count": 38,
+        "grossApproval": 132223200
       },
       {
         "rank": 15,
-        "name": "Harvest Small Business Finance, LLC",
-        "count": 30,
-        "grossApproval": 55617400
+        "name": "Global One Bank",
+        "count": 31,
+        "grossApproval": 112608000
       },
       {
         "rank": 16,
-        "name": "Port 51 Lending LLC",
-        "count": 25,
-        "grossApproval": 72580000
+        "name": "United Midwest Savings Bank National Association",
+        "count": 28,
+        "grossApproval": 71733000
       },
       {
         "rank": 17,
-        "name": "Commonwealth Business Bank",
-        "count": 24,
-        "grossApproval": 59951000
+        "name": "Celtic Bank Corporation",
+        "count": 28,
+        "grossApproval": 63409500
       },
       {
         "rank": 18,
-        "name": "United Midwest Savings Bank National Association",
-        "count": 22,
-        "grossApproval": 58386000
+        "name": "U.S. Bank, National Association",
+        "count": 27,
+        "grossApproval": 58251200
       },
       {
         "rank": 19,
-        "name": "The Huntington National Bank",
-        "count": 22,
-        "grossApproval": 47930000
+        "name": "Hanover Community Bank",
+        "count": 24,
+        "grossApproval": 67020700
       },
       {
         "rank": 20,
-        "name": "Global One Bank",
-        "count": 21,
-        "grossApproval": 76108000
+        "name": "PromiseOne Bank",
+        "count": 20,
+        "grossApproval": 56930000
       },
       {
         "rank": 21,
-        "name": "PCB Bank",
-        "count": 18,
-        "grossApproval": 43569500
+        "name": "Newtek Bank, National Association",
+        "count": 19,
+        "grossApproval": 6443000
       },
       {
         "rank": 22,
-        "name": "PromiseOne Bank",
+        "name": "Southwestern National Bank",
         "count": 18,
-        "grossApproval": 41355000
+        "grossApproval": 54234000
       },
       {
         "rank": 23,
-        "name": "Mission Valley Bank",
+        "name": "American Bank",
         "count": 17,
-        "grossApproval": 45528700
+        "grossApproval": 46948100
       },
       {
         "rank": 24,
-        "name": "U.S. Bank, National Association",
-        "count": 17,
-        "grossApproval": 33079200
+        "name": "PCB Bank",
+        "count": 16,
+        "grossApproval": 44311000
       },
       {
         "rank": 25,
-        "name": "Newtek Bank, National Association",
-        "count": 16,
-        "grossApproval": 8871000
+        "name": "Metro City Bank",
+        "count": 15,
+        "grossApproval": 40277000
       }
     ],
     "lenders7aByDollars": [
       {
         "rank": 1,
         "name": "GBank",
-        "count": 303,
-        "grossApproval": 1036035700
+        "count": 368,
+        "grossApproval": 1348715700
       },
       {
         "rank": 2,
-        "name": "Shoreham Bank",
-        "count": 107,
-        "grossApproval": 322491000
+        "name": "US Metro Bank",
+        "count": 147,
+        "grossApproval": 388300500
       },
       {
         "rank": 3,
-        "name": "Readycap Lending, LLC",
-        "count": 95,
-        "grossApproval": 239893700
+        "name": "Shoreham Bank",
+        "count": 105,
+        "grossApproval": 314090500
       },
       {
         "rank": 4,
-        "name": "US Metro Bank",
-        "count": 86,
-        "grossApproval": 236577000
+        "name": "Bank of Hope",
+        "count": 100,
+        "grossApproval": 308678100
       },
       {
         "rank": 5,
-        "name": "Open Bank",
-        "count": 60,
-        "grossApproval": 202534000
+        "name": "Port 51 Lending LLC",
+        "count": 85,
+        "grossApproval": 238604300
       },
       {
         "rank": 6,
-        "name": "Millennium Bank",
-        "count": 55,
-        "grossApproval": 193237100
+        "name": "Open Bank",
+        "count": 64,
+        "grossApproval": 215494000
       },
       {
         "rank": 7,
-        "name": "Bank of Hope",
-        "count": 62,
-        "grossApproval": 171702400
+        "name": "Readycap Lending, LLC",
+        "count": 77,
+        "grossApproval": 185153700
       },
       {
         "rank": 8,
         "name": "Peoples Bank",
-        "count": 60,
-        "grossApproval": 162328200
+        "count": 52,
+        "grossApproval": 154347400
       },
       {
         "rank": 9,
-        "name": "Enterprise Bank & Trust",
-        "count": 51,
-        "grossApproval": 161889700
+        "name": "Commonwealth Business Bank",
+        "count": 55,
+        "grossApproval": 149550000
       },
       {
         "rank": 10,
-        "name": "First Western SBLC, LLC",
-        "count": 54,
-        "grossApproval": 111327000
+        "name": "Enterprise Bank & Trust",
+        "count": 46,
+        "grossApproval": 145373700
       },
       {
         "rank": 11,
-        "name": "Celtic Bank Corporation",
-        "count": 40,
-        "grossApproval": 103567300
+        "name": "Millennium Bank",
+        "count": 38,
+        "grossApproval": 132223200
       },
       {
         "rank": 12,
-        "name": "Hanover Community Bank",
-        "count": 35,
-        "grossApproval": 98496700
+        "name": "Global One Bank",
+        "count": 31,
+        "grossApproval": 112608000
       },
       {
         "rank": 13,
         "name": "Centerstone SBA Lending, Inc.",
-        "count": 39,
-        "grossApproval": 94647800
+        "count": 47,
+        "grossApproval": 109491000
       },
       {
         "rank": 14,
-        "name": "Wallis Bank",
-        "count": 30,
-        "grossApproval": 84286700
+        "name": "First Western SBLC, LLC d/b/a Peachtree Group",
+        "count": 49,
+        "grossApproval": 105084000
       },
       {
         "rank": 15,
-        "name": "Global One Bank",
-        "count": 21,
-        "grossApproval": 76108000
+        "name": "Harvest Small Business Finance, LLC",
+        "count": 47,
+        "grossApproval": 85991600
       },
       {
         "rank": 16,
-        "name": "Port 51 Lending LLC",
-        "count": 25,
-        "grossApproval": 72580000
+        "name": "United Midwest Savings Bank National Association",
+        "count": 28,
+        "grossApproval": 71733000
       },
       {
         "rank": 17,
-        "name": "Everwise Credit Union",
-        "count": 14,
-        "grossApproval": 60440000
+        "name": "Hanover Community Bank",
+        "count": 24,
+        "grossApproval": 67020700
       },
       {
         "rank": 18,
-        "name": "Commonwealth Business Bank",
-        "count": 24,
-        "grossApproval": 59951000
+        "name": "Celtic Bank Corporation",
+        "count": 28,
+        "grossApproval": 63409500
       },
       {
         "rank": 19,
-        "name": "United Midwest Savings Bank National Association",
-        "count": 22,
-        "grossApproval": 58386000
+        "name": "Everwise Credit Union",
+        "count": 13,
+        "grossApproval": 58700000
       },
       {
         "rank": 20,
-        "name": "Harvest Small Business Finance, LLC",
-        "count": 30,
-        "grossApproval": 55617400
+        "name": "U.S. Bank, National Association",
+        "count": 27,
+        "grossApproval": 58251200
       },
       {
         "rank": 21,
-        "name": "The Huntington National Bank",
-        "count": 22,
-        "grossApproval": 47930000
+        "name": "PromiseOne Bank",
+        "count": 20,
+        "grossApproval": 56930000
       },
       {
         "rank": 22,
-        "name": "Mission Valley Bank",
-        "count": 17,
-        "grossApproval": 45528700
+        "name": "Southwestern National Bank",
+        "count": 18,
+        "grossApproval": 54234000
       },
       {
         "rank": 23,
-        "name": "PCB Bank",
-        "count": 18,
-        "grossApproval": 43569500
+        "name": "American Bank",
+        "count": 17,
+        "grossApproval": 46948100
       },
       {
         "rank": 24,
-        "name": "Southwestern National Bank",
-        "count": 14,
-        "grossApproval": 42137900
+        "name": "PCB Bank",
+        "count": 16,
+        "grossApproval": 44311000
       },
       {
         "rank": 25,
-        "name": "PromiseOne Bank",
-        "count": 18,
-        "grossApproval": 41355000
+        "name": "Merchants Bank of Indiana",
+        "count": 13,
+        "grossApproval": 41378000
       }
     ],
     "cdcs504ByCount": [
       {
         "rank": 1,
-        "name": "Mortgage Capital Development Corporation",
-        "count": 96,
-        "grossApproval": 271415000
+        "name": "The Mortgage Capital Development Corporation",
+        "count": 93,
+        "grossApproval": 251059000
       },
       {
         "rank": 2,
         "name": "Florida Business Development Corporation",
-        "count": 55,
-        "grossApproval": 163380000
+        "count": 54,
+        "grossApproval": 168452000
       },
       {
         "rank": 3,
         "name": "Florida First Capital Finance Corporation, Inc.",
-        "count": 47,
-        "grossApproval": 130392000
+        "count": 50,
+        "grossApproval": 140864000
       },
       {
         "rank": 4,
-        "name": "Mountain West Small Business Finance",
-        "count": 44,
-        "grossApproval": 102425000
+        "name": "Empire State Certified Development Corporation",
+        "count": 48,
+        "grossApproval": 121706000
       },
       {
         "rank": 5,
-        "name": "Empire State Certified Development Corporation",
-        "count": 38,
-        "grossApproval": 91914000
+        "name": "Mountain West Small Business Finance",
+        "count": 48,
+        "grossApproval": 115374000
       },
       {
         "rank": 6,
-        "name": "Granite State Economic Development Corporation",
-        "count": 32,
-        "grossApproval": 66063000
+        "name": "WBD, Inc.",
+        "count": 30,
+        "grossApproval": 55978000
       },
       {
         "rank": 7,
-        "name": "WBD, Inc.",
-        "count": 29,
-        "grossApproval": 47320000
+        "name": "Capital Certified Development Corporation",
+        "count": 27,
+        "grossApproval": 88027000
       },
       {
         "rank": 8,
-        "name": "Capital Certified Development Corporation",
-        "count": 27,
-        "grossApproval": 91487000
+        "name": "New England Certified Development Corporation",
+        "count": 21,
+        "grossApproval": 66297000
       },
       {
         "rank": 9,
-        "name": "New England Certified Development Corporation",
-        "count": 22,
-        "grossApproval": 67020000
+        "name": "Granite State Economic Development Corporation",
+        "count": 21,
+        "grossApproval": 50946000
       },
       {
         "rank": 10,
-        "name": "Capital Partners Certified Development Company",
-        "count": 17,
-        "grossApproval": 54642000
+        "name": "Midwest Business Finance Corporation",
+        "count": 21,
+        "grossApproval": 29731000
       },
       {
         "rank": 11,
-        "name": "SomerCor 504, Inc.",
-        "count": 17,
-        "grossApproval": 48483000
+        "name": "B:Side Capital",
+        "count": 18,
+        "grossApproval": 44705000
       },
       {
         "rank": 12,
-        "name": "504 Capital Corporation",
+        "name": "SomerCor 504, Inc.",
         "count": 17,
-        "grossApproval": 46482000
+        "grossApproval": 51319000
       },
       {
         "rank": 13,
-        "name": "Michigan Certified Development Corporation",
-        "count": 17,
-        "grossApproval": 44229000
+        "name": "Evergreen Business Capital",
+        "count": 16,
+        "grossApproval": 35096000
       },
       {
         "rank": 14,
-        "name": "Midwest Business Finance Corporation",
-        "count": 17,
-        "grossApproval": 26003000
+        "name": "Capital Partners Certified Development Company",
+        "count": 15,
+        "grossApproval": 51754000
       },
       {
         "rank": 15,
-        "name": "Business Expansion Funding Corporation",
-        "count": 16,
-        "grossApproval": 47955000
+        "name": "Business Finance Group, Inc.",
+        "count": 15,
+        "grossApproval": 40126000
       },
       {
         "rank": 16,
-        "name": "B:Side Capital",
-        "count": 16,
-        "grossApproval": 38219000
+        "name": "Business Finance Capital",
+        "count": 14,
+        "grossApproval": 44728000
       },
       {
         "rank": 17,
-        "name": "Rural Missouri, Inc.",
-        "count": 15,
-        "grossApproval": 30644000
+        "name": "Business Expansion Funding Corporation",
+        "count": 14,
+        "grossApproval": 43661000
       },
       {
         "rank": 18,
-        "name": "Evergreen Business Capital",
-        "count": 15,
-        "grossApproval": 26331000
+        "name": "Alloy Development Co., Inc.",
+        "count": 14,
+        "grossApproval": 42936000
       },
       {
         "rank": 19,
-        "name": "Business Finance Capital",
+        "name": "Michigan Certified Development Corporation",
         "count": 14,
-        "grossApproval": 38478000
+        "grossApproval": 31093000
       },
       {
         "rank": 20,
-        "name": "Business Finance Group, Inc.",
-        "count": 13,
-        "grossApproval": 33231000
+        "name": "Advantage Certified Development Corporation",
+        "count": 12,
+        "grossApproval": 43940000
       },
       {
         "rank": 21,
-        "name": "Dakota Business Finance",
-        "count": 13,
-        "grossApproval": 17407000
+        "name": "Trenton Business Assistance Corporation",
+        "count": 11,
+        "grossApproval": 38452000
       },
       {
         "rank": 22,
-        "name": "Bay Area Employment Development Company",
-        "count": 12,
-        "grossApproval": 48476000
+        "name": "Premier Capital Corporation",
+        "count": 11,
+        "grossApproval": 26229000
       },
       {
         "rank": 23,
-        "name": "Brightbridge, Inc.",
-        "count": 12,
-        "grossApproval": 31948000
+        "name": "South Eastern Economic Development Company of Pennsylvania",
+        "count": 11,
+        "grossApproval": 18862000
       },
       {
         "rank": 24,
-        "name": "Advantage Certified Development Corporation",
-        "count": 11,
-        "grossApproval": 35492000
+        "name": "504 Capital Corporation",
+        "count": 10,
+        "grossApproval": 31045000
       },
       {
         "rank": 25,
-        "name": "Alloy Development Co., Inc.",
-        "count": 11,
-        "grossApproval": 28420000
+        "name": "Brightbridge, Inc.",
+        "count": 10,
+        "grossApproval": 27404000
       }
     ],
     "cdcs504ByDollars": [
       {
         "rank": 1,
-        "name": "Mortgage Capital Development Corporation",
-        "count": 96,
-        "grossApproval": 271415000
+        "name": "The Mortgage Capital Development Corporation",
+        "count": 93,
+        "grossApproval": 251059000
       },
       {
         "rank": 2,
         "name": "Florida Business Development Corporation",
-        "count": 55,
-        "grossApproval": 163380000
+        "count": 54,
+        "grossApproval": 168452000
       },
       {
         "rank": 3,
         "name": "Florida First Capital Finance Corporation, Inc.",
-        "count": 47,
-        "grossApproval": 130392000
+        "count": 50,
+        "grossApproval": 140864000
       },
       {
         "rank": 4,
-        "name": "Mountain West Small Business Finance",
-        "count": 44,
-        "grossApproval": 102425000
+        "name": "Empire State Certified Development Corporation",
+        "count": 48,
+        "grossApproval": 121706000
       },
       {
         "rank": 5,
-        "name": "Empire State Certified Development Corporation",
-        "count": 38,
-        "grossApproval": 91914000
+        "name": "Mountain West Small Business Finance",
+        "count": 48,
+        "grossApproval": 115374000
       },
       {
         "rank": 6,
         "name": "Capital Certified Development Corporation",
         "count": 27,
-        "grossApproval": 91487000
+        "grossApproval": 88027000
       },
       {
         "rank": 7,
         "name": "New England Certified Development Corporation",
-        "count": 22,
-        "grossApproval": 67020000
+        "count": 21,
+        "grossApproval": 66297000
       },
       {
         "rank": 8,
-        "name": "Granite State Economic Development Corporation",
-        "count": 32,
-        "grossApproval": 66063000
+        "name": "WBD, Inc.",
+        "count": 30,
+        "grossApproval": 55978000
       },
       {
         "rank": 9,
         "name": "Capital Partners Certified Development Company",
-        "count": 17,
-        "grossApproval": 54642000
+        "count": 15,
+        "grossApproval": 51754000
       },
       {
         "rank": 10,
         "name": "SomerCor 504, Inc.",
         "count": 17,
-        "grossApproval": 48483000
+        "grossApproval": 51319000
       },
       {
         "rank": 11,
-        "name": "Bay Area Employment Development Company",
-        "count": 12,
-        "grossApproval": 48476000
+        "name": "Granite State Economic Development Corporation",
+        "count": 21,
+        "grossApproval": 50946000
       },
       {
         "rank": 12,
-        "name": "Business Expansion Funding Corporation",
-        "count": 16,
-        "grossApproval": 47955000
+        "name": "Business Finance Capital",
+        "count": 14,
+        "grossApproval": 44728000
       },
       {
         "rank": 13,
-        "name": "WBD, Inc.",
-        "count": 29,
-        "grossApproval": 47320000
+        "name": "B:Side Capital",
+        "count": 18,
+        "grossApproval": 44705000
       },
       {
         "rank": 14,
-        "name": "504 Capital Corporation",
-        "count": 17,
-        "grossApproval": 46482000
+        "name": "Advantage Certified Development Corporation",
+        "count": 12,
+        "grossApproval": 43940000
       },
       {
         "rank": 15,
-        "name": "Michigan Certified Development Corporation",
-        "count": 17,
-        "grossApproval": 44229000
+        "name": "Business Expansion Funding Corporation",
+        "count": 14,
+        "grossApproval": 43661000
       },
       {
         "rank": 16,
-        "name": "Business Finance Capital",
+        "name": "Alloy Development Co., Inc.",
         "count": 14,
-        "grossApproval": 38478000
+        "grossApproval": 42936000
       },
       {
         "rank": 17,
-        "name": "B:Side Capital",
-        "count": 16,
-        "grossApproval": 38219000
+        "name": "Business Finance Group, Inc.",
+        "count": 15,
+        "grossApproval": 40126000
       },
       {
         "rank": 18,
-        "name": "Advantage Certified Development Corporation",
+        "name": "Trenton Business Assistance Corporation",
         "count": 11,
-        "grossApproval": 35492000
+        "grossApproval": 38452000
       },
       {
         "rank": 19,
-        "name": "Business Finance Group, Inc.",
-        "count": 13,
-        "grossApproval": 33231000
+        "name": "Evergreen Business Capital",
+        "count": 16,
+        "grossApproval": 35096000
       },
       {
         "rank": 20,
-        "name": "Brightbridge, Inc.",
-        "count": 12,
-        "grossApproval": 31948000
+        "name": "Bay Area Employment Development Company",
+        "count": 9,
+        "grossApproval": 32518000
       },
       {
         "rank": 21,
-        "name": "Rural Missouri, Inc.",
-        "count": 15,
-        "grossApproval": 30644000
+        "name": "Provident Business Financial Services, Inc.",
+        "count": 8,
+        "grossApproval": 31467000
       },
       {
         "rank": 22,
-        "name": "Alloy Development Co., Inc.",
-        "count": 11,
-        "grossApproval": 28420000
+        "name": "Michigan Certified Development Corporation",
+        "count": 14,
+        "grossApproval": 31093000
       },
       {
         "rank": 23,
-        "name": "Ameritrust CDC",
-        "count": 7,
-        "grossApproval": 27011000
+        "name": "504 Capital Corporation",
+        "count": 10,
+        "grossApproval": 31045000
       },
       {
         "rank": 24,
-        "name": "Evergreen Business Capital",
-        "count": 15,
-        "grossApproval": 26331000
+        "name": "Midwest Business Finance Corporation",
+        "count": 21,
+        "grossApproval": 29731000
       },
       {
         "rank": 25,
-        "name": "Midwest Business Finance Corporation",
-        "count": 17,
-        "grossApproval": 26003000
+        "name": "Independent Development Services Corporation",
+        "count": 6,
+        "grossApproval": 29021000
       }
     ]
   }

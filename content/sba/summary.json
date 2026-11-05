@@ -8,49 +8,49 @@
     "dataDictionary": "https://data.sba.gov/sites/default/files/uploaded_resources/7a_504_foia_data_dictionary.xlsx",
     "license": "https://www.usa.gov/publicdomain/label/1.0/",
     "datasetModified": "2026-04-28T18:42:49+00:00",
-    "asOf": "2026-06-30",
-    "fetchedAt": "2026-09-18T20:57:02.089Z",
+    "asOf": "2026-09-30",
+    "fetchedAt": "2026-11-05T20:54:17.721Z",
     "naics": "721110",
     "sinceFiscalYear": 2010,
-    "lastFullFiscalYear": 2025,
-    "partialFiscalYear": 2026,
+    "lastFullFiscalYear": 2026,
+    "partialFiscalYear": null,
     "trailing5": [
-      2021,
       2022,
       2023,
       2024,
-      2025
+      2025,
+      2026
     ],
     "trailing3": [
-      2023,
       2024,
-      2025
+      2025,
+      2026
     ],
     "cancelledExcluded": true,
     "files": [
       {
-        "file": "FOIA_504_FY2010_Present_asof_260630.csv",
-        "title": "FOIA - 504 (FY2010-Present) as of June 30, 2026",
-        "url": "https://data.sba.gov/sites/default/files/uploaded_resources/FOIA_504_FY2010_Present_asof_260630.csv",
+        "file": "FOIA_504_FY2010_Present_asof_260930.csv",
+        "title": "FOIA - 504 (FY2010-Present) as of September 30, 2026",
+        "url": "https://data.sba.gov/sites/default/files/uploaded_resources/FOIA_504_FY2010_Present_asof_260930.csv",
         "program": "504",
-        "asOf": "2026-06-30",
-        "bytes": 59412738
+        "asOf": "2026-09-30",
+        "bytes": 60306987
       },
       {
-        "file": "FOIA_7a_FY2010_FY2019_asof_260630.csv",
-        "title": "FOIA - 7(a) (FY2010-FY2019) as of June 30, 2026",
-        "url": "https://data.sba.gov/sites/default/files/uploaded_resources/FOIA_7a_FY2010_FY2019_asof_260630.csv",
+        "file": "FOIA_7a_FY2010_FY2019_asof_260930.csv",
+        "title": "FOIA - 7(a) (FY2010-FY2019) as of September 30, 2026",
+        "url": "https://data.sba.gov/sites/default/files/uploaded_resources/FOIA_7a_FY2010_FY2019_asof_260930.csv",
         "program": "7a",
-        "asOf": "2026-06-30",
-        "bytes": 255101999
+        "asOf": "2026-09-30",
+        "bytes": 255300948
       },
       {
-        "file": "FOIA_7a_FY2020_Present_asof_260630.csv",
-        "title": "FOIA - 7(a) (FY2020-Present) as of June 30, 2026",
-        "url": "https://data.sba.gov/sites/default/files/uploaded_resources/FOIA_7a_FY2020_Present_asof_260630.csv",
+        "file": "FOIA_7a_FY2020_Present_asof_260930.csv",
+        "title": "FOIA - 7(a) (FY2020-Present) as of September 30, 2026",
+        "url": "https://data.sba.gov/sites/default/files/uploaded_resources/FOIA_7a_FY2020_Present_asof_260930.csv",
         "program": "7a",
-        "asOf": "2026-06-30",
-        "bytes": 181130871
+        "asOf": "2026-09-30",
+        "bytes": 188484797
       }
     ]
   },
@@ -66,7 +66,7 @@
       "sbaGuaranteedApproval": 307380927,
       "chargedOffCount": 25,
       "chargedOffGrossAmount": 13811006,
-      "paidInFullCount": 334
+      "paidInFullCount": 336
     },
     {
       "fiscalYear": 2010,
@@ -92,7 +92,7 @@
       "sbaGuaranteedApproval": 926830794,
       "chargedOffCount": 25,
       "chargedOffGrossAmount": 21364413,
-      "paidInFullCount": 600
+      "paidInFullCount": 605
     },
     {
       "fiscalYear": 2011,
@@ -103,9 +103,9 @@
       "averageLoan": 1405232,
       "medianLoan": 1093000,
       "thirdPartyLenderDollars": 538373150,
-      "chargedOffCount": 9,
-      "chargedOffGrossAmount": 9280244,
-      "paidInFullCount": 172
+      "chargedOffCount": 8,
+      "chargedOffGrossAmount": 8042956,
+      "paidInFullCount": 174
     },
     {
       "fiscalYear": 2012,
@@ -118,7 +118,7 @@
       "sbaGuaranteedApproval": 624839816,
       "chargedOffCount": 16,
       "chargedOffGrossAmount": 17668743,
-      "paidInFullCount": 457
+      "paidInFullCount": 458
     },
     {
       "fiscalYear": 2012,
@@ -131,7 +131,7 @@
       "thirdPartyLenderDollars": 1146632421,
       "chargedOffCount": 22,
       "chargedOffGrossAmount": 27904886,
-      "paidInFullCount": 342
+      "paidInFullCount": 347
     },
     {
       "fiscalYear": 2013,
@@ -144,7 +144,7 @@
       "sbaGuaranteedApproval": 957546345,
       "chargedOffCount": 17,
       "chargedOffGrossAmount": 11060367,
-      "paidInFullCount": 598
+      "paidInFullCount": 604
     },
     {
       "fiscalYear": 2013,
@@ -157,7 +157,7 @@
       "thirdPartyLenderDollars": 742518927,
       "chargedOffCount": 4,
       "chargedOffGrossAmount": 4263119,
-      "paidInFullCount": 218
+      "paidInFullCount": 221
     },
     {
       "fiscalYear": 2014,
@@ -168,9 +168,9 @@
       "averageLoan": 1841157,
       "medianLoan": 1643800,
       "sbaGuaranteedApproval": 1099860575,
-      "chargedOffCount": 25,
-      "chargedOffGrossAmount": 26296954,
-      "paidInFullCount": 684
+      "chargedOffCount": 26,
+      "chargedOffGrossAmount": 26905666,
+      "paidInFullCount": 688
     },
     {
       "fiscalYear": 2014,
@@ -183,7 +183,7 @@
       "thirdPartyLenderDollars": 674489919,
       "chargedOffCount": 7,
       "chargedOffGrossAmount": 8901874,
-      "paidInFullCount": 153
+      "paidInFullCount": 155
     },
     {
       "fiscalYear": 2015,
@@ -194,9 +194,9 @@
       "averageLoan": 1868852,
       "medianLoan": 1615000,
       "sbaGuaranteedApproval": 1199798810,
-      "chargedOffCount": 17,
-      "chargedOffGrossAmount": 21657863,
-      "paidInFullCount": 690
+      "chargedOffCount": 18,
+      "chargedOffGrossAmount": 22347786,
+      "paidInFullCount": 700
     },
     {
       "fiscalYear": 2015,
@@ -209,7 +209,7 @@
       "thirdPartyLenderDollars": 593670847,
       "chargedOffCount": 4,
       "chargedOffGrossAmount": 4656514,
-      "paidInFullCount": 136
+      "paidInFullCount": 141
     },
     {
       "fiscalYear": 2016,
@@ -222,7 +222,7 @@
       "sbaGuaranteedApproval": 1379325576,
       "chargedOffCount": 19,
       "chargedOffGrossAmount": 14006360,
-      "paidInFullCount": 731
+      "paidInFullCount": 739
     },
     {
       "fiscalYear": 2016,
@@ -235,7 +235,7 @@
       "thirdPartyLenderDollars": 932731031,
       "chargedOffCount": 5,
       "chargedOffGrossAmount": 7119784,
-      "paidInFullCount": 129
+      "paidInFullCount": 133
     },
     {
       "fiscalYear": 2017,
@@ -248,7 +248,7 @@
       "sbaGuaranteedApproval": 1576027203,
       "chargedOffCount": 14,
       "chargedOffGrossAmount": 14670068,
-      "paidInFullCount": 753
+      "paidInFullCount": 762
     },
     {
       "fiscalYear": 2017,
@@ -261,7 +261,7 @@
       "thirdPartyLenderDollars": 1013870787,
       "chargedOffCount": 3,
       "chargedOffGrossAmount": 1936936,
-      "paidInFullCount": 121
+      "paidInFullCount": 128
     },
     {
       "fiscalYear": 2018,
@@ -272,9 +272,9 @@
       "averageLoan": 2240120,
       "medianLoan": 2042300,
       "sbaGuaranteedApproval": 1611355454,
-      "chargedOffCount": 17,
-      "chargedOffGrossAmount": 19151460,
-      "paidInFullCount": 604
+      "chargedOffCount": 18,
+      "chargedOffGrossAmount": 19316259,
+      "paidInFullCount": 616
     },
     {
       "fiscalYear": 2018,
@@ -287,7 +287,7 @@
       "thirdPartyLenderDollars": 898879455,
       "chargedOffCount": 1,
       "chargedOffGrossAmount": 1353570,
-      "paidInFullCount": 63
+      "paidInFullCount": 68
     },
     {
       "fiscalYear": 2019,
@@ -298,9 +298,9 @@
       "averageLoan": 2250792,
       "medianLoan": 2050000,
       "sbaGuaranteedApproval": 1315538211,
-      "chargedOffCount": 7,
-      "chargedOffGrossAmount": 7638007,
-      "paidInFullCount": 450
+      "chargedOffCount": 8,
+      "chargedOffGrossAmount": 7960984,
+      "paidInFullCount": 465
     },
     {
       "fiscalYear": 2019,
@@ -313,7 +313,7 @@
       "thirdPartyLenderDollars": 729181308,
       "chargedOffCount": 2,
       "chargedOffGrossAmount": 3885021,
-      "paidInFullCount": 48
+      "paidInFullCount": 49
     },
     {
       "fiscalYear": 2020,
@@ -324,22 +324,22 @@
       "averageLoan": 2208051,
       "medianLoan": 1964350,
       "sbaGuaranteedApproval": 1235213079,
-      "chargedOffCount": 1,
-      "chargedOffGrossAmount": 697417,
-      "paidInFullCount": 436
+      "chargedOffCount": 2,
+      "chargedOffGrossAmount": 3403100,
+      "paidInFullCount": 445
     },
     {
       "fiscalYear": 2020,
       "partialYear": false,
       "program": "504",
-      "count": 168,
-      "grossApproval": 323850000,
-      "averageLoan": 1927679,
-      "medianLoan": 1462500,
-      "thirdPartyLenderDollars": 574381663,
+      "count": 167,
+      "grossApproval": 320103000,
+      "averageLoan": 1916784,
+      "medianLoan": 1449000,
+      "thirdPartyLenderDollars": 566978163,
       "chargedOffCount": 0,
       "chargedOffGrossAmount": 0,
-      "paidInFullCount": 30
+      "paidInFullCount": 33
     },
     {
       "fiscalYear": 2021,
@@ -350,22 +350,22 @@
       "averageLoan": 2458142,
       "medianLoan": 2187000,
       "sbaGuaranteedApproval": 2527930282,
-      "chargedOffCount": 3,
-      "chargedOffGrossAmount": 3541862,
-      "paidInFullCount": 582
+      "chargedOffCount": 5,
+      "chargedOffGrossAmount": 7056579,
+      "paidInFullCount": 614
     },
     {
       "fiscalYear": 2021,
       "partialYear": false,
       "program": "504",
-      "count": 177,
-      "grossApproval": 294998000,
-      "averageLoan": 1666655,
-      "medianLoan": 1216000,
-      "thirdPartyLenderDollars": 472837062,
+      "count": 170,
+      "grossApproval": 277628000,
+      "averageLoan": 1633106,
+      "medianLoan": 1193000,
+      "thirdPartyLenderDollars": 442468993,
       "chargedOffCount": 0,
       "chargedOffGrossAmount": 0,
-      "paidInFullCount": 22
+      "paidInFullCount": 23
     },
     {
       "fiscalYear": 2022,
@@ -378,20 +378,20 @@
       "sbaGuaranteedApproval": 1557849949,
       "chargedOffCount": 1,
       "chargedOffGrossAmount": 3162069,
-      "paidInFullCount": 253
+      "paidInFullCount": 271
     },
     {
       "fiscalYear": 2022,
       "partialYear": false,
       "program": "504",
-      "count": 281,
-      "grossApproval": 646862290,
-      "averageLoan": 2302001,
-      "medianLoan": 2051000,
-      "thirdPartyLenderDollars": 1077348349,
+      "count": 266,
+      "grossApproval": 618708290,
+      "averageLoan": 2325971,
+      "medianLoan": 2076000,
+      "thirdPartyLenderDollars": 1032394250,
       "chargedOffCount": 0,
       "chargedOffGrossAmount": 0,
-      "paidInFullCount": 28
+      "paidInFullCount": 29
     },
     {
       "fiscalYear": 2023,
@@ -402,19 +402,19 @@
       "averageLoan": 2585730,
       "medianLoan": 2570000,
       "sbaGuaranteedApproval": 1105283832,
-      "chargedOffCount": 0,
-      "chargedOffGrossAmount": 0,
-      "paidInFullCount": 84
+      "chargedOffCount": 1,
+      "chargedOffGrossAmount": 4231029,
+      "paidInFullCount": 102
     },
     {
       "fiscalYear": 2023,
       "partialYear": false,
       "program": "504",
-      "count": 254,
-      "grossApproval": 623952000,
-      "averageLoan": 2456504,
-      "medianLoan": 2207500,
-      "thirdPartyLenderDollars": 1048636456,
+      "count": 252,
+      "grossApproval": 622234000,
+      "averageLoan": 2469183,
+      "medianLoan": 2247500,
+      "thirdPartyLenderDollars": 1046966468,
       "chargedOffCount": 0,
       "chargedOffGrossAmount": 0,
       "paidInFullCount": 13
@@ -427,23 +427,23 @@
       "grossApproval": 1522821500,
       "averageLoan": 2559364,
       "medianLoan": 2301000,
-      "sbaGuaranteedApproval": 1141210125,
+      "sbaGuaranteedApproval": 1140933625,
       "chargedOffCount": 1,
       "chargedOffGrossAmount": 85806,
-      "paidInFullCount": 33
+      "paidInFullCount": 38
     },
     {
       "fiscalYear": 2024,
       "partialYear": false,
       "program": "504",
-      "count": 342,
-      "grossApproval": 835569000,
-      "averageLoan": 2443184,
-      "medianLoan": 2194500,
-      "thirdPartyLenderDollars": 1435271975,
-      "chargedOffCount": 0,
-      "chargedOffGrossAmount": 0,
-      "paidInFullCount": 8
+      "count": 341,
+      "grossApproval": 830069000,
+      "averageLoan": 2434220,
+      "medianLoan": 2179000,
+      "thirdPartyLenderDollars": 1429053715,
+      "chargedOffCount": 1,
+      "chargedOffGrossAmount": 1422302,
+      "paidInFullCount": 9
     },
     {
       "fiscalYear": 2025,
@@ -456,7 +456,7 @@
       "sbaGuaranteedApproval": 1429803525,
       "chargedOffCount": 1,
       "chargedOffGrossAmount": 90166,
-      "paidInFullCount": 13
+      "paidInFullCount": 20
     },
     {
       "fiscalYear": 2025,
@@ -466,33 +466,33 @@
       "grossApproval": 990520000,
       "averageLoan": 2713753,
       "medianLoan": 2451000,
-      "thirdPartyLenderDollars": 1703650615,
+      "thirdPartyLenderDollars": 1703246765,
+      "chargedOffCount": 0,
+      "chargedOffGrossAmount": 0,
+      "paidInFullCount": 2
+    },
+    {
+      "fiscalYear": 2026,
+      "partialYear": false,
+      "program": "7a",
+      "count": 756,
+      "grossApproval": 2221148500,
+      "averageLoan": 2938027,
+      "medianLoan": 2940000,
+      "sbaGuaranteedApproval": 1654519069,
       "chargedOffCount": 0,
       "chargedOffGrossAmount": 0,
       "paidInFullCount": 1
     },
     {
       "fiscalYear": 2026,
-      "partialYear": true,
-      "program": "7a",
-      "count": 497,
-      "grossApproval": 1415324000,
-      "averageLoan": 2847734,
-      "medianLoan": 2777000,
-      "sbaGuaranteedApproval": 1046600337,
-      "chargedOffCount": 0,
-      "chargedOffGrossAmount": 0,
-      "paidInFullCount": 0
-    },
-    {
-      "fiscalYear": 2026,
-      "partialYear": true,
+      "partialYear": false,
       "program": "504",
-      "count": 199,
-      "grossApproval": 567400000,
-      "averageLoan": 2851256,
-      "medianLoan": 2528000,
-      "thirdPartyLenderDollars": 955979151,
+      "count": 261,
+      "grossApproval": 730274000,
+      "averageLoan": 2797985,
+      "medianLoan": 2594000,
+      "thirdPartyLenderDollars": 1219792262,
       "chargedOffCount": 0,
       "chargedOffGrossAmount": 0,
       "paidInFullCount": 0
@@ -503,85 +503,85 @@
       "program": "7a",
       "bucket": "lt350k",
       "label": "Under $350,000",
-      "count": 217,
-      "grossApproval": 33682000
+      "count": 222,
+      "grossApproval": 32022400
     },
     {
       "program": "7a",
       "bucket": "350k-1m",
       "label": "$350,000 to $999,999",
-      "count": 456,
-      "grossApproval": 306138200
+      "count": 355,
+      "grossApproval": 237586200
     },
     {
       "program": "7a",
       "bucket": "1m-2m",
       "label": "$1.0 million to $1.99 million",
-      "count": 920,
-      "grossApproval": 1384671700
+      "count": 700,
+      "grossApproval": 1060542600
     },
     {
       "program": "7a",
       "bucket": "2m-3.5m",
       "label": "$2.0 million to $3.49 million",
-      "count": 1115,
-      "grossApproval": 2989294600
+      "count": 986,
+      "grossApproval": 2661322800
     },
     {
       "program": "7a",
       "bucket": "3.5m-5m",
       "label": "$3.5 million to $4.99 million",
-      "count": 672,
-      "grossApproval": 2811183600
+      "count": 604,
+      "grossApproval": 2528504400
     },
     {
       "program": "7a",
       "bucket": "gte5m",
       "label": "$5.0 million and over",
-      "count": 499,
-      "grossApproval": 2495000000
+      "count": 541,
+      "grossApproval": 2705000000
     },
     {
       "program": "504",
       "bucket": "lt350k",
       "label": "Under $350,000",
-      "count": 43,
-      "grossApproval": 11107000
+      "count": 31,
+      "grossApproval": 8549000
     },
     {
       "program": "504",
       "bucket": "350k-1m",
       "label": "$350,000 to $999,999",
-      "count": 264,
-      "grossApproval": 179133000
+      "count": 236,
+      "grossApproval": 163864000
     },
     {
       "program": "504",
       "bucket": "1m-2m",
       "label": "$1.0 million to $1.99 million",
-      "count": 357,
-      "grossApproval": 520926290
+      "count": 362,
+      "grossApproval": 528842290
     },
     {
       "program": "504",
       "bucket": "2m-3.5m",
       "label": "$2.0 million to $3.49 million",
-      "count": 406,
-      "grossApproval": 1077125000
+      "count": 433,
+      "grossApproval": 1148309000
     },
     {
       "program": "504",
       "bucket": "3.5m-5m",
       "label": "$3.5 million to $4.99 million",
-      "count": 229,
-      "grossApproval": 977387000
+      "count": 273,
+      "grossApproval": 1162229000
     },
     {
       "program": "504",
       "bucket": "gte5m",
       "label": "$5.0 million and over",
-      "count": 120,
-      "grossApproval": 626223000
+      "count": 150,
+      "grossApproval": 780012000
     }
   ],
   "otherNaics": [
@@ -601,42 +601,42 @@
       "naics": "721191",
       "description": "Bed-and-Breakfast Inns",
       "lastFullFiscalYear": {
-        "count": 49,
-        "grossApproval": 59251400
+        "count": 36,
+        "grossApproval": 26337300
       },
       "trailing5": {
-        "count": 309,
-        "grossApproval": 304873800
+        "count": 260,
+        "grossApproval": 250108500
       }
     },
     {
       "naics": "721199",
       "description": "All Other Traveler Accommodation",
       "lastFullFiscalYear": {
-        "count": 40,
-        "grossApproval": 30512500
+        "count": 26,
+        "grossApproval": 25365100
       },
       "trailing5": {
-        "count": 160,
-        "grossApproval": 125734700
+        "count": 157,
+        "grossApproval": 130053700
       }
     }
   ],
   "reconciliation": {
     "files": [
       {
-        "file": "FOIA_504_FY2010_Present_asof_260630.csv",
+        "file": "FOIA_504_FY2010_Present_asof_260930.csv",
         "program": "504",
-        "rowsRead": 117983,
-        "hotelRows": 5244,
+        "rowsRead": 119599,
+        "hotelRows": 5309,
         "hotelRowsBeforeSinceFy": 0,
-        "hotelRowsCancelled": 714,
-        "hotelRowsCounted": 4530,
-        "hotelGrossCounted": 8949814290,
-        "otherNaicsRows": 434
+        "hotelRowsCancelled": 743,
+        "hotelRowsCounted": 4566,
+        "hotelGrossCounted": 9056199290,
+        "otherNaicsRows": 439
       },
       {
-        "file": "FOIA_7a_FY2010_FY2019_asof_260630.csv",
+        "file": "FOIA_7a_FY2010_FY2019_asof_260930.csv",
         "program": "7a",
         "rowsRead": 545751,
         "hotelRows": 8636,
@@ -647,77 +647,77 @@
         "otherNaicsRows": 674
       },
       {
-        "file": "FOIA_7a_FY2020_Present_asof_260630.csv",
+        "file": "FOIA_7a_FY2020_Present_asof_260930.csv",
         "program": "7a",
-        "rowsRead": 388338,
-        "hotelRows": 5613,
+        "rowsRead": 403644,
+        "hotelRows": 5888,
         "hotelRowsBeforeSinceFy": 0,
-        "hotelRowsCancelled": 489,
-        "hotelRowsCounted": 5124,
-        "hotelGrossCounted": 13086916600,
-        "otherNaicsRows": 437
+        "hotelRowsCancelled": 505,
+        "hotelRowsCounted": 5383,
+        "hotelGrossCounted": 13892741100,
+        "otherNaicsRows": 451
       }
     ],
     "checks": [
       {
         "name": "by-year counts vs straight count of filtered rows",
-        "expected": 17360,
-        "actual": 17360
+        "expected": 17655,
+        "actual": 17655
       },
       {
         "name": "by-year gross approval vs straight sum (rounded $)",
-        "expected": 36630211290,
-        "actual": 36630211290
+        "expected": 37542420790,
+        "actual": 37542420790
       },
       {
         "name": "state-year cells vs straight count",
-        "expected": 17360,
-        "actual": 17360
+        "expected": 17655,
+        "actual": 17655
       },
       {
         "name": "lender-year cells vs straight count",
-        "expected": 17360,
-        "actual": 17360
+        "expected": 17655,
+        "actual": 17655
       },
       {
         "name": "size-bucket cells vs straight count",
-        "expected": 17360,
-        "actual": 17360
+        "expected": 17655,
+        "actual": 17655
       },
       {
-        "name": "by-state trailing 5 vs by-year FY2021-FY2025",
-        "expected": 5298,
-        "actual": 5298
+        "name": "by-state trailing 5 vs by-year FY2022-FY2026",
+        "expected": 4893,
+        "actual": 4893
       },
       {
-        "name": "size buckets vs by-year FY2021-FY2025",
-        "expected": 5298,
-        "actual": 5298
+        "name": "size buckets vs by-year FY2022-FY2026",
+        "expected": 4893,
+        "actual": 4893
       },
       {
-        "name": "by-state FY2025 vs by-year FY2025",
-        "expected": 1051,
-        "actual": 1051
+        "name": "by-state FY2026 vs by-year FY2026",
+        "expected": 1017,
+        "actual": 1017
       },
       {
         "name": "state-detail year cells vs straight count",
-        "expected": 17360,
-        "actual": 17360
+        "expected": 17655,
+        "actual": 17655
       },
       {
-        "name": "state-detail trailing 5 vs by-year FY2021-FY2025",
-        "expected": 5298,
-        "actual": 5298
+        "name": "state-detail trailing 5 vs by-year FY2022-FY2026",
+        "expected": 4893,
+        "actual": 4893
       },
       {
-        "name": "state-detail size bands vs by-year FY2021-FY2025",
-        "expected": 5298,
-        "actual": 5298
+        "name": "state-detail size bands vs by-year FY2022-FY2026",
+        "expected": 4893,
+        "actual": 4893
       },
       {
-        "name": "state-detail national trailing 5 vs by-year FY2021-FY2025",
-        "expected": 5298,
-        "actual": 5298
+        "name": "state-detail national trailing 5 vs by-year FY2022-FY2026",
+        "expected": 4893,
+        "actual": 4893
       },
       {
         "name": "states whose state-detail trailing 5 differs from by-state.json",
@@ -725,19 +725,19 @@
         "actual": 0
       },
       {
-        "name": "FOIA_504_FY2010_Present_asof_260630.csv: hotel rows = before FY2010 + cancelled + counted",
-        "expected": 5244,
-        "actual": 5244
+        "name": "FOIA_504_FY2010_Present_asof_260930.csv: hotel rows = before FY2010 + cancelled + counted",
+        "expected": 5309,
+        "actual": 5309
       },
       {
-        "name": "FOIA_7a_FY2010_FY2019_asof_260630.csv: hotel rows = before FY2010 + cancelled + counted",
+        "name": "FOIA_7a_FY2010_FY2019_asof_260930.csv: hotel rows = before FY2010 + cancelled + counted",
         "expected": 8636,
         "actual": 8636
       },
       {
-        "name": "FOIA_7a_FY2020_Present_asof_260630.csv: hotel rows = before FY2010 + cancelled + counted",
-        "expected": 5613,
-        "actual": 5613
+        "name": "FOIA_7a_FY2020_Present_asof_260930.csv: hotel rows = before FY2010 + cancelled + counted",
+        "expected": 5888,
+        "actual": 5888
       }
     ]
   }
