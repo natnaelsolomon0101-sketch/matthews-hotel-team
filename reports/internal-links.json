@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-11-03T14:36:08.458Z",
-  "base": "http://localhost:44419",
+  "runAt": "2026-11-05T14:33:29.057Z",
+  "base": "http://localhost:38559",
   "edges": [
     {
       "from": "/",
@@ -4253,6 +4253,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-valuation/insurance-costs-and-hotel-value"
     },
     {
       "from": "/sitemap",
@@ -39640,6 +39644,10 @@
     },
     {
       "from": "/glossary/noi",
+      "to": "/hotel-valuation/insurance-costs-and-hotel-value"
+    },
+    {
+      "from": "/glossary/noi",
       "to": "/glossary/cap-rate"
     },
     {
@@ -47021,6 +47029,10 @@
     {
       "from": "/hotel-financing/flood-insurance-requirements",
       "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/hotel-valuation/insurance-costs-and-hotel-value"
     },
     {
       "from": "/hotel-financing/flood-insurance-requirements",
@@ -57536,6 +57548,10 @@
     },
     {
       "from": "/hotel-valuation",
+      "to": "/hotel-valuation/insurance-costs-and-hotel-value"
+    },
+    {
+      "from": "/hotel-valuation",
       "to": "/hotel-valuation/interest-rates-and-hotel-value"
     },
     {
@@ -58704,6 +58720,234 @@
     },
     {
       "from": "/hotel-valuation/how-to-value-a-hotel",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/_next/static/chunks/971af7bd7354d30d.css"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/hotel-valuation/insurance-costs-and-hotel-value.md"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/research/mhi/q1-2026"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/glossary/noi"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/glossary/cap-rate"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/glossary/revpar"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/hotel-valuation/how-to-value-a-hotel"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/hotel-industry/hotel-operating-costs"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/sell-a-hotel/what-buyers-look-for"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/hotel-financing/flood-insurance-requirements"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/glossary/dscr"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/hotel-valuation/appraisal-lower-than-expected"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/hotel-valuation/broker-opinion-of-value"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/hotel-valuation/property-tax-appeal"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/tools/dscr-calculator"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/hotel-financing/refinance-or-sell"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/hotel-valuation/hotel-cap-rates"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/glossary/gop"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-valuation/insurance-costs-and-hotel-value",
       "to": "/sitemap"
     },
     {
@@ -70248,6 +70492,10 @@
     },
     {
       "from": "/hotel-industry/hotel-operating-costs",
+      "to": "/hotel-valuation/insurance-costs-and-hotel-value"
+    },
+    {
+      "from": "/hotel-industry/hotel-operating-costs",
       "to": "/glossary/ffe-reserve"
     },
     {
@@ -75354,6 +75602,7 @@
         "/hotel-valuation/broker-opinion-of-value",
         "/hotel-valuation/hotel-cap-rates",
         "/hotel-valuation/how-to-value-a-hotel",
+        "/hotel-valuation/insurance-costs-and-hotel-value",
         "/hotel-valuation/interest-rates-and-hotel-value",
         "/hotel-valuation/partner-buyout-valuation",
         "/hotel-valuation/pip-and-hotel-value",
@@ -85130,6 +85379,7 @@
         "/contact",
         "/glossary",
         "/team/nate-solomon",
+        "/hotel-valuation/insurance-costs-and-hotel-value",
         "/glossary/cap-rate",
         "/glossary/revpar",
         "/glossary/adr",
@@ -87198,6 +87448,7 @@
         "/team",
         "/contact",
         "/team/luke-thompson",
+        "/hotel-valuation/insurance-costs-and-hotel-value",
         "/team/nate-solomon",
         "/hotel-financing/loan-requirements",
         "/hotel-financing/closing-costs",
@@ -90126,6 +90377,7 @@
         "/hotel-valuation/broker-opinion-of-value",
         "/hotel-valuation/appraisal-lower-than-expected",
         "/hotel-valuation/branded-select-service-hotel-value",
+        "/hotel-valuation/insurance-costs-and-hotel-value",
         "/hotel-valuation/interest-rates-and-hotel-value",
         "/hotel-valuation/partner-buyout-valuation",
         "/hotel-valuation/pip-and-hotel-value",
@@ -90426,6 +90678,69 @@
         "/glossary/revpar",
         "/glossary/adr",
         "/tools/hotel-value-estimator",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/hotel-valuation/insurance-costs-and-hotel-value",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/971af7bd7354d30d.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-valuation/insurance-costs-and-hotel-value.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/nate-solomon",
+        "/research/mhi/q1-2026",
+        "/glossary/noi",
+        "/glossary/cap-rate",
+        "/glossary/revpar",
+        "/hotel-valuation/how-to-value-a-hotel",
+        "/hotel-industry/hotel-operating-costs",
+        "/sell-a-hotel/what-buyers-look-for",
+        "/hotel-financing/flood-insurance-requirements",
+        "/glossary/dscr",
+        "/hotel-valuation/appraisal-lower-than-expected",
+        "/hotel-valuation/broker-opinion-of-value",
+        "/hotel-valuation/property-tax-appeal",
+        "/tools/dscr-calculator",
+        "/hotel-financing/refinance-or-sell",
+        "/team/luke-thompson",
+        "/hotel-valuation/hotel-cap-rates",
+        "/glossary",
+        "/glossary/gop",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -93652,6 +93967,7 @@
         "/hotel-franchise-costs",
         "/hotel-industry/hotel-management-agreements",
         "/hotel-valuation/property-tax-appeal",
+        "/hotel-valuation/insurance-costs-and-hotel-value",
         "/glossary/ffe-reserve",
         "/tools/cap-rate-calculator",
         "/hotel-industry/extended-stay-hotels",

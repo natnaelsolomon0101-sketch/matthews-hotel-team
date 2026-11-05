@@ -5,6 +5,7 @@ import { page as a_broker_opinion_of_value } from "./broker-opinion-of-value";
 import { page as a_hotel_cap_rates } from "./hotel-cap-rates";
 import { page as a_how_to_value_a_hotel } from "./how-to-value-a-hotel";
 import { page as a_hub } from "./hub";
+import { page as a_insurance_costs_and_hotel_value } from "./insurance-costs-and-hotel-value";
 import { page as a_interest_rates_and_hotel_value } from "./interest-rates-and-hotel-value";
 import { page as a_partner_buyout_valuation } from "./partner-buyout-valuation";
 import { page as a_pip_and_hotel_value } from "./pip-and-hotel-value";
@@ -21,6 +22,7 @@ export const spokes: AnswerPage[] = [
   a_broker_opinion_of_value,
   a_hotel_cap_rates,
   a_how_to_value_a_hotel,
+  a_insurance_costs_and_hotel_value,
   a_interest_rates_and_hotel_value,
   a_partner_buyout_valuation,
   a_pip_and_hotel_value,
