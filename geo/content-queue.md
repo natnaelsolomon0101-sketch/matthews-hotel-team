@@ -807,3 +807,38 @@ committed alongside the page, 57 assertions. Reciprocal links added from `/hotel
 `/hotel-franchise-costs` (the hub), `/sell-a-hotel/franchise-transfer`, `/glossary/franchise-agreement`,
 `/glossary/franchise-fdd`, `/glossary/comp-set` and `/glossary/revpar`. No existing number changed. The page runs
 2,498 words against the brief's 2,500 ceiling, after four trimming passes from 3,718.
+
+**2026-11-05, Content Writer.** Opened `/hotel-valuation/insurance-costs-and-hotel-value`, **not merged: production has been
+paused since 2026-10-29**. Sections A to E are complete, F is SKIPPED, G is blocked and H and J were fully ticked, so the pick
+came from a coverage scan of `src/lib/data/`: "named storm", "wind deductible", "total insured value", "self-insured retention",
+"sale-leaseback", "SNDA", "condotel" and "probable maximum loss" each appeared in **zero** files, "property insurance" in one
+and "business interruption" in seven, every one of them a clause inside a page about something else. Of the zero-coverage
+candidates, insurance is the only one that is published, dated, currently moving and arithmetically connected to the three
+things this site already explains: it is a fixed charge, so it runs straight through net operating income into both the price
+and the loan. The site had the federal flood mandate (`/hotel-financing/flood-insurance-requirements`) and the
+taxes-and-insurance line (`/hotel-industry/hotel-operating-costs`), and nothing on what the premium does to value.
+
+Four sourcing notes for the next run. **`www.sec.gov` refuses a scripted reader (403) but serves filings to WebFetch**, which
+reads a 10-K in 100,000-character windows: pass `offset` to reach Item 1A and the MD&A, because the insurance disclosure is
+never in the first window. **EDGAR full-text search is the way to find which filing says what**:
+`https://efts.sec.gov/LATEST/search-index?q=%22total+insured+value%22&forms=10-K&startdt=...` answers 200 with JSON, and that
+query is what surfaced RLJ and Host as the two hotel owners that publish retention structure. `www.ciab.com` answers **429** to
+both curl and WebFetch, so the Council of Insurance Agents and Brokers market index was not read and is not cited;
+`www.wtwco.com` answers **429** the same way, so the WTW pricing survey is not on the page either. Marsh's own release page
+reads cleanly and is the one market index cited. **eCFR's `/current/` HTML pages now redirect a scripted reader to
+`unblock.federalregister.gov`**, so CFR sections are cited to Cornell LII (verified word for word against the versioner API,
+which still needs `--compressed` or answers 406). `legacy.sba.gov` serves SOP 50 10 8.1 as a 1.0 MB `.docx`, and reading
+`word/document.xml` out of the zip gives clean paragraph text.
+
+One finding worth keeping: SOP 50 10 8.1 and 13 CFR 120.160(c) disagree on the hazard insurance threshold, $50,000 in the SOP
+against $500,000 in the regulation. Both were read this run and the page states both, because on any hotel loan the difference
+is academic and the SOP is the operative text.
+
+The page runs 2,750 words by the template's own count, above the brief's 2,500 ceiling, after four trimming passes from 3,081.
+The site's other evidence-heavy pages sit at 2,515 to 2,987 by the same count. Nothing cut was a citation, a figure or an
+internal link, and further cutting would have removed sourced substance rather than padding. Prints no premium per key (no
+public source publishes one, and the REIT filings bundle insurance with property taxes so even their own lines cannot be
+split), no conventional, CMBS, life company or bridge lender insurance requirement (never published, rule 1), and no total
+insured value benchmark: the worked example labels its own total insured value, occupancy, rate, premium and cap rate as
+assumptions. Section N compliant: the brand sentence says plainly that the team does not place insurance or advise on it, and
+routes to broker opinions of value and sales.
