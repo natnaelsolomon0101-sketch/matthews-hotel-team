@@ -124,6 +124,49 @@ CSV still points at rather than genuine content gaps.
 
 ## Run notes
 
+**2026-11-06, Content Writer.** Shipped `/sell-a-hotel/hotel-destroyed-or-condemned` to a PR, **not merged**:
+production has been paused since 2026-10-29 (issue #89) and `geo/AGENTS.md` §3 step 6 cannot pass. Sections A to E
+are complete, F is SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage scan of
+`src/lib/data/`: "1033", "involuntary conversion", "sale-leaseback", "condo-hotel", "self-directed IRA" and
+"prohibited transaction" each appeared in **zero** files, "condemnation" in 6 (five of them a one-line franchise
+clause, one a ground-lease aside) and "insurance proceeds" in 1, inside a non-recourse carve-out list. The site
+explained how to sell a hotel, how to 1031 it and how to insure it against flood, and said nothing about the tax
+treatment of the money that arrives when the hotel is gone.
+
+**The find of this run, and it is three words.** 26 CFR 1.1033(g)-1(a) defines the disposition its special rules
+cover as "the seizure, requisition, or condemnation (but not destruction) of the converted property". So the
+like-kind replacement standard and the three-year period in section 1033(g) reach a hotel taken for a road widening
+and do **not** reach a hotel lost to a hurricane. Same statute, same section, and the burned hotel gets twelve fewer
+months plus the narrower functional-use test. Every future edit to this page must keep that distinction; it is the
+page's spine.
+
+**Three traps worth preserving.** (1) 26 CFR 1.1033(a)-2(c)(8): proceeds of a use and occupancy contract insuring
+against actual loss of net profits are **not** conversion proceeds but income like the profits they replace, so a
+hotel's business-interruption payment cannot be sheltered and has to be split out of the settlement before any
+replacement target is computed. (2) 26 CFR 1.1033(a)-2(c)(11): a condemnation award paid to the mortgagee is part of
+the amount realized whether or not the owner was personally liable, worked through in the regulation on a $100,000
+property with a $50,000 mortgage giving an amount realized of $110,000; and (c)(9)(ii) makes debt paydown not a
+replacement. For a leveraged hotel that is a funding gap, sized at $5,700,000 in the worked example. (3) 26 U.S.C.
+1245(b)(4): where section 1033 defers the gain, recapture is capped at recognized gain **plus the fair market value
+of acquired property that is not section 1245 property**, so replacing a hotel with bare land or an unfitted shell
+can pull FF&E recapture into ordinary income even though every dollar was reinvested.
+
+**Sourcing notes for the next run.** The **eCFR API still needs `--compressed`** or it answers 406; title 26's latest
+issue is 2026-11-03 and `api/versioner/v1/full/2026-11-03/title-26.xml?part=1&section=1.1033(a)-2` returns clean
+section XML, parentheses in the section number and all. `www.law.cornell.edu/uscode/text/26/<n>` serves full statute
+text to a plain curl, including the amendment history. `www.irs.gov/pub/irs-pdf/p544.pdf` is 1.7 MB and
+`pdftotext -layout` gives readable two-column output. The **OpenFEMA v2 API works with no key**:
+`fema.gov/api/open/v2/DisasterDeclarationsSummaries` with an OData `$filter`, but note that each row is one county
+designation, not one disaster, so count distinct `disasterNumber` (717 rows collapse to 58 DR declarations for 2026
+through November 6). Two figures deliberately not published: any tax rate, because the page would then carry an
+unsourced number, and any lender policy on casualty-proceeds control, which is never published.
+
+**One length note.** The page landed at 2,497 words against the 2,500 ceiling after five trimming passes from 3,410.
+A future run wanting to add the severance-damages rules or the section 7508A disaster postponement should split the
+loss side (section 165, 1.165-7, 1.165-11 and the section 1231 netting rule) into its own page rather than compress
+this one further.
+
+
 **2026-10-29, Content Writer.** Shipped `/hotel-financing/public-incentives-and-tif`. Sections A to E are complete, F
 is SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage scan of `src/lib/data/`:
 "tax increment", "private activity", "tax-exempt bond", "municipal bond", "2017-13" and "publicly owned hotel" each

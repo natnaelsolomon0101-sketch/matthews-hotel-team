@@ -71,7 +71,8 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/flood-insurance-requirements",
     "/sell-a-hotel/tax-clearance-and-withholding",
     "/hotel-industry/fire-safety-and-federal-travel",
-    "/hotel-industry/karis-law-911-requirements"
+    "/hotel-industry/karis-law-911-requirements",
+    "/sell-a-hotel/hotel-destroyed-or-condemned"
   ],
   lastUpdated: "2026-10-05",
   authorSlug: "nate-solomon"

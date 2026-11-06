@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-11-03T14:36:08.458Z",
-  "base": "http://localhost:44419",
+  "runAt": "2026-11-06T14:28:20.020Z",
+  "base": "http://localhost:35143",
   "edges": [
     {
       "from": "/",
@@ -4189,6 +4189,10 @@
     {
       "from": "/sitemap",
       "to": "/sell-a-hotel/franchise-transfer"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/sell-a-hotel/hotel-destroyed-or-condemned"
     },
     {
       "from": "/sitemap",
@@ -39696,6 +39700,10 @@
     },
     {
       "from": "/glossary/noi",
+      "to": "/sell-a-hotel/hotel-destroyed-or-condemned"
+    },
+    {
+      "from": "/glossary/noi",
       "to": "/buy-a-hotel"
     },
     {
@@ -40093,6 +40101,10 @@
     {
       "from": "/glossary/ffe-reserve",
       "to": "/hotel-industry/karis-law-911-requirements"
+    },
+    {
+      "from": "/glossary/ffe-reserve",
+      "to": "/sell-a-hotel/hotel-destroyed-or-condemned"
     },
     {
       "from": "/glossary/ffe-reserve",
@@ -47024,6 +47036,10 @@
     },
     {
       "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/sell-a-hotel/hotel-destroyed-or-condemned"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
       "to": "/team/nate-solomon"
     },
     {
@@ -53368,6 +53384,10 @@
     },
     {
       "from": "/sell-a-hotel",
+      "to": "/sell-a-hotel/hotel-destroyed-or-condemned"
+    },
+    {
+      "from": "/sell-a-hotel",
       "to": "/sell-a-hotel/liquor-license-transfer"
     },
     {
@@ -53601,6 +53621,10 @@
     {
       "from": "/sell-a-hotel/1031-without-buying-another-hotel",
       "to": "/glossary/cap-rate"
+    },
+    {
+      "from": "/sell-a-hotel/1031-without-buying-another-hotel",
+      "to": "/sell-a-hotel/hotel-destroyed-or-condemned"
     },
     {
       "from": "/sell-a-hotel/1031-without-buying-another-hotel",
@@ -55184,6 +55208,198 @@
     },
     {
       "from": "/sell-a-hotel/franchise-transfer",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/_next/static/chunks/971af7bd7354d30d.css"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/sell-a-hotel/hotel-destroyed-or-condemned.md"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/listings"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/rates"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/about"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/team"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/contact"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/glossary/noi"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/glossary/ffe-reserve"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/sell-a-hotel/taxes-when-selling-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/sell-a-hotel/1031-without-buying-another-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/sell-a-hotel/selling-a-distressed-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/sell-a-hotel/estate-tax-and-basis-step-up"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/glossary"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/glossary/per-key"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/tools"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/research"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/markets"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/closed"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/process"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/services"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/insights"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/press"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "to": "/developers"
+    },
+    {
+      "from": "/sell-a-hotel/hotel-destroyed-or-condemned",
       "to": "/sitemap"
     },
     {
@@ -57073,6 +57289,10 @@
     {
       "from": "/sell-a-hotel/taxes-when-selling-a-hotel",
       "to": "/sell-a-hotel/1031-without-buying-another-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/taxes-when-selling-a-hotel",
+      "to": "/sell-a-hotel/hotel-destroyed-or-condemned"
     },
     {
       "from": "/sell-a-hotel/taxes-when-selling-a-hotel",
@@ -75338,6 +75558,7 @@
         "/sell-a-hotel/faq",
         "/sell-a-hotel/franchise-agreement-expiration",
         "/sell-a-hotel/franchise-transfer",
+        "/sell-a-hotel/hotel-destroyed-or-condemned",
         "/sell-a-hotel/how-long-it-takes",
         "/sell-a-hotel/how-to-choose-a-hotel-broker",
         "/sell-a-hotel/how-to-sell-a-hotel",
@@ -85144,6 +85365,7 @@
         "/sell-a-hotel/liquor-license-transfer",
         "/hotel-industry/hotel-worker-minimum-wage",
         "/hotel-industry/energy-benchmarking-and-emissions-limits",
+        "/sell-a-hotel/hotel-destroyed-or-condemned",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -85256,6 +85478,7 @@
         "/sell-a-hotel/tax-clearance-and-withholding",
         "/hotel-industry/fire-safety-and-federal-travel",
         "/hotel-industry/karis-law-911-requirements",
+        "/sell-a-hotel/hotel-destroyed-or-condemned",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -87198,6 +87421,7 @@
         "/team",
         "/contact",
         "/team/luke-thompson",
+        "/sell-a-hotel/hotel-destroyed-or-condemned",
         "/team/nate-solomon",
         "/hotel-financing/loan-requirements",
         "/hotel-financing/closing-costs",
@@ -88964,6 +89188,7 @@
         "/sell-a-hotel/faq",
         "/sell-a-hotel/franchise-agreement-expiration",
         "/sell-a-hotel/franchise-transfer",
+        "/sell-a-hotel/hotel-destroyed-or-condemned",
         "/sell-a-hotel/liquor-license-transfer",
         "/sell-a-hotel/selling-a-distressed-hotel",
         "/sell-a-hotel/selling-a-hotel-on-a-ground-lease",
@@ -89029,6 +89254,7 @@
         "/buy-a-hotel/how-to-make-an-offer",
         "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
         "/glossary/cap-rate",
+        "/sell-a-hotel/hotel-destroyed-or-condemned",
         "/glossary/bov",
         "/team/nate-solomon",
         "/sell-a-hotel/how-to-sell-a-hotel",
@@ -89457,6 +89683,60 @@
         "/hotels-for-sale",
         "/markets",
         "/closed",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/sell-a-hotel/hotel-destroyed-or-condemned",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/971af7bd7354d30d.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/sell-a-hotel/hotel-destroyed-or-condemned.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/nate-solomon",
+        "/glossary/noi",
+        "/glossary/ffe-reserve",
+        "/team/miles-cortez",
+        "/sell-a-hotel/taxes-when-selling-a-hotel",
+        "/sell-a-hotel/1031-without-buying-another-hotel",
+        "/sell-a-hotel/selling-a-distressed-hotel",
+        "/sell-a-hotel/estate-tax-and-basis-step-up",
+        "/glossary",
+        "/glossary/per-key",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
         "/services",
         "/services/investment-sales",
         "/services/capital-markets",
@@ -89999,6 +90279,7 @@
         "/sell-a-hotel/broker-fees",
         "/hotel-financing/1031-exchange-hotels",
         "/sell-a-hotel/1031-without-buying-another-hotel",
+        "/sell-a-hotel/hotel-destroyed-or-condemned",
         "/sell-a-hotel/estate-tax-and-basis-step-up",
         "/team/luke-thompson",
         "/sell-a-hotel/how-to-sell-a-hotel",
