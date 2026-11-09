@@ -100,6 +100,15 @@ November, and on manual dispatch. It:
 One-time repo setting the job needs: Settings, Actions, General, "Allow GitHub Actions to create
 and approve pull requests". Without it step 5 fails with a 403 and the branch is still pushed.
 
+That is exactly what happened on the first real quarterly refresh. Run 42107527734 on 2026-11-05
+streamed the 2026-09-30 files, reconciled every check, printed `GEO-CHECK PASS` inside the job and
+pushed `agent/sba-tracker/asof-2026-09-30-run-42107527734`, then failed on step 5 with
+`GitHub Actions is not permitted to create or approve pull requests (createPullRequest)`. The data
+was good and sat on an unopened branch for four days. The Site Maintainer run of 2026-11-09 opened
+the PR by hand and carried the three hand-typed citations on the answer pages with it. Until the
+setting is turned on, every quarterly refresh needs that manual step, so a maintainer run in
+February, May, August and November should check for an unopened `agent/sba-tracker/*` branch.
+
 Manual, from a laptop:
 
 ```bash

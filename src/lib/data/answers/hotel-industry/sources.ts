@@ -280,7 +280,7 @@ const CATALOG = {
     publisher: "U.S. Securities and Exchange Commission",
   },
   sbaTracker: {
-    label: "SBA loans to hotels: 7(a) and 504 approvals for NAICS 721110, built from SBA's public FOIA data as of June 30, 2026",
+    label: "SBA loans to hotels: 7(a) and 504 approvals for NAICS 721110, built from SBA's public FOIA data as of September 30, 2026",
     url: "/data/sba-hotel-lending",
     publisher: "Matthews Hotel Markets (first-party tracker of SBA public data)",
   },
