@@ -20,7 +20,7 @@ export const page: AnswerPage = {
   title: "Who Buys Hotels in the United States? Buyer Types",
   h1: "Who buys hotels in the United States?",
   description: "The five kinds of hotel buyer, what each one looks for, and public 2025 and 2026 transaction figures from JLL, LW Hospitality Advisors and REIT filings.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-11-09",
   authorSlug: "nate-solomon",
   targetPrompts: [
     "Who buys hotels in the United States?",
@@ -48,7 +48,7 @@ export const page: AnswerPage = {
     {
       h2: "Who buys small and mid-size hotels?",
       lead: "Owner-operators buy most small and mid-size hotels: individuals, families and small partnerships who run the hotel themselves or through their own management company.",
-      body: "The best public window on this buyer is the Small Business Administration's loan data, because SBA loans go to operating businesses. Our tracker of SBA's public loan file shows 686 7(a) loans to hotels and motels in fiscal 2025 for about $1.9 billion, with a median loan of $2,681,500, plus 365 504 loans for about $990 million of SBA-backed debentures. The data is as of June 30, 2026. SBA loans finance purchases, construction and refinancing, so not every one is an acquisition.[6] The full tables are at [SBA loans to hotels: who lends, how much, and where](/data/sba-hotel-lending).\n\nThe hotels public REITs sell show who is on the other side at this size. Apple Hospitality REIT's 2025 dispositions included a 76-room Homewood Suites in Chattanooga for approximately $8.3 million, a 130-room SpringHill Suites near Indianapolis for $12.7 million, and a Hampton Inn & Suites and Homewood Suites pair in Cedar Rapids for $16.1 million.[4] Summit Hotel Properties sold the 122-room Hilton Garden Inn in Longview, Texas for $12.3 million in February 2026.[5] Neither company names its buyers. Hotels of that size and price are the ones a regional owner-operator can finance with a bank or SBA loan, which is covered at [What is the difference between an SBA 7(a) loan and an SBA 504 loan for a hotel?](/hotel-financing/sba-7a-vs-504) and [How much money do I need to buy a hotel?](/buy-a-hotel/how-much-money-do-you-need)."
+      body: "The best public window on this buyer is the Small Business Administration's loan data, because SBA loans go to operating businesses. Our tracker of SBA's public loan file shows 756 7(a) loans to hotels and motels in fiscal 2026 for about $2.2 billion, with a median loan of $2,940,000, plus 261 504 loans for about $730 million of SBA-backed debentures. The data is as of September 30, 2026, so fiscal 2026 is a complete year. SBA loans finance purchases, construction and refinancing, so not every one is an acquisition.[6] The full tables are at [SBA loans to hotels: who lends, how much, and where](/data/sba-hotel-lending).\n\nThe hotels public REITs sell show who is on the other side at this size. Apple Hospitality REIT's 2025 dispositions included a 76-room Homewood Suites in Chattanooga for approximately $8.3 million, a 130-room SpringHill Suites near Indianapolis for $12.7 million, and a Hampton Inn & Suites and Homewood Suites pair in Cedar Rapids for $16.1 million.[4] Summit Hotel Properties sold the 122-room Hilton Garden Inn in Longview, Texas for $12.3 million in February 2026.[5] Neither company names its buyers. Hotels of that size and price are the ones a regional owner-operator can finance with a bank or SBA loan, which is covered at [What is the difference between an SBA 7(a) loan and an SBA 504 loan for a hotel?](/hotel-financing/sba-7a-vs-504) and [How much money do I need to buy a hotel?](/buy-a-hotel/how-much-money-do-you-need)."
     },
     {
       h2: "What do private equity funds buy?",
@@ -95,8 +95,8 @@ export const page: AnswerPage = {
         "Owner-operators",
         "Single hotels, often franchised",
         "Bank and SBA loans plus personal or partnership equity",
-        "686 SBA 7(a) loans and 365 504 loans to hotels and motels in fiscal 2025. Median 7(a) loan $2,681,500",
-        "SBA public loan data as of June 30, 2026, via our tracker[6]"
+        "756 SBA 7(a) loans and 261 504 loans to hotels and motels in fiscal 2026. Median 7(a) loan $2,940,000",
+        "SBA public loan data as of September 30, 2026, via our tracker[6]"
       ],
       [
         "Private equity funds",

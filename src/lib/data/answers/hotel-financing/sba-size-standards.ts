@@ -65,7 +65,7 @@
  *     in effect October 1, 2026 through September 30, 2027, and its 6.0
  *     percent floor;
  *   - content/sba/summary.json, the site's own NAICS 721110 extract of SBA's
- *     7(a) and 504 FOIA dataset as of June 30, 2026, published at
+ *     7(a) and 504 FOIA dataset as of September 30, 2026, published at
  *     /data/sba-hotel-lending.
  *
  * The worked example was recomputed line by line with
@@ -97,7 +97,7 @@ export const page: AnswerPage = {
   description:
     "The $40.0 million receipts standard for NAICS 721110, the $20 million alternative, which of your other hotels count, and the $3.75 million guaranty cap.",
   h1: "Is my hotel company too big for an SBA loan?",
-  lastUpdated: "2026-10-22",
+  lastUpdated: "2026-11-09",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -367,10 +367,10 @@ export const page: AnswerPage = {
     },
     {
       n: 16,
-      label: "SBA loans to hotels: who lends, how much, and where. Our extract of SBA's 7(a) and 504 FOIA dataset filtered to NAICS 721110, as of June 30, 2026: 3,879 7(a) hotel loans approved in fiscal years 2021 through 2025, of which 499 totalling $2,495,000,000 fell in the $5.0 million and over band, and 1,593 under $2 million",
+      label: "SBA loans to hotels: who lends, how much, and where. Our extract of SBA's 7(a) and 504 FOIA dataset filtered to NAICS 721110, as of September 30, 2026: 3,408 7(a) hotel loans approved in fiscal years 2022 through 2026, of which 541 totalling $2,705,000,000 fell in the $5.0 million and over band, and 1,277 under $2 million",
       url: "/data/sba-hotel-lending",
       publisher: "Matthews Hotel Markets",
-      accessed: "2026-10-22"
+      accessed: "2026-11-09"
     },
     {
       n: 17,

@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-11-03T14:36:02.246Z",
+  "runAt": "2026-11-09T13:15:14.821Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 338,
-  "blocksFound": 338,
-  "blocksValid": 338,
+  "urlsChecked": 337,
+  "blocksFound": 337,
+  "blocksValid": 337,
   "issues": [],
   "blocks": [
     {
@@ -168,6 +168,13 @@
       "issues": []
     },
     {
+      "url": "/data/sba-hotel-lending/ohio",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
       "url": "/data/sba-hotel-lending/north-carolina",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
@@ -182,42 +189,7 @@
       "issues": []
     },
     {
-      "url": "/data/sba-hotel-lending/ohio",
-      "index": 0,
-      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
-      "valid": true,
-      "issues": []
-    },
-    {
       "url": "/data/sba-hotel-lending/illinois",
-      "index": 0,
-      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/data/sba-hotel-lending/indiana",
-      "index": 0,
-      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/data/sba-hotel-lending/colorado",
-      "index": 0,
-      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/data/sba-hotel-lending/michigan",
-      "index": 0,
-      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/data/sba-hotel-lending/washington",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
       "valid": true,
@@ -231,7 +203,21 @@
       "issues": []
     },
     {
-      "url": "/data/sba-hotel-lending/virginia",
+      "url": "/data/sba-hotel-lending/colorado",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/data/sba-hotel-lending/indiana",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/data/sba-hotel-lending/michigan",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
       "valid": true,
@@ -245,6 +231,20 @@
       "issues": []
     },
     {
+      "url": "/data/sba-hotel-lending/washington",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/data/sba-hotel-lending/virginia",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
       "url": "/data/sba-hotel-lending/south-carolina",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
@@ -252,14 +252,14 @@
       "issues": []
     },
     {
-      "url": "/data/sba-hotel-lending/arizona",
+      "url": "/data/sba-hotel-lending/wisconsin",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
       "valid": true,
       "issues": []
     },
     {
-      "url": "/data/sba-hotel-lending/wisconsin",
+      "url": "/data/sba-hotel-lending/arizona",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
       "valid": true,
@@ -280,13 +280,6 @@
       "issues": []
     },
     {
-      "url": "/data/sba-hotel-lending/tennessee",
-      "index": 0,
-      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
-      "valid": true,
-      "issues": []
-    },
-    {
       "url": "/data/sba-hotel-lending/minnesota",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
@@ -301,14 +294,14 @@
       "issues": []
     },
     {
-      "url": "/data/sba-hotel-lending/oregon",
+      "url": "/data/sba-hotel-lending/tennessee",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
       "valid": true,
       "issues": []
     },
     {
-      "url": "/data/sba-hotel-lending/louisiana",
+      "url": "/data/sba-hotel-lending/oregon",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
       "valid": true,
@@ -336,13 +329,6 @@
       "issues": []
     },
     {
-      "url": "/data/sba-hotel-lending/new-jersey",
-      "index": 0,
-      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
-      "valid": true,
-      "issues": []
-    },
-    {
       "url": "/data/sba-hotel-lending/kansas",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
@@ -350,7 +336,14 @@
       "issues": []
     },
     {
-      "url": "/data/sba-hotel-lending/kentucky",
+      "url": "/data/sba-hotel-lending/louisiana",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/data/sba-hotel-lending/new-jersey",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
       "valid": true,
@@ -364,7 +357,7 @@
       "issues": []
     },
     {
-      "url": "/data/sba-hotel-lending/arkansas",
+      "url": "/data/sba-hotel-lending/kentucky",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
       "valid": true,
@@ -378,14 +371,7 @@
       "issues": []
     },
     {
-      "url": "/data/sba-hotel-lending/maryland",
-      "index": 0,
-      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/data/sba-hotel-lending/south-dakota",
+      "url": "/data/sba-hotel-lending/arkansas",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
       "valid": true,
@@ -399,7 +385,14 @@
       "issues": []
     },
     {
-      "url": "/data/sba-hotel-lending/idaho",
+      "url": "/data/sba-hotel-lending/maryland",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/data/sba-hotel-lending/north-dakota",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
       "valid": true,
@@ -413,7 +406,14 @@
       "issues": []
     },
     {
-      "url": "/data/sba-hotel-lending/west-virginia",
+      "url": "/data/sba-hotel-lending/nevada",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/data/sba-hotel-lending/south-dakota",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
       "valid": true,
@@ -427,7 +427,14 @@
       "issues": []
     },
     {
-      "url": "/data/sba-hotel-lending/nevada",
+      "url": "/data/sba-hotel-lending/nebraska",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/data/sba-hotel-lending/west-virginia",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
       "valid": true,
@@ -435,20 +442,6 @@
     },
     {
       "url": "/data/sba-hotel-lending/wyoming",
-      "index": 0,
-      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/data/sba-hotel-lending/new-hampshire",
-      "index": 0,
-      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
-      "valid": true,
-      "issues": []
-    },
-    {
-      "url": "/data/sba-hotel-lending/north-dakota",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,Dataset,BreadcrumbList",
       "valid": true,

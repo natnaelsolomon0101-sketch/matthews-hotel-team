@@ -30,7 +30,7 @@
  *     $5 million by 34.46 percent, effective March 18, 2024 (89 FR 11703);
  *   - the 7(a) and 504 hotel loan counts and size bands come from
  *     content/sba/summary.json, the site's own NAICS 721110 extract of SBA's
- *     7(a) and 504 FOIA dataset as of June 30, 2026, published at
+ *     7(a) and 504 FOIA dataset as of September 30, 2026, published at
  *     /data/sba-hotel-lending.
  *
  * Hypothetical inputs (assumptions, not published figures): the three hotel
@@ -159,9 +159,9 @@ eq("the binding constraint is the guaranty cap, not the size standard", grossLoa
 console.log("\n-- /data/sba-hotel-lending, NAICS 721110 --");
 const summary = JSON.parse(readFileSync(new URL("../content/sba/summary.json", import.meta.url), "utf8"));
 eq("the dataset is filtered to NAICS 721110", summary.meta.naics, "721110");
-eq("as of date", summary.meta.asOf, "2026-06-30");
-eq("last full fiscal year", summary.meta.lastFullFiscalYear, 2025);
-eq("trailing five fiscal years", summary.meta.trailing5.join(","), "2021,2022,2023,2024,2025");
+eq("as of date", summary.meta.asOf, "2026-09-30");
+eq("last full fiscal year", summary.meta.lastFullFiscalYear, 2026);
+eq("trailing five fiscal years", summary.meta.trailing5.join(","), "2022,2023,2024,2025,2026");
 
 const fy25a = summary.byFiscalYear.find((r) => r.fiscalYear === 2025 && r.program === "7a");
 const fy25c = summary.byFiscalYear.find((r) => r.fiscalYear === 2025 && r.program === "504");
@@ -173,15 +173,15 @@ eq("FY2025 504 hotel loan count", fy25c.count, 365);
 const b7 = summary.sizeBuckets.filter((b) => b.program === "7a");
 const total7a = sum(b7.map((b) => b.count));
 const atCap = b7.find((b) => b.bucket === "gte5m");
-eq("7(a) hotel loans in the trailing five years", total7a, 3_879);
-eq("loans in the $5.0 million and over band", atCap.count, 499);
-eq("dollars in that band", atCap.grossApproval, 2_495_000_000);
+eq("7(a) hotel loans in the trailing five years", total7a, 3_408);
+eq("loans in the $5.0 million and over band", atCap.count, 541);
+eq("dollars in that band", atCap.grossApproval, 2_705_000_000);
 eq("average loan in that band is exactly the program maximum", atCap.grossApproval / atCap.count, MAX_7A_LOAN);
 eq("so every loan in the band sat at the $5,000,000 cap", atCap.grossApproval / atCap.count === MAX_7A_LOAN ? 1 : 0, 1);
-eq("share of 7(a) hotel loans at the cap", pct1(atCap.count, total7a), 12.9);
+eq("share of 7(a) hotel loans at the cap", pct1(atCap.count, total7a), 15.9);
 const under2m = sum(b7.filter((b) => ["lt350k", "350k-1m", "1m-2m"].includes(b.bucket)).map((b) => b.count));
-eq("7(a) hotel loans under $2 million", under2m, 1_593);
-eq("share under $2 million", pct1(under2m, total7a), 41.1);
+eq("7(a) hotel loans under $2 million", under2m, 1_277);
+eq("share under $2 million", pct1(under2m, total7a), 37.5);
 
 /* ------------------------------------------------------- template limits */
 const src = readFileSync(
