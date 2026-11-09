@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-11-03T14:36:02.246Z",
+  "runAt": "2026-11-09T14:30:11.582Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 338,
-  "blocksFound": 338,
-  "blocksValid": 338,
+  "urlsChecked": 339,
+  "blocksFound": 339,
+  "blocksValid": 339,
   "issues": [],
   "blocks": [
     {
@@ -1394,6 +1394,13 @@
     },
     {
       "url": "/hotel-industry/franchise-territory-and-encroachment",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-industry/when-a-guest-becomes-a-tenant",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,

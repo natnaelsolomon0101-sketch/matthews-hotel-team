@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-11-03T14:36:08.458Z",
-  "base": "http://localhost:44419",
+  "runAt": "2026-11-09T14:30:19.355Z",
+  "base": "http://localhost:41047",
   "edges": [
     {
       "from": "/",
@@ -4509,6 +4509,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-industry/franchise-territory-and-encroachment"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-industry/when-a-guest-becomes-a-tenant"
     },
     {
       "from": "/sitemap",
@@ -41764,6 +41768,10 @@
     },
     {
       "from": "/glossary/sba-7a",
+      "to": "/hotel-industry/when-a-guest-becomes-a-tenant"
+    },
+    {
+      "from": "/glossary/sba-7a",
       "to": "/glossary/sba-504"
     },
     {
@@ -46637,6 +46645,10 @@
     {
       "from": "/hotel-financing/extended-stay-financing",
       "to": "/hotel-financing/sba-7a-vs-504"
+    },
+    {
+      "from": "/hotel-financing/extended-stay-financing",
+      "to": "/hotel-industry/when-a-guest-becomes-a-tenant"
     },
     {
       "from": "/hotel-financing/extended-stay-financing",
@@ -68180,6 +68192,10 @@
     },
     {
       "from": "/hotel-industry",
+      "to": "/hotel-industry/when-a-guest-becomes-a-tenant"
+    },
+    {
+      "from": "/hotel-industry",
       "to": "/hotel-franchise-costs"
     },
     {
@@ -70460,6 +70476,10 @@
     },
     {
       "from": "/hotel-industry/extended-stay-hotels",
+      "to": "/hotel-industry/when-a-guest-becomes-a-tenant"
+    },
+    {
+      "from": "/hotel-industry/extended-stay-hotels",
       "to": "/buy-a-hotel"
     },
     {
@@ -72668,6 +72688,206 @@
     },
     {
       "from": "/hotel-industry/franchise-territory-and-encroachment",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/_next/static/chunks/971af7bd7354d30d.css"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/hotel-industry/when-a-guest-becomes-a-tenant.md"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/glossary/sba-7a"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/glossary/sba-504"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/hotel-financing/extended-stay-financing"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/hotel-industry/extended-stay-hotels"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/hotel-industry/how-hotels-make-money"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/hotel-industry/revpar-adr-occupancy"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/hotel-industry/hotel-management-agreements"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/glossary/revpar"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/glossary/noi"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-industry/when-a-guest-becomes-a-tenant",
       "to": "/sitemap"
     },
     {
@@ -75418,6 +75638,7 @@
         "/hotel-industry/asbestos-renovation-rules",
         "/hotel-industry/karis-law-911-requirements",
         "/hotel-industry/franchise-territory-and-encroachment",
+        "/hotel-industry/when-a-guest-becomes-a-tenant",
         "/tools",
         "/tools/hotel-value-estimator",
         "/tools/hotel-loan-sizing-calculator",
@@ -85727,6 +85948,7 @@
         "/contact",
         "/glossary",
         "/team/luke-thompson",
+        "/hotel-industry/when-a-guest-becomes-a-tenant",
         "/glossary/sba-504",
         "/glossary/prime-rate",
         "/glossary/ltv",
@@ -87090,6 +87312,7 @@
         "/team/luke-thompson",
         "/hotel-financing/loan-requirements",
         "/hotel-financing/sba-7a-vs-504",
+        "/hotel-industry/when-a-guest-becomes-a-tenant",
         "/hotel-financing/hotel-lenders-by-type",
         "/hotel-financing/construction-loans",
         "/team/miles-cortez",
@@ -93075,6 +93298,7 @@
         "/hotel-industry/asbestos-renovation-rules",
         "/hotel-industry/karis-law-911-requirements",
         "/hotel-industry/franchise-territory-and-encroachment",
+        "/hotel-industry/when-a-guest-becomes-a-tenant",
         "/hotel-franchise-costs",
         "/glossary",
         "/glossary/revpar",
@@ -93711,6 +93935,7 @@
         "/hotel-industry/cost-to-build-a-hotel",
         "/hotel-franchise-costs/home2-suites",
         "/hotel-franchise-costs/homewood-suites",
+        "/hotel-industry/when-a-guest-becomes-a-tenant",
         "/buy-a-hotel",
         "/hotel-industry/chain-scales-and-classes",
         "/glossary",
@@ -94302,6 +94527,62 @@
         "/hotel-industry/chain-scales-and-classes",
         "/hotel-industry/revpar-adr-occupancy",
         "/glossary",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/hotel-industry/when-a-guest-becomes-a-tenant",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/971af7bd7354d30d.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-industry/when-a-guest-becomes-a-tenant.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/hotel-industry",
+        "/team/luke-thompson",
+        "/glossary/sba-7a",
+        "/glossary/sba-504",
+        "/hotel-financing/extended-stay-financing",
+        "/team/miles-cortez",
+        "/hotel-industry/extended-stay-hotels",
+        "/hotel-industry/how-hotels-make-money",
+        "/hotel-industry/revpar-adr-occupancy",
+        "/hotel-industry/hotel-management-agreements",
+        "/glossary",
+        "/glossary/revpar",
+        "/glossary/noi",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/tools",

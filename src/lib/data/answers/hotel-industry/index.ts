@@ -21,6 +21,7 @@ import { page as a_fire_safety_and_federal_travel } from "./fire-safety-and-fede
 import { page as a_asbestos_renovation_rules } from "./asbestos-renovation-rules";
 import { page as a_karis_law_911_requirements } from "./karis-law-911-requirements";
 import { page as a_franchise_territory_and_encroachment } from "./franchise-territory-and-encroachment";
+import { page as a_when_a_guest_becomes_a_tenant } from "./when-a-guest-becomes-a-tenant";
 import type { AnswerPage } from "../types";
 
 export const hub: AnswerPage = a_hub;
@@ -47,6 +48,7 @@ export const spokes: AnswerPage[] = [
   a_asbestos_renovation_rules,
   a_karis_law_911_requirements,
   a_franchise_territory_and_encroachment,
+  a_when_a_guest_becomes_a_tenant,
 ];
 
 export const pages: AnswerPage[] = [hub, ...spokes];
