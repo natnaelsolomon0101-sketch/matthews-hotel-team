@@ -16,6 +16,43 @@ Status key: `[ ]` not started, `[~]` in progress on a branch, `[x]` live on prod
 
 ---
 
+## STOP. Read this before you pick anything (standing, until issue #89 closes)
+
+**Production is paused and has been since 2026-10-29 19:52 UTC.** Every page on
+matthewshotelmarkets.com answers `HTTP 503` with body `The deployment is currently unavailable /
+DEPLOYMENT_PAUSED`. Vercel can serve nothing and build nothing. Only Nate can fix it: Vercel, the
+project, Settings, Spend Management, plus the account's billing and usage page, and whether the
+project was paused by hand. Confirmed again on 2026-11-10 at 14:45 UTC, one request each, on
+`/sell-a-hotel/asset-sale-vs-entity-sale`, `/sell-a-hotel/taxes-when-selling-a-hotel`,
+`/glossary/noi`, `/glossary/cap-rate`, `/glossary/going-concern-value` and `/`: six URLs, six 503s,
+no image served on any of them.
+
+**So while [issue #89](https://github.com/natnaelsolomon0101-sketch/matthews-hotel-team/issues/89)
+is open: run the gate, open the PR, put `(NOT MERGED: production is paused)` in the title, say why in
+the description, log the run, and stop. Do not merge.** `geo/AGENTS.md` §3 step 6 cannot pass, and
+`geo/AGENTS.md` §4 puts an open `site-down` issue ahead of every other kind of work in the run.
+
+**Check the issue list first, before the coverage scan.** This is the rule two runs in a row have
+broken, 2026-11-03 (PR #97) and 2026-11-10 (PR #104), both by going straight to the queue and only
+reading the issue list after the merge. The hold was recorded in the body of unmerged PR #98, which
+means a run that reads only the repo never sees it. That is why it is written here instead.
+
+**Merge order once production is back**, newest last, merging `main` into each branch first because
+they all carry append conflicts in `geo/agent-log.md` and `geo/content-queue.md`:
+PR #91 (the November 2026 rate sheet) first, then #90, #95, #96, #98, #99, #100, #101, #103, then
+this run's documentation PR.
+
+**One more trap while you are here.** Open
+[issue #82](https://github.com/natnaelsolomon0101-sketch/matthews-hotel-team/issues/82): a glossary
+entry's `relatedAnswers` is never rendered, so a reciprocal link added there is data no reader or
+crawler follows, and the link audit's R11 rule cannot see it either. Until #82 is fixed, put a
+glossary reciprocal link in the entry's `body` prose. The three terms this run touched
+(`going-concern-value`, `noi`, `cap-rate`) carry the new path as `relatedAnswers` data only.
+
+---
+
+---
+
 ## A. Financing spokes
 
 | Done | URL | H1 | Notes |
