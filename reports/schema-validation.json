@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-11-03T14:36:02.246Z",
+  "runAt": "2026-11-10T14:26:54.926Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 338,
-  "blocksFound": 338,
-  "blocksValid": 338,
+  "urlsChecked": 339,
+  "blocksFound": 339,
+  "blocksValid": 339,
   "issues": [],
   "blocks": [
     {
@@ -778,6 +778,13 @@
     },
     {
       "url": "/sell-a-hotel/1031-without-buying-another-hotel",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/sell-a-hotel/asset-sale-vs-entity-sale",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,
