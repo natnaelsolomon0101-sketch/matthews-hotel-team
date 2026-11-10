@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-11-03T14:36:08.458Z",
-  "base": "http://localhost:44419",
+  "runAt": "2026-11-10T14:27:01.683Z",
+  "base": "http://localhost:34393",
   "edges": [
     {
       "from": "/",
@@ -4161,6 +4161,10 @@
     {
       "from": "/sitemap",
       "to": "/sell-a-hotel/1031-without-buying-another-hotel"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/sell-a-hotel/asset-sale-vs-entity-sale"
     },
     {
       "from": "/sitemap",
@@ -37964,6 +37968,10 @@
     },
     {
       "from": "/glossary/cap-rate",
+      "to": "/sell-a-hotel/asset-sale-vs-entity-sale"
+    },
+    {
+      "from": "/glossary/cap-rate",
       "to": "/sell-a-hotel/1031-without-buying-another-hotel"
     },
     {
@@ -39652,6 +39660,10 @@
     },
     {
       "from": "/glossary/noi",
+      "to": "/sell-a-hotel/asset-sale-vs-entity-sale"
+    },
+    {
+      "from": "/glossary/noi",
       "to": "/hotel-financing/public-incentives-and-tif"
     },
     {
@@ -40637,6 +40649,10 @@
     {
       "from": "/glossary/going-concern-value",
       "to": "/glossary/cap-rate"
+    },
+    {
+      "from": "/glossary/going-concern-value",
+      "to": "/sell-a-hotel/asset-sale-vs-entity-sale"
     },
     {
       "from": "/glossary/going-concern-value",
@@ -53348,6 +53364,10 @@
     },
     {
       "from": "/sell-a-hotel",
+      "to": "/sell-a-hotel/asset-sale-vs-entity-sale"
+    },
+    {
+      "from": "/sell-a-hotel",
       "to": "/sell-a-hotel/employees-when-you-sell"
     },
     {
@@ -53720,6 +53740,234 @@
     },
     {
       "from": "/sell-a-hotel/1031-without-buying-another-hotel",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/_next/static/chunks/971af7bd7354d30d.css"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/sell-a-hotel/asset-sale-vs-entity-sale.md"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/listings"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/rates"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/about"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/team"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/contact"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/research/mhi/q1-2026"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/sell-a-hotel/taxes-when-selling-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/buy-a-hotel/depreciation-and-cost-segregation"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/buy-a-hotel/how-to-make-an-offer"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/hotel-valuation/property-tax-appeal"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/hotel-financing/1031-exchange-hotels"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/sell-a-hotel/1031-without-buying-another-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/sell-a-hotel/tax-clearance-and-withholding"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/sell-a-hotel/selling-to-a-foreign-buyer"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/sell-a-hotel/franchise-transfer"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/hotel-financing/loan-assumption"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/sell-a-hotel/liquor-license-transfer"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/sell-a-hotel/how-to-sell-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/glossary"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/glossary/going-concern-value"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/glossary/noi"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/glossary/cap-rate"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/tools"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/research"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/markets"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/closed"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/process"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/services"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/insights"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/press"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/developers"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
       "to": "/sitemap"
     },
     {
@@ -57057,6 +57305,10 @@
     {
       "from": "/sell-a-hotel/taxes-when-selling-a-hotel",
       "to": "/research/mhi/q1-2026"
+    },
+    {
+      "from": "/sell-a-hotel/taxes-when-selling-a-hotel",
+      "to": "/sell-a-hotel/asset-sale-vs-entity-sale"
     },
     {
       "from": "/sell-a-hotel/taxes-when-selling-a-hotel",
@@ -75331,6 +75583,7 @@
         "/hotel-financing/interest-rate-caps",
         "/hotel-financing/mezzanine-debt-and-preferred-equity",
         "/sell-a-hotel/1031-without-buying-another-hotel",
+        "/sell-a-hotel/asset-sale-vs-entity-sale",
         "/sell-a-hotel/broker-fees",
         "/sell-a-hotel/documents-needed",
         "/sell-a-hotel/employees-when-you-sell",
@@ -84663,6 +84916,7 @@
         "/glossary/revpar",
         "/glossary/adr",
         "/glossary/bov",
+        "/sell-a-hotel/asset-sale-vs-entity-sale",
         "/sell-a-hotel/1031-without-buying-another-hotel",
         "/hotel-valuation/how-to-value-a-hotel",
         "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
@@ -85133,6 +85387,7 @@
         "/glossary/cap-rate",
         "/glossary/revpar",
         "/glossary/adr",
+        "/sell-a-hotel/asset-sale-vs-entity-sale",
         "/hotel-financing/public-incentives-and-tif",
         "/hotel-valuation/how-to-value-a-hotel",
         "/hotel-valuation/hotel-cap-rates",
@@ -85410,6 +85665,7 @@
         "/glossary/bov",
         "/glossary/noi",
         "/glossary/cap-rate",
+        "/sell-a-hotel/asset-sale-vs-entity-sale",
         "/hotel-financing/appraisal-requirements",
         "/sell-a-hotel/1031-without-buying-another-hotel",
         "/sell-a-hotel/estate-tax-and-basis-step-up",
@@ -88959,6 +89215,7 @@
         "/sell-a-hotel/off-market-vs-marketed",
         "/sell-a-hotel/how-to-choose-a-hotel-broker",
         "/sell-a-hotel/1031-without-buying-another-hotel",
+        "/sell-a-hotel/asset-sale-vs-entity-sale",
         "/sell-a-hotel/employees-when-you-sell",
         "/sell-a-hotel/estate-tax-and-basis-step-up",
         "/sell-a-hotel/faq",
@@ -89036,6 +89293,69 @@
         "/sell-a-hotel/what-buyers-look-for",
         "/sell-a-hotel/tax-clearance-and-withholding",
         "/glossary",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/971af7bd7354d30d.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/sell-a-hotel/asset-sale-vs-entity-sale.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/miles-cortez",
+        "/research/mhi/q1-2026",
+        "/sell-a-hotel/taxes-when-selling-a-hotel",
+        "/buy-a-hotel/depreciation-and-cost-segregation",
+        "/buy-a-hotel/how-to-make-an-offer",
+        "/hotel-valuation/property-tax-appeal",
+        "/hotel-financing/1031-exchange-hotels",
+        "/sell-a-hotel/1031-without-buying-another-hotel",
+        "/sell-a-hotel/tax-clearance-and-withholding",
+        "/sell-a-hotel/selling-to-a-foreign-buyer",
+        "/sell-a-hotel/franchise-transfer",
+        "/hotel-financing/loan-assumption",
+        "/team/luke-thompson",
+        "/sell-a-hotel/liquor-license-transfer",
+        "/sell-a-hotel/how-to-sell-a-hotel",
+        "/glossary",
+        "/glossary/going-concern-value",
+        "/glossary/noi",
+        "/glossary/cap-rate",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -89995,6 +90315,7 @@
         "/contact",
         "/team/nate-solomon",
         "/research/mhi/q1-2026",
+        "/sell-a-hotel/asset-sale-vs-entity-sale",
         "/buy-a-hotel/depreciation-and-cost-segregation",
         "/sell-a-hotel/broker-fees",
         "/hotel-financing/1031-exchange-hotels",

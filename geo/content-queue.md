@@ -638,6 +638,7 @@ Pick from `geo/04-queries.csv` prompts with no dedicated page, phrased the way p
 | [x] | `/sell-a-hotel/estate-tax-and-basis-step-up` | No CSV row targets it directly, and "estate tax", "step-up", "basis step" and "6166" are absent from `geo/04-queries.csv`. It answers the hold-or-sell half of the "Selling a hotel" cluster's tax questions, which `/sell-a-hotel/taxes-when-selling-a-hotel` answers only for a sale. The gap was total: "step-up", "1014", "6166", "2032A", "succession" and "generation-skipping" each appeared in **zero** files under `src/lib/data/`, and "estate tax" in five, every one of them the phrase "real estate tax". | Shipped 2026-10-27 in PR #86. |
 | [x] | `/hotel-financing/interest-deduction-limits` | No CSV row targets it directly, and "163(j)", "business interest", "interest deduction", "net operating loss" and "self-rental" are absent from `geo/04-queries.csv`. It answers the deductibility half of the "Loan types" and "Deal docs & underwriting" clusters, which between them ask what every loan product costs and never ask what of that cost is deductible. The gap was total: "163(j)" appeared in **zero** files under `src/lib/data/`, and "business interest" only inside the section 6166 phrase "closely held business interest". | Shipped 2026-10-28 in PR #87. |
 | [x] | `/hotel-financing/public-incentives-and-tif` | No CSV row targets it directly, and "tax increment", "private activity", "tax-exempt bond", "municipal bond", "2017-13" and "publicly owned hotel" each appeared in zero files under `src/lib/data/`, while "incentive" appeared in 25 files and never once about a state or local program. The site had five federal incentive pages and nothing on the layer a city controls | Shipped 2026-10-29. Covers why a private hotel's municipal debt is taxable (26 U.S.C. 141 and the 17-category 142(a) list), the one tax-exempt route that can reach a hotel rehab (the 144(c) qualified redevelopment bond, which cannot fund new construction), what Rev. Proc. 2017-13 does to a brand management agreement at a city-owned hotel, and two state TIF statutes that reach opposite answers. Carries the first hotel-level TIF figures on the site, recomputed from Missouri's own 2025 annual report: 8 hotel-named plans of 354, a 6.2 to 79.8 percent TIF share of total project cost. Prints no award size and no national hotel-TIF count, because neither is published. Texas Tax Code 351.102 left out: `statutes.capitol.texas.gov` is still a JavaScript shell |
+| [x] | `/sell-a-hotel/asset-sale-vs-entity-sale` | No CSV row targets it directly. The gap was near total: "equity sale", "successor liability", "Form 8308", "marketplace facilitator" and "1446" appeared in **zero** files under `src/lib/data/`, "membership interest" and "stock sale" in one each, and sections 751, 743 and 754 nowhere at all in a tax sense. The site had a full page on the tax layers of a hotel sale and nothing on the structure question that decides which sections those layers arrive through | Shipped 2026-11-10. Answers the question with a number: on the same $18,000,000 price and the same allocation, the seller's federal bill is identical both ways, $2,320,000, because section 751(c) treats the section 1245 recapture as an unrealized receivable and 26 CFR 1.1(h)-1(b)(3) hands the selling partner the section 1250 layer at 25 percent. The real differences are the buyer's $9,700,000 section 743(b) step-up (only with a 754 election), the loss of section 1031 (26 CFR 1.1031(a)-3(a)(5)(i)(C) excludes partnership interests), Washington's controlling-interest excise tax and California's change-in-control reassessment. Prints no lender or franchisor change-of-control consent terms and no consent fee: none is published |
 
 Remaining candidates: hotel loan assumption, seller financing for a hotel, preferred equity (needs a
 citable source), what buyers look for in a hotel, selling a hotel with a ground lease, hotel property
@@ -675,6 +676,63 @@ and lenders use these numbers?" as H2s, and `/buy-a-hotel/due-diligence-checklis
 the STR report tell me?". A third page on the same nouns is the pattern `geo/AGENTS.md` rule 4 forbids.
 str.com and costar.com both answer 403 to scripted readers, so the only sourcing route is an FDD
 Item 19 definition, which the new underwriting page now cites.
+
+**2026-11-10, Content Writer.** Shipped `/sell-a-hotel/asset-sale-vs-entity-sale`. Sections A to E are complete, F is
+SKIPPED, G is blocked, and H and J were fully ticked, so the pick came from a coverage scan of `src/lib/data/`:
+"equity sale", "successor liability", "Form 8308", "marketplace facilitator" and "1446" each appeared in **zero** files,
+"membership interest" and "stock sale" in one each, and "751", "743" and "754" matched only street numbers and phone
+numbers in `listings.ts`, `markets.ts`, `offices.ts` and `team.ts`. The site carried
+`/sell-a-hotel/taxes-when-selling-a-hotel` on the tax layers of a hotel sale and nothing on the deal-structure question
+that decides which code sections those layers arrive through, which is the first question a buyer's counsel asks.
+
+**The find of this run, and the reason the page exists.** Selling the LLC does not convert depreciation into capital
+gain, and it takes *two separate rules* to say so. Section 751(c)'s flush language treats section 1245(a)(3) property as
+an unrealized receivable to the extent of the recapture a deemed sale at fair market value would produce, which section
+751(a) makes ordinary income. Unrecaptured section 1250 gain is **not** a section 751 hot asset on a straight-line
+building, because the section 1250(a) recapture amount is zero; it reaches the selling partner through the look-through
+rule in 26 CFR 1.1(h)-1(b)(3) instead, which assigns the partner's share of section 1250 capital gain from a deemed cash
+sale immediately before the transfer. Two mechanisms, same destination, 25 percent. Any later edit that collapses them
+into one sentence makes the page wrong.
+
+**The second precision point. Do not let a later run smooth it over.** The federal bill came out identical in the worked
+example *because the asset-sale allocation was set equal to fair market value*. Section 1060 lets the parties bind
+themselves to a written allocation; sections 751 and 1.1(h)-1 ignore agreement and run off a deemed sale at fair market
+value. That is where the two structures actually diverge for the seller, and the page shows it with a $68,000 figure on a
+$400,000 shift from FF&E to goodwill.
+
+**Sourcing notes for the next run.** `leginfo.legislature.ca.gov` now answers **403** to a scripted reader, so the text
+of R&TC 64 and 11925 was unreadable this run; the working substitute is the Board of Equalization's own PDFs,
+`boe.ca.gov/proptaxes/pdf/ptr462-180.pdf` (Property Tax Rule 462.180, 18 CCR 462.180, which reproduces the 64(c) and
+64(d) tests with worked examples) and `boe.ca.gov/proptaxes/pdf/boe100b-inst.pdf` (BOE-100-B-INST REV. 6 (5-22), which
+carries the 90-day deadline and the R&TC 482 penalty). Both are Flate-encoded, so WebFetch returns metadata only: save
+the PDF and run `pdftotext -layout`. `boe.ca.gov/lawguides/property/current/ptlg/rt/<section>.html` is **404**; that path
+is gone. `www.ecfr.gov/current/title-26/...` now 302s to `unblock.federalregister.gov`, so the eCFR versioner API
+(`/api/versioner/v1/full/<date>/title-26.xml?section=<n>`) is the only route to a regulation, and it handled both
+`1.1(h)-1` and `1.1031(a)-3` cleanly. `app.leg.wa.gov/RCW/default.aspx?cite=<n>` serves clean text but RCW 82.45.010 is
+148 KB, so the controlling-interest definition needs RCW 82.45.033 fetched separately.
+
+**A Washington detail with a date on it.** The DOR excise-tax page publishes two threshold sets. The tiers in force
+through December 31, 2026 are $525,000 / $1,525,000 / $3,025,000; the four-year adjustment effective **January 1, 2027**
+moves them to $551,000 / $1,551,000 / $3,051,000 at the same 1.1 / 1.28 / 2.75 / 3.0 percent rates. On an $18,000,000
+hotel that is $509,075 now against $508,581 in January, a $494 difference, which the page prints precisely because it
+shows how little the adjustment matters at hotel scale.
+
+**For the Rate Sheet agent.** The live `/rates` edition is still October 2026, published 2026-10-01, whose `nextRefresh`
+field reads `2026-11-02`. No November 2026 edition exists in `src/lib/rates/sheet.ts` as of this run, so the first-party
+data block on this page sources to the Matthews Hotel Index Q1 2026 (Atlanta select-service 8.00% to 8.75%, the low end
+setting the $18,000,000 price) rather than to the rate sheet. Second run in a row to record this.
+
+Three things the run deliberately did not publish: any lender's or franchisor's change-of-control consent standard or
+consent fee (never published, rule 1); California's documentary transfer tax treatment of entity-interest transfers,
+because R&TC 11925 could not be read from a primary source this run; and any claim that a state without a
+controlling-interest rule cannot reach an entity sale, because the absence of a rule is not a sourceable fact. Every
+figure in the worked example was recomputed by `scripts/check-entity-sale-math.mjs`, committed alongside the page, 38
+assertions covering both structures, the zero difference between them, the buyer's lost depreciation, both Washington
+threshold sets and the California base year value reset. Reciprocal links added from
+`/sell-a-hotel/taxes-when-selling-a-hotel`, `/glossary/going-concern-value`, `/glossary/noi` and `/glossary/cap-rate`.
+No existing number changed. The page runs 2,769 words after five trimming passes from 3,608, over the brief's 2,500
+ceiling; 25 of the site's 134 answer pages are above it by the same count and the statute-dense ones sit at 2,700 to
+3,086, so the remaining cut would have had to come out of sourced substance rather than padding.
 
 ## K. Shipped 2026-09-18 (second push)
 

@@ -17,7 +17,7 @@ export const page: AnswerPage = {
   title: "Taxes When You Sell a Hotel: A 2026 Owner's Guide",
   h1: "What taxes do I pay when I sell a hotel?",
   description: "Capital gain, unrecaptured section 1250 gain at up to 25%, section 1245 recapture on FF&E, the 3.8% NIIT, state transfer tax and 1031 exchanges.",
-  lastUpdated: "2026-09-23",
+  lastUpdated: "2026-11-10",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -41,7 +41,7 @@ export const page: AnswerPage = {
     {
       h2: "How is the gain on a hotel sale calculated?",
       lead: "Asset by asset. A hotel sale is a sale of land, a building, personal property and often goodwill, and each has its own basis and its own tax treatment.",
-      body: "Gain is the amount realized for an asset minus its adjusted basis, which is what you paid plus improvements minus the depreciation allowed or allowable. Because a hotel is an operating business, the IRS treats its sale as the sale of a group of assets. When goodwill or going concern value could attach, both the seller and the buyer must file Form 8594 and allocate the price across asset classes. Furniture, fixtures, buildings, land and equipment are generally Class V, other section 197 intangibles are Class VI, and goodwill and going concern value are Class VII.[4]\n\nThe allocation is negotiated in the purchase agreement, and the two sides want different things. A buyer generally prefers more price on FF&E, which it can depreciate quickly. A seller generally prefers less, because FF&E gain is ordinary income. Settle the allocation with your CPA before you sign, not at closing."
+      body: "Gain is the amount realized for an asset minus its adjusted basis, which is what you paid plus improvements minus the depreciation allowed or allowable. Because a hotel is an operating business, the IRS treats its sale as the sale of a group of assets. When goodwill or going concern value could attach, both the seller and the buyer must file Form 8594 and allocate the price across asset classes. Furniture, fixtures, buildings, land and equipment are generally Class V, other section 197 intangibles are Class VI, and goodwill and going concern value are Class VII.[4]\n\nThe allocation is negotiated in the purchase agreement, and the two sides want different things. A buyer generally prefers more price on FF&E, which it can depreciate quickly. A seller generally prefers less, because FF&E gain is ordinary income. Settle the allocation with your CPA before you sign, not at closing. All of this assumes the hotel itself is sold; if the deal is papered as a sale of the ownership entity instead, the layers below still apply but they arrive through different sections, which is at [should I sell my hotel as an asset sale or sell the LLC?](/sell-a-hotel/asset-sale-vs-entity-sale)."
     },
     {
       h2: "How is the building taxed?",
@@ -253,7 +253,8 @@ export const page: AnswerPage = {
       "/sell-a-hotel/documents-needed",
       "/sell-a-hotel/franchise-agreement-expiration",
       "/sell-a-hotel/faq",
-      "/sell-a-hotel/tax-clearance-and-withholding"
+      "/sell-a-hotel/tax-clearance-and-withholding",
+      "/sell-a-hotel/asset-sale-vs-entity-sale"
     ],
     glossary: [
       "/glossary/noi",

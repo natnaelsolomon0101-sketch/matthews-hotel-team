@@ -62,6 +62,7 @@ export const entry: GlossaryEntry = {
     "adr"
   ],
   relatedAnswers: [
+    "/sell-a-hotel/asset-sale-vs-entity-sale",
     "/hotel-financing/public-incentives-and-tif",
     "/hotel-valuation/how-to-value-a-hotel",
     "/hotel-valuation/hotel-cap-rates",
