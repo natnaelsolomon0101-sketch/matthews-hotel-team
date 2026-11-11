@@ -72,7 +72,8 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/new-markets-tax-credits",
     "/hotel-financing/hotel-loan-rates",
     "/tools/dscr-calculator",
-    "/hotel-financing/chapter-11-bankruptcy"
+    "/hotel-financing/chapter-11-bankruptcy",
+    "/buy-a-hotel/raising-equity-from-investors"
   ],
   lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson"

@@ -9,6 +9,7 @@ import { page as a_how_much_money_do_you_need } from "./how-much-money-do-you-ne
 import { page as a_how_to_make_an_offer } from "./how-to-make-an-offer";
 import { page as a_how_to_underwrite_a_hotel_deal } from "./how-to-underwrite-a-hotel-deal";
 import { page as a_hub } from "./hub";
+import { page as a_raising_equity_from_investors } from "./raising-equity-from-investors";
 import { page as a_seller_financing } from "./seller-financing";
 import type { AnswerPage } from "../types";
 
@@ -24,6 +25,7 @@ export const spokes: AnswerPage[] = [
   a_how_much_money_do_you_need,
   a_how_to_make_an_offer,
   a_how_to_underwrite_a_hotel_deal,
+  a_raising_equity_from_investors,
   a_seller_financing,
 ];
 

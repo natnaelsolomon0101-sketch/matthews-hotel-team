@@ -734,6 +734,75 @@ No existing number changed. The page runs 2,769 words after five trimming passes
 ceiling; 25 of the site's 134 answer pages are above it by the same count and the statute-dense ones sit at 2,700 to
 3,086, so the remaining cut would have had to come out of sourced substance rather than padding.
 
+**2026-11-11, Content Writer.** Shipped `/buy-a-hotel/raising-equity-from-investors` to a branch and PR #106,
+**not merged**: production has answered HTTP 503 since 2026-10-29 and `geo/AGENTS.md` §3 step 6 cannot pass. See the
+production paragraph at the end of this note. Sections A to E are complete, F is SKIPPED, G is blocked, and H and J
+were fully ticked, so the pick came from a coverage scan of `src/lib/data/`: "506(b)", "blue sky", "sale leaseback"
+and "condo-hotel" each appeared in **zero** files, "accredited investor", "Form D" and "broker-dealer" in one each
+(all three inside `/sell-a-hotel/1031-without-buying-another-hotel`, about Delaware statutory trusts), and
+"Regulation D" in five, every one of them a tenant's lease exhibit or an unrelated SBA citation. The site carried
+`/buy-a-hotel/how-much-money-do-you-need` on how large the cheque is and `/hotel-financing/capital-stack` on the
+institutional layers, and nothing at all on the law that governs the equity line when the money comes from other
+people, which is how most first hotels are actually bought.
+
+**The find of this run.** Howey is a hotel case. SEC v. W. J. Howey Co., 328 U.S. 293, decided May 27, 1946, records
+that the citrus-grove buyers were "patrons of a resort hotel owned and operated by the Howey Company", and that the
+hotel's own advertising drew their attention to the groves. The holding then closes the escape route every hotel
+sponsor reaches for: an investment contract exists "it being immaterial whether the shares in the enterprise are
+evidenced by formal certificates or by nominal interests in the physical assets employed in the enterprise". A deeded
+tenant-in-common interest in a hotel is therefore no safer than an LLC unit.
+
+**The second find, and do not let a later run smooth it over.** A hotel is **not** a "real estate operation" for SEC
+financial-statement purposes. 17 CFR 210.3-14(a)(2)(i) defines a real estate operation as a business that "generates
+substantially all of its revenues through the leasing of real property", and a hotel sells nightly rooms and services.
+It is a business under 17 CFR 210.11-01(d) instead, so Rule 8-04 applies Rule 3-05, not 8-06 and 3-14. That matters
+because 17 CFR 230.502(b)(2)(i)(B) sends a 506(b) offering with one purchaser who is not accredited to paragraph (b)
+of Part F/S of Form 1-A up to $20,000,000 and to paragraph (c) above it, and Part F/S (b)(2) says Tier 1 statements
+"need not be audited" while (c)(1)(ii) says "Audited financial statements are required for Tier 2 offerings". Above
+$20,000,000, with one unaccredited investor, the sponsor owes two audited fiscal years of the hotel's own numbers
+(3-05(b)(2)(iii), above 40 percent significance), which on a single-asset LLC means asking the seller for auditable
+books. Any later edit that swaps 8-06 for 8-04 makes the page wrong.
+
+**The precision point on the 2025 verification letter.** The SEC staff response of March 12, 2025 agrees that "a high
+minimum investment amount is a relevant factor in verifying accredited investor status" and **names no dollar figure**.
+The $200,000 for a natural person and $1,000,000 for a legal entity that the market now quotes as the rule come from
+the requester's own letter of March 6, 2025, read this run as the incoming PDF. Keep the attribution: the figures are
+the applicant's, not the Commission's.
+
+**What the run could not source, for the next writer.** Colorado's notice filing fee for a Rule 506 offering. C.R.S.
+11-51-304.5 is titled "Notice filing - investment companies" and runs on a federal covered security "as defined in
+section 18(b)(2)", which is the investment-company clause, not the 18(b)(4)(F) clause a Rule 506 offering sits in, so
+it is the wrong statute for this purpose; the fee, if any, is set by rule under 11-51-707 and
+`securities.colorado.gov` answers **403** to a scripted reader. Secondary sources split between $50 and no filing at
+all, so no Colorado number is published here. Texas is on the page because the State Securities Board publishes its
+own terms: 1/10 of 1 percent of the offering, capped at $500, 15 calendar days after the first sale in Texas. The SEC
+Office of the Advocate for Small Business Capital Formation FY2025 report (January 8, 2026) has the aggregate Rule 506
+volumes, but `sec.gov/files/2025-oasb-staff-report.pdf` is over 10 MB, which WebFetch refuses, and a scripted fetch
+of sec.gov with a browser user agent is bot-check circumvention and was not attempted. No aggregate market figure is
+published on the page as a result. `www.sec.gov/files/form1-a.pdf` **does** come back through WebFetch at 508 KB and
+`pdftotext` reads it cleanly, which is how Part F/S was quoted.
+
+Every figure in the worked example was recomputed by `scripts/check-equity-raise-math.mjs`, committed alongside the
+page: 26 assertions covering the 504 sizing with the $5,000,000 hotel debenture cap binding above $14,285,714 of
+project cost, the 18.9 percent contribution the cap forces against the 15 percent minimum, the $3,750,000 of cash,
+the ten $250,000 units, the zero purchasers counted against the 35-purchaser limit, the distance to the $20,000,000
+audit line and the Texas fee cap. Reciprocal links added from `/buy-a-hotel/how-much-money-do-you-need`,
+`/hotel-financing/capital-stack`, `/glossary/mezzanine-debt`, `/glossary/dscr` and `/glossary/cap-rate`; the two
+answer pages had their `lastUpdated` bumped because their prose changed, and the three glossary terms did not,
+because only their `relatedAnswers` list did. The page prints no lender's equity requirement, no DSCR floor and no
+LTV ceiling: none is published. No existing number changed. The page runs 2,498 words against the 2,500 ceiling,
+after six trimming passes from 3,102; the trimming dropped one takeaway and two FAQs whose points the comparison
+table and the body both already carry, and nothing cut was a citation or a rule.
+
+**Production, and why this did not merge.** One request to `https://matthewshotelmarkets.com/` at the start of this
+run: **HTTP 503**, day 14 of the outage that opened issue #89 on 2026-10-29. Vercel is refusing to serve and to build
+(`x-vercel-error: DEPLOYMENT_PAUSED`; every merge since 2026-11-02 carries `failure / Deployment was blocked`), which
+only Nate can clear from the Vercel dashboard, Spend Management first. Eleven agent PRs are now held unmerged for
+this reason: #66, #90, #91, #95, #96, #98, #99, #100, #101, #103 and #105. The 2026-11-10 run merged PR #104 through
+that hold by mistake, recorded in unmerged PR #105; this run read the open issue list and the open PR list **before**
+picking a page, and did not merge. Merge order when production returns, merging `main` into each branch first: #91,
+then #90, #95, #96, #98, #99, #100, #101, #103, #105, then PR #106, then verify every new URL once.
+
 ## K. Shipped 2026-09-18 (second push)
 
 - `/hotel-franchise-costs` (new cluster): hub with a 14-brand comparison table, plus `hampton-inn`, `hilton-garden-inn`, `home2-suites`, `homewood-suites`, `tru-by-hilton`, `spark-by-hilton`, `tapestry-collection`, `doubletree`, `hyatt-place`, `comfort-inn`, `days-inn`, `super-8`, `la-quinta`, `best-western`. Every figure is from the brand's own 2026 FDD.
