@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-11-10T14:27:01.683Z",
-  "base": "http://localhost:34393",
+  "runAt": "2026-11-11T14:31:56.030Z",
+  "base": "http://localhost:39933",
   "edges": [
     {
       "from": "/",
@@ -4321,6 +4321,10 @@
     {
       "from": "/sitemap",
       "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/buy-a-hotel/raising-equity-from-investors"
     },
     {
       "from": "/sitemap",
@@ -37988,6 +37992,10 @@
     },
     {
       "from": "/glossary/cap-rate",
+      "to": "/buy-a-hotel/raising-equity-from-investors"
+    },
+    {
+      "from": "/glossary/cap-rate",
       "to": "/markets/austin-tx"
     },
     {
@@ -39305,6 +39313,10 @@
     {
       "from": "/glossary/dscr",
       "to": "/hotel-financing/chapter-11-bankruptcy"
+    },
+    {
+      "from": "/glossary/dscr",
+      "to": "/buy-a-hotel/raising-equity-from-investors"
     },
     {
       "from": "/glossary/dscr",
@@ -42765,6 +42777,10 @@
     {
       "from": "/glossary/mezzanine-debt",
       "to": "/hotel-financing/interest-deduction-limits"
+    },
+    {
+      "from": "/glossary/mezzanine-debt",
+      "to": "/buy-a-hotel/raising-equity-from-investors"
     },
     {
       "from": "/glossary/mezzanine-debt",
@@ -52028,6 +52044,10 @@
     },
     {
       "from": "/hotel-financing/capital-stack",
+      "to": "/buy-a-hotel/raising-equity-from-investors"
+    },
+    {
+      "from": "/hotel-financing/capital-stack",
       "to": "/glossary/key-money"
     },
     {
@@ -60340,6 +60360,10 @@
     },
     {
       "from": "/buy-a-hotel",
+      "to": "/buy-a-hotel/raising-equity-from-investors"
+    },
+    {
+      "from": "/buy-a-hotel",
       "to": "/buy-a-hotel/seller-financing"
     },
     {
@@ -61772,6 +61796,10 @@
     },
     {
       "from": "/buy-a-hotel/how-much-money-do-you-need",
+      "to": "/buy-a-hotel/raising-equity-from-investors"
+    },
+    {
+      "from": "/buy-a-hotel/how-much-money-do-you-need",
       "to": "/team/nate-solomon"
     },
     {
@@ -62336,6 +62364,206 @@
     },
     {
       "from": "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/_next/static/chunks/971af7bd7354d30d.css"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/buy-a-hotel/raising-equity-from-investors.md"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/listings"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/rates"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/about"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/team"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/contact"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/buy-a-hotel/how-much-money-do-you-need"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/hotel-financing/capital-stack"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/tools/dscr-calculator"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/buy-a-hotel/first-hotel-no-experience"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/buy-a-hotel/seller-financing"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/glossary"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/glossary/mezzanine-debt"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/glossary/dscr"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/glossary/cap-rate"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/tools"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/research"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/markets"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/closed"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/process"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/services"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/insights"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/press"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
+      "to": "/developers"
+    },
+    {
+      "from": "/buy-a-hotel/raising-equity-from-investors",
       "to": "/sitemap"
     },
     {
@@ -75623,6 +75851,7 @@
         "/buy-a-hotel/how-much-money-do-you-need",
         "/buy-a-hotel/how-to-make-an-offer",
         "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/buy-a-hotel/raising-equity-from-investors",
         "/buy-a-hotel/seller-financing",
         "/hotel-franchise-costs",
         "/hotel-franchise-costs/best-western",
@@ -84921,6 +85150,7 @@
         "/hotel-valuation/how-to-value-a-hotel",
         "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
         "/hotel-industry/energy-benchmarking-and-emissions-limits",
+        "/buy-a-hotel/raising-equity-from-investors",
         "/markets/austin-tx",
         "/markets/nashville-tn",
         "/markets/atlanta-ga",
@@ -85287,6 +85517,7 @@
         "/hotel-financing/hotel-loan-rates",
         "/tools/dscr-calculator",
         "/hotel-financing/chapter-11-bankruptcy",
+        "/buy-a-hotel/raising-equity-from-investors",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -86260,6 +86491,7 @@
         "/hotel-financing/how-debt-placement-works",
         "/hotel-financing/loan-workouts",
         "/hotel-financing/interest-deduction-limits",
+        "/buy-a-hotel/raising-equity-from-investors",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -88845,6 +89077,7 @@
         "/tools/hotel-loan-sizing-calculator",
         "/hotel-financing/sba-7a-vs-504",
         "/buy-a-hotel/seller-financing",
+        "/buy-a-hotel/raising-equity-from-investors",
         "/glossary/key-money",
         "/hotel-financing/closing-costs",
         "/hotel-financing/covenants-and-cash-management",
@@ -91157,6 +91390,7 @@
         "/buy-a-hotel/environmental-liability",
         "/buy-a-hotel/how-to-make-an-offer",
         "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/buy-a-hotel/raising-equity-from-investors",
         "/buy-a-hotel/seller-financing",
         "/team/luke-thompson",
         "/process",
@@ -91557,6 +91791,7 @@
         "/hotel-financing/sba-7a-vs-504",
         "/hotel-financing/pip-and-renovation-loans",
         "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/raising-equity-from-investors",
         "/team/nate-solomon",
         "/buy-a-hotel/first-hotel-no-experience",
         "/buy-a-hotel/branded-vs-independent",
@@ -91688,6 +91923,62 @@
         "/buy-a-hotel/branded-vs-independent",
         "/buy-a-hotel/first-hotel-no-experience",
         "/glossary",
+        "/glossary/cap-rate",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/buy-a-hotel/raising-equity-from-investors",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/971af7bd7354d30d.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/buy-a-hotel/raising-equity-from-investors.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/buy-a-hotel",
+        "/team/miles-cortez",
+        "/buy-a-hotel/how-much-money-do-you-need",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/hotel-financing/capital-stack",
+        "/tools/dscr-calculator",
+        "/team/luke-thompson",
+        "/buy-a-hotel/first-hotel-no-experience",
+        "/buy-a-hotel/seller-financing",
+        "/glossary",
+        "/glossary/mezzanine-debt",
+        "/glossary/dscr",
         "/glossary/cap-rate",
         "/hotel-franchise-costs",
         "/hotel-industry",

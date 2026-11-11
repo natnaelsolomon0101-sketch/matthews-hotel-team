@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "How Much Money Do You Need to Buy a Hotel?",
   h1: "How much money do I need to buy a hotel?",
   description: "The cash a hotel purchase takes: the SBA 504 equity minimum, why conventional equity is lender-set, plus franchise fees, PIP, closing costs and reserves.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-11-11",
   authorSlug: "luke-thompson",
   reviewerSlug: "nate-solomon",
   targetPrompts: [
@@ -67,7 +67,7 @@ export const page: AnswerPage = {
     {
       h2: "Can I buy a hotel with no money down?",
       lead: "Not with SBA 504, because the borrower contribution is a regulatory minimum.[1]",
-      body: "The 504 regulation requires the borrower to contribute at least 15 percent of project cost on a hotel.[1][2] Conventional lenders size to the hotel's income and to value, which leaves a gap the buyer fills. Partners can fill part of it, and so can a seller note where the senior lender allows one, but both come with conditions. Under SBA rules, holders of at least a 20 percent ownership interest generally must guarantee the loan, so bringing in partners spreads the guarantee along with the equity.[5]"
+      body: "The 504 regulation requires the borrower to contribute at least 15 percent of project cost on a hotel.[1][2] Conventional lenders size to the hotel's income and to value, which leaves a gap the buyer fills. Partners can fill part of it, and so can a seller note where the senior lender allows one, but both come with conditions. Under SBA rules, holders of at least a 20 percent ownership interest generally must guarantee the loan, so bringing in partners spreads the guarantee along with the equity.[5] Partners who stay passive are also investors in a security, which brings its own rules: see [How do I raise money from investors to buy a hotel?](/buy-a-hotel/raising-equity-from-investors)."
     }
   ],
   table: {

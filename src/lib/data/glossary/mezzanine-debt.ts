@@ -67,7 +67,8 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/hotel-lenders-by-type",
     "/hotel-financing/how-debt-placement-works",
     "/hotel-financing/loan-workouts",
-    "/hotel-financing/interest-deduction-limits"
+    "/hotel-financing/interest-deduction-limits",
+    "/buy-a-hotel/raising-equity-from-investors"
   ],
   lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson"
