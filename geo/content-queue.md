@@ -734,7 +734,7 @@ No existing number changed. The page runs 2,769 words after five trimming passes
 ceiling; 25 of the site's 134 answer pages are above it by the same count and the statute-dense ones sit at 2,700 to
 3,086, so the remaining cut would have had to come out of sourced substance rather than padding.
 
-**2026-11-11, Content Writer.** Shipped `/buy-a-hotel/raising-equity-from-investors` to a branch and a PR,
+**2026-11-11, Content Writer.** Shipped `/buy-a-hotel/raising-equity-from-investors` to a branch and PR #106,
 **not merged**: production has answered HTTP 503 since 2026-10-29 and `geo/AGENTS.md` §3 step 6 cannot pass. See the
 production paragraph at the end of this note. Sections A to E are complete, F is SKIPPED, G is blocked, and H and J
 were fully ticked, so the pick came from a coverage scan of `src/lib/data/`: "506(b)", "blue sky", "sale leaseback"
@@ -801,7 +801,7 @@ only Nate can clear from the Vercel dashboard, Spend Management first. Eleven ag
 this reason: #66, #90, #91, #95, #96, #98, #99, #100, #101, #103 and #105. The 2026-11-10 run merged PR #104 through
 that hold by mistake, recorded in unmerged PR #105; this run read the open issue list and the open PR list **before**
 picking a page, and did not merge. Merge order when production returns, merging `main` into each branch first: #91,
-then #90, #95, #96, #98, #99, #100, #101, #103, #105, then this run's PR, then verify every new URL once.
+then #90, #95, #96, #98, #99, #100, #101, #103, #105, then PR #106, then verify every new URL once.
 
 ## K. Shipped 2026-09-18 (second push)
 
