@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "What Is My Hotel Worth Per Key? (2026)",
   h1: "What is my hotel worth per key?",
   description: "Price per key and RevPAR multiples are sanity checks, not valuation methods. How to use them, where the public numbers come from, and what they miss.",
-  lastUpdated: "2026-09-18",
+  lastUpdated: "2026-11-12",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -61,7 +61,7 @@ export const page: AnswerPage = {
     {
       h2: "What does per key miss?",
       lead: "Everything that makes one room worth more than another: margin, brand, capital needs, land and lease terms.",
-      body: "An open property improvement plan is a deduction from value that a per-key comp does not show. See [How does a PIP affect my hotel's value?](/hotel-valuation/pip-and-hotel-value) Food and beverage, meeting space and parking add revenue that a room count ignores. A ground lease or a property tax reassessment lowers NOI without touching the key count. A short remaining franchise term narrows the buyer pool. Each of these moves real value by more than the typical spread between two per-key comps. That is why a [broker opinion of value](/hotel-valuation/broker-opinion-of-value) states NOI, cap rate and per key together, and treats the third as the check on the first two."
+      body: "An open property improvement plan is a deduction from value that a per-key comp does not show. See [How does a PIP affect my hotel's value?](/hotel-valuation/pip-and-hotel-value) Food and beverage, meeting space and parking add revenue that a room count ignores. A ground lease or a property tax reassessment lowers NOI without touching the key count. Splitting the hotel into condominium units detaches the keys from the going concern altogether, which is a different question with its own answer: [can I sell my hotel as condominium units?](/sell-a-hotel/condo-hotel-conversion) A short remaining franchise term narrows the buyer pool. Each of these moves real value by more than the typical spread between two per-key comps. That is why a [broker opinion of value](/hotel-valuation/broker-opinion-of-value) states NOI, cap rate and per key together, and treats the third as the check on the first two."
     }
   ],
   table: {

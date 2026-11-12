@@ -639,6 +639,7 @@ Pick from `geo/04-queries.csv` prompts with no dedicated page, phrased the way p
 | [x] | `/hotel-financing/interest-deduction-limits` | No CSV row targets it directly, and "163(j)", "business interest", "interest deduction", "net operating loss" and "self-rental" are absent from `geo/04-queries.csv`. It answers the deductibility half of the "Loan types" and "Deal docs & underwriting" clusters, which between them ask what every loan product costs and never ask what of that cost is deductible. The gap was total: "163(j)" appeared in **zero** files under `src/lib/data/`, and "business interest" only inside the section 6166 phrase "closely held business interest". | Shipped 2026-10-28 in PR #87. |
 | [x] | `/hotel-financing/public-incentives-and-tif` | No CSV row targets it directly, and "tax increment", "private activity", "tax-exempt bond", "municipal bond", "2017-13" and "publicly owned hotel" each appeared in zero files under `src/lib/data/`, while "incentive" appeared in 25 files and never once about a state or local program. The site had five federal incentive pages and nothing on the layer a city controls | Shipped 2026-10-29. Covers why a private hotel's municipal debt is taxable (26 U.S.C. 141 and the 17-category 142(a) list), the one tax-exempt route that can reach a hotel rehab (the 144(c) qualified redevelopment bond, which cannot fund new construction), what Rev. Proc. 2017-13 does to a brand management agreement at a city-owned hotel, and two state TIF statutes that reach opposite answers. Carries the first hotel-level TIF figures on the site, recomputed from Missouri's own 2025 annual report: 8 hotel-named plans of 354, a 6.2 to 79.8 percent TIF share of total project cost. Prints no award size and no national hotel-TIF count, because neither is published. Texas Tax Code 351.102 left out: `statutes.capitol.texas.gov` is still a JavaScript shell |
 | [x] | `/sell-a-hotel/asset-sale-vs-entity-sale` | No CSV row targets it directly. The gap was near total: "equity sale", "successor liability", "Form 8308", "marketplace facilitator" and "1446" appeared in **zero** files under `src/lib/data/`, "membership interest" and "stock sale" in one each, and sections 751, 743 and 754 nowhere at all in a tax sense. The site had a full page on the tax layers of a hotel sale and nothing on the structure question that decides which sections those layers arrive through | Shipped 2026-11-10. Answers the question with a number: on the same $18,000,000 price and the same allocation, the seller's federal bill is identical both ways, $2,320,000, because section 751(c) treats the section 1245 recapture as an unrealized receivable and 26 CFR 1.1(h)-1(b)(3) hands the selling partner the section 1250 layer at 25 percent. The real differences are the buyer's $9,700,000 section 743(b) step-up (only with a 754 election), the loss of section 1031 (26 CFR 1.1031(a)-3(a)(5)(i)(C) excludes partnership interests), Washington's controlling-interest excise tax and California's change-in-control reassessment. Prints no lender or franchisor change-of-control consent terms and no consent fee: none is published |
+| [~] | `/sell-a-hotel/condo-hotel-conversion` | No CSV row targets it directly, and "condo", "condotel" and "rental pool" are absent from `geo/04-queries.csv`. The gap was total: "condo-hotel", "condotel", "rental pool", "leaseback", "sale leaseback", "innkeeper" and "FHA" each appeared in **zero** files under `src/lib/data/`, and "condominium" in five, every one of them an aside in an ADA, fire-safety, benchmarking or listing field. The 2026-10-08 run note already flagged "condotel" as a zero-hit term. The site answered how to sell a hotel whole and said nothing about the one alternative disposition an owner is pitched, which is to record a declaration and sell the rooms retail | Written 2026-11-12, PR open, **not merged**: production has answered HTTP 503 since 2026-10-29 so `geo/AGENTS.md` §3 step 6 cannot pass. The find: the three features that make the units saleable are the same three that make them unfinanceable. Securities Act Release 33-5347 (38 FR 1735, January 18, 1973) makes a rental pool, a required rental agent and a yield pitch an offering of investment contracts; Fannie Mae's B4-2.1-03 of November 4, 2026 makes mandatory pooling, profit sharing with a manager and any occupancy restriction ineligible. Also carries 24 CFR 234.26's 51 percent owner-occupancy test, 13 CFR 120.110(c) on the passive buyer, Florida's vacation-rental licence class (509.242) and the 80 percent / 5 percent termination vote in 718.117(3). Prints no condo-hotel unit price: no public source publishes one |
 
 Remaining candidates: hotel loan assumption, seller financing for a hotel, preferred equity (needs a
 citable source), what buyers look for in a hotel, selling a hotel with a ground lease, hotel property
@@ -676,6 +677,92 @@ and lenders use these numbers?" as H2s, and `/buy-a-hotel/due-diligence-checklis
 the STR report tell me?". A third page on the same nouns is the pattern `geo/AGENTS.md` rule 4 forbids.
 str.com and costar.com both answer 403 to scripted readers, so the only sourcing route is an FDD
 Item 19 definition, which the new underwriting page now cites.
+
+**2026-11-12, Content Writer.** Wrote `/sell-a-hotel/condo-hotel-conversion`. **Not merged.** Sections A to E are
+complete, F is SKIPPED, G is blocked, and H and J were fully ticked, so the pick came from a coverage scan of
+`src/lib/data/`: "condo-hotel", "condotel", "rental pool", "leaseback", "sale leaseback", "innkeeper", "FHA" and
+"marketplace facilitator" each appeared in **zero** files, and "condominium" in five, every one an aside in an ADA,
+fire-safety, benchmarking or listing field. The 2026-10-08 run note had already listed "condotel" and "sale-leaseback"
+as zero-hit candidates; this run takes the first of the two.
+
+**The find of this run.** The three features that make condo-hotel units saleable are the same three that make them
+unfinanceable, and two unrelated publishers say so in almost the same words 53 years apart. Securities Act Release No.
+33-5347, at 38 FR 1735 on January 18, 1973, lists the arrangements that turn a unit sale into an offering of investment
+contracts: a sale pitched on the economic benefits of the promoter's or a designated manager's efforts, participation in
+a rental pool, or a requirement that the buyer hold the unit available for rent, use an exclusive rental agent or accept
+any material restriction on occupancy. Fannie Mae's Selling Guide topic B4-2.1-03, as updated **November 4, 2026**, makes
+a project ineligible if its documents require rental pooling, require owners to share rental profits with the association
+or a manager, restrict an owner's occupancy during any part of the year, or if the association is licensed as a hotel.
+Same features, two regimes, opposite publishers. Any later edit that treats these as two separate problems loses the
+point of the page.
+
+**The one path out, and keep it narrow.** Release 33-5347 says an owner may, *after* buying, enter a **non-pooled**
+rental arrangement with an agent who was not designated or required as a condition of the purchase, affiliated or not,
+without making the unit a security. The restriction runs on what is promised at the point of sale. A converter selling on
+a projected yield cannot use that path, and Fannie Mae closes it anyway where the arrangement runs through the
+association or the management company. Do not let a later run widen this into a safe harbour for a rental programme.
+
+**The number that ends the exit.** Fla. Stat. 718.117(3) (2026) needs 80 percent of the total voting interests to approve
+an optional termination, and the plan may not proceed if **5 percent or more** reject it by negative vote or written
+objection, with 718.117(3)(a)2 freezing a further plan for 24 months. On 200 units that is 160 votes to pass and 10 votes
+to kill, so ten units in the hands of holdouts is the whole of the owner's route back to a single-asset sale. This is the
+figure to re-read before any edit: the statute says 5 percent, not the 10 percent that secondary sources often quote.
+
+**Five sourcing notes for the next run.** **govinfo serves pre-1994 Federal Register issues as whole-issue PDFs** at
+`www.govinfo.gov/content/pkg/FR-YYYY-MM-DD/pdf/FR-YYYY-MM-DD.pdf`, which is how Release 33-5347 was read: the
+1973-01-18 issue is 33 MB and 184 pages, `pdftotext -layout` turns it into 1.95 MB of text, and grepping for the page
+number in the running header finds the release. The granule-level path that works for modern issues does not exist for
+1973, and `www.govinfo.gov/app/details/FR-1973-01-18` is an 865-byte JavaScript shell. **17 CFR part 231 is a table of
+citations, not text**: the eCFR versioner API returns the whole part at 13 KB listing each interpretive release with its
+number, date and FR cite, which is the clean way to confirm a release is still the Commission's codified interpretation,
+but `?section=231.5347` answers 404 because the sections do not exist. **`selling-guide.fanniemae.com/sel/b4-2.1-03/ineligible-projects`
+serves the current topic as plain HTML to curl at 200** and prints its own effective date in the heading; the older
+`/sel/b4-2.1-03/ineligible-project-characteristics` path is a 404. **`guide.freddiemac.com` renders in JavaScript** and
+returned 12 characters of text, so no Freddie Mac source was read and nothing on the page is attributed to Freddie except
+what Fannie's own text says about it. **`leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=<path>` still
+works** for the 2026 Florida Statutes, where `www.flsenate.gov` answers 403 (the 2026-10-26 note holds): note the path
+needs the range prefix, so chapter 509 is `0500-0599/0509/Sections/0509.242.html` and chapter 718 is
+`0700-0799/0718/Sections/0718.117.html`.
+
+**A correction a later run should not undo.** Florida no longer has a "resort condominium" licence class, which is what
+older material on condo hotels cites. The 2026 section 509.242(1)(c) classification is **vacation rental**, defined as
+any unit or group of units in a condominium or cooperative that is also a transient public lodging establishment and is
+not a timeshare project. The page cites the current class, not the historical one.
+
+**Three things the run deliberately did not publish.** What a condo-hotel unit sells for, because no public source
+publishes it and the publications that track unit prices hold them behind a subscription, so the page computes the bar
+the retail route has to clear and tells the owner to get the retail price in writing instead. The cost of a conversion,
+for the same reason. And any statement about whether a particular rental programme is or is not a security: the release
+says the answer "necessarily depends on the facts and circumstances of each particular case", so the page prints the
+three triggers and the one marked path out and sends the reader to counsel.
+
+**Service claims.** The page says plainly that the team does not convert hotels to condominiums, run securities offerings
+or sell residential units, and routes its CTA to a confirmed service (a free opinion of value on the hotel as one asset),
+per section N above.
+
+**For the Rate Sheet agent.** The live `/rates` edition is still October 2026, published 2026-10-01, whose `nextRefresh`
+field reads `2026-11-02`. No November 2026 edition exists in `src/lib/rates/sheet.ts` on `main` as of this run; the
+November edition is in PR #91, held by the production hold. Third run in a row to record this, so this page sources its
+first-party data block to the Matthews Hotel Index Q1 2026 (Orlando resort and lifestyle 6.50% to 7.50%, the low end
+setting the $65,000,000 whole-asset benchmark) rather than to the rate sheet.
+
+Every figure in the worked example is recomputed by `scripts/check-condo-hotel-math.mjs`, committed alongside the page,
+35 assertions covering both ends of the cap-rate band, the per-key figures, the required retail gross and its round trip,
+the 160-vote and 10-vote thresholds, the sponsor's 159 after 41 sales, the 280A day test in both directions, and the
+template's own answer, FAQ, title, em-dash and citation limits read out of the page module itself rather than from a
+second copy of the prose. Reciprocal links added from `/sell-a-hotel/asset-sale-vs-entity-sale` and
+`/hotel-valuation/revpar-multiples-and-per-key` in prose, and the page was added to `relatedAnswers` on
+`/glossary/going-concern-value`, `/glossary/per-key` and `/glossary/cap-rate`. No existing number changed. The page runs
+exactly 2,500 words after six trimming passes from 3,267.
+
+**The hold.** One request to production at the start of this run, as rule 5 allows: `https://matthewshotelmarkets.com/`
+answered **HTTP 503** with `x-vercel-error: DEPLOYMENT_PAUSED`. That is day 15 of the outage tracked by issue #89 since
+2026-10-29. Twelve agent PRs are now held unmerged: #66, #90, #91, #95, #96, #98, #99, #100, #101, #103, #105 and the
+2026-11-11 writer PR #106. Only Nate can clear it, from the Vercel dashboard: the project's Settings, **Spend
+Management**, then the account's billing and usage page, then confirm a build actually runs rather than only that an old
+deployment serves. Merge order when production returns, merging `main` into each branch first: **#91**, then #90, #95,
+#96, #98, #99, #100, #101, #103, #105, #106, then this run's PR. Then fetch each new URL once on production and confirm
+200 plus the new content.
 
 **2026-11-10, Content Writer.** Shipped `/sell-a-hotel/asset-sale-vs-entity-sale`. Sections A to E are complete, F is
 SKIPPED, G is blocked, and H and J were fully ticked, so the pick came from a coverage scan of `src/lib/data/`:

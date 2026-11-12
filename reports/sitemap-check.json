@@ -1,10 +1,10 @@
 {
-  "urls": 339,
+  "urls": 340,
   "maxDepth": 2,
   "byDepth": {
     "0": 1,
     "1": 32,
-    "2": 306
+    "2": 307
   },
   "depth": {
     "/": 0,
@@ -119,6 +119,7 @@
     "/sell-a-hotel/how-to-choose-a-hotel-broker": 2,
     "/sell-a-hotel/1031-without-buying-another-hotel": 2,
     "/sell-a-hotel/asset-sale-vs-entity-sale": 2,
+    "/sell-a-hotel/condo-hotel-conversion": 2,
     "/sell-a-hotel/employees-when-you-sell": 2,
     "/sell-a-hotel/estate-tax-and-basis-step-up": 2,
     "/sell-a-hotel/faq": 2,
