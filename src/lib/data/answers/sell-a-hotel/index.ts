@@ -2,6 +2,7 @@
 import { page as a_1031_without_buying_another_hotel } from "./1031-without-buying-another-hotel";
 import { page as a_asset_sale_vs_entity_sale } from "./asset-sale-vs-entity-sale";
 import { page as a_broker_fees } from "./broker-fees";
+import { page as a_condo_hotel_conversion } from "./condo-hotel-conversion";
 import { page as a_documents_needed } from "./documents-needed";
 import { page as a_employees_when_you_sell } from "./employees-when-you-sell";
 import { page as a_estate_tax_and_basis_step_up } from "./estate-tax-and-basis-step-up";
@@ -28,6 +29,7 @@ export const spokes: AnswerPage[] = [
   a_1031_without_buying_another_hotel,
   a_asset_sale_vs_entity_sale,
   a_broker_fees,
+  a_condo_hotel_conversion,
   a_documents_needed,
   a_employees_when_you_sell,
   a_estate_tax_and_basis_step_up,

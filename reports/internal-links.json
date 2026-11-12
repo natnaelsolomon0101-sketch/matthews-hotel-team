@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-11-10T14:27:01.683Z",
-  "base": "http://localhost:34393",
+  "runAt": "2026-11-12T14:28:58.420Z",
+  "base": "http://localhost:41445",
   "edges": [
     {
       "from": "/",
@@ -4169,6 +4169,10 @@
     {
       "from": "/sitemap",
       "to": "/sell-a-hotel/broker-fees"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/sell-a-hotel/condo-hotel-conversion"
     },
     {
       "from": "/sitemap",
@@ -37968,6 +37972,10 @@
     },
     {
       "from": "/glossary/cap-rate",
+      "to": "/sell-a-hotel/condo-hotel-conversion"
+    },
+    {
+      "from": "/glossary/cap-rate",
       "to": "/sell-a-hotel/asset-sale-vs-entity-sale"
     },
     {
@@ -40460,6 +40468,10 @@
     },
     {
       "from": "/glossary/per-key",
+      "to": "/sell-a-hotel/condo-hotel-conversion"
+    },
+    {
+      "from": "/glossary/per-key",
       "to": "/hotel-financing/appraisal-requirements"
     },
     {
@@ -40649,6 +40661,10 @@
     {
       "from": "/glossary/going-concern-value",
       "to": "/glossary/cap-rate"
+    },
+    {
+      "from": "/glossary/going-concern-value",
+      "to": "/sell-a-hotel/condo-hotel-conversion"
     },
     {
       "from": "/glossary/going-concern-value",
@@ -53368,6 +53384,10 @@
     },
     {
       "from": "/sell-a-hotel",
+      "to": "/sell-a-hotel/condo-hotel-conversion"
+    },
+    {
+      "from": "/sell-a-hotel",
       "to": "/sell-a-hotel/employees-when-you-sell"
     },
     {
@@ -53812,6 +53832,10 @@
     },
     {
       "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/sell-a-hotel/condo-hotel-conversion"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
       "to": "/sell-a-hotel/taxes-when-selling-a-hotel"
     },
     {
@@ -54160,6 +54184,214 @@
     },
     {
       "from": "/sell-a-hotel/broker-fees",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/_next/static/chunks/971af7bd7354d30d.css"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/sell-a-hotel/condo-hotel-conversion.md"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/listings"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/rates"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/about"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/team"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/contact"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/research/mhi/q1-2026"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/sell-a-hotel/liquor-license-transfer"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/buy-a-hotel/depreciation-and-cost-segregation"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/glossary/going-concern-value"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/sell-a-hotel/asset-sale-vs-entity-sale"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/sell-a-hotel/how-to-sell-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/sell-a-hotel/selling-a-hotel-on-a-ground-lease"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/sell-a-hotel/taxes-when-selling-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/glossary"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/glossary/per-key"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/glossary/cap-rate"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/glossary/noi"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/tools"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/research"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/markets"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/closed"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/process"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/services"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/insights"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/press"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
+      "to": "/developers"
+    },
+    {
+      "from": "/sell-a-hotel/condo-hotel-conversion",
       "to": "/sitemap"
     },
     {
@@ -59881,6 +60113,10 @@
     {
       "from": "/hotel-valuation/revpar-multiples-and-per-key",
       "to": "/hotel-valuation/pip-and-hotel-value"
+    },
+    {
+      "from": "/hotel-valuation/revpar-multiples-and-per-key",
+      "to": "/sell-a-hotel/condo-hotel-conversion"
     },
     {
       "from": "/hotel-valuation/revpar-multiples-and-per-key",
@@ -75585,6 +75821,7 @@
         "/sell-a-hotel/1031-without-buying-another-hotel",
         "/sell-a-hotel/asset-sale-vs-entity-sale",
         "/sell-a-hotel/broker-fees",
+        "/sell-a-hotel/condo-hotel-conversion",
         "/sell-a-hotel/documents-needed",
         "/sell-a-hotel/employees-when-you-sell",
         "/sell-a-hotel/estate-tax-and-basis-step-up",
@@ -84916,6 +85153,7 @@
         "/glossary/revpar",
         "/glossary/adr",
         "/glossary/bov",
+        "/sell-a-hotel/condo-hotel-conversion",
         "/sell-a-hotel/asset-sale-vs-entity-sale",
         "/sell-a-hotel/1031-without-buying-another-hotel",
         "/hotel-valuation/how-to-value-a-hotel",
@@ -85611,6 +85849,7 @@
         "/glossary/cap-rate",
         "/glossary/noi",
         "/glossary/revpar",
+        "/sell-a-hotel/condo-hotel-conversion",
         "/hotel-financing/appraisal-requirements",
         "/hotel-valuation/how-to-value-a-hotel",
         "/hotel-valuation/select-service-vs-full-service",
@@ -85665,6 +85904,7 @@
         "/glossary/bov",
         "/glossary/noi",
         "/glossary/cap-rate",
+        "/sell-a-hotel/condo-hotel-conversion",
         "/sell-a-hotel/asset-sale-vs-entity-sale",
         "/hotel-financing/appraisal-requirements",
         "/sell-a-hotel/1031-without-buying-another-hotel",
@@ -89216,6 +89456,7 @@
         "/sell-a-hotel/how-to-choose-a-hotel-broker",
         "/sell-a-hotel/1031-without-buying-another-hotel",
         "/sell-a-hotel/asset-sale-vs-entity-sale",
+        "/sell-a-hotel/condo-hotel-conversion",
         "/sell-a-hotel/employees-when-you-sell",
         "/sell-a-hotel/estate-tax-and-basis-step-up",
         "/sell-a-hotel/faq",
@@ -89339,6 +89580,7 @@
         "/contact",
         "/team/miles-cortez",
         "/research/mhi/q1-2026",
+        "/sell-a-hotel/condo-hotel-conversion",
         "/sell-a-hotel/taxes-when-selling-a-hotel",
         "/buy-a-hotel/depreciation-and-cost-segregation",
         "/buy-a-hotel/how-to-make-an-offer",
@@ -89410,6 +89652,64 @@
         "/glossary",
         "/glossary/bov",
         "/glossary/cap-rate",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/sell-a-hotel/condo-hotel-conversion",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/971af7bd7354d30d.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/sell-a-hotel/condo-hotel-conversion.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/nate-solomon",
+        "/research/mhi/q1-2026",
+        "/sell-a-hotel/liquor-license-transfer",
+        "/buy-a-hotel/depreciation-and-cost-segregation",
+        "/glossary/going-concern-value",
+        "/team/luke-thompson",
+        "/sell-a-hotel/asset-sale-vs-entity-sale",
+        "/sell-a-hotel/how-to-sell-a-hotel",
+        "/sell-a-hotel/selling-a-hotel-on-a-ground-lease",
+        "/sell-a-hotel/taxes-when-selling-a-hotel",
+        "/glossary",
+        "/glossary/per-key",
+        "/glossary/cap-rate",
+        "/glossary/noi",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -91031,6 +91331,7 @@
         "/research/mhi/q1-2026",
         "/hotel-valuation/how-to-value-a-hotel",
         "/hotel-valuation/pip-and-hotel-value",
+        "/sell-a-hotel/condo-hotel-conversion",
         "/hotel-valuation/broker-opinion-of-value",
         "/team/luke-thompson",
         "/hotel-valuation/hotel-cap-rates",
