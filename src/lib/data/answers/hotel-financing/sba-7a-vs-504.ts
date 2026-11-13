@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "SBA 7(a) vs 504 for Hotels: Which One?",
   h1: "What is the difference between an SBA 7(a) loan and an SBA 504 loan for a hotel?",
   description: "SBA 7(a) versus 504 for a hotel purchase: eligibility, down payment, rate structure, loan caps and which one fits which deal.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-11-13",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -63,7 +63,7 @@ export const page: AnswerPage = {
     {
       h2: "Which is faster to close?",
       lead: "7(a) is generally faster because it involves one lender and one closing; 504's two-closing structure adds coordination time between the bank and the CDC.",
-      body: "A straightforward 7(a) loan can close in a matter of weeks once the package is complete. A 504 loan requires the bank and the CDC to coordinate two sets of loan documents and often two closing dates, which typically adds time versus a single-lender 7(a) transaction of similar size and complexity. Speed is one input, not the deciding one; a slower close that locks a long-term fixed rate can be worth the extra weeks on a large purchase."
+      body: "A straightforward 7(a) loan can close in a matter of weeks once the package is complete. A 504 loan requires the bank and the CDC to coordinate two sets of loan documents and often two closing dates, which typically adds time versus a single-lender 7(a) transaction of similar size and complexity. Speed is one input, not the deciding one; a slower close that locks a long-term fixed rate can be worth the extra weeks on a large purchase. Both programs also share a published consequence if the loan later stops paying, set out at [What happens if I default on an SBA loan on my hotel?](/hotel-financing/sba-loan-default)."
     },
     {
       h2: "Which one fits my deal?",
@@ -245,7 +245,8 @@ export const page: AnswerPage = {
       "/hotel-financing/hotel-lenders-by-type",
       "/hotel-financing/hotel-loan-rates",
       "/hotel-financing/cmbs-loans",
-      "/hotel-financing/flood-insurance-requirements"
+      "/hotel-financing/flood-insurance-requirements",
+      "/hotel-financing/sba-loan-default"
     ],
     glossary: [
       "/glossary/dscr",

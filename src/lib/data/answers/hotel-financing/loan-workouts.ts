@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Hotel Loan Workouts and Special Servicing",
   h1: "What is a loan workout and how does it work for a distressed hotel?",
   description: "What happens when a hotel loan goes to special servicing, what a workout can and cannot fix, and what an owner should do in the first 30 days.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-11-13",
   authorSlug: "miles-cortez",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -69,7 +69,7 @@ export const page: AnswerPage = {
     {
       h2: "When is selling better than working it out?",
       lead: "Selling is the better answer when the asset's cash flow cannot support the debt at any realistic rate or term, because a workout only buys time, and time does not fix a structural problem.",
-      body: "Before agreeing to any workout terms, run the honest comparison: what does the full cost of the proposed workout, fees, higher rate, and any paydown, actually total over its term, and how does that compare to what a sale nets today. That comparison, worked in full with a real example, is on `/hotel-financing/refinance-or-sell`. A workout that simply delays an inevitable outcome by two years, at real cost, is not automatically the better choice just because it keeps the asset in hand longer."
+      body: "Before agreeing to any workout terms, run the honest comparison: what does the full cost of the proposed workout, fees, higher rate, and any paydown, actually total over its term, and how does that compare to what a sale nets today. That comparison, worked in full with a real example, is on `/hotel-financing/refinance-or-sell`. A workout that simply delays an inevitable outcome by two years, at real cost, is not automatically the better choice just because it keeps the asset in hand longer. If the loan is an SBA 7(a) or 504 loan the sequence after a workout fails is published rather than negotiated, and it is at [What happens if I default on an SBA loan on my hotel?](/hotel-financing/sba-loan-default)."
     }
   ],
   table: {
@@ -191,7 +191,8 @@ export const page: AnswerPage = {
       "/hotel-financing/loan-maturities-2026-2027",
       "/hotel-financing/refinance-or-sell",
       "/hotel-financing/cmbs-loans",
-      "/hotel-financing/bridge-loans"
+      "/hotel-financing/bridge-loans",
+      "/hotel-financing/sba-loan-default"
     ],
     glossary: [
       "/glossary/dscr",

@@ -639,6 +639,7 @@ Pick from `geo/04-queries.csv` prompts with no dedicated page, phrased the way p
 | [x] | `/hotel-financing/interest-deduction-limits` | No CSV row targets it directly, and "163(j)", "business interest", "interest deduction", "net operating loss" and "self-rental" are absent from `geo/04-queries.csv`. It answers the deductibility half of the "Loan types" and "Deal docs & underwriting" clusters, which between them ask what every loan product costs and never ask what of that cost is deductible. The gap was total: "163(j)" appeared in **zero** files under `src/lib/data/`, and "business interest" only inside the section 6166 phrase "closely held business interest". | Shipped 2026-10-28 in PR #87. |
 | [x] | `/hotel-financing/public-incentives-and-tif` | No CSV row targets it directly, and "tax increment", "private activity", "tax-exempt bond", "municipal bond", "2017-13" and "publicly owned hotel" each appeared in zero files under `src/lib/data/`, while "incentive" appeared in 25 files and never once about a state or local program. The site had five federal incentive pages and nothing on the layer a city controls | Shipped 2026-10-29. Covers why a private hotel's municipal debt is taxable (26 U.S.C. 141 and the 17-category 142(a) list), the one tax-exempt route that can reach a hotel rehab (the 144(c) qualified redevelopment bond, which cannot fund new construction), what Rev. Proc. 2017-13 does to a brand management agreement at a city-owned hotel, and two state TIF statutes that reach opposite answers. Carries the first hotel-level TIF figures on the site, recomputed from Missouri's own 2025 annual report: 8 hotel-named plans of 354, a 6.2 to 79.8 percent TIF share of total project cost. Prints no award size and no national hotel-TIF count, because neither is published. Texas Tax Code 351.102 left out: `statutes.capitol.texas.gov` is still a JavaScript shell |
 | [x] | `/sell-a-hotel/asset-sale-vs-entity-sale` | No CSV row targets it directly. The gap was near total: "equity sale", "successor liability", "Form 8308", "marketplace facilitator" and "1446" appeared in **zero** files under `src/lib/data/`, "membership interest" and "stock sale" in one each, and sections 751, 743 and 754 nowhere at all in a tax sense. The site had a full page on the tax layers of a hotel sale and nothing on the structure question that decides which sections those layers arrive through | Shipped 2026-11-10. Answers the question with a number: on the same $18,000,000 price and the same allocation, the seller's federal bill is identical both ways, $2,320,000, because section 751(c) treats the section 1245 recapture as an unrealized receivable and 26 CFR 1.1(h)-1(b)(3) hands the selling partner the section 1250 layer at 25 percent. The real differences are the buyer's $9,700,000 section 743(b) step-up (only with a 754 election), the loss of section 1031 (26 CFR 1.1031(a)-3(a)(5)(i)(C) excludes partnership interests), Washington's controlling-interest excise tax and California's change-in-control reassessment. Prints no lender or franchisor change-of-control consent terms and no consent fee: none is published |
+| [~] | `/hotel-financing/sba-loan-default` | No CSV row targets it directly, and "default" appears in `geo/04-queries.csv` only inside maturity and workout prompts. The gap was total on the SBA side: "offer in compromise", "guaranty purchase", "charge-off", "Treasury offset", "credit bid", "CAIVRS" and "wrap-up" each appeared in **zero** files under `src/lib/data/`, `/hotel-financing/loan-workouts` and `/sell-a-hotel/selling-a-distressed-hotel` carry no mention of SBA at all, and SOP 50 57 appeared once, in a loan-assumption aside. The site explained every SBA product on the way in and nothing about the way out, for the one lender whose process is published end to end | Written 2026-11-13, PR open, **not merged**: production has answered HTTP 503 since 2026-10-29 so `geo/AGENTS.md` §3 step 6 cannot pass. The find: 31 CFR 902.1(b) caps SBA's own compromise authority at $100,000 of principal and hands everything above it to the Department of Justice on a Claims Collection Litigation Report, and the median 7(a) hotel loan approved in FY2025 was $2,681,500, so a hotel settlement is a Justice Department decision. The second find is in SBA's own manual: SOP 50 57 4 tells lenders they "should not bid the entire 7(a) Loan balance if doing so would eliminate an otherwise collectible deficiency". Also carries the 60-day site visit and purchase-demand clocks, the 120 days of interest SBA pays the lender, the 24-month prudent liquidation deadline, the 60-day pre-referral notice, the 180-day Treasury transfer, the 15 percent or over-$750 benefit offset and the $600 Form 1099-C filed in the borrower's name only. Prints no foreclosure sale price band and no lender policy: neither is published |
 
 Remaining candidates: hotel loan assumption, seller financing for a hotel, preferred equity (needs a
 citable source), what buyers look for in a hotel, selling a hotel with a ground lease, hotel property
@@ -865,3 +866,68 @@ committed alongside the page, 57 assertions. Reciprocal links added from `/hotel
 `/hotel-franchise-costs` (the hub), `/sell-a-hotel/franchise-transfer`, `/glossary/franchise-agreement`,
 `/glossary/franchise-fdd`, `/glossary/comp-set` and `/glossary/revpar`. No existing number changed. The page runs
 2,498 words against the brief's 2,500 ceiling, after four trimming passes from 3,718.
+
+
+**2026-11-13, Content Writer.** Wrote `/hotel-financing/sba-loan-default`. **Not merged.** Issue #89 was read before
+the coverage scan this time: production has answered HTTP 503 with `DEPLOYMENT_PAUSED` since 2026-10-29 19:52 UTC, the
+site monitor was still failing at 08:00 UTC today, and the standing hold recorded in PR #105 says run the gate, open the
+PR, title it `(NOT MERGED: production is paused)` and stop. This run made no request to production at all: the monitor's
+own comments on #89 are the evidence.
+
+Sections A to E are complete, F is SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage
+scan of `src/lib/data/`: "offer in compromise", "guaranty purchase", "charge-off", "Treasury offset", "credit bid",
+"CAIVRS", "liquidation plan" and "wrap-up" each appeared in **zero** files, and "SOP 50 57" in exactly one, as an aside
+on `/hotel-financing/loan-assumption`. `/hotel-financing/loan-workouts` (CMBS special servicing) and
+`/sell-a-hotel/selling-a-distressed-hotel` (receivership, note sale, deed in lieu) between them carried no mention of
+SBA whatsoever, although SBA is the lender behind the site's own flagship financing page and the one whose default
+process is published end to end. That is the gap this page fills.
+
+**The find of this run.** SBA cannot settle a hotel deficiency on its own. 31 CFR 902.1(a) lets an agency compromise a
+debt only where the amount then due, excluding interest, penalties and administrative costs, does not exceed $100,000;
+902.1(b) puts everything above that with the Department of Justice, reached on a Claims Collection Litigation Report,
+and notes that Justice approval is not needed to *reject* an offer. The site's own SBA extract puts the median 7(a)
+hotel loan approved in fiscal 2025 at $2,681,500, so essentially every hotel deficiency lands above the line. An owner
+negotiating an offer in compromise on a hotel is negotiating with the Civil Division, not with SBA, and no secondary
+source says so.
+
+**The second find, in SBA's own words.** SOP 50 57 4, Chapter 18, Paragraph D.2 tells lenders to base a foreclosure
+credit bid on recoverable value, not to exceed the loan balance, and then: lenders "should not bid the entire 7(a) Loan
+balance if doing so would eliminate an otherwise collectible deficiency." The number that decides how much the
+guarantors owe after the hotel is sold is a number the lender picks under a published instruction to keep that claim
+alive. Any later edit should quote it rather than paraphrase it.
+
+**Five sourcing notes for the next run.** **The current servicing manual is SOP 50 57 4, effective November 1, 2025**,
+not the 50 57 3 of August 1, 2023 that search results still surface, and not 3.1 of December 1, 2024:
+`www.sba.gov/document/sop-50-57-7a-loan-servicing-liquidation` 302s to `legacy.sba.gov`, lists every version with its
+effective date, and serves the current PDF at `legacy.sba.gov/sites/default/files/2025-09/FINAL%20SOP%205057%204%20version.pdf`
+(1.4 MB, which `pdftotext -layout` turns into 586,917 characters). **Cornell LII served ten 13 CFR part 120 sections,
+three title-31 statutes and five title-31 regulations in one run with no block**, and `www.law.cornell.edu/cfr/text/13/part-120/subpart-E`
+gives the subpart's section list, which is how the absence of a compromise section from subpart E was confirmed (SBA's
+compromise authority is 31 U.S.C. 3711 and 31 CFR part 902, as the SOP itself says). **31 CFR 285.4(e) works its own
+examples**, including the $850 benefit offset $100 and the $650 benefit offset nothing, so the arithmetic on this page
+is checked against the agency's own worked cases rather than only against the formula. **The two Treasury clocks are
+different numbers and both are right**: 31 U.S.C. 3711(g)(1) requires transfer at 180 days delinquent, while 31 CFR
+285.12(c)(2) requires transfer to cross-servicing by 120 days where the agency relies on that program for centralized
+offset. Do not collapse them. And **31 U.S.C. 3717(g)(1) switches the whole interest and penalty section off** where a
+loan agreement explicitly fixes the interest or charges, so the 6 percent delinquency penalty in 3717(e)(2) is printed
+on the page with that caveat attached and no claim that it applies to an SBA note.
+
+**Three things the run deliberately did not publish.** What a hotel fetches at a foreclosure sale, because no public
+source publishes it, so the page says so and the worked example labels its own bid as hypothetical. Any lender policy on
+when it will accept a short sale instead of foreclosing, per rule 1. And any figure for what the Department of Justice
+accepts as a percentage of a hotel deficiency: compromise outcomes are not published in aggregate, and 31 CFR 902.2 sets
+only the bases, not a rate.
+
+**Numbers.** The page runs 2,493 words against the 2,500 ceiling after six trimming passes from 2,783; one FAQ was cut
+as a duplicate of the compromise section. Every figure in the worked example and every published threshold is recomputed
+by `scripts/check-sba-default-math.mjs`, committed alongside the page: 108 assertions covering all twenty published
+deadlines and thresholds, both of 31 CFR 285.4(e)'s own examples, the full foreclosure waterfall, the sale comparison,
+the offset arithmetic (258.5 years at $5,760 a year against a $1,489,167 deficiency) and the two first-party figures
+recomputed from the committed `content/sba/summary.json`. No existing number changed. Reciprocal links added from
+`/hotel-financing/loan-workouts`, `/hotel-financing/sba-7a-vs-504`, `/sell-a-hotel/selling-a-distressed-hotel` and the
+`sba-7a`, `sba-504` and `non-recourse-carve-outs` glossary terms, whose `relatedAnswers` the template has rendered since
+the 2026-10-26 maintainer fix.
+
+**For the Rate Sheet agent.** The live `/rates` edition is still October 2026, published 2026-10-01 with a `nextRefresh`
+of 2026-11-02, because PR #91 (the November edition) is one of the branches the production hold is keeping unmerged.
+This page's first-party data point cites the October edition and says so.

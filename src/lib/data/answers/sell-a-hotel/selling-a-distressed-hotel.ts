@@ -16,7 +16,7 @@ export const page: AnswerPage = {
   title: "How to Sell a Hotel That Is Losing Money or in Default",
   h1: "How do I sell a hotel that is losing money or in default?",
   description: "How a distressed hotel changes hands: lender-approved sale, receivership sale, note sale, deed in lieu or bankruptcy sale. Who controls each, and the tax.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-11-13",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -45,7 +45,7 @@ export const page: AnswerPage = {
     {
       h2: "Can I sell while the loan is in default or with the special servicer?",
       lead: "Yes, with the lender's cooperation. You still hold title until a foreclosure or deed in lieu, but the lender's lien has to be released at closing.",
-      body: "If the sale price covers the loan balance, default interest, fees and closing costs, the lender is paid off at closing like any other sale. If it does not, the sale works only if the lender agrees in writing to release its lien for less than it is owed, often called a short sale or discounted payoff. A lender or special servicer weighs that offer against what it expects to net from its other remedies, so a marketed process with real bids is the owner's best evidence of value.\n\nStart that conversation early. Trepp reported that 8.63 percent of lodging CMBS loans were with the special servicer in July 2026, and that one large new transfer that month was a $280 million maturity default on two hotels.[1] Servicers are busy, and approvals take time. What a servicer can and cannot agree to, and what to do in the first 30 days, is covered at `/hotel-financing/loan-workouts`. This page picks up where a workout stops making sense."
+      body: "If the sale price covers the loan balance, default interest, fees and closing costs, the lender is paid off at closing like any other sale. If it does not, the sale works only if the lender agrees in writing to release its lien for less than it is owed, often called a short sale or discounted payoff. A lender or special servicer weighs that offer against what it expects to net from its other remedies, so a marketed process with real bids is the owner's best evidence of value.\n\nStart that conversation early. Trepp reported that 8.63 percent of lodging CMBS loans were with the special servicer in July 2026, and that one large new transfer that month was a $280 million maturity default on two hotels.[1] Servicers are busy, and approvals take time. What a servicer can and cannot agree to, and what to do in the first 30 days, is covered at `/hotel-financing/loan-workouts`. This page picks up where a workout stops making sense. An SBA 7(a) or 504 loan runs on a different and published track, set out at [What happens if I default on an SBA loan on my hotel?](/hotel-financing/sba-loan-default)."
     },
     {
       h2: "What is a receivership sale?",
@@ -228,7 +228,8 @@ export const page: AnswerPage = {
       "/sell-a-hotel/how-long-it-takes",
       "/sell-a-hotel/documents-needed",
       "/sell-a-hotel/off-market-vs-marketed",
-      "/sell-a-hotel/faq"
+      "/sell-a-hotel/faq",
+      "/hotel-financing/sba-loan-default"
     ],
     glossary: [
       "/glossary/noi",
