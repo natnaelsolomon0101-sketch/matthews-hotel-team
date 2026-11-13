@@ -62,7 +62,8 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/cmbs-loans",
     "/hotel-financing/loan-requirements",
     "/hotel-financing/loan-workouts",
-    "/hotel-financing/chapter-11-bankruptcy"
+    "/hotel-financing/chapter-11-bankruptcy",
+    "/hotel-financing/sba-loan-default"
   ],
   lastUpdated: "2026-09-18",
   authorSlug: "luke-thompson"

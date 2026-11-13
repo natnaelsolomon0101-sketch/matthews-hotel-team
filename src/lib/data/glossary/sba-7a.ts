@@ -70,7 +70,8 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/sba-size-standards",
     "/hotel-financing/hotel-lenders-by-type",
     "/hotel-financing/loan-requirements",
-    "/buy-a-hotel/environmental-liability"
+    "/buy-a-hotel/environmental-liability",
+    "/hotel-financing/sba-loan-default"
   ],
   lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson"
