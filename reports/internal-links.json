@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-11-10T14:27:01.683Z",
-  "base": "http://localhost:34393",
+  "runAt": "2026-11-16T14:27:16.702Z",
+  "base": "http://localhost:34721",
   "edges": [
     {
       "from": "/",
@@ -4513,6 +4513,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-industry/franchise-territory-and-encroachment"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-industry/property-insurance-of-last-resort"
     },
     {
       "from": "/sitemap",
@@ -37968,6 +37972,10 @@
     },
     {
       "from": "/glossary/cap-rate",
+      "to": "/hotel-industry/property-insurance-of-last-resort"
+    },
+    {
+      "from": "/glossary/cap-rate",
       "to": "/sell-a-hotel/asset-sale-vs-entity-sale"
     },
     {
@@ -39660,6 +39668,10 @@
     },
     {
       "from": "/glossary/noi",
+      "to": "/hotel-industry/property-insurance-of-last-resort"
+    },
+    {
+      "from": "/glossary/noi",
       "to": "/sell-a-hotel/asset-sale-vs-entity-sale"
     },
     {
@@ -40457,6 +40469,10 @@
     {
       "from": "/glossary/per-key",
       "to": "/glossary/revpar"
+    },
+    {
+      "from": "/glossary/per-key",
+      "to": "/hotel-industry/property-insurance-of-last-resort"
     },
     {
       "from": "/glossary/per-key",
@@ -47037,6 +47053,10 @@
     {
       "from": "/hotel-financing/flood-insurance-requirements",
       "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-financing/flood-insurance-requirements",
+      "to": "/hotel-industry/property-insurance-of-last-resort"
     },
     {
       "from": "/hotel-financing/flood-insurance-requirements",
@@ -62192,6 +62212,10 @@
     },
     {
       "from": "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+      "to": "/hotel-industry/property-insurance-of-last-resort"
+    },
+    {
+      "from": "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
       "to": "/research/mhi/q1-2026"
     },
     {
@@ -68432,6 +68456,10 @@
     },
     {
       "from": "/hotel-industry",
+      "to": "/hotel-industry/property-insurance-of-last-resort"
+    },
+    {
+      "from": "/hotel-industry",
       "to": "/hotel-franchise-costs"
     },
     {
@@ -70497,6 +70525,10 @@
     {
       "from": "/hotel-industry/hotel-operating-costs",
       "to": "/hotel-valuation/property-tax-appeal"
+    },
+    {
+      "from": "/hotel-industry/hotel-operating-costs",
+      "to": "/hotel-industry/property-insurance-of-last-resort"
     },
     {
       "from": "/hotel-industry/hotel-operating-costs",
@@ -72920,6 +72952,230 @@
     },
     {
       "from": "/hotel-industry/franchise-territory-and-encroachment",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/_next/static/chunks/971af7bd7354d30d.css"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/hotel-industry/property-insurance-of-last-resort.md"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/hotel-financing/flood-insurance-requirements"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/hotel-financing/covenants-and-cash-management"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/hotel-financing/loan-requirements"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/hotel-industry/hotel-operating-costs"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/tools/cap-rate-calculator"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/tools/dscr-calculator"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/hotel-valuation/hotel-cap-rates"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/sell-a-hotel/documents-needed"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/hotel-industry/energy-benchmarking-and-emissions-limits"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/hotel-industry/cost-to-build-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/hotel-industry/hotel-worker-minimum-wage"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/glossary/noi"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/glossary/cap-rate"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/glossary/per-key"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-industry/property-insurance-of-last-resort",
       "to": "/sitemap"
     },
     {
@@ -75671,6 +75927,7 @@
         "/hotel-industry/asbestos-renovation-rules",
         "/hotel-industry/karis-law-911-requirements",
         "/hotel-industry/franchise-territory-and-encroachment",
+        "/hotel-industry/property-insurance-of-last-resort",
         "/tools",
         "/tools/hotel-value-estimator",
         "/tools/hotel-loan-sizing-calculator",
@@ -84916,6 +85173,7 @@
         "/glossary/revpar",
         "/glossary/adr",
         "/glossary/bov",
+        "/hotel-industry/property-insurance-of-last-resort",
         "/sell-a-hotel/asset-sale-vs-entity-sale",
         "/sell-a-hotel/1031-without-buying-another-hotel",
         "/hotel-valuation/how-to-value-a-hotel",
@@ -85387,6 +85645,7 @@
         "/glossary/cap-rate",
         "/glossary/revpar",
         "/glossary/adr",
+        "/hotel-industry/property-insurance-of-last-resort",
         "/sell-a-hotel/asset-sale-vs-entity-sale",
         "/hotel-financing/public-incentives-and-tif",
         "/hotel-valuation/how-to-value-a-hotel",
@@ -85611,6 +85870,7 @@
         "/glossary/cap-rate",
         "/glossary/noi",
         "/glossary/revpar",
+        "/hotel-industry/property-insurance-of-last-resort",
         "/hotel-financing/appraisal-requirements",
         "/hotel-valuation/how-to-value-a-hotel",
         "/hotel-valuation/select-service-vs-full-service",
@@ -87454,6 +87714,7 @@
         "/team",
         "/contact",
         "/team/luke-thompson",
+        "/hotel-industry/property-insurance-of-last-resort",
         "/team/nate-solomon",
         "/hotel-financing/loan-requirements",
         "/hotel-financing/closing-costs",
@@ -91674,6 +91935,7 @@
         "/buy-a-hotel/due-diligence-checklist",
         "/glossary/ffe-reserve",
         "/glossary/noi",
+        "/hotel-industry/property-insurance-of-last-resort",
         "/research/mhi/q1-2026",
         "/hotel-valuation/hotel-cap-rates",
         "/glossary/iom",
@@ -93396,6 +93658,7 @@
         "/hotel-industry/asbestos-renovation-rules",
         "/hotel-industry/karis-law-911-requirements",
         "/hotel-industry/franchise-territory-and-encroachment",
+        "/hotel-industry/property-insurance-of-last-resort",
         "/hotel-franchise-costs",
         "/glossary",
         "/glossary/revpar",
@@ -93973,6 +94236,7 @@
         "/hotel-franchise-costs",
         "/hotel-industry/hotel-management-agreements",
         "/hotel-valuation/property-tax-appeal",
+        "/hotel-industry/property-insurance-of-last-resort",
         "/glossary/ffe-reserve",
         "/tools/cap-rate-calculator",
         "/hotel-industry/extended-stay-hotels",
@@ -94623,6 +94887,68 @@
         "/hotel-industry/chain-scales-and-classes",
         "/hotel-industry/revpar-adr-occupancy",
         "/glossary",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/hotel-industry/property-insurance-of-last-resort",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/971af7bd7354d30d.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-industry/property-insurance-of-last-resort.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/hotel-industry",
+        "/team/miles-cortez",
+        "/hotel-financing/flood-insurance-requirements",
+        "/hotel-financing/covenants-and-cash-management",
+        "/hotel-financing/loan-requirements",
+        "/hotel-industry/hotel-operating-costs",
+        "/tools/cap-rate-calculator",
+        "/tools/dscr-calculator",
+        "/hotel-valuation/hotel-cap-rates",
+        "/buy-a-hotel/due-diligence-checklist",
+        "/sell-a-hotel/documents-needed",
+        "/team/nate-solomon",
+        "/hotel-industry/energy-benchmarking-and-emissions-limits",
+        "/hotel-industry/cost-to-build-a-hotel",
+        "/hotel-industry/hotel-worker-minimum-wage",
+        "/glossary",
+        "/glossary/noi",
+        "/glossary/cap-rate",
+        "/glossary/per-key",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/tools",

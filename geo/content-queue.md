@@ -865,3 +865,70 @@ committed alongside the page, 57 assertions. Reciprocal links added from `/hotel
 `/hotel-franchise-costs` (the hub), `/sell-a-hotel/franchise-transfer`, `/glossary/franchise-agreement`,
 `/glossary/franchise-fdd`, `/glossary/comp-set` and `/glossary/revpar`. No existing number changed. The page runs
 2,498 words against the brief's 2,500 ceiling, after four trimming passes from 3,718.
+
+**2026-11-16, Content Writer.** Shipped `/hotel-industry/property-insurance-of-last-resort`. Sections A to E are
+complete, F is SKIPPED, G is blocked, and H and J were fully ticked, so the pick came from a coverage scan of
+`src/lib/data/`: "windstorm", "named storm", "wind pool", "coinsurance", "Citizens Property", "TWIA", "hurricane
+deductible" and "probable maximum loss" each appeared in **zero** files, while "insurance" appeared in 57 and never
+as anything but a line item or a closing condition. The one federal slice, flood, has had its own page since October.
+Nothing on the site said what an owner does when the admitted market declines the hotel outright, which is the live
+question on every coastal and wildfire-area asset and the one that decides whether a deal is financeable at all.
+
+**A reframe worth recording, because it nearly became a rule 1 breach.** The obvious page was "why did my hotel
+insurance double". It is not writable. No public source publishes a hotel property insurance premium, per key or
+otherwise, and the only hotel-specific figure already on this site points the other way: `/hotel-industry/hotel-operating-costs`
+carries Apple Hospitality's 2025 disclosure attributing its increase to higher property taxes and higher **liability**
+premiums, "partially offset by lower property insurance premiums". A page premised on a premium spike would have
+contradicted a sourced figure already published here. The writable page is insurability: who will write the hotel when
+nobody else will, what each program caps, and what any premium change does to value through the cap rate. The page
+therefore prints no premium level at all and says so twice.
+
+**A trap worth repeating.** Citizens' 20 percent rule does not reach hotels. For commercial **residential** risks an
+applicant qualifies either on a no-offer or where the admitted premium runs more than 20 percent above Citizens. For
+commercial **nonresidential**, which is where Hotel/Motel sits in Citizens' own eligible-risk list, its submission guide
+states that eligible applicants are those "unable to procure any offer from an authorized insurer" and that "the 20%
+rule does NOT apply". Every consumer-facing summary of Citizens describes the 20 percent rule, so an assistant
+answering a hotel question from the homeowner rule gets it backwards. Second trap, Texas: TWIA eligibility is not only
+geographic. A structure must hold a Certificate of Compliance (WPI-8, WPI-8-E or WPI-8-C) to be "considered insurable
+and eligible for TWIA coverage" under Insurance Code chapter 2210, so an uninspected re-roof is an eligibility problem,
+not a paperwork one. WPI-8-C applications were accepted only from January 1, 2017 to May 31, 2020, and WPI-8-E from
+June 1, 2020, so which certificate a building holds dates its last inspected improvement.
+
+Six sourcing notes for the next run. **`www.flsenate.gov` now answers 429 "Too Many Requests" to curl**, with and
+without a browser user agent and after a pause, which is a regression from the 2026-10-06 note recording it as clean;
+WebFetch read the same statute URL without trouble, so Florida statutes are reachable, just not by curl. Use WebFetch
+there. **`www.twia.org/wp-content/uploads/Q<n>-<year>-TWIA-Fact-Book.pdf` serves at 200** and is the single best
+source for the pool's current maximum limits, eligibility tests and its ten-year policy and exposure table;
+`tdi.texas.gov/submissions/limits/documents/<order>.pdf` serves Commissioner's Orders the same way, and the order is
+the only place the disapproval of a proposed limit appears. **`training.citizensfla.com/lms/CIS/PC/` serves Citizens'
+commercial lines guides as PDFs at 200**, which is where the eligibility rules actually live; guessed paths on
+`www.citizensfla.com` answered 404. **`www.insurance.ca.gov/0400-news/0102-alerts/<year>/upload/` serves CDI press
+releases as PDFs at 200**, and `ains.assembly.ca.gov/media/<id>` serves Assembly committee hearing documents at 200,
+which carried the FAIR Plan limit history and the 2028 sunset that the press release does not mention.
+**`www.cfpnet.com/commercial/` 301s to `/policies/commercial/`**, so follow redirects; its `/key-statistics-data/` page
+is quarterly and was fresher than the legislature's document (September 2026 against December 2025). **The current
+SBA SOP attachment 404s**: the `50 10 8.1` link under `sba.gov/sites/default/files/2026-10/` returns a JavaScript 404
+shell to a scripted reader, so the SOP was not read this run and nothing on this page is cited to it. The flood page's
+existing SOP citations were left untouched.
+
+Four figures the run deliberately did not publish: any hotel property insurance premium (no public source gives one);
+any lender's insurance requirement, meaning limits, deductible ceilings, named-storm sublimits, business interruption
+periods or the insurable-value basis (rule 1, never published, and the page says so in its own section); any count of
+hotels inside the three pools (none publishes the occupancy mix of its book, so the page labels the published counts
+as all-lines); and Florida's pending 2026 Citizens bills, SB 1028 and SB 943, whose enacted status was not confirmed
+at a primary source in this run, so no pending change is described. Every figure in the worked example was recomputed
+by `scripts/check-insurance-math.mjs`, committed alongside the page, 27 assertions covering the three caps, the
+disapproved step, the BOECKH comparison, the value effect at three cap rates and the per-room-night arithmetic.
+Reciprocal links added from `/hotel-industry/hotel-operating-costs`, `/hotel-financing/flood-insurance-requirements`
+and `/buy-a-hotel/how-to-underwrite-a-hotel-deal`, plus `relatedAnswers` on `/glossary/noi`, `/glossary/cap-rate` and
+`/glossary/per-key`. No existing number changed. The page runs 2,516 words against the brief's 2,500 ceiling after six
+trimming passes from 2,906.
+
+**Production is down, and it was down before this run started.** Every page of
+matthewshotelmarkets.com has answered HTTP 503 with `x-vercel-error: DEPLOYMENT_PAUSED` since 2026-10-29 19:52 UTC,
+confirmed once from the homepage this run on 2026-11-16 at 14:04 UTC. That is 18 days. Issue #89 carries 28 monitor
+comments and issue #52, open since 2026-09-28, records that merges to `main` stopped producing Production
+deployments before that. `DEPLOYMENT_PAUSED` is an account-level pause, not a build error, so the ship gate stays
+green and no agent can clear it: it needs Nate in the Vercel dashboard. The post-merge production verification in
+`geo/AGENTS.md` §3 step 6 could not be completed for this page, and nothing shipped on 2026-10-29, 11-03 or 11-10 has
+ever been served to a reader or a crawler either. Nate was notified by push notification at the start of this run.
