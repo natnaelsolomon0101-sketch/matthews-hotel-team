@@ -358,15 +358,30 @@ numbers.
    while SBA migrates its SOP library). Two were real 301 moves and are fixed in the same PR: GSA's
    per-diem path and `www.courts.ca.gov`, which answers 301 twice to `www4`.*
    *Extended 2026-11-16: the second half of this item, "pages whose text no longer contains the cited
-   figure", now runs too. For every statistic in `src/lib/rates/statistics.ts` the script reads the
-   text of the page cited for it and reports any figure in the statistic's sentence that is not
-   there, with digit guards so `8.02` does not match inside `18.025`. Only that module is checked,
-   because it is the only one that pairs one figure with one link: answer-page and glossary sources
-   carry a prose label rather than the figure, so there is nothing to match them against. A missing
-   figure is reported and never sets the exit code, so it cannot pin the `source-rot` issue open: a
-   number can live in a chart, arrive by script, or sit in a PDF the script does not parse, and the
-   page can still carry the claim. A page that is not HTML or plain text is reported as unread rather
-   than as missing.*
+   figure", now runs too, in the same requests. For every statistic in `src/lib/rates/statistics.ts`
+   the script reads the text of the page cited for it and reports any figure from the statistic's own
+   sentence that is not there. Only that module is checked, because it is the only one that pairs one
+   figure with one link: answer-page, glossary and tool sources carry a prose label rather than the
+   figure, so there is nothing to match them against, and they are still checked for status only.
+   Three rules keep it quiet enough to be worth reading, each measured rather than guessed. Numbers
+   are compared **numerically**, not as strings, because SBA writes "base rate plus 3.0%" where the
+   statistic says 3.00%. **Years and bare integers under 1000 are not looked for at all**: basis
+   points moved, vote tallies, a count of years and a CFR section fragment prove nothing by their
+   absence, and the published figures here are rates, which carry a decimal point, or dollar amounts
+   and counts, which are large. And when **none** of the figures cited against a page is in it, the
+   page is reported as **unread** rather than as a row per figure, because a page this script cannot
+   read is far likelier than a publisher revising every figure we cite at once: Treasury's yield
+   curve page is the case that forced the rule, since seven statistics cite it and it builds its
+   table in the browser. A page that serves some of its figures and not others is the case worth
+   reading, and that still reports. The first version of this check, without those three rules,
+   flagged 11 of 20 pages and every one was a false positive; with them it flags 2 of 13, both
+   explainable: the $5.5m energy-project debenture cap, which lives in the SOP PDF and not on the
+   `legacy.sba.gov` landing page that is cited, and a 10-year Treasury comparison on a 504 pricing
+   page, which is a cross-reference rather than a figure that page publishes.
+   A missing figure is reported and **never sets the exit code**, so it cannot pin the `source-rot`
+   issue open and train everyone to skip the section. A figure can also be missing by construction:
+   the SBA 7(a) ceiling is Prime plus the cap SBA publishes, so it is not on SBA's page. `--stats-only`
+   re-runs just this half, about 50 requests instead of 557.*
 3. **Freshness report.** List pages whose `lastUpdated` is older than 90 days and stats on
    `/data/hotel-financing-statistics` whose `verified` date is older than 90 days. Open one issue.
    *Shipped 2026-10-05: `scripts/freshness-report.ts` and the **Freshness report** Action

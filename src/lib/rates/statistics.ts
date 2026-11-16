@@ -84,11 +84,13 @@ const V3 = "2026-09-21";
 /** Re-verified 2026-10-01 for the October 2026 edition. */
 const V4 = "2026-10-01";
 /**
- * The Trepp distress re-read. Those three entries are the only ones that carry
- * it, and they are re-read together whenever Trepp's newest monthly readings
- * reach a public release this environment can open: 2026-10-26 for the
- * September readings, 2026-11-16 for the October ones. Each entry's own `note`
- * keeps the levels it carried before.
+ * Re-verified 2026-11-16. The three Trepp distress entries, which are re-read
+ * together whenever Trepp's newest monthly readings reach a public release
+ * this environment can open (2026-10-26 for the September readings, this date
+ * for the October ones), and the CoStar forecast entry, whose cited article
+ * was re-read after the figure half of scripts/source-link-check.ts reported a
+ * figure in it that the article does not carry. Each entry's own `note` keeps
+ * what it said before.
  */
 const V5 = "2026-11-16";
 
@@ -550,13 +552,14 @@ export const STATS: Stat[] = [
   {
     id: "costar-2026-forecast",
     group: "operating-fundamentals",
-    text: "CoStar and Tourism Economics forecast U.S. RevPAR growth of 4.4% for full-year 2026, on ADR growth of 3.1% and occupancy of 63.1%, and RevPAR growth of 2.1% for 2027. They raised the 2026 figure twice during the year, from 0.6% in February and 2.8% in June.",
+    text: "CoStar and Tourism Economics forecast U.S. RevPAR growth of 4.4% for full-year 2026, on ADR growth of 3.1% and occupancy of 63.1%, and RevPAR growth of 2.1% for 2027, raised from a previous 2.8% forecast for 2026.",
     sourceName:
       "CoStar, Tourism Economics 'significantly' boost US hotel outlook",
     publisher: "Hotel Dive, citing CoStar and Tourism Economics",
     url: "https://www.hoteldive.com/news/costar-tourism-economics-raise-us-hotel-performance-outlook-2026/827318/",
     asOf: "2026-08-07",
-    verified: V,
+    verified: V5,
+    note: "Read from a trade publication quoting CoStar and Tourism Economics, not from CoStar directly, because costar.com answers 403 to this environment. Until November 16, 2026 this entry ended \"They raised the 2026 figure twice during the year, from 0.6% in February and 2.8% in June\". The cited article, re-read that day, carries the 4.4%, the 3.1%, the 63.1%, the 2.1% and the raise \"up from their previous 2.8% growth forecast\", but it does not carry the 0.6% and it dates neither revision, so the dated series came out. The 2.8% and its June date are in Hotel Dive of June 2, 2026, which also puts 2026 occupancy at 62.8% and ADR up 2%. The February 0.6% is published on CoStar\u2019s own U.S. Hotel Forecast Assumptions page for February 2026, which could not be opened in this run, so it is not published here. Found by the figure half of scripts/source-link-check.ts, which reported 0.6 as absent from the cited page.",
   },
   {
     id: "cbre-2026-forecast",
