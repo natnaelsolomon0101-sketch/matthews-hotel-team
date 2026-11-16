@@ -357,6 +357,16 @@ numbers.
    brittle citation; plus `www.sba.gov/document/sop-50-10-...`, which answers 302 to `legacy.sba.gov`
    while SBA migrates its SOP library). Two were real 301 moves and are fixed in the same PR: GSA's
    per-diem path and `www.courts.ca.gov`, which answers 301 twice to `www4`.*
+   *Extended 2026-11-16: the second half of this item, "pages whose text no longer contains the cited
+   figure", now runs too. For every statistic in `src/lib/rates/statistics.ts` the script reads the
+   text of the page cited for it and reports any figure in the statistic's sentence that is not
+   there, with digit guards so `8.02` does not match inside `18.025`. Only that module is checked,
+   because it is the only one that pairs one figure with one link: answer-page and glossary sources
+   carry a prose label rather than the figure, so there is nothing to match them against. A missing
+   figure is reported and never sets the exit code, so it cannot pin the `source-rot` issue open: a
+   number can live in a chart, arrive by script, or sit in a PDF the script does not parse, and the
+   page can still carry the claim. A page that is not HTML or plain text is reported as unread rather
+   than as missing.*
 3. **Freshness report.** List pages whose `lastUpdated` is older than 90 days and stats on
    `/data/hotel-financing-statistics` whose `verified` date is older than 90 days. Open one issue.
    *Shipped 2026-10-05: `scripts/freshness-report.ts` and the **Freshness report** Action

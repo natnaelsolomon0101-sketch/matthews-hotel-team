@@ -45,6 +45,16 @@
  *   - It never touches matthewshotelmarkets.com. Our own URLs are skipped,
  *     and one request per URL means no loops at anyone.
  *   - It never edits a page. It reports, and a person decides.
+ *
+ * Since 2026-11-16 it also does the second half of the weekly job in
+ * geo/11-everything-needed.md item 2: "pages whose text no longer contains the
+ * cited figure". That half only works where a figure and a URL are paired in
+ * the data, which is `src/lib/rates/statistics.ts`: one sentence, one number,
+ * one link. Answer-page and glossary sources carry a prose label rather than
+ * the figure, so there is nothing to match them against and they are checked
+ * for status only. A figure that cannot be found is reported and never sets
+ * the exit code: a number can live in a chart, arrive by script, or sit in a
+ * PDF this script does not parse, and the page can still carry the claim.
  */
 import { answerPages, answerPath } from "../src/lib/data/answers";
 import { glossary } from "../src/lib/data/glossary";
@@ -60,10 +70,53 @@ const OWN_HOST = /(^|\.)matthewshotelmarkets\.com$/i;
 /** Dead, as opposed to blocked. Only these set the exit code. */
 const DEAD = new Set([404, 410, 451]);
 
-type Citation = { url: string; where: string[] };
+/** One figure claim a citation is supposed to support. */
+type Claim = { statId: string; text: string; values: string[] };
+
+type Citation = { url: string; where: string[]; claims?: Claim[] };
+
+/**
+ * The numeric core of every figure in a sentence, so that "8.02%" is looked
+ * for as "8.02" and "$47.42 billion" as "47.42". Four-digit numbers between
+ * 1900 and 2100 are dropped: they are years, and a year is a date on the
+ * claim rather than the claim itself.
+ */
+function figuresIn(text: string): string[] {
+  const out: string[] = [];
+  for (const m of text.matchAll(/\d+(?:,\d{3})*(?:\.\d+)?/g)) {
+    const raw = m[0].replace(/,/g, "");
+    const n = Number(raw);
+    if (!Number.isFinite(n)) continue;
+    if (/^\d{4}$/.test(raw) && n >= 1900 && n <= 2100) continue;
+    if (!out.includes(raw)) out.push(raw);
+  }
+  return out;
+}
+
+/**
+ * Is this figure anywhere in the page text? Digit guards on both sides, so
+ * "8.02" does not match inside "18.025", and commas are stripped from both
+ * sides first so "47,420" and "47420" are the same number.
+ */
+function pageHasFigure(pageText: string, value: string): boolean {
+  const escaped = value.replace(/\./g, "\\.");
+  return new RegExp(`(?<![\\d.])${escaped}(?![\\d])`).test(pageText);
+}
+
+/** Visible-ish text of an HTML page, with digit-group commas removed. */
+function pageText(html: string): string {
+  return html
+    .replace(/<(script|style|noscript)[^>]*>[\s\S]*?<\/\1>/gi, " ")
+    .replace(/<!--[\s\S]*?-->/g, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/(\d),(?=\d{3}\b)/g, "$1")
+    .replace(/\s+/g, " ");
+}
 
 function collect(): Citation[] {
   const byUrl = new Map<string, Set<string>>();
+  const claimsByUrl = new Map<string, Claim[]>();
   const add = (url: string | undefined, where: string) => {
     if (!url) return;
     let host: string;
@@ -91,10 +144,21 @@ function collect(): Citation[] {
     for (const s of tool.sources ?? []) add(s.url, `/tools/${tool.slug}`);
   }
   for (const s of RATE_SOURCES) add(s.url, `/rates (${s.id})`);
-  for (const s of STATS) add(s.url, `/data/hotel-financing-statistics (${s.id})`);
+  for (const s of STATS) {
+    add(s.url, `/data/hotel-financing-statistics (${s.id})`);
+    const values = figuresIn(s.text);
+    if (!values.length) continue;
+    const list = claimsByUrl.get(s.url) ?? [];
+    list.push({ statId: s.id, text: s.text, values });
+    claimsByUrl.set(s.url, list);
+  }
 
   return [...byUrl.entries()]
-    .map(([url, where]) => ({ url, where: [...where].sort() }))
+    .map(([url, where]) => ({
+      url,
+      where: [...where].sort(),
+      claims: claimsByUrl.get(url),
+    }))
     .sort((a, b) => a.url.localeCompare(b.url));
 }
 
@@ -108,12 +172,56 @@ type Result = Citation & {
   blockedHost?: string;
   /** Every redirect followed, in order, with the status that sent us there. */
   hops: Hop[];
+  /** Figures from `claims` that are not in the page text. */
+  missingFigures?: { statId: string; values: string[] }[];
+  /** Why the page text could not be read, when it could not. */
+  textUnread?: string;
 };
 
 /** 301 and 308 mean the document lives somewhere else now. The rest do not. */
 const PERMANENT = new Set([301, 308]);
 const REDIRECT = new Set([301, 302, 303, 307, 308]);
 const MAX_HOPS = 6;
+
+/** Pages larger than this are not read into memory. */
+const MAX_BODY_BYTES = 4_000_000;
+
+/**
+ * Read the page the citation landed on and say which of the figures it is
+ * cited for are not in its text. A PDF, a spreadsheet or anything else this
+ * script cannot turn into text is reported as unread rather than as missing,
+ * because "not found" has to mean "looked for and not there".
+ */
+async function checkFigures(
+  claims: Claim[],
+  res: Response,
+): Promise<Pick<Result, "missingFigures" | "textUnread">> {
+  const type = (res.headers.get("content-type") ?? "").toLowerCase();
+  if (!/text\/html|text\/plain|application\/xhtml/.test(type)) {
+    return { textUnread: `content-type ${type || "unknown"} is not text this script can read` };
+  }
+  const length = Number(res.headers.get("content-length") ?? "0");
+  if (length > MAX_BODY_BYTES) {
+    return { textUnread: `${length} bytes, over the ${MAX_BODY_BYTES} byte read limit` };
+  }
+  let text: string;
+  try {
+    const body = await res.text();
+    if (body.length > MAX_BODY_BYTES) {
+      return { textUnread: `${body.length} bytes, over the ${MAX_BODY_BYTES} byte read limit` };
+    }
+    text = pageText(body);
+  } catch (err) {
+    return { textUnread: err instanceof Error ? err.message : String(err) };
+  }
+  const missingFigures = claims
+    .map((c) => ({
+      statId: c.statId,
+      values: c.values.filter((v) => !pageHasFigure(text, v)),
+    }))
+    .filter((m) => m.values.length);
+  return { missingFigures };
+}
 
 /**
  * Fetch one citation, following redirects one at a time so that each hop's
@@ -142,7 +250,9 @@ async function check(c: Citation, timeoutMs: number): Promise<Result> {
       });
       const location = res.headers.get("location");
       if (!REDIRECT.has(res.status) || !location) {
-        return { ...c, status: res.status, finalUrl: url, hops };
+        const base: Result = { ...c, status: res.status, finalUrl: url, hops };
+        if (!c.claims?.length || res.status !== 200) return base;
+        return { ...base, ...(await checkFigures(c.claims, res)) };
       }
       const next = new URL(location, url).toString();
       hops.push({ status: res.status, to: next });
@@ -287,11 +397,23 @@ async function main() {
   );
   const ok = results.length - dead.length - blocked.length;
 
+  // The second half of the weekly job: does the page still carry the figure?
+  const withClaims = results.filter((r) => r.claims?.length);
+  const figuresChecked = withClaims
+    .filter((r) => r.missingFigures)
+    .reduce((n, r) => n + (r.claims ?? []).reduce((m, c) => m + c.values.length, 0), 0);
+  const figureMisses = withClaims.filter((r) => r.missingFigures?.length);
+  const figuresUnread = withClaims.filter((r) => r.textUnread || (!r.missingFigures && !r.textUnread));
+
   const out: string[] = [];
   out.push(`# Source-link check, ${new Date().toISOString().slice(0, 10)}`);
   out.push("");
   out.push(
     `${results.length} external source URLs cited on answer pages, glossary terms, tool pages, /rates and /data/hotel-financing-statistics. ${ok} answered 200. ${dead.length} dead. ${redirected.length} moved. ${temporary.length} redirected on the fly. ${blocked.length} could not be checked from a script.`,
+  );
+  out.push(
+    "",
+    `Figures: ${figuresChecked} numbers from ${withClaims.length - figuresUnread.length} statistics pages were looked for in the text of the page that is cited for them. ${figureMisses.length} pages are missing at least one. ${figuresUnread.length} pages could not be read as text.`,
   );
 
   if (dead.length) {
@@ -340,6 +462,27 @@ async function main() {
           r.where.join("<br>"),
         ]),
         ["Cited URL", "Lands on", "Redirect", "Cited on"],
+      ),
+    );
+  }
+  if (figureMisses.length) {
+    out.push(
+      "",
+      "## Cited figure not in the page text",
+      "",
+      "Not a finding on its own, and never in the exit code. The page answered 200 and this script read its text, but the number the statistic is cited for is not in it. That happens when a publisher revises a figure, which is the case worth catching, and it also happens when the number lives in a chart, arrives by script after load, or is written in words. Open the page and read it before changing anything. Only `src/lib/rates/statistics.ts` is checked this way, because it is the only module that pairs one figure with one link.",
+      "",
+    );
+    out.push(
+      table(
+        figureMisses.flatMap((r) =>
+          (r.missingFigures ?? []).map((m) => [
+            m.statId,
+            m.values.join(", "),
+            r.url,
+          ]),
+        ),
+        ["Statistic", "Figure not found", "Cited URL"],
       ),
     );
   }
