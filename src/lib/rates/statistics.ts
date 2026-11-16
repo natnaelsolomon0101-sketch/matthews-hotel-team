@@ -83,8 +83,16 @@ const V = "2026-09-17";
 const V3 = "2026-09-21";
 /** Re-verified 2026-10-01 for the October 2026 edition. */
 const V4 = "2026-10-01";
-/** Re-verified 2026-10-26: the Trepp distress readings against their newest public coverage. */
-const V5 = "2026-10-26";
+/**
+ * Re-verified 2026-11-16. The three Trepp distress entries, which are re-read
+ * together whenever Trepp's newest monthly readings reach a public release
+ * this environment can open (2026-10-26 for the September readings, this date
+ * for the October ones), and the CoStar forecast entry, whose cited article
+ * was re-read after the figure half of scripts/source-link-check.ts reported a
+ * figure in it that the article does not carry. Each entry's own `note` keeps
+ * what it said before.
+ */
+const V5 = "2026-11-16";
 
 const TREASURY = {
   sourceName: "Daily Treasury Par Yield Curve Rates",
@@ -426,35 +434,35 @@ export const STATS: Stat[] = [
   {
     id: "trepp-overall-delinquency",
     group: "maturities-and-distress",
-    text: "The overall CMBS delinquency rate was 8.02% in September 2026, up 17 basis points from August.",
-    sourceName: "Multifamily CMBS delinquency and servicing rates rose yet again",
-    publisher: "Multifamily Dive, citing Trepp",
-    url: "https://www.multifamilydive.com/news/cmbs-servicing-federal-reserve-apartment-deliquency/833363/",
-    asOf: "2026-10-19",
+    text: "The overall CMBS delinquency rate was 7.87% in October 2026, down 15 basis points from September.",
+    sourceName: "CMBS Delinquency Rate Dips to 7.87% as Retail Jumps 63 bps",
+    publisher: "CRE Daily, citing Trepp",
+    url: "https://www.credaily.com/briefs/cmbs-delinquency-rate-dips-to-7-87-as-retail-jumps-63-bps/",
+    asOf: "2026-11-03",
     verified: V5,
-    note: "The August reading of 7.85%, 1 basis point below July, stood here until October 26, 2026.",
+    note: "Read from a trade publication quoting Trepp, not from Trepp directly, because trepp.com cannot be opened from this environment. Yield PRO of November 5, 2026 prints the same 7.87% and the same 15 basis point fall. Trepp attributes the fall largely to one $975 million loan returning to current status, so the October improvement is not a broad one: retail rose 63 basis points to 7.21% and office rose 17 to 12.33% in the same month. The September reading of 8.02%, 17 basis points above August, stood here until November 16, 2026, and the August reading of 7.85% until October 26, 2026.",
   },
   {
     id: "trepp-special-servicing",
     group: "maturities-and-distress",
-    text: "The overall CMBS special servicing rate rose 7 basis points in September 2026 to 11.49%, its highest level since February 2013.",
-    sourceName: "CMBS Special Servicing Rate Climbs to New Post-2013 High",
-    publisher: "Connect CRE, citing Trepp",
-    url: "https://www.connectcre.com/stories/cmbs-special-servicing-rate-climbs-to-new-post-2013-high/",
-    asOf: "2026-10-14",
+    text: "The overall CMBS special servicing rate rose 25 basis points in October 2026 to 11.74%, its highest level since 2012.",
+    sourceName: "Multifamily CMBS special servicing rate higher in October",
+    publisher: "Yield PRO, citing Trepp",
+    url: "https://yieldpro.com/2026/11/multifamily-cmbs-special-servicing-rate-higher-in-october-2/",
+    asOf: "2026-11-10",
     verified: V5,
-    note: "Special servicing leads delinquency. A loan moves to special servicing before it misses a payment, so this is the forward-looking of the two rates. The 7 basis point rise in September followed a 33 basis point rise in August, which took the rate to 11.42%. The same release puts lodging special servicing at 8.95% in September, up 21 basis points.",
+    note: "Special servicing leads delinquency. A loan moves to special servicing before it misses a payment, so this is the forward-looking of the two rates, and it rose in October while the delinquency rate fell. Read from trade publications quoting Trepp, not from Trepp directly, because trepp.com cannot be opened from this environment; both name the Trepp report of November 9, 2026. Lodging special servicing rose 122 basis points to 10.17% in the same month, the largest increase of any property type. United States Real Estate Investor of November 14, 2026 prints the same 11.74% and 10.17%, dates the rate the highest since December 2012, and adds that lodging was 37% of the $3.01 billion transferred to special servicing in October. The September reading of 11.49%, then the highest since February 2013, stood here until November 16, 2026.",
   },
   {
     id: "trepp-lodging-delinquency",
     group: "maturities-and-distress",
-    text: "The lodging CMBS delinquency rate was 5.84% in August 2026, up 49 basis points on the month.",
-    sourceName: "Trepp: CMBS Delinquency Rate Falls One Basis Point in August",
-    publisher: "MBA Newslink, citing Trepp",
-    url: "https://newslink.mba.org/mba-newslinks/2026/september/mba-commercial-multifamily-newslink-april-2/trepp-cmbs-delinquency-rate-falls-one-basis-point-in-august/",
-    asOf: "2026-09-08",
+    text: "The lodging CMBS delinquency rate was 5.94% in October 2026, down 24 basis points on the month.",
+    sourceName: "CMBS Delinquency Rate Dips to 7.87% as Retail Jumps 63 bps",
+    publisher: "CRE Daily, citing Trepp",
+    url: "https://www.credaily.com/briefs/cmbs-delinquency-rate-dips-to-7-87-as-retail-jumps-63-bps/",
+    asOf: "2026-11-03",
     verified: V5,
-    note: "This entry carried the July reading of 5.35% and the direction of travel until October 26, 2026, because no release we could open in September stated the August level. Connect CRE, citing the same Trepp report, prints the same 5.84% and the same 49 basis points. The September lodging delinquency rate is still not in any public release we could open on October 26, 2026.",
+    note: "Read from trade publications quoting Trepp, not from Trepp directly, because trepp.com cannot be opened from this environment. Yield PRO of November 5, 2026 prints the same 5.94% and the same 24 basis point fall, and adds that lodging is 13 basis points below where it was a year earlier. A 24 basis point fall from September implies a September level of 6.18%, which no release we could open states on its own, so it is not published here. This entry carried the August reading of 5.84% until November 16, 2026, and the July reading of 5.35% until October 26, 2026.",
   },
   {
     id: "cmbs-late-balance",
@@ -544,13 +552,14 @@ export const STATS: Stat[] = [
   {
     id: "costar-2026-forecast",
     group: "operating-fundamentals",
-    text: "CoStar and Tourism Economics forecast U.S. RevPAR growth of 4.4% for full-year 2026, on ADR growth of 3.1% and occupancy of 63.1%, and RevPAR growth of 2.1% for 2027. They raised the 2026 figure twice during the year, from 0.6% in February and 2.8% in June.",
+    text: "CoStar and Tourism Economics forecast U.S. RevPAR growth of 4.4% for full-year 2026, on ADR growth of 3.1% and occupancy of 63.1%, and RevPAR growth of 2.1% for 2027, raised from a previous 2.8% forecast for 2026.",
     sourceName:
       "CoStar, Tourism Economics 'significantly' boost US hotel outlook",
     publisher: "Hotel Dive, citing CoStar and Tourism Economics",
     url: "https://www.hoteldive.com/news/costar-tourism-economics-raise-us-hotel-performance-outlook-2026/827318/",
     asOf: "2026-08-07",
-    verified: V,
+    verified: V5,
+    note: "Read from a trade publication quoting CoStar and Tourism Economics, not from CoStar directly, because costar.com answers 403 to this environment. Until November 16, 2026 this entry ended \"They raised the 2026 figure twice during the year, from 0.6% in February and 2.8% in June\". The cited article, re-read that day, carries the 4.4%, the 3.1%, the 63.1%, the 2.1% and the raise \"up from their previous 2.8% growth forecast\", but it does not carry the 0.6% and it dates neither revision, so the dated series came out. The 2.8% and its June date are in Hotel Dive of June 2, 2026, which also puts 2026 occupancy at 62.8% and ADR up 2%. The February 0.6% is published on CoStar\u2019s own U.S. Hotel Forecast Assumptions page for February 2026, which could not be opened in this run, so it is not published here. Found by the figure half of scripts/source-link-check.ts, which reported 0.6 as absent from the cited page.",
   },
   {
     id: "cbre-2026-forecast",

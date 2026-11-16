@@ -11,6 +11,7 @@
  *   npx tsx scripts/source-link-check.ts --limit 20 # first 20 URLs
  *   npx tsx scripts/source-link-check.ts --delay 2000
  *   npx tsx scripts/source-link-check.ts --only sba.gov   # re-check one host
+ *   npx tsx scripts/source-link-check.ts --stats-only     # just the figure half
  *
  * Exit code 0 = nothing dead, 1 = at least one dead or moved link.
  *
@@ -45,6 +46,16 @@
  *   - It never touches matthewshotelmarkets.com. Our own URLs are skipped,
  *     and one request per URL means no loops at anyone.
  *   - It never edits a page. It reports, and a person decides.
+ *
+ * Since 2026-11-16 it also does the second half of the weekly job in
+ * geo/11-everything-needed.md item 2: "pages whose text no longer contains the
+ * cited figure". That half only works where a figure and a URL are paired in
+ * the data, which is `src/lib/rates/statistics.ts`: one sentence, one number,
+ * one link. Answer-page and glossary sources carry a prose label rather than
+ * the figure, so there is nothing to match them against and they are checked
+ * for status only. A figure that cannot be found is reported and never sets
+ * the exit code: a number can live in a chart, arrive by script, or sit in a
+ * PDF this script does not parse, and the page can still carry the claim.
  */
 import { answerPages, answerPath } from "../src/lib/data/answers";
 import { glossary } from "../src/lib/data/glossary";
@@ -60,10 +71,69 @@ const OWN_HOST = /(^|\.)matthewshotelmarkets\.com$/i;
 /** Dead, as opposed to blocked. Only these set the exit code. */
 const DEAD = new Set([404, 410, 451]);
 
-type Citation = { url: string; where: string[] };
+/** One figure claim a citation is supposed to support. */
+type Claim = { statId: string; text: string; values: number[] };
+
+type Citation = { url: string; where: string[]; claims?: Claim[] };
+
+/** Every number in a string, as numbers, with digit-group commas joined. */
+function numbersIn(text: string): number[] {
+  const out: number[] = [];
+  for (const m of text.replace(/(\d),(?=\d{3}\b)/g, "$1").matchAll(/\d+(?:\.\d+)?/g)) {
+    const n = Number(m[0]);
+    if (Number.isFinite(n)) out.push(n);
+  }
+  return out;
+}
+
+/**
+ * The figures in a statistic's sentence that are worth looking for on the page
+ * cited for it. Two kinds are dropped, because their absence would prove
+ * nothing and a report that cries wolf every week is worse than no report:
+ *
+ *   - Years between 1900 and 2100. A year dates the claim; it is not the claim.
+ *   - Legal addresses: "13 CFR 120.910", "26 U.S.C. 1014", "Pub. L. No. 101-391".
+ *     A section number parses as a decimal, so the integer rule below misses it.
+ *   - Bare integers under 1000: basis points moved, vote tallies, a count of
+ *     years, "25 basis points", "a 12 to 0 vote". The
+ *     published figures on this page are rates, which carry a decimal point,
+ *     and dollar amounts and counts, which are large. Measured on 2026-11-16:
+ *     keeping small integers flagged 11 of 20 pages and every one of them was
+ *     a false positive.
+ *
+ * So "8.02%" is looked for as 8.02 and "$47.42 billion" as 47.42, while the
+ * "17 basis points" in the same sentence is not looked for at all.
+ */
+function figuresIn(text: string): number[] {
+  const out: number[] = [];
+  // "13 CFR 120.910" and "26 U.S.C. 1014" are addresses, not figures, and they
+  // parse as decimals so the integer rule below does not catch them.
+  const stripped = text.replace(
+    /\b(?:\d+\s+)?(?:CFR|C\.F\.R\.|U\.S\.C\.|USC|Pub\.?\s*L\.?|FR|§+)\s*(?:No\.?\s*)?[\d.\u2013-]+/gi,
+    " ",
+  );
+  for (const n of numbersIn(stripped)) {
+    if (Number.isInteger(n) && n >= 1900 && n <= 2100) continue;
+    if (Number.isInteger(n) && n < 1000) continue;
+    if (!out.includes(n)) out.push(n);
+  }
+  return out;
+}
+
+
+/** Visible-ish text of an HTML page. */
+function pageText(html: string): string {
+  return html
+    .replace(/<(script|style|noscript)[^>]*>[\s\S]*?<\/\1>/gi, " ")
+    .replace(/<!--[\s\S]*?-->/g, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/\s+/g, " ");
+}
 
 function collect(): Citation[] {
   const byUrl = new Map<string, Set<string>>();
+  const claimsByUrl = new Map<string, Claim[]>();
   const add = (url: string | undefined, where: string) => {
     if (!url) return;
     let host: string;
@@ -91,10 +161,21 @@ function collect(): Citation[] {
     for (const s of tool.sources ?? []) add(s.url, `/tools/${tool.slug}`);
   }
   for (const s of RATE_SOURCES) add(s.url, `/rates (${s.id})`);
-  for (const s of STATS) add(s.url, `/data/hotel-financing-statistics (${s.id})`);
+  for (const s of STATS) {
+    add(s.url, `/data/hotel-financing-statistics (${s.id})`);
+    const values = figuresIn(s.text);
+    if (!values.length) continue;
+    const list = claimsByUrl.get(s.url) ?? [];
+    list.push({ statId: s.id, text: s.text, values });
+    claimsByUrl.set(s.url, list);
+  }
 
   return [...byUrl.entries()]
-    .map(([url, where]) => ({ url, where: [...where].sort() }))
+    .map(([url, where]) => ({
+      url,
+      where: [...where].sort(),
+      claims: claimsByUrl.get(url),
+    }))
     .sort((a, b) => a.url.localeCompare(b.url));
 }
 
@@ -108,12 +189,74 @@ type Result = Citation & {
   blockedHost?: string;
   /** Every redirect followed, in order, with the status that sent us there. */
   hops: Hop[];
+  /** Figures from `claims` that are not in the page text. */
+  missingFigures?: { statId: string; values: number[] }[];
+  /** Why the page text could not be read, when it could not. */
+  textUnread?: string;
 };
 
 /** 301 and 308 mean the document lives somewhere else now. The rest do not. */
 const PERMANENT = new Set([301, 308]);
 const REDIRECT = new Set([301, 302, 303, 307, 308]);
 const MAX_HOPS = 6;
+
+/** Pages larger than this are not read into memory. */
+const MAX_BODY_BYTES = 4_000_000;
+
+/**
+ * Read the page the citation landed on and say which of the figures it is
+ * cited for are not in its text. A PDF, a spreadsheet or anything else this
+ * script cannot turn into text is reported as unread rather than as missing,
+ * because "not found" has to mean "looked for and not there".
+ */
+async function checkFigures(
+  claims: Claim[],
+  res: Response,
+): Promise<Pick<Result, "missingFigures" | "textUnread">> {
+  const type = (res.headers.get("content-type") ?? "").toLowerCase();
+  if (!/text\/html|text\/plain|application\/xhtml/.test(type)) {
+    return { textUnread: `content-type ${type || "unknown"} is not text this script can read` };
+  }
+  const length = Number(res.headers.get("content-length") ?? "0");
+  if (length > MAX_BODY_BYTES) {
+    return { textUnread: `${length} bytes, over the ${MAX_BODY_BYTES} byte read limit` };
+  }
+  let onPage: Set<number>;
+  try {
+    const body = await res.text();
+    if (body.length > MAX_BODY_BYTES) {
+      return { textUnread: `${body.length} bytes, over the ${MAX_BODY_BYTES} byte read limit` };
+    }
+    onPage = new Set(numbersIn(pageText(body)));
+  } catch (err) {
+    return { textUnread: err instanceof Error ? err.message : String(err) };
+  }
+  // Numeric comparison, not string: SBA writes "base rate plus 3.0%" where the
+  // statistic says 3.00%, and 3.0 and 3.00 are the same number.
+  const missingFigures = claims
+    .map((c) => ({
+      statId: c.statId,
+      values: c.values.filter((v) => !onPage.has(v)),
+    }))
+    .filter((m) => m.values.length);
+
+  // If NONE of the figures cited against this page is in it, the page is one
+  // this script cannot read, not a page where every publisher figure changed
+  // at once. Treasury's yield curve page is the case that forced this rule:
+  // seven statistics cite it, it builds its table in the browser, and a
+  // scripted reader gets the furniture and none of the rates. Reporting that
+  // as seven revised figures every week is the kind of noise that teaches a
+  // reader to skip the section. A page that serves some of its figures and
+  // not others is the case worth reading, and that still reports.
+  const total = claims.reduce((n, c) => n + c.values.length, 0);
+  const missing = missingFigures.reduce((n, m) => n + m.values.length, 0);
+  if (total >= 2 && missing === total) {
+    return {
+      textUnread: `none of the ${total} figures cited against this page is in the HTML it served, so the numbers are built in the browser or sit in a document this script cannot read`,
+    };
+  }
+  return { missingFigures };
+}
 
 /**
  * Fetch one citation, following redirects one at a time so that each hop's
@@ -142,7 +285,9 @@ async function check(c: Citation, timeoutMs: number): Promise<Result> {
       });
       const location = res.headers.get("location");
       if (!REDIRECT.has(res.status) || !location) {
-        return { ...c, status: res.status, finalUrl: url, hops };
+        const base: Result = { ...c, status: res.status, finalUrl: url, hops };
+        if (!c.claims?.length || res.status !== 200) return base;
+        return { ...base, ...(await checkFigures(c.claims, res)) };
       }
       const next = new URL(location, url).toString();
       hops.push({ status: res.status, to: next });
@@ -234,11 +379,16 @@ async function main() {
   const timeout = num("--timeout", 30000);
   const limit = num("--limit", Infinity);
 
-  // Re-check one citation or one host without sending 426 requests.
+  // Re-check one citation or one host without sending 557 requests.
   const onlyAt = args.indexOf("--only");
   const only = onlyAt >= 0 ? args[onlyAt + 1] : undefined;
+  // --stats-only: just the URLs a statistic is cited against, which is the
+  // only set the figure half looks at. About 50 requests instead of 557, for
+  // re-checking that half without a full run.
+  const statsOnly = args.includes("--stats-only");
   const citations = collect()
     .filter((c) => (only ? c.url.includes(only) : true))
+    .filter((c) => (statsOnly ? Boolean(c.claims?.length) : true))
     .slice(0, limit);
   const results: Result[] = [];
   for (const [i, c] of citations.entries()) {
@@ -287,11 +437,23 @@ async function main() {
   );
   const ok = results.length - dead.length - blocked.length;
 
+  // The second half of the weekly job: does the page still carry the figure?
+  const withClaims = results.filter((r) => r.claims?.length);
+  const figuresChecked = withClaims
+    .filter((r) => r.missingFigures)
+    .reduce((n, r) => n + (r.claims ?? []).reduce((m, c) => m + c.values.length, 0), 0);
+  const figureMisses = withClaims.filter((r) => r.missingFigures?.length);
+  const figuresUnread = withClaims.filter((r) => r.textUnread || (!r.missingFigures && !r.textUnread));
+
   const out: string[] = [];
   out.push(`# Source-link check, ${new Date().toISOString().slice(0, 10)}`);
   out.push("");
   out.push(
     `${results.length} external source URLs cited on answer pages, glossary terms, tool pages, /rates and /data/hotel-financing-statistics. ${ok} answered 200. ${dead.length} dead. ${redirected.length} moved. ${temporary.length} redirected on the fly. ${blocked.length} could not be checked from a script.`,
+  );
+  out.push(
+    "",
+    `Figures: ${figuresChecked} numbers from ${withClaims.length - figuresUnread.length} statistics pages were looked for in the text of the page that is cited for them. ${figureMisses.length} pages are missing at least one. ${figuresUnread.length} pages could not be read as text.`,
   );
 
   if (dead.length) {
@@ -340,6 +502,27 @@ async function main() {
           r.where.join("<br>"),
         ]),
         ["Cited URL", "Lands on", "Redirect", "Cited on"],
+      ),
+    );
+  }
+  if (figureMisses.length) {
+    out.push(
+      "",
+      "## Cited figure not in the page text",
+      "",
+      "Not a finding on its own, and never in the exit code. The page answered 200 and this script read its text, but the number the statistic is cited for is not in it. That happens when a publisher revises a figure, which is the case worth catching. It also happens for a figure that is derived rather than quoted, such as the SBA 7(a) ceiling, which is Prime plus the cap SBA publishes and so is not on SBA's page by construction, and for a number a publisher writes in words rather than digits. Open the page and read it before changing anything. Only `src/lib/rates/statistics.ts` is checked this way, because it is the only module that pairs one figure with one link.",
+      "",
+    );
+    out.push(
+      table(
+        figureMisses.flatMap((r) =>
+          (r.missingFigures ?? []).map((m) => [
+            m.statId,
+            m.values.map((v) => String(v)).join(", "),
+            r.url,
+          ]),
+        ),
+        ["Statistic", "Figure not found", "Cited URL"],
       ),
     );
   }
