@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-11-10T14:26:54.926Z",
+  "runAt": "2026-11-16T14:27:09.471Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 339,
-  "blocksFound": 339,
-  "blocksValid": 339,
+  "urlsChecked": 340,
+  "blocksFound": 340,
+  "blocksValid": 340,
   "issues": [],
   "blocks": [
     {
@@ -1401,6 +1401,13 @@
     },
     {
       "url": "/hotel-industry/franchise-territory-and-encroachment",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-industry/property-insurance-of-last-resort",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,
