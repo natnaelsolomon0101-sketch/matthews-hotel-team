@@ -639,6 +639,7 @@ Pick from `geo/04-queries.csv` prompts with no dedicated page, phrased the way p
 | [x] | `/hotel-financing/interest-deduction-limits` | No CSV row targets it directly, and "163(j)", "business interest", "interest deduction", "net operating loss" and "self-rental" are absent from `geo/04-queries.csv`. It answers the deductibility half of the "Loan types" and "Deal docs & underwriting" clusters, which between them ask what every loan product costs and never ask what of that cost is deductible. The gap was total: "163(j)" appeared in **zero** files under `src/lib/data/`, and "business interest" only inside the section 6166 phrase "closely held business interest". | Shipped 2026-10-28 in PR #87. |
 | [x] | `/hotel-financing/public-incentives-and-tif` | No CSV row targets it directly, and "tax increment", "private activity", "tax-exempt bond", "municipal bond", "2017-13" and "publicly owned hotel" each appeared in zero files under `src/lib/data/`, while "incentive" appeared in 25 files and never once about a state or local program. The site had five federal incentive pages and nothing on the layer a city controls | Shipped 2026-10-29. Covers why a private hotel's municipal debt is taxable (26 U.S.C. 141 and the 17-category 142(a) list), the one tax-exempt route that can reach a hotel rehab (the 144(c) qualified redevelopment bond, which cannot fund new construction), what Rev. Proc. 2017-13 does to a brand management agreement at a city-owned hotel, and two state TIF statutes that reach opposite answers. Carries the first hotel-level TIF figures on the site, recomputed from Missouri's own 2025 annual report: 8 hotel-named plans of 354, a 6.2 to 79.8 percent TIF share of total project cost. Prints no award size and no national hotel-TIF count, because neither is published. Texas Tax Code 351.102 left out: `statutes.capitol.texas.gov` is still a JavaScript shell |
 | [x] | `/sell-a-hotel/asset-sale-vs-entity-sale` | No CSV row targets it directly. The gap was near total: "equity sale", "successor liability", "Form 8308", "marketplace facilitator" and "1446" appeared in **zero** files under `src/lib/data/`, "membership interest" and "stock sale" in one each, and sections 751, 743 and 754 nowhere at all in a tax sense. The site had a full page on the tax layers of a hotel sale and nothing on the structure question that decides which sections those layers arrive through | Shipped 2026-11-10. Answers the question with a number: on the same $18,000,000 price and the same allocation, the seller's federal bill is identical both ways, $2,320,000, because section 751(c) treats the section 1245 recapture as an unrealized receivable and 26 CFR 1.1(h)-1(b)(3) hands the selling partner the section 1250 layer at 25 percent. The real differences are the buyer's $9,700,000 section 743(b) step-up (only with a 754 election), the loss of section 1031 (26 CFR 1.1031(a)-3(a)(5)(i)(C) excludes partnership interests), Washington's controlling-interest excise tax and California's change-in-control reassessment. Prints no lender or franchisor change-of-control consent terms and no consent fee: none is published |
+| [x] | `/hotel-financing/mechanics-liens` | No CSV row targets it directly. The gap was total: "mechanic's lien", "mechanics lien" and "construction lien" appeared in **zero** files under `src/lib/data/`, and "lien" only ever as a tax or mortgage lien. The site carried `/hotel-financing/construction-loans`, `/hotel-financing/pip-and-renovation-loans` and `/hotel-financing/closing-costs` and said nothing about the one thing an unpaid contractor on a PIP can do to the title the owner is about to refinance or sell | Shipped 2026-11-17. The finding: in Minnesota and Washington the lien relates back to the start of work, so a brand PIP deadline that gets an owner digging before the loan records puts every lien from the job ahead of the lender (Minn. Stat. 514.05, RCW 60.04.061), while Florida runs priority off the recorded notice of commencement and protects a lender that records first on every later draw (Fla. Stat. 713.07). The second finding: RCW 60.04.221(7) subordinates a construction lender's own deed of trust, up to the amount in the notice, if it disburses after being told to withhold. Prints no surety premium, no title-insurance charge and no lender title requirement: none of the three is published |
 
 Remaining candidates: hotel loan assumption, seller financing for a hotel, preferred equity (needs a
 citable source), what buyers look for in a hotel, selling a hotel with a ground lease, hotel property
@@ -932,3 +933,78 @@ deployments before that. `DEPLOYMENT_PAUSED` is an account-level pause, not a bu
 green and no agent can clear it: it needs Nate in the Vercel dashboard. The post-merge production verification in
 `geo/AGENTS.md` §3 step 6 could not be completed for this page, and nothing shipped on 2026-10-29, 11-03 or 11-10 has
 ever been served to a reader or a crawler either. Nate was notified by push notification at the start of this run.
+
+
+**2026-11-17, Content Writer.** Shipped `/hotel-financing/mechanics-liens`. Sections A to E are complete, F is
+SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage scan of `src/lib/data/`:
+"mechanic's lien", "mechanics lien" and "construction lien" each appeared in **zero** files, and the 42 files
+matching "lien" meant a tax lien, a mortgage lien or a lien waiver named once in a checklist. The site explained how
+to borrow for a PIP and what a closing costs, and nothing about the claim an unpaid contractor records against the
+hotel itself.
+
+**The find of this run.** Relation back is not a nuance, it is the whole answer, and two of the three states read
+here put the lien ahead of the lender for it. Minn. Stat. 514.05 subd. 1: liens "attach and take effect from the time
+the first item of material or labor is furnished upon the premises for the beginning of the improvement, and shall be
+preferred to any mortgage or other encumbrance not then of record". RCW 60.04.061 says the same per claimant, from
+that claimant's own commencement. Subd. 2 of the Minnesota section is the detail worth keeping: visible staking,
+engineering, land surveying and soil testing do **not** constitute the actual and visible beginning of the
+improvement, so the survey does not start the clock and the first day of demolition does. Florida is the mirror
+image: Fla. Stat. 713.07(2) dates priority from recordation of the notice of commencement, and 713.07(3) gives
+anything recorded before that, "and any proceeds thereof, regardless of when disbursed", priority over every lien on
+the job. A Florida construction lender that records first is safe on every draw; a Washington one is not.
+
+**The second find, which belongs to the lender.** RCW 60.04.221 applies wherever construction financing carries no
+payment bond of at least 50 percent of the financing. An unpaid claimant five days late may serve notice requiring
+the lender to withhold, the lender "shall withhold from the next and subsequent draws" while undisbursed funds
+remain, and under subsection (7) a lender that disburses anyway has its own deed of trust "subordinated to the lien
+of the potential lien claimant to the extent of the interim or construction financing wrongfully disbursed", capped
+at the amount in the notice. That is a priority loss produced by a bank's administrative slip, and it is in the
+statute.
+
+**The convergence the worked example turns on.** Two release mechanisms written decades apart land in the same place.
+RCW 60.04.161 wants at least 1.5 times a claim above $10,000. Fla. Stat. 713.24(1) wants the claim, plus interest at
+the legal rate for three years, plus the greater of $5,000 or 25 percent. On a $385,000 lien that is $577,500 against
+$572,148.50, which is 1.50 against 1.49 times the claim and 0.94 percent apart. The Florida half needs a rate: the
+Chief Financial Officer set 7.87 percent per annum for the quarter beginning October 1, 2026, under Fla. Stat.
+55.03(1), in Agency Addressed memo No. 7, 2026-2027, dated September 4, 2026. That rate moves every quarter, so the
+$90,898.50 and the $572,148.50 are good only through December 31, 2026 and the next writer should re-read the memo
+rather than carry them forward.
+
+**A negative claim made from a full read, not from an absence of search.** Minnesota chapter 514 has no
+release-bond section. The page says so, and cites the full chapter text rather than a section, because the only
+honest support for "there is no such provision" is having read all of it: 176,881 characters, 40 sections from
+514.001 to 514.36, none of which releases a recorded lien against security. What Minnesota gives the owner instead is
+514.07, which is better than a bond and free: the owner may withhold from the contractor as much of the contract
+price as the other claimants demand, may pay and discharge those liens and deduct the cost, and need not pay the
+contractor at all until 120 days after completion except against signed waivers.
+
+**Three figures the run deliberately did not publish.** What a surety charges for a lien release bond, what a title
+company charges to insure over a recorded lien, and what a lender will accept in place of a release. All three are
+privately negotiated, none is published, and the page says so in the body and again in a takeaway rather than
+printing a range.
+
+**Four sourcing notes for the next run.** `www.revisor.mn.gov/statutes/cite/<section>` and
+`.../cite/514/full` both serve clean statute text with amendment history to a plain `curl --compressed`, and the
+full-chapter path is the cheap way to make a negative claim about a chapter. `app.leg.wa.gov/RCW/default.aspx?cite=<n>`
+serves RCW sections at 200, about 110 KB of page chrome around the text, so extract from `contentWrapper` onward.
+`www.flsenate.gov/Laws/Statutes/2026/<section>` works exactly as the 2026-10-06 run recorded it for the 2025 edition.
+`myfloridacfo.com/docs-sf/accounting-and-auditing-libraries/state-agencies/agency-memos/aam07---26-27.pdf` serves the
+judgment-interest memo to `curl` plus `pdftotext`, while
+`www.myfloridacfo.com/division/aa/local-governments/judgment-interest-rates` is a **404**: the live path is
+`/division/aa/audits-reports/judgment-interest-rates`. And **California is still unreadable**:
+`leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml` answered 403 to both `curl --compressed` and WebFetch
+this run, as it has since 2026-10-06, so Civil Code 8450's relation-back rule and the 125 percent release bond in
+8424 went unread and California is absent from the page. Texas was not attempted: `statutes.capitol.texas.gov` has
+failed for three runs. A future run that gets either state should add a column rather than rewrite the table.
+
+**One length note.** The page lands at exactly 2,500 words against the brief's 2,500 ceiling, after six trimming
+passes from 2,908. Two FAQs were cut as duplicates of sections 1 and 6, the chapter 11 section was compressed from
+two paragraphs to one because `/hotel-financing/chapter-11-bankruptcy` already carries the rest, and nothing cut was
+a citation, a figure or an internal link. Every figure in the worked example and every statutory amount in the table
+is recomputed by `scripts/check-mechanics-lien-math.mjs`, committed alongside the page: 42 assertions covering both
+release-bond formulas on four claim sizes, the Florida interest and uplift components, the 1.49 and 1.50 multiples
+and the 0.94 percent gap between them, the 77 days used of the 90 allowed and the November 12 deadline, the 14-day
+gap between first work and the recorded mortgage, the subordination cap and the $255,000 it spares, the per-key
+figures and the 30-day index carry. Reciprocal links added from `/hotel-financing/construction-loans`,
+`/hotel-financing/pip-and-renovation-loans` and `/hotel-financing/closing-costs`, plus `relatedAnswers` on
+`/glossary/pip` and `/glossary/ground-lease`, and the spoke line on the cluster hub. No existing number changed.

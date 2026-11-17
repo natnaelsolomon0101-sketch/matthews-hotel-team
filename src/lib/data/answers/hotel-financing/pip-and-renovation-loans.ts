@@ -68,7 +68,7 @@ export const page: AnswerPage = {
     {
       h2: "What happens if I miss the deadline?",
       lead: "Missing a PIP deadline puts the franchise agreement at risk of termination, which in turn puts any loan tied to that franchise agreement at risk, because most branded hotel loans require the flag to remain in place.",
-      body: "Franchise agreements typically give the franchisor the right to terminate for an uncured PIP default, and a terminated franchise agreement is very often an event of default under the loan documents as well, because the lender underwrote the property as a branded asset with a specific demand-generation system attached. An owner who sees a deadline is genuinely at risk should contact the brand proactively about an extension request well before the deadline, not after it has passed."
+      body: "An unpaid contractor on the PIP can record a lien that blocks the next refinance or sale, and in some states outranks the lender; see [mechanic's liens on a hotel](/hotel-financing/mechanics-liens). Franchise agreements typically give the franchisor the right to terminate for an uncured PIP default, and a terminated franchise agreement is very often an event of default under the loan documents as well, because the lender underwrote the property as a branded asset with a specific demand-generation system attached. An owner who sees a deadline is genuinely at risk should contact the brand proactively about an extension request well before the deadline, not after it has passed."
     }
   ],
   table: {

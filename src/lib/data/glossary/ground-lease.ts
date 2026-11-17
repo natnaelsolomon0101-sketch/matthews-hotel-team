@@ -62,7 +62,8 @@ export const entry: GlossaryEntry = {
     "/hotel-valuation/how-to-value-a-hotel",
     "/sell-a-hotel/documents-needed",
     "/hotel-financing/loan-requirements",
-    "/sell-a-hotel/selling-to-a-foreign-buyer"
+    "/sell-a-hotel/selling-to-a-foreign-buyer",
+    "/hotel-financing/mechanics-liens"
   ],
   lastUpdated: "2026-09-18",
   authorSlug: "nate-solomon"
