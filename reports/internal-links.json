@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-11-16T14:27:16.702Z",
-  "base": "http://localhost:34721",
+  "runAt": "2026-11-17T14:26:24.967Z",
+  "base": "http://localhost:44181",
   "edges": [
     {
       "from": "/",
@@ -4157,6 +4157,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-financing/mezzanine-debt-and-preferred-equity"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-financing/mechanics-liens"
     },
     {
       "from": "/sitemap",
@@ -38660,6 +38664,10 @@
     },
     {
       "from": "/glossary/pip",
+      "to": "/hotel-financing/mechanics-liens"
+    },
+    {
+      "from": "/glossary/pip",
       "to": "/markets/dallas-tx"
     },
     {
@@ -43356,6 +43364,10 @@
     },
     {
       "from": "/glossary/ground-lease",
+      "to": "/hotel-financing/mechanics-liens"
+    },
+    {
+      "from": "/glossary/ground-lease",
       "to": "/buy-a-hotel"
     },
     {
@@ -44353,6 +44365,10 @@
     {
       "from": "/hotel-financing",
       "to": "/hotel-financing/closing-costs"
+    },
+    {
+      "from": "/hotel-financing",
+      "to": "/hotel-financing/mechanics-liens"
     },
     {
       "from": "/hotel-financing",
@@ -46261,6 +46277,10 @@
     {
       "from": "/hotel-financing/construction-loans",
       "to": "/hotel-financing/sba-7a-vs-504"
+    },
+    {
+      "from": "/hotel-financing/construction-loans",
+      "to": "/hotel-financing/mechanics-liens"
     },
     {
       "from": "/hotel-financing/construction-loans",
@@ -50584,6 +50604,10 @@
     },
     {
       "from": "/hotel-financing/pip-and-renovation-loans",
+      "to": "/hotel-financing/mechanics-liens"
+    },
+    {
+      "from": "/hotel-financing/pip-and-renovation-loans",
       "to": "/team/nate-solomon"
     },
     {
@@ -52508,6 +52532,10 @@
     },
     {
       "from": "/hotel-financing/closing-costs",
+      "to": "/hotel-financing/mechanics-liens"
+    },
+    {
+      "from": "/hotel-financing/closing-costs",
       "to": "/hotel-financing/mezzanine-debt-and-preferred-equity"
     },
     {
@@ -53284,6 +53312,218 @@
     },
     {
       "from": "/hotel-financing/mezzanine-debt-and-preferred-equity",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/_next/static/chunks/971af7bd7354d30d.css"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/hotel-financing/mechanics-liens.md"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/glossary/pip"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/hotel-financing/refinance"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/sell-a-hotel/selling-a-hotel-on-a-ground-lease"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/hotel-financing/pip-and-renovation-loans"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/hotel-financing/chapter-11-bankruptcy"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/hotel-financing/loan-workouts"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/hotel-valuation/broker-opinion-of-value"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/hotel-financing/closing-costs"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/hotel-financing/construction-loans"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/hotel-financing/brand-conversion-financing"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/glossary/ground-lease"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/glossary/noi"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-financing/mechanics-liens",
       "to": "/sitemap"
     },
     {
@@ -75838,6 +76078,7 @@
         "/hotel-financing/covenants-and-cash-management",
         "/hotel-financing/interest-rate-caps",
         "/hotel-financing/mezzanine-debt-and-preferred-equity",
+        "/hotel-financing/mechanics-liens",
         "/sell-a-hotel/1031-without-buying-another-hotel",
         "/sell-a-hotel/asset-sale-vs-entity-sale",
         "/sell-a-hotel/broker-fees",
@@ -85363,6 +85604,7 @@
         "/hotel-industry/fire-safety-and-federal-travel",
         "/hotel-industry/asbestos-renovation-rules",
         "/hotel-industry/karis-law-911-requirements",
+        "/hotel-financing/mechanics-liens",
         "/markets/dallas-tx",
         "/markets/atlanta-ga",
         "/markets/phoenix-az",
@@ -86681,6 +86923,7 @@
         "/sell-a-hotel/documents-needed",
         "/hotel-financing/loan-requirements",
         "/sell-a-hotel/selling-to-a-foreign-buyer",
+        "/hotel-financing/mechanics-liens",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -86961,6 +87204,7 @@
         "/hotel-financing/interest-rate-caps",
         "/hotel-financing/cash-out-refinance",
         "/hotel-financing/closing-costs",
+        "/hotel-financing/mechanics-liens",
         "/hotel-financing/loan-requirements",
         "/hotel-financing/lenders-under-5-million",
         "/hotel-financing/1031-exchange-hotels",
@@ -87492,6 +87736,7 @@
         "/team/luke-thompson",
         "/hotel-financing/hotel-lenders-by-type",
         "/hotel-financing/sba-7a-vs-504",
+        "/hotel-financing/mechanics-liens",
         "/hotel-financing/bridge-loans",
         "/hotel-financing/refinance",
         "/hotel-financing/loan-requirements",
@@ -88698,6 +88943,7 @@
         "/hotel-industry/karis-law-911-requirements",
         "/hotel-financing/bridge-loans",
         "/hotel-financing/refinance",
+        "/hotel-financing/mechanics-liens",
         "/team/nate-solomon",
         "/hotel-financing/sba-franchise-directory",
         "/hotel-financing/refinance-or-sell",
@@ -89233,6 +89479,7 @@
         "/hotel-financing/loan-requirements",
         "/hotel-financing/hotel-loan-rates",
         "/buy-a-hotel/environmental-liability",
+        "/hotel-financing/mechanics-liens",
         "/hotel-financing/mezzanine-debt-and-preferred-equity",
         "/hotel-financing/interest-rate-caps",
         "/hotel-financing/bridge-loans",
@@ -89423,6 +89670,65 @@
         "/glossary/ltv",
         "/glossary/dscr",
         "/glossary/debt-yield",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/hotel-financing/mechanics-liens",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/971af7bd7354d30d.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-financing/mechanics-liens.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/luke-thompson",
+        "/glossary/pip",
+        "/hotel-financing/refinance",
+        "/sell-a-hotel/selling-a-hotel-on-a-ground-lease",
+        "/hotel-financing/pip-and-renovation-loans",
+        "/hotel-financing/chapter-11-bankruptcy",
+        "/hotel-financing/loan-workouts",
+        "/hotel-valuation/broker-opinion-of-value",
+        "/hotel-financing/closing-costs",
+        "/team/nate-solomon",
+        "/hotel-financing/construction-loans",
+        "/hotel-financing/brand-conversion-financing",
+        "/glossary",
+        "/glossary/ground-lease",
+        "/glossary/noi",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
