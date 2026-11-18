@@ -73,7 +73,8 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/loan-requirements",
     "/sell-a-hotel/tax-clearance-and-withholding",
     "/sell-a-hotel/selling-to-a-foreign-buyer",
-    "/sell-a-hotel/liquor-license-transfer"
+    "/sell-a-hotel/liquor-license-transfer",
+    "/sell-a-hotel/contribute-hotel-to-a-reit"
   ],
   lastUpdated: "2026-10-05",
   authorSlug: "nate-solomon"

@@ -1,10 +1,10 @@
 {
-  "urls": 341,
+  "urls": 342,
   "maxDepth": 2,
   "byDepth": {
     "0": 1,
     "1": 32,
-    "2": 308
+    "2": 309
   },
   "depth": {
     "/": 0,
@@ -115,6 +115,7 @@
     "/sell-a-hotel/how-long-it-takes": 2,
     "/sell-a-hotel/broker-fees": 2,
     "/sell-a-hotel/taxes-when-selling-a-hotel": 2,
+    "/sell-a-hotel/contribute-hotel-to-a-reit": 2,
     "/sell-a-hotel/documents-needed": 2,
     "/sell-a-hotel/off-market-vs-marketed": 2,
     "/sell-a-hotel/how-to-choose-a-hotel-broker": 2,
