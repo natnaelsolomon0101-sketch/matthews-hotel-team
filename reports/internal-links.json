@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-11-17T14:26:24.967Z",
-  "base": "http://localhost:44181",
+  "runAt": "2026-11-18T14:21:28.164Z",
+  "base": "http://localhost:44971",
   "edges": [
     {
       "from": "/",
@@ -4173,6 +4173,10 @@
     {
       "from": "/sitemap",
       "to": "/sell-a-hotel/broker-fees"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/sell-a-hotel/contribute-hotel-to-a-reit"
     },
     {
       "from": "/sitemap",
@@ -38000,6 +38004,10 @@
     },
     {
       "from": "/glossary/cap-rate",
+      "to": "/sell-a-hotel/contribute-hotel-to-a-reit"
+    },
+    {
+      "from": "/glossary/cap-rate",
       "to": "/markets/austin-tx"
     },
     {
@@ -40713,6 +40721,10 @@
     {
       "from": "/glossary/going-concern-value",
       "to": "/sell-a-hotel/liquor-license-transfer"
+    },
+    {
+      "from": "/glossary/going-concern-value",
+      "to": "/sell-a-hotel/contribute-hotel-to-a-reit"
     },
     {
       "from": "/glossary/going-concern-value",
@@ -53608,6 +53620,10 @@
     },
     {
       "from": "/sell-a-hotel",
+      "to": "/sell-a-hotel/contribute-hotel-to-a-reit"
+    },
+    {
+      "from": "/sell-a-hotel",
       "to": "/sell-a-hotel/documents-needed"
     },
     {
@@ -53881,6 +53897,10 @@
     {
       "from": "/sell-a-hotel/1031-without-buying-another-hotel",
       "to": "/glossary/cap-rate"
+    },
+    {
+      "from": "/sell-a-hotel/1031-without-buying-another-hotel",
+      "to": "/sell-a-hotel/contribute-hotel-to-a-reit"
     },
     {
       "from": "/sell-a-hotel/1031-without-buying-another-hotel",
@@ -54423,6 +54443,210 @@
       "to": "/sitemap"
     },
     {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/_next/static/chunks/971af7bd7354d30d.css"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/sell-a-hotel/contribute-hotel-to-a-reit.md"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/listings"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/rates"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/about"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/team"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/contact"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/sell-a-hotel/1031-without-buying-another-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/hotel-industry/how-hotel-reits-work"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/sell-a-hotel/taxes-when-selling-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/hotel-industry/hotel-management-agreements"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/sell-a-hotel/estate-tax-and-basis-step-up"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/sell-a-hotel/asset-sale-vs-entity-sale"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/sell-a-hotel/how-to-sell-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/glossary"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/glossary/going-concern-value"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/glossary/cap-rate"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/glossary/noi"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/tools"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/research"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/markets"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/closed"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/process"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/services"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/insights"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/press"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/developers"
+    },
+    {
+      "from": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "to": "/sitemap"
+    },
+    {
       "from": "/sell-a-hotel/documents-needed",
       "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     },
@@ -54909,6 +55133,10 @@
     {
       "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
       "to": "/sell-a-hotel/taxes-when-selling-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
+      "to": "/sell-a-hotel/contribute-hotel-to-a-reit"
     },
     {
       "from": "/sell-a-hotel/estate-tax-and-basis-step-up",
@@ -57585,6 +57813,10 @@
     {
       "from": "/sell-a-hotel/taxes-when-selling-a-hotel",
       "to": "/sell-a-hotel/1031-without-buying-another-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/taxes-when-selling-a-hotel",
+      "to": "/sell-a-hotel/contribute-hotel-to-a-reit"
     },
     {
       "from": "/sell-a-hotel/taxes-when-selling-a-hotel",
@@ -71604,6 +71836,10 @@
     },
     {
       "from": "/hotel-industry/how-hotel-reits-work",
+      "to": "/sell-a-hotel/contribute-hotel-to-a-reit"
+    },
+    {
+      "from": "/hotel-industry/how-hotel-reits-work",
       "to": "/hotel-industry/revpar-adr-occupancy"
     },
     {
@@ -76082,6 +76318,7 @@
         "/sell-a-hotel/1031-without-buying-another-hotel",
         "/sell-a-hotel/asset-sale-vs-entity-sale",
         "/sell-a-hotel/broker-fees",
+        "/sell-a-hotel/contribute-hotel-to-a-reit",
         "/sell-a-hotel/documents-needed",
         "/sell-a-hotel/employees-when-you-sell",
         "/sell-a-hotel/estate-tax-and-basis-step-up",
@@ -85420,6 +85657,7 @@
         "/hotel-valuation/how-to-value-a-hotel",
         "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
         "/hotel-industry/energy-benchmarking-and-emissions-limits",
+        "/sell-a-hotel/contribute-hotel-to-a-reit",
         "/markets/austin-tx",
         "/markets/nashville-tn",
         "/markets/atlanta-ga",
@@ -86177,6 +86415,7 @@
         "/sell-a-hotel/tax-clearance-and-withholding",
         "/sell-a-hotel/selling-to-a-foreign-buyer",
         "/sell-a-hotel/liquor-license-transfer",
+        "/sell-a-hotel/contribute-hotel-to-a-reit",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -89778,6 +90017,7 @@
         "/sell-a-hotel/how-long-it-takes",
         "/sell-a-hotel/broker-fees",
         "/sell-a-hotel/taxes-when-selling-a-hotel",
+        "/sell-a-hotel/contribute-hotel-to-a-reit",
         "/sell-a-hotel/documents-needed",
         "/sell-a-hotel/off-market-vs-marketed",
         "/sell-a-hotel/how-to-choose-a-hotel-broker",
@@ -89853,6 +90093,7 @@
         "/buy-a-hotel/how-to-make-an-offer",
         "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
         "/glossary/cap-rate",
+        "/sell-a-hotel/contribute-hotel-to-a-reit",
         "/glossary/bov",
         "/team/nate-solomon",
         "/sell-a-hotel/how-to-sell-a-hotel",
@@ -89977,6 +90218,63 @@
         "/glossary",
         "/glossary/bov",
         "/glossary/cap-rate",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/sell-a-hotel/contribute-hotel-to-a-reit",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/971af7bd7354d30d.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/sell-a-hotel/contribute-hotel-to-a-reit.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/luke-thompson",
+        "/sell-a-hotel/1031-without-buying-another-hotel",
+        "/hotel-industry/how-hotel-reits-work",
+        "/sell-a-hotel/taxes-when-selling-a-hotel",
+        "/hotel-industry/hotel-management-agreements",
+        "/sell-a-hotel/estate-tax-and-basis-step-up",
+        "/team/nate-solomon",
+        "/sell-a-hotel/asset-sale-vs-entity-sale",
+        "/sell-a-hotel/how-to-sell-a-hotel",
+        "/glossary",
+        "/glossary/going-concern-value",
+        "/glossary/cap-rate",
+        "/glossary/noi",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -90140,6 +90438,7 @@
         "/contact",
         "/team/nate-solomon",
         "/sell-a-hotel/taxes-when-selling-a-hotel",
+        "/sell-a-hotel/contribute-hotel-to-a-reit",
         "/hotel-financing/1031-exchange-hotels",
         "/sell-a-hotel/1031-without-buying-another-hotel",
         "/hotel-industry/owner-franchisor-management-company",
@@ -90887,6 +91186,7 @@
         "/sell-a-hotel/broker-fees",
         "/hotel-financing/1031-exchange-hotels",
         "/sell-a-hotel/1031-without-buying-another-hotel",
+        "/sell-a-hotel/contribute-hotel-to-a-reit",
         "/sell-a-hotel/estate-tax-and-basis-step-up",
         "/team/luke-thompson",
         "/sell-a-hotel/how-to-sell-a-hotel",
@@ -94775,6 +95075,7 @@
         "/team/nate-solomon",
         "/research/mhi/q1-2026",
         "/hotel-industry/hotel-management-agreements",
+        "/sell-a-hotel/contribute-hotel-to-a-reit",
         "/hotel-industry/revpar-adr-occupancy",
         "/hotel-industry/hotel-operating-costs",
         "/hotel-valuation/hotel-cap-rates",

@@ -48,7 +48,7 @@ export const page: AnswerPage = {
     {
       h2: "What does it cost?",
       lead: "A success fee at closing that scales down as price rises, plus title, legal, transfer tax and prorations that are not part of the commission.",
-      body: "The brokerage fee is the largest single line item, but it is not the only cost. Title insurance, escrow, state transfer taxes, seller's counsel, and, on a CMBS loan, defeasance can add up to a large share of the total, especially when a loan must be paid off early. The full cost stack, with a worked example, is at [Hotel broker fees](/sell-a-hotel/broker-fees). Tax on the gain is separate and is covered at [What taxes do I pay when I sell a hotel?](/sell-a-hotel/taxes-when-selling-a-hotel)"
+      body: "The brokerage fee is the largest single line item, but it is not the only cost. Title insurance, escrow, state transfer taxes, seller's counsel, and, on a CMBS loan, defeasance can add up to a large share of the total, especially when a loan must be paid off early. The full cost stack, with a worked example, is at [Hotel broker fees](/sell-a-hotel/broker-fees). Tax on the gain is separate and is covered at [What taxes do I pay when I sell a hotel?](/sell-a-hotel/taxes-when-selling-a-hotel), and the exit that takes REIT partnership units instead of cash is at [Can I contribute my hotel to a REIT instead of selling it?](/sell-a-hotel/contribute-hotel-to-a-reit)"
     },
     {
       h2: "What do I have to prepare?",
@@ -215,6 +215,7 @@ export const page: AnswerPage = {
       "/sell-a-hotel/off-market-vs-marketed",
       "/sell-a-hotel/taxes-when-selling-a-hotel",
       "/sell-a-hotel/1031-without-buying-another-hotel",
+      "/sell-a-hotel/contribute-hotel-to-a-reit",
       "/sell-a-hotel/franchise-agreement-expiration",
       "/sell-a-hotel/selling-a-distressed-hotel",
       "/sell-a-hotel/what-buyers-look-for",

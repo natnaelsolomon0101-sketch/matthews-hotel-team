@@ -83,7 +83,8 @@ export const entry: GlossaryEntry = {
     "/hotel-valuation/hotel-cap-rates",
     "/hotel-valuation/how-to-value-a-hotel",
     "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
-    "/hotel-industry/energy-benchmarking-and-emissions-limits"
+    "/hotel-industry/energy-benchmarking-and-emissions-limits",
+    "/sell-a-hotel/contribute-hotel-to-a-reit"
   ],
   relatedTerms: ["revpar", "adr", "bov"],
   relatedMarkets: ["austin-tx", "nashville-tn", "atlanta-ga"],

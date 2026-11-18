@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-11-17T14:26:18.633Z",
+  "runAt": "2026-11-18T14:21:20.476Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 341,
-  "blocksFound": 341,
-  "blocksValid": 341,
+  "urlsChecked": 342,
+  "blocksFound": 342,
+  "blocksValid": 342,
   "issues": [],
   "blocks": [
     {
@@ -799,6 +799,13 @@
     },
     {
       "url": "/sell-a-hotel/broker-fees",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/sell-a-hotel/contribute-hotel-to-a-reit",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,

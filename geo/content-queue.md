@@ -124,6 +124,64 @@ CSV still points at rather than genuine content gaps.
 
 ## Run notes
 
+**2026-11-18, Content Writer.** Shipped `/sell-a-hotel/contribute-hotel-to-a-reit`. Sections A to E are complete, F is
+SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage scan of `src/lib/data/`: "UPREIT",
+"operating partnership", "disguised sale", "707(a)(2)" and "704(c)" each appeared in **zero** files, and "OP unit" in
+none. The site had a page for every other exit an owner of an appreciated hotel can take, including the DST route at
+`/sell-a-hotel/1031-without-buying-another-hotel` and the step-up at `/sell-a-hotel/estate-tax-and-basis-step-up`, and
+nothing on taking REIT partnership units instead of cash.
+
+**The find of this run.** The deferral an owner is sold is not the deferral the Code gives. Section 721(a) recognizes no
+gain on the exchange, but the mortgage the partnership takes on is a deemed cash distribution under section 752(b),
+26 CFR 1.752-1(f) nets it against the contributor's new share of partnership liabilities, section 722 gives the units
+the hotel's old adjusted basis with no step up, and section 731(a)(1) then taxes the net decrease above that basis. On
+the page's hypothetical, an $18,000,000 hotel with a $7,500,000 mortgage and a $4,200,000 basis after 22 years, that is
+$3,150,000 of gain recognized in the year of a contribution that produced no cash: 30.0 percent of the $10,500,000 of
+equity taken in units, with 77.2 percent of the total gain deferred rather than 100 percent. The figure to negotiate is
+$3,300,000, the allocated share of partnership debt at which the net decrease exactly equals basis and the gain is zero.
+26 CFR 1.752-1(g) Example 1 is the regulation working the clean case, which is what makes the method citable.
+
+**The second find, and keep it.** The owner stops running the hotel, and it is the statute that says so, not the buyer.
+Section 856(d)(8)(B) saves the TRS rent only if an eligible independent contractor operates the hotel, section
+856(d)(9)(E) says operating includes managing, section 856(d)(9)(A) requires that contractor to already operate hotels
+for someone unrelated to the REIT, and section 856(d)(3) caps it at 35 percent ownership. A single-hotel owner-operator
+fails that on its face. Host Hotels says the consequence to its own investors in the FY2025 10-K: "To maintain our
+status as a REIT, we are not permitted to operate or manage any of our hotels", and so it is "unable to directly
+implement strategic business decisions ... such as decisions with respect to the setting of room rates". The same filing
+warns that redeeming units is a taxable sale and that "the amount of gain and/or the tax liability related thereto ...
+could exceed the value of the common stock or cash received". That is the REIT telling an owner the risk, in writing.
+
+**The third find: not every hotel REIT can take a contribution.** Host Inc. operates through an umbrella partnership and
+held about 99 percent of the units at December 31, 2025, with 9.4 million held by 972 unaffiliated limited partners and
+convertible at 1.021494. Apple Hospitality REIT, which `/hotel-industry/how-hotel-reits-work` already cites for its
+operating data, is not built that way: the word "partnership" appears **zero** times in the Form 10-K it filed on
+February 23, 2026, and it leases all its hotels to a wholly owned TRS. So the first question is structural and the
+answer is public. 682,283,862 total common units less 672,851,030 held by Host Inc. is 9,432,832, which is where the
+9.4 million comes from.
+
+**What the run deliberately did not publish.** No unit price, no lock-up or hold period, no tax-protection or
+debt-maintenance agreement term, and no REIT's acquisition criteria or minimum deal size: none of those is published by
+anyone, and the partnership agreements that set them are negotiated, not filed in a form an owner could rely on. The
+page also prints no effective tax rate on the recognized gain, because the character turns on recapture and on facts a
+CPA has to supply. It says plainly that the section 752 allocation is governed by the regulations and not by what a term
+sheet says.
+
+**Three sourcing notes for the next run.** **Cornell LII served ten title-26 and title-26-CFR pages in one run with no
+block** (721, 722, 731, 737, 752, 704, 1031, 856, and 26 CFR 1.707-3 and 1.752-1) to a plain `curl --compressed`, and
+the 1031 page's amendment notes are where the pre-TCJA section 1031(a)(2)(D) exclusion of partnership interests is still
+readable, which is the cleanest way to show that OP units were never 1031 property. **`data.sec.gov/submissions/CIK<10
+digits>.json` is the fastest way to find a filing**: it returns every form type with its accession number and primary
+document, so the 10-K URL can be built without the full-text search API, which the MCP `search_*` tools do not cover.
+Both EDGAR hosts answered a plain `curl` with a generic User-Agent at 200. **The Host 10-K is 4.2 MB of HTML and the
+Apple one 10.3 MB**, which WebFetch truncates well before the risk factors; strip the tags locally and grep instead. A
+negative grep is evidence worth keeping: "partnership" occurring zero times in a 484,177-character filing is a checkable
+fact, and it is how the Apple point was sourced.
+
+**One length note.** The page landed at 2,493 words against the 2,500 ceiling after one trimming pass from 2,581. The
+cut dropped one FAQ that duplicated the brand sentence and tightened six sentences; no citation, figure or internal link
+was removed. Every figure in the worked example and the two Host unit counts are recomputed by
+`scripts/check-reit-contribution-math.mjs`, committed alongside the page, 44 assertions.
+
 **2026-10-29, Content Writer.** Shipped `/hotel-financing/public-incentives-and-tif`. Sections A to E are complete, F
 is SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage scan of `src/lib/data/`:
 "tax increment", "private activity", "tax-exempt bond", "municipal bond", "2017-13" and "publicly owned hotel" each
@@ -640,6 +698,7 @@ Pick from `geo/04-queries.csv` prompts with no dedicated page, phrased the way p
 | [x] | `/hotel-financing/public-incentives-and-tif` | No CSV row targets it directly, and "tax increment", "private activity", "tax-exempt bond", "municipal bond", "2017-13" and "publicly owned hotel" each appeared in zero files under `src/lib/data/`, while "incentive" appeared in 25 files and never once about a state or local program. The site had five federal incentive pages and nothing on the layer a city controls | Shipped 2026-10-29. Covers why a private hotel's municipal debt is taxable (26 U.S.C. 141 and the 17-category 142(a) list), the one tax-exempt route that can reach a hotel rehab (the 144(c) qualified redevelopment bond, which cannot fund new construction), what Rev. Proc. 2017-13 does to a brand management agreement at a city-owned hotel, and two state TIF statutes that reach opposite answers. Carries the first hotel-level TIF figures on the site, recomputed from Missouri's own 2025 annual report: 8 hotel-named plans of 354, a 6.2 to 79.8 percent TIF share of total project cost. Prints no award size and no national hotel-TIF count, because neither is published. Texas Tax Code 351.102 left out: `statutes.capitol.texas.gov` is still a JavaScript shell |
 | [x] | `/sell-a-hotel/asset-sale-vs-entity-sale` | No CSV row targets it directly. The gap was near total: "equity sale", "successor liability", "Form 8308", "marketplace facilitator" and "1446" appeared in **zero** files under `src/lib/data/`, "membership interest" and "stock sale" in one each, and sections 751, 743 and 754 nowhere at all in a tax sense. The site had a full page on the tax layers of a hotel sale and nothing on the structure question that decides which sections those layers arrive through | Shipped 2026-11-10. Answers the question with a number: on the same $18,000,000 price and the same allocation, the seller's federal bill is identical both ways, $2,320,000, because section 751(c) treats the section 1245 recapture as an unrealized receivable and 26 CFR 1.1(h)-1(b)(3) hands the selling partner the section 1250 layer at 25 percent. The real differences are the buyer's $9,700,000 section 743(b) step-up (only with a 754 election), the loss of section 1031 (26 CFR 1.1031(a)-3(a)(5)(i)(C) excludes partnership interests), Washington's controlling-interest excise tax and California's change-in-control reassessment. Prints no lender or franchisor change-of-control consent terms and no consent fee: none is published |
 | [x] | `/hotel-financing/mechanics-liens` | No CSV row targets it directly. The gap was total: "mechanic's lien", "mechanics lien" and "construction lien" appeared in **zero** files under `src/lib/data/`, and "lien" only ever as a tax or mortgage lien. The site carried `/hotel-financing/construction-loans`, `/hotel-financing/pip-and-renovation-loans` and `/hotel-financing/closing-costs` and said nothing about the one thing an unpaid contractor on a PIP can do to the title the owner is about to refinance or sell | Shipped 2026-11-17. The finding: in Minnesota and Washington the lien relates back to the start of work, so a brand PIP deadline that gets an owner digging before the loan records puts every lien from the job ahead of the lender (Minn. Stat. 514.05, RCW 60.04.061), while Florida runs priority off the recorded notice of commencement and protects a lender that records first on every later draw (Fla. Stat. 713.07). The second finding: RCW 60.04.221(7) subordinates a construction lender's own deed of trust, up to the amount in the notice, if it disburses after being told to withhold. Prints no surety premium, no title-insurance charge and no lender title requirement: none of the three is published |
+| [x] | `/sell-a-hotel/contribute-hotel-to-a-reit` | No CSV row targets it directly, and "UPREIT", "721", "OP unit" and "operating partnership" are absent from `geo/04-queries.csv`. The gap was total: "UPREIT", "operating partnership", "disguised sale", "707(a)(2)" and "704(c)" appeared in **zero** files under `src/lib/data/`, and "OP unit" in none. The site answered every other exit for an appreciated hotel, a taxable sale, a 1031 exchange, a DST, seller financing and the step-up at death, and said nothing about the one that takes paper in a REIT instead of cash | Shipped 2026-11-18. The finding: section 721(a) covers the exchange, but the mortgage does not go quietly. 26 CFR 1.752-1(f) nets the liability shift, section 722 gives the units the hotel's old basis, and section 731(a)(1) taxes the net debt relief above it, so on an $18,000,000 hotel with a $7,500,000 mortgage and a $4,200,000 basis the "tax-free" contribution recognizes $3,150,000 of gain in cash the owner never received, 30.0 percent of the equity taken in units, and defers 77.2 percent of the gain rather than all of it. The second finding: the owner stops running the hotel, as a matter of the Code (sections 856(d)(8)(B), (d)(9)(A) and (d)(9)(E), where operating includes managing), and Host Hotels' own 10-K says it is "not permitted to operate or manage any of our hotels" and so cannot set room rates. The third: Apple Hospitality REIT's FY2025 10-K never uses the word "partnership", so it has no units to issue. Prints no unit price, no lock-up period and no REIT's acquisition criteria: none is published |
 
 Remaining candidates: hotel loan assumption, seller financing for a hotel, preferred equity (needs a
 citable source), what buyers look for in a hotel, selling a hotel with a ground lease, hotel property
