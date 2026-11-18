@@ -32,7 +32,7 @@ export const page: AnswerPage = {
     "What happens to my mortgage if I contribute my hotel to a REIT?",
     "When do I pay tax on REIT operating partnership units?"
   ],
-  answer: "Yes, if the REIT has an operating partnership. Section 721(a) recognizes no gain when you contribute the hotel for units.[1] Two catches decide whether it works: the mortgage the partnership takes on is treated as cash paid to you, which can trigger tax on day one,[2] and you stop running the hotel.[3] Host Hotels held 99 percent of its own units on December 31, 2025.[4]",
+  answer: "Yes, if the REIT has an operating partnership. Section 721(a) recognizes no gain when you contribute the hotel for units.[1] Two catches decide whether it works: the mortgage the partnership takes on is treated as cash paid to you, which can trigger tax on day one,[2] and you stop running the hotel.[3] Host Hotels' parent REIT held about 99 percent of its partnership's units on December 31, 2025.[4]",
   takeaways: [
     "Section 721(a) is not section 1031. A 1031 exchange has needed like-kind real property since December 22, 2017, and a partnership unit is not real property.[5]",
     "The deferral is real but partial. A mortgage the partnership takes on is a deemed cash distribution to you under section 752(b), and gain is recognized to the extent it exceeds your basis.[2][9]",
