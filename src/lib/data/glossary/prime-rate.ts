@@ -82,9 +82,10 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/hotel-loan-rates",
     "/hotel-financing/sba-7a-vs-504",
     "/hotel-financing/refinance",
-    "/sell-a-hotel/tax-clearance-and-withholding"
+    "/sell-a-hotel/tax-clearance-and-withholding",
+    "/sell-a-hotel/irs-liens-and-payroll-taxes"
   ],
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-11-19",
   authorSlug: "luke-thompson"
 };
 

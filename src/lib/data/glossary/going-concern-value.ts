@@ -70,13 +70,14 @@ export const entry: GlossaryEntry = {
     "/sell-a-hotel/estate-tax-and-basis-step-up",
     "/hotel-valuation/how-to-value-a-hotel",
     "/hotel-valuation/broker-opinion-of-value",
+    "/sell-a-hotel/irs-liens-and-payroll-taxes",
     "/hotel-financing/loan-requirements",
     "/sell-a-hotel/tax-clearance-and-withholding",
     "/sell-a-hotel/selling-to-a-foreign-buyer",
     "/sell-a-hotel/liquor-license-transfer",
     "/sell-a-hotel/contribute-hotel-to-a-reit"
   ],
-  lastUpdated: "2026-10-05",
+  lastUpdated: "2026-11-19",
   authorSlug: "nate-solomon"
 };
 
