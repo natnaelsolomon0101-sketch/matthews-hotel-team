@@ -17,7 +17,7 @@ export const page: AnswerPage = {
   title: "What Happens to Hotel Staff in a Sale?",
   description: "Who employs your hotel staff after closing, when federal and state WARN notice applies, and what the purchase agreement should say about it.",
   h1: "What happens to my employees when I sell my hotel?",
-  lastUpdated: "2026-10-07",
+  lastUpdated: "2026-11-19",
   authorSlug: "nate-solomon",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -76,7 +76,7 @@ export const page: AnswerPage = {
     {
       h2: "What should the purchase agreement say about employees?",
       lead: "Who terminates and when, who offers and on what terms, who pays accrued time off, who serves any notice, and an indemnity that follows those lines.",
-      body: "Five points do the work. The termination mechanic: the seller's employing entity terminates effective at the closing hour, with a stated employee list. The buyer's offer covenant: whether the buyer must offer employment to a set share of the staff, at what wage, and for how long it holds headcount. That clause decides whether a post-closing layoff becomes the buyer's notice problem. Accrued paid time off: the seller pays it out at closing, or the buyer assumes it and takes a credit against the price. Notice allocation: who serves any federal or state notice, and by what date. And an indemnity on each side of the closing line.\n\nPayroll tax is the easy part. Where an acquisition meets the requirements, wages paid by the predecessor count toward the social security wage base, $184,500 for 2026, and the $200,000 Additional Medicare Tax threshold.[14] A buyer that skips it restarts every employee's wage base and overpays employer social security tax on the rehired staff. Ask the seller's payroll provider for the detail before closing, not in February."
+      body: "Five points do the work, and a sixth if the hotel is behind on its deposits, because the withheld part of payroll is held in trust and the penalty for not paying it over is personal: [can I sell my hotel if I owe the IRS back payroll taxes?](/sell-a-hotel/irs-liens-and-payroll-taxes). The termination mechanic: the seller's employing entity terminates effective at the closing hour, with a stated employee list. The buyer's offer covenant: whether the buyer must offer employment to a set share of the staff, at what wage, and for how long it holds headcount. That clause decides whether a post-closing layoff becomes the buyer's notice problem. Accrued paid time off: the seller pays it out at closing, or the buyer assumes it and takes a credit against the price. Notice allocation: who serves any federal or state notice, and by what date. And an indemnity on each side of the closing line.\n\nPayroll tax is the easy part. Where an acquisition meets the requirements, wages paid by the predecessor count toward the social security wage base, $184,500 for 2026, and the $200,000 Additional Medicare Tax threshold.[14] A buyer that skips it restarts every employee's wage base and overpays employer social security tax on the rehired staff. Ask the seller's payroll provider for the detail before closing, not in February."
     }
   ],
   table: {

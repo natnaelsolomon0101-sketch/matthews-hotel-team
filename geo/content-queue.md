@@ -124,6 +124,70 @@ CSV still points at rather than genuine content gaps.
 
 ## Run notes
 
+**2026-11-19, Content Writer.** Shipped `/sell-a-hotel/irs-liens-and-payroll-taxes`. Sections A to E are complete, F is
+SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage scan of `src/lib/data/`: "trust
+fund", "6321", "phantom income", "discharge of indebtedness", "COD income" and "Rev. Rul. 90-16" each appeared in
+**zero** files, and "6672" only twice, both times inside a Wisconsin franchise-registry URL rather than as the statute.
+The site already covered the state side of a closing in depth at `/sell-a-hotel/tax-clearance-and-withholding` (sales
+and occupancy tax clearance plus FIRPTA) and the tax of losing a hotel to the lender at
+`/sell-a-hotel/selling-a-distressed-hotel` and `/hotel-financing/non-recourse-loans`, so cancellation of debt was not
+the gap. Unpaid **federal employment tax** was: the one liability that records against the hotel's title by operation of
+law, follows the owner personally after the hotel is gone, and is the most common reason a distressed hotel closing
+dies. A re-scan of `geo/04-queries.csv` first confirmed what the 2026-11-03 run found: every priority-1 and priority-2
+target with no answer module is either a live route outside `src/lib/data/answers/` or a slug alias already live under
+another name, and `/hotel-financing/life-company-loans` is still a retarget rather than a build.
+
+**The find of this run, and it inverts the fear.** Owners picture a padlock. The IRS Data Book says otherwise, and the
+XLSX is downloadable and readable cell by cell. In fiscal year 2025 the agency filed **214,099** notices of federal tax
+lien, up 17,103 from 196,996, requested 339,137 notices of levy on third parties, and conducted **50** seizures
+nationwide across every return type. That is one seizure for every 4,282 lien filings. The real risk to a hotel is a
+document in the chain of title, not an agent at the door, and section 6323(a) is why: the lien exists from assessment
+under 6321 and 6322 but is not valid against a purchaser until the notice is filed. Before filing, a buyer who pays
+value takes the hotel free of a lien the seller still owes in full.
+
+**The second find: the discharge is a menu, and Form 14135 prints it.** Section 6325(b) has five bases and the
+application names each one, which makes the whole decision tree citable to a government form rather than to practice
+commentary: the (b)(1) double test, (b)(2)(A) payment of the value of the government's interest, (b)(2)(B) no value,
+(b)(3) proceeds held in escrow, and (b)(4) a deposit or bond that uniquely carries a 7426(a)(4) remedy. On a hotel the
+double test is dead on arrival, because the hotel is the asset. Publication 783 (Rev. 12-2022) supplies the only
+published timing anywhere in the process: submit at least **45 days** before the transaction date. The IRS publishes no
+average processing time, so the page says 45 days is a floor and nothing more.
+
+**The third find, and it belongs to the capital markets desk.** 26 U.S.C. 3505(b) makes a lender that supplies funds
+for the specific purpose of paying wages, knowing the withholding will not be deposited, liable for that tax up to
+**25 percent** of the amount supplied. An owner who tells a workout lender honestly that payroll tax has been skipped
+is handing it a contingent exposure on every payroll advance. That is the statutory reason a protective advance for
+payroll arrives with a direct-pay mechanic attached, and it was in zero files on this site.
+
+**What the run deliberately did not publish.** No claim about what a title company will or will not insure over, no
+"typical" buyer holdback, no real-world processing time for an IRS Advisory discharge, and no effective tax rate on any
+recognized amount. None of those is published by anyone. The page also handles the one misleading number in the Data
+Book honestly: Table 4-2 reports **1,216,346** federal tax deposit penalties assessed on employment taxes in FY2025,
+$117,895,214 thousand, against $117,210,987 thousand abated, or 99.4 percent. Assessments and abatements are reported
+separately with no netting, so the gross figure is not what employers paid, and the page says so rather than quoting
+$117.9 billion as a cost.
+
+**Four sourcing notes for the next run.** **Cornell LII again served fifteen title-11, title-26 and 26-CFR pages in one
+run with no block** to a plain `curl --compressed` (6321, 6322, 6323, 6325, 6502, 6656, 6671, 6672, 7425, 7501, 3505,
+3102, 11 U.S.C. 507 and 523, and 26 CFR 301.6672-1). **`www.irs.gov/pub/irs-pdf/` serves every publication and form to
+a script** with a browser user agent: p783, p594, p15 and f14135 all answered 200 and `pdftotext` without `-layout`
+gives clean reading order. Two IRS HTML landing pages are 404s and were not used:
+`/individuals/understanding-a-federal-tax-lien` and
+`/businesses/small-businesses-self-employed/selling-or-refinancing-when-there-is-an-irs-lien`. **The Data Book is best
+read as the XLSX, not the HTML page**: `www.irs.gov/pub/irs-soi/25db-4-01-co.xlsx` and `25db-4-02-cp.xlsx` are small
+files whose `sharedStrings.xml` and `sheet1.xml` parse with the standard library in about twenty lines, and that is how
+every count on this page was verified first-hand rather than from a write-up. Secondary articles circulating the
+214,000 figure also circulate a wrong FY2022 base; the table has both years in it.
+
+**One length note.** The page landed at about 2,600 words by the count the 2026-11-18 run used, after three trimming
+passes from roughly 3,600, which is the tightest any statute-dense page on this site has come to the 2,500 ceiling. The
+cuts dropped one three-paragraph structure per section down to one dense paragraph and tightened every table cell; no
+citation, figure or internal link was removed. Every figure in the worked example and all six published IRS counts are
+recomputed by `scripts/check-payroll-lien-math.mjs`, committed alongside the page, 36 assertions. Reciprocal links added
+from `/sell-a-hotel/tax-clearance-and-withholding`, `/sell-a-hotel/selling-a-distressed-hotel`,
+`/sell-a-hotel/employees-when-you-sell`, `/sell-a-hotel/taxes-when-selling-a-hotel`, `/hotel-financing/loan-workouts`,
+and the glossary terms `going-concern-value` and `prime-rate`. No existing number changed.
+
 **2026-11-18, Content Writer.** Shipped `/sell-a-hotel/contribute-hotel-to-a-reit`. Sections A to E are complete, F is
 SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage scan of `src/lib/data/`: "UPREIT",
 "operating partnership", "disguised sale", "707(a)(2)" and "704(c)" each appeared in **zero** files, and "OP unit" in
@@ -699,6 +763,7 @@ Pick from `geo/04-queries.csv` prompts with no dedicated page, phrased the way p
 | [x] | `/sell-a-hotel/asset-sale-vs-entity-sale` | No CSV row targets it directly. The gap was near total: "equity sale", "successor liability", "Form 8308", "marketplace facilitator" and "1446" appeared in **zero** files under `src/lib/data/`, "membership interest" and "stock sale" in one each, and sections 751, 743 and 754 nowhere at all in a tax sense. The site had a full page on the tax layers of a hotel sale and nothing on the structure question that decides which sections those layers arrive through | Shipped 2026-11-10. Answers the question with a number: on the same $18,000,000 price and the same allocation, the seller's federal bill is identical both ways, $2,320,000, because section 751(c) treats the section 1245 recapture as an unrealized receivable and 26 CFR 1.1(h)-1(b)(3) hands the selling partner the section 1250 layer at 25 percent. The real differences are the buyer's $9,700,000 section 743(b) step-up (only with a 754 election), the loss of section 1031 (26 CFR 1.1031(a)-3(a)(5)(i)(C) excludes partnership interests), Washington's controlling-interest excise tax and California's change-in-control reassessment. Prints no lender or franchisor change-of-control consent terms and no consent fee: none is published |
 | [x] | `/hotel-financing/mechanics-liens` | No CSV row targets it directly. The gap was total: "mechanic's lien", "mechanics lien" and "construction lien" appeared in **zero** files under `src/lib/data/`, and "lien" only ever as a tax or mortgage lien. The site carried `/hotel-financing/construction-loans`, `/hotel-financing/pip-and-renovation-loans` and `/hotel-financing/closing-costs` and said nothing about the one thing an unpaid contractor on a PIP can do to the title the owner is about to refinance or sell | Shipped 2026-11-17. The finding: in Minnesota and Washington the lien relates back to the start of work, so a brand PIP deadline that gets an owner digging before the loan records puts every lien from the job ahead of the lender (Minn. Stat. 514.05, RCW 60.04.061), while Florida runs priority off the recorded notice of commencement and protects a lender that records first on every later draw (Fla. Stat. 713.07). The second finding: RCW 60.04.221(7) subordinates a construction lender's own deed of trust, up to the amount in the notice, if it disburses after being told to withhold. Prints no surety premium, no title-insurance charge and no lender title requirement: none of the three is published |
 | [x] | `/sell-a-hotel/contribute-hotel-to-a-reit` | No CSV row targets it directly, and "UPREIT", "721", "OP unit" and "operating partnership" are absent from `geo/04-queries.csv`. The gap was total: "UPREIT", "operating partnership", "disguised sale", "707(a)(2)" and "704(c)" appeared in **zero** files under `src/lib/data/`, and "OP unit" in none. The site answered every other exit for an appreciated hotel, a taxable sale, a 1031 exchange, a DST, seller financing and the step-up at death, and said nothing about the one that takes paper in a REIT instead of cash | Shipped 2026-11-18. The finding: section 721(a) covers the exchange, but the mortgage does not go quietly. 26 CFR 1.752-1(f) nets the liability shift, section 722 gives the units the hotel's old basis, and section 731(a)(1) taxes the net debt relief above it, so on an $18,000,000 hotel with a $7,500,000 mortgage and a $4,200,000 basis the "tax-free" contribution recognizes $3,150,000 of gain in cash the owner never received, 30.0 percent of the equity taken in units, and defers 77.2 percent of the gain rather than all of it. The second finding: the owner stops running the hotel, as a matter of the Code (sections 856(d)(8)(B), (d)(9)(A) and (d)(9)(E), where operating includes managing), and Host Hotels' own 10-K says it is "not permitted to operate or manage any of our hotels" and so cannot set room rates. The third: Apple Hospitality REIT's FY2025 10-K never uses the word "partnership", so it has no units to issue. Prints no unit price, no lock-up period and no REIT's acquisition criteria: none is published |
+| [x] | `/sell-a-hotel/irs-liens-and-payroll-taxes` | No CSV row targets it directly. The gap was total: "trust fund", "6321", "phantom income", "discharge of indebtedness" and "COD income" appeared in **zero** files under `src/lib/data/`, and "6672" only inside a franchise-registry URL. State sales and occupancy tax clearance was already covered in depth, and so was the tax of losing a hotel to the lender, but unpaid **federal employment tax**, the one liability that records against title by operation of law and then follows the owner personally after the hotel is gone, was nowhere | Shipped 2026-11-19. The finding inverts the fear: the FY2025 IRS Data Book Table 4-1 reports 214,099 notices of federal tax lien filed and **50** seizures nationwide, one for every 4,282 filings, so the risk is a document in the chain of title, not an agent at the door, and section 6323(a) is why. Form 14135 prints all five section 6325(b) discharge bases, which makes the whole decision tree citable to a government form, and Publication 783 supplies the only published timing in the process, 45 days before closing. The capital markets find: 26 U.S.C. 3505(b) makes a lender that funds wages knowing the withholding will not be deposited liable for that tax up to 25 percent of what it supplied. Prints no title-insurance claim, no buyer holdback and no real processing time: none is published, and the page says Table 4-2 reports assessments and abatements without netting, so the $117.9 billion assessed is not a cost figure |
 
 Remaining candidates: hotel loan assumption, seller financing for a hotel, preferred equity (needs a
 citable source), what buyers look for in a hotel, selling a hotel with a ground lease, hotel property

@@ -16,7 +16,7 @@ export const page: AnswerPage = {
   title: "How to Sell a Hotel That Is Losing Money or in Default",
   h1: "How do I sell a hotel that is losing money or in default?",
   description: "How a distressed hotel changes hands: lender-approved sale, receivership sale, note sale, deed in lieu or bankruptcy sale. Who controls each, and the tax.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-11-19",
   authorSlug: "nate-solomon",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -65,7 +65,7 @@ export const page: AnswerPage = {
     {
       h2: "What is the tax on a short sale, deed in lieu or foreclosure?",
       lead: "The IRS treats each one as a sale of the hotel. Whether you also have canceled debt income depends on whether the loan is recourse.",
-      body: "IRS Publication 4681 says a foreclosure is treated as a sale from which you may realize gain or loss, even if you voluntarily return the property to the lender, and that a voluntary conveyance in lieu of foreclosure is treated as an exchange of property to satisfy a debt.[2]\n\nOn a non-recourse loan, the entire unpaid debt is treated as the amount realized, and there is no canceled debt income. If the debt is more than your adjusted basis, you have a taxable gain even though you receive no cash. On a recourse loan, gain or loss is measured against the hotel's fair market value, and any forgiven debt above that value is ordinary income unless an exclusion applies.[2] The exclusions include bankruptcy, insolvency, and an election for qualified real property business indebtedness.[2]\n\nThis is where owners get surprised. A hotel that was depreciated for years and refinanced along the way can have debt well above basis. The layers of tax on the gain itself are explained at `/sell-a-hotel/taxes-when-selling-a-hotel`. Run the numbers with a CPA before choosing a path."
+      body: "IRS Publication 4681 says a foreclosure is treated as a sale from which you may realize gain or loss, even if you voluntarily return the property to the lender, and that a voluntary conveyance in lieu of foreclosure is treated as an exchange of property to satisfy a debt.[2] If unpaid payroll tax is part of the distress, a filed federal tax lien changes what any of these paths can deliver: [can I sell my hotel if I owe the IRS back payroll taxes?](/sell-a-hotel/irs-liens-and-payroll-taxes)\n\nOn a non-recourse loan, the entire unpaid debt is treated as the amount realized, and there is no canceled debt income. If the debt is more than your adjusted basis, you have a taxable gain even though you receive no cash. On a recourse loan, gain or loss is measured against the hotel's fair market value, and any forgiven debt above that value is ordinary income unless an exclusion applies.[2] The exclusions include bankruptcy, insolvency, and an election for qualified real property business indebtedness.[2]\n\nThis is where owners get surprised. A hotel that was depreciated for years and refinanced along the way can have debt well above basis. The layers of tax on the gain itself are explained at `/sell-a-hotel/taxes-when-selling-a-hotel`. Run the numbers with a CPA before choosing a path."
     },
     {
       h2: "When does a bankruptcy sale make sense?",
