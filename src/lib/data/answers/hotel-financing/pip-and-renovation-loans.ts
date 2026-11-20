@@ -53,7 +53,7 @@ export const page: AnswerPage = {
     {
       h2: "How do I pay for it?",
       lead: "Four financing routes exist, and the right one depends on how much cash is on hand, how large the scope is, and whether a refinance or sale is already happening for other reasons.",
-      body: "Cash from an accumulated FF&E reserve is the lowest-cost, fastest option when the reserve is large enough to cover the scope. A bridge loan with a future-funding facility, which draws capital as the work progresses, is a common route for a large PIP that exceeds available reserves; full detail on bridge structures is on `/hotel-financing/bridge-loans`. A capex holdback inside a refinance works when the owner is refinancing anyway and the scope is moderate. A price reduction at sale shifts the cost to the buyer's side of the ledger entirely, covered in the next section."
+      body: "Cash from an accumulated FF&E reserve is the lowest-cost, fastest option when the reserve is large enough to cover the scope. A bridge loan with a future-funding facility, which draws capital as the work progresses, is a common route for a large PIP that exceeds available reserves; full detail on bridge structures is on `/hotel-financing/bridge-loans`. A capex holdback inside a refinance works when the owner is refinancing anyway and the scope is moderate. A price reduction at sale shifts the cost to the buyer's side of the ledger entirely, covered in the next section. How much of the scope the tax code lets you deduct in the year you pay it, rather than depreciate over 39 years, is on `/hotel-financing/deduct-or-capitalize-a-renovation`."
     },
     {
       h2: "Will my PIP block a refinance?",

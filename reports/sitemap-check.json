@@ -1,10 +1,10 @@
 {
-  "urls": 343,
+  "urls": 344,
   "maxDepth": 2,
   "byDepth": {
     "0": 1,
     "1": 32,
-    "2": 310
+    "2": 311
   },
   "depth": {
     "/": 0,
@@ -81,6 +81,7 @@
     "/hotel-financing/cash-out-refinance": 2,
     "/hotel-financing/closing-costs": 2,
     "/hotel-financing/mechanics-liens": 2,
+    "/hotel-financing/deduct-or-capitalize-a-renovation": 2,
     "/hotel-financing/loan-requirements": 2,
     "/hotel-financing/lenders-under-5-million": 2,
     "/hotel-financing/1031-exchange-hotels": 2,

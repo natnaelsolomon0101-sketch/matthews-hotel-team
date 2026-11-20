@@ -66,6 +66,7 @@ export const entry: GlossaryEntry = {
   relatedAnswers: [
     "/hotel-valuation/how-to-value-a-hotel",
     "/hotel-financing/pip-and-renovation-loans",
+    "/hotel-financing/deduct-or-capitalize-a-renovation",
     "/sell-a-hotel/documents-needed",
     "/hotel-industry/ada-requirements",
     "/hotel-financing/flood-insurance-requirements",
