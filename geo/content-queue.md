@@ -124,6 +124,74 @@ CSV still points at rather than genuine content gaps.
 
 ## Run notes
 
+**2026-11-20, Content Writer.** Shipped `/hotel-financing/deduct-or-capitalize-a-renovation`. Sections A to E are
+complete, F is SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage scan of
+`src/lib/data/`: "263(a)", "unit of property", "routine maintenance", "de minimis safe harbor", "betterment",
+"adaptation", "partial disposition", "168(i)-8", "3115", "179D", "prevailing wage" and "90.1" each appeared in **zero**
+files, and "capitalize" in 18, never once about the test that decides it. The site had `pip-and-renovation-loans` for
+how to borrow the money, `pip-and-hotel-value` for what the work does to value, and
+`buy-a-hotel/depreciation-and-cost-segregation` for the depreciation of a purchase, and nothing at all on whether the
+renovation dollars are deductible or capital. Transfer tax and title insurance were checked first and rejected as
+already covered: `closing-costs` carries the Texas promulgated title premiums and the Florida mortgage doc stamp, and
+`taxes-when-selling-a-hotel` carries the Florida deed stamp and the Washington REET top tier.
+
+**The find of this run: the regulation argues the case in hotels.** 26 CFR 1.263(a)-3 contains three worked hotel
+examples and they do the whole job. Example 24 is a hotel owner replacing guest-bath tubs, toilets and sinks four
+floors at a time over three years, and the regulation capitalizes every dollar, including the repainting and retiling,
+because all the tubs together are a major component of the **plumbing system** rather than a small part of a hotel.
+Example 28 puts a lobby floor at under 10 percent of square footage on the deductible side. Example 29 changes one fact,
+all the public-area floors at about 40 percent, and capitalizes. Those are the only percentages the regulation prints,
+and the page says so rather than dressing them up as a safe harbor.
+
+**The second find, and it is the reason the page exists.** The unit of property for a building is the structure plus
+**nine** named systems, each tested on its own: HVAC, plumbing, electrical, all escalators, all elevators, fire
+protection and alarm, security, gas distribution, and anything later designated. A hotel PIP spends into four or five
+of them at once, so the intuition that a PIP is a small fraction of the hotel is measuring against the wrong thing.
+
+**The third find belongs to the owner's cash, not the lender's file.** Section 179(e) names roofs, HVAC, fire
+protection and alarm, and security systems as qualified real property, which is four of the nine systems, and the 2026
+cap is $2,560,000 with the phaseout starting at $4,090,000. On the page's hypothetical neither dollar limit binds:
+$2,426,000 of section 179 property sits $134,000 inside the cap. The 179(b)(3) taxable-income limit is what binds, and
+the page says so. Pair that with the partial disposition election in 1.168(i)-8(d)(2) and the same $3,540,000 PIP
+deducts $46,000 or $886,308 in year one, 1.3 percent against 25.0 percent, a factor of 19.3. The trap the page also
+prints: Examples 3 and 4 under (g)(2) make comparable replacement shingles deductible **until** the owner elects
+partial disposition, at which point (k)(1)(i) turns the same work into a restoration. Partial disposition is not free
+money.
+
+**The fourth find is a date that has already passed.** Section 70507 of the OBBBA terminated 179D for property whose
+construction begins after **June 30, 2026**. Every renovation starting now gets nothing, and a PIP budget carrying a
+179D line from an older write-up is overstated. The page prints the 2026 values anyway, $0.59 to $1.19 and $2.97 to
+$5.94 per square foot, because a PIP that broke ground on or before that date still claims them.
+
+**What the run deliberately did not publish.** No "typical" percentage of a PIP that capitalizes, no processing time or
+audit statistic, no claim about what the IRS accepts in practice, and no advice. The brand sentence states that the team
+arranges PIP capital from $5 million and does **not** give tax advice, which section N requires for a topic outside the
+confirmed services.
+
+**Three sourcing notes for the next run.** **Cornell LII served eight title-26 pages in one run with no block** to a
+plain `curl --compressed` with a browser user agent, including the two large ones: `cfr/text/26/1.263(a)-3` is 954 KB of
+HTML and `1.168(i)-8` and `1.263(a)-1` came back clean, as did `uscode/text/26` for 162, 168, 179, 179D and 263. The
+parenthesised section numbers in those paths work unescaped. **`www.irs.gov/pub/irs-drop/rp-25-32.pdf` is the primary
+source for every 2026 inflation-adjusted amount** and `pdftotext -layout` reads it, but note the numbering: the 2026
+amounts are in **SECTION 4** (items .24 and .25), not section 2, and the OBBBA 179D termination is section **2.11**.
+A first draft of this page cited 2.24 and 3.11 and was corrected against the section headers. **The two IRS HTML pages
+used here both serve to a script at 200**: the tangible property final regulations page is where the $2,500 de minimis
+threshold from Notice 2015-82 is stated, since the regulation itself still prints $500, and the 179D page carries the
+year-by-year dollar table and was last reviewed October 27, 2026.
+
+**One length note.** The page lands at 2,497 words against the 2,500 ceiling, after five trimming passes from 2,748.
+One FAQ was cut as a duplicate of the safe harbor section, the worked example stopped restating the test for each line
+because the table already carries it, and nothing cut was a citation, a figure or an internal link. Every figure in the
+worked example and every published threshold in the prose is recomputed by
+`scripts/check-renovation-capitalization-math.mjs`, committed alongside the page: 68 assertions covering the eight line
+items and their $3,540,000 sum at $30,000 per key, the 39-year straight-line roof basis and its $192,308 remainder, the
+qualified-real-property and section 179 property totals, the cap headroom, the taxable-income limit and carryforward,
+both first-year totals, the 1.3 and 25.0 percent shares and the 19.3 multiple, plus the de minimis, small-taxpayer,
+routine maintenance and 179D thresholds. Reciprocal links added from `/hotel-financing/pip-and-renovation-loans`,
+`/hotel-financing/interest-deduction-limits`, `/buy-a-hotel/depreciation-and-cost-segregation` and
+`/hotel-valuation/pip-and-hotel-value`, plus `relatedAnswers` on `/glossary/pip`, `/glossary/ffe-reserve` and
+`/glossary/noi`, and the spoke line on the cluster hub: nine inbound edges in all. No existing number changed.
+
 **2026-11-19, Content Writer.** Shipped `/sell-a-hotel/irs-liens-and-payroll-taxes`. Sections A to E are complete, F is
 SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage scan of `src/lib/data/`: "trust
 fund", "6321", "phantom income", "discharge of indebtedness", "COD income" and "Rev. Rul. 90-16" each appeared in
@@ -764,6 +832,7 @@ Pick from `geo/04-queries.csv` prompts with no dedicated page, phrased the way p
 | [x] | `/hotel-financing/mechanics-liens` | No CSV row targets it directly. The gap was total: "mechanic's lien", "mechanics lien" and "construction lien" appeared in **zero** files under `src/lib/data/`, and "lien" only ever as a tax or mortgage lien. The site carried `/hotel-financing/construction-loans`, `/hotel-financing/pip-and-renovation-loans` and `/hotel-financing/closing-costs` and said nothing about the one thing an unpaid contractor on a PIP can do to the title the owner is about to refinance or sell | Shipped 2026-11-17. The finding: in Minnesota and Washington the lien relates back to the start of work, so a brand PIP deadline that gets an owner digging before the loan records puts every lien from the job ahead of the lender (Minn. Stat. 514.05, RCW 60.04.061), while Florida runs priority off the recorded notice of commencement and protects a lender that records first on every later draw (Fla. Stat. 713.07). The second finding: RCW 60.04.221(7) subordinates a construction lender's own deed of trust, up to the amount in the notice, if it disburses after being told to withhold. Prints no surety premium, no title-insurance charge and no lender title requirement: none of the three is published |
 | [x] | `/sell-a-hotel/contribute-hotel-to-a-reit` | No CSV row targets it directly, and "UPREIT", "721", "OP unit" and "operating partnership" are absent from `geo/04-queries.csv`. The gap was total: "UPREIT", "operating partnership", "disguised sale", "707(a)(2)" and "704(c)" appeared in **zero** files under `src/lib/data/`, and "OP unit" in none. The site answered every other exit for an appreciated hotel, a taxable sale, a 1031 exchange, a DST, seller financing and the step-up at death, and said nothing about the one that takes paper in a REIT instead of cash | Shipped 2026-11-18. The finding: section 721(a) covers the exchange, but the mortgage does not go quietly. 26 CFR 1.752-1(f) nets the liability shift, section 722 gives the units the hotel's old basis, and section 731(a)(1) taxes the net debt relief above it, so on an $18,000,000 hotel with a $7,500,000 mortgage and a $4,200,000 basis the "tax-free" contribution recognizes $3,150,000 of gain in cash the owner never received, 30.0 percent of the equity taken in units, and defers 77.2 percent of the gain rather than all of it. The second finding: the owner stops running the hotel, as a matter of the Code (sections 856(d)(8)(B), (d)(9)(A) and (d)(9)(E), where operating includes managing), and Host Hotels' own 10-K says it is "not permitted to operate or manage any of our hotels" and so cannot set room rates. The third: Apple Hospitality REIT's FY2025 10-K never uses the word "partnership", so it has no units to issue. Prints no unit price, no lock-up period and no REIT's acquisition criteria: none is published |
 | [x] | `/sell-a-hotel/irs-liens-and-payroll-taxes` | No CSV row targets it directly. The gap was total: "trust fund", "6321", "phantom income", "discharge of indebtedness" and "COD income" appeared in **zero** files under `src/lib/data/`, and "6672" only inside a franchise-registry URL. State sales and occupancy tax clearance was already covered in depth, and so was the tax of losing a hotel to the lender, but unpaid **federal employment tax**, the one liability that records against title by operation of law and then follows the owner personally after the hotel is gone, was nowhere | Shipped 2026-11-19. The finding inverts the fear: the FY2025 IRS Data Book Table 4-1 reports 214,099 notices of federal tax lien filed and **50** seizures nationwide, one for every 4,282 filings, so the risk is a document in the chain of title, not an agent at the door, and section 6323(a) is why. Form 14135 prints all five section 6325(b) discharge bases, which makes the whole decision tree citable to a government form, and Publication 783 supplies the only published timing in the process, 45 days before closing. The capital markets find: 26 U.S.C. 3505(b) makes a lender that funds wages knowing the withholding will not be deposited liable for that tax up to 25 percent of what it supplied. Prints no title-insurance claim, no buyer holdback and no real processing time: none is published, and the page says Table 4-2 reports assessments and abatements without netting, so the $117.9 billion assessed is not a cost figure |
+| [x] | `/hotel-financing/deduct-or-capitalize-a-renovation` | No CSV row targets it directly. The gap was total: "263(a)", "unit of property", "routine maintenance", "de minimis safe harbor", "betterment", "adaptation", "partial disposition", "168(i)-8", "3115", "179D" and "prevailing wage" appeared in **zero** files under `src/lib/data/`, and "capitalize" in 18, never once about the test that decides it. The site had `/hotel-financing/pip-and-renovation-loans` for how to borrow the PIP money, `/hotel-valuation/pip-and-hotel-value` for what the work does to value and `/buy-a-hotel/depreciation-and-cost-segregation` for depreciating a purchase, and nothing on whether the renovation dollars are deductible or capital | Shipped 2026-11-20. The finding: 26 CFR 1.263(a)-3 argues the case in hotels. Example 24 capitalizes every dollar of a phased guest-bath replacement, including the repainting, because all the tubs together are a major component of the **plumbing system**; Example 28 puts a lobby floor at under 10 percent of square footage on the deductible side and Example 29 capitalizes all the public-area floors at about 40 percent. The second finding: the unit of property is the structure plus **nine** systems tested separately, so a PIP that feels like a small fraction of the hotel is measured against the wrong thing. The money finding: section 179(e) reaches four of those nine systems, and with the 1.168(i)-8(d)(2) partial disposition election the same $3,540,000 PIP deducts $46,000 or $886,308 in year one, 1.3 against 25.0 percent, a factor of 19.3, with the 179(b)(3) taxable-income limit binding rather than the $2,560,000 cap. Examples 3 and 4 under (g)(2) show the election can turn a deductible repair into a restoration, so it is not free money. 179D is terminated for construction beginning after June 30, 2026. Prints no typical capitalized percentage, no audit statistic and no advice: none is published, and the brand sentence states the team does not give tax advice |
 
 Remaining candidates: hotel loan assumption, seller financing for a hotel, preferred equity (needs a
 citable source), what buyers look for in a hotel, selling a hotel with a ground lease, hotel property

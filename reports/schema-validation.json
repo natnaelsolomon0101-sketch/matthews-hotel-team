@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-11-19T14:30:49.229Z",
+  "runAt": "2026-11-20T14:25:01.935Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 343,
-  "blocksFound": 343,
-  "blocksValid": 343,
+  "urlsChecked": 344,
+  "blocksFound": 344,
+  "blocksValid": 344,
   "issues": [],
   "blocks": [
     {
@@ -533,6 +533,13 @@
     },
     {
       "url": "/hotel-financing/construction-loans",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/deduct-or-capitalize-a-renovation",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,

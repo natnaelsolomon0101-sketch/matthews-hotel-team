@@ -73,6 +73,7 @@ export const entry: GlossaryEntry = {
   // geo/05-architecture.md §5.1: link the answer page that uses this term (R11).
   relatedAnswers: [
     "/hotel-financing/pip-and-renovation-loans",
+    "/hotel-financing/deduct-or-capitalize-a-renovation",
     "/sell-a-hotel/documents-needed",
     "/sell-a-hotel/franchise-transfer",
     "/hotel-industry/ada-requirements",

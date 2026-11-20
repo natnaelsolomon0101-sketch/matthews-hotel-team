@@ -8,6 +8,7 @@ import { page as a_c_pace_financing } from "./c-pace-financing";
 import { page as a_chapter_11_bankruptcy } from "./chapter-11-bankruptcy";
 import { page as a_cmbs_loans } from "./cmbs-loans";
 import { page as a_construction_loans } from "./construction-loans";
+import { page as a_deduct_or_capitalize_a_renovation } from "./deduct-or-capitalize-a-renovation";
 import { page as a_eb_5_financing } from "./eb-5-financing";
 import { page as a_extended_stay_financing } from "./extended-stay-financing";
 import { page as a_faq } from "./faq";
@@ -57,6 +58,7 @@ export const spokes: AnswerPage[] = [
   a_chapter_11_bankruptcy,
   a_cmbs_loans,
   a_construction_loans,
+  a_deduct_or_capitalize_a_renovation,
   a_eb_5_financing,
   a_extended_stay_financing,
   a_faq,
