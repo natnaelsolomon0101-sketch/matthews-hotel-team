@@ -120,6 +120,15 @@ export type RateEdition = {
   publishedAt: string;
   /** ISO date the next edition is due. */
   nextRefresh: string;
+  /**
+   * Set this once `nextRefresh` has passed and the next edition is not out.
+   * A page that keeps printing a refresh date already in the past tells a
+   * reader the next edition arrived when it did not. Authored, never derived
+   * from `new Date()`: see src/lib/format-date.ts. Clear it when the next
+   * edition ships. Same contract as `refreshNote` on MhiQuarter in
+   * src/lib/data/mhi.ts.
+   */
+  refreshNote?: string;
   /** The 40 to 70 word answer block at the top of the page. */
   directAnswer: string;
   /**

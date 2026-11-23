@@ -90,7 +90,7 @@ function ratesMarkdown(): string {
   });
 
   out.push(
-    `Published by ${BRAND} · Last updated: ${longDate(updated)} · Next edition: ${longDate(e.nextRefresh)}`,
+    `Published by ${BRAND} · Last updated: ${longDate(updated)} · ${e.refreshNote ?? `Next edition: ${longDate(e.nextRefresh)}`}`,
     "",
   );
 

@@ -220,7 +220,7 @@ export const page: AnswerPage = {
       n: 9,
       label:
         "FY 2025 NMTC Public Data Release: 2003-2023 Data File (updated August 7, 2026), Projects sheet: 8,439 projects with origination years 2001 to 2023, $71,018,792,859 of project QLICI amounts, $127,615,323,405 of estimated total project cost, a median project QLICI of $5,362,148, QALICB types of 2,938 real estate and 3,960 non-real estate, and 6,776 metropolitan against 1,663 non-metropolitan projects; the Data Point Description sheet carries no industry or NAICS field",
-      url: "https://www.cdfifund.gov/system/files?file=2026-08/NMTC_Public_Data_Release_includes_FY2003_FY_2023_Data_Final_08062026.xlsx",
+      url: "https://www.cdfifund.gov/system/files/2026-08/NMTC_Public_Data_Release_includes_FY2003_FY_2023_Data_Final_08062026.xlsx",
       publisher: "Community Development Financial Institutions Fund, Department of the Treasury",
       accessed: "2026-10-23"
     },
@@ -228,7 +228,7 @@ export const page: AnswerPage = {
       n: 10,
       label:
         "FY 2025 NMTC Public Data Release: 2003-2023 Summary Report (updated August 7, 2026): $71.019 billion of total QLICIs and 8,439 projects, and no breakdown of investments by industry, NAICS code or property type",
-      url: "https://www.cdfifund.gov/system/files?file=2026-08/2025_NMTC_Public_Data_Release_Summary_FY2003toFY2023_Final_08052026.pdf",
+      url: "https://www.cdfifund.gov/system/files/2026-08/2025_NMTC_Public_Data_Release_Summary_FY2003toFY2023_Final_08052026.pdf",
       publisher: "Community Development Financial Institutions Fund, Department of the Treasury",
       accessed: "2026-10-23"
     },
