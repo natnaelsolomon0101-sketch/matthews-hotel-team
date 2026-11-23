@@ -136,6 +136,7 @@ export function openApiDocument() {
             modified: { type: "string", format: "date" },
             corrections: { type: "array", items: { type: "object" } },
             nextRefresh: { type: "string", format: "date" },
+            refreshNote: { type: ["string", "null"], description: "Set when nextRefresh has passed and the next edition has not published. Null means nextRefresh is still in the future." },
             license: { type: "string", format: "uri" },
             citation: { type: "string" },
             readme: { type: "string" },

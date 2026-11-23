@@ -271,7 +271,7 @@ export const page: AnswerPage = {
       n: 6,
       label:
         "Assembly Insurance Committee Oversight Hearing, The California FAIR Plan, January 28, 2026: the California Insurance Code 10090 purpose of insuring qualified property for which basic property insurance cannot be obtained through the normal insurance market and the Insurance Code 10100.2 rate standard; the statement that FAIR Plan policies are capped at $3.3 million for residential properties and $20 million per structure up to $100 million for commercial properties, with commercial moving from $8.4 million per location in 2021 to $20 million per location in 2023 to $20 million per structure with a $100 million maximum finalized in July 2025 and set to sunset in 2028; the statement that the FAIR Plan policy is not as broad as traditional policies but is fully sound and satisfies lenders' security requirements, with other coverages typically bought through a difference in conditions or DIC policy providing wraparound coverage; and the reported total exposure of $724 billion and 668,609 policies in force as of December 2025",
-      url: "https://ains.assembly.ca.gov/media/340",
+      url: "https://ains.assembly.ca.gov/system/files/2026-01/1.28.26-fair-plan-background-final.pdf",
       publisher: "California State Assembly, Assembly Insurance Committee",
       accessed: "2026-11-16"
     },

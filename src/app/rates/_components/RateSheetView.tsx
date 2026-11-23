@@ -79,7 +79,8 @@ export function RateSheetView({
             {isArchive ? null : (
               <>
                 {" "}
-                &middot; Next edition: {LONG_DATE(edition.nextRefresh)}
+                &middot;{" "}
+                {edition.refreshNote ?? `Next edition: ${LONG_DATE(edition.nextRefresh)}`}
               </>
             )}
           </p>

@@ -205,7 +205,7 @@ export const page: AnswerPage = {
       n: 6,
       label:
         "Fire safe hotels: GSA is required by law to use only properties certified as fire safe in setting federal lodging per diem rates (page last updated July 22, 2024)",
-      url: "https://www.gsa.gov/travel/plan-a-trip/per-diem-rates/fire-safe-hotels",
+      url: "https://www.gsa.gov/travel/per-diem-rates/fire-safe-hotels",
       publisher: "U.S. General Services Administration",
       accessed: "2026-10-19"
     },

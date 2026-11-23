@@ -80,6 +80,7 @@ export function ratesJson() {
     modified: e.modifiedAt ?? e.publishedAt,
     corrections: e.corrections ?? [],
     nextRefresh: e.nextRefresh,
+    refreshNote: e.refreshNote ?? null,
     license: RATES_LICENSE,
     citation: citationString(e, SITE_URL),
     readme:
