@@ -68,6 +68,7 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/prepayment-penalties",
     "/hotel-financing/sba-7a-vs-504",
     "/hotel-financing/sba-size-standards",
+    "/sell-a-hotel/covid-eidl-when-you-sell",
     "/hotel-financing/hotel-lenders-by-type",
     "/hotel-financing/loan-requirements",
     "/buy-a-hotel/environmental-liability"

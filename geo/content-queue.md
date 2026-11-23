@@ -124,6 +124,68 @@ CSV still points at rather than genuine content gaps.
 
 ## Run notes
 
+**2026-11-23, Content Writer.** Shipped `/sell-a-hotel/covid-eidl-when-you-sell`. Sections A to E are complete, F is
+SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage scan of `src/lib/data/`: "EIDL",
+"PPP", "Treasury offset", "cross-servicing" and "CAIVRS" each appeared in **zero** files, and "disaster loan" only as
+an SBA program name in a list. It is the largest remaining hole on the sell side, because the loan is federal, it is
+secured, it outlives the pandemic by 30 years, and SBA approved 3,923,374 of them.
+
+**The find of this run, and it is a sentence rather than a number.** SBA's Office of COVID EIDL Services re-issued its
+requirement letters in October 2026, and two of them say the thing an owner assumes is not true: "any Consent to Change
+in Ownership will not release the Original Borrower(s) and/or any Guarantor(s) from liability", and the assumption
+letter says the same of its own approval. A personal guaranty was required on every COVID EIDL above $200,000, so a
+seller who lets the buyer take the loan keeps the liability on a note that can run to 2051. The second find is the
+price of a lien release, also in SBA's own words: "under most circumstances, SBA may require full monetary
+consideration", and "a 'paydown' for consideration is not a regular payment and regular monthly payments are not
+automatically re-amortized".
+
+**The third find is arithmetic nobody warned owners about.** Payments begin 30 months from disbursement and interest
+accrues throughout, which SBA says becomes a balloon at maturity. On the page's hypothetical $2,000,000 loan, 30
+payments of $9,262.31 total $277,869.30, of which only $94,586.15 reached principal, so the balance is $1,905,413.85
+and the payoff with $187,500 of deferment interest is $2,092,913.85: $92,913.85 more than was borrowed, with nothing
+wrong at the hotel. On an $11,200,000 sale with a $6,400,000 mortgage, SBA takes 48.7 percent of the equity.
+
+**What the run deliberately did not publish.** No amount of consideration for a release, no processing time for any
+servicing request, no count or share of hotels holding a COVID EIDL, and no buyer holdback. SBA publishes none of
+them, and the page says so three times instead of estimating. The hotel-share figure was abandoned on purpose:
+`data.sba.gov/dataset/covid-19-eidl` carries loan-level data only through December 2020 and USAspending's
+`spending_by_category` endpoint returns $46.7 billion for CFDA 59.008 over March 2020 to December 2022 against SBA's
+own $378.4 billion, a gap this run could not explain, so no derived total was published. Rule 1 beat the better story.
+
+**Five sourcing notes for the next run.** **`www.sba.gov/funding-programs/loans/covid-19-relief-options/...` is a 404
+and `legacy.sba.gov` is the live host for every COVID EIDL page**, confirming the 2026-10-04 finding about
+`/document/<slug>`: the program page, the servicing page, the EIDL data page and all nine servicing requirement letters
+serve to `curl --compressed` with a browser user agent. The letters are versioned by month inside
+`/sites/default/files/2026-10/` and `2026-11/` with names like `OCES Change in Ownership 10.2026 V1 - REM03.pdf`, so
+re-read the current file rather than trusting a quote. `pdftotext -layout` reads all four cleanly. **SOP 50 10 8.1 is
+published as .docx, not PDF**, at `/sites/default/files/2026-10/`, and `pandoc -f docx -t plain` converts it to a
+1.07 MB text file that greps fine; its eligibility paragraph 19 is the Delinquent Federal Debt rule. **Cornell LII
+served six titles in one run with no block**: 13 CFR 123.11, 123.300 and 123.303, 15 U.S.C. 636, 31 U.S.C. 3716 and
+31 CFR 285.13. **The USAspending API rejects `naics_codes` as an object** and wants a plain array, and its
+`program_numbers` filter returned nothing for 59.072, so SBA disaster loans are under CFDA **59.008**.
+
+**One number that needs a second reading next time.** SBA's own two pages disagree about the deferment: the program
+page's terms table says payments are deferred 24 months from origination, the servicing page says the obligation
+begins 30 months from the disbursement date on the original note. The servicing page is dated July 17, 2026 and is the
+newer of the two, so the page and the math script use 30 months and say which source that is. If SBA re-words either
+page, the $187,500 of deferment interest in the worked example moves.
+
+Every figure in the worked example and every published term is recomputed by `scripts/check-eidl-math.mjs`, committed
+alongside the page: 27 assertions covering the thresholds, the deferment accrual, the installment, the 30-payment
+split, the payoff, the closing waterfall, the 48.7 percent equity share, the three carry-cost comparisons against the
+October 2026 rate sheet and the program totals. The page runs 2,581 words against the brief's 2,500 ceiling after four
+trimming passes from 3,044; the release-of-collateral section was merged into the servicing-request section and the
+document lists were cut from the prose where the table already carries them. Reciprocal links added from
+`/sell-a-hotel/asset-sale-vs-entity-sale`, `/sell-a-hotel/documents-needed`, `/buy-a-hotel/due-diligence-checklist` and
+`/hotel-financing/refinance`, plus `relatedAnswers` on `/glossary/sba-7a` and `/glossary/sba-504`, and the spoke line
+on the cluster hub: seven inbound edges in all. No existing number changed.
+
+**Production is still down, and it was down before this run started.** Every page of matthewshotelmarkets.com has
+answered HTTP 503 with `x-vercel-error: DEPLOYMENT_PAUSED` since 2026-10-29 19:52 UTC, which the Maintainer confirmed
+again earlier today at 13:06 UTC. `DEPLOYMENT_PAUSED` is an account-level pause that no agent can clear; it needs Nate
+in the Vercel dashboard. The post-merge production verification in `geo/AGENTS.md` §3 step 6 could not be completed for
+this page.
+
 **2026-11-20, Content Writer.** Shipped `/hotel-financing/deduct-or-capitalize-a-renovation`. Sections A to E are
 complete, F is SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage scan of
 `src/lib/data/`: "263(a)", "unit of property", "routine maintenance", "de minimis safe harbor", "betterment",
@@ -833,6 +895,7 @@ Pick from `geo/04-queries.csv` prompts with no dedicated page, phrased the way p
 | [x] | `/sell-a-hotel/contribute-hotel-to-a-reit` | No CSV row targets it directly, and "UPREIT", "721", "OP unit" and "operating partnership" are absent from `geo/04-queries.csv`. The gap was total: "UPREIT", "operating partnership", "disguised sale", "707(a)(2)" and "704(c)" appeared in **zero** files under `src/lib/data/`, and "OP unit" in none. The site answered every other exit for an appreciated hotel, a taxable sale, a 1031 exchange, a DST, seller financing and the step-up at death, and said nothing about the one that takes paper in a REIT instead of cash | Shipped 2026-11-18. The finding: section 721(a) covers the exchange, but the mortgage does not go quietly. 26 CFR 1.752-1(f) nets the liability shift, section 722 gives the units the hotel's old basis, and section 731(a)(1) taxes the net debt relief above it, so on an $18,000,000 hotel with a $7,500,000 mortgage and a $4,200,000 basis the "tax-free" contribution recognizes $3,150,000 of gain in cash the owner never received, 30.0 percent of the equity taken in units, and defers 77.2 percent of the gain rather than all of it. The second finding: the owner stops running the hotel, as a matter of the Code (sections 856(d)(8)(B), (d)(9)(A) and (d)(9)(E), where operating includes managing), and Host Hotels' own 10-K says it is "not permitted to operate or manage any of our hotels" and so cannot set room rates. The third: Apple Hospitality REIT's FY2025 10-K never uses the word "partnership", so it has no units to issue. Prints no unit price, no lock-up period and no REIT's acquisition criteria: none is published |
 | [x] | `/sell-a-hotel/irs-liens-and-payroll-taxes` | No CSV row targets it directly. The gap was total: "trust fund", "6321", "phantom income", "discharge of indebtedness" and "COD income" appeared in **zero** files under `src/lib/data/`, and "6672" only inside a franchise-registry URL. State sales and occupancy tax clearance was already covered in depth, and so was the tax of losing a hotel to the lender, but unpaid **federal employment tax**, the one liability that records against title by operation of law and then follows the owner personally after the hotel is gone, was nowhere | Shipped 2026-11-19. The finding inverts the fear: the FY2025 IRS Data Book Table 4-1 reports 214,099 notices of federal tax lien filed and **50** seizures nationwide, one for every 4,282 filings, so the risk is a document in the chain of title, not an agent at the door, and section 6323(a) is why. Form 14135 prints all five section 6325(b) discharge bases, which makes the whole decision tree citable to a government form, and Publication 783 supplies the only published timing in the process, 45 days before closing. The capital markets find: 26 U.S.C. 3505(b) makes a lender that funds wages knowing the withholding will not be deposited liable for that tax up to 25 percent of what it supplied. Prints no title-insurance claim, no buyer holdback and no real processing time: none is published, and the page says Table 4-2 reports assessments and abatements without netting, so the $117.9 billion assessed is not a cost figure |
 | [x] | `/hotel-financing/deduct-or-capitalize-a-renovation` | No CSV row targets it directly. The gap was total: "263(a)", "unit of property", "routine maintenance", "de minimis safe harbor", "betterment", "adaptation", "partial disposition", "168(i)-8", "3115", "179D" and "prevailing wage" appeared in **zero** files under `src/lib/data/`, and "capitalize" in 18, never once about the test that decides it. The site had `/hotel-financing/pip-and-renovation-loans` for how to borrow the PIP money, `/hotel-valuation/pip-and-hotel-value` for what the work does to value and `/buy-a-hotel/depreciation-and-cost-segregation` for depreciating a purchase, and nothing on whether the renovation dollars are deductible or capital | Shipped 2026-11-20. The finding: 26 CFR 1.263(a)-3 argues the case in hotels. Example 24 capitalizes every dollar of a phased guest-bath replacement, including the repainting, because all the tubs together are a major component of the **plumbing system**; Example 28 puts a lobby floor at under 10 percent of square footage on the deductible side and Example 29 capitalizes all the public-area floors at about 40 percent. The second finding: the unit of property is the structure plus **nine** systems tested separately, so a PIP that feels like a small fraction of the hotel is measured against the wrong thing. The money finding: section 179(e) reaches four of those nine systems, and with the 1.168(i)-8(d)(2) partial disposition election the same $3,540,000 PIP deducts $46,000 or $886,308 in year one, 1.3 against 25.0 percent, a factor of 19.3, with the 179(b)(3) taxable-income limit binding rather than the $2,560,000 cap. Examples 3 and 4 under (g)(2) show the election can turn a deductible repair into a restoration, so it is not free money. 179D is terminated for construction beginning after June 30, 2026. Prints no typical capitalized percentage, no audit statistic and no advice: none is published, and the brand sentence states the team does not give tax advice |
+| [x] | `/sell-a-hotel/covid-eidl-when-you-sell` | No CSV row targets it directly, and "EIDL", "PPP", "disaster loan" and "Treasury offset" appeared in **zero** files under `src/lib/data/`. SBA approved 3,923,374 COVID EIDLs for $378,410,624,804, the notes run 30 years, and nothing on a site with 46 financing pages and 22 sell-side pages said what happens to one when the hotel sells | Shipped 2026-11-23. The finding is in SBA's own servicing letters, re-issued October 2026: a change in ownership, an assumption, a release of collateral and a subordination are four separate requests, and the first two state that approval "will not release the Original Borrower(s) and/or any Guarantor(s) from liability", on a loan where a personal guaranty was required above $200,000. The money finding is in the release letter: "under most circumstances, SBA may require full monetary consideration", and a paydown for consideration is not a regular payment and does not re-amortize. The structural finding is the balance: 30 months of deferred interest plus a 30-year amortization means the hypothetical $2,000,000 loan owes $2,092,913.85 after 30 payments of $9,262.31, more than was borrowed. Delinquency is the other door closing: 120 days to Treasury under 31 U.S.C. 3716(c)(6)(A), and 31 CFR 285.13 with SOP 50 10 8.1 bar a delinquent applicant or guarantor from 7(a) and 504, checked in CAIVRS. Prints no consideration amount, no processing time and no count of hotels holding one: none is published |
 
 Remaining candidates: hotel loan assumption, seller financing for a hotel, preferred equity (needs a
 citable source), what buyers look for in a hotel, selling a hotel with a ground lease, hotel property

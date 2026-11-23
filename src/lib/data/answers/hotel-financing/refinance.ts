@@ -39,7 +39,7 @@ export const page: AnswerPage = {
     {
       h2: "When should I start a hotel refinance?",
       lead: "Twelve months before maturity, while every option is still on the table.",
-      body: "At twelve months out, an owner can order a fresh appraisal, resolve any open PIP with the brand, shop the loan across multiple lender types, and still have time left over if the first plan does not work. At ninety days out, the appraisal and PIP conversations are compressed or skipped, the lender universe narrows to whoever can close fast, and the incumbent lender knows it. Owners who start early keep leverage in the negotiation. Owners who start late lose it, regardless of how strong the asset is."
+      body: "At twelve months out, an owner can order a fresh appraisal, resolve any open PIP with the brand, shop the loan across multiple lender types, and still have time left over if the first plan does not work. At ninety days out, the appraisal and PIP conversations are compressed or skipped, the lender universe narrows to whoever can close fast, and the incumbent lender knows it. Owners who start early keep leverage in the negotiation. Owners who start late lose it, regardless of how strong the asset is. One item has a clock nobody controls: an outstanding SBA disaster loan has to be paid off or subordinated before a new first lender can record, and SBA publishes no processing time for either request, covered at [can I sell my hotel if I still owe a COVID EIDL loan?](/sell-a-hotel/covid-eidl-when-you-sell)."
     },
     {
       h2: "How do I size the new loan?",

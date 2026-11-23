@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-11-23T13:11:48.105Z",
-  "base": "http://localhost:41453",
+  "runAt": "2026-11-23T14:35:06.562Z",
+  "base": "http://localhost:43457",
   "edges": [
     {
       "from": "/",
@@ -4181,6 +4181,10 @@
     {
       "from": "/sitemap",
       "to": "/sell-a-hotel/contribute-hotel-to-a-reit"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/sell-a-hotel/covid-eidl-when-you-sell"
     },
     {
       "from": "/sitemap",
@@ -41876,6 +41880,10 @@
     },
     {
       "from": "/glossary/sba-7a",
+      "to": "/sell-a-hotel/covid-eidl-when-you-sell"
+    },
+    {
+      "from": "/glossary/sba-7a",
       "to": "/hotel-financing/hotel-lenders-by-type"
     },
     {
@@ -42073,6 +42081,10 @@
     {
       "from": "/glossary/sba-504",
       "to": "/hotel-financing/sba-size-standards"
+    },
+    {
+      "from": "/glossary/sba-504",
+      "to": "/sell-a-hotel/covid-eidl-when-you-sell"
     },
     {
       "from": "/glossary/sba-504",
@@ -51260,6 +51272,10 @@
     },
     {
       "from": "/hotel-financing/refinance",
+      "to": "/sell-a-hotel/covid-eidl-when-you-sell"
+    },
+    {
+      "from": "/hotel-financing/refinance",
       "to": "/hotel-financing/pip-and-renovation-loans"
     },
     {
@@ -53900,6 +53916,10 @@
     },
     {
       "from": "/sell-a-hotel",
+      "to": "/sell-a-hotel/covid-eidl-when-you-sell"
+    },
+    {
+      "from": "/sell-a-hotel",
       "to": "/sell-a-hotel/employees-when-you-sell"
     },
     {
@@ -54377,6 +54397,10 @@
     {
       "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
       "to": "/sell-a-hotel/tax-clearance-and-withholding"
+    },
+    {
+      "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
+      "to": "/sell-a-hotel/covid-eidl-when-you-sell"
     },
     {
       "from": "/sell-a-hotel/asset-sale-vs-entity-sale",
@@ -54907,6 +54931,218 @@
       "to": "/sitemap"
     },
     {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/_next/static/chunks/971af7bd7354d30d.css"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/sell-a-hotel/covid-eidl-when-you-sell.md"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/listings"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/rates"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/about"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/team"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/contact"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/sell-a-hotel/asset-sale-vs-entity-sale"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/sell-a-hotel/documents-needed"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/hotel-financing/refinance-or-sell"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/hotel-financing/refinance"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/hotel-financing/sba-7a-vs-504"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/sell-a-hotel/how-long-it-takes"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/sell-a-hotel/selling-a-distressed-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/sell-a-hotel/irs-liens-and-payroll-taxes"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/sell-a-hotel/tax-clearance-and-withholding"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/glossary"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/glossary/sba-7a"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/glossary/sba-504"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/glossary/per-key"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/tools"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/research"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/markets"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/closed"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/process"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/services"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/insights"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/press"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/developers"
+    },
+    {
+      "from": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "to": "/sitemap"
+    },
+    {
       "from": "/sell-a-hotel/documents-needed",
       "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     },
@@ -54985,6 +55221,10 @@
     {
       "from": "/sell-a-hotel/documents-needed",
       "to": "/hotel-industry/energy-benchmarking-and-emissions-limits"
+    },
+    {
+      "from": "/sell-a-hotel/documents-needed",
+      "to": "/sell-a-hotel/covid-eidl-when-you-sell"
     },
     {
       "from": "/sell-a-hotel/documents-needed",
@@ -62133,6 +62373,10 @@
     {
       "from": "/buy-a-hotel/due-diligence-checklist",
       "to": "/hotel-industry/ada-requirements"
+    },
+    {
+      "from": "/buy-a-hotel/due-diligence-checklist",
+      "to": "/sell-a-hotel/covid-eidl-when-you-sell"
     },
     {
       "from": "/buy-a-hotel/due-diligence-checklist",
@@ -76812,6 +77056,7 @@
         "/sell-a-hotel/asset-sale-vs-entity-sale",
         "/sell-a-hotel/broker-fees",
         "/sell-a-hotel/contribute-hotel-to-a-reit",
+        "/sell-a-hotel/covid-eidl-when-you-sell",
         "/sell-a-hotel/documents-needed",
         "/sell-a-hotel/employees-when-you-sell",
         "/sell-a-hotel/estate-tax-and-basis-step-up",
@@ -87231,6 +87476,7 @@
         "/hotel-financing/prepayment-penalties",
         "/hotel-financing/sba-7a-vs-504",
         "/hotel-financing/sba-size-standards",
+        "/sell-a-hotel/covid-eidl-when-you-sell",
         "/hotel-financing/hotel-lenders-by-type",
         "/hotel-financing/loan-requirements",
         "/buy-a-hotel/environmental-liability",
@@ -87287,6 +87533,7 @@
         "/hotel-financing/prepayment-penalties",
         "/hotel-financing/sba-7a-vs-504",
         "/hotel-financing/sba-size-standards",
+        "/sell-a-hotel/covid-eidl-when-you-sell",
         "/hotel-financing/hotel-loan-rates",
         "/hotel-financing/hotel-lenders-by-type",
         "/buy-a-hotel/environmental-liability",
@@ -89853,6 +90100,7 @@
         "/team",
         "/contact",
         "/team/miles-cortez",
+        "/sell-a-hotel/covid-eidl-when-you-sell",
         "/hotel-financing/pip-and-renovation-loans",
         "/hotel-financing/loan-requirements",
         "/hotel-financing/refinance-or-sell",
@@ -90585,6 +90833,7 @@
         "/sell-a-hotel/how-to-choose-a-hotel-broker",
         "/sell-a-hotel/1031-without-buying-another-hotel",
         "/sell-a-hotel/asset-sale-vs-entity-sale",
+        "/sell-a-hotel/covid-eidl-when-you-sell",
         "/sell-a-hotel/employees-when-you-sell",
         "/sell-a-hotel/estate-tax-and-basis-step-up",
         "/sell-a-hotel/faq",
@@ -90717,6 +90966,7 @@
         "/hotel-financing/1031-exchange-hotels",
         "/sell-a-hotel/1031-without-buying-another-hotel",
         "/sell-a-hotel/tax-clearance-and-withholding",
+        "/sell-a-hotel/covid-eidl-when-you-sell",
         "/sell-a-hotel/selling-to-a-foreign-buyer",
         "/sell-a-hotel/franchise-transfer",
         "/hotel-financing/loan-assumption",
@@ -90865,6 +91115,65 @@
       "missing": []
     },
     {
+      "url": "/sell-a-hotel/covid-eidl-when-you-sell",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/971af7bd7354d30d.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/sell-a-hotel/covid-eidl-when-you-sell.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/nate-solomon",
+        "/sell-a-hotel/asset-sale-vs-entity-sale",
+        "/sell-a-hotel/documents-needed",
+        "/hotel-financing/refinance-or-sell",
+        "/hotel-financing/refinance",
+        "/hotel-financing/sba-7a-vs-504",
+        "/sell-a-hotel/how-long-it-takes",
+        "/sell-a-hotel/selling-a-distressed-hotel",
+        "/sell-a-hotel/irs-liens-and-payroll-taxes",
+        "/team/luke-thompson",
+        "/sell-a-hotel/tax-clearance-and-withholding",
+        "/glossary",
+        "/glossary/sba-7a",
+        "/glossary/sba-504",
+        "/glossary/per-key",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
       "url": "/sell-a-hotel/documents-needed",
       "outboundInternal": [
         "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
@@ -90887,6 +91196,7 @@
         "/sell-a-hotel/employees-when-you-sell",
         "/sell-a-hotel/how-long-it-takes",
         "/hotel-industry/energy-benchmarking-and-emissions-limits",
+        "/sell-a-hotel/covid-eidl-when-you-sell",
         "/team/luke-thompson",
         "/process",
         "/sell-a-hotel/how-to-sell-a-hotel",
@@ -92878,6 +93188,7 @@
         "/glossary/revpar",
         "/glossary/adr",
         "/hotel-industry/ada-requirements",
+        "/sell-a-hotel/covid-eidl-when-you-sell",
         "/buy-a-hotel/environmental-liability",
         "/glossary/pip",
         "/buy-a-hotel/how-to-make-an-offer",
