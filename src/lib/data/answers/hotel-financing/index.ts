@@ -33,6 +33,7 @@ import { page as a_opportunity_zones } from "./opportunity-zones";
 import { page as a_pip_and_renovation_loans } from "./pip-and-renovation-loans";
 import { page as a_refinance_or_sell } from "./refinance-or-sell";
 import { page as a_refinance } from "./refinance";
+import { page as a_sale_leaseback } from "./sale-leaseback";
 import { page as a_sba_7a_vs_504 } from "./sba-7a-vs-504";
 import { page as a_sba_franchise_directory } from "./sba-franchise-directory";
 import { page as a_sba_size_standards } from "./sba-size-standards";
@@ -82,6 +83,7 @@ export const spokes: AnswerPage[] = [
   a_pip_and_renovation_loans,
   a_refinance_or_sell,
   a_refinance,
+  a_sale_leaseback,
   a_sba_7a_vs_504,
   a_sba_franchise_directory,
   a_sba_size_standards,
