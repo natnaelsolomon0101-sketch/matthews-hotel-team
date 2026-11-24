@@ -124,6 +124,65 @@ CSV still points at rather than genuine content gaps.
 
 ## Run notes
 
+**2026-11-24, Content Writer.** Shipped `/hotel-financing/sale-leaseback`, H1 "Can I do a sale-leaseback on my hotel
+to raise cash?" Sections A to E are complete, F is SKIPPED, G is blocked and H and J were fully ticked, so the pick
+came from a coverage scan of `src/lib/data/`: "sale-leaseback", "sale leaseback", "SNDA" and "section 467" each
+appeared in **zero** files, and the 4 files matching "467" all meant HVS's $467,000 full-service development cost. The
+site explained every way to borrow against a hotel and every way to sell one, and said nothing about the structure
+that does both at once.
+
+**Check the open PRs before writing, not after.** This run's first pick was a hotel-to-apartment conversion page, and
+it was three hours of sourcing in before it checked: **PR #90, open since 2026-10-30, already ships
+`/hotel-valuation/hotel-to-apartment-conversion`** with the gate green, held only because production is paused. Nine
+writer pages sit in open, gate-green PRs that were never merged (#90, #96, #99, #100, #101, #103, #106, #107, #108),
+plus the November rate sheet (#91) and three maintainer PRs (#95, #102, #109). Those topics are claimed: a coverage
+scan of `src/lib/data/` on `main` does **not** see them, because they are not on `main`. The next writer should run
+`list_pull_requests state=open` **first** and treat every page in an open PR as taken.
+
+**The find of this run.** Section 467 catches a hotel sale-leaseback twice over and almost nobody tells owners. A
+leaseback is defined as a lease back to anyone who held an interest in the property within 2 years, so a
+sale-leaseback meets that limb on its face, and 467(e)(3)(A) sets the statutory recovery period for real property at
+**19 years**, which puts the long-term limb at 14.25 years, under every standard 15-year and 20-year leaseback term.
+The only thing left standing between an escalating rent and constant rental accrual is 467(b)(4)(B), the
+principal-purpose test. The page says that plainly rather than implying the escalator is safe.
+
+**The second find belongs to SBA.** 13 CFR 120.111(a)(3) caps the rent in an Eligible Passive Company structure at
+"the amount necessary to make the loan payment to the lender, and an additional amount to cover the Eligible Passive
+Company's direct expenses of holding the property, such as maintenance, insurance and property taxes". The
+related-party sale-leaseback every SBA hotel borrower already uses therefore cannot extract a market rent, by
+regulation. With a third-party buyer, 120.110(c) and 120.131(b) end the loan instead: the buyer occupies none of the
+51 percent an existing-building borrower must occupy.
+
+**The arithmetic the page is built on.** On a 120-key hotel with assumed NOI of $960,000 valued at 8.00 percent, inside
+the Matthews Hotel Index Q1 2026 Houston select-service band of 7.75 to 8.75 percent, rent at the cap rate is
+$960,000 and coverage is exactly 1.00, so the operator keeps nothing; a 1.25 cushion caps rent at $768,000 and the
+price at $9,600,000, which is **80.0 percent of value**, $80,000 a key against $100,000. On a 20-year lease rising 2
+percent, total rent is $18,660,380.01 and the constant rental amount, discounted at the December 2026 110 percent
+long-term AFR of 5.82 percent compounded semiannually (5.904681 percent effective), is $898,871.30: $130,871.30 or
+17.0 percent above the stated year-one rent and $219,959.68 below the year-twenty rent, crossing over in year nine.
+`scripts/check-sale-leaseback-math.mjs` holds 40 assertions over all of it.
+
+**Three figures the run deliberately did not publish.** A hotel net-lease rate or lease constant (no public source
+gives one; the 8.00 percent in the example is labeled an assumption and tied to the rate sheet's 5.29 percent 10-year
+Treasury only as a 271-basis-point spread), any lender's LTV ceiling or DSCR floor (rule 1), and any claim about what
+share of hotels use the structure. The page says each of those is unpublished rather than printing a range.
+
+**Four sourcing notes for the next run.** `www.law.cornell.edu/uscode/text/26/<section>` and
+`/supremecourt/text/435/561` both serve clean text to `curl --compressed` with a browser user agent, and Frank Lyon's
+holding is in the last paragraph of Part III, not in the syllabus. **The IRS AFR index is the cheap way to the current
+ruling**: `www.irs.gov/applicable-federal-rates` lists them and `www.irs.gov/pub/irs-drop/rr-26-24.pdf` is December
+2026, whose Table 1 prints the 110 percent long-term AFR at 5.90 percent annual and 5.82 percent semiannual; note the
+index skips months, so the newest entry is not always last month. **The eCFR versioner API wants a section, not a
+part**: `api/versioner/v1/full/<date>/title-13.xml?part=120` answers 404 while `?section=120.110` answers 200, and
+`--compressed` is still required. Cornell's CFR mirror served 13 CFR 120.110 as well but carries its own snapshot
+date, so the eCFR answer is the one to quote.
+
+**Production is still down, and it was down before this run started.** Every page of matthewshotelmarkets.com answers
+HTTP 503 with `x-vercel-error: DEPLOYMENT_PAUSED`, confirmed once from the homepage at 14:07 UTC on 2026-11-24. That
+is 26 days since 2026-10-29 19:52 UTC. `DEPLOYMENT_PAUSED` is an account-level pause that no agent can clear; it needs
+Nate in the Vercel dashboard. The post-merge production verification in `geo/AGENTS.md` §3 step 6 could not be
+completed for this page.
+
 **2026-11-23, Content Writer.** Shipped `/sell-a-hotel/covid-eidl-when-you-sell`. Sections A to E are complete, F is
 SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a coverage scan of `src/lib/data/`: "EIDL",
 "PPP", "Treasury offset", "cross-servicing" and "CAIVRS" each appeared in **zero** files, and "disaster loan" only as

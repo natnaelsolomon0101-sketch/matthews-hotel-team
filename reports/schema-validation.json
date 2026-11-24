@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-11-23T14:34:58.671Z",
+  "runAt": "2026-11-24T14:33:19.980Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 345,
-  "blocksFound": 345,
-  "blocksValid": 345,
+  "urlsChecked": 346,
+  "blocksFound": 346,
+  "blocksValid": 346,
   "issues": [],
   "blocks": [
     {
@@ -701,6 +701,13 @@
     },
     {
       "url": "/hotel-financing/refinance",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/sale-leaseback",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,

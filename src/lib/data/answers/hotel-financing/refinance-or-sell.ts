@@ -63,7 +63,7 @@ export const page: AnswerPage = {
     {
       h2: "When is holding clearly right?",
       lead: "Holding is clearly right when the refinance equity requirement is modest relative to the asset's ongoing cash flow and the hold thesis, the market, the brand, the competitive position, still holds.",
-      body: "A hotel that clears its refinance with little or no injected equity, in a market with continuing demand growth, with a manageable or already-funded PIP, is a straightforward hold. The math confirms the decision most owners already lean toward in this case, which is why the arithmetic matters most in the harder cases below."
+      body: "A hotel that clears its refinance with little or no injected equity, in a market with continuing demand growth, with a manageable or already-funded PIP, is a straightforward hold. The math confirms the decision most owners already lean toward in this case, which is why the arithmetic matters most in the harder cases below.\n\nThere is a third path for an owner who wants cash and wants to keep operating: sell the real estate and lease it back, which replaces debt service with rent. What rent a hotel can carry, and what section 467 does to an escalating one, is at [can I do a sale-leaseback on my hotel to raise cash?](/hotel-financing/sale-leaseback)"
     },
     {
       h2: "When is selling clearly right?",

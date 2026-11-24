@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-11-23T14:35:06.562Z",
-  "base": "http://localhost:43457",
+  "runAt": "2026-11-24T14:33:26.245Z",
+  "base": "http://localhost:46649",
   "edges": [
     {
       "from": "/",
@@ -4121,6 +4121,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-financing/refinance"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-financing/sale-leaseback"
     },
     {
       "from": "/sitemap",
@@ -43420,6 +43424,10 @@
     },
     {
       "from": "/glossary/ground-lease",
+      "to": "/hotel-financing/sale-leaseback"
+    },
+    {
+      "from": "/glossary/ground-lease",
       "to": "/buy-a-hotel"
     },
     {
@@ -44505,6 +44513,10 @@
     {
       "from": "/hotel-financing",
       "to": "/hotel-financing/refinance"
+    },
+    {
+      "from": "/hotel-financing",
+      "to": "/hotel-financing/sale-leaseback"
     },
     {
       "from": "/hotel-financing",
@@ -51084,6 +51096,10 @@
     },
     {
       "from": "/hotel-financing/refinance-or-sell",
+      "to": "/hotel-financing/sale-leaseback"
+    },
+    {
+      "from": "/hotel-financing/refinance-or-sell",
       "to": "/team/nate-solomon"
     },
     {
@@ -51416,6 +51432,246 @@
     },
     {
       "from": "/hotel-financing/refinance",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/_next/static/chunks/971af7bd7354d30d.css"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/hotel-financing/sale-leaseback.md"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/hotel-industry/how-hotel-reits-work"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/sell-a-hotel/contribute-hotel-to-a-reit"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/hotel-financing/loan-workouts"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/sell-a-hotel/taxes-when-selling-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/sell-a-hotel/franchise-transfer"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/hotel-financing/prepayment-penalties"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/sell-a-hotel/liquor-license-transfer"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/hotel-financing/sba-7a-vs-504"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/sell-a-hotel/selling-a-hotel-on-a-ground-lease"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/glossary/ground-lease"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/hotel-financing/cash-out-refinance"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/hotel-financing/refinance-or-sell"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/tools/refinance-vs-sell"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/hotel-financing/mezzanine-debt-and-preferred-equity"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/hotel-financing/capital-stack"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/research/mhi/q1-2026"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/glossary/cap-rate"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/glossary/noi"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/glossary/dscr"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-financing/sale-leaseback",
       "to": "/sitemap"
     },
     {
@@ -52352,6 +52608,10 @@
     },
     {
       "from": "/hotel-financing/capital-stack",
+      "to": "/hotel-financing/sale-leaseback"
+    },
+    {
+      "from": "/hotel-financing/capital-stack",
       "to": "/buy-a-hotel/seller-financing"
     },
     {
@@ -52597,6 +52857,10 @@
     {
       "from": "/hotel-financing/cash-out-refinance",
       "to": "/hotel-financing/loan-maturities-2026-2027"
+    },
+    {
+      "from": "/hotel-financing/cash-out-refinance",
+      "to": "/hotel-financing/sale-leaseback"
     },
     {
       "from": "/hotel-financing/cash-out-refinance",
@@ -57897,6 +58161,10 @@
     {
       "from": "/sell-a-hotel/selling-a-hotel-on-a-ground-lease",
       "to": "/sell-a-hotel/how-to-sell-a-hotel"
+    },
+    {
+      "from": "/sell-a-hotel/selling-a-hotel-on-a-ground-lease",
+      "to": "/hotel-financing/sale-leaseback"
     },
     {
       "from": "/sell-a-hotel/selling-a-hotel-on-a-ground-lease",
@@ -77041,6 +77309,7 @@
         "/hotel-financing/pip-and-renovation-loans",
         "/hotel-financing/refinance-or-sell",
         "/hotel-financing/refinance",
+        "/hotel-financing/sale-leaseback",
         "/hotel-financing/sba-7a-vs-504",
         "/hotel-financing/sba-franchise-directory",
         "/hotel-financing/sba-size-standards",
@@ -87909,6 +88178,7 @@
         "/hotel-financing/loan-requirements",
         "/sell-a-hotel/selling-to-a-foreign-buyer",
         "/hotel-financing/mechanics-liens",
+        "/hotel-financing/sale-leaseback",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -88211,6 +88481,7 @@
         "/hotel-financing/pip-and-renovation-loans",
         "/hotel-financing/refinance-or-sell",
         "/hotel-financing/refinance",
+        "/hotel-financing/sale-leaseback",
         "/hotel-financing/sba-7a-vs-504",
         "/hotel-financing/sba-franchise-directory",
         "/hotel-financing/sba-size-standards",
@@ -90047,6 +90318,7 @@
         "/research/mhi/q1-2026",
         "/hotel-financing/refinance",
         "/hotel-financing/1031-exchange-hotels",
+        "/hotel-financing/sale-leaseback",
         "/team/nate-solomon",
         "/hotel-financing/prepayment-penalties",
         "/hotel-financing/loan-maturities-2026-2027",
@@ -90114,6 +90386,72 @@
         "/glossary/noi",
         "/glossary/pip",
         "/tools/hotel-loan-sizing-calculator",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/hotel-financing/sale-leaseback",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/971af7bd7354d30d.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-financing/sale-leaseback.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/nate-solomon",
+        "/hotel-industry/how-hotel-reits-work",
+        "/sell-a-hotel/contribute-hotel-to-a-reit",
+        "/hotel-financing/loan-workouts",
+        "/sell-a-hotel/taxes-when-selling-a-hotel",
+        "/sell-a-hotel/franchise-transfer",
+        "/hotel-financing/prepayment-penalties",
+        "/sell-a-hotel/liquor-license-transfer",
+        "/hotel-financing/sba-7a-vs-504",
+        "/sell-a-hotel/selling-a-hotel-on-a-ground-lease",
+        "/glossary/ground-lease",
+        "/hotel-financing/cash-out-refinance",
+        "/hotel-financing/refinance-or-sell",
+        "/tools/refinance-vs-sell",
+        "/hotel-financing/mezzanine-debt-and-preferred-equity",
+        "/hotel-financing/capital-stack",
+        "/team/miles-cortez",
+        "/research/mhi/q1-2026",
+        "/glossary",
+        "/glossary/cap-rate",
+        "/glossary/noi",
+        "/glossary/dscr",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -90400,6 +90738,7 @@
         "/hotel-financing/loan-requirements",
         "/tools/hotel-loan-sizing-calculator",
         "/hotel-financing/sba-7a-vs-504",
+        "/hotel-financing/sale-leaseback",
         "/buy-a-hotel/seller-financing",
         "/glossary/key-money",
         "/hotel-financing/closing-costs",
@@ -90468,6 +90807,7 @@
         "/hotel-financing/covenants-and-cash-management",
         "/hotel-financing/interest-only-loans",
         "/hotel-financing/loan-maturities-2026-2027",
+        "/hotel-financing/sale-leaseback",
         "/tools/refinance-vs-sell",
         "/hotel-financing/refinance-or-sell",
         "/team/miles-cortez",
@@ -91943,6 +92283,7 @@
         "/team/nate-solomon",
         "/glossary/ground-lease",
         "/sell-a-hotel/how-to-sell-a-hotel",
+        "/hotel-financing/sale-leaseback",
         "/hotel-valuation/hotel-cap-rates",
         "/tools/hotel-value-estimator",
         "/tools/hotel-loan-sizing-calculator",

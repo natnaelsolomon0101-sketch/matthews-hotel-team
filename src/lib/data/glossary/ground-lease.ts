@@ -63,7 +63,8 @@ export const entry: GlossaryEntry = {
     "/sell-a-hotel/documents-needed",
     "/hotel-financing/loan-requirements",
     "/sell-a-hotel/selling-to-a-foreign-buyer",
-    "/hotel-financing/mechanics-liens"
+    "/hotel-financing/mechanics-liens",
+    "/hotel-financing/sale-leaseback"
   ],
   lastUpdated: "2026-09-18",
   authorSlug: "nate-solomon"
