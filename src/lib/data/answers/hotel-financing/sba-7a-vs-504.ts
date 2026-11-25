@@ -48,7 +48,7 @@ export const page: AnswerPage = {
     {
       h2: "How much do I have to put down under each?",
       lead: "Under 504, a hotel buyer contributes at least 15 percent of project cost, or 20 percent if the business is two years old or less; under 7(a), the lender sets the equity requirement.[6]",
-      body: "The 504 figures are regulatory minimums, not typical amounts.[6] SBA lists hotels, motels and other lodging facilities as Limited or Special Purpose Property, which is why the 504 minimum is 15 percent rather than the 10 percent an ordinary building with an established operator needs.[6][9] Lenders can ask for more, based on the borrower's experience, the asset's condition, and their own credit policy. SBA's 7(a) program page publishes no single equity percentage, so get your lender's requirement in writing before relying on any number.[1]"
+      body: "The 504 figures are regulatory minimums, not typical amounts.[6] SBA lists hotels, motels and other lodging facilities as Limited or Special Purpose Property, which is why the 504 minimum is 15 percent rather than the 10 percent an ordinary building with an established operator needs.[6][9] Lenders can ask for more, based on the borrower's experience, the asset's condition, and their own credit policy. SBA's 7(a) program page publishes no single equity percentage, so get your lender's requirement in writing before relying on any number.[1] The SOP sets separate conditions where a 401(k) or ROBS plan owns the borrower, and none where an IRA does: [can I use my 401(k) or IRA to buy a hotel?](/buy-a-hotel/using-a-401k-or-ira)"
     },
     {
       h2: "Are the rates fixed or variable?",

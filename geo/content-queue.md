@@ -124,6 +124,63 @@ CSV still points at rather than genuine content gaps.
 
 ## Run notes
 
+**2026-11-25, Content Writer.** Shipped `/buy-a-hotel/using-a-401k-or-ira`, H1 "Can I use my 401(k) or IRA to buy a
+hotel?" Sections A to E are complete, F is SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a
+coverage scan of `src/lib/data/` run **after** `list_pull_requests state=open`, as the last run's note demands: "ROBS",
+"4975", "self-directed", "UBIT" and "401(k)" appeared in **zero** files, and none of the 16 open PRs claims the topic.
+Retirement money is the largest pool of capital a first-time hotel buyer actually controls, and the site said nothing
+about it.
+
+**The find of this run.** The self-directed IRA route is not merely unwise, it is structurally impossible on published
+rules, and the two documents that close it are both current. SOP 50 10 8.1, Section A, Ch. 5, Para. A requires an
+unlimited full guaranty from any individual owning 20 percent or more of the applicant and, where an entity owning any
+part of the applicant is a trust, requires the trust to guarantee the loan **and** the trustor to guarantee it
+personally. An IRA is a trust. 26 U.S.C. 4975(c)(1)(B) prohibits any direct or **indirect** lending of money or other
+extension of credit between a plan and a disqualified person, 4975(e)(2) makes the holder a disqualified person and the
+company the account half-owns another one, and 408(e)(2) then ends the account as of the first day of that taxable year
+and deems every asset distributed at fair market value. The guaranty an SBA lender must collect is the transaction the
+code prohibits. Second find: 26 CFR 1.512(b)-1(c)(5) names hotels, motels, tourist camps and tourist homes as places
+where services are rendered to the occupant, so room revenue is never the excluded rent of 512(b)(3), and
+514(c)(9)(C)(ii) lists any trust which constitutes a qualified trust under section 401 as a qualified organization
+while a section 408(a) account is absent, which is why a solo 401(k) can carry acquisition debt on real property and an
+IRA cannot. Third find: SOP 50 10 8.1, Section A, Ch. 2, Para. D sets out the 401(k) and ROBS conditions at length
+(plan type named in the credit memorandum, the sponsors' full unconditional guaranty regardless of ownership, an IRS
+determination letter, no loan proceeds for plan formation costs, no EPC/OC structure, and the flat statement that under
+IRS regulations the 401(k) cannot guaranty the loan) and names IRAs nowhere at all.
+
+**Four sourcing notes for the next run.** `www.law.cornell.edu` serves both the U.S. Code and the CFR to a script at
+200, including the parenthesised path `cfr/text/26/1.512(b)-1` when the parentheses are percent-encoded in curl.
+**`www.courtlistener.com` is unusable**: CloudFront answers HTTP 202 with `x-amzn-waf-action: challenge` and a
+zero-length body to curl and to WebFetch alike, and its REST API answers 401 without a token, so `Peek v. Commissioner`,
+140 T.C. 216 (2013), the case every practitioner cites for the guaranty point, could not be read from a primary source
+and is **not cited on the page**. **`public-api-green.dawson.ustaxcourt.gov` answers 500 "this api is disabled due to a
+deployment"**, so the Tax Court's own opinion search was no help either. The page therefore rests on the statute, which
+is the stronger citation anyway. The **eCFR section page for a parenthesised section 302-redirects** and the versioner
+API 404s on a date past the title's last issue date (title 26 was last issued 2026-11-23), so Cornell is the route for
+26 CFR. `www.irs.gov/pub/irs-tege/robs_guidelines.pdf`, `irs-pdf/p590b.pdf`, `irs-pdf/i990t.pdf`,
+`irs-drop/rp-25-32.pdf` and the two IRS HTML pages all answered 200 to curl with a browser user agent, and
+`legacy.sba.gov/sites/default/files/2026-08/SOP 50 10 8.1 effective 10.1.2026_0.docx` is still the live SOP (the
+`www.sba.gov` equivalent 302s), readable by unzipping `word/document.xml`.
+
+**What the page does not print.** No lender DSCR floor, LTV ceiling or spread, none being published. No promoter fee for
+a ROBS, no self-directed IRA custodian fee and no share of hotel deals funded with retirement money: none of the three
+is published anywhere primary. The service-claims rule in section N is honored in the brand sentence, which says the
+team does not administer retirement plans and does not give tax advice, and the CTA routes to buyer representation and
+financing, both confirmed services. Every figure in the worked example is recomputed by
+`scripts/check-retirement-funds-math.mjs`, committed alongside the page: 38 assertions covering the 2026 joint and trust
+rate schedules at every break point, the 504 stack at both the 15 and 20 percent contribution levels, the $660,240.50
+cost of one guaranty and its 44.02 percent share of the account, the $41,961 of unrelated business income tax and the
+34.97 percent effective rate, the 2.08 percent ratio between the trust and joint top-rate thresholds, and the $50,000
+participant loan at 0.83 percent of price. Reciprocal links added from `/buy-a-hotel/how-much-money-do-you-need`,
+`/buy-a-hotel/first-hotel-no-experience` and `/hotel-financing/sba-7a-vs-504`, plus `relatedAnswers` on
+`/glossary/sba-7a` and `/glossary/sba-504`. No existing number changed. 2,498 words after four trimming passes from
+3,471.
+
+**Production is still down, day 27.** `matthewshotelmarkets.com` answered HTTP 503 at 14:08 UTC on 2026-11-25, as it has
+since 2026-10-29, so `geo/AGENTS.md` 3.6 could not be completed and issue #89 stays open. This needs Nate in the Vercel
+dashboard; no agent can fix it from the repo.
+
+
 **2026-11-24, Content Writer.** Shipped `/hotel-financing/sale-leaseback`, H1 "Can I do a sale-leaseback on my hotel
 to raise cash?" Sections A to E are complete, F is SKIPPED, G is blocked and H and J were fully ticked, so the pick
 came from a coverage scan of `src/lib/data/`: "sale-leaseback", "sale leaseback", "SNDA" and "section 467" each
@@ -955,6 +1012,7 @@ Pick from `geo/04-queries.csv` prompts with no dedicated page, phrased the way p
 | [x] | `/sell-a-hotel/irs-liens-and-payroll-taxes` | No CSV row targets it directly. The gap was total: "trust fund", "6321", "phantom income", "discharge of indebtedness" and "COD income" appeared in **zero** files under `src/lib/data/`, and "6672" only inside a franchise-registry URL. State sales and occupancy tax clearance was already covered in depth, and so was the tax of losing a hotel to the lender, but unpaid **federal employment tax**, the one liability that records against title by operation of law and then follows the owner personally after the hotel is gone, was nowhere | Shipped 2026-11-19. The finding inverts the fear: the FY2025 IRS Data Book Table 4-1 reports 214,099 notices of federal tax lien filed and **50** seizures nationwide, one for every 4,282 filings, so the risk is a document in the chain of title, not an agent at the door, and section 6323(a) is why. Form 14135 prints all five section 6325(b) discharge bases, which makes the whole decision tree citable to a government form, and Publication 783 supplies the only published timing in the process, 45 days before closing. The capital markets find: 26 U.S.C. 3505(b) makes a lender that funds wages knowing the withholding will not be deposited liable for that tax up to 25 percent of what it supplied. Prints no title-insurance claim, no buyer holdback and no real processing time: none is published, and the page says Table 4-2 reports assessments and abatements without netting, so the $117.9 billion assessed is not a cost figure |
 | [x] | `/hotel-financing/deduct-or-capitalize-a-renovation` | No CSV row targets it directly. The gap was total: "263(a)", "unit of property", "routine maintenance", "de minimis safe harbor", "betterment", "adaptation", "partial disposition", "168(i)-8", "3115", "179D" and "prevailing wage" appeared in **zero** files under `src/lib/data/`, and "capitalize" in 18, never once about the test that decides it. The site had `/hotel-financing/pip-and-renovation-loans` for how to borrow the PIP money, `/hotel-valuation/pip-and-hotel-value` for what the work does to value and `/buy-a-hotel/depreciation-and-cost-segregation` for depreciating a purchase, and nothing on whether the renovation dollars are deductible or capital | Shipped 2026-11-20. The finding: 26 CFR 1.263(a)-3 argues the case in hotels. Example 24 capitalizes every dollar of a phased guest-bath replacement, including the repainting, because all the tubs together are a major component of the **plumbing system**; Example 28 puts a lobby floor at under 10 percent of square footage on the deductible side and Example 29 capitalizes all the public-area floors at about 40 percent. The second finding: the unit of property is the structure plus **nine** systems tested separately, so a PIP that feels like a small fraction of the hotel is measured against the wrong thing. The money finding: section 179(e) reaches four of those nine systems, and with the 1.168(i)-8(d)(2) partial disposition election the same $3,540,000 PIP deducts $46,000 or $886,308 in year one, 1.3 against 25.0 percent, a factor of 19.3, with the 179(b)(3) taxable-income limit binding rather than the $2,560,000 cap. Examples 3 and 4 under (g)(2) show the election can turn a deductible repair into a restoration, so it is not free money. 179D is terminated for construction beginning after June 30, 2026. Prints no typical capitalized percentage, no audit statistic and no advice: none is published, and the brand sentence states the team does not give tax advice |
 | [x] | `/sell-a-hotel/covid-eidl-when-you-sell` | No CSV row targets it directly, and "EIDL", "PPP", "disaster loan" and "Treasury offset" appeared in **zero** files under `src/lib/data/`. SBA approved 3,923,374 COVID EIDLs for $378,410,624,804, the notes run 30 years, and nothing on a site with 46 financing pages and 22 sell-side pages said what happens to one when the hotel sells | Shipped 2026-11-23. The finding is in SBA's own servicing letters, re-issued October 2026: a change in ownership, an assumption, a release of collateral and a subordination are four separate requests, and the first two state that approval "will not release the Original Borrower(s) and/or any Guarantor(s) from liability", on a loan where a personal guaranty was required above $200,000. The money finding is in the release letter: "under most circumstances, SBA may require full monetary consideration", and a paydown for consideration is not a regular payment and does not re-amortize. The structural finding is the balance: 30 months of deferred interest plus a 30-year amortization means the hypothetical $2,000,000 loan owes $2,092,913.85 after 30 payments of $9,262.31, more than was borrowed. Delinquency is the other door closing: 120 days to Treasury under 31 U.S.C. 3716(c)(6)(A), and 31 CFR 285.13 with SOP 50 10 8.1 bar a delinquent applicant or guarantor from 7(a) and 504, checked in CAIVRS. Prints no consideration amount, no processing time and no count of hotels holding one: none is published |
+| [x] | `/buy-a-hotel/using-a-401k-or-ira` | No CSV row targets it directly. The gap was total: "ROBS", "4975", "self-directed", "UBIT" and "401(k)" each appeared in **zero** files under `src/lib/data/`, and the 10 files matching "UBTI" all meant something else. The site explained every way to borrow against a hotel and every way to pay for one, and said nothing about the pot of money first-time buyers actually have | Shipped 2026-11-25. The finding: SBA and the IRS make the self-directed IRA route structurally impossible, not merely unwise. SOP 50 10 8.1 requires an unlimited full guaranty from every 20 percent owner and, where a trust owns part of the applicant, from the trust and the trustor both; a guaranty of a loan to a company the IRA owns is the indirect extension of credit 26 U.S.C. 4975(c)(1)(B) prohibits, and 408(e)(2) then ends the account on the first day of that year. The second finding: 26 CFR 1.512(b)-1(c)(5) names hotels, so room revenue is never the excluded rent owners assume, and 514(c)(9)(C) lists section 401 trusts as qualified organizations but not section 408(a) accounts. The third: SOP 50 10 8.1 Section A, Ch. 2, Para. D sets out the 401(k) and ROBS conditions in detail and names IRAs nowhere. Prints no lender DSCR floor, LTV ceiling or promoter fee: none is published |
 
 Remaining candidates: hotel loan assumption, seller financing for a hotel, preferred equity (needs a
 citable source), what buyers look for in a hotel, selling a hotel with a ground lease, hotel property

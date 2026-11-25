@@ -56,7 +56,7 @@ export const page: AnswerPage = {
     {
       h2: "Does being new change how much I need to put down?",
       lead: "Under SBA 504 it can. A hotel buyer contributes at least 15 percent of project cost, and at least 20 percent if the business has operated two years or less.[3][4]",
-      body: "The 504 regulation sets the higher minimum when two conditions are both true: the building is limited or single purpose, which SBA says a hotel is, and the borrower has operated for two years or less.[3][4] Ask the Certified Development Company how SBA will classify your acquisition before you budget. Under both SBA programs, holders of at least a 20 percent ownership interest generally must guarantee the loan.[6] The full cash picture is at [How much money do I need to buy a hotel?](/buy-a-hotel/how-much-money-do-you-need)."
+      body: "The 504 regulation sets the higher minimum when two conditions are both true: the building is limited or single purpose, which SBA says a hotel is, and the borrower has operated for two years or less.[3][4] Ask the Certified Development Company how SBA will classify your acquisition before you budget. Under both SBA programs, holders of at least a 20 percent ownership interest generally must guarantee the loan.[6] The full cash picture is at [How much money do I need to buy a hotel?](/buy-a-hotel/how-much-money-do-you-need), and where a first-time buyer's equity comes from matters too: [can I use my 401(k) or IRA to buy a hotel?](/buy-a-hotel/using-a-401k-or-ira)"
     },
     {
       h2: "What should a first-time buyer do first?",

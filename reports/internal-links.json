@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-11-24T14:33:26.245Z",
-  "base": "http://localhost:46649",
+  "runAt": "2026-11-25T14:30:44.251Z",
+  "base": "http://localhost:44337",
   "edges": [
     {
       "from": "/",
@@ -4349,6 +4349,10 @@
     {
       "from": "/sitemap",
       "to": "/buy-a-hotel/seller-financing"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/buy-a-hotel/using-a-401k-or-ira"
     },
     {
       "from": "/sitemap",
@@ -41892,6 +41896,10 @@
     },
     {
       "from": "/glossary/sba-7a",
+      "to": "/buy-a-hotel/using-a-401k-or-ira"
+    },
+    {
+      "from": "/glossary/sba-7a",
       "to": "/hotel-financing/loan-requirements"
     },
     {
@@ -42093,6 +42101,10 @@
     {
       "from": "/glossary/sba-504",
       "to": "/hotel-financing/hotel-loan-rates"
+    },
+    {
+      "from": "/glossary/sba-504",
+      "to": "/buy-a-hotel/using-a-401k-or-ira"
     },
     {
       "from": "/glossary/sba-504",
@@ -51737,6 +51749,10 @@
     {
       "from": "/hotel-financing/sba-7a-vs-504",
       "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-financing/sba-7a-vs-504",
+      "to": "/buy-a-hotel/using-a-401k-or-ira"
     },
     {
       "from": "/hotel-financing/sba-7a-vs-504",
@@ -61832,6 +61848,10 @@
     },
     {
       "from": "/buy-a-hotel",
+      "to": "/buy-a-hotel/using-a-401k-or-ira"
+    },
+    {
+      "from": "/buy-a-hotel",
       "to": "/team/luke-thompson"
     },
     {
@@ -63060,6 +63080,10 @@
     },
     {
       "from": "/buy-a-hotel/first-hotel-no-experience",
+      "to": "/buy-a-hotel/using-a-401k-or-ira"
+    },
+    {
+      "from": "/buy-a-hotel/first-hotel-no-experience",
       "to": "/buy-a-hotel/due-diligence-checklist"
     },
     {
@@ -63265,6 +63289,10 @@
     {
       "from": "/buy-a-hotel/how-much-money-do-you-need",
       "to": "/buy-a-hotel/due-diligence-checklist"
+    },
+    {
+      "from": "/buy-a-hotel/how-much-money-do-you-need",
+      "to": "/buy-a-hotel/using-a-401k-or-ira"
     },
     {
       "from": "/buy-a-hotel/how-much-money-do-you-need",
@@ -64044,6 +64072,214 @@
     },
     {
       "from": "/buy-a-hotel/seller-financing",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/_next/static/chunks/971af7bd7354d30d.css"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/buy-a-hotel/using-a-401k-or-ira.md"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/listings"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/rates"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/about"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/team"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/contact"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/buy-a-hotel/how-to-underwrite-a-hotel-deal"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/hotel-financing/non-recourse-loans"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/buy-a-hotel/first-hotel-no-experience"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/hotel-industry/hotel-management-agreements"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/hotel-financing/sba-7a-vs-504"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/buy-a-hotel/how-much-money-do-you-need"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/buy-a-hotel/depreciation-and-cost-segregation"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/glossary"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/glossary/sba-7a"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/glossary/sba-504"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/glossary/noi"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/glossary/cap-rate"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/tools"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/research"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/markets"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/closed"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/process"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/services"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/insights"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/press"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
+      "to": "/developers"
+    },
+    {
+      "from": "/buy-a-hotel/using-a-401k-or-ira",
       "to": "/sitemap"
     },
     {
@@ -77366,6 +77602,7 @@
         "/buy-a-hotel/how-to-make-an-offer",
         "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
         "/buy-a-hotel/seller-financing",
+        "/buy-a-hotel/using-a-401k-or-ira",
         "/hotel-franchise-costs",
         "/hotel-franchise-costs/best-western",
         "/hotel-franchise-costs/cambria",
@@ -87747,6 +87984,7 @@
         "/hotel-financing/sba-size-standards",
         "/sell-a-hotel/covid-eidl-when-you-sell",
         "/hotel-financing/hotel-lenders-by-type",
+        "/buy-a-hotel/using-a-401k-or-ira",
         "/hotel-financing/loan-requirements",
         "/buy-a-hotel/environmental-liability",
         "/buy-a-hotel",
@@ -87804,6 +88042,7 @@
         "/hotel-financing/sba-size-standards",
         "/sell-a-hotel/covid-eidl-when-you-sell",
         "/hotel-financing/hotel-loan-rates",
+        "/buy-a-hotel/using-a-401k-or-ira",
         "/hotel-financing/hotel-lenders-by-type",
         "/buy-a-hotel/environmental-liability",
         "/buy-a-hotel",
@@ -90497,6 +90736,7 @@
         "/team",
         "/contact",
         "/team/luke-thompson",
+        "/buy-a-hotel/using-a-401k-or-ira",
         "/buy-a-hotel/environmental-liability",
         "/team/miles-cortez",
         "/hotel-financing/sba-size-standards",
@@ -93302,6 +93542,7 @@
         "/buy-a-hotel/how-to-make-an-offer",
         "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
         "/buy-a-hotel/seller-financing",
+        "/buy-a-hotel/using-a-401k-or-ira",
         "/team/luke-thompson",
         "/process",
         "/research/mhi/q1-2026",
@@ -93645,6 +93886,7 @@
         "/team/nate-solomon",
         "/hotel-financing/hotel-lenders-by-type",
         "/buy-a-hotel/how-much-money-do-you-need",
+        "/buy-a-hotel/using-a-401k-or-ira",
         "/buy-a-hotel/due-diligence-checklist",
         "/tools/dscr-calculator",
         "/glossary/dscr",
@@ -93703,6 +93945,7 @@
         "/hotel-financing/sba-7a-vs-504",
         "/hotel-financing/pip-and-renovation-loans",
         "/buy-a-hotel/due-diligence-checklist",
+        "/buy-a-hotel/using-a-401k-or-ira",
         "/team/nate-solomon",
         "/buy-a-hotel/first-hotel-no-experience",
         "/buy-a-hotel/branded-vs-independent",
@@ -93894,6 +94137,64 @@
         "/glossary/sba-7a",
         "/glossary/dscr",
         "/glossary/mezzanine-debt",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/buy-a-hotel/using-a-401k-or-ira",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/971af7bd7354d30d.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/buy-a-hotel/using-a-401k-or-ira.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/buy-a-hotel",
+        "/team/luke-thompson",
+        "/buy-a-hotel/how-to-underwrite-a-hotel-deal",
+        "/hotel-financing/non-recourse-loans",
+        "/buy-a-hotel/first-hotel-no-experience",
+        "/hotel-industry/hotel-management-agreements",
+        "/hotel-financing/sba-7a-vs-504",
+        "/buy-a-hotel/how-much-money-do-you-need",
+        "/buy-a-hotel/depreciation-and-cost-segregation",
+        "/team/nate-solomon",
+        "/glossary",
+        "/glossary/sba-7a",
+        "/glossary/sba-504",
+        "/glossary/noi",
+        "/glossary/cap-rate",
         "/hotel-franchise-costs",
         "/hotel-industry",
         "/tools",

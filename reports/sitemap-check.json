@@ -1,10 +1,10 @@
 {
-  "urls": 346,
+  "urls": 347,
   "maxDepth": 2,
   "byDepth": {
     "0": 1,
     "1": 32,
-    "2": 313
+    "2": 314
   },
   "depth": {
     "/": 0,
@@ -205,6 +205,7 @@
     "/buy-a-hotel/how-to-make-an-offer": 2,
     "/buy-a-hotel/how-to-underwrite-a-hotel-deal": 2,
     "/buy-a-hotel/seller-financing": 2,
+    "/buy-a-hotel/using-a-401k-or-ira": 2,
     "/glossary/franchise-fdd": 2,
     "/hotel-industry/franchise-territory-and-encroachment": 2,
     "/glossary/per-key": 2,

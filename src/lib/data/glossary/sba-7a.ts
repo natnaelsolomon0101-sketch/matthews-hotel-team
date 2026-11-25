@@ -70,6 +70,7 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/sba-size-standards",
     "/sell-a-hotel/covid-eidl-when-you-sell",
     "/hotel-financing/hotel-lenders-by-type",
+    "/buy-a-hotel/using-a-401k-or-ira",
     "/hotel-financing/loan-requirements",
     "/buy-a-hotel/environmental-liability"
   ],
