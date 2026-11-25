@@ -124,7 +124,7 @@ CSV still points at rather than genuine content gaps.
 
 ## Run notes
 
-**2026-11-25, Content Writer.** Shipped `/buy-a-hotel/using-a-401k-or-ira`, H1 "Can I use my 401(k) or IRA to buy a
+**2026-11-25, Content Writer (PR #123).** Shipped `/buy-a-hotel/using-a-401k-or-ira`, H1 "Can I use my 401(k) or IRA to buy a
 hotel?" Sections A to E are complete, F is SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a
 coverage scan of `src/lib/data/` run **after** `list_pull_requests state=open`, as the last run's note demands: "ROBS",
 "4975", "self-directed", "UBIT" and "401(k)" appeared in **zero** files, and none of the 16 open PRs claims the topic.
