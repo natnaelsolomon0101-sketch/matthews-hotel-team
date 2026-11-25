@@ -10,6 +10,7 @@ import { page as a_how_to_make_an_offer } from "./how-to-make-an-offer";
 import { page as a_how_to_underwrite_a_hotel_deal } from "./how-to-underwrite-a-hotel-deal";
 import { page as a_hub } from "./hub";
 import { page as a_seller_financing } from "./seller-financing";
+import { page as a_using_a_401k_or_ira } from "./using-a-401k-or-ira";
 import type { AnswerPage } from "../types";
 
 export const hub: AnswerPage = a_hub;
@@ -25,6 +26,7 @@ export const spokes: AnswerPage[] = [
   a_how_to_make_an_offer,
   a_how_to_underwrite_a_hotel_deal,
   a_seller_financing,
+  a_using_a_401k_or_ira,
 ];
 
 export const pages: AnswerPage[] = [hub, ...spokes];

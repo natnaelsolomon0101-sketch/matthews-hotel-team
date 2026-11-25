@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-11-24T14:33:19.980Z",
+  "runAt": "2026-11-25T14:30:36.357Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 346,
-  "blocksFound": 346,
-  "blocksValid": 346,
+  "urlsChecked": 347,
+  "blocksFound": 347,
+  "blocksValid": 347,
   "issues": [],
   "blocks": [
     {
@@ -1114,6 +1114,13 @@
     },
     {
       "url": "/buy-a-hotel/seller-financing",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/buy-a-hotel/using-a-401k-or-ira",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,

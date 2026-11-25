@@ -67,7 +67,7 @@ export const page: AnswerPage = {
     {
       h2: "Can I buy a hotel with no money down?",
       lead: "Not with SBA 504, because the borrower contribution is a regulatory minimum.[1]",
-      body: "The 504 regulation requires the borrower to contribute at least 15 percent of project cost on a hotel.[1][2] Conventional lenders size to the hotel's income and to value, which leaves a gap the buyer fills. Partners can fill part of it, and so can a seller note where the senior lender allows one, but both come with conditions. Under SBA rules, holders of at least a 20 percent ownership interest generally must guarantee the loan, so bringing in partners spreads the guarantee along with the equity.[5]"
+      body: "The 504 regulation requires the borrower to contribute at least 15 percent of project cost on a hotel.[1][2] Conventional lenders size to the hotel's income and to value, which leaves a gap the buyer fills. Partners can fill part of it, and so can a seller note where the senior lender allows one, but both come with conditions. Under SBA rules, holders of at least a 20 percent ownership interest generally must guarantee the loan, so bringing in partners spreads the guarantee along with the equity.[5] Retirement money is another source buyers ask about, and the rules differ sharply by vehicle: [can I use my 401(k) or IRA to buy a hotel?](/buy-a-hotel/using-a-401k-or-ira)"
     }
   ],
   table: {
