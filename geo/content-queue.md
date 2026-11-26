@@ -124,7 +124,7 @@ CSV still points at rather than genuine content gaps.
 
 ## Run notes
 
-**2026-11-26, Content Writer (PR #PENDING).** Shipped `/hotel-financing/bank-failure`, H1 "What happens to my hotel
+**2026-11-26, Content Writer (PR #124).** Shipped `/hotel-financing/bank-failure`, H1 "What happens to my hotel
 loan if my bank fails?" Sections A to E are complete, F is SKIPPED, G is blocked and H and J were fully ticked, so the
 pick came from a coverage scan of `src/lib/data/` run after `list_pull_requests state=open`: "1821", "bank failure",
 "repudiate", "1823(e)", "qualified financial contract", "setoff" and "mutuality" appeared in **zero** files, "FDIC" in
