@@ -2,6 +2,7 @@
 import { page as a_1031_exchange_hotels } from "./1031-exchange-hotels";
 import { page as a_appraisal_requirements } from "./appraisal-requirements";
 import { page as a_bank_cre_concentration_limits } from "./bank-cre-concentration-limits";
+import { page as a_bank_failure } from "./bank-failure";
 import { page as a_brand_conversion_financing } from "./brand-conversion-financing";
 import { page as a_bridge_loans } from "./bridge-loans";
 import { page as a_c_pace_financing } from "./c-pace-financing";
@@ -95,6 +96,7 @@ export const spokes: AnswerPage[] = [
   a_interest_rate_caps,
   a_mezzanine_debt_and_preferred_equity,
   a_mechanics_liens,
+  a_bank_failure,
 ];
 
 export const pages: AnswerPage[] = [hub, ...spokes];

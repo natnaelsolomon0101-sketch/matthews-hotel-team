@@ -1,10 +1,10 @@
 {
-  "urls": 347,
+  "urls": 348,
   "maxDepth": 2,
   "byDepth": {
     "0": 1,
     "1": 32,
-    "2": 314
+    "2": 315
   },
   "depth": {
     "/": 0,
@@ -106,6 +106,7 @@
     "/hotel-financing/sba-7a-vs-504": 2,
     "/hotel-financing/sba-franchise-directory": 2,
     "/hotel-financing/sba-size-standards": 2,
+    "/hotel-financing/bank-failure": 2,
     "/team/miles-cortez": 2,
     "/glossary/dscr": 2,
     "/glossary/debt-yield": 2,

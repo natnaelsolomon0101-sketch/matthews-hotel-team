@@ -60,7 +60,8 @@ export const entry: GlossaryEntry = {
   relatedAnswers: [
     "/hotel-financing/hotel-loan-rates",
     "/hotel-financing/bridge-loans",
-    "/hotel-financing/refinance"
+    "/hotel-financing/refinance",
+    "/hotel-financing/bank-failure"
   ],
   lastUpdated: "2026-10-01",
   authorSlug: "luke-thompson"

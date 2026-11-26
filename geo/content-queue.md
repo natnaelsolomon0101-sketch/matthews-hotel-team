@@ -124,6 +124,66 @@ CSV still points at rather than genuine content gaps.
 
 ## Run notes
 
+**2026-11-26, Content Writer (PR #124).** Shipped `/hotel-financing/bank-failure`, H1 "What happens to my hotel
+loan if my bank fails?" Sections A to E are complete, F is SKIPPED, G is blocked and H and J were fully ticked, so the
+pick came from a coverage scan of `src/lib/data/` run after `list_pull_requests state=open`: "1821", "bank failure",
+"repudiate", "1823(e)", "qualified financial contract", "setoff" and "mutuality" appeared in **zero** files, "FDIC" in
+nine and never once about a failure, and none of the 16 open PRs claims the topic. The site explained why a bank stops
+lending on hotels and what happens when the borrower is in trouble, and said nothing about the lender failing, which
+six sets of borrowers have lived through in 2026 alone.
+
+**The find of this run.** The loan is the safe part. The FDIC states that a bank failure does not change the borrower's
+obligation and that a loan sale does not change the terms, and its Failed Bank List shows an acquiring institution for
+all six 2026 closings. The undrawn money is the exposure: the Borrower's Guide says the role of receiver generally
+precludes continuing a failed bank's lending operations, 12 U.S.C. 1821(e)(1) lets the receiver repudiate a commitment
+it finds burdensome in its own discretion, 1821(e)(2) gives it only a "reasonable period" to decide and no deadline,
+and 1821(e)(3) limits damages to actual direct compensatory damages measured at the appointment date while excluding
+lost profits and lost opportunity by name. For a hotel halfway through a brand PIP, the loss is the ramp that never
+happened, which is precisely what the statute refuses to pay for. Second find: 1823(e) voids any accommodation not in
+writing, not executed contemporaneously by both sides, not approved in the board or loan committee minutes and not
+continuously an official record, and 1821(d)(9)(A) carries that test into the claims process, so an emailed forbearance
+dies with the bank. Third, and the one no general article carries: setoff against deposits requires the borrower and
+the depositor to be the same legal entity acting in the same legal capacity, and hotel ownership routinely splits the
+mortgage into a property-owning entity and the accounts into an operating company, so the mutuality test usually fails
+and an uninsured balance cannot be applied against the loan in either direction. Fourth: 1821(e)(8)(D)(vi)(I) names a
+rate cap inside the swap agreement definition, making a hotel's cap a qualified financial contract, and (e)(9)(A) and
+(e)(10)(B)(i) together give the counterparty one business day, so with every 2026 closing on a Friday the window ran to
+5:00 p.m. eastern on the Monday.
+
+**Four sourcing notes for the next run.** `www.law.cornell.edu` served 12 U.S.C. 1821 (859 KB), 1823, 1831o and 12 CFR
+324.403 to curl with a browser user agent at 200, which is the only practical route to 1821: it is one section with
+dozens of lettered subsections, so grep the stripped text rather than hunting anchors. All of `www.fdic.gov` answered
+200 to curl with a browser user agent, including `/bank-failures/failed-bank-list`, whose table is real HTML and parses
+with a regex, and `/bank-failures/borrowers-guide-fdic-insured-bank-failure`, `/bank-failures/borrowers`,
+`/bank-failures/priority-payments-and-timing`, `/bank-failures/obtaining-lien-release` and
+`/bank-failures/when-bank-fails-facts-depositors-creditors-and-borrowers`, each carrying its own "Last Updated" date.
+**The Failed Bank List CSV at `/bank-failures/failed-bank-list/banklist.csv` is a 404** that returns an HTML error page
+with a 200-shaped body, so parse the HTML table instead. The **Quarterly Banking Profile problem bank count is not in
+the press release** and the Q3 2026 QBP landing page carries no readable statement PDF beyond
+`qbp-notes-users-third-quarter-2026.pdf`, so the page uses 4,205 insured institutions from the November 24, 2026
+release as the denominator and says plainly that no agency publishes its problem bank list.
+
+**What the page does not print.** No lender DSCR floor, LTV ceiling or spread, none being published. No mark on an
+interest rate cap, because it depends on the forward curve and the dealer's own pricing and neither is published. No
+count of banks on any problem list and no supervisory rating, for the same reason, and the page says so rather than
+implying a borrower can see a failure coming. The service-claims rule in section N is honored: the brand sentence
+offers replacement financing from $5 million and hotel and note sales, both confirmed, and says the team does not act
+as counsel and does not file receivership claims. Every figure in the worked example is recomputed by
+`scripts/check-bank-failure-math.mjs`, committed alongside the page: 27 assertions covering the 0.1427 percent failure
+rate and its one-in-701 reciprocal, all six 2026 closing dates as Fridays and the Monday deadline that follows, the
+$1,400,000 undrawn balance at 28.23 percent of the PIP contract and $11,290.32 a key, the $40,950 of index-only
+carrying cost at $330.24 a key, the $390,000 uninsured balance at 60.9375 percent, the $69,000 of revived payments at
+0.75 percent of the mortgage, and the 330-day claims clock. Reciprocal links added from
+`/hotel-financing/loan-workouts`, `/hotel-financing/interest-rate-caps` and `/hotel-financing/construction-loans`, plus
+`relatedAnswers` on `/glossary/sofr` and `/glossary/non-recourse-carve-outs`. No existing number changed. 2,498 words
+after six trimming passes from 3,803.
+
+**Production is still down, day 28.** `matthewshotelmarkets.com` answered HTTP 503 at 14:04 UTC on 2026-11-26, as it
+has since 2026-10-29, so `geo/AGENTS.md` 3.6 could not be completed and issue #89 stays open. This needs Nate in the
+Vercel dashboard; no agent can fix it from the repo.
+
+
+
 **2026-11-25, Content Writer (PR #123).** Shipped `/buy-a-hotel/using-a-401k-or-ira`, H1 "Can I use my 401(k) or IRA to buy a
 hotel?" Sections A to E are complete, F is SKIPPED, G is blocked and H and J were fully ticked, so the pick came from a
 coverage scan of `src/lib/data/` run **after** `list_pull_requests state=open`, as the last run's note demands: "ROBS",
@@ -1013,6 +1073,7 @@ Pick from `geo/04-queries.csv` prompts with no dedicated page, phrased the way p
 | [x] | `/hotel-financing/deduct-or-capitalize-a-renovation` | No CSV row targets it directly. The gap was total: "263(a)", "unit of property", "routine maintenance", "de minimis safe harbor", "betterment", "adaptation", "partial disposition", "168(i)-8", "3115", "179D" and "prevailing wage" appeared in **zero** files under `src/lib/data/`, and "capitalize" in 18, never once about the test that decides it. The site had `/hotel-financing/pip-and-renovation-loans` for how to borrow the PIP money, `/hotel-valuation/pip-and-hotel-value` for what the work does to value and `/buy-a-hotel/depreciation-and-cost-segregation` for depreciating a purchase, and nothing on whether the renovation dollars are deductible or capital | Shipped 2026-11-20. The finding: 26 CFR 1.263(a)-3 argues the case in hotels. Example 24 capitalizes every dollar of a phased guest-bath replacement, including the repainting, because all the tubs together are a major component of the **plumbing system**; Example 28 puts a lobby floor at under 10 percent of square footage on the deductible side and Example 29 capitalizes all the public-area floors at about 40 percent. The second finding: the unit of property is the structure plus **nine** systems tested separately, so a PIP that feels like a small fraction of the hotel is measured against the wrong thing. The money finding: section 179(e) reaches four of those nine systems, and with the 1.168(i)-8(d)(2) partial disposition election the same $3,540,000 PIP deducts $46,000 or $886,308 in year one, 1.3 against 25.0 percent, a factor of 19.3, with the 179(b)(3) taxable-income limit binding rather than the $2,560,000 cap. Examples 3 and 4 under (g)(2) show the election can turn a deductible repair into a restoration, so it is not free money. 179D is terminated for construction beginning after June 30, 2026. Prints no typical capitalized percentage, no audit statistic and no advice: none is published, and the brand sentence states the team does not give tax advice |
 | [x] | `/sell-a-hotel/covid-eidl-when-you-sell` | No CSV row targets it directly, and "EIDL", "PPP", "disaster loan" and "Treasury offset" appeared in **zero** files under `src/lib/data/`. SBA approved 3,923,374 COVID EIDLs for $378,410,624,804, the notes run 30 years, and nothing on a site with 46 financing pages and 22 sell-side pages said what happens to one when the hotel sells | Shipped 2026-11-23. The finding is in SBA's own servicing letters, re-issued October 2026: a change in ownership, an assumption, a release of collateral and a subordination are four separate requests, and the first two state that approval "will not release the Original Borrower(s) and/or any Guarantor(s) from liability", on a loan where a personal guaranty was required above $200,000. The money finding is in the release letter: "under most circumstances, SBA may require full monetary consideration", and a paydown for consideration is not a regular payment and does not re-amortize. The structural finding is the balance: 30 months of deferred interest plus a 30-year amortization means the hypothetical $2,000,000 loan owes $2,092,913.85 after 30 payments of $9,262.31, more than was borrowed. Delinquency is the other door closing: 120 days to Treasury under 31 U.S.C. 3716(c)(6)(A), and 31 CFR 285.13 with SOP 50 10 8.1 bar a delinquent applicant or guarantor from 7(a) and 504, checked in CAIVRS. Prints no consideration amount, no processing time and no count of hotels holding one: none is published |
 | [x] | `/buy-a-hotel/using-a-401k-or-ira` | No CSV row targets it directly. The gap was total: "ROBS", "4975", "self-directed", "UBIT" and "401(k)" each appeared in **zero** files under `src/lib/data/`, and the 10 files matching "UBTI" all meant something else. The site explained every way to borrow against a hotel and every way to pay for one, and said nothing about the pot of money first-time buyers actually have | Shipped 2026-11-25. The finding: SBA and the IRS make the self-directed IRA route structurally impossible, not merely unwise. SOP 50 10 8.1 requires an unlimited full guaranty from every 20 percent owner and, where a trust owns part of the applicant, from the trust and the trustor both; a guaranty of a loan to a company the IRA owns is the indirect extension of credit 26 U.S.C. 4975(c)(1)(B) prohibits, and 408(e)(2) then ends the account on the first day of that year. The second finding: 26 CFR 1.512(b)-1(c)(5) names hotels, so room revenue is never the excluded rent owners assume, and 514(c)(9)(C) lists section 401 trusts as qualified organizations but not section 408(a) accounts. The third: SOP 50 10 8.1 Section A, Ch. 2, Para. D sets out the 401(k) and ROBS conditions in detail and names IRAs nowhere. Prints no lender DSCR floor, LTV ceiling or promoter fee: none is published |
+| [x] | `/hotel-financing/bank-failure` | No CSV row targets it directly. The gap was total: "FDIC" appeared in 9 files but only ever as a data publisher, and "1821", "receivership of a bank", "bank failure", "repudiate", "1823(e)", "qualified financial contract", "setoff" and "mutuality" appeared in **zero** files under `src/lib/data/`. The site had `/hotel-financing/bank-cre-concentration-limits` for why a bank stops lending on hotels and `/hotel-financing/loan-workouts` for what happens when the borrower is in trouble, and nothing on what happens when the **lender** is the one that fails, which is the question six sets of borrowers have had to answer in 2026 alone | Shipped 2026-11-26. The finding: the loan is the safe part and the undrawn money is not. The FDIC states in terms that a failure does not change the duty to pay and that a loan sale does not change the terms, but its own Borrower's Guide says the role of receiver generally precludes continuing a failed bank's lending operations, and 12 U.S.C. 1821(e)(1) lets the receiver repudiate the rest of a commitment, with 1821(e)(3) capping damages at actual direct compensatory damages and excluding lost profits and opportunity by name, which is exactly where a stalled PIP's loss sits. The second finding is 1823(e): an accommodation binds the FDIC only if it is in writing, executed contemporaneously by both sides, approved in the board or loan committee minutes and continuously an official record, and 1821(d)(9)(A) carries the same test into the claims process, so an emailed forbearance is worth nothing. The third is structural and hotel-specific: the FDIC will set a loan off against deposits only where the borrower and the depositor are the same legal entity in the same capacity, and hotel ownership puts the mortgage in a property-owning entity and the accounts in an operating company, so the mutuality test usually fails. A fourth: a rate cap is a swap agreement under 1821(e)(8)(D)(vi)(I), so the right to terminate it survives the appointment but closes at 5:00 p.m. eastern the next business day, and every 2026 closing was on a Friday, so that was the Monday. Prints no lender DSCR floor, LTV ceiling or spread, no cap mark and no problem bank count: none is published |
 
 Remaining candidates: hotel loan assumption, seller financing for a hotel, preferred equity (needs a
 citable source), what buyers look for in a hotel, selling a hotel with a ground lease, hotel property
