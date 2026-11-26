@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Hotel Construction Loans: How They Work in 2026",
   h1: "How do I finance hotel construction in 2026?",
   description: "How ground-up hotel construction loans work in 2026: bank limits, equity, draws, interest reserve, guaranties, SBA options and the permanent takeout.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-11-26",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -64,7 +64,7 @@ export const page: AnswerPage = {
     {
       h2: "Are banks making hotel construction loans right now?",
       lead: "Yes, selectively. Standards stopped tightening in 2026, but they remain tight by historical measure and developer demand is soft.",
-      body: "The Federal Reserve's July 2026 Senior Loan Officer Opinion Survey, released August 3, 2026, reported that standards for construction and land development loans were basically unchanged over the second quarter, while a moderate net share of banks saw weaker demand for those loans. Asked where standards sit relative to their range since 2005, a significant net share of banks put construction loans at the tighter end, though fewer banks said so than in July 2025.[7]\n\nThe building data agrees. The Census Bureau put private lodging construction at a seasonally adjusted annual rate of $23.3 billion in July 2026, down 9.9 percent from $25.9 billion in July 2025.[3] Less new supply is a reason some lenders like the hotels that do get built. It also means a construction request competes for a small allocation, so the sponsor's track record and liquidity carry most of the decision."
+      body: "The Federal Reserve's July 2026 Senior Loan Officer Opinion Survey, released August 3, 2026, reported that standards for construction and land development loans were basically unchanged over the second quarter, while a moderate net share of banks saw weaker demand for those loans. Asked where standards sit relative to their range since 2005, a significant net share of banks put construction loans at the tighter end, though fewer banks said so than in July 2025.[7]\n\nThe building data agrees. The Census Bureau put private lodging construction at a seasonally adjusted annual rate of $23.3 billion in July 2026, down 9.9 percent from $25.9 billion in July 2025.[3] Less new supply is a reason some lenders like the hotels that do get built. It also means a construction request competes for a small allocation, so the sponsor's track record and liquidity carry most of the decision. Ask the other question too, which is what happens to the undrawn balance if the construction lender itself is closed: the receiver generally stops lending and may repudiate the rest of the commitment, covered in [a bank failure](/hotel-financing/bank-failure)."
     },
     {
       h2: "What happens when construction is finished?",

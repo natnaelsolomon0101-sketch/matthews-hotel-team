@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Hotel Loan Workouts and Special Servicing",
   h1: "What is a loan workout and how does it work for a distressed hotel?",
   description: "What happens when a hotel loan goes to special servicing, what a workout can and cannot fix, and what an owner should do in the first 30 days.",
-  lastUpdated: "2026-11-19",
+  lastUpdated: "2026-11-26",
   authorSlug: "miles-cortez",
   reviewerSlug: "luke-thompson",
   targetPrompts: [
@@ -64,7 +64,7 @@ export const page: AnswerPage = {
     {
       h2: "What do I do in the first 30 days?",
       lead: "Get counsel experienced in CMBS workouts, assemble current financials and a realistic business plan, and decide deliberately whether you are asking for time or negotiating an exit.",
-      body: "This is not legal advice, and every borrower in this position should retain counsel with specific special-servicing experience before engaging substantively with a servicer. Check the payroll tax deposits in the same week: a lender that funds wages knowing the withholding will not be deposited takes on liability of its own, at [can I sell my hotel if I owe the IRS back payroll taxes?](/sell-a-hotel/irs-liens-and-payroll-taxes). What is universally true: the servicer will ask for current and projected financials, and the quality and honesty of that package shapes the servicer's view of what outcome makes sense. A borrower who shows up with a credible, conservative plan is in a materially better position than one who shows up with an optimistic story that does not survive scrutiny."
+      body: "This is not legal advice, and every borrower in this position should retain counsel with specific special-servicing experience before engaging substantively with a servicer. Check the payroll tax deposits in the same week: a lender that funds wages knowing the withholding will not be deposited takes on liability of its own, at [can I sell my hotel if I owe the IRS back payroll taxes?](/sell-a-hotel/irs-liens-and-payroll-taxes). What is universally true: the servicer will ask for current and projected financials, and the quality and honesty of that package shapes the servicer's view of what outcome makes sense. A borrower who shows up with a credible, conservative plan is in a materially better position than one who shows up with an optimistic story that does not survive scrutiny. Confirm who actually holds the loan before you negotiate with anyone, and get every accommodation signed and approved rather than agreed on a call: if the lender itself fails, an unwritten deal does not survive the receiver, as [a bank failure](/hotel-financing/bank-failure) explains."
     },
     {
       h2: "When is selling better than working it out?",

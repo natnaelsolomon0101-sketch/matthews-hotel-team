@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-11-25T14:30:44.251Z",
-  "base": "http://localhost:44337",
+  "runAt": "2026-11-26T14:27:49.533Z",
+  "base": "http://localhost:45341",
   "edges": [
     {
       "from": "/",
@@ -4169,6 +4169,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-financing/mechanics-liens"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-financing/bank-failure"
     },
     {
       "from": "/sitemap",
@@ -41512,6 +41516,10 @@
     },
     {
       "from": "/glossary/sofr",
+      "to": "/hotel-financing/bank-failure"
+    },
+    {
+      "from": "/glossary/sofr",
       "to": "/buy-a-hotel"
     },
     {
@@ -42669,6 +42677,10 @@
     {
       "from": "/glossary/non-recourse-carve-outs",
       "to": "/hotel-financing/chapter-11-bankruptcy"
+    },
+    {
+      "from": "/glossary/non-recourse-carve-outs",
+      "to": "/hotel-financing/bank-failure"
     },
     {
       "from": "/glossary/non-recourse-carve-outs",
@@ -44544,6 +44556,10 @@
     },
     {
       "from": "/hotel-financing",
+      "to": "/hotel-financing/bank-failure"
+    },
+    {
+      "from": "/hotel-financing",
       "to": "/team/miles-cortez"
     },
     {
@@ -46357,6 +46373,10 @@
     {
       "from": "/hotel-financing/construction-loans",
       "to": "/hotel-financing/sba-7a-vs-504"
+    },
+    {
+      "from": "/hotel-financing/construction-loans",
+      "to": "/hotel-financing/bank-failure"
     },
     {
       "from": "/hotel-financing/construction-loans",
@@ -49649,6 +49669,10 @@
     {
       "from": "/hotel-financing/loan-workouts",
       "to": "/sell-a-hotel/irs-liens-and-payroll-taxes"
+    },
+    {
+      "from": "/hotel-financing/loan-workouts",
+      "to": "/hotel-financing/bank-failure"
     },
     {
       "from": "/hotel-financing/loan-workouts",
@@ -53540,6 +53564,10 @@
     },
     {
       "from": "/hotel-financing/interest-rate-caps",
+      "to": "/hotel-financing/bank-failure"
+    },
+    {
+      "from": "/hotel-financing/interest-rate-caps",
       "to": "/glossary/yield-maintenance"
     },
     {
@@ -54088,6 +54116,226 @@
     },
     {
       "from": "/hotel-financing/mechanics-liens",
+      "to": "/sitemap"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/_next/static/chunks/971af7bd7354d30d.css"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/hotel-financing/bank-failure.md"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/hotel-financing/refinance"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/hotel-financing/hotel-lenders-by-type"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/hotel-financing/pip-and-renovation-loans"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/hotel-financing/mechanics-liens"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/hotel-financing/construction-loans"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/hotel-financing/interest-rate-caps"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/glossary/sofr"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/hotel-financing/loan-workouts"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/hotel-financing/covenants-and-cash-management"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/sell-a-hotel/how-to-sell-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/hotel-financing/refinance-or-sell"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/hotel-financing/bank-cre-concentration-limits"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/team/nate-solomon"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/glossary/non-recourse-carve-outs"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/glossary/dscr"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-financing/bank-failure",
       "to": "/sitemap"
     },
     {
@@ -77557,6 +77805,7 @@
         "/hotel-financing/interest-rate-caps",
         "/hotel-financing/mezzanine-debt-and-preferred-equity",
         "/hotel-financing/mechanics-liens",
+        "/hotel-financing/bank-failure",
         "/sell-a-hotel/1031-without-buying-another-hotel",
         "/sell-a-hotel/asset-sale-vs-entity-sale",
         "/sell-a-hotel/broker-fees",
@@ -87876,6 +88125,7 @@
         "/hotel-financing/hotel-loan-rates",
         "/hotel-financing/bridge-loans",
         "/hotel-financing/refinance",
+        "/hotel-financing/bank-failure",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -88202,6 +88452,7 @@
         "/hotel-financing/loan-requirements",
         "/hotel-financing/loan-workouts",
         "/hotel-financing/chapter-11-bankruptcy",
+        "/hotel-financing/bank-failure",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -88724,6 +88975,7 @@
         "/hotel-financing/sba-7a-vs-504",
         "/hotel-financing/sba-franchise-directory",
         "/hotel-financing/sba-size-standards",
+        "/hotel-financing/bank-failure",
         "/team/miles-cortez",
         "/buy-a-hotel",
         "/glossary",
@@ -89232,6 +89484,7 @@
         "/team/luke-thompson",
         "/hotel-financing/hotel-lenders-by-type",
         "/hotel-financing/sba-7a-vs-504",
+        "/hotel-financing/bank-failure",
         "/hotel-financing/mechanics-liens",
         "/hotel-financing/bridge-loans",
         "/hotel-financing/refinance",
@@ -90151,6 +90404,7 @@
         "/contact",
         "/team/miles-cortez",
         "/sell-a-hotel/irs-liens-and-payroll-taxes",
+        "/hotel-financing/bank-failure",
         "/hotel-financing/refinance-or-sell",
         "/team/luke-thompson",
         "/hotel-financing/loan-maturities-2026-2027",
@@ -91231,6 +91485,7 @@
         "/hotel-financing/closing-costs",
         "/tools/dscr-calculator",
         "/hotel-financing/loan-maturities-2026-2027",
+        "/hotel-financing/bank-failure",
         "/glossary/yield-maintenance",
         "/glossary/defeasance",
         "/hotel-financing/hotel-loan-rates",
@@ -91358,6 +91613,67 @@
         "/glossary",
         "/glossary/ground-lease",
         "/glossary/noi",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
+      "url": "/hotel-financing/bank-failure",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/971af7bd7354d30d.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-financing/bank-failure.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/luke-thompson",
+        "/hotel-financing/refinance",
+        "/hotel-financing/hotel-lenders-by-type",
+        "/hotel-financing/pip-and-renovation-loans",
+        "/hotel-financing/mechanics-liens",
+        "/hotel-financing/construction-loans",
+        "/hotel-financing/interest-rate-caps",
+        "/glossary/sofr",
+        "/hotel-financing/loan-workouts",
+        "/hotel-financing/covenants-and-cash-management",
+        "/sell-a-hotel/how-to-sell-a-hotel",
+        "/hotel-financing/refinance-or-sell",
+        "/hotel-financing/bank-cre-concentration-limits",
+        "/team/nate-solomon",
+        "/glossary",
+        "/glossary/non-recourse-carve-outs",
+        "/glossary/dscr",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",

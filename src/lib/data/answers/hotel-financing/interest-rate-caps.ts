@@ -14,7 +14,7 @@ export const page: AnswerPage = {
   title: "Interest Rate Caps on Floating-Rate Hotel Loans (2026)",
   h1: "Do I need an interest rate cap on a floating-rate hotel loan?",
   description: "How a rate cap works on a SOFR-based hotel loan, who requires one, what drives the price, and what one public hotel owner paid from 2023 to 2025.",
-  lastUpdated: "2026-10-01",
+  lastUpdated: "2026-11-26",
   authorSlug: "luke-thompson",
   reviewerSlug: "miles-cortez",
   targetPrompts: [
@@ -59,7 +59,7 @@ export const page: AnswerPage = {
     {
       h2: "What happens to the cap when I extend or refinance?",
       lead: "A cap ends on its termination date, so an extension option usually requires buying a new cap at whatever the market charges that day.",
-      body: "This is the most common surprise. Bridge loans are often written with a short initial term and extension options subject to conditions. Ashford's February 2025 refinancing of 16 hotels is a public example of the shape: a $580 million interest-only loan at SOFR plus 4.37 percent, with a two-year initial term and three one-year extension options subject to conditions.[2] A large portfolio loan is not a quote for a single hotel, but the structure is the same.\n\nOne extension condition is usually a replacement cap. When Ashford failed to meet the conditions of an extension on a separate eight-hotel loan in February 2026, the lender's default notice demanded, among other things, delivery of a replacement interest rate cap agreement.[2]\n\nIf you refinance or sell before the cap expires, the cap is yours. It can be terminated for whatever value it has left, which may be little. If rates have risen, a cap that is in the money has real value, and Ashford reported $3.0 million of proceeds from in-the-money caps in 2025.[2] `/hotel-financing/loan-maturities-2026-2027` covers extension planning."
+      body: "This is the most common surprise. Bridge loans are often written with a short initial term and extension options subject to conditions. Ashford's February 2025 refinancing of 16 hotels is a public example of the shape: a $580 million interest-only loan at SOFR plus 4.37 percent, with a two-year initial term and three one-year extension options subject to conditions.[2] A large portfolio loan is not a quote for a single hotel, but the structure is the same.\n\nOne extension condition is usually a replacement cap. When Ashford failed to meet the conditions of an extension on a separate eight-hotel loan in February 2026, the lender's default notice demanded, among other things, delivery of a replacement interest rate cap agreement.[2]\n\nIf you refinance or sell before the cap expires, the cap is yours. It can be terminated for whatever value it has left, which may be little. If rates have risen, a cap that is in the money has real value, and Ashford reported $3.0 million of proceeds from in-the-money caps in 2025.[2] `/hotel-financing/loan-maturities-2026-2027` covers extension planning. One more counterparty question belongs here: a cap is a qualified financial contract, so if the bank that sold it fails, the right to terminate it survives for about one business day and then closes, which [a bank failure](/hotel-financing/bank-failure) sets out."
     },
     {
       h2: "Is a cap better than a swap or a fixed-rate loan?",
