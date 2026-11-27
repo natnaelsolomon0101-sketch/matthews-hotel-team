@@ -124,6 +124,68 @@ CSV still points at rather than genuine content gaps.
 
 ## Run notes
 
+**2026-11-27, Content Writer (PR #125).** Shipped `/hotel-financing/forgiven-debt-tax`, H1 "My lender forgave part of my
+hotel loan. Do I owe tax on it?" Sections A to E are complete, F is SKIPPED, G is blocked and H and J were fully ticked, so
+the pick came from a coverage scan of `src/lib/data/` run after `list_pull_requests state=open`: "section 108", "Form 982",
+"1017", "QRPBI" and "debt forgiveness" appeared in **zero** files, "qualified real property business" in exactly one as a
+single clause, and none of the 16 open PRs claims the topic. Two pages already explain the recourse and non-recourse split
+on a foreclosure and both stop at the same sentence, that the forgiven amount is ordinary income "unless an exclusion
+applies." The exclusions are the answer, and with the 2026 and 2027 maturity wave being this site's core subject, the tax
+bill after a principal write-down is the next question down.
+
+**The find of this run.** The exclusions are tested on the owner, not the hotel. Section 108(d)(6) applies subsections (a),
+(b), (c) and (g) at the partner level, and Publication 4681 says it without cross-references: you do not qualify for the
+insolvency exclusion by being an owner of, or a partner in a partnership that owns, a grantor trust or disregarded entity
+that is insolvent. So a hotel LLC can be $3,000,000 underwater with every member solvent and the income taxable to all of
+them. Section 108(d)(7)(A) is the mirror image, applying the same subsections at the corporate level for an S corporation:
+same hotel, same write-down, a different answer depending on which entity signed the note. Second find: the qualified real
+property business election is capped twice, both immediately before the discharge, by debt over value in 108(c)(2)(A) and by
+the aggregate adjusted bases of depreciable real property held in 108(c)(2)(B), and on a hotel depreciated for fifteen years
+the second is the one that binds. Third, and the one no general article carries: 26 CFR 1.1017-1(g)(2) makes a partner's
+interest count as depreciable real property only if the partnership consents to a matching inside basis reduction, the
+partnership may grant or withhold that **in its sole discretion**, and consent becomes mandatory only above more than 80
+percent of capital and profits in aggregate or five or fewer partners owning more than 50 percent. A 40 percent member
+clears neither, so their tax outcome turns on their partners' signature, with the request due before the extended due date
+of their own return. Fourth: Rev. Proc. 2014-20's safe harbour for debt secured by 100 percent of a disregarded entity's
+membership interest requires at least 90 percent of the property owner's asset value to be real property used in a trade or
+business, which is worth computing on a hotel because a hotel carries more personal property than most real estate. Fifth:
+108(e)(5) takes a seller's price cut out of cancellation income entirely and drops basis instead.
+
+**Four sourcing notes for the next run.** `www.law.cornell.edu` served 26 U.S.C. 61, 108 (210 KB, one section with dozens of
+lettered subsections, so grep the stripped text rather than hunting anchors), 168, 731, 752 and 1017, and 26 CFR 1.1001-2 and
+1.1017-1, all at 200 to curl with a browser user agent. `www.irs.gov/pub/irs-pdf/p4681.pdf` and `f982.pdf`, and
+`irs-drop/rp-25-32.pdf`, all answered 200 and read cleanly with `pdftotext -layout`; Publication 4681 is the edition for use
+in preparing 2025 returns, which is current until the 2026 edition ships in early 2027, and **it is the individuals'
+publication**, so it is cited for mechanics and the statute is cited for the rules. **The IRB landing page
+`www.irs.gov/irb/2014-09_IRB` is not usable for a revenue procedure**: it serves 807 KB of HTML whose stripped text contains
+only the table-of-contents reference. The bound PDF at `www.irs.gov/pub/irs-irbs/irb14-09.pdf` carries the full text of
+Rev. Proc. 2014-20 at page 614 and is the route to take. Rev. Proc. 2025-32 prints the 2026 schedules in Section 4, Table 1
+for joint filers, with the top bracket at $206,583.50 plus 37 percent over $768,700, and the committed check recomputes the
+schedule at all six printed break points before using it.
+
+**What the page does not print.** No lender DSCR floor, LTV ceiling or spread, none being published, and the page says the
+indexes are the only published part of a replacement quote. No share of hotel workouts that end in a principal write-down
+and no count of 1099-C forms issued on hotel loans: neither is published anywhere primary. It also declines to resolve the
+ordering of the cancellation income allocation against the 752(b) deemed distribution, because no public source resolves it
+in one line, and says so instead of guessing. The service-claims rule in section N is honoured: the brand sentence offers
+replacement debt and recapitalizations from $5 million and hotel and note sales, all confirmed, and says the team does not
+give tax advice, does not prepare returns and does not make the election. `scripts/claims-audit.mjs` flags no overreach on
+the new page. Every figure in the worked example is recomputed by `scripts/check-forgiven-debt-math.mjs`, committed alongside
+the page: 51 assertions covering the $2,400,000 discharge at 20.0 percent of principal and $17,142.86 a key, the 106.67
+percent loan-to-value that survives the write-down, the $600,000 insolvency cap, both 108(c)(2) limits at $1,800,000 and
+$3,510,000, the $36,923.08 a year of depreciation given up over the 39-year life in 168(c), the $540,000 of 731(a)(1) gain,
+member B's $344,168.50 of tax and 35.85 percent effective rate, the consent thresholds, and the 90.0 and 89.11 percent safe
+harbour readings. Reciprocal links added from `/hotel-financing/loan-workouts`, `/hotel-financing/non-recourse-loans` and
+`/sell-a-hotel/selling-a-distressed-hotel`, plus `relatedAnswers` on `/glossary/non-recourse-carve-outs`. No existing number
+changed. 2,490 words after seven trimming passes from 2,972.
+
+**Production is paused, day 29, and the header finally names why.** `matthewshotelmarkets.com` answered HTTP 503 at 14:04 UTC
+on 2026-11-27 as it has since 2026-10-29, and the response header is **`x-vercel-error: DEPLOYMENT_PAUSED`**. That is a
+Vercel dashboard state for this project, not a code fault and not a bot challenge, so no agent can clear it from the repo and
+no merge will serve until it is resumed. The 31 monitor comments on issue #89 never named it, and issue #52, "Vercel is not
+deploying merges to main to Production", is the same cause. `geo/AGENTS.md` 3.6 could not be completed; issue #89 stays open.
+This needs Nate in the Vercel dashboard.
+
 **2026-11-26, Content Writer (PR #124).** Shipped `/hotel-financing/bank-failure`, H1 "What happens to my hotel
 loan if my bank fails?" Sections A to E are complete, F is SKIPPED, G is blocked and H and J were fully ticked, so the
 pick came from a coverage scan of `src/lib/data/` run after `list_pull_requests state=open`: "1821", "bank failure",
