@@ -54,7 +54,7 @@ export const page: AnswerPage = {
     {
       h2: "What can a workout actually change?",
       lead: "A workout can extend the maturity, adjust the rate or coverage covenants, defer interest, or restructure the balance, and each option fits a different underlying problem.",
-      body: "The table below orders the realistic outcomes by how often they actually happen, not by how severe they sound. Extensions and modifications are the most common outcomes for a performing or near-performing asset with a temporary problem. Discounted payoffs and note sales come up when the servicer wants to exit the position and the borrower or a third party has capital ready to move. Foreclosure or a deed in lieu of foreclosure is the last resort, used when no other path is viable, not the default outcome of a transfer to special servicing."
+      body: "The table below orders the realistic outcomes by how often they actually happen, not by how severe they sound. Extensions and modifications are the most common outcomes for a performing or near-performing asset with a temporary problem. Discounted payoffs and note sales come up when the servicer wants to exit the position and the borrower or a third party has capital ready to move. Foreclosure or a deed in lieu of foreclosure is the last resort, used when no other path is viable, not the default outcome of a transfer to special servicing. One outcome carries a tax bill the others do not: where the servicer restructures the balance by writing principal off, the written-off amount is income unless an exclusion applies, as [do I owe tax on forgiven hotel debt?](/hotel-financing/forgiven-debt-tax) sets out."
     },
     {
       h2: "What does a workout cost me?",
@@ -191,7 +191,8 @@ export const page: AnswerPage = {
       "/hotel-financing/loan-maturities-2026-2027",
       "/hotel-financing/refinance-or-sell",
       "/hotel-financing/cmbs-loans",
-      "/hotel-financing/bridge-loans"
+      "/hotel-financing/bridge-loans",
+      "/hotel-financing/forgiven-debt-tax"
     ],
     glossary: [
       "/glossary/dscr",

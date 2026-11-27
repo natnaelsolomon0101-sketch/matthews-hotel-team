@@ -63,7 +63,8 @@ export const entry: GlossaryEntry = {
     "/hotel-financing/loan-requirements",
     "/hotel-financing/loan-workouts",
     "/hotel-financing/chapter-11-bankruptcy",
-    "/hotel-financing/bank-failure"
+    "/hotel-financing/bank-failure",
+    "/hotel-financing/forgiven-debt-tax"
   ],
   lastUpdated: "2026-09-18",
   authorSlug: "luke-thompson"
