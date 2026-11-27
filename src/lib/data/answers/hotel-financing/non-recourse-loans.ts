@@ -64,7 +64,7 @@ export const page: AnswerPage = {
     {
       h2: "Does recourse change what happens at tax time if I lose the hotel?",
       lead: "Yes. The IRS treats a foreclosure differently depending on whether you were personally liable for the debt.",
-      body: "IRS Publication 4681 sets out both cases. With recourse debt, the amount realized on a foreclosure is the property's fair market value, and any canceled debt above that is ordinary income from cancellation of debt unless an exclusion applies. With nonrecourse debt, the entire unpaid balance is treated as the amount realized, even if the property is worth less, and there is no cancellation of debt income.[6] The Treasury regulation says the same thing in one line: the disposition of property that secures a nonrecourse liability discharges the transferor from the liability.[9]\n\nSo a non-recourse owner who hands back an underwater hotel can owe tax on a gain without receiving any cash, because the full loan balance is the sale price. The worked example runs both cases. This page is not tax advice. Work through the numbers with your CPA before a workout, a deed in lieu or a foreclosure."
+      body: "IRS Publication 4681 sets out both cases. With recourse debt, the amount realized on a foreclosure is the property's fair market value, and any canceled debt above that is ordinary income from cancellation of debt unless an exclusion applies. With nonrecourse debt, the entire unpaid balance is treated as the amount realized, even if the property is worth less, and there is no cancellation of debt income.[6] The Treasury regulation says the same thing in one line: the disposition of property that secures a nonrecourse liability discharges the transferor from the liability.[9]\n\nSo a non-recourse owner who hands back an underwater hotel can owe tax on a gain without receiving any cash, because the full loan balance is the sale price. The worked example runs both cases. Whether cancellation income can be excluded is a separate question with its own statutory tests, set out at [do I owe tax on forgiven hotel debt?](/hotel-financing/forgiven-debt-tax). This page is not tax advice. Work through the numbers with your CPA before a workout, a deed in lieu or a foreclosure."
     }
   ],
   table: {
@@ -229,7 +229,8 @@ export const page: AnswerPage = {
       "/hotel-financing/hotel-lenders-by-type",
       "/hotel-financing/loan-workouts",
       "/hotel-financing/lenders-under-5-million",
-      "/hotel-financing/bridge-loans"
+      "/hotel-financing/bridge-loans",
+      "/hotel-financing/forgiven-debt-tax"
     ],
     glossary: [
       "/glossary/dscr",

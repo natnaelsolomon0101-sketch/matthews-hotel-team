@@ -1,9 +1,9 @@
 {
-  "runAt": "2026-11-26T14:27:42.171Z",
+  "runAt": "2026-11-27T14:32:53.897Z",
   "base": "/home/user/matthews-hotel-team/.next/server/app",
-  "urlsChecked": 348,
-  "blocksFound": 348,
-  "blocksValid": 348,
+  "urlsChecked": 349,
+  "blocksFound": 349,
+  "blocksValid": 349,
   "issues": [],
   "blocks": [
     {
@@ -792,6 +792,13 @@
     },
     {
       "url": "/hotel-financing/bank-failure",
+      "index": 0,
+      "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
+      "valid": true,
+      "issues": []
+    },
+    {
+      "url": "/hotel-financing/forgiven-debt-tax",
       "index": 0,
       "type": "RealEstateAgent,Organization,WebSite,LocalBusiness,RealEstateAgent,Person,Person,Person,Service,Service,Service,WebPage,CollectionPage,Article,FAQPage,BreadcrumbList",
       "valid": true,

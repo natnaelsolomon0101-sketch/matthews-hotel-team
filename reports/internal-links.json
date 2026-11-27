@@ -1,6 +1,6 @@
 {
-  "runAt": "2026-11-26T14:27:49.533Z",
-  "base": "http://localhost:45341",
+  "runAt": "2026-11-27T14:33:02.145Z",
+  "base": "http://localhost:42135",
   "edges": [
     {
       "from": "/",
@@ -4173,6 +4173,10 @@
     {
       "from": "/sitemap",
       "to": "/hotel-financing/bank-failure"
+    },
+    {
+      "from": "/sitemap",
+      "to": "/hotel-financing/forgiven-debt-tax"
     },
     {
       "from": "/sitemap",
@@ -42684,6 +42688,10 @@
     },
     {
       "from": "/glossary/non-recourse-carve-outs",
+      "to": "/hotel-financing/forgiven-debt-tax"
+    },
+    {
+      "from": "/glossary/non-recourse-carve-outs",
       "to": "/buy-a-hotel"
     },
     {
@@ -44557,6 +44565,10 @@
     {
       "from": "/hotel-financing",
       "to": "/hotel-financing/bank-failure"
+    },
+    {
+      "from": "/hotel-financing",
+      "to": "/hotel-financing/forgiven-debt-tax"
     },
     {
       "from": "/hotel-financing",
@@ -49668,6 +49680,10 @@
     },
     {
       "from": "/hotel-financing/loan-workouts",
+      "to": "/hotel-financing/forgiven-debt-tax"
+    },
+    {
+      "from": "/hotel-financing/loan-workouts",
       "to": "/sell-a-hotel/irs-liens-and-payroll-taxes"
     },
     {
@@ -50085,6 +50101,10 @@
     {
       "from": "/hotel-financing/non-recourse-loans",
       "to": "/hotel-financing/bridge-loans"
+    },
+    {
+      "from": "/hotel-financing/non-recourse-loans",
+      "to": "/hotel-financing/forgiven-debt-tax"
     },
     {
       "from": "/hotel-financing/non-recourse-loans",
@@ -54339,6 +54359,222 @@
       "to": "/sitemap"
     },
     {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/images/matthews-logo.jpg"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/_next/static/chunks/971af7bd7354d30d.css"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/_next/static/chunks/e424f29603c31593.js"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/hotel-financing/forgiven-debt-tax.md"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/favicon.ico"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/listings"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/hotel-financing"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/sell-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/hotel-valuation"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/rates"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/about"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/team"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/contact"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/team/miles-cortez"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/hotel-financing/loan-workouts"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/hotel-financing/non-recourse-loans"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/sell-a-hotel/selling-a-distressed-hotel"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/glossary/dscr"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/hotel-financing/chapter-11-bankruptcy"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/hotel-financing/pip-and-renovation-loans"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/hotel-financing/cash-out-refinance"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/glossary/ffe-reserve"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/hotel-valuation/partner-buyout-valuation"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/buy-a-hotel/seller-financing"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/team/luke-thompson"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/hotel-financing/interest-deduction-limits"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/hotel-financing/deduct-or-capitalize-a-renovation"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/glossary"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/glossary/non-recourse-carve-outs"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/buy-a-hotel"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/hotel-franchise-costs"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/hotel-industry"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/tools"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/rates/methodology"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/data/hotel-financing-statistics"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/data/sba-hotel-lending"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/research/mhi"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/research"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/hotels-for-sale"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/markets"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/closed"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/process"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/services"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/services/investment-sales"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/services/capital-markets"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/services/acquisition-advisory"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/offices/austin"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/offices/denver"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/insights"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/press"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/developers"
+    },
+    {
+      "from": "/hotel-financing/forgiven-debt-tax",
+      "to": "/sitemap"
+    },
+    {
       "from": "/sell-a-hotel",
       "to": "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     },
@@ -58225,6 +58461,10 @@
     {
       "from": "/sell-a-hotel/selling-a-distressed-hotel",
       "to": "/sell-a-hotel/irs-liens-and-payroll-taxes"
+    },
+    {
+      "from": "/sell-a-hotel/selling-a-distressed-hotel",
+      "to": "/hotel-financing/forgiven-debt-tax"
     },
     {
       "from": "/sell-a-hotel/selling-a-distressed-hotel",
@@ -77806,6 +78046,7 @@
         "/hotel-financing/mezzanine-debt-and-preferred-equity",
         "/hotel-financing/mechanics-liens",
         "/hotel-financing/bank-failure",
+        "/hotel-financing/forgiven-debt-tax",
         "/sell-a-hotel/1031-without-buying-another-hotel",
         "/sell-a-hotel/asset-sale-vs-entity-sale",
         "/sell-a-hotel/broker-fees",
@@ -88453,6 +88694,7 @@
         "/hotel-financing/loan-workouts",
         "/hotel-financing/chapter-11-bankruptcy",
         "/hotel-financing/bank-failure",
+        "/hotel-financing/forgiven-debt-tax",
         "/buy-a-hotel",
         "/hotel-franchise-costs",
         "/hotel-industry",
@@ -88976,6 +89218,7 @@
         "/hotel-financing/sba-franchise-directory",
         "/hotel-financing/sba-size-standards",
         "/hotel-financing/bank-failure",
+        "/hotel-financing/forgiven-debt-tax",
         "/team/miles-cortez",
         "/buy-a-hotel",
         "/glossary",
@@ -90403,6 +90646,7 @@
         "/team",
         "/contact",
         "/team/miles-cortez",
+        "/hotel-financing/forgiven-debt-tax",
         "/sell-a-hotel/irs-liens-and-payroll-taxes",
         "/hotel-financing/bank-failure",
         "/hotel-financing/refinance-or-sell",
@@ -90520,6 +90764,7 @@
         "/hotel-financing/cmbs-loans",
         "/hotel-financing/loan-workouts",
         "/hotel-financing/bridge-loans",
+        "/hotel-financing/forgiven-debt-tax",
         "/team/miles-cortez",
         "/hotel-financing/lenders-under-5-million",
         "/glossary",
@@ -91701,6 +91946,66 @@
       "missing": []
     },
     {
+      "url": "/hotel-financing/forgiven-debt-tax",
+      "outboundInternal": [
+        "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+        "/images/matthews-logo.jpg",
+        "/_next/static/chunks/971af7bd7354d30d.css",
+        "/_next/static/chunks/e424f29603c31593.js",
+        "/",
+        "/hotel-financing/forgiven-debt-tax.md",
+        "/favicon.ico",
+        "/listings",
+        "/hotel-financing",
+        "/sell-a-hotel",
+        "/hotel-valuation",
+        "/rates",
+        "/about",
+        "/team",
+        "/contact",
+        "/team/miles-cortez",
+        "/hotel-financing/loan-workouts",
+        "/hotel-financing/non-recourse-loans",
+        "/sell-a-hotel/selling-a-distressed-hotel",
+        "/glossary/dscr",
+        "/hotel-financing/chapter-11-bankruptcy",
+        "/hotel-financing/pip-and-renovation-loans",
+        "/hotel-financing/cash-out-refinance",
+        "/glossary/ffe-reserve",
+        "/hotel-valuation/partner-buyout-valuation",
+        "/buy-a-hotel/seller-financing",
+        "/team/luke-thompson",
+        "/hotel-financing/interest-deduction-limits",
+        "/hotel-financing/deduct-or-capitalize-a-renovation",
+        "/glossary",
+        "/glossary/non-recourse-carve-outs",
+        "/buy-a-hotel",
+        "/hotel-franchise-costs",
+        "/hotel-industry",
+        "/tools",
+        "/rates/methodology",
+        "/data/hotel-financing-statistics",
+        "/data/sba-hotel-lending",
+        "/research/mhi",
+        "/research",
+        "/hotels-for-sale",
+        "/markets",
+        "/closed",
+        "/process",
+        "/services",
+        "/services/investment-sales",
+        "/services/capital-markets",
+        "/services/acquisition-advisory",
+        "/offices/austin",
+        "/offices/denver",
+        "/insights",
+        "/press",
+        "/developers",
+        "/sitemap"
+      ],
+      "missing": []
+    },
+    {
       "url": "/sell-a-hotel",
       "outboundInternal": [
         "/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
@@ -92783,6 +93088,7 @@
         "/sell-a-hotel/documents-needed",
         "/hotel-financing/loan-workouts",
         "/sell-a-hotel/irs-liens-and-payroll-taxes",
+        "/hotel-financing/forgiven-debt-tax",
         "/sell-a-hotel/taxes-when-selling-a-hotel",
         "/team/luke-thompson",
         "/process",
